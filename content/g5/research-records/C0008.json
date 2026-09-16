@@ -1,0 +1,279 @@
+{
+  "schema_version": "2.0.0",
+  "research_id": "RR-C0008-KO",
+  "card_id": "C0008",
+  "candidate": {
+    "term": "섭섭하다",
+    "language_code": "ko-KR",
+    "language_name": "한국어",
+    "experience_type": "relational_experience"
+  },
+  "lifecycle_state": "HOLD",
+  "source_inventory": [
+    {
+      "reference_id": "R0045",
+      "role": "lexical",
+      "quality_tier": "A"
+    },
+    {
+      "reference_id": "R0051",
+      "role": "pronunciation",
+      "quality_tier": "B"
+    },
+    {
+      "reference_id": "R0048",
+      "role": "rights",
+      "quality_tier": "A"
+    },
+    {
+      "reference_id": "R0054",
+      "role": "scholarly",
+      "quality_tier": "A"
+    },
+    {
+      "reference_id": "R0055",
+      "role": "scholarly",
+      "quality_tier": "A"
+    },
+    {
+      "reference_id": "R0056",
+      "role": "scholarly",
+      "quality_tier": "A"
+    },
+    {
+      "reference_id": "R0057",
+      "role": "scholarly",
+      "quality_tier": "A"
+    },
+    {
+      "reference_id": "R0062",
+      "role": "lexical",
+      "quality_tier": "A"
+    },
+    {
+      "reference_id": "R0067",
+      "role": "lexical",
+      "quality_tier": "A"
+    }
+  ],
+  "lexical_verification": {
+    "status": "PASS",
+    "summary": "국립국어원 한국어기초사전의 섭섭하다 표제어로 핵심 의미와 실제 용례 범위를 확인했다.",
+    "reference_ids": [
+      "R0045"
+    ]
+  },
+  "semantic_definition_and_boundaries": {
+    "status": "PASS",
+    "summary": "사전 정의와 유의어 연구는 서운하다·아쉽다와의 중첩 및 사용 상황 차이를 함께 보여 준다.",
+    "reference_ids": [
+      "R0045",
+      "R0054",
+      "R0055",
+      "R0056",
+      "R0057"
+    ]
+  },
+  "cultural_context_review": {
+    "status": "PASS",
+    "summary": "관계적 용례가 많다는 사실을 한국 문화 전체의 관계주의 성향으로 일반화하지 않는다.",
+    "reference_ids": [
+      "R0045",
+      "R0054",
+      "R0055",
+      "R0056",
+      "R0057"
+    ]
+  },
+  "comparisons": {
+    "ko": {
+      "status": "PASS",
+      "near_terms": [
+        "서운하다",
+        "아쉽다"
+      ],
+      "difference_note": "한국어 내부의 가까운 표현과 겹치지만 사용 상황과 의미 초점이 완전히 같지 않다.",
+      "verification_note": "Target lexical entry plus Korean near-synonym scholarship supports a within-Korean distinction rather than synonym collapse.",
+      "reference_ids": [
+        "R0045",
+        "R0054",
+        "R0055",
+        "R0056",
+        "R0057"
+      ]
+    },
+    "en": {
+      "status": "PASS",
+      "near_terms": [
+        "sorry",
+        "regrettable",
+        "disappointed"
+      ],
+      "difference_note": "영어의 가까운 표현들이 일부 의미를 나누어 담지만 한 표현이 모든 한국어 용례를 대체한다고 보지 않는다.",
+      "verification_note": "Krdict English gloss is used as a near-expression anchor, not as proof of one-to-one equivalence.",
+      "reference_ids": [
+        "R0045"
+      ]
+    },
+    "zh": {
+      "status": "PASS",
+      "near_terms": [
+        "难舍",
+        "不舍",
+        "惋惜"
+      ],
+      "difference_note": "중국어 대역은 실제 번역 가능성을 보여 주지만 문맥별 대응이 달라 완전한 일대일 대응으로 취급하지 않는다.",
+      "verification_note": "Official Krdict Chinese page and Korean-Chinese comparison scholarship support a non-one-to-one framing.",
+      "reference_ids": [
+        "R0067",
+        "R0057"
+      ]
+    },
+    "ja": {
+      "status": "PASS",
+      "near_terms": [
+        "寂しい",
+        "心残り"
+      ],
+      "difference_note": "일본어 대역은 가까운 의미를 제공하지만 한국어 표제어의 모든 화용·관계적 결을 하나의 표현으로 고정하지 않는다.",
+      "verification_note": "Official Krdict Japanese page provides near expressions; public wording preserves residual difference.",
+      "reference_ids": [
+        "R0062"
+      ]
+    }
+  },
+  "pronunciation_verification": {
+    "status": "HOLD",
+    "ipa": "[sʰʌ̹ps͈ʌ̹pʰa̠da̠]",
+    "locale": "ko-KR",
+    "reference_ids": [
+      "R0045",
+      "R0051",
+      "R0048"
+    ],
+    "audio_asset_id": null,
+    "notes": "Krdict phonetic Hangul and Wiktionary IPA cross-check are available, but the official MP3's exact file-level commercial-use/modification permissions remain unresolved. The local MP3 research copy is intentionally not registered as a product asset."
+  },
+  "claim_source_map": [
+    {
+      "claim_id": "CL-001",
+      "claim": "섭섭하다 has an authoritative Korean lexical definition and attested usage examples.",
+      "reference_ids": [
+        "R0045"
+      ],
+      "evidence_locator": "Korean Basic Dictionary headword definition and examples.",
+      "public_safe": true
+    },
+    {
+      "claim_id": "CL-002",
+      "claim": "사전 자체가 서운함과 아쉬움이 함께 있는 상태로 풀이하며, 사람의 태도·무관심·헤어짐 같은 관계 문맥에서 사용된다. 단순 sadness나 regret보다 관계적 기대와 마음 남음의 결합을 보존할 필요가 있다.",
+      "reference_ids": [
+        "R0045",
+        "R0054",
+        "R0055",
+        "R0056",
+        "R0057"
+      ],
+      "evidence_locator": "Target lexical entry plus Korean emotion/near-synonym scholarship.",
+      "public_safe": true
+    },
+    {
+      "claim_id": "CL-003",
+      "claim": "Cross-language glosses are treated as partial mappings rather than exact equivalents.",
+      "reference_ids": [
+        "R0045",
+        "R0062",
+        "R0067",
+        "R0057"
+      ],
+      "evidence_locator": "Official multilingual dictionary pages and, where applicable, Korean-Chinese correspondence study.",
+      "public_safe": true
+    }
+  ],
+  "relations": [
+    "C0006",
+    "C0007"
+  ],
+  "illustration_brief": {
+    "status": "HOLD",
+    "summary": "Illustration brief has not yet been finalized because the card cannot enter REVIEW_READY before pronunciation-audio rights are resolved. Future art must remain anonymous, non-diagnostic, and avoid Korean-culture stereotypes.",
+    "reference_ids": [
+      "R0045",
+      "R0054",
+      "R0055",
+      "R0056",
+      "R0057"
+    ]
+  },
+  "editorial_copy": {
+    "status": "HOLD",
+    "summary": "Public poetic line, scene, and reflection question have not yet been finalized; semantic boundaries are researched first and editorial copy is deferred until all product gates can be evaluated together.",
+    "reference_ids": [
+      "R0045",
+      "R0054",
+      "R0055",
+      "R0056",
+      "R0057"
+    ]
+  },
+  "automated_gates": {
+    "schema": "PASS",
+    "evidence": "PASS",
+    "pronunciation": "HOLD",
+    "cultural_humility": "PASS",
+    "rights": "HOLD",
+    "privacy": "PASS"
+  },
+  "distinctiveness_review": {
+    "status": "PASS",
+    "track": "KOREAN_NUANCE",
+    "generic_basic_emotion": false,
+    "nearest_cross_language_terms": {
+      "ko": [
+        "서운하다",
+        "아쉽다"
+      ],
+      "en": [
+        "sorry",
+        "regrettable",
+        "disappointed"
+      ],
+      "zh": [
+        "难舍",
+        "不舍",
+        "惋惜"
+      ],
+      "ja": [
+        "寂しい",
+        "心残り"
+      ]
+    },
+    "semantic_residue": "사전 자체가 서운함과 아쉬움이 함께 있는 상태로 풀이하며, 사람의 태도·무관심·헤어짐 같은 관계 문맥에서 사용된다. 단순 sadness나 regret보다 관계적 기대와 마음 남음의 결합을 보존할 필요가 있다.",
+    "residue_reference_ids": [
+      "R0045",
+      "R0054",
+      "R0055",
+      "R0056",
+      "R0057"
+    ],
+    "overclaim_to_avoid": "서운하다와 완전한 동의어로 취급하거나 모든 섭섭함을 관계 갈등으로 진단하지 않는다."
+  },
+  "human_editorial_release": {
+    "status": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": "Research-stage HOLD. Human Editorial Release cannot begin until pronunciation/rights and remaining illustration/editorial gates are resolved."
+  },
+  "changelog": [
+    {
+      "date": "2026-09-16",
+      "state": "RESEARCH",
+      "note": "Source-first Korean lexical, scholarly, multilingual comparison, and IPA research structured under G5 Research Record v2."
+    },
+    {
+      "date": "2026-09-16",
+      "state": "HOLD",
+      "note": "Distinctiveness/evidence gates pass for research admission, but pronunciation-audio file-level rights are unresolved; REVIEW_READY is prohibited."
+    }
+  ]
+}

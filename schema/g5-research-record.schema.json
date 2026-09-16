@@ -179,14 +179,43 @@
           }
         },
         "audio_asset_id": {
-          "type": "string",
-          "pattern": "^A[0-9]{4,}$"
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^A[0-9]{4,}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
         },
         "notes": {
           "type": "string",
           "minLength": 1
         }
-      }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "PASS"
+              }
+            },
+            "required": [
+              "status"
+            ]
+          },
+          "then": {
+            "properties": {
+              "audio_asset_id": {
+                "type": "string",
+                "pattern": "^A[0-9]{4,}$"
+              }
+            }
+          }
+        }
+      ]
     },
     "claim_source_map": {
       "type": "array",

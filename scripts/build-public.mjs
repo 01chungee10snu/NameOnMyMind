@@ -9,6 +9,7 @@ const OUT = path.join(ROOT, 'public');
 const readJsonAbs = (file) => JSON.parse(fs.readFileSync(file, 'utf8'));
 const readJson = (rel) => readJsonAbs(path.join(ROOT, rel));
 const sha = (file) => crypto.createHash('sha256').update(fs.readFileSync(file)).digest('hex');
+const hashJsonValue = (value) => crypto.createHash('sha256').update(JSON.stringify(value)).digest('hex');
 const approvedDir = path.join(ROOT, 'content/approved/cards');
 const cardFiles = fs.existsSync(approvedDir)
   ? fs.readdirSync(approvedDir).filter((x) => x.endsWith('.json')).sort().map((x) => path.join(approvedDir, x))
@@ -67,8 +68,10 @@ const inputHashes = {
   reference_schema: sha(path.join(ROOT, 'schema/reference.schema.json')),
   asset_schema: sha(path.join(ROOT, 'schema/asset.schema.json')),
   research_schema: sha(path.join(ROOT, 'schema/research-record.schema.json')),
-  references: sha(path.join(ROOT, 'content/approved/references.json')),
-  assets: sha(path.join(ROOT, 'content/approved/assets.json')),
+  // Unpublished research registry growth must not invalidate the public snapshot.
+  // Hash only the references/assets reachable from human-released public cards.
+  references: hashJsonValue({ schema_version: refs.schema_version, references: selectedRefs }),
+  assets: hashJsonValue({ schema_version: assets.schema_version, assets: selectedAssets }),
   ...Object.fromEntries(cardFiles.map((file) => [`card_${path.basename(file, '.json')}`, sha(file)])),
   ...Object.fromEntries(runtimeInputs.map((rel) => [`runtime_${rel.replaceAll('/', '_')}`, sha(path.join(ROOT, rel))])),
 };
@@ -136,7 +139,7 @@ writeJson('BUILD_MANIFEST.json', {
     asset_cache: `nomm-assets-v1-${snapshotVersion}`,
   },
   input_sha256: inputHashes,
-  excluded_source_classes: ['private/**', 'content/review/**', 'content/approved/research-records/**', 'reports/**'],
+  excluded_source_classes: ['private/**', 'content/review/**', 'content/g5/**', 'content/approved/research-records/**', 'schema/g5-research-record.schema.json', 'reports/**'],
 });
 
 console.log(JSON.stringify({
