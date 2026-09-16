@@ -1,0 +1,228 @@
+{
+  "schema_version": "2.0.0",
+  "research_id": "RR-C0014-KO",
+  "card_id": "C0014",
+  "candidate": {
+    "term": "시원섭섭하다",
+    "language_code": "ko-KR",
+    "language_name": "한국어",
+    "experience_type": "mixed_experience"
+  },
+  "lifecycle_state": "HOLD",
+  "source_inventory": [
+    {
+      "reference_id": "R0073",
+      "role": "lexical",
+      "quality_tier": "A"
+    },
+    {
+      "reference_id": "R0078",
+      "role": "pronunciation",
+      "quality_tier": "B"
+    },
+    {
+      "reference_id": "R0048",
+      "role": "rights",
+      "quality_tier": "A"
+    },
+    {
+      "reference_id": "R0080",
+      "role": "scholarly",
+      "quality_tier": "A"
+    },
+    {
+      "reference_id": "R0081",
+      "role": "scholarly",
+      "quality_tier": "A"
+    },
+    {
+      "reference_id": "R0087",
+      "role": "lexical",
+      "quality_tier": "A"
+    },
+    {
+      "reference_id": "R0092",
+      "role": "lexical",
+      "quality_tier": "A"
+    }
+  ],
+  "lexical_verification": {
+    "status": "PASS",
+    "summary": "국립국어원 한국어기초사전 표제어·정의·용례를 확인했다.",
+    "reference_ids": [
+      "R0073"
+    ]
+  },
+  "semantic_definition_and_boundaries": {
+    "status": "PASS",
+    "summary": "한편으로는 후련하고 다른 한편으로는 서운하고 아쉬운 상반된 정서를 한 단어 안에 동시에 묶는다. English mixed feelings는 혼합 자체만 말해 이 특정한 relief+reluctance 조합을 지정하지 않는다.",
+    "reference_ids": [
+      "R0073",
+      "R0080",
+      "R0081"
+    ]
+  },
+  "cultural_context_review": {
+    "status": "PASS",
+    "summary": "한국어가 포착한 의미 결을 설명하되 문화적 독점성이나 번역불가능성을 주장하지 않는다.",
+    "reference_ids": [
+      "R0073",
+      "R0080",
+      "R0081"
+    ]
+  },
+  "comparisons": {
+    "ko": {
+      "status": "PASS",
+      "near_terms": [
+        "후련하다",
+        "섭섭하다",
+        "아쉽다"
+      ],
+      "difference_note": "가까운 한국어 표현과 중첩되지만 의미 초점과 사용 맥락이 완전히 같지 않다.",
+      "verification_note": "Target lexical definition and scholarly emotion-vocabulary evidence support non-collapse.",
+      "reference_ids": [
+        "R0073",
+        "R0080",
+        "R0081"
+      ]
+    },
+    "en": {
+      "status": "PASS",
+      "near_terms": [
+        "mixed feelings",
+        "relieved yet sad"
+      ],
+      "difference_note": "영어 근접어는 일부 의미를 담지만 모든 한국어 용례를 일대일로 대체하지 않는다.",
+      "verification_note": "Official Krdict English gloss used as near-expression anchor.",
+      "reference_ids": [
+        "R0073"
+      ]
+    },
+    "zh": {
+      "status": "PASS",
+      "near_terms": [
+        "既痛快又不舍",
+        "既高兴又遗憾"
+      ],
+      "difference_note": "중국어 대역은 가까운 표현이지만 문맥별 의미 잔여를 보존한다.",
+      "verification_note": "Official Krdict Chinese page.",
+      "reference_ids": [
+        "R0092"
+      ]
+    },
+    "ja": {
+      "status": "PASS",
+      "near_terms": [
+        "すっきりする気持ち",
+        "名残惜しい気持ち"
+      ],
+      "difference_note": "일본어 대역은 가까운 표현이지만 일대일 동일성을 주장하지 않는다.",
+      "verification_note": "Official Krdict Japanese page.",
+      "reference_ids": [
+        "R0087"
+      ]
+    }
+  },
+  "pronunciation_verification": {
+    "status": "HOLD",
+    "ipa": "[ɕʰiwʌ̹nsʰʌ̹ps͈ʌ̹pʰa̠da̠]",
+    "locale": "ko-KR",
+    "reference_ids": [
+      "R0073",
+      "R0078",
+      "R0048"
+    ],
+    "audio_asset_id": null,
+    "notes": "Krdict phonetic Hangul and IPA are verified, but the official MP3 file-level commercial-use/modification rights remain unresolved; local research copy is not a product asset."
+  },
+  "claim_source_map": [
+    {
+      "claim_id": "CL-001",
+      "claim": "한편으로는 후련하고 다른 한편으로는 서운하고 아쉬운 상반된 정서를 한 단어 안에 동시에 묶는다. English mixed feelings는 혼합 자체만 말해 이 특정한 relief+reluctance 조합을 지정하지 않는다.",
+      "reference_ids": [
+        "R0073",
+        "R0080",
+        "R0081"
+      ],
+      "evidence_locator": "Target lexical entry plus scholarly emotion-language evidence.",
+      "public_safe": true
+    }
+  ],
+  "relations": [],
+  "illustration_brief": {
+    "status": "HOLD",
+    "summary": "Deferred until pronunciation/rights gate is resolved.",
+    "reference_ids": [
+      "R0073",
+      "R0080",
+      "R0081"
+    ]
+  },
+  "editorial_copy": {
+    "status": "HOLD",
+    "summary": "Deferred until all product gates can be evaluated together.",
+    "reference_ids": [
+      "R0073",
+      "R0080",
+      "R0081"
+    ]
+  },
+  "automated_gates": {
+    "schema": "PASS",
+    "evidence": "PASS",
+    "pronunciation": "HOLD",
+    "cultural_humility": "PASS",
+    "rights": "HOLD",
+    "privacy": "PASS"
+  },
+  "distinctiveness_review": {
+    "status": "PASS",
+    "track": "KOREAN_NUANCE",
+    "generic_basic_emotion": false,
+    "nearest_cross_language_terms": {
+      "ko": [
+        "후련하다",
+        "섭섭하다",
+        "아쉽다"
+      ],
+      "en": [
+        "mixed feelings",
+        "relieved yet sad"
+      ],
+      "zh": [
+        "既痛快又不舍",
+        "既高兴又遗憾"
+      ],
+      "ja": [
+        "すっきりする気持ち",
+        "名残惜しい気持ち"
+      ]
+    },
+    "semantic_residue": "한편으로는 후련하고 다른 한편으로는 서운하고 아쉬운 상반된 정서를 한 단어 안에 동시에 묶는다. English mixed feelings는 혼합 자체만 말해 이 특정한 relief+reluctance 조합을 지정하지 않는다.",
+    "residue_reference_ids": [
+      "R0073",
+      "R0080",
+      "R0081"
+    ],
+    "overclaim_to_avoid": "한국인만 이런 양가감정을 느낀다고 주장하거나 일본어에 대응어가 없다는 사실을 번역불가능성으로 과장하지 않는다."
+  },
+  "human_editorial_release": {
+    "status": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": "Research-stage HOLD; Human Editorial Release not open."
+  },
+  "changelog": [
+    {
+      "date": "2026-09-17",
+      "state": "RESEARCH",
+      "note": "Source-first lexical, scholarly, multilingual and IPA research structured."
+    },
+    {
+      "date": "2026-09-17",
+      "state": "HOLD",
+      "note": "Distinctiveness/evidence pass; pronunciation-audio rights unresolved."
+    }
+  ]
+}

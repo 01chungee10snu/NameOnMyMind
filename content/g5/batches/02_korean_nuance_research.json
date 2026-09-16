@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0.0",
+  "batch_id": "G5-B02-KOREAN-NUANCE",
+  "status": "RESEARCH_COMPLETE_AUDIO_RIGHTS_HOLD",
+  "reserved_card_ids": [
+    "C0011",
+    "C0012",
+    "C0013",
+    "C0014",
+    "C0015"
+  ],
+  "terms": [
+    "억울하다",
+    "후련하다",
+    "착잡하다",
+    "시원섭섭하다",
+    "멋쩍다"
+  ],
+  "research_records": [
+    "content/g5/research-records/C0011.json",
+    "content/g5/research-records/C0012.json",
+    "content/g5/research-records/C0013.json",
+    "content/g5/research-records/C0014.json",
+    "content/g5/research-records/C0015.json"
+  ],
+  "source_snapshot": "content/g5/batches/02_korean_nuance_source_snapshot.json",
+  "review_ready": 0,
+  "public_or_review_promotion_authorized": false,
+  "audio_rights_status": "HOLD_FILE_LEVEL_CCL_UNRESOLVED",
+  "notes": "찜찜하다 and 먹먹하다 remain in candidate pool but were deferred from this batch because direct scholarly support was weaker than the selected five."
+}

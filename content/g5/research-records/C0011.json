@@ -1,0 +1,228 @@
+{
+  "schema_version": "2.0.0",
+  "research_id": "RR-C0011-KO",
+  "card_id": "C0011",
+  "candidate": {
+    "term": "억울하다",
+    "language_code": "ko-KR",
+    "language_name": "한국어",
+    "experience_type": "feeling"
+  },
+  "lifecycle_state": "HOLD",
+  "source_inventory": [
+    {
+      "reference_id": "R0070",
+      "role": "lexical",
+      "quality_tier": "A"
+    },
+    {
+      "reference_id": "R0075",
+      "role": "pronunciation",
+      "quality_tier": "B"
+    },
+    {
+      "reference_id": "R0048",
+      "role": "rights",
+      "quality_tier": "A"
+    },
+    {
+      "reference_id": "R0081",
+      "role": "scholarly",
+      "quality_tier": "A"
+    },
+    {
+      "reference_id": "R0082",
+      "role": "scholarly",
+      "quality_tier": "A"
+    },
+    {
+      "reference_id": "R0084",
+      "role": "lexical",
+      "quality_tier": "A"
+    },
+    {
+      "reference_id": "R0089",
+      "role": "lexical",
+      "quality_tier": "A"
+    }
+  ],
+  "lexical_verification": {
+    "status": "PASS",
+    "summary": "국립국어원 한국어기초사전 표제어·정의·용례를 확인했다.",
+    "reference_ids": [
+      "R0070"
+    ]
+  },
+  "semantic_definition_and_boundaries": {
+    "status": "PASS",
+    "summary": "자신의 잘못이 없는데 피해·비난·불이익을 받았다는 부당성 인식과 속상함·답답함이 함께 묶인다. 단순 anger나 frustration만으로는 무고함/부당피해 전제가 빠진다.",
+    "reference_ids": [
+      "R0070",
+      "R0081",
+      "R0082"
+    ]
+  },
+  "cultural_context_review": {
+    "status": "PASS",
+    "summary": "한국어가 포착한 의미 결을 설명하되 문화적 독점성이나 번역불가능성을 주장하지 않는다.",
+    "reference_ids": [
+      "R0070",
+      "R0081",
+      "R0082"
+    ]
+  },
+  "comparisons": {
+    "ko": {
+      "status": "PASS",
+      "near_terms": [
+        "분하다",
+        "답답하다"
+      ],
+      "difference_note": "가까운 한국어 표현과 중첩되지만 의미 초점과 사용 맥락이 완전히 같지 않다.",
+      "verification_note": "Target lexical definition and scholarly emotion-vocabulary evidence support non-collapse.",
+      "reference_ids": [
+        "R0070",
+        "R0081",
+        "R0082"
+      ]
+    },
+    "en": {
+      "status": "PASS",
+      "near_terms": [
+        "mortified",
+        "chagrined",
+        "wronged"
+      ],
+      "difference_note": "영어 근접어는 일부 의미를 담지만 모든 한국어 용례를 일대일로 대체하지 않는다.",
+      "verification_note": "Official Krdict English gloss used as near-expression anchor.",
+      "reference_ids": [
+        "R0070"
+      ]
+    },
+    "zh": {
+      "status": "PASS",
+      "near_terms": [
+        "委屈",
+        "冤枉"
+      ],
+      "difference_note": "중국어 대역은 가까운 표현이지만 문맥별 의미 잔여를 보존한다.",
+      "verification_note": "Official Krdict Chinese page.",
+      "reference_ids": [
+        "R0089"
+      ]
+    },
+    "ja": {
+      "status": "PASS",
+      "near_terms": [
+        "無念だ",
+        "悔しい"
+      ],
+      "difference_note": "일본어 대역은 가까운 표현이지만 일대일 동일성을 주장하지 않는다.",
+      "verification_note": "Official Krdict Japanese page.",
+      "reference_ids": [
+        "R0084"
+      ]
+    }
+  },
+  "pronunciation_verification": {
+    "status": "HOLD",
+    "ipa": "[ʌ̹ɡuɾɦa̠da̠]",
+    "locale": "ko-KR",
+    "reference_ids": [
+      "R0070",
+      "R0075",
+      "R0048"
+    ],
+    "audio_asset_id": null,
+    "notes": "Krdict phonetic Hangul and IPA are verified, but the official MP3 file-level commercial-use/modification rights remain unresolved; local research copy is not a product asset."
+  },
+  "claim_source_map": [
+    {
+      "claim_id": "CL-001",
+      "claim": "자신의 잘못이 없는데 피해·비난·불이익을 받았다는 부당성 인식과 속상함·답답함이 함께 묶인다. 단순 anger나 frustration만으로는 무고함/부당피해 전제가 빠진다.",
+      "reference_ids": [
+        "R0070",
+        "R0081",
+        "R0082"
+      ],
+      "evidence_locator": "Target lexical entry plus scholarly emotion-language evidence.",
+      "public_safe": true
+    }
+  ],
+  "relations": [],
+  "illustration_brief": {
+    "status": "HOLD",
+    "summary": "Deferred until pronunciation/rights gate is resolved.",
+    "reference_ids": [
+      "R0070",
+      "R0081",
+      "R0082"
+    ]
+  },
+  "editorial_copy": {
+    "status": "HOLD",
+    "summary": "Deferred until all product gates can be evaluated together.",
+    "reference_ids": [
+      "R0070",
+      "R0081",
+      "R0082"
+    ]
+  },
+  "automated_gates": {
+    "schema": "PASS",
+    "evidence": "PASS",
+    "pronunciation": "HOLD",
+    "cultural_humility": "PASS",
+    "rights": "HOLD",
+    "privacy": "PASS"
+  },
+  "distinctiveness_review": {
+    "status": "PASS",
+    "track": "KOREAN_NUANCE",
+    "generic_basic_emotion": false,
+    "nearest_cross_language_terms": {
+      "ko": [
+        "분하다",
+        "답답하다"
+      ],
+      "en": [
+        "mortified",
+        "chagrined",
+        "wronged"
+      ],
+      "zh": [
+        "委屈",
+        "冤枉"
+      ],
+      "ja": [
+        "無念だ",
+        "悔しい"
+      ]
+    },
+    "semantic_residue": "자신의 잘못이 없는데 피해·비난·불이익을 받았다는 부당성 인식과 속상함·답답함이 함께 묶인다. 단순 anger나 frustration만으로는 무고함/부당피해 전제가 빠진다.",
+    "residue_reference_ids": [
+      "R0070",
+      "R0081",
+      "R0082"
+    ],
+    "overclaim_to_avoid": "한국인만 갖는 정의감 정서라고 일반화하거나 모든 억울함을 객관적 무고함의 증거로 취급하지 않는다."
+  },
+  "human_editorial_release": {
+    "status": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": "Research-stage HOLD; Human Editorial Release not open."
+  },
+  "changelog": [
+    {
+      "date": "2026-09-17",
+      "state": "RESEARCH",
+      "note": "Source-first lexical, scholarly, multilingual and IPA research structured."
+    },
+    {
+      "date": "2026-09-17",
+      "state": "HOLD",
+      "note": "Distinctiveness/evidence pass; pronunciation-audio rights unresolved."
+    }
+  ]
+}

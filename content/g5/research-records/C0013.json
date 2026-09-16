@@ -1,0 +1,228 @@
+{
+  "schema_version": "2.0.0",
+  "research_id": "RR-C0013-KO",
+  "card_id": "C0013",
+  "candidate": {
+    "term": "착잡하다",
+    "language_code": "ko-KR",
+    "language_name": "한국어",
+    "experience_type": "feeling"
+  },
+  "lifecycle_state": "HOLD",
+  "source_inventory": [
+    {
+      "reference_id": "R0072",
+      "role": "lexical",
+      "quality_tier": "A"
+    },
+    {
+      "reference_id": "R0077",
+      "role": "pronunciation",
+      "quality_tier": "B"
+    },
+    {
+      "reference_id": "R0048",
+      "role": "rights",
+      "quality_tier": "A"
+    },
+    {
+      "reference_id": "R0080",
+      "role": "scholarly",
+      "quality_tier": "A"
+    },
+    {
+      "reference_id": "R0081",
+      "role": "scholarly",
+      "quality_tier": "A"
+    },
+    {
+      "reference_id": "R0086",
+      "role": "lexical",
+      "quality_tier": "A"
+    },
+    {
+      "reference_id": "R0091",
+      "role": "lexical",
+      "quality_tier": "A"
+    }
+  ],
+  "lexical_verification": {
+    "status": "PASS",
+    "summary": "국립국어원 한국어기초사전 표제어·정의·용례를 확인했다.",
+    "reference_ids": [
+      "R0072"
+    ]
+  },
+  "semantic_definition_and_boundaries": {
+    "status": "PASS",
+    "summary": "여러 생각과 감정이 뒤섞여 마음이 복잡하고 어수선하며 갈피를 잡기 어려운 상태를 가리킨다. 단순 mixed feelings보다 정서적 혼란과 내적 어수선함을 함께 포함한다.",
+    "reference_ids": [
+      "R0072",
+      "R0080",
+      "R0081"
+    ]
+  },
+  "cultural_context_review": {
+    "status": "PASS",
+    "summary": "한국어가 포착한 의미 결을 설명하되 문화적 독점성이나 번역불가능성을 주장하지 않는다.",
+    "reference_ids": [
+      "R0072",
+      "R0080",
+      "R0081"
+    ]
+  },
+  "comparisons": {
+    "ko": {
+      "status": "PASS",
+      "near_terms": [
+        "복잡하다",
+        "심란하다"
+      ],
+      "difference_note": "가까운 한국어 표현과 중첩되지만 의미 초점과 사용 맥락이 완전히 같지 않다.",
+      "verification_note": "Target lexical definition and scholarly emotion-vocabulary evidence support non-collapse.",
+      "reference_ids": [
+        "R0072",
+        "R0080",
+        "R0081"
+      ]
+    },
+    "en": {
+      "status": "PASS",
+      "near_terms": [
+        "mixed feelings",
+        "confused",
+        "unsettled"
+      ],
+      "difference_note": "영어 근접어는 일부 의미를 담지만 모든 한국어 용례를 일대일로 대체하지 않는다.",
+      "verification_note": "Official Krdict English gloss used as near-expression anchor.",
+      "reference_ids": [
+        "R0072"
+      ]
+    },
+    "zh": {
+      "status": "PASS",
+      "near_terms": [
+        "心烦意乱",
+        "错综复杂"
+      ],
+      "difference_note": "중국어 대역은 가까운 표현이지만 문맥별 의미 잔여를 보존한다.",
+      "verification_note": "Official Krdict Chinese page.",
+      "reference_ids": [
+        "R0091"
+      ]
+    },
+    "ja": {
+      "status": "PASS",
+      "near_terms": [
+        "複雑だ",
+        "混乱している"
+      ],
+      "difference_note": "일본어 대역은 가까운 표현이지만 일대일 동일성을 주장하지 않는다.",
+      "verification_note": "Official Krdict Japanese page.",
+      "reference_ids": [
+        "R0086"
+      ]
+    }
+  },
+  "pronunciation_verification": {
+    "status": "HOLD",
+    "ipa": "[t͡ɕʰa̠k̚t͡ɕ͈a̠pʰa̠da̠]",
+    "locale": "ko-KR",
+    "reference_ids": [
+      "R0072",
+      "R0077",
+      "R0048"
+    ],
+    "audio_asset_id": null,
+    "notes": "Krdict phonetic Hangul and IPA are verified, but the official MP3 file-level commercial-use/modification rights remain unresolved; local research copy is not a product asset."
+  },
+  "claim_source_map": [
+    {
+      "claim_id": "CL-001",
+      "claim": "여러 생각과 감정이 뒤섞여 마음이 복잡하고 어수선하며 갈피를 잡기 어려운 상태를 가리킨다. 단순 mixed feelings보다 정서적 혼란과 내적 어수선함을 함께 포함한다.",
+      "reference_ids": [
+        "R0072",
+        "R0080",
+        "R0081"
+      ],
+      "evidence_locator": "Target lexical entry plus scholarly emotion-language evidence.",
+      "public_safe": true
+    }
+  ],
+  "relations": [],
+  "illustration_brief": {
+    "status": "HOLD",
+    "summary": "Deferred until pronunciation/rights gate is resolved.",
+    "reference_ids": [
+      "R0072",
+      "R0080",
+      "R0081"
+    ]
+  },
+  "editorial_copy": {
+    "status": "HOLD",
+    "summary": "Deferred until all product gates can be evaluated together.",
+    "reference_ids": [
+      "R0072",
+      "R0080",
+      "R0081"
+    ]
+  },
+  "automated_gates": {
+    "schema": "PASS",
+    "evidence": "PASS",
+    "pronunciation": "HOLD",
+    "cultural_humility": "PASS",
+    "rights": "HOLD",
+    "privacy": "PASS"
+  },
+  "distinctiveness_review": {
+    "status": "PASS",
+    "track": "KOREAN_NUANCE",
+    "generic_basic_emotion": false,
+    "nearest_cross_language_terms": {
+      "ko": [
+        "복잡하다",
+        "심란하다"
+      ],
+      "en": [
+        "mixed feelings",
+        "confused",
+        "unsettled"
+      ],
+      "zh": [
+        "心烦意乱",
+        "错综复杂"
+      ],
+      "ja": [
+        "複雑だ",
+        "混乱している"
+      ]
+    },
+    "semantic_residue": "여러 생각과 감정이 뒤섞여 마음이 복잡하고 어수선하며 갈피를 잡기 어려운 상태를 가리킨다. 단순 mixed feelings보다 정서적 혼란과 내적 어수선함을 함께 포함한다.",
+    "residue_reference_ids": [
+      "R0072",
+      "R0080",
+      "R0081"
+    ],
+    "overclaim_to_avoid": "정신건강 상태나 임상적 혼란으로 진단하지 않는다."
+  },
+  "human_editorial_release": {
+    "status": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": "Research-stage HOLD; Human Editorial Release not open."
+  },
+  "changelog": [
+    {
+      "date": "2026-09-17",
+      "state": "RESEARCH",
+      "note": "Source-first lexical, scholarly, multilingual and IPA research structured."
+    },
+    {
+      "date": "2026-09-17",
+      "state": "HOLD",
+      "note": "Distinctiveness/evidence pass; pronunciation-audio rights unresolved."
+    }
+  ]
+}

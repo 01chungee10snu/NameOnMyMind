@@ -1,0 +1,228 @@
+{
+  "schema_version": "2.0.0",
+  "research_id": "RR-C0015-KO",
+  "card_id": "C0015",
+  "candidate": {
+    "term": "멋쩍다",
+    "language_code": "ko-KR",
+    "language_name": "한국어",
+    "experience_type": "feeling"
+  },
+  "lifecycle_state": "HOLD",
+  "source_inventory": [
+    {
+      "reference_id": "R0074",
+      "role": "lexical",
+      "quality_tier": "A"
+    },
+    {
+      "reference_id": "R0079",
+      "role": "pronunciation",
+      "quality_tier": "B"
+    },
+    {
+      "reference_id": "R0048",
+      "role": "rights",
+      "quality_tier": "A"
+    },
+    {
+      "reference_id": "R0080",
+      "role": "scholarly",
+      "quality_tier": "A"
+    },
+    {
+      "reference_id": "R0081",
+      "role": "scholarly",
+      "quality_tier": "A"
+    },
+    {
+      "reference_id": "R0088",
+      "role": "lexical",
+      "quality_tier": "A"
+    },
+    {
+      "reference_id": "R0093",
+      "role": "lexical",
+      "quality_tier": "A"
+    }
+  ],
+  "lexical_verification": {
+    "status": "PASS",
+    "summary": "국립국어원 한국어기초사전 표제어·정의·용례를 확인했다.",
+    "reference_ids": [
+      "R0074"
+    ]
+  },
+  "semantic_definition_and_boundaries": {
+    "status": "PASS",
+    "summary": "정서적 2번 의미에 한정하면 어색하고 쑥스러워 마음이 편하지 않은 상태다. embarrassment·awkwardness·shyness와 겹치지만 어느 하나가 ‘상황의 어색함+자기 의식적 쑥스러움’을 모두 고정하지 않는다.",
+    "reference_ids": [
+      "R0074",
+      "R0080",
+      "R0081"
+    ]
+  },
+  "cultural_context_review": {
+    "status": "PASS",
+    "summary": "한국어가 포착한 의미 결을 설명하되 문화적 독점성이나 번역불가능성을 주장하지 않는다.",
+    "reference_ids": [
+      "R0074",
+      "R0080",
+      "R0081"
+    ]
+  },
+  "comparisons": {
+    "ko": {
+      "status": "PASS",
+      "near_terms": [
+        "어색하다",
+        "쑥스럽다"
+      ],
+      "difference_note": "가까운 한국어 표현과 중첩되지만 의미 초점과 사용 맥락이 완전히 같지 않다.",
+      "verification_note": "Target lexical definition and scholarly emotion-vocabulary evidence support non-collapse.",
+      "reference_ids": [
+        "R0074",
+        "R0080",
+        "R0081"
+      ]
+    },
+    "en": {
+      "status": "PASS",
+      "near_terms": [
+        "ill at ease",
+        "uncomfortable",
+        "awkward"
+      ],
+      "difference_note": "영어 근접어는 일부 의미를 담지만 모든 한국어 용례를 일대일로 대체하지 않는다.",
+      "verification_note": "Official Krdict English gloss used as near-expression anchor.",
+      "reference_ids": [
+        "R0074"
+      ]
+    },
+    "zh": {
+      "status": "PASS",
+      "near_terms": [
+        "不自在",
+        "不自然"
+      ],
+      "difference_note": "중국어 대역은 가까운 표현이지만 문맥별 의미 잔여를 보존한다.",
+      "verification_note": "Official Krdict Chinese page.",
+      "reference_ids": [
+        "R0093"
+      ]
+    },
+    "ja": {
+      "status": "PASS",
+      "near_terms": [
+        "照れくさい",
+        "決まり悪い"
+      ],
+      "difference_note": "일본어 대역은 가까운 표현이지만 일대일 동일성을 주장하지 않는다.",
+      "verification_note": "Official Krdict Japanese page.",
+      "reference_ids": [
+        "R0088"
+      ]
+    }
+  },
+  "pronunciation_verification": {
+    "status": "HOLD",
+    "ipa": "[mʌ̹t̚t͡ɕ͈ʌ̹k̚t͈a̠]",
+    "locale": "ko-KR",
+    "reference_ids": [
+      "R0074",
+      "R0079",
+      "R0048"
+    ],
+    "audio_asset_id": null,
+    "notes": "Krdict phonetic Hangul and IPA are verified, but the official MP3 file-level commercial-use/modification rights remain unresolved; local research copy is not a product asset."
+  },
+  "claim_source_map": [
+    {
+      "claim_id": "CL-001",
+      "claim": "정서적 2번 의미에 한정하면 어색하고 쑥스러워 마음이 편하지 않은 상태다. embarrassment·awkwardness·shyness와 겹치지만 어느 하나가 ‘상황의 어색함+자기 의식적 쑥스러움’을 모두 고정하지 않는다.",
+      "reference_ids": [
+        "R0074",
+        "R0080",
+        "R0081"
+      ],
+      "evidence_locator": "Target lexical entry plus scholarly emotion-language evidence.",
+      "public_safe": true
+    }
+  ],
+  "relations": [],
+  "illustration_brief": {
+    "status": "HOLD",
+    "summary": "Deferred until pronunciation/rights gate is resolved.",
+    "reference_ids": [
+      "R0074",
+      "R0080",
+      "R0081"
+    ]
+  },
+  "editorial_copy": {
+    "status": "HOLD",
+    "summary": "Deferred until all product gates can be evaluated together.",
+    "reference_ids": [
+      "R0074",
+      "R0080",
+      "R0081"
+    ]
+  },
+  "automated_gates": {
+    "schema": "PASS",
+    "evidence": "PASS",
+    "pronunciation": "HOLD",
+    "cultural_humility": "PASS",
+    "rights": "HOLD",
+    "privacy": "PASS"
+  },
+  "distinctiveness_review": {
+    "status": "PASS",
+    "track": "KOREAN_NUANCE",
+    "generic_basic_emotion": false,
+    "nearest_cross_language_terms": {
+      "ko": [
+        "어색하다",
+        "쑥스럽다"
+      ],
+      "en": [
+        "ill at ease",
+        "uncomfortable",
+        "awkward"
+      ],
+      "zh": [
+        "不自在",
+        "不自然"
+      ],
+      "ja": [
+        "照れくさい",
+        "決まり悪い"
+      ]
+    },
+    "semantic_residue": "정서적 2번 의미에 한정하면 어색하고 쑥스러워 마음이 편하지 않은 상태다. embarrassment·awkwardness·shyness와 겹치지만 어느 하나가 ‘상황의 어색함+자기 의식적 쑥스러움’을 모두 고정하지 않는다.",
+    "residue_reference_ids": [
+      "R0074",
+      "R0080",
+      "R0081"
+    ],
+    "overclaim_to_avoid": "외형/행동이 분위기와 어울리지 않는 1번 의미를 정서 카드 정의에 섞지 않는다."
+  },
+  "human_editorial_release": {
+    "status": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": "Research-stage HOLD; Human Editorial Release not open."
+  },
+  "changelog": [
+    {
+      "date": "2026-09-17",
+      "state": "RESEARCH",
+      "note": "Source-first lexical, scholarly, multilingual and IPA research structured."
+    },
+    {
+      "date": "2026-09-17",
+      "state": "HOLD",
+      "note": "Distinctiveness/evidence pass; pronunciation-audio rights unresolved."
+    }
+  ]
+}
