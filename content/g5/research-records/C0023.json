@@ -1,0 +1,237 @@
+{
+  "schema_version": "2.1.0",
+  "research_id": "RR-C0023-FOREIGN",
+  "card_id": "C0023",
+  "candidate": {
+    "term": "тоска",
+    "language_code": "ru-RU",
+    "language_name": "Русский",
+    "experience_type": "mood"
+  },
+  "lifecycle_state": "HOLD",
+  "source_inventory": [
+    {
+      "reference_id": "R0117",
+      "role": "lexical",
+      "quality_tier": "A"
+    },
+    {
+      "reference_id": "R0118",
+      "role": "scholarly",
+      "quality_tier": "A"
+    },
+    {
+      "reference_id": "R0119",
+      "role": "pronunciation",
+      "quality_tier": "B"
+    }
+  ],
+  "lexical_verification": {
+    "status": "PASS",
+    "summary": "원어 권위 사전에서 목표 표제어와 카드에 사용할 의미 범위를 확인했다.",
+    "reference_ids": [
+      "R0117"
+    ]
+  },
+  "semantic_definition_and_boundaries": {
+    "status": "PASS",
+    "summary": "슬픔·우울·그리움·권태 중 하나의 한국어 단어로는 사전이 보여 주는 전체 의미 범위를 보존하기 어렵다. 특히 가슴을 누르는 내적 고통과 분리 그리움, 어두운 무관심이 문맥에 따라 한 어휘망 안에 연결된다.",
+    "reference_ids": [
+      "R0117",
+      "R0118"
+    ]
+  },
+  "cultural_context_review": {
+    "status": "PASS",
+    "summary": "언어·문화 맥락을 설명하되 해당 문화 사람만 이 경험을 느낀다는 본질주의나 번역불가능성 주장을 하지 않는다.",
+    "reference_ids": [
+      "R0117",
+      "R0118"
+    ]
+  },
+  "comparisons": {
+    "ko": {
+      "status": "PASS",
+      "near_terms": [
+        "가슴을 짓누르는 그리움",
+        "울적함",
+        "허무하고 답답한 슬픔"
+      ],
+      "difference_note": "한국어 근접어 하나로는 핵심 의미 패키지를 모두 보존하기 어렵다.",
+      "verification_note": "Korean Expression Cost review PASS.",
+      "reference_ids": [
+        "R0117",
+        "R0118"
+      ]
+    },
+    "en": {
+      "status": "HOLD",
+      "near_terms": [
+        "melancholy",
+        "yearning",
+        "oppressive sadness",
+        "ennui"
+      ],
+      "difference_note": "영어 근접어는 provisional이며 독립 lexical verification 전에는 최종 비교로 승격하지 않는다.",
+      "verification_note": "Research-stage provisional mapping.",
+      "reference_ids": [
+        "R0117"
+      ]
+    },
+    "zh": {
+      "status": "HOLD",
+      "near_terms": [
+        "忧郁",
+        "苦闷",
+        "思念"
+      ],
+      "difference_note": "원어가 중국어이면 target lexical evidence로 자체 의미를 확인했고, 그 외에는 provisional이다.",
+      "verification_note": "Target-language evidence or provisional mapping.",
+      "reference_ids": [
+        "R0117"
+      ]
+    },
+    "ja": {
+      "status": "HOLD",
+      "near_terms": [
+        "憂鬱",
+        "切ない憧れ",
+        "物悲しさ"
+      ],
+      "difference_note": "일본어 근접어는 provisional이며 독립 lexical verification 전에는 최종 비교로 승격하지 않는다.",
+      "verification_note": "Research-stage provisional mapping.",
+      "reference_ids": [
+        "R0117"
+      ]
+    }
+  },
+  "pronunciation_verification": {
+    "status": "HOLD",
+    "ipa": "[tɐˈska]",
+    "locale": "ru-RU",
+    "reference_ids": [
+      "R0119"
+    ],
+    "audio_asset_id": null,
+    "notes": "IPA/transliteration provenance is recorded, but exact product-safe audio source, creator, locale fit, license, rights, and SHA linkage are not yet verified."
+  },
+  "claim_source_map": [
+    {
+      "claim_id": "CL-001",
+      "claim": "슬픔·우울·그리움·권태 중 하나의 한국어 단어로는 사전이 보여 주는 전체 의미 범위를 보존하기 어렵다. 특히 가슴을 누르는 내적 고통과 분리 그리움, 어두운 무관심이 문맥에 따라 한 어휘망 안에 연결된다.",
+      "reference_ids": [
+        "R0117",
+        "R0118"
+      ],
+      "evidence_locator": "Target lexical definition plus directly relevant scholarly evidence.",
+      "public_safe": true
+    },
+    {
+      "claim_id": "CL-002",
+      "claim": "한국어의 흔한 한 단어 하나로는 핵심 의미 패키지를 모두 보존하기 어렵다.",
+      "reference_ids": [
+        "R0117",
+        "R0118"
+      ],
+      "evidence_locator": "Korean Expression Cost review against target semantic components.",
+      "public_safe": true
+    }
+  ],
+  "relations": [],
+  "illustration_brief": {
+    "status": "HOLD",
+    "summary": "Product audio rights and full multilingual comparison are incomplete; illustration is deferred.",
+    "reference_ids": [
+      "R0117"
+    ]
+  },
+  "editorial_copy": {
+    "status": "HOLD",
+    "summary": "Public poetic copy is deferred until all gates can be evaluated together.",
+    "reference_ids": [
+      "R0117",
+      "R0118"
+    ]
+  },
+  "automated_gates": {
+    "schema": "PASS",
+    "evidence": "PASS",
+    "pronunciation": "HOLD",
+    "cultural_humility": "PASS",
+    "rights": "HOLD",
+    "privacy": "PASS"
+  },
+  "distinctiveness_review": {
+    "status": "PASS",
+    "track": "FOREIGN_KOREAN_GAP",
+    "generic_basic_emotion": false,
+    "nearest_cross_language_terms": {
+      "ko": [
+        "가슴을 짓누르는 그리움",
+        "울적함",
+        "허무하고 답답한 슬픔"
+      ],
+      "en": [
+        "melancholy",
+        "yearning",
+        "oppressive sadness",
+        "ennui"
+      ],
+      "zh": [
+        "忧郁",
+        "苦闷",
+        "思念"
+      ],
+      "ja": [
+        "憂鬱",
+        "切ない憧れ",
+        "物悲しさ"
+      ]
+    },
+    "semantic_residue": "슬픔·우울·그리움·권태 중 하나의 한국어 단어로는 사전이 보여 주는 전체 의미 범위를 보존하기 어렵다. 특히 가슴을 누르는 내적 고통과 분리 그리움, 어두운 무관심이 문맥에 따라 한 어휘망 안에 연결된다.",
+    "residue_reference_ids": [
+      "R0117",
+      "R0118"
+    ],
+    "overclaim_to_avoid": "신비한 러시아 영혼의 번역불가능한 감정으로 묘사하거나 임상적 우울증과 동일시하지 않는다.",
+    "korean_expression_cost": {
+      "classification": "EXPLANATORY_PHRASE_REQUIRED",
+      "status": "PASS",
+      "nearest_korean_terms": [
+        "가슴을 짓누르는 그리움",
+        "울적함",
+        "허무하고 답답한 슬픔"
+      ],
+      "natural_korean_rendering": "마음이 짓눌리고 어둡게 가라앉으면서 때로는 누군가·어딘가를 간절히 그리워하고, 때로는 이유 없는 권태와 허무까지 겹치는 상태",
+      "residue_dimensions": [
+        "oppressive inner heaviness",
+        "melancholy or gloom",
+        "longing/yearning including separation",
+        "possible ennui/loss of interest"
+      ],
+      "reference_ids": [
+        "R0117",
+        "R0118"
+      ],
+      "rationale": "한국어의 흔한 한 단어가 의미 전체를 보존하는지 먼저 검토했다. 이 후보는 핵심 의미 요소가 여러 한국어 표현으로 분산되거나 설명적 구가 필요하며, 원어 사전과 직접 관련 학술 근거가 그 의미 잔여를 뒷받침한다."
+    }
+  },
+  "human_editorial_release": {
+    "status": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": "Research-stage HOLD. Human Editorial Release is not open until product audio rights and full multilingual comparison pass."
+  },
+  "changelog": [
+    {
+      "date": "2026-09-17",
+      "state": "RESEARCH",
+      "note": "Foreign semantic-gap source-first research under v2.1 Korean Expression Cost contract."
+    },
+    {
+      "date": "2026-09-17",
+      "state": "HOLD",
+      "note": "Core semantic gap passes; product audio rights and full multilingual comparison remain incomplete."
+    }
+  ]
+}

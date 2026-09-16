@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0.0",
+  "batch_id": "G5-F02-FOREIGN-SEMANTIC-GAP",
+  "status": "RESEARCH_CORE_PASS_PRODUCT_GATES_HOLD",
+  "recorded_at": "2026-09-17",
+  "card_ids": [
+    "C0021",
+    "C0022",
+    "C0023",
+    "C0024",
+    "C0025"
+  ],
+  "terms": [
+    "Torschlusspanik",
+    "舍不得",
+    "тоска",
+    "обида",
+    "طَرَب"
+  ],
+  "languages": [
+    "Deutsch",
+    "Русский",
+    "العربية",
+    "中文"
+  ],
+  "korean_expression_cost": {
+    "C0021": "EXPLANATORY_PHRASE_REQUIRED",
+    "C0022": "EXPLANATORY_PHRASE_REQUIRED",
+    "C0023": "EXPLANATORY_PHRASE_REQUIRED",
+    "C0024": "EXPLANATORY_PHRASE_REQUIRED",
+    "C0025": "EXPLANATORY_PHRASE_REQUIRED"
+  },
+  "screened_out": [
+    {
+      "term": "vergüenza ajena",
+      "status": "REJECTED_OR_HOLD_NEAR_KOREAN_EQUIVALENT",
+      "reason": "Korean 대리 수치(심) is already a compact conventional equivalent, so expression cost is not high enough for priority admission."
+    },
+    {
+      "term": "委屈",
+      "status": "HOLD_DIRECT_KOREAN_COMPARISON_REQUIRED",
+      "reason": "Korean 억울하다 may preserve much of the central unfair-treatment grievance meaning."
+    }
+  ],
+  "audio_rights": "HOLD_UNTIL_PRODUCT_SAFE_AUDIO_VERIFIED",
+  "full_multilingual_comparison": "HOLD_FOR_INDEPENDENT_EN_ZH_JA_LEXICAL_VERIFICATION",
+  "review_ready": 0,
+  "public_promotion_authorized": false,
+  "config": "content/g5/batches/02_foreign_semantic_gap_config.json"
+}
