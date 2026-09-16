@@ -1,0 +1,41 @@
+#!/usr/bin/env node
+import fs from 'node:fs';
+import path from 'node:path';
+import Ajv2020 from 'ajv/dist/2020.js';
+import addFormats from 'ajv-formats';
+import { fileURLToPath } from 'node:url';
+const ROOT=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'../..');
+const read=(rel)=>JSON.parse(fs.readFileSync(path.join(ROOT,rel),'utf8'));
+const fail=(m)=>{throw new Error(m);};
+const ids=['C0026','C0027','C0028','C0029','C0030'];
+const terms=['gigil','פִרְגּוּן','gezelligheid','dépaysement','やるせない'];
+const ajv=new Ajv2020({allErrors:true,strict:false});addFormats(ajv);
+const validate=ajv.compile(read('schema/g5-foreign-research-record.schema.json'));
+const refs=new Map(read('content/approved/references.json').references.map(x=>[x.reference_id,x]));
+const assets=read('content/approved/assets.json').assets;
+const batch=read('content/g5/batches/03_foreign_semantic_gap_research.json');
+const cfg=read('content/g5/batches/03_foreign_semantic_gap_config.json');
+if(batch.batch_id!=='G5-F03-FOREIGN-SEMANTIC-GAP'||batch.status!=='RESEARCH_CORE_PASS_PRODUCT_GATES_HOLD'||batch.public_promotion_authorized!==false)fail('batch boundary invalid');
+if(JSON.stringify(batch.card_ids)!==JSON.stringify(ids)||JSON.stringify(batch.terms)!==JSON.stringify(terms))fail('batch identity mismatch');
+if(batch.review_ready!==0||cfg.cards.length!==5||cfg.references.length!==15)fail('batch/config shape mismatch');
+for(let i=0;i<ids.length;i+=1){
+ const id=ids[i],rr=read(`content/g5/research-records/${id}.json`);
+ if(!validate(rr))fail(`${id} schema: ${JSON.stringify(validate.errors)}`);
+ if(rr.candidate.term!==terms[i]||rr.schema_version!=='2.1.0'||rr.lifecycle_state!=='HOLD')fail(`${id} identity/state mismatch`);
+ if(rr.distinctiveness_review.track!=='FOREIGN_KOREAN_GAP'||rr.distinctiveness_review.status!=='PASS'||rr.distinctiveness_review.generic_basic_emotion!==false)fail(`${id} distinctiveness boundary invalid`);
+ const cost=rr.distinctiveness_review.korean_expression_cost;
+ if(cost.status!=='PASS'||cost.classification!=='EXPLANATORY_PHRASE_REQUIRED'||cost.residue_dimensions.length<3||cost.natural_korean_rendering.length<30)fail(`${id} Korean Expression Cost invalid`);
+ if(rr.comparisons.ko.status!=='PASS')fail(`${id} Korean comparison not PASS`);
+ if(id==='C0030'){if(rr.comparisons.ja.status!=='PASS')fail('やるせない Japanese target comparison must PASS');}else if(rr.comparisons.ja.status!=='HOLD')fail(`${id} Japanese comparison should HOLD`);
+ for(const loc of ['en','zh'])if(rr.comparisons[loc].status!=='HOLD')fail(`${id} ${loc} comparison should HOLD pending independent lexical verification`);
+ if(rr.pronunciation_verification.status!=='HOLD'||rr.pronunciation_verification.audio_asset_id!==null)fail(`${id} pronunciation/audio boundary invalid`);
+ if(rr.automated_gates.pronunciation!=='HOLD'||rr.automated_gates.rights!=='HOLD')fail(`${id} rights gates must HOLD`);
+ if(rr.human_editorial_release.status!=='PENDING'||rr.human_editorial_release.reviewer!==null)fail(`${id} Human Release opened early`);
+ if(assets.some(a=>a.card_id===id))fail(`${id} product asset registered before rights verification`);
+ if(fs.existsSync(path.join(ROOT,`content/review/cards/${id}.json`))||fs.existsSync(path.join(ROOT,`public/data/cards/${id}.json`)))fail(`${id} leaked toward review/public`);
+ for(const rid of new Set([...rr.source_inventory.map(x=>x.reference_id),...cost.reference_ids,...rr.pronunciation_verification.reference_ids]))if(!refs.has(rid))fail(`${id} missing reference ${rid}`);
+ if(rr.source_inventory.filter(x=>x.role==='scholarly').length<1)fail(`${id} scholarly support missing`);
+}
+const publicCards=read('public/BUILD_MANIFEST.json').card_ids;
+if(JSON.stringify(publicCards)!==JSON.stringify(['C0001','C0002','C0003','C0004','C0005']))fail('public boundary changed');
+console.log(JSON.stringify({status:'PASS',batch_id:batch.batch_id,card_ids:ids,expression_cost:'5/5 EXPLANATORY_PHRASE_REQUIRED',review_ready:0,product_assets_registered:0,public_cards:publicCards},null,2));

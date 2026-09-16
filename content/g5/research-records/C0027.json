@@ -1,0 +1,229 @@
+{
+  "schema_version": "2.1.0",
+  "research_id": "RR-C0027-FOREIGN",
+  "card_id": "C0027",
+  "candidate": {
+    "term": "פִרְגּוּן",
+    "language_code": "he-IL",
+    "language_name": "עברית",
+    "experience_type": "relational_experience"
+  },
+  "lifecycle_state": "HOLD",
+  "source_inventory": [
+    {
+      "reference_id": "R0129",
+      "role": "lexical",
+      "quality_tier": "A"
+    },
+    {
+      "reference_id": "R0130",
+      "role": "scholarly",
+      "quality_tier": "A"
+    },
+    {
+      "reference_id": "R0131",
+      "role": "pronunciation",
+      "quality_tier": "B"
+    }
+  ],
+  "lexical_verification": {
+    "status": "PASS",
+    "summary": "원어 권위 사전에서 목표 표제어와 카드에 사용할 의미 범위를 확인했다.",
+    "reference_ids": [
+      "R0129"
+    ]
+  },
+  "semantic_definition_and_boundaries": {
+    "status": "PASS",
+    "summary": "한국어의 축하·응원·대견함은 각각 일부를 담지만, 남의 성공을 질투하지 않는 태도와 진심 어린 기쁨, 그것을 솔직하게 지지로 표현하는 관계적 자세를 한 단어로 묶지는 않는다.",
+    "reference_ids": [
+      "R0129",
+      "R0130"
+    ]
+  },
+  "cultural_context_review": {
+    "status": "PASS",
+    "summary": "언어·문화 맥락을 설명하되 해당 문화 사람만 이 경험을 느낀다는 본질주의나 번역불가능성 주장을 하지 않는다.",
+    "reference_ids": [
+      "R0129",
+      "R0130"
+    ]
+  },
+  "comparisons": {
+    "ko": {
+      "status": "PASS",
+      "near_terms": [
+        "남의 성공을 진심으로 기뻐하다",
+        "질투 없이 응원하다",
+        "아낌없이 인정하고 북돋다"
+      ],
+      "difference_note": "한국어 근접어 하나로는 핵심 의미 패키지를 모두 보존하기 어렵다.",
+      "verification_note": "Korean Expression Cost review PASS.",
+      "reference_ids": [
+        "R0129",
+        "R0130"
+      ]
+    },
+    "en": {
+      "status": "HOLD",
+      "near_terms": [
+        "ungrudging support",
+        "unselfish joy at another's success",
+        "sincere encouragement"
+      ],
+      "difference_note": "영어 근접어는 provisional이며 독립 lexical verification 전에는 최종 비교로 승격하지 않는다.",
+      "verification_note": "Research-stage provisional mapping.",
+      "reference_ids": [
+        "R0129"
+      ]
+    },
+    "zh": {
+      "status": "HOLD",
+      "near_terms": [
+        "真心为别人的成功高兴",
+        "不嫉妒地支持别人"
+      ],
+      "difference_note": "원어가 중국어이면 target lexical evidence로 자체 의미를 확인했고, 그 외에는 provisional이다.",
+      "verification_note": "Target-language evidence or provisional mapping.",
+      "reference_ids": [
+        "R0129"
+      ]
+    },
+    "ja": {
+      "status": "HOLD",
+      "near_terms": [
+        "人の成功を妬まず心から喜び応援すること"
+      ],
+      "difference_note": "일본어 근접어는 provisional이며 독립 lexical verification 전에는 최종 비교로 승격하지 않는다.",
+      "verification_note": "Research-stage provisional mapping.",
+      "reference_ids": [
+        "R0129"
+      ]
+    }
+  },
+  "pronunciation_verification": {
+    "status": "HOLD",
+    "ipa": "[fiʁɡˈun]",
+    "locale": "he-IL",
+    "reference_ids": [
+      "R0131"
+    ],
+    "audio_asset_id": null,
+    "notes": "IPA/transliteration provenance is recorded, but exact product-safe audio source, creator, locale fit, license, rights, and SHA linkage are not yet verified."
+  },
+  "claim_source_map": [
+    {
+      "claim_id": "CL-001",
+      "claim": "한국어의 축하·응원·대견함은 각각 일부를 담지만, 남의 성공을 질투하지 않는 태도와 진심 어린 기쁨, 그것을 솔직하게 지지로 표현하는 관계적 자세를 한 단어로 묶지는 않는다.",
+      "reference_ids": [
+        "R0129",
+        "R0130"
+      ],
+      "evidence_locator": "Target lexical definition plus directly relevant scholarly evidence.",
+      "public_safe": true
+    },
+    {
+      "claim_id": "CL-002",
+      "claim": "한국어의 흔한 한 단어 하나로는 핵심 의미 패키지를 모두 보존하기 어렵다.",
+      "reference_ids": [
+        "R0129",
+        "R0130"
+      ],
+      "evidence_locator": "Korean Expression Cost review against target semantic components.",
+      "public_safe": true
+    }
+  ],
+  "relations": [],
+  "illustration_brief": {
+    "status": "HOLD",
+    "summary": "Product audio rights and full multilingual comparison are incomplete; illustration is deferred.",
+    "reference_ids": [
+      "R0129"
+    ]
+  },
+  "editorial_copy": {
+    "status": "HOLD",
+    "summary": "Public poetic copy is deferred until all gates can be evaluated together.",
+    "reference_ids": [
+      "R0129",
+      "R0130"
+    ]
+  },
+  "automated_gates": {
+    "schema": "PASS",
+    "evidence": "PASS",
+    "pronunciation": "HOLD",
+    "cultural_humility": "PASS",
+    "rights": "HOLD",
+    "privacy": "PASS"
+  },
+  "distinctiveness_review": {
+    "status": "PASS",
+    "track": "FOREIGN_KOREAN_GAP",
+    "generic_basic_emotion": false,
+    "nearest_cross_language_terms": {
+      "ko": [
+        "남의 성공을 진심으로 기뻐하다",
+        "질투 없이 응원하다",
+        "아낌없이 인정하고 북돋다"
+      ],
+      "en": [
+        "ungrudging support",
+        "unselfish joy at another's success",
+        "sincere encouragement"
+      ],
+      "zh": [
+        "真心为别人的成功高兴",
+        "不嫉妒地支持别人"
+      ],
+      "ja": [
+        "人の成功を妬まず心から喜び応援すること"
+      ]
+    },
+    "semantic_residue": "한국어의 축하·응원·대견함은 각각 일부를 담지만, 남의 성공을 질투하지 않는 태도와 진심 어린 기쁨, 그것을 솔직하게 지지로 표현하는 관계적 자세를 한 단어로 묶지는 않는다.",
+    "residue_reference_ids": [
+      "R0129",
+      "R0130"
+    ],
+    "overclaim_to_avoid": "이스라엘 사람만 느끼는 감정이라고 주장하거나 단순한 칭찬·예의와 같은 것으로 취급하지 않는다.",
+    "korean_expression_cost": {
+      "classification": "EXPLANATORY_PHRASE_REQUIRED",
+      "status": "PASS",
+      "nearest_korean_terms": [
+        "남의 성공을 진심으로 기뻐하다",
+        "질투 없이 응원하다",
+        "아낌없이 인정하고 북돋다"
+      ],
+      "natural_korean_rendering": "다른 사람의 성공이나 좋은 일을 시기하거나 깎아내리지 않고 진심으로 기뻐하면서 공개적으로 인정하고 북돋아 주는 마음과 행동",
+      "residue_dimensions": [
+        "absence of envy",
+        "genuine joy in another's success",
+        "sincere supportive expression",
+        "solidarity rather than obligatory politeness"
+      ],
+      "reference_ids": [
+        "R0129",
+        "R0130"
+      ],
+      "rationale": "한국어의 흔한 한 단어가 의미 전체를 보존하는지 먼저 검토했다. 이 후보는 핵심 의미 요소가 여러 한국어 표현으로 분산되거나 설명적 구가 필요하며, 원어 사전과 직접 관련 학술 근거가 그 의미 잔여를 뒷받침한다."
+    }
+  },
+  "human_editorial_release": {
+    "status": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": "Research-stage HOLD. Human Editorial Release is not open until product audio rights and full multilingual comparison pass."
+  },
+  "changelog": [
+    {
+      "date": "2026-09-17",
+      "state": "RESEARCH",
+      "note": "Foreign semantic-gap source-first research under v2.1 Korean Expression Cost contract."
+    },
+    {
+      "date": "2026-09-17",
+      "state": "HOLD",
+      "note": "Core semantic gap passes; product audio rights and full multilingual comparison remain incomplete."
+    }
+  ]
+}

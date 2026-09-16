@@ -1,0 +1,231 @@
+{
+  "schema_version": "2.1.0",
+  "research_id": "RR-C0029-FOREIGN",
+  "card_id": "C0029",
+  "candidate": {
+    "term": "dépaysement",
+    "language_code": "fr-FR",
+    "language_name": "Français",
+    "experience_type": "situational_experience"
+  },
+  "lifecycle_state": "HOLD",
+  "source_inventory": [
+    {
+      "reference_id": "R0135",
+      "role": "lexical",
+      "quality_tier": "A"
+    },
+    {
+      "reference_id": "R0136",
+      "role": "scholarly",
+      "quality_tier": "A"
+    },
+    {
+      "reference_id": "R0137",
+      "role": "pronunciation",
+      "quality_tier": "B"
+    }
+  ],
+  "lexical_verification": {
+    "status": "PASS",
+    "summary": "원어 권위 사전에서 목표 표제어와 카드에 사용할 의미 범위를 확인했다.",
+    "reference_ids": [
+      "R0135"
+    ]
+  },
+  "semantic_definition_and_boundaries": {
+    "status": "PASS",
+    "summary": "한국어의 이질감·낯섦·기분전환 가운데 하나만으로는 익숙한 좌표를 잃는 당혹감과 환경 전환이 주는 새로움이 함께 있을 수 있다는 양면적 상태를 충분히 담기 어렵다.",
+    "reference_ids": [
+      "R0135",
+      "R0136"
+    ]
+  },
+  "cultural_context_review": {
+    "status": "PASS",
+    "summary": "언어·문화 맥락을 설명하되 해당 문화 사람만 이 경험을 느낀다는 본질주의나 번역불가능성 주장을 하지 않는다.",
+    "reference_ids": [
+      "R0135",
+      "R0136"
+    ]
+  },
+  "comparisons": {
+    "ko": {
+      "status": "PASS",
+      "near_terms": [
+        "낯선 곳에서 느끼는 이질감",
+        "환경이 확 바뀐 느낌",
+        "익숙한 일상에서 벗어난 새로움"
+      ],
+      "difference_note": "한국어 근접어 하나로는 핵심 의미 패키지를 모두 보존하기 어렵다.",
+      "verification_note": "Korean Expression Cost review PASS.",
+      "reference_ids": [
+        "R0135",
+        "R0136"
+      ]
+    },
+    "en": {
+      "status": "HOLD",
+      "near_terms": [
+        "disorientation in unfamiliar surroundings",
+        "change of scenery",
+        "being out of one's familiar environment"
+      ],
+      "difference_note": "영어 근접어는 provisional이며 독립 lexical verification 전에는 최종 비교로 승격하지 않는다.",
+      "verification_note": "Research-stage provisional mapping.",
+      "reference_ids": [
+        "R0135"
+      ]
+    },
+    "zh": {
+      "status": "HOLD",
+      "near_terms": [
+        "置身陌生环境的失重感",
+        "换了天地般的新鲜与不适"
+      ],
+      "difference_note": "원어가 중국어이면 target lexical evidence로 자체 의미를 확인했고, 그 외에는 provisional이다.",
+      "verification_note": "Target-language evidence or provisional mapping.",
+      "reference_ids": [
+        "R0135"
+      ]
+    },
+    "ja": {
+      "status": "HOLD",
+      "near_terms": [
+        "見知らぬ環境での違和感",
+        "日常から離れた新鮮さ"
+      ],
+      "difference_note": "일본어 근접어는 provisional이며 독립 lexical verification 전에는 최종 비교로 승격하지 않는다.",
+      "verification_note": "Research-stage provisional mapping.",
+      "reference_ids": [
+        "R0135"
+      ]
+    }
+  },
+  "pronunciation_verification": {
+    "status": "HOLD",
+    "ipa": "[de.pɛ.iz.mɑ̃]",
+    "locale": "fr-FR",
+    "reference_ids": [
+      "R0137"
+    ],
+    "audio_asset_id": null,
+    "notes": "IPA/transliteration provenance is recorded, but exact product-safe audio source, creator, locale fit, license, rights, and SHA linkage are not yet verified."
+  },
+  "claim_source_map": [
+    {
+      "claim_id": "CL-001",
+      "claim": "한국어의 이질감·낯섦·기분전환 가운데 하나만으로는 익숙한 좌표를 잃는 당혹감과 환경 전환이 주는 새로움이 함께 있을 수 있다는 양면적 상태를 충분히 담기 어렵다.",
+      "reference_ids": [
+        "R0135",
+        "R0136"
+      ],
+      "evidence_locator": "Target lexical definition plus directly relevant scholarly evidence.",
+      "public_safe": true
+    },
+    {
+      "claim_id": "CL-002",
+      "claim": "한국어의 흔한 한 단어 하나로는 핵심 의미 패키지를 모두 보존하기 어렵다.",
+      "reference_ids": [
+        "R0135",
+        "R0136"
+      ],
+      "evidence_locator": "Korean Expression Cost review against target semantic components.",
+      "public_safe": true
+    }
+  ],
+  "relations": [],
+  "illustration_brief": {
+    "status": "HOLD",
+    "summary": "Product audio rights and full multilingual comparison are incomplete; illustration is deferred.",
+    "reference_ids": [
+      "R0135"
+    ]
+  },
+  "editorial_copy": {
+    "status": "HOLD",
+    "summary": "Public poetic copy is deferred until all gates can be evaluated together.",
+    "reference_ids": [
+      "R0135",
+      "R0136"
+    ]
+  },
+  "automated_gates": {
+    "schema": "PASS",
+    "evidence": "PASS",
+    "pronunciation": "HOLD",
+    "cultural_humility": "PASS",
+    "rights": "HOLD",
+    "privacy": "PASS"
+  },
+  "distinctiveness_review": {
+    "status": "PASS",
+    "track": "FOREIGN_KOREAN_GAP",
+    "generic_basic_emotion": false,
+    "nearest_cross_language_terms": {
+      "ko": [
+        "낯선 곳에서 느끼는 이질감",
+        "환경이 확 바뀐 느낌",
+        "익숙한 일상에서 벗어난 새로움"
+      ],
+      "en": [
+        "disorientation in unfamiliar surroundings",
+        "change of scenery",
+        "being out of one's familiar environment"
+      ],
+      "zh": [
+        "置身陌生环境的失重感",
+        "换了天地般的新鲜与不适"
+      ],
+      "ja": [
+        "見知らぬ環境での違和感",
+        "日常から離れた新鮮さ"
+      ]
+    },
+    "semantic_residue": "한국어의 이질감·낯섦·기분전환 가운데 하나만으로는 익숙한 좌표를 잃는 당혹감과 환경 전환이 주는 새로움이 함께 있을 수 있다는 양면적 상태를 충분히 담기 어렵다.",
+    "residue_reference_ids": [
+      "R0135",
+      "R0136"
+    ],
+    "overclaim_to_avoid": "항상 즐거운 여행 감정이라고 미화하거나 향수병과 같은 것으로 고정하지 않는다.",
+    "korean_expression_cost": {
+      "classification": "EXPLANATORY_PHRASE_REQUIRED",
+      "status": "PASS",
+      "nearest_korean_terms": [
+        "낯선 곳에서 느끼는 이질감",
+        "환경이 확 바뀐 느낌",
+        "익숙한 일상에서 벗어난 새로움"
+      ],
+      "natural_korean_rendering": "익숙한 생활환경과 기준점에서 벗어나 전혀 다른 장소·분위기 속에 놓이면서 방향을 잃은 듯 낯설기도 하고, 동시에 일상에서 벗어난 새로움을 느끼는 상태",
+      "residue_dimensions": [
+        "removal from familiar setting",
+        "disorientation/estrangement",
+        "change of atmosphere",
+        "can be pleasurable or uncomfortable"
+      ],
+      "reference_ids": [
+        "R0135",
+        "R0136"
+      ],
+      "rationale": "한국어의 흔한 한 단어가 의미 전체를 보존하는지 먼저 검토했다. 이 후보는 핵심 의미 요소가 여러 한국어 표현으로 분산되거나 설명적 구가 필요하며, 원어 사전과 직접 관련 학술 근거가 그 의미 잔여를 뒷받침한다."
+    }
+  },
+  "human_editorial_release": {
+    "status": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": "Research-stage HOLD. Human Editorial Release is not open until product audio rights and full multilingual comparison pass."
+  },
+  "changelog": [
+    {
+      "date": "2026-09-17",
+      "state": "RESEARCH",
+      "note": "Foreign semantic-gap source-first research under v2.1 Korean Expression Cost contract."
+    },
+    {
+      "date": "2026-09-17",
+      "state": "HOLD",
+      "note": "Core semantic gap passes; product audio rights and full multilingual comparison remain incomplete."
+    }
+  ]
+}

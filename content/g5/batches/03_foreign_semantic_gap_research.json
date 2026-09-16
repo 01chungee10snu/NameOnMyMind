@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0.0",
+  "batch_id": "G5-F03-FOREIGN-SEMANTIC-GAP",
+  "status": "RESEARCH_CORE_PASS_PRODUCT_GATES_HOLD",
+  "recorded_at": "2026-09-17",
+  "card_ids": [
+    "C0026",
+    "C0027",
+    "C0028",
+    "C0029",
+    "C0030"
+  ],
+  "terms": [
+    "gigil",
+    "פִרְגּוּן",
+    "gezelligheid",
+    "dépaysement",
+    "やるせない"
+  ],
+  "languages": [
+    "Filipino / Tagalog",
+    "Français",
+    "Nederlands",
+    "עברית",
+    "日本語"
+  ],
+  "korean_expression_cost": {
+    "C0026": "EXPLANATORY_PHRASE_REQUIRED",
+    "C0027": "EXPLANATORY_PHRASE_REQUIRED",
+    "C0028": "EXPLANATORY_PHRASE_REQUIRED",
+    "C0029": "EXPLANATORY_PHRASE_REQUIRED",
+    "C0030": "EXPLANATORY_PHRASE_REQUIRED"
+  },
+  "screened_out": [],
+  "audio_rights": "HOLD_UNTIL_PRODUCT_SAFE_AUDIO_VERIFIED",
+  "full_multilingual_comparison": "HOLD_FOR_INDEPENDENT_EN_ZH_JA_LEXICAL_VERIFICATION",
+  "review_ready": 0,
+  "public_promotion_authorized": false,
+  "config": "content/g5/batches/03_foreign_semantic_gap_config.json"
+}

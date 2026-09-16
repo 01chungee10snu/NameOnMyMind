@@ -22,7 +22,7 @@
     "packet:g4": "node scripts/build-g4-review-packet.mjs",
     "test:g5-selection": "node --test tests/g5/editorial-selection.test.mjs",
     "check:g5-selection": "npm run check:g4 && npm run test:g5-selection && npm run check:privacy",
-    "validate:g5-research": "node scripts/g5/validate-korean-batch01-research.mjs && node scripts/g5/validate-all-g5-research.mjs && node scripts/g5/validate-foreign-batch01-research.mjs && node scripts/g5/validate-foreign-batch02-research.mjs",
+    "validate:g5-research": "node scripts/g5/validate-korean-batch01-research.mjs && node scripts/g5/validate-all-g5-research.mjs && node scripts/g5/validate-foreign-batch01-research.mjs && node scripts/g5/validate-foreign-batch02-research.mjs && node scripts/g5/validate-foreign-batch03-research.mjs",
     "check:g5-research": "npm run check:g5-selection && npm run validate:g5-research && npm run check:privacy"
   },
   "devDependencies": {

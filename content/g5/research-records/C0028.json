@@ -1,0 +1,232 @@
+{
+  "schema_version": "2.1.0",
+  "research_id": "RR-C0028-FOREIGN",
+  "card_id": "C0028",
+  "candidate": {
+    "term": "gezelligheid",
+    "language_code": "nl-NL",
+    "language_name": "Nederlands",
+    "experience_type": "social_atmospheric_experience"
+  },
+  "lifecycle_state": "HOLD",
+  "source_inventory": [
+    {
+      "reference_id": "R0132",
+      "role": "lexical",
+      "quality_tier": "A"
+    },
+    {
+      "reference_id": "R0133",
+      "role": "scholarly",
+      "quality_tier": "A"
+    },
+    {
+      "reference_id": "R0134",
+      "role": "pronunciation",
+      "quality_tier": "B"
+    }
+  ],
+  "lexical_verification": {
+    "status": "PASS",
+    "summary": "원어 권위 사전에서 목표 표제어와 카드에 사용할 의미 범위를 확인했다.",
+    "reference_ids": [
+      "R0132"
+    ]
+  },
+  "semantic_definition_and_boundaries": {
+    "status": "PASS",
+    "summary": "한국어 정겨움·아늑함·화기애애함은 각각 가까우나, 물리적 아늑함과 사람 사이의 친밀함·즐거움·사교성·집 같은 편안함을 하나의 사회적 분위기 개념으로 묶는 폭이 남는다.",
+    "reference_ids": [
+      "R0132",
+      "R0133"
+    ]
+  },
+  "cultural_context_review": {
+    "status": "PASS",
+    "summary": "언어·문화 맥락을 설명하되 해당 문화 사람만 이 경험을 느낀다는 본질주의나 번역불가능성 주장을 하지 않는다.",
+    "reference_ids": [
+      "R0132",
+      "R0133"
+    ]
+  },
+  "comparisons": {
+    "ko": {
+      "status": "PASS",
+      "near_terms": [
+        "정겹고 아늑한 분위기",
+        "함께 있어 편안하고 즐거운 느낌",
+        "화기애애함"
+      ],
+      "difference_note": "한국어 근접어 하나로는 핵심 의미 패키지를 모두 보존하기 어렵다.",
+      "verification_note": "Korean Expression Cost review PASS.",
+      "reference_ids": [
+        "R0132",
+        "R0133"
+      ]
+    },
+    "en": {
+      "status": "HOLD",
+      "near_terms": [
+        "coziness",
+        "conviviality",
+        "social warmth"
+      ],
+      "difference_note": "영어 근접어는 provisional이며 독립 lexical verification 전에는 최종 비교로 승격하지 않는다.",
+      "verification_note": "Research-stage provisional mapping.",
+      "reference_ids": [
+        "R0132"
+      ]
+    },
+    "zh": {
+      "status": "HOLD",
+      "near_terms": [
+        "温馨热闹的相聚感",
+        "亲密而舒适的社交氛围"
+      ],
+      "difference_note": "원어가 중국어이면 target lexical evidence로 자체 의미를 확인했고, 그 외에는 provisional이다.",
+      "verification_note": "Target-language evidence or provisional mapping.",
+      "reference_ids": [
+        "R0132"
+      ]
+    },
+    "ja": {
+      "status": "HOLD",
+      "near_terms": [
+        "居心地のよい団らん",
+        "親密で楽しい雰囲気"
+      ],
+      "difference_note": "일본어 근접어는 provisional이며 독립 lexical verification 전에는 최종 비교로 승격하지 않는다.",
+      "verification_note": "Research-stage provisional mapping.",
+      "reference_ids": [
+        "R0132"
+      ]
+    }
+  },
+  "pronunciation_verification": {
+    "status": "HOLD",
+    "ipa": "[ɣəˈzɛ.ləxˌɦɛi̯t]",
+    "locale": "nl-NL",
+    "reference_ids": [
+      "R0134"
+    ],
+    "audio_asset_id": null,
+    "notes": "IPA/transliteration provenance is recorded, but exact product-safe audio source, creator, locale fit, license, rights, and SHA linkage are not yet verified."
+  },
+  "claim_source_map": [
+    {
+      "claim_id": "CL-001",
+      "claim": "한국어 정겨움·아늑함·화기애애함은 각각 가까우나, 물리적 아늑함과 사람 사이의 친밀함·즐거움·사교성·집 같은 편안함을 하나의 사회적 분위기 개념으로 묶는 폭이 남는다.",
+      "reference_ids": [
+        "R0132",
+        "R0133"
+      ],
+      "evidence_locator": "Target lexical definition plus directly relevant scholarly evidence.",
+      "public_safe": true
+    },
+    {
+      "claim_id": "CL-002",
+      "claim": "한국어의 흔한 한 단어 하나로는 핵심 의미 패키지를 모두 보존하기 어렵다.",
+      "reference_ids": [
+        "R0132",
+        "R0133"
+      ],
+      "evidence_locator": "Korean Expression Cost review against target semantic components.",
+      "public_safe": true
+    }
+  ],
+  "relations": [],
+  "illustration_brief": {
+    "status": "HOLD",
+    "summary": "Product audio rights and full multilingual comparison are incomplete; illustration is deferred.",
+    "reference_ids": [
+      "R0132"
+    ]
+  },
+  "editorial_copy": {
+    "status": "HOLD",
+    "summary": "Public poetic copy is deferred until all gates can be evaluated together.",
+    "reference_ids": [
+      "R0132",
+      "R0133"
+    ]
+  },
+  "automated_gates": {
+    "schema": "PASS",
+    "evidence": "PASS",
+    "pronunciation": "HOLD",
+    "cultural_humility": "PASS",
+    "rights": "HOLD",
+    "privacy": "PASS"
+  },
+  "distinctiveness_review": {
+    "status": "PASS",
+    "track": "FOREIGN_KOREAN_GAP",
+    "generic_basic_emotion": false,
+    "nearest_cross_language_terms": {
+      "ko": [
+        "정겹고 아늑한 분위기",
+        "함께 있어 편안하고 즐거운 느낌",
+        "화기애애함"
+      ],
+      "en": [
+        "coziness",
+        "conviviality",
+        "social warmth"
+      ],
+      "zh": [
+        "温馨热闹的相聚感",
+        "亲密而舒适的社交氛围"
+      ],
+      "ja": [
+        "居心地のよい団らん",
+        "親密で楽しい雰囲気"
+      ]
+    },
+    "semantic_residue": "한국어 정겨움·아늑함·화기애애함은 각각 가까우나, 물리적 아늑함과 사람 사이의 친밀함·즐거움·사교성·집 같은 편안함을 하나의 사회적 분위기 개념으로 묶는 폭이 남는다.",
+    "residue_reference_ids": [
+      "R0132",
+      "R0133"
+    ],
+    "overclaim_to_avoid": "네덜란드 사람에게만 가능한 국민적 정서라고 본질화하거나 단순한 cozy 하나로 축소하지 않는다.",
+    "korean_expression_cost": {
+      "classification": "EXPLANATORY_PHRASE_REQUIRED",
+      "status": "PASS",
+      "nearest_korean_terms": [
+        "정겹고 아늑한 분위기",
+        "함께 있어 편안하고 즐거운 느낌",
+        "화기애애함"
+      ],
+      "natural_korean_rendering": "사람들과 함께 있으면서 공간도 아늑하고 관계도 친밀하며, 부담 없이 어울리고 웃을 수 있어 집처럼 편안하고 즐거운 분위기와 느낌",
+      "residue_dimensions": [
+        "coziness",
+        "intimacy",
+        "fun",
+        "sociability",
+        "homeliness/shared atmosphere"
+      ],
+      "reference_ids": [
+        "R0132",
+        "R0133"
+      ],
+      "rationale": "한국어의 흔한 한 단어가 의미 전체를 보존하는지 먼저 검토했다. 이 후보는 핵심 의미 요소가 여러 한국어 표현으로 분산되거나 설명적 구가 필요하며, 원어 사전과 직접 관련 학술 근거가 그 의미 잔여를 뒷받침한다."
+    }
+  },
+  "human_editorial_release": {
+    "status": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": "Research-stage HOLD. Human Editorial Release is not open until product audio rights and full multilingual comparison pass."
+  },
+  "changelog": [
+    {
+      "date": "2026-09-17",
+      "state": "RESEARCH",
+      "note": "Foreign semantic-gap source-first research under v2.1 Korean Expression Cost contract."
+    },
+    {
+      "date": "2026-09-17",
+      "state": "HOLD",
+      "note": "Core semantic gap passes; product audio rights and full multilingual comparison remain incomplete."
+    }
+  ]
+}
