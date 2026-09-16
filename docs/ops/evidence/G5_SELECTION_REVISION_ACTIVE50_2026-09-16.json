@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "goal": "G5",
+  "artifact": "EDITORIAL_SELECTION_REVISION_ACTIVE50",
+  "status": "LOCKED_PASS",
+  "recorded_at": "2026-09-16",
+  "supersedes_selection_baseline_commit": "94170dcd6215d5f04ea8c2277f8933b8823aee24",
+  "reason": "User clarified that envy and 幸福 are too close to ordinary Korean everyday vocabulary for the final editorial collection and requested a stronger focus on nuanced Korean emotion terms / material semantic gaps.",
+  "g4_canary_audit_preserved": [
+    "C0004",
+    "C0005"
+  ],
+  "g5_final_active_policy": {
+    "planned_retirements_at_cutover": [
+      "C0004",
+      "C0005"
+    ],
+    "new_cards_required": 47,
+    "new_card_id_range": "C0006-C0052",
+    "target_korean_nuance": 20,
+    "target_non_korean_material_korean_gap": 27,
+    "final_active_count": 50,
+    "final_active_set_rule": "C0001-C0003 plus C0006-C0052",
+    "retirement_deferred_until_all_47_new_cards_human_approved": true
+  },
+  "current_public_boundary": {
+    "card_ids": [
+      "C0001",
+      "C0002",
+      "C0003",
+      "C0004",
+      "C0005"
+    ],
+    "reason": "Preserve verified G4 canary until the versioned G5 release cutover; no premature retirement while replacement set is incomplete."
+  },
+  "verification": {
+    "g5_selection_tests": "8/8 PASS",
+    "g5_review_packet_syntax": "PASS",
+    "diversity_matrix_generation": "PASS",
+    "g1": "12/12 PASS",
+    "g2": "5/5 PASS",
+    "g3": "8/8 PASS",
+    "g4": "9/9 PASS",
+    "g5_selection": "8/8 PASS",
+    "g5_batch01_validator": "PASS",
+    "privacy_violations": 0,
+    "npm_vulnerabilities": 0,
+    "current_public_card_ids": [
+      "C0001",
+      "C0002",
+      "C0003",
+      "C0004",
+      "C0005"
+    ],
+    "current_public_snapshot": "24aebc81d2a7088d"
+  },
+  "external_publish_authorized": false,
+  "repository_push_authorized": false,
+  "sha256": {
+    "docs/ops/G5_EDITORIAL_SELECTION_CONTRACT.md": "7d2bb2785678c67a9a22e163074caeb261dc24c26dda6bbba677d0c498115e1a",
+    "content/g5/candidate-pool.json": "a51bf112888645842e8713c297f67b61ce076dc32183107460e5511cf0c9d7a5",
+    "content/g5/generic-candidate-rejections.json": "a72e7f04ec0b54970ef92751a13472f3e42ab1eacb69ca6bd56e14ee6ef7d047",
+    "tests/g5/editorial-selection.test.mjs": "8d6b98d6d1d7564ba84402bb572acfe122d41b392d4f8cd3e262e8eb22b56097",
+    "scripts/g5/build-g5-review-packet.mjs": "ac8bdecb5e514700f077bd8ab48599c33dac62bfac9909d63e8191fbd93565f3",
+    "scripts/g5/build-diversity-matrix.mjs": "f9bd7ca6c8bdaddda3bd1160a8b0a0a2d67c083555c3a7c8463527cf90e72fd0",
+    "docs/ops/evidence/G5_DIVERSITY_MATRIX.json": "7495a145c8ce7d98364551c48bbadef3f96c9bcdbfc8b580b79f6dbbb2d5e703"
+  }
+}

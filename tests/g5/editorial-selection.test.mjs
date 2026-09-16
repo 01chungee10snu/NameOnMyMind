@@ -15,18 +15,22 @@ const pronunciation = readJson('content/g5/korean-pronunciation-provenance-canar
 const contract = readText('docs/ops/G5_EDITORIAL_SELECTION_CONTRACT.md');
 
 test('G5 editorial contract prioritizes nuanced Korean and material Korean lexical gaps', () => {
-  assert.match(contract, /18 Korean nuanced terms\/expressions/);
+  assert.match(contract, /20 Korean nuanced terms\/expressions/);
   assert.match(contract, /27 non-Korean terms with a material Korean one-word gap/);
+  assert.match(contract, /47 new editorial cards/);
   assert.match(contract, /REJECTED_GENERIC_EQUIVALENT/);
   assert.match(contract, /한 단어로 완전히 겹치지는 않는 표현/);
   assert.match(contract, /Never say:[\s\S]*Koreans are the only people who feel X/);
   assert.match(contract, /Never say:[\s\S]*This word cannot be translated/);
 });
 
-test('envy and 幸福 are preserved as G4 canary exceptions rather than G5 templates', () => {
-  const exceptions = new Map(rejections.grandfathered_g4_canary_exceptions.map((x) => [x.card_id, x.term]));
-  assert.equal(exceptions.get('C0004'), 'envy');
-  assert.equal(exceptions.get('C0005'), '幸福');
+test('envy and 幸福 are preserved as G4 canary evidence but planned out of the final active 50', () => {
+  const exceptions = new Map(rejections.grandfathered_g4_canary_exceptions.map((x) => [x.card_id, x]));
+  assert.equal(exceptions.get('C0004').term, 'envy');
+  assert.equal(exceptions.get('C0005').term, '幸福');
+  assert.equal(exceptions.get('C0004').g5_final_active_status, 'PLANNED_RETIRE_AT_G5_CUTOVER');
+  assert.equal(exceptions.get('C0005').g5_final_active_status, 'PLANNED_RETIRE_AT_G5_CUTOVER');
+  assert.match(rejections.final_active_collection_rule, /C0006-C0052/);
   const newTerms = new Set(pool.candidates.map((x) => x.term));
   assert.equal(newTerms.has('envy'), false);
   assert.equal(newTerms.has('幸福'), false);
@@ -36,7 +40,12 @@ test('G5 candidate pool is distinctiveness-first and includes substantial Korean
   assert.equal(pool.schema_version, '2.0.0');
   const korean = pool.candidates.filter((x) => x.track === 'KOREAN_NUANCE');
   const foreign = pool.candidates.filter((x) => x.track === 'FOREIGN_KOREAN_GAP');
-  assert.ok(korean.length >= 18, `expected at least 18 Korean candidates, got ${korean.length}`);
+  assert.equal(pool.composition_target.new_korean_nuance, 20);
+  assert.equal(pool.composition_target.new_non_korean_gap, 27);
+  assert.equal(pool.composition_target.total_new, 47);
+  assert.equal(pool.composition_target.final_active_cards, 50);
+  assert.deepEqual(pool.composition_target.planned_retirements, ['C0004','C0005']);
+  assert.ok(korean.length >= 20, `expected at least 20 Korean candidates, got ${korean.length}`);
   assert.ok(foreign.length >= 27, `expected at least 27 foreign gap candidates, got ${foreign.length}`);
   for (const term of ['서운하다','아쉽다','섭섭하다','뿌듯하다','뭉클하다','억울하다','후련하다','찜찜하다','먹먹하다','착잡하다']) {
     assert.ok(korean.some((x) => x.term === term), `${term} missing from Korean nuance pool`);
@@ -90,7 +99,9 @@ test('G5 Research Record v2 requires a distinctiveness review without mutating G
   assert.deepEqual(v2.properties.distinctiveness_review.properties.status.enum, ['PASS','HOLD','REJECTED_GENERIC_EQUIVALENT']);
 });
 
-test('public projection remains the five human-approved G4 cards while G5 research is blocked', () => {
+test('G5 final cutover targets C0001-C0003 plus C0006-C0052 while current canary stays five-card', () => {
+  assert.match(contract, /C0001-C0003 plus C0006-C0052/);
+  assert.match(contract, /C0004\/C0005 remain PUBLISHED only/);
   const manifest = readJson('public/BUILD_MANIFEST.json');
   assert.deepEqual(manifest.card_ids, ['C0001','C0002','C0003','C0004','C0005']);
   for (const id of ['C0006','C0007','C0008','C0009','C0010']) {

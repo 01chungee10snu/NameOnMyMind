@@ -2,13 +2,46 @@
   "schema_version": "1.0.0",
   "reason": "G5 editorial distinctiveness gate strengthened after user review. These are not invalid emotions; they are weak final-card choices because ordinary Korean already has close everyday lexical coverage.",
   "grandfathered_g4_canary_exceptions": [
-    {"card_id":"C0004","term":"envy","reason":"G4 pipeline canary only; Korean 부러움/질투 provides strong everyday coverage."},
-    {"card_id":"C0005","term":"幸福","reason":"G4 pipeline canary only; Korean 행복 provides strong everyday coverage."}
+    {
+      "card_id": "C0004",
+      "term": "envy",
+      "reason": "G4 pipeline canary only; Korean 부러움/질투 provides strong everyday coverage.",
+      "g5_final_active_status": "PLANNED_RETIRE_AT_G5_CUTOVER"
+    },
+    {
+      "card_id": "C0005",
+      "term": "幸福",
+      "reason": "G4 pipeline canary only; Korean 행복 provides strong everyday coverage.",
+      "g5_final_active_status": "PLANNED_RETIRE_AT_G5_CUTOVER"
+    }
   ],
   "rejected_from_new_g5_admission": [
-    "joy","sadness","fear","anger","surprise","happiness","envy","pride","shame","guilt",
-    "tristesse","peur","colère","joie","fierté","tristeza","alegría","miedo","orgullo",
-    "tristeza (pt)","alegria","orgulho","嬉しい","悲しい","幸福"
+    "joy",
+    "sadness",
+    "fear",
+    "anger",
+    "surprise",
+    "happiness",
+    "envy",
+    "pride",
+    "shame",
+    "guilt",
+    "tristesse",
+    "peur",
+    "colère",
+    "joie",
+    "fierté",
+    "tristeza",
+    "alegría",
+    "miedo",
+    "orgullo",
+    "tristeza (pt)",
+    "alegria",
+    "orgulho",
+    "嬉しい",
+    "悲しい",
+    "幸福"
   ],
-  "preservation_note": "The archived pre-distinctiveness candidate pool and audio scan are retained under content/g5/archive as failed/exploratory evidence and are not canonical G5 admission inputs."
+  "preservation_note": "The archived pre-distinctiveness candidate pool and audio scan are retained under content/g5/archive as failed/exploratory evidence and are not canonical G5 admission inputs.",
+  "final_active_collection_rule": "C0004/C0005 audit evidence is preserved, but they are removed from the active/public projection only after 47 replacement cards C0006-C0052 have all passed Human Editorial Release and full regression."
 }

@@ -7,7 +7,7 @@ Date: 2026-09-16
 
 The G4 canary proved the evidence/runtime pipeline, but a technically valid card is not automatically a strong final editorial choice.
 
-`envy` (C0004) and `幸福` (C0005) remain valid auditable G4 canary records because they passed the agreed machine and Human Editorial Release gates. They are **grandfathered canary exceptions**, not templates for G5 selection. Their evidence must not be erased or rewritten merely to make the final collection look more distinctive.
+`envy` (C0004) and `幸福` (C0005) remain valid auditable G4 canary records because they passed the agreed machine and Human Editorial Release gates. Their evidence must not be erased or rewritten. **However, they are canary-only records and are not counted toward the final G5 active 50-card editorial collection.** They remain in the current local public canary until G5 release cutover; after 47 new cards pass every gate and Human Editorial Release, C0004/C0005 are retired from the active/public set while their audit records are preserved.
 
 ## New G5 admission principle
 
@@ -41,9 +41,9 @@ Priority foreign research candidates include concepts such as `Geborgenheit`, `F
 
 ## Composition target
 
-For the 45 new G5 slots, the research queue should aim for approximately:
+Because two G4 cards are canary-only planned retirements, G5 requires **47 new editorial cards** so the final active collection still contains exactly 50 cards. The research queue should aim for approximately:
 
-- **18 Korean nuanced terms/expressions**
+- **20 Korean nuanced terms/expressions**
 - **27 non-Korean terms with a material Korean one-word gap**
 
 This is an editorial diversity target, not permission to weaken evidence. If a term fails lexical, scholarly, pronunciation, rights, comparison, cultural-humility, or Human Editorial Release gates, it is replaced rather than forced through.
@@ -75,3 +75,13 @@ Prefer:
 > “한 단어로 완전히 겹치지는 않는 표현”
 
 and show the nearest terms plus the remaining difference.
+
+## G5 final-release cutover
+
+Before G5 Human Release, C0004/C0005 remain PUBLISHED only to preserve the already-verified G4 canary and regression baseline. After C0006-C0052 have all passed machine gates and explicit Human Editorial Release, the release cutover must:
+
+1. preserve C0004/C0005 card, Research Record, Human Release, and G4 evidence as immutable historical audit material;
+2. remove C0004/C0005 from the active `content/approved/cards` projection through a versioned retirement artifact, not deletion;
+3. promote the 47 new cards;
+4. verify that the active/public bundle contains exactly 50 cards: C0001-C0003 plus C0006-C0052;
+5. run full clean-checkout regression before G5 COMPLETE.

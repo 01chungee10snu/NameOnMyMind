@@ -1,0 +1,83 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at_date": "2026-09-16",
+  "total_cards": 5,
+  "approved_count": 5,
+  "review_ready_count": 0,
+  "planned_retirement_ids": [
+    "C0004",
+    "C0005"
+  ],
+  "prospective_active_count": 3,
+  "final_active_target": 50,
+  "prospective_active_by_language_code": {
+    "de": 1,
+    "de-DE": 1,
+    "pt-BR": 1
+  },
+  "prospective_active_by_experience_type": {
+    "emotion": 1,
+    "mixed_experience": 2
+  },
+  "by_language_code": {
+    "de": 1,
+    "de-DE": 1,
+    "en-US": 1,
+    "ja": 1,
+    "pt-BR": 1
+  },
+  "by_language_name": {
+    "Deutsch": 2,
+    "English (United States)": 1,
+    "Português (Brasil)": 1,
+    "日本語": 1
+  },
+  "by_experience_type": {
+    "emotion": 2,
+    "mixed_experience": 2,
+    "psychological_state": 1
+  },
+  "by_script": {
+    "Han": 1,
+    "Latin": 4
+  },
+  "semantic_tag_counts": {
+    "absence": 2,
+    "advantage": 1,
+    "attachment": 1,
+    "contentment": 1,
+    "desire": 1,
+    "distance": 2,
+    "evaluation": 1,
+    "fortune-of-other": 2,
+    "happiness": 1,
+    "inferiority": 1,
+    "longing": 2,
+    "loss": 1,
+    "memory": 1,
+    "others-misfortune": 1,
+    "pleasure": 1,
+    "positive-state": 1,
+    "possibility": 1,
+    "satisfaction": 1,
+    "social-comparison": 2,
+    "unrealized-life": 1,
+    "wellbeing": 1,
+    "yearning": 1
+  },
+  "relation_pair_count": 1,
+  "relation_pairs": [
+    {
+      "source": "C0003",
+      "target": "C0004",
+      "kind": "partially_overlaps"
+    }
+  ],
+  "boundaries": {
+    "diversity_is_descriptive_not_a_publication_gate": true,
+    "no_language_quota_overrides_evidence_gates": true,
+    "failed_candidates_must_be_replaced_not_forced": true,
+    "c0004_c0005_canary_evidence_preserved_but_final_active_retirement_planned": true,
+    "final_release_requires_exactly_50_active_cards": true
+  }
+}
