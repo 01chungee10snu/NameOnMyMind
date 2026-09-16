@@ -51,6 +51,15 @@ copyFile('assets/css/styles.css');
 copyFile('.nojekyll');
 for (const asset of selectedAssets) copyFile(asset.path);
 
+const runtimeInputs = [
+  'src/ui/index.html',
+  'src/ui/app.mjs',
+  'src/domain/cards.mjs',
+  'src/domain/discovery.mjs',
+  'src/local/state.mjs',
+  'src/agent/webmcp-adapter.mjs',
+  'assets/css/styles.css',
+];
 const inputHashes = {
   card_schema: sha(path.join(ROOT,'schema/card.schema.json')),
   reference_schema: sha(path.join(ROOT,'schema/reference.schema.json')),
@@ -59,6 +68,7 @@ const inputHashes = {
   references: sha(path.join(ROOT,'content/approved/references.json')),
   assets: sha(path.join(ROOT,'content/approved/assets.json')),
   ...Object.fromEntries(cardFiles.map((file) => [`card_${path.basename(file,'.json')}`, sha(file)])),
+  ...Object.fromEntries(runtimeInputs.map((rel) => [`runtime_${rel.replaceAll('/','_')}`, sha(path.join(ROOT, rel))])),
 };
 const snapshotSeed = Object.entries(inputHashes).sort(([a],[b]) => a.localeCompare(b)).map(([k,v]) => `${k}:${v}`).join('|');
 const snapshotVersion = crypto.createHash('sha256').update(snapshotSeed).digest('hex').slice(0,16);

@@ -3,7 +3,7 @@
   "artifact_type": "LOCAL_PUBLIC_BUILD",
   "deployable": true,
   "external_publish_authorized": false,
-  "snapshot_version": "ff965421b0c7694e",
+  "snapshot_version": "f8e05b710e2c5f76",
   "card_ids": [
     "C0001"
   ],
@@ -14,7 +14,14 @@
     "research_schema": "eaea3e24d57694de75821d90f076e844a02c8c644c80cedab4497ac1625deab0",
     "references": "f4b645798a1c21206468217185e12466c8b9960810fe4bb785b18c3c2a2c819c",
     "assets": "5b70b1dab872743a0c884aecae60cffacd147b6c44ad77351d7f460358e20d55",
-    "card_C0001": "6c422bca5bfdde8373a4f2b685237d0e1c4133cedc7d6488b74a04afbac4f8a0"
+    "card_C0001": "6c422bca5bfdde8373a4f2b685237d0e1c4133cedc7d6488b74a04afbac4f8a0",
+    "runtime_src_ui_index.html": "8b9ad4dcf5aa97dd8e984cf31fdec2465f0b2f62168a46566ccbed503881d932",
+    "runtime_src_ui_app.mjs": "ae8e4e7278e0d0a1d59208d5ffa4c1554a7082781ae1d261e293e9ba3ffaa2ce",
+    "runtime_src_domain_cards.mjs": "f8dde7b533cd43d1c2687195a934991534b7c670c461791a145e88fb617fce08",
+    "runtime_src_domain_discovery.mjs": "9d042c768bb35c1001a93e57b0c87f3c2506eae70d2f8a9a0a8b740080a7fc49",
+    "runtime_src_local_state.mjs": "975e7372486aace916597b7e2bb70f357f892a00434b9094e9718460fe2c1c36",
+    "runtime_src_agent_webmcp-adapter.mjs": "20bd70e4ff8ce6eb344f188201be9aceb7495210d1c5c3aa4b80d0a7c91584bc",
+    "runtime_assets_css_styles.css": "7bc6afebe350b1ec2ac85a855222cc8e58b69f7256dc933d44d458ce3bcbec9d"
   },
   "excluded_source_classes": [
     "private/**",
