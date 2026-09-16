@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "goal": "G5",
+  "batch_id": "G5-F04-FOREIGN-SEMANTIC-GAP",
+  "status": "RESEARCH_CORE_PASS_PRODUCT_GATES_HOLD",
+  "recorded_at": "2026-09-17",
+  "source_commit": "535df43a39cd5b6503e1c9c8fb3c06353de5ec01",
+  "card_ids": [
+    "C0031",
+    "C0032",
+    "C0033",
+    "C0034",
+    "C0035"
+  ],
+  "terms": [
+    "غُرْبَة",
+    "hiraeth",
+    "viraha",
+    "tampo",
+    "querencia"
+  ],
+  "korean_expression_cost": "5/5 EXPLANATORY_PHRASE_REQUIRED",
+  "screened_out": [
+    {
+      "term": "dor",
+      "reason": "Korean 그리움/향수 already covers much of the central longing/nostalgia sense; direct comparison required before priority admission."
+    },
+    {
+      "term": "hüzün",
+      "reason": "Basic sadness/melancholy is close to Korean coverage and distinctiveness risks depending on cultural essentialism."
+    }
+  ],
+  "gates": {
+    "foreign_schema": "5/5 PASS",
+    "target_lexical": "5/5 PASS",
+    "scholarly": "5/5 PASS",
+    "distinctiveness": "5/5 PASS",
+    "korean_expression_cost": "5/5 PASS",
+    "korean_comparison": "5/5 PASS",
+    "full_en_zh_ja_comparison": "HOLD",
+    "pronunciation_audio_rights": "HOLD",
+    "human_editorial_release": "NOT_OPEN"
+  },
+  "boundary": {
+    "lifecycle": "HOLD",
+    "review_ready": 0,
+    "published_from_batch": 0,
+    "product_assets_registered": 0,
+    "public_cards": [
+      "C0001",
+      "C0002",
+      "C0003",
+      "C0004",
+      "C0005"
+    ],
+    "public_snapshot": "24aebc81d2a7088d",
+    "external_publish_authorized": false,
+    "repository_push_authorized": false
+  },
+  "clean_checkout": {
+    "status": "PASS",
+    "tested_commit": "535df43a39cd5b6503e1c9c8fb3c06353de5ec01",
+    "npm_ci": "PASS",
+    "npm_vulnerabilities": 0,
+    "g1": "12/12 PASS",
+    "g2": "5/5 PASS",
+    "g3": "8/8 PASS",
+    "g4": "9/9 PASS",
+    "g5_selection": "8/8 PASS",
+    "g5_research_records": 30,
+    "track_counts": {
+      "KOREAN_NUANCE": 10,
+      "FOREIGN_KOREAN_GAP": 20
+    },
+    "privacy_violations": 0,
+    "git_status": "CLEAN",
+    "marker": "FINAL_G5_FOREIGN_BATCH04_CLEAN_CHECKOUT_PASS"
+  },
+  "sha256": {
+    "content/g5/batches/04_foreign_semantic_gap_config.json": "a6e2f2d41f7343fb8bdbe332c083e65f9f6d9f697d3cffb8c9c933bb1ab05cd3",
+    "content/g5/batches/04_foreign_semantic_gap_research.json": "9049b0c347110ef09ae11aeeaaf423832e759b93f4050ce8b6a48fd990a84fd6",
+    "scripts/g5/prepare-foreign-batch04-research.py": "deb5351869e937380723c339f7198147ae582ce82c9ca6f7c804253d896e7c81",
+    "scripts/g5/validate-foreign-batch04-research.mjs": "68332a5ed795ab7be5c5a41605cd47936773a8d712cc216238ebef46354d3a0f",
+    "content/g5/research-records/C0031.json": "40fb3ea1994be438f12b4ab89c8e93525efed5a2aa30f77dc302e1c50b35ca27",
+    "content/g5/research-records/C0032.json": "8338076b4d511f03db03bbc2bdbeaec0b4728e069c809d41f36d43f4feb5fb90",
+    "content/g5/research-records/C0033.json": "f7c2e8b9718311aa4fc4d85dcab0c6670f59937e7e82498035b368db394c6078",
+    "content/g5/research-records/C0034.json": "68c14758e63fca97503f051a39477a00f032a5c8a89a772f8c06fd293aa0aa98",
+    "content/g5/research-records/C0035.json": "a8409eb42ce89f99175efe495e62759fcb11ccbd736793a942a1bf27b9c3b4f6"
+  }
+}
