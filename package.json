@@ -18,7 +18,7 @@
     "test:g4": "node --test tests/g4",
     "validate:g4": "node scripts/validate-content.mjs",
     "build:g4-review": "node scripts/build-review-preview.mjs",
-    "check:g4": "npm run validate:g4 && npm run build:g4-review && npm run packet:g4 && npm run build:public && npm run test:g1 && npm run test:g2 && npm run test:g3 && npm run test:g4 && npm run check:privacy",
+    "check:g4": "npm run validate:g4 && npm run build:public && npm run test:g1 && npm run test:g2 && npm run test:g3 && npm run test:g4 && npm run check:privacy",
     "packet:g4": "node scripts/build-g4-review-packet.mjs"
   },
   "devDependencies": {

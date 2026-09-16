@@ -54,7 +54,7 @@
       "license_or_rights_basis": "Original project asset; no third-party source material embedded.",
       "attribution": null,
       "sha256": "90fcf4d8b5dd4f7d77b21add856f9307a9e6f56f52133deb860ef6d283333372",
-      "review_status": "AUTOMATED_PASS",
+      "review_status": "HUMAN_APPROVED",
       "reviewed_at": "2026-09-16"
     },
     {
@@ -68,7 +68,7 @@
       "license_or_rights_basis": "Original project asset; no third-party source material embedded.",
       "attribution": null,
       "sha256": "0af47331c8d65af91b89e68dea03682b700d5716ef44e9fb31a473e194dc7cdb",
-      "review_status": "AUTOMATED_PASS",
+      "review_status": "HUMAN_APPROVED",
       "reviewed_at": "2026-09-16"
     },
     {
@@ -82,7 +82,7 @@
       "license_or_rights_basis": "Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0).",
       "attribution": "De-Sehnsucht.ogg by Jeuwre, Wikimedia Commons, CC BY-SA 4.0.",
       "sha256": "45cd7b57dbd8981b7e108ebefe5130f6f305b3f8e6de956a99c38a72f1c66f1b",
-      "review_status": "AUTOMATED_PASS",
+      "review_status": "HUMAN_APPROVED",
       "reviewed_at": "2026-09-16"
     },
     {
@@ -96,7 +96,7 @@
       "license_or_rights_basis": "Original project asset; no third-party source material embedded.",
       "attribution": null,
       "sha256": "9a4fd3bb3b686d2dc13a89b65506c1150b6579d87a17a99f582359571572f519",
-      "review_status": "AUTOMATED_PASS",
+      "review_status": "HUMAN_APPROVED",
       "reviewed_at": "2026-09-16"
     },
     {
@@ -110,7 +110,7 @@
       "license_or_rights_basis": "Original project asset; no third-party source material embedded.",
       "attribution": null,
       "sha256": "aa4a612c68119fe5c0ca109531f1e073aeba432bf637537fcaab84779df8fa5d",
-      "review_status": "AUTOMATED_PASS",
+      "review_status": "HUMAN_APPROVED",
       "reviewed_at": "2026-09-16"
     },
     {
@@ -124,7 +124,7 @@
       "license_or_rights_basis": "CC0 1.0 Universal Public Domain Dedication.",
       "attribution": "Schadenfreude.ogg by Howdoesgermansound; current-file cleanup by Andrybak, Wikimedia Commons, CC0 1.0.",
       "sha256": "7b7b1bbd7ab2b044a60bcc5daeb9257f7727f482725add4e2521a8b2aa66e44c",
-      "review_status": "AUTOMATED_PASS",
+      "review_status": "HUMAN_APPROVED",
       "reviewed_at": "2026-09-16"
     },
     {
@@ -138,7 +138,7 @@
       "license_or_rights_basis": "Original project asset; no third-party source material embedded.",
       "attribution": null,
       "sha256": "6cee3afbe4023547c209d3a3b59a979e4a0a5533026fdf5bcf70c6d71e6fed0f",
-      "review_status": "AUTOMATED_PASS",
+      "review_status": "HUMAN_APPROVED",
       "reviewed_at": "2026-09-16"
     },
     {
@@ -152,7 +152,7 @@
       "license_or_rights_basis": "Original project asset; no third-party source material embedded.",
       "attribution": null,
       "sha256": "ae797ed632b38abc5784f5ad9e0c541018ea0605901d87e230a08ae78e722661",
-      "review_status": "AUTOMATED_PASS",
+      "review_status": "HUMAN_APPROVED",
       "reviewed_at": "2026-09-16"
     },
     {
@@ -166,7 +166,7 @@
       "license_or_rights_basis": "CC BY-SA 2.5 selected from Commons multi-license grant; GFDL 1.2+ and CC BY-SA 1.0/2.0 also listed.",
       "attribution": "En-us-envy.ogg by Dvortygirl, Wikimedia Commons, CC BY-SA 2.5.",
       "sha256": "ab1efde47a3660889e949b8086f8444fa817b5114b15f23f07f314f6a26222c8",
-      "review_status": "AUTOMATED_PASS",
+      "review_status": "HUMAN_APPROVED",
       "reviewed_at": "2026-09-16"
     },
     {
@@ -180,7 +180,7 @@
       "license_or_rights_basis": "Original project asset; no third-party source material embedded.",
       "attribution": null,
       "sha256": "8998d827e276c56214b14596f1876ce7465041ba66a6571b29239ed88e23724a",
-      "review_status": "AUTOMATED_PASS",
+      "review_status": "HUMAN_APPROVED",
       "reviewed_at": "2026-09-16"
     },
     {
@@ -194,7 +194,7 @@
       "license_or_rights_basis": "Original project asset; no third-party source material embedded.",
       "attribution": null,
       "sha256": "fee056c271baa77c8b4c25e88bcad711dcf62108b912b742c78281823dac60bc",
-      "review_status": "AUTOMATED_PASS",
+      "review_status": "HUMAN_APPROVED",
       "reviewed_at": "2026-09-16"
     },
     {
@@ -208,7 +208,7 @@
       "license_or_rights_basis": "Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0).",
       "attribution": "Ja-kofuku.ogg by Spesco, Wikimedia Commons, CC BY-SA 4.0.",
       "sha256": "3019788d32aa6df5a657f827be3800651919977545e595d66b9dc41c80f35957",
-      "review_status": "AUTOMATED_PASS",
+      "review_status": "HUMAN_APPROVED",
       "reviewed_at": "2026-09-16"
     }
   ]

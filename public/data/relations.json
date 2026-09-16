@@ -1,9 +1,49 @@
 {
   "schema_version": "1.0.0",
-  "snapshot_version": "a8bd1a8d1c307a72",
+  "snapshot_version": "65f13b123b986c1c",
   "relations": [
     {
       "card_id": "C0001",
+      "similar_to": [],
+      "partially_overlaps": [],
+      "contrasts_with": [],
+      "broader_than": [],
+      "narrower_than": [],
+      "often_confused_with": []
+    },
+    {
+      "card_id": "C0002",
+      "similar_to": [],
+      "partially_overlaps": [],
+      "contrasts_with": [],
+      "broader_than": [],
+      "narrower_than": [],
+      "often_confused_with": []
+    },
+    {
+      "card_id": "C0003",
+      "similar_to": [],
+      "partially_overlaps": [
+        "C0004"
+      ],
+      "contrasts_with": [],
+      "broader_than": [],
+      "narrower_than": [],
+      "often_confused_with": []
+    },
+    {
+      "card_id": "C0004",
+      "similar_to": [],
+      "partially_overlaps": [
+        "C0003"
+      ],
+      "contrasts_with": [],
+      "broader_than": [],
+      "narrower_than": [],
+      "often_confused_with": []
+    },
+    {
+      "card_id": "C0005",
       "similar_to": [],
       "partially_overlaps": [],
       "contrasts_with": [],

@@ -1,21 +1,18 @@
 {
   "schema_version": "1.0.0",
   "goal": "G4",
-  "status": "BLOCKED_ON_HUMAN_EDITORIAL_RELEASE",
+  "status": "RESOLVED_HUMAN_EDITORIAL_RELEASE_APPROVED",
   "generated_at_date": "2026-09-16",
   "baseline_approved_card": "C0001",
-  "pending_card_ids": [
-    "C0002",
-    "C0003",
-    "C0004",
-    "C0005"
-  ],
+  "pending_card_ids": [],
   "human_review_packet": "docs/ops/review/G4_HUMAN_EDITORIAL_REVIEW_PACKET_2026-09-16.json",
   "g4_machine_gate_status": "PASS",
-  "g4_human_release_status": "PENDING_4_OF_4",
+  "g4_human_release_status": "APPROVED_5_OF_5",
   "g4_complete": false,
   "g5_admission_allowed": false,
   "external_publish_authorized": false,
   "repository_push_authorized": false,
-  "unblock_condition": "Explicit human approval of all four pending cards after review of the packet, followed by validator/public-boundary/full-regression recheck."
+  "unblock_condition": "Explicit human approval of all four pending cards after review of the packet, followed by validator/public-boundary/full-regression recheck.",
+  "resolved_at": "2026-09-16",
+  "resolution_note": "C0002-C0005 received explicit Human Editorial Release approval. Final G4 completion remains contingent on post-promotion validation, public-build parity, privacy scan, and clean-checkout regression."
 }

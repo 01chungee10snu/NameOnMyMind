@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "card_id": "C0004",
+  "term": "envy",
+  "decision": "APPROVED_AS_REVIEWED",
+  "human_approval_source": "explicit_user_message_in_current_chat",
+  "approval_message": "C0002~C0005 Human Editorial Release 승인",
+  "reviewed_at": "2026-09-16",
+  "machine_gate_source": "docs/ops/evidence/G4_EXECUTION_EVIDENCE.json",
+  "human_review_packet": "docs/ops/review/G4_HUMAN_EDITORIAL_REVIEW_PACKET_2026-09-16.json",
+  "pre_release_sha256": {
+    "review_card": "2005f7f6b1fcf6089324d1247666409f5ce69f488c528d1d3b2b470ffdd0eeab",
+    "review_research_record": "e3d61172189918df0d750c5b0e6c579535f453881f6b081a09993563f83ce250"
+  },
+  "human_editorial_release_checklist": {
+    "poetic_copy_does_not_exceed_evidence": "PASS",
+    "cross_language_comparisons_not_one_to_one": "PASS",
+    "cultural_framing_avoids_exoticization_and_overgeneralization": "PASS",
+    "illustration_does_not_stereotype_or_diagnose": "PASS",
+    "reflection_is_optional_low_pressure_non_diagnostic": "PASS",
+    "verification_and_reference_presentation_is_understandable": "PASS",
+    "share_and_public_assets_contain_no_private_or_local_state": "PASS"
+  },
+  "external_publish_authorized": false,
+  "repository_push_authorized": false
+}

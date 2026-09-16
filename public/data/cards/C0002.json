@@ -1,0 +1,88 @@
+{
+  "schema_version": "1.1.0",
+  "card_id": "C0002",
+  "concept_version": "1.0.0",
+  "status": "PUBLISHED",
+  "term": {
+    "original": "Sehnsucht",
+    "language_code": "de-DE",
+    "language_name": "Deutsch",
+    "ipa": "/ˈzeːnˌzʊxt/"
+  },
+  "experience_type": "mixed_experience",
+  "front": {
+    "poetic_line": "아직 닿지 않은 삶이 멀리서 나를 부르는 듯한 마음.",
+    "scene": "열린 창가에 접지 않은 지도와 빈 여행가방이 놓이고, 멀리 작은 불빛들이 이어진다.",
+    "reflection_question": "지금의 삶 너머에서 오래 마음이 향하는 모습이 있나요?"
+  },
+  "meaning": {
+    "verified_definition": "부재하거나 멀리 있는 사람·대상, 또는 아직 이루어지지 않은 다른 삶의 상태를 향한 깊고 때로 아픈 갈망을 가리키는 독일어 명사.",
+    "usage_context": "사전에서는 멀거나 결핍된 사람·대상을 향한 깊고 아픈 갈망으로 설명되며, 심리학 연구에서는 아직 실현되지 않은 대안적 삶의 상태를 향한 강한 열망인 “life longings”를 연구하는 개념으로도 사용된다.",
+    "cultural_context": "독일어에 이름이 붙어 있다는 사실을 독일인에게만 존재하는 정서라는 주장으로 확대하지 않는다. 여기서는 독일어 사전의 실제 쓰임과 심리학 연구가 직접 다루는 갈망의 범위만 설명한다."
+  },
+  "comparisons": {
+    "ko": {
+      "near_terms": [
+        "그리움"
+      ],
+      "difference_note": "그리움은 떨어져 있거나 지나간 대상을 그리는 마음에서 가깝지만, Sehnsucht는 아직 실현되지 않은 삶의 가능성을 향한 강한 갈망까지 포함할 수 있다."
+    },
+    "en": {
+      "near_terms": [
+        "longing",
+        "yearning"
+      ],
+      "difference_note": "longing·yearning은 강한 바람과 갈망을 나타내지만, 심리학의 Sehnsucht 연구는 대안적 삶의 상태와 실현 가능성까지 구조화해 다룬다."
+    },
+    "zh": {
+      "near_terms": [
+        "思念"
+      ],
+      "difference_note": "思念은 사람이나 대상을 그리워하는 의미가 가깝지만, Sehnsucht의 잠재적 삶·미실현 상태에 대한 갈망 전체와 동일하지 않다."
+    },
+    "ja": {
+      "near_terms": [
+        "恋しい"
+      ],
+      "difference_note": "恋しさ는 떨어진 사람·장소·사물을 그리워하는 면이 가깝지만, Sehnsucht가 포괄할 수 있는 미실현 삶에 대한 열망 전체를 대체하지는 않는다."
+    }
+  },
+  "semantic_tags": [
+    "longing",
+    "distance",
+    "absence",
+    "possibility",
+    "unrealized-life",
+    "yearning"
+  ],
+  "relations": {
+    "similar_to": [],
+    "partially_overlaps": [],
+    "contrasts_with": [],
+    "broader_than": [],
+    "narrower_than": [],
+    "often_confused_with": []
+  },
+  "reference_ids": [
+    "R0018",
+    "R0019",
+    "R0020",
+    "R0008",
+    "R0014",
+    "R0015",
+    "R0009",
+    "R0010"
+  ],
+  "verification": {
+    "status": "VERIFIED",
+    "last_reviewed_at": "2026-09-16",
+    "lexical_source_count": 1,
+    "scholarly_source_count": 1
+  },
+  "assets": {
+    "illustration_asset_id": "A0004",
+    "share_asset_id": "A0005",
+    "audio_asset_id": "A0006",
+    "alt_text": "열린 창가 앞 작은 탁자에 펼친 지도와 빈 여행가방이 놓이고, 멀리 점처럼 이어지는 불빛이 보이는 추상 선화."
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "goal": "G4",
+  "decision": "HUMAN_EDITORIAL_RELEASE_APPROVED_5_OF_5",
+  "approved_baseline": "C0001",
+  "approved_this_turn": [
+    "C0002",
+    "C0003",
+    "C0004",
+    "C0005"
+  ],
+  "cards": [
+    {
+      "card_id": "C0002",
+      "term": "Sehnsucht"
+    },
+    {
+      "card_id": "C0003",
+      "term": "Schadenfreude"
+    },
+    {
+      "card_id": "C0004",
+      "term": "envy"
+    },
+    {
+      "card_id": "C0005",
+      "term": "幸福"
+    }
+  ],
+  "reviewed_at": "2026-09-16",
+  "post_promotion_regression_required": true,
+  "g5_admission_allowed": false,
+  "external_publish_authorized": false,
+  "repository_push_authorized": false
+}

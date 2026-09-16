@@ -1,0 +1,86 @@
+{
+  "schema_version": "1.1.0",
+  "card_id": "C0005",
+  "concept_version": "1.0.0",
+  "status": "PUBLISHED",
+  "term": {
+    "original": "幸福",
+    "language_code": "ja",
+    "language_name": "日本語",
+    "ipa": "[ko̞ːɸɯ̟̊kɯ̟]"
+  },
+  "experience_type": "psychological_state",
+  "front": {
+    "poetic_line": "충분하다고 느끼는 순간, 마음이 조용히 밝아질 때.",
+    "scene": "둥근 빛을 닮은 큰 원과 그 아래 안정적으로 놓인 세 개의 작은 돌 모양이 균형을 이룬다.",
+    "reflection_question": "요즘의 삶에서 “충분하다”는 느낌을 주는 작은 장면은 무엇인가요?"
+  },
+  "meaning": {
+    "verified_definition": "마음이 충족되어 기쁘고, 불평이나 불만이 적은 만족스러운 상태를 나타내는 일본어 명사·형용동사.",
+    "usage_context": "일본어 사전은 만족되고 즐거운 상태로 설명한다. 일본어판 Subjective Happiness Scale 연구처럼 심리학에서는 사람들이 자신의 행복을 주관적으로 평가하는 구성도 측정하지만, 한 단어가 삶의 질 전체를 자동으로 뜻하는 것은 아니다.",
+    "cultural_context": "幸福은 한국어·중국어에도 같은 한자 형태가 존재하지만, 문자 형태가 같다는 이유로 각 언어의 쓰임과 문화적 의미가 완전히 같다고 가정하지 않는다. 일본어 카드에서는 일본어 사전과 일본 연구가 직접 지지하는 범위만 다룬다."
+  },
+  "comparisons": {
+    "ko": {
+      "near_terms": [
+        "행복"
+      ],
+      "difference_note": "한국어 행복은 삶의 만족과 기쁨을 느끼는 상태라는 점에서 가깝고 한자도 같지만, 각 언어의 실제 용법을 같은 것으로 자동 취급하지 않는다."
+    },
+    "en": {
+      "near_terms": [
+        "happiness"
+      ],
+      "difference_note": "happiness는 happy한 느낌과 상태를 가리켜 가깝지만, 일본어 幸福의 모든 화용과 문화적 맥락을 영어 한 단어가 대체한다고 보지 않는다."
+    },
+    "zh": {
+      "near_terms": [
+        "幸福"
+      ],
+      "difference_note": "중국어 幸福도 삶에 대한 만족과 즐거운 상태를 가리키지만, 공유된 한자 표기만으로 일본어와 완전한 의미 동일성을 주장하지 않는다."
+    },
+    "ja": {
+      "near_terms": [
+        "幸せ"
+      ],
+      "difference_note": "幸せ는 일본어 안에서 幸福과 매우 가까운 표현이지만 운·좋은 처지 같은 의미도 가질 수 있어 모든 문맥에서 교환 가능한 것은 아니다."
+    }
+  },
+  "semantic_tags": [
+    "happiness",
+    "contentment",
+    "satisfaction",
+    "wellbeing",
+    "positive-state"
+  ],
+  "relations": {
+    "similar_to": [],
+    "partially_overlaps": [],
+    "contrasts_with": [],
+    "broader_than": [],
+    "narrower_than": [],
+    "often_confused_with": []
+  },
+  "reference_ids": [
+    "R0035",
+    "R0036",
+    "R0037",
+    "R0038",
+    "R0039",
+    "R0040",
+    "R0041",
+    "R0042"
+  ],
+  "verification": {
+    "status": "VERIFIED",
+    "last_reviewed_at": "2026-09-16",
+    "lexical_source_count": 1,
+    "scholarly_source_count": 1
+  },
+  "assets": {
+    "illustration_asset_id": "A0013",
+    "share_asset_id": "A0014",
+    "audio_asset_id": "A0015",
+    "alt_text": "큰 원 하나와 그 아래 균형 있게 놓인 작은 돌 모양 세 개로 이루어진 차분한 추상 선화."
+  }
+}

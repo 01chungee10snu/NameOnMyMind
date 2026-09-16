@@ -1,4 +1,4 @@
-const SNAPSHOT = 'a8bd1a8d1c307a72';
+const SNAPSHOT = '65f13b123b986c1c';
 const SHELL_CACHE = `nomm-shell-v1-${SNAPSHOT}`;
 const CONTENT_CACHE = `nomm-content-${SNAPSHOT}`;
 const ASSET_CACHE = `nomm-assets-v1-${SNAPSHOT}`;
@@ -18,7 +18,7 @@ const SHELL_URLS = [
   './src/local/state.mjs',
   './src/agent/webmcp-adapter.mjs'
 ];
-const CARD_URLS = ["./data/cards/C0001.json"];
+const CARD_URLS = ["./data/cards/C0001.json","./data/cards/C0002.json","./data/cards/C0003.json","./data/cards/C0004.json","./data/cards/C0005.json"];
 const CONTENT_URLS = [
   './data/manifest.json',
   './data/cards-index.json',

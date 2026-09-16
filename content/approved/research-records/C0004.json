@@ -8,7 +8,7 @@
     "language_name": "English (United States)",
     "experience_type": "emotion"
   },
-  "lifecycle_state": "REVIEW_READY",
+  "lifecycle_state": "APPROVED",
   "source_inventory": [
     {
       "reference_id": "R0029",
@@ -188,10 +188,10 @@
     "privacy": "PASS"
   },
   "human_editorial_release": {
-    "status": "PENDING",
-    "reviewer": null,
-    "reviewed_at": null,
-    "notes": "Machine gates passed. Human Editorial Release is intentionally blocked pending explicit user approval."
+    "status": "APPROVED",
+    "reviewer": "human_user",
+    "reviewed_at": "2026-09-16",
+    "notes": "Explicit Human Editorial Release approval for C0002-C0005 in the current chat after the G4 machine gate, human-review packet, provenance audit, privacy regression, and clean-checkout regression all passed."
   },
   "changelog": [
     {
@@ -203,6 +203,11 @@
       "date": "2026-09-16",
       "state": "REVIEW_READY",
       "note": "All automated gates declared PASS after local validation; Human Editorial Release remains PENDING."
+    },
+    {
+      "date": "2026-09-16",
+      "state": "APPROVED",
+      "note": "Explicit user Human Editorial Release approval recorded; promoted from REVIEW_READY to approved PUBLISHED source after full G4 machine-gate evidence was PASS."
     }
   ]
 }

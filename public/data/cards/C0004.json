@@ -1,0 +1,87 @@
+{
+  "schema_version": "1.1.0",
+  "card_id": "C0004",
+  "concept_version": "1.0.0",
+  "status": "PUBLISHED",
+  "term": {
+    "original": "envy",
+    "language_code": "en-US",
+    "language_name": "English (United States)",
+    "ipa": "/ˈen.vi/"
+  },
+  "experience_type": "emotion",
+  "front": {
+    "poetic_line": "저 사람의 것을 바라보는 순간, 내게 없는 것이 선명해질 때.",
+    "scene": "높이가 다른 두 개의 단순한 받침대 위에 같은 모양의 작은 원이 놓여 있고, 한쪽 원을 향한 얇은 선이 이어진다.",
+    "reflection_question": "누군가가 가진 것을 보며 나에게도 있었으면 하고 느낀 적이 있나요?"
+  },
+  "meaning": {
+    "verified_definition": "다른 사람이 가진 능력·대상·유리한 조건을 자신도 갖고 싶어 할 때 생기는 사회비교 정서.",
+    "usage_context": "심리학에서는 envy를 타인의 우위와 관련된 고통·열등감, 원하는 대상에 대한 욕구, 자기향상 또는 공격적 동기 등 서로 다른 요소와 형태를 가질 수 있는 정서로 연구한다.",
+    "cultural_context": "영어 단어 하나를 사람의 성격이나 도덕성 진단으로 사용하지 않는다. 연구에서도 envy의 구성과 benign/malicious 형태를 구분하는 방식이 논의되므로, 경험의 맥락과 강도를 단일한 낙인으로 환원하지 않는다."
+  },
+  "comparisons": {
+    "ko": {
+      "near_terms": [
+        "부러움"
+      ],
+      "difference_note": "부러움은 남이 가진 것을 자신도 원한다는 핵심에서 가깝지만, 한국어 일상어의 긍정적·가벼운 쓰임과 영어 envy의 연구적 범위가 항상 일치하지는 않는다."
+    },
+    "en": {
+      "near_terms": [
+        "jealousy"
+      ],
+      "difference_note": "jealousy는 원하는 것을 다른 사람이 가졌다는 불쾌감에서 겹치지만, 관계의 위협이나 애정 대상의 경쟁을 포함하는 쓰임도 있어 envy와 구별될 수 있다."
+    },
+    "zh": {
+      "near_terms": [
+        "羡慕"
+      ],
+      "difference_note": "羡慕는 다른 사람의 장점이나 유리한 조건을 자신도 갖고 싶어 하는 의미에서 가깝지만, 악의적 요소가 필수라고 보지 않는다는 점을 함께 주의한다."
+    },
+    "ja": {
+      "near_terms": [
+        "羨望"
+      ],
+      "difference_note": "羨望는 다른 사람의 성취나 우위를 부러워하는 의미에서 가깝지만, 영어 envy의 다양한 이론적 하위형태 전체와 동일하다고 보지 않는다."
+    }
+  },
+  "semantic_tags": [
+    "social-comparison",
+    "desire",
+    "inferiority",
+    "advantage",
+    "fortune-of-other"
+  ],
+  "relations": {
+    "similar_to": [],
+    "partially_overlaps": [
+      "C0003"
+    ],
+    "contrasts_with": [],
+    "broader_than": [],
+    "narrower_than": [],
+    "often_confused_with": []
+  },
+  "reference_ids": [
+    "R0029",
+    "R0023",
+    "R0030",
+    "R0031",
+    "R0032",
+    "R0033",
+    "R0034"
+  ],
+  "verification": {
+    "status": "VERIFIED",
+    "last_reviewed_at": "2026-09-16",
+    "lexical_source_count": 1,
+    "scholarly_source_count": 1
+  },
+  "assets": {
+    "illustration_asset_id": "A0010",
+    "share_asset_id": "A0011",
+    "audio_asset_id": "A0012",
+    "alt_text": "서로 다른 높이의 받침대 두 개와 같은 크기의 원 두 개, 그리고 한 원을 향하는 가는 선으로 구성된 추상 선화."
+  }
+}

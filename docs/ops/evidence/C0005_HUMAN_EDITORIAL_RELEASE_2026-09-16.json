@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "card_id": "C0005",
+  "term": "幸福",
+  "decision": "APPROVED_AS_REVIEWED",
+  "human_approval_source": "explicit_user_message_in_current_chat",
+  "approval_message": "C0002~C0005 Human Editorial Release 승인",
+  "reviewed_at": "2026-09-16",
+  "machine_gate_source": "docs/ops/evidence/G4_EXECUTION_EVIDENCE.json",
+  "human_review_packet": "docs/ops/review/G4_HUMAN_EDITORIAL_REVIEW_PACKET_2026-09-16.json",
+  "pre_release_sha256": {
+    "review_card": "e46838b8dfe1b11a21653abea3604aa36103e4901dbd7fc6b9ddae8b38f2891d",
+    "review_research_record": "83d4e6c90f4994c78cbc89d679baac499d29dc15c1c88b216331e208fa54728f"
+  },
+  "human_editorial_release_checklist": {
+    "poetic_copy_does_not_exceed_evidence": "PASS",
+    "cross_language_comparisons_not_one_to_one": "PASS",
+    "cultural_framing_avoids_exoticization_and_overgeneralization": "PASS",
+    "illustration_does_not_stereotype_or_diagnose": "PASS",
+    "reflection_is_optional_low_pressure_non_diagnostic": "PASS",
+    "verification_and_reference_presentation_is_understandable": "PASS",
+    "share_and_public_assets_contain_no_private_or_local_state": "PASS"
+  },
+  "external_publish_authorized": false,
+  "repository_push_authorized": false
+}

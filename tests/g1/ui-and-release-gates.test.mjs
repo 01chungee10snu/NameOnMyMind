@@ -34,16 +34,28 @@ test('C0001 is human-released and promoted to approved PUBLISHED source', () => 
   assert.equal(fs.existsSync(path.join(ROOT, 'content/review/cards/C0001.json')), false);
 });
 
-test('public builder produces a local deployable bundle without external publish authority', () => {
+test('public builder produces a local deployable bundle containing only human-released approved cards', () => {
   const result = spawnSync(process.execPath, ['scripts/build-public.mjs'], { cwd: ROOT, encoding: 'utf8' });
   assert.equal(result.status, 0, result.stderr);
   const manifest = readJson('public/BUILD_MANIFEST.json');
   const dataManifest = readJson('public/data/manifest.json');
+  const approvedIds = fs.readdirSync(path.join(ROOT, 'content/approved/cards'))
+    .filter((name) => name.endsWith('.json'))
+    .sort()
+    .map((name) => readJson(`content/approved/cards/${name}`).card_id);
   assert.equal(manifest.deployable, true);
   assert.equal(manifest.external_publish_authorized, false);
-  assert.deepEqual(manifest.card_ids, ['C0001']);
+  assert.deepEqual(manifest.card_ids, approvedIds);
+  assert.ok(manifest.card_ids.includes('C0001'));
   assert.equal(dataManifest.release_mode, 'PUBLIC_LOCAL_BUILD');
-  assert.equal(dataManifest.card_count, 1);
+  assert.equal(dataManifest.card_count, approvedIds.length);
+  for (const id of approvedIds) {
+    const card = readJson(`content/approved/cards/${id}.json`);
+    const rr = readJson(`content/approved/research-records/${id}.json`);
+    assert.ok(['PUBLISHED', 'REVISED'].includes(card.status));
+    assert.equal(rr.lifecycle_state, 'APPROVED');
+    assert.equal(rr.human_editorial_release.status, 'APPROVED');
+  }
 });
 
 test('pronunciation attribution exposes source and CC BY-SA license links', () => {
