@@ -64,5 +64,21 @@
     "scripts/g5/build-g5-review-packet.mjs": "ac8bdecb5e514700f077bd8ab48599c33dac62bfac9909d63e8191fbd93565f3",
     "scripts/g5/build-diversity-matrix.mjs": "f9bd7ca6c8bdaddda3bd1160a8b0a0a2d67c083555c3a7c8463527cf90e72fd0",
     "docs/ops/evidence/G5_DIVERSITY_MATRIX.json": "7495a145c8ce7d98364551c48bbadef3f96c9bcdbfc8b580b79f6dbbb2d5e703"
+  },
+  "clean_checkout": {
+    "status": "PASS",
+    "tested_commit": "e7b38d83e6b244f8e2933f151786840b5d54502b",
+    "npm_ci": "PASS",
+    "npm_vulnerabilities": 0,
+    "g1": "12/12 PASS",
+    "g2": "5/5 PASS",
+    "g3": "8/8 PASS",
+    "g4": "9/9 PASS",
+    "g5_selection": "8/8 PASS",
+    "g5_batch01_validator": "PASS",
+    "privacy_violations": 0,
+    "active50_policy": "PASS",
+    "git_status": "CLEAN",
+    "marker": "FINAL_G5_SELECTION_REVISION_CLEAN_CHECKOUT_PASS"
   }
 }
