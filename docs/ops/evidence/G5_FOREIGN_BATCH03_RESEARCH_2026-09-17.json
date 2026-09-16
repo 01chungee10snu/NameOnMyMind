@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "goal": "G5",
+  "batch_id": "G5-F03-FOREIGN-SEMANTIC-GAP",
+  "status": "RESEARCH_CORE_PASS_PRODUCT_GATES_HOLD",
+  "recorded_at": "2026-09-17",
+  "source_commit": "d98bb5d7bfc72006a662123415dfdab13b162ec4",
+  "card_ids": [
+    "C0026",
+    "C0027",
+    "C0028",
+    "C0029",
+    "C0030"
+  ],
+  "terms": [
+    "gigil",
+    "פִרְגּוּן",
+    "gezelligheid",
+    "dépaysement",
+    "やるせない"
+  ],
+  "korean_expression_cost": "5/5 EXPLANATORY_PHRASE_REQUIRED",
+  "gates": {
+    "foreign_schema": "5/5 PASS",
+    "target_lexical": "5/5 PASS",
+    "scholarly": "5/5 PASS",
+    "distinctiveness": "5/5 PASS",
+    "korean_expression_cost": "5/5 PASS",
+    "korean_comparison": "5/5 PASS",
+    "full_en_zh_ja_comparison": "HOLD",
+    "pronunciation_audio_rights": "HOLD",
+    "human_editorial_release": "NOT_OPEN"
+  },
+  "boundary": {
+    "lifecycle": "HOLD",
+    "review_ready": 0,
+    "published_from_batch": 0,
+    "product_assets_registered": 0,
+    "public_cards": [
+      "C0001",
+      "C0002",
+      "C0003",
+      "C0004",
+      "C0005"
+    ],
+    "public_snapshot": "24aebc81d2a7088d",
+    "external_publish_authorized": false,
+    "repository_push_authorized": false
+  },
+  "clean_checkout": {
+    "status": "PASS",
+    "tested_commit": "d98bb5d7bfc72006a662123415dfdab13b162ec4",
+    "npm_ci": "PASS",
+    "npm_vulnerabilities": 0,
+    "g1": "12/12 PASS",
+    "g2": "5/5 PASS",
+    "g3": "8/8 PASS",
+    "g4": "9/9 PASS",
+    "g5_selection": "8/8 PASS",
+    "g5_research_records": 25,
+    "track_counts": {
+      "KOREAN_NUANCE": 10,
+      "FOREIGN_KOREAN_GAP": 15
+    },
+    "privacy_violations": 0,
+    "git_status": "CLEAN",
+    "marker": "FINAL_G5_FOREIGN_BATCH03_CLEAN_CHECKOUT_PASS"
+  },
+  "source_notes": {
+    "gigil": "Target lexical source preserves both suppressed joy and sometimes anger; cute-aggression scholarship is not allowed to collapse the whole word to cuteness only.",
+    "firgun": "Lexical/sociolinguistic sources preserve absence of envy plus sincere supportive expression.",
+    "gezelligheid": "Sociological evidence preserves coziness, intimacy, fun, sociability and homeliness as a bundle.",
+    "depaysement": "CNRTL preserves unfamiliar-setting disorientation while tourism literature supports the change-of-scene emotional side.",
+    "yarusenai": "Japanese dictionary and direct semantic study preserve the lack of a way to dispel the feeling / helplessness boundary."
+  },
+  "sha256": {
+    "content/g5/batches/03_foreign_semantic_gap_config.json": "76177aff202e827706e002a8ef53a417c610cae440144267899c5287f4e6f26a",
+    "content/g5/batches/03_foreign_semantic_gap_research.json": "753310c1bd0c8e867aa1c2082642d2d83056ed0fe9a157a59f39f290977817dd",
+    "scripts/g5/prepare-foreign-batch03-research.py": "cb3a995d147588eb5ebf70fa1f68d236340800c85fe13512e5034b953fe12bc4",
+    "scripts/g5/validate-foreign-batch03-research.mjs": "09fd0635a37829a110d3e635129ce7beebc2985fb9d2080186c197d7ce24d27f",
+    "content/g5/research-records/C0026.json": "fd3a5807c02eca17d6c505c9bccaaa9024fcbb9de09eefc0db3e6b50c21fb18f",
+    "content/g5/research-records/C0027.json": "21900fa415395f1722885ea0b7477fc32a5e630ce07d515430b2315845ddb2e2",
+    "content/g5/research-records/C0028.json": "8a6900adb18a10cc87288d92163f1c550cb14f1b981a76ef6bea47f3c12b75dc",
+    "content/g5/research-records/C0029.json": "6a9f4b0fb61d15c57edfbb342c74cd6ec17fbb54a60ab5513ab688b1743cacc9",
+    "content/g5/research-records/C0030.json": "bd5a30d910feaaa9bf96cd3234e379ad7048b2ebdc391bb18595ec32fe29860c"
+  }
+}
