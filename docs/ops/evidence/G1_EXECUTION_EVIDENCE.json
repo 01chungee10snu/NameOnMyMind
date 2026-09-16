@@ -2,88 +2,89 @@
   "schema_version": 1,
   "goal": "G1",
   "goal_name": "Verified 1-card vertical slice",
-  "status": "BLOCKED_HUMAN_EDITORIAL_RELEASE",
+  "status": "COMPLETE",
   "recorded_at": "2026-09-16",
-  "tested_commit": "ff7afd2fd92600bd2b9c150339a092eb592b9cad",
+  "tested_commit": "4833cc55854f458abf5f8fe2b6e9c7cf92ded614",
   "branch": "main",
   "external_publish_authorized": false,
   "repository_push_authorized": false,
   "card": {
     "card_id": "C0001",
     "term": "saudade",
-    "content_status": "REVIEW_READY",
-    "human_editorial_release": "PENDING",
-    "review_preview_snapshot": "0965bbb3ca1eb40a"
+    "content_status": "PUBLISHED",
+    "human_editorial_release": "APPROVED",
+    "public_snapshot": "ff965421b0c7694e"
   },
+  "human_release_evidence": "docs/ops/evidence/C0001_HUMAN_EDITORIAL_RELEASE_2026-09-16.json",
   "exit_criteria": [
     {
       "criterion": "repository boundaries established",
       "status": "PASS",
-      "evidence": "Clean checkout contains src/, content/, schema/, scripts/, public/, and private/ boundaries; private content remains ignored except the boundary placeholder."
+      "evidence": "src/, content/, schema/, scripts/, public/, private/ boundaries present; approved/public/private boundaries preserved."
     },
     {
       "criterion": "versioned card/reference/asset contracts validated",
       "status": "PASS",
-      "evidence": "Card v1.1.0 plus reference, asset provenance, and research-record v1.0.0 schemas validate through Ajv 2020-12."
+      "evidence": "Card v1.1.0, reference/asset v1.0.0, research-record v1.1.0 validate under Ajv 2020-12."
     },
     {
       "criterion": "one real Card Research Record approved",
-      "status": "BLOCKED_HUMAN_ACTION",
-      "evidence": "A real source-first C0001 research record exists and automated gates pass, but lifecycle remains REVIEW_READY and human_editorial_release remains PENDING."
+      "status": "PASS",
+      "evidence": "C0001 source-first Research Record lifecycle=APPROVED with explicit Human Editorial Release APPROVED."
     },
     {
       "criterion": "one real public card passes schema/evidence/pronunciation/cultural/rights gates",
-      "status": "BLOCKED_HUMAN_ACTION",
-      "evidence": "C0001 machine gates pass, but it is intentionally not promoted to PUBLISHED/REVISED or content/approved/cards until human editorial release."
+      "status": "PASS",
+      "evidence": "C0001 PUBLISHED; 17 registry references; comparison-level lexical provenance; narrowed cultural context; pt-BR audio/source/license linkage; assets HUMAN_APPROVED."
     },
     {
       "criterion": "domain lookup and deterministic daily assignment work",
       "status": "PASS",
-      "evidence": "Focused tests verify stable C0001 lookup, copy isolation, and same-day deterministic daily selection."
+      "evidence": "Domain tests verify C0001 stable lookup and same-day deterministic assignment."
     },
     {
       "criterion": "Daily Card Shell and canonical detail/deep-link work locally",
       "status": "PASS",
-      "evidence": "Local review build serves / and ?card=C0001#meaning plus required data/modules/audio with HTTP 200 in a same-process smoke test."
+      "evidence": "Public build and ?card=C0001#meaning plus data/modules/assets return HTTP 200 in local smoke."
     },
     {
       "criterion": "get_card/get_daily_card share domain semantics with Human UI",
       "status": "PASS",
-      "evidence": "UI and read-only agent adapter import the same src/domain/cards.mjs functions; parity tests pass for both get_card and get_daily_card."
+      "evidence": "UI and WebMCP adapter import same src/domain/cards.mjs; parity regression PASS."
     },
     {
       "criterion": "private leakage 0",
       "status": "PASS",
-      "evidence": "Leakage scan over review-preview and public reports 0 violations; research records and private interview content are structurally excluded from the preview bundle."
+      "evidence": "Public bundle leakage scan reports 0 violations; research/private content excluded."
     },
     {
       "criterion": "clean-checkout focused regression PASS",
       "status": "PASS",
-      "evidence": "Detached clean worktree at ff7afd2: npm ci PASS, npm run check:g1 PASS (10/10 tests), npm audit 0 vulnerabilities, git status clean."
+      "evidence": "Detached clean worktree at 4833cc5: npm ci, check:g1 12/12, public build snapshot ff965421b0c7694e, npm audit 0, git status clean."
     }
   ],
   "verification_summary": {
     "content_validation": "PASS",
-    "focused_tests": "10/10 PASS",
+    "focused_tests": "12/12 PASS",
     "private_leakage": 0,
     "npm_vulnerabilities": 0,
     "node_syntax": "PASS",
     "local_http_smoke": "PASS",
     "clean_checkout": "PASS",
-    "public_build": "BLOCKED_AS_DESIGNED_PENDING_HUMAN_RELEASE"
+    "public_build": "PASS_LOCAL_ONLY"
   },
   "sha256": {
     "schema/card.schema.json": "8e29503186d27440efe2ee12dba84c964879c57be0b6ebb16907d743bc9cf17e",
     "schema/reference.schema.json": "7e39d4a9d110e8aad57aa6b99c2b8ab6412587d70faa816fe19ff52ae5d12c53",
     "schema/asset.schema.json": "b62911b5b3d1fcba93e21e5ab580269e01edfbdde3cb0e71c4401e9cf20ad78b",
-    "schema/research-record.schema.json": "9b1a3d681577e5c070dce2facc0af21d2eb321586a78dcf1840fa03bff3e6f61",
-    "content/review/cards/C0001.json": "5ed6485584881ec567e0e1b458bbf4162ed45327cc46fce0040a7f3d435fb4f5",
-    "content/review/research-records/C0001.json": "50a8efa6fcb52523a55f171a8c11e7a841d6b586b9b9096c311da8d6c06dea39",
-    "content/approved/references.json": "5b216cf6d41b4b3295f019a46be035d24c1afd52c7934f25c1c5ab1d8168dfd3",
-    "content/approved/assets.json": "e597f5ca167748ec71909e06fe47a94fd3d6b00a277ae0194f64f25352538f91",
+    "schema/research-record.schema.json": "eaea3e24d57694de75821d90f076e844a02c8c644c80cedab4497ac1625deab0",
+    "content/approved/cards/C0001.json": "6c422bca5bfdde8373a4f2b685237d0e1c4133cedc7d6488b74a04afbac4f8a0",
+    "content/approved/research-records/C0001.json": "9c13225ebfb40514925ebafa60493c15dd77bd2211be09f41b69a060eee8835e",
+    "content/approved/references.json": "f4b645798a1c21206468217185e12466c8b9960810fe4bb785b18c3c2a2c819c",
+    "content/approved/assets.json": "5b70b1dab872743a0c884aecae60cffacd147b6c44ad77351d7f460358e20d55",
     "assets/media/audio/saudade-pronunciation-ptbr.ogg": "3929a9e17d5905c0ab759b89bb3dacae3c3944bf96d2072fc3b7da59ceaf9df9",
     "assets/media/illustrations/C0001.svg": "8b3efee0dafe6c35a94104ef5064b76377a21334a67512c914e61afb42e33413",
-    "assets/media/share/C0001.svg": "0bed3a02e97c556b37745297ed4d194c389b1f274b9c936dc2eae330aeb3c916"
-  },
-  "stop_reason": "Canonical Human Editorial Release is an explicit human-action boundary. G1 cannot be marked COMPLETE, so G2-G5 admission remains closed."
+    "assets/media/share/C0001.svg": "c376fcdc99bf1b7fbd258386e171fb74af4e1728b69c47ad6f2e8bdbda3572ca",
+    "public/BUILD_MANIFEST.json": "dcfb970d62dd7f7dbf75be2ae6842b44e49a6e930a2fb84d5bbc5598f3ee0eda"
+  }
 }
