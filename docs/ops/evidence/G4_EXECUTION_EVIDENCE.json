@@ -2,24 +2,22 @@
   "schema_version": 1,
   "goal": "G4",
   "goal_name": "Five-card evidence canary",
-  "status": "MACHINE_COMPLETE_HUMAN_BLOCKED",
+  "status": "COMPLETE",
   "recorded_at": "2026-09-16",
   "tested_commit": "68bd5cf05e6792d88d89ef3254c8034d78143754",
   "branch": "main",
   "external_publish_authorized": false,
   "repository_push_authorized": false,
   "canary": {
-    "approved_baseline": [
-      "C0001"
-    ],
-    "review_ready_pending": [
+    "approved_cards": [
+      "C0001",
       "C0002",
       "C0003",
       "C0004",
       "C0005"
     ],
-    "human_release_status": "PENDING_4_OF_4",
-    "g5_admission_allowed": false
+    "human_release_status": "APPROVED_5_OF_5",
+    "g5_admission_allowed": true
   },
   "machine_gates": [
     {
@@ -100,12 +98,26 @@
       "C0001"
     ],
     "review_snapshot": "dff71075fa5d0372",
-    "public_snapshot": "a8bd1a8d1c307a72"
+    "public_snapshot": "a8bd1a8d1c307a72",
+    "post_release_g1_regression": "12/12 PASS",
+    "post_release_g2_regression": "5/5 PASS",
+    "post_release_g3_regression": "8/8 PASS",
+    "post_release_g4_tests": "9/9 PASS",
+    "post_release_private_leakage": 0,
+    "post_release_npm_vulnerabilities": 0,
+    "post_release_clean_checkout": "PASS",
+    "post_release_public_card_ids": [
+      "C0001",
+      "C0002",
+      "C0003",
+      "C0004",
+      "C0005"
+    ],
+    "post_release_public_snapshot": "65f13b123b986c1c"
   },
   "human_blocker": {
-    "artifact": "docs/ops/blockers/G4_HUMAN_EDITORIAL_RELEASE_REQUIRED_2026-09-16.json",
-    "review_packet": "docs/ops/review/G4_HUMAN_EDITORIAL_REVIEW_PACKET_2026-09-16.json",
-    "required_action": "Explicit human approve/change/HOLD decision for C0002-C0005."
+    "status": "RESOLVED",
+    "approval_evidence": "docs/ops/evidence/G4_HUMAN_EDITORIAL_RELEASE_2026-09-16.json"
   },
   "sha256": {
     "content/review/cards/C0002.json": "9f821dc4ba3809878c9b7ac237e973bb9159d844bf6f367671a049d38b4db04f",
@@ -122,6 +134,12 @@
     "docs/ops/review/G4_HUMAN_EDITORIAL_REVIEW_PACKET_2026-09-16.json": "003abd54eec869c4918c0027b58e46034a14c864d242ab277b3284b88505c58a",
     "docs/ops/blockers/G4_HUMAN_EDITORIAL_RELEASE_REQUIRED_2026-09-16.json": "a4b68cafbe8fe5baf2725e51a8f369b7b1041e298e33dabd8211b060e5b4d785",
     "tests/g4/five-card-canary.test.mjs": "4256b5c7003aacd2d0dfeb5f87b00cacb87fa610ea6cb2692133a1ee61ea55ee",
-    "public/BUILD_MANIFEST.json": "3bf8c1c5f3acb56905d1b27636ec1ed45254155d7bb6f4912300c04962ad32a4"
-  }
+    "public/BUILD_MANIFEST.json": "0d4ecbe6bc8aaa03ccc375b1703236a97e8b15eba6d61382f689b04a8b2079c9",
+    "docs/ops/evidence/C0002_HUMAN_EDITORIAL_RELEASE_2026-09-16.json": "05e4c575153e7a8d88738f18cd4519c636b587aa844e8bc9bf0627e62780a321",
+    "docs/ops/evidence/C0003_HUMAN_EDITORIAL_RELEASE_2026-09-16.json": "ab6db9cada9b66bdf7ff992d9e4badfae184e10643bdc92bfc3e90fd9fd7132e",
+    "docs/ops/evidence/C0004_HUMAN_EDITORIAL_RELEASE_2026-09-16.json": "2ab47a3a3f10f343d835ec7dcd8b893e72c40fdab7742f79891146facead1709",
+    "docs/ops/evidence/C0005_HUMAN_EDITORIAL_RELEASE_2026-09-16.json": "0ac15ec8dc19e0b5a74346ceac4fb254d89ff2471de93ef72315d236a4474af3"
+  },
+  "completed_at": "2026-09-16",
+  "release_tested_commit": "5b3d7b30dc54b3eec20e9f52310367f3caa70701"
 }

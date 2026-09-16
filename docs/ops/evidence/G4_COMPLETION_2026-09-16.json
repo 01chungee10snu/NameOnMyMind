@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "goal": "G4",
+  "status": "COMPLETE",
+  "completed_at": "2026-09-16",
+  "release_commit": "5b3d7b30dc54b3eec20e9f52310367f3caa70701",
+  "approved_card_ids": [
+    "C0001",
+    "C0002",
+    "C0003",
+    "C0004",
+    "C0005"
+  ],
+  "human_editorial_release": "5/5 APPROVED",
+  "regression": {
+    "g1": "12/12 PASS",
+    "g2": "5/5 PASS",
+    "g3": "8/8 PASS",
+    "g4": "9/9 PASS",
+    "privacy_violations": 0,
+    "npm_vulnerabilities": 0,
+    "clean_checkout": "PASS"
+  },
+  "public_snapshot": "65f13b123b986c1c",
+  "g5_admission_allowed": true,
+  "external_publish_authorized": false,
+  "repository_push_authorized": false
+}

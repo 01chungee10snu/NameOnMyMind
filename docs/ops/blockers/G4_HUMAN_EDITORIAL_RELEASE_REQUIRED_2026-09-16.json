@@ -8,11 +8,13 @@
   "human_review_packet": "docs/ops/review/G4_HUMAN_EDITORIAL_REVIEW_PACKET_2026-09-16.json",
   "g4_machine_gate_status": "PASS",
   "g4_human_release_status": "APPROVED_5_OF_5",
-  "g4_complete": false,
-  "g5_admission_allowed": false,
+  "g4_complete": true,
+  "g5_admission_allowed": true,
   "external_publish_authorized": false,
   "repository_push_authorized": false,
   "unblock_condition": "Explicit human approval of all four pending cards after review of the packet, followed by validator/public-boundary/full-regression recheck.",
   "resolved_at": "2026-09-16",
-  "resolution_note": "C0002-C0005 received explicit Human Editorial Release approval. Final G4 completion remains contingent on post-promotion validation, public-build parity, privacy scan, and clean-checkout regression."
+  "resolution_note": "C0002-C0005 explicit Human Editorial Release approved; post-promotion G1-G4 full regression, privacy, npm audit, five-card public build, and detached clean-checkout regression all PASS.",
+  "post_promotion_regression": "PASS",
+  "clean_checkout_commit": "5b3d7b30dc54b3eec20e9f52310367f3caa70701"
 }
