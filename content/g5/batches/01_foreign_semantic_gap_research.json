@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0.0",
+  "batch_id": "G5-F01-FOREIGN-SEMANTIC-GAP",
+  "status": "RESEARCH_CORE_PASS_PRODUCT_GATES_HOLD",
+  "recorded_at": "2026-09-17",
+  "card_ids": [
+    "C0016",
+    "C0017",
+    "C0018",
+    "C0019",
+    "C0020"
+  ],
+  "terms": [
+    "Geborgenheit",
+    "Fernweh",
+    "Weltschmerz",
+    "切ない",
+    "もどかしい"
+  ],
+  "languages": [
+    "Deutsch",
+    "日本語"
+  ],
+  "korean_expression_cost": {
+    "C0016": "EXPLANATORY_PHRASE_REQUIRED",
+    "C0017": "SHORT_PHRASE_PARTIAL",
+    "C0018": "EXPLANATORY_PHRASE_REQUIRED",
+    "C0019": "EXPLANATORY_PHRASE_REQUIRED",
+    "C0020": "SHORT_PHRASE_PARTIAL"
+  },
+  "audio_rights": "HOLD_UNTIL_PRODUCT_SAFE_AUDIO_VERIFIED",
+  "full_multilingual_comparison": "HOLD_FOR_INDEPENDENT_EN_ZH_JA_LEXICAL_VERIFICATION",
+  "review_ready": 0,
+  "public_promotion_authorized": false,
+  "notes": "First foreign-primary G5 research batch. 委屈 was intentionally not admitted because Korean 억울하다 may be too close; it remains a comparison candidate rather than being forced through."
+}

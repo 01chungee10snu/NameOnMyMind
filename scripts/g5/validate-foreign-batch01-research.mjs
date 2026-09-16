@@ -1,0 +1,47 @@
+#!/usr/bin/env node
+import fs from 'node:fs';
+import path from 'node:path';
+import Ajv2020 from 'ajv/dist/2020.js';
+import addFormats from 'ajv-formats';
+import { fileURLToPath } from 'node:url';
+const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
+const read = (rel) => JSON.parse(fs.readFileSync(path.join(ROOT, rel), 'utf8'));
+const fail = (m) => { throw new Error(m); };
+const ids = ['C0016','C0017','C0018','C0019','C0020'];
+const terms = ['Geborgenheit','Fernweh','Weltschmerz','切ない','もどかしい'];
+const expectedCost = ['EXPLANATORY_PHRASE_REQUIRED','SHORT_PHRASE_PARTIAL','EXPLANATORY_PHRASE_REQUIRED','EXPLANATORY_PHRASE_REQUIRED','SHORT_PHRASE_PARTIAL'];
+const ajv = new Ajv2020({allErrors:true,strict:false}); addFormats(ajv);
+const schema = read('schema/g5-foreign-research-record.schema.json');
+const validate = ajv.compile(schema);
+const refs = new Map(read('content/approved/references.json').references.map((x)=>[x.reference_id,x]));
+const assets = read('content/approved/assets.json').assets;
+const batch = read('content/g5/batches/01_foreign_semantic_gap_research.json');
+if (schema.$id !== 'urn:nameonmymind:schema:research-record:foreign:v2.1.0') fail('foreign schema id mismatch');
+if (batch.status !== 'RESEARCH_CORE_PASS_PRODUCT_GATES_HOLD' || batch.public_promotion_authorized !== false) fail('foreign batch boundary invalid');
+if (JSON.stringify(batch.card_ids) !== JSON.stringify(ids) || JSON.stringify(batch.terms) !== JSON.stringify(terms)) fail('foreign batch identity mismatch');
+if (batch.review_ready !== 0) fail('foreign batch must not be REVIEW_READY');
+if (!/委屈/.test(batch.notes) || !/억울하다/.test(batch.notes)) fail('near-equivalent exclusion rationale missing');
+for (let i=0;i<ids.length;i+=1) {
+  const rr = read(`content/g5/research-records/${ids[i]}.json`);
+  if (!validate(rr)) fail(`${ids[i]} schema: ${JSON.stringify(validate.errors)}`);
+  if (rr.candidate.term !== terms[i] || rr.schema_version !== '2.1.0') fail(`${ids[i]} identity/schema mismatch`);
+  if (rr.lifecycle_state !== 'HOLD' || rr.distinctiveness_review.track !== 'FOREIGN_KOREAN_GAP') fail(`${ids[i]} state/track mismatch`);
+  const cost = rr.distinctiveness_review.korean_expression_cost;
+  if (cost.status !== 'PASS' || cost.classification !== expectedCost[i]) fail(`${ids[i]} Korean Expression Cost mismatch`);
+  if (rr.comparisons.ko.status !== 'PASS') fail(`${ids[i]} Korean comparison not PASS`);
+  if (rr.pronunciation_verification.status !== 'HOLD' || rr.pronunciation_verification.audio_asset_id !== null) fail(`${ids[i]} audio boundary invalid`);
+  if (rr.automated_gates.rights !== 'HOLD' || rr.automated_gates.pronunciation !== 'HOLD') fail(`${ids[i]} product rights must remain HOLD`);
+  if (rr.human_editorial_release.status !== 'PENDING' || rr.human_editorial_release.reviewer !== null) fail(`${ids[i]} human release opened too early`);
+  const scholarly = rr.source_inventory.filter((x)=>x.role==='scholarly');
+  if (scholarly.length < 1) fail(`${ids[i]} scholarly source missing`);
+  for (const s of scholarly) if (refs.get(s.reference_id)?.source_type !== 'scholarly') fail(`${ids[i]} scholarly registry mismatch ${s.reference_id}`);
+  if (fs.existsSync(path.join(ROOT,`content/review/cards/${ids[i]}.json`)) || fs.existsSync(path.join(ROOT,`public/data/cards/${ids[i]}.json`))) fail(`${ids[i]} leaked toward publication`);
+}
+if (assets.some((a)=>ids.includes(a.card_id))) fail('foreign HOLD batch has product assets registered before rights verification');
+const publicCards = read('public/BUILD_MANIFEST.json').card_ids;
+if (JSON.stringify(publicCards)!==JSON.stringify(['C0001','C0002','C0003','C0004','C0005'])) fail('public boundary changed');
+const invalid = structuredClone(read('content/g5/research-records/C0016.json'));
+invalid.distinctiveness_review.korean_expression_cost.classification = 'ONE_WORD_EQUIVALENT';
+invalid.distinctiveness_review.korean_expression_cost.status = 'PASS';
+if (validate(invalid)) fail('foreign schema incorrectly permits ONE_WORD_EQUIVALENT with PASS');
+console.log(JSON.stringify({status:'PASS',batch_id:batch.batch_id,card_ids:ids,korean_expression_cost:Object.fromEntries(ids.map((id,i)=>[id,expectedCost[i]])),review_ready:0,product_assets_registered:0,public_cards:publicCards},null,2));

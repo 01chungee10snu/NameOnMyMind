@@ -1,0 +1,654 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:nameonmymind:schema:research-record:foreign:v2.1.0",
+  "title": "NameOnMyMind G5 Foreign Research Record v2.1.0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "research_id",
+    "card_id",
+    "candidate",
+    "lifecycle_state",
+    "source_inventory",
+    "lexical_verification",
+    "semantic_definition_and_boundaries",
+    "cultural_context_review",
+    "comparisons",
+    "pronunciation_verification",
+    "claim_source_map",
+    "relations",
+    "illustration_brief",
+    "editorial_copy",
+    "automated_gates",
+    "distinctiveness_review",
+    "human_editorial_release",
+    "changelog"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "2.1.0"
+    },
+    "research_id": {
+      "type": "string",
+      "pattern": "^RR-[A-Z0-9-]+$"
+    },
+    "card_id": {
+      "type": "string",
+      "pattern": "^C[0-9]{4}$"
+    },
+    "candidate": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "term",
+        "language_code",
+        "language_name",
+        "experience_type"
+      ],
+      "properties": {
+        "term": {
+          "type": "string",
+          "minLength": 1
+        },
+        "language_code": {
+          "type": "string",
+          "minLength": 2
+        },
+        "language_name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "experience_type": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "lifecycle_state": {
+      "enum": [
+        "CANDIDATE",
+        "RESEARCH",
+        "REVIEW",
+        "HOLD",
+        "REJECTED",
+        "REVIEW_READY",
+        "APPROVED"
+      ]
+    },
+    "source_inventory": {
+      "type": "array",
+      "minItems": 3,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "reference_id",
+          "role",
+          "quality_tier"
+        ],
+        "properties": {
+          "reference_id": {
+            "type": "string",
+            "pattern": "^R[0-9]{4,}$"
+          },
+          "role": {
+            "enum": [
+              "lexical",
+              "scholarly",
+              "pronunciation",
+              "cultural",
+              "rights"
+            ]
+          },
+          "quality_tier": {
+            "enum": [
+              "A",
+              "B"
+            ]
+          }
+        }
+      }
+    },
+    "lexical_verification": {
+      "$ref": "#/$defs/reviewBlock"
+    },
+    "semantic_definition_and_boundaries": {
+      "$ref": "#/$defs/reviewBlock"
+    },
+    "cultural_context_review": {
+      "$ref": "#/$defs/reviewBlock"
+    },
+    "comparisons": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "ko",
+        "en",
+        "zh",
+        "ja"
+      ],
+      "properties": {
+        "ko": {
+          "$ref": "#/$defs/comparisonReview"
+        },
+        "en": {
+          "$ref": "#/$defs/comparisonReview"
+        },
+        "zh": {
+          "$ref": "#/$defs/comparisonReview"
+        },
+        "ja": {
+          "$ref": "#/$defs/comparisonReview"
+        }
+      }
+    },
+    "pronunciation_verification": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "ipa",
+        "locale",
+        "reference_ids",
+        "audio_asset_id",
+        "notes"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "PASS",
+            "HOLD"
+          ]
+        },
+        "ipa": {
+          "type": "string",
+          "minLength": 1
+        },
+        "locale": {
+          "type": "string",
+          "minLength": 2
+        },
+        "reference_ids": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "pattern": "^R[0-9]{4,}$"
+          }
+        },
+        "audio_asset_id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^A[0-9]{4,}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "notes": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "PASS"
+              }
+            },
+            "required": [
+              "status"
+            ]
+          },
+          "then": {
+            "properties": {
+              "audio_asset_id": {
+                "type": "string",
+                "pattern": "^A[0-9]{4,}$"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "claim_source_map": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "claim_id",
+          "claim",
+          "reference_ids",
+          "evidence_locator",
+          "public_safe"
+        ],
+        "properties": {
+          "claim_id": {
+            "type": "string",
+            "pattern": "^CL-[0-9]{3}$"
+          },
+          "claim": {
+            "type": "string",
+            "minLength": 1
+          },
+          "reference_ids": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "pattern": "^R[0-9]{4,}$"
+            }
+          },
+          "evidence_locator": {
+            "type": "string",
+            "minLength": 1
+          },
+          "public_safe": {
+            "type": "boolean"
+          }
+        }
+      }
+    },
+    "relations": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^C[0-9]{4}$"
+      }
+    },
+    "illustration_brief": {
+      "$ref": "#/$defs/reviewBlock"
+    },
+    "editorial_copy": {
+      "$ref": "#/$defs/reviewBlock"
+    },
+    "automated_gates": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schema",
+        "evidence",
+        "pronunciation",
+        "cultural_humility",
+        "rights",
+        "privacy"
+      ],
+      "properties": {
+        "schema": {
+          "enum": [
+            "PASS",
+            "HOLD"
+          ]
+        },
+        "evidence": {
+          "enum": [
+            "PASS",
+            "HOLD"
+          ]
+        },
+        "pronunciation": {
+          "enum": [
+            "PASS",
+            "HOLD"
+          ]
+        },
+        "cultural_humility": {
+          "enum": [
+            "PASS",
+            "HOLD"
+          ]
+        },
+        "rights": {
+          "enum": [
+            "PASS",
+            "HOLD"
+          ]
+        },
+        "privacy": {
+          "enum": [
+            "PASS",
+            "HOLD"
+          ]
+        }
+      }
+    },
+    "human_editorial_release": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "reviewer",
+        "reviewed_at",
+        "notes"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "PENDING",
+            "APPROVED",
+            "CHANGES_REQUESTED"
+          ]
+        },
+        "reviewer": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "reviewed_at": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date"
+        },
+        "notes": {
+          "type": "string"
+        }
+      }
+    },
+    "changelog": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "date",
+          "state",
+          "note"
+        ],
+        "properties": {
+          "date": {
+            "type": "string",
+            "format": "date"
+          },
+          "state": {
+            "type": "string",
+            "minLength": 1
+          },
+          "note": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "distinctiveness_review": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "track",
+        "generic_basic_emotion",
+        "nearest_cross_language_terms",
+        "semantic_residue",
+        "residue_reference_ids",
+        "overclaim_to_avoid",
+        "korean_expression_cost"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "PASS",
+            "HOLD",
+            "REJECTED_GENERIC_EQUIVALENT"
+          ]
+        },
+        "track": {
+          "enum": [
+            "KOREAN_NUANCE",
+            "FOREIGN_KOREAN_GAP"
+          ]
+        },
+        "generic_basic_emotion": {
+          "type": "boolean"
+        },
+        "nearest_cross_language_terms": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "ko",
+            "en",
+            "zh",
+            "ja"
+          ],
+          "properties": {
+            "ko": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "en": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "zh": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "ja": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        },
+        "semantic_residue": {
+          "type": "string",
+          "minLength": 1
+        },
+        "residue_reference_ids": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "pattern": "^R[0-9]{4,}$"
+          }
+        },
+        "overclaim_to_avoid": {
+          "type": "string",
+          "minLength": 1
+        },
+        "korean_expression_cost": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "classification",
+            "status",
+            "nearest_korean_terms",
+            "natural_korean_rendering",
+            "residue_dimensions",
+            "reference_ids",
+            "rationale"
+          ],
+          "properties": {
+            "classification": {
+              "enum": [
+                "ONE_WORD_EQUIVALENT",
+                "SHORT_PHRASE_PARTIAL",
+                "EXPLANATORY_PHRASE_REQUIRED",
+                "UNCLEAR"
+              ]
+            },
+            "status": {
+              "enum": [
+                "PASS",
+                "HOLD",
+                "REJECTED_GENERIC_EQUIVALENT"
+              ]
+            },
+            "nearest_korean_terms": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "natural_korean_rendering": {
+              "type": "string",
+              "minLength": 1
+            },
+            "residue_dimensions": {
+              "type": "array",
+              "minItems": 1,
+              "uniqueItems": true,
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "reference_ids": {
+              "type": "array",
+              "minItems": 1,
+              "uniqueItems": true,
+              "items": {
+                "type": "string",
+                "pattern": "^R[0-9]{4,}$"
+              }
+            },
+            "rationale": {
+              "type": "string",
+              "minLength": 20
+            }
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "reviewBlock": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "summary",
+        "reference_ids"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "PASS",
+            "HOLD"
+          ]
+        },
+        "summary": {
+          "type": "string",
+          "minLength": 1
+        },
+        "reference_ids": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "pattern": "^R[0-9]{4,}$"
+          }
+        }
+      }
+    },
+    "comparisonReview": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "near_terms",
+        "difference_note",
+        "verification_note",
+        "reference_ids"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "PASS",
+            "HOLD"
+          ]
+        },
+        "near_terms": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "difference_note": {
+          "type": "string",
+          "minLength": 1
+        },
+        "verification_note": {
+          "type": "string",
+          "minLength": 1
+        },
+        "reference_ids": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "pattern": "^R[0-9]{4,}$"
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "distinctiveness_review": {
+            "properties": {
+              "korean_expression_cost": {
+                "properties": {
+                  "classification": {
+                    "const": "ONE_WORD_EQUIVALENT"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "distinctiveness_review": {
+            "properties": {
+              "korean_expression_cost": {
+                "properties": {
+                  "status": {
+                    "const": "REJECTED_GENERIC_EQUIVALENT"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}

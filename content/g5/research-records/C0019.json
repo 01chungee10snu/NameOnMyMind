@@ -1,0 +1,244 @@
+{
+  "schema_version": "2.1.0",
+  "research_id": "RR-C0019-FOREIGN",
+  "card_id": "C0019",
+  "candidate": {
+    "term": "切ない",
+    "language_code": "ja-JP",
+    "language_name": "日本語",
+    "experience_type": "mixed_experience"
+  },
+  "lifecycle_state": "HOLD",
+  "source_inventory": [
+    {
+      "reference_id": "R0103",
+      "role": "lexical",
+      "quality_tier": "A"
+    },
+    {
+      "reference_id": "R0104",
+      "role": "scholarly",
+      "quality_tier": "A"
+    },
+    {
+      "reference_id": "R0105",
+      "role": "scholarly",
+      "quality_tier": "A"
+    },
+    {
+      "reference_id": "R0106",
+      "role": "pronunciation",
+      "quality_tier": "B"
+    }
+  ],
+  "lexical_verification": {
+    "status": "PASS",
+    "summary": "원어 사전에서 목표 표제어와 카드에 사용할 의미 범위를 확인했다.",
+    "reference_ids": [
+      "R0103"
+    ]
+  },
+  "semantic_definition_and_boundaries": {
+    "status": "PASS",
+    "summary": "한국어의 애절하다·안타깝다·그립다와 각각 겹치지만, 슬픔/그리움의 신체적 조임과 기대-현실 간극, 타인/대상에 대한 감정이입이 한 어휘에서 함께 작동할 수 있다.",
+    "reference_ids": [
+      "R0103",
+      "R0104",
+      "R0105"
+    ]
+  },
+  "cultural_context_review": {
+    "status": "PASS",
+    "summary": "어휘가 포착하는 의미 결은 설명하되 특정 문화 사람만 이 경험을 느낀다는 본질주의나 번역불가능성 주장을 하지 않는다.",
+    "reference_ids": [
+      "R0103",
+      "R0104",
+      "R0105"
+    ]
+  },
+  "comparisons": {
+    "ko": {
+      "status": "PASS",
+      "near_terms": [
+        "애절하다",
+        "가슴이 아프다",
+        "그립고 슬프다"
+      ],
+      "difference_note": "한국어 근접표현을 나열해도 원어가 한데 묶는 의미 요소 일부가 남는다.",
+      "verification_note": "Korean Expression Cost review is source-grounded.",
+      "reference_ids": [
+        "R0103",
+        "R0104",
+        "R0105"
+      ]
+    },
+    "en": {
+      "status": "HOLD",
+      "near_terms": [
+        "poignant",
+        "heart-rending",
+        "wistful and painful"
+      ],
+      "difference_note": "영어 근접어는 탐색용이며 독립 lexical verification을 추가해야 최종 비교가 PASS한다.",
+      "verification_note": "Provisional comparison only.",
+      "reference_ids": [
+        "R0103"
+      ]
+    },
+    "zh": {
+      "status": "HOLD",
+      "near_terms": [
+        "心酸",
+        "揪心",
+        "悲切"
+      ],
+      "difference_note": "중국어 근접어는 탐색용이며 독립 lexical verification을 추가해야 최종 비교가 PASS한다.",
+      "verification_note": "Provisional comparison only.",
+      "reference_ids": [
+        "R0103"
+      ]
+    },
+    "ja": {
+      "status": "PASS",
+      "near_terms": [
+        "悲しさや恋しさで胸が締め付けられる"
+      ],
+      "difference_note": "원어가 일본어인 경우 target lexical evidence로 자체 의미를 확인했고, 그렇지 않은 경우 일본어 근접어는 provisional이다.",
+      "verification_note": "Target-language evidence or provisional mapping as applicable.",
+      "reference_ids": [
+        "R0103"
+      ]
+    }
+  },
+  "pronunciation_verification": {
+    "status": "HOLD",
+    "ipa": "[se̞t͡sɨna̠i]",
+    "locale": "ja-JP",
+    "reference_ids": [
+      "R0106"
+    ],
+    "audio_asset_id": null,
+    "notes": "IPA/prosodic pronunciation provenance is recorded, but product-safe audio source, creator, locale fit, license, rights, and SHA linkage are not yet verified."
+  },
+  "claim_source_map": [
+    {
+      "claim_id": "CL-001",
+      "claim": "한국어의 애절하다·안타깝다·그립다와 각각 겹치지만, 슬픔/그리움의 신체적 조임과 기대-현실 간극, 타인/대상에 대한 감정이입이 한 어휘에서 함께 작동할 수 있다.",
+      "reference_ids": [
+        "R0103",
+        "R0104",
+        "R0105"
+      ],
+      "evidence_locator": "Target lexical definition plus term-specific or directly relevant scholarly evidence.",
+      "public_safe": true
+    },
+    {
+      "claim_id": "CL-002",
+      "claim": "가까운 한국어 한 단어 하나만으로는 핵심 의미 패키지를 모두 보존하기 어렵다.",
+      "reference_ids": [
+        "R0103",
+        "R0104",
+        "R0105"
+      ],
+      "evidence_locator": "Korean Expression Cost comparison against target semantic components.",
+      "public_safe": true
+    }
+  ],
+  "relations": [],
+  "illustration_brief": {
+    "status": "HOLD",
+    "summary": "Pronunciation/audio rights and full multilingual comparison are incomplete; illustration is deferred.",
+    "reference_ids": [
+      "R0103"
+    ]
+  },
+  "editorial_copy": {
+    "status": "HOLD",
+    "summary": "Public poetic copy is deferred until all evidence, comparison, pronunciation, and rights gates can be evaluated together.",
+    "reference_ids": [
+      "R0103",
+      "R0104",
+      "R0105"
+    ]
+  },
+  "automated_gates": {
+    "schema": "PASS",
+    "evidence": "PASS",
+    "pronunciation": "HOLD",
+    "cultural_humility": "PASS",
+    "rights": "HOLD",
+    "privacy": "PASS"
+  },
+  "distinctiveness_review": {
+    "status": "PASS",
+    "track": "FOREIGN_KOREAN_GAP",
+    "generic_basic_emotion": false,
+    "nearest_cross_language_terms": {
+      "ko": [
+        "애절하다",
+        "가슴이 아프다",
+        "그립고 슬프다"
+      ],
+      "en": [
+        "poignant",
+        "heart-rending",
+        "wistful and painful"
+      ],
+      "zh": [
+        "心酸",
+        "揪心",
+        "悲切"
+      ],
+      "ja": [
+        "悲しさや恋しさで胸が締め付けられる"
+      ]
+    },
+    "semantic_residue": "한국어의 애절하다·안타깝다·그립다와 각각 겹치지만, 슬픔/그리움의 신체적 조임과 기대-현실 간극, 타인/대상에 대한 감정이입이 한 어휘에서 함께 작동할 수 있다.",
+    "residue_reference_ids": [
+      "R0103",
+      "R0104",
+      "R0105"
+    ],
+    "overclaim_to_avoid": "모든 현대 용례가 비극적이거나 연애 감정이라고 고정하지 않고, 의미 변화와 가벼운 현대 용법도 경계로 명시한다.",
+    "korean_expression_cost": {
+      "classification": "EXPLANATORY_PHRASE_REQUIRED",
+      "status": "PASS",
+      "nearest_korean_terms": [
+        "애절하다",
+        "가슴이 아프다",
+        "그립고 슬프다"
+      ],
+      "natural_korean_rendering": "슬픔이나 그리움 때문에 가슴이 조여 오는 듯 아프고, 마음대로 되지 않는 현실과 바람의 틈이 함께 느껴지는 상태",
+      "residue_dimensions": [
+        "chest-tightening anguish",
+        "sadness or longing",
+        "empathy",
+        "ideal-expectation versus reality gap"
+      ],
+      "reference_ids": [
+        "R0103",
+        "R0104",
+        "R0105"
+      ],
+      "rationale": "가까운 한국어 표현을 제시해도 핵심 의미 요소가 분산되거나 일부가 남는다. 이 판단은 원어 사전 정의와 직접 관련 학술 연구의 의미 경계를 바탕으로 하며, 단순히 번역문을 길게 만들어 차이를 부풀린 것이 아니다."
+    }
+  },
+  "human_editorial_release": {
+    "status": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": "Research-stage HOLD. Human Editorial Release is not open until audio rights and full KO/EN/ZH/JA comparison pass."
+  },
+  "changelog": [
+    {
+      "date": "2026-09-17",
+      "state": "RESEARCH",
+      "note": "Foreign semantic-gap source-first research record created under v2.1 Korean Expression Cost contract."
+    },
+    {
+      "date": "2026-09-17",
+      "state": "HOLD",
+      "note": "Core lexical/scholarly distinctiveness passes; product audio rights and full multilingual comparison remain incomplete."
+    }
+  ]
+}

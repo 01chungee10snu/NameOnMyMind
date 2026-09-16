@@ -1,0 +1,226 @@
+{
+  "schema_version": "2.1.0",
+  "research_id": "RR-C0018-FOREIGN",
+  "card_id": "C0018",
+  "candidate": {
+    "term": "Weltschmerz",
+    "language_code": "de-DE",
+    "language_name": "Deutsch",
+    "experience_type": "mood"
+  },
+  "lifecycle_state": "HOLD",
+  "source_inventory": [
+    {
+      "reference_id": "R0100",
+      "role": "lexical",
+      "quality_tier": "A"
+    },
+    {
+      "reference_id": "R0101",
+      "role": "scholarly",
+      "quality_tier": "A"
+    },
+    {
+      "reference_id": "R0102",
+      "role": "pronunciation",
+      "quality_tier": "B"
+    }
+  ],
+  "lexical_verification": {
+    "status": "PASS",
+    "summary": "원어 사전에서 목표 표제어와 카드에 사용할 의미 범위를 확인했다.",
+    "reference_ids": [
+      "R0100"
+    ]
+  },
+  "semantic_definition_and_boundaries": {
+    "status": "PASS",
+    "summary": "단순한 우울·슬픔이 아니라 세계의 불완전함과 고통, 개인의 이상·기대 사이의 간극을 의식하는 데서 생기는 세계지향적 슬픔/피로라는 대상 구조가 포함된다.",
+    "reference_ids": [
+      "R0100",
+      "R0101"
+    ]
+  },
+  "cultural_context_review": {
+    "status": "PASS",
+    "summary": "어휘가 포착하는 의미 결은 설명하되 특정 문화 사람만 이 경험을 느낀다는 본질주의나 번역불가능성 주장을 하지 않는다.",
+    "reference_ids": [
+      "R0100",
+      "R0101"
+    ]
+  },
+  "comparisons": {
+    "ko": {
+      "status": "PASS",
+      "near_terms": [
+        "세상에 대한 슬픔",
+        "세계의 불완전함에서 오는 괴로움"
+      ],
+      "difference_note": "한국어 근접표현을 나열해도 원어가 한데 묶는 의미 요소 일부가 남는다.",
+      "verification_note": "Korean Expression Cost review is source-grounded.",
+      "reference_ids": [
+        "R0100",
+        "R0101"
+      ]
+    },
+    "en": {
+      "status": "HOLD",
+      "near_terms": [
+        "world-weariness",
+        "world pain"
+      ],
+      "difference_note": "영어 근접어는 탐색용이며 독립 lexical verification을 추가해야 최종 비교가 PASS한다.",
+      "verification_note": "Provisional comparison only.",
+      "reference_ids": [
+        "R0100"
+      ]
+    },
+    "zh": {
+      "status": "HOLD",
+      "near_terms": [
+        "对世界缺憾的悲痛",
+        "厌世式哀愁"
+      ],
+      "difference_note": "중국어 근접어는 탐색용이며 독립 lexical verification을 추가해야 최종 비교가 PASS한다.",
+      "verification_note": "Provisional comparison only.",
+      "reference_ids": [
+        "R0100"
+      ]
+    },
+    "ja": {
+      "status": "HOLD",
+      "near_terms": [
+        "世界苦",
+        "世の不完全さへの悲哀"
+      ],
+      "difference_note": "원어가 일본어인 경우 target lexical evidence로 자체 의미를 확인했고, 그렇지 않은 경우 일본어 근접어는 provisional이다.",
+      "verification_note": "Target-language evidence or provisional mapping as applicable.",
+      "reference_ids": [
+        "R0100"
+      ]
+    }
+  },
+  "pronunciation_verification": {
+    "status": "HOLD",
+    "ipa": "[ˈvɛltʃmɛrts]",
+    "locale": "de-DE",
+    "reference_ids": [
+      "R0102"
+    ],
+    "audio_asset_id": null,
+    "notes": "IPA/prosodic pronunciation provenance is recorded, but product-safe audio source, creator, locale fit, license, rights, and SHA linkage are not yet verified."
+  },
+  "claim_source_map": [
+    {
+      "claim_id": "CL-001",
+      "claim": "단순한 우울·슬픔이 아니라 세계의 불완전함과 고통, 개인의 이상·기대 사이의 간극을 의식하는 데서 생기는 세계지향적 슬픔/피로라는 대상 구조가 포함된다.",
+      "reference_ids": [
+        "R0100",
+        "R0101"
+      ],
+      "evidence_locator": "Target lexical definition plus term-specific or directly relevant scholarly evidence.",
+      "public_safe": true
+    },
+    {
+      "claim_id": "CL-002",
+      "claim": "가까운 한국어 한 단어 하나만으로는 핵심 의미 패키지를 모두 보존하기 어렵다.",
+      "reference_ids": [
+        "R0100",
+        "R0101"
+      ],
+      "evidence_locator": "Korean Expression Cost comparison against target semantic components.",
+      "public_safe": true
+    }
+  ],
+  "relations": [],
+  "illustration_brief": {
+    "status": "HOLD",
+    "summary": "Pronunciation/audio rights and full multilingual comparison are incomplete; illustration is deferred.",
+    "reference_ids": [
+      "R0100"
+    ]
+  },
+  "editorial_copy": {
+    "status": "HOLD",
+    "summary": "Public poetic copy is deferred until all evidence, comparison, pronunciation, and rights gates can be evaluated together.",
+    "reference_ids": [
+      "R0100",
+      "R0101"
+    ]
+  },
+  "automated_gates": {
+    "schema": "PASS",
+    "evidence": "PASS",
+    "pronunciation": "HOLD",
+    "cultural_humility": "PASS",
+    "rights": "HOLD",
+    "privacy": "PASS"
+  },
+  "distinctiveness_review": {
+    "status": "PASS",
+    "track": "FOREIGN_KOREAN_GAP",
+    "generic_basic_emotion": false,
+    "nearest_cross_language_terms": {
+      "ko": [
+        "세상에 대한 슬픔",
+        "세계의 불완전함에서 오는 괴로움"
+      ],
+      "en": [
+        "world-weariness",
+        "world pain"
+      ],
+      "zh": [
+        "对世界缺憾的悲痛",
+        "厌世式哀愁"
+      ],
+      "ja": [
+        "世界苦",
+        "世の不完全さへの悲哀"
+      ]
+    },
+    "semantic_residue": "단순한 우울·슬픔이 아니라 세계의 불완전함과 고통, 개인의 이상·기대 사이의 간극을 의식하는 데서 생기는 세계지향적 슬픔/피로라는 대상 구조가 포함된다.",
+    "residue_reference_ids": [
+      "R0100",
+      "R0101"
+    ],
+    "overclaim_to_avoid": "임상적 우울증과 동일시하거나 현대 독일인의 보편적 성향으로 일반화하지 않는다.",
+    "korean_expression_cost": {
+      "classification": "EXPLANATORY_PHRASE_REQUIRED",
+      "status": "PASS",
+      "nearest_korean_terms": [
+        "세상에 대한 슬픔",
+        "세계의 불완전함에서 오는 괴로움"
+      ],
+      "natural_korean_rendering": "내가 바라는 이상과 실제 세계의 불완전함·고통 사이의 간극을 의식하며 느끼는 깊은 슬픔과 피로",
+      "residue_dimensions": [
+        "pain about the world",
+        "ideal-reality gap",
+        "awareness of suffering or inadequacy",
+        "mood-like persistence"
+      ],
+      "reference_ids": [
+        "R0100",
+        "R0101"
+      ],
+      "rationale": "가까운 한국어 표현을 제시해도 핵심 의미 요소가 분산되거나 일부가 남는다. 이 판단은 원어 사전 정의와 직접 관련 학술 연구의 의미 경계를 바탕으로 하며, 단순히 번역문을 길게 만들어 차이를 부풀린 것이 아니다."
+    }
+  },
+  "human_editorial_release": {
+    "status": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": "Research-stage HOLD. Human Editorial Release is not open until audio rights and full KO/EN/ZH/JA comparison pass."
+  },
+  "changelog": [
+    {
+      "date": "2026-09-17",
+      "state": "RESEARCH",
+      "note": "Foreign semantic-gap source-first research record created under v2.1 Korean Expression Cost contract."
+    },
+    {
+      "date": "2026-09-17",
+      "state": "HOLD",
+      "note": "Core lexical/scholarly distinctiveness passes; product audio rights and full multilingual comparison remain incomplete."
+    }
+  ]
+}

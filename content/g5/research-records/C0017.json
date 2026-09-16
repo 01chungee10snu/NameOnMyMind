@@ -1,0 +1,225 @@
+{
+  "schema_version": "2.1.0",
+  "research_id": "RR-C0017-FOREIGN",
+  "card_id": "C0017",
+  "candidate": {
+    "term": "Fernweh",
+    "language_code": "de-DE",
+    "language_name": "Deutsch",
+    "experience_type": "feeling"
+  },
+  "lifecycle_state": "HOLD",
+  "source_inventory": [
+    {
+      "reference_id": "R0097",
+      "role": "lexical",
+      "quality_tier": "A"
+    },
+    {
+      "reference_id": "R0098",
+      "role": "scholarly",
+      "quality_tier": "A"
+    },
+    {
+      "reference_id": "R0099",
+      "role": "pronunciation",
+      "quality_tier": "B"
+    }
+  ],
+  "lexical_verification": {
+    "status": "PASS",
+    "summary": "원어 사전에서 목표 표제어와 카드에 사용할 의미 범위를 확인했다.",
+    "reference_ids": [
+      "R0097"
+    ]
+  },
+  "semantic_definition_and_boundaries": {
+    "status": "PASS",
+    "summary": "일반적인 여행 욕구보다 ‘먼 곳’을 향한 그리움이 중심이며, 이미 알고 있는 고향을 그리워하는 향수와 달리 가보지 않은 장소도 대상이 될 수 있다.",
+    "reference_ids": [
+      "R0097",
+      "R0098"
+    ]
+  },
+  "cultural_context_review": {
+    "status": "PASS",
+    "summary": "어휘가 포착하는 의미 결은 설명하되 특정 문화 사람만 이 경험을 느낀다는 본질주의나 번역불가능성 주장을 하지 않는다.",
+    "reference_ids": [
+      "R0097",
+      "R0098"
+    ]
+  },
+  "comparisons": {
+    "ko": {
+      "status": "PASS",
+      "near_terms": [
+        "먼 곳에 대한 그리움",
+        "여행 갈망"
+      ],
+      "difference_note": "한국어 근접표현을 나열해도 원어가 한데 묶는 의미 요소 일부가 남는다.",
+      "verification_note": "Korean Expression Cost review is source-grounded.",
+      "reference_ids": [
+        "R0097",
+        "R0098"
+      ]
+    },
+    "en": {
+      "status": "HOLD",
+      "near_terms": [
+        "longing for faraway places",
+        "travel longing"
+      ],
+      "difference_note": "영어 근접어는 탐색용이며 독립 lexical verification을 추가해야 최종 비교가 PASS한다.",
+      "verification_note": "Provisional comparison only.",
+      "reference_ids": [
+        "R0097"
+      ]
+    },
+    "zh": {
+      "status": "HOLD",
+      "near_terms": [
+        "对远方的向往",
+        "远方乡愁"
+      ],
+      "difference_note": "중국어 근접어는 탐색용이며 독립 lexical verification을 추가해야 최종 비교가 PASS한다.",
+      "verification_note": "Provisional comparison only.",
+      "reference_ids": [
+        "R0097"
+      ]
+    },
+    "ja": {
+      "status": "HOLD",
+      "near_terms": [
+        "遠くへの憧れ",
+        "旅への憧れ"
+      ],
+      "difference_note": "원어가 일본어인 경우 target lexical evidence로 자체 의미를 확인했고, 그렇지 않은 경우 일본어 근접어는 provisional이다.",
+      "verification_note": "Target-language evidence or provisional mapping as applicable.",
+      "reference_ids": [
+        "R0097"
+      ]
+    }
+  },
+  "pronunciation_verification": {
+    "status": "HOLD",
+    "ipa": "[ˈfɛrnveː]",
+    "locale": "de-DE",
+    "reference_ids": [
+      "R0099"
+    ],
+    "audio_asset_id": null,
+    "notes": "IPA/prosodic pronunciation provenance is recorded, but product-safe audio source, creator, locale fit, license, rights, and SHA linkage are not yet verified."
+  },
+  "claim_source_map": [
+    {
+      "claim_id": "CL-001",
+      "claim": "일반적인 여행 욕구보다 ‘먼 곳’을 향한 그리움이 중심이며, 이미 알고 있는 고향을 그리워하는 향수와 달리 가보지 않은 장소도 대상이 될 수 있다.",
+      "reference_ids": [
+        "R0097",
+        "R0098"
+      ],
+      "evidence_locator": "Target lexical definition plus term-specific or directly relevant scholarly evidence.",
+      "public_safe": true
+    },
+    {
+      "claim_id": "CL-002",
+      "claim": "가까운 한국어 한 단어 하나만으로는 핵심 의미 패키지를 모두 보존하기 어렵다.",
+      "reference_ids": [
+        "R0097",
+        "R0098"
+      ],
+      "evidence_locator": "Korean Expression Cost comparison against target semantic components.",
+      "public_safe": true
+    }
+  ],
+  "relations": [],
+  "illustration_brief": {
+    "status": "HOLD",
+    "summary": "Pronunciation/audio rights and full multilingual comparison are incomplete; illustration is deferred.",
+    "reference_ids": [
+      "R0097"
+    ]
+  },
+  "editorial_copy": {
+    "status": "HOLD",
+    "summary": "Public poetic copy is deferred until all evidence, comparison, pronunciation, and rights gates can be evaluated together.",
+    "reference_ids": [
+      "R0097",
+      "R0098"
+    ]
+  },
+  "automated_gates": {
+    "schema": "PASS",
+    "evidence": "PASS",
+    "pronunciation": "HOLD",
+    "cultural_humility": "PASS",
+    "rights": "HOLD",
+    "privacy": "PASS"
+  },
+  "distinctiveness_review": {
+    "status": "PASS",
+    "track": "FOREIGN_KOREAN_GAP",
+    "generic_basic_emotion": false,
+    "nearest_cross_language_terms": {
+      "ko": [
+        "먼 곳에 대한 그리움",
+        "여행 갈망"
+      ],
+      "en": [
+        "longing for faraway places",
+        "travel longing"
+      ],
+      "zh": [
+        "对远方的向往",
+        "远方乡愁"
+      ],
+      "ja": [
+        "遠くへの憧れ",
+        "旅への憧れ"
+      ]
+    },
+    "semantic_residue": "일반적인 여행 욕구보다 ‘먼 곳’을 향한 그리움이 중심이며, 이미 알고 있는 고향을 그리워하는 향수와 달리 가보지 않은 장소도 대상이 될 수 있다.",
+    "residue_reference_ids": [
+      "R0097",
+      "R0098"
+    ],
+    "overclaim_to_avoid": "여행을 좋아하는 성향이나 wanderlust와 항상 동일하다고 축소하지 않는다.",
+    "korean_expression_cost": {
+      "classification": "SHORT_PHRASE_PARTIAL",
+      "status": "PASS",
+      "nearest_korean_terms": [
+        "먼 곳에 대한 그리움",
+        "여행 갈망"
+      ],
+      "natural_korean_rendering": "멀리 있는 곳, 때로는 아직 가보지 않은 곳까지 향해 마음이 끌리고 그리워지는 느낌",
+      "residue_dimensions": [
+        "longing directed toward distance",
+        "can target unknown places",
+        "not homesickness for a known home"
+      ],
+      "reference_ids": [
+        "R0097",
+        "R0098"
+      ],
+      "rationale": "가까운 한국어 표현을 제시해도 핵심 의미 요소가 분산되거나 일부가 남는다. 이 판단은 원어 사전 정의와 직접 관련 학술 연구의 의미 경계를 바탕으로 하며, 단순히 번역문을 길게 만들어 차이를 부풀린 것이 아니다."
+    }
+  },
+  "human_editorial_release": {
+    "status": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": "Research-stage HOLD. Human Editorial Release is not open until audio rights and full KO/EN/ZH/JA comparison pass."
+  },
+  "changelog": [
+    {
+      "date": "2026-09-17",
+      "state": "RESEARCH",
+      "note": "Foreign semantic-gap source-first research record created under v2.1 Korean Expression Cost contract."
+    },
+    {
+      "date": "2026-09-17",
+      "state": "HOLD",
+      "note": "Core lexical/scholarly distinctiveness passes; product audio rights and full multilingual comparison remain incomplete."
+    }
+  ]
+}
