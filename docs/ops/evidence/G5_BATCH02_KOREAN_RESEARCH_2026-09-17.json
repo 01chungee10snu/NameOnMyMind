@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "goal": "G5",
+  "batch_id": "G5-B02-KOREAN-NUANCE",
+  "status": "RESEARCH_COMPLETE_AUDIO_RIGHTS_HOLD",
+  "recorded_at": "2026-09-17",
+  "source_commit": "546a3e0",
+  "reserved_card_ids": [
+    "C0011",
+    "C0012",
+    "C0013",
+    "C0014",
+    "C0015"
+  ],
+  "terms": [
+    "억울하다",
+    "후련하다",
+    "착잡하다",
+    "시원섭섭하다",
+    "멋쩍다"
+  ],
+  "gates": {
+    "schema": "5/5 PASS",
+    "distinctiveness": "5/5 PASS",
+    "lexical": "5/5 PASS",
+    "scholarly_semantic": "5/5 PASS",
+    "ko_en_zh_ja_comparison": "5/5 PASS",
+    "cultural_humility": "5/5 PASS",
+    "privacy": "5/5 PASS",
+    "ipa": "5/5 RESEARCH_VERIFIED",
+    "pronunciation_audio_rights": "5/5 HOLD",
+    "human_editorial_release": "NOT_OPEN"
+  },
+  "boundary": {
+    "lifecycle_state": "HOLD",
+    "review_ready_count": 0,
+    "published_count_from_batch": 0,
+    "product_audio_registered": 0,
+    "public_card_ids": [
+      "C0001",
+      "C0002",
+      "C0003",
+      "C0004",
+      "C0005"
+    ],
+    "external_publish_authorized": false,
+    "repository_push_authorized": false
+  },
+  "clean_checkout": {
+    "status": "PASS",
+    "tested_commit": "546a3e0",
+    "npm_ci": "PASS",
+    "npm_vulnerabilities": 0,
+    "g1": "12/12 PASS",
+    "g2": "5/5 PASS",
+    "g3": "8/8 PASS",
+    "g4": "9/9 PASS",
+    "g5_selection": "8/8 PASS",
+    "g5_research_record_count": 10,
+    "privacy_violations": 0,
+    "git_status": "CLEAN",
+    "marker": "FINAL_G5_BATCH02_CLEAN_CHECKOUT_PASS"
+  },
+  "sha256": {
+    "content/g5/batches/02_korean_nuance_research.json": "b3c7d148124683992100957bf07554989037938368528be9ba85055b4ee7d7a7",
+    "content/g5/batches/02_korean_nuance_source_snapshot.json": "100dbfde56f67068fe6db933c3c0909462c36a6223736985bb7bed93ef7559e9",
+    "scripts/g5/validate-all-g5-research.mjs": "b5c2b1967fea148f293b87ab5592be152082b47479965ab907c4da0dc1170aae",
+    "content/g5/research-records/C0011.json": "41717e160755f166637a4938fbeb447050407a7d7bfbb1ac673596c0b39a28af",
+    "content/g5/research-records/C0012.json": "47804884fe1ce6733c2d459f8c13236df7694c0f1c6881bca4d78a5411634fb2",
+    "content/g5/research-records/C0013.json": "b25a5d2990007efdd932b178ccd7fd07cea568eb3cd2b43720d81dce73c45cac",
+    "content/g5/research-records/C0014.json": "5c17b4e25b1b3f613dfc6b2c97607040693d24371b31e49bd51c19da9ab3e73a",
+    "content/g5/research-records/C0015.json": "f6586ce7c797cfb8ca43cacb77e5faa0275dbe6b78ba8b108a07300b05898c4f"
+  }
+}
