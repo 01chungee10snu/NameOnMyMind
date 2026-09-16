@@ -1,0 +1,231 @@
+{
+  "schema_version": "2.1.0",
+  "research_id": "RR-C0034-FOREIGN",
+  "card_id": "C0034",
+  "candidate": {
+    "term": "tampo",
+    "language_code": "fil-PH",
+    "language_name": "Filipino / Tagalog",
+    "experience_type": "relational_experience"
+  },
+  "lifecycle_state": "HOLD",
+  "source_inventory": [
+    {
+      "reference_id": "R0150",
+      "role": "lexical",
+      "quality_tier": "A"
+    },
+    {
+      "reference_id": "R0151",
+      "role": "scholarly",
+      "quality_tier": "A"
+    },
+    {
+      "reference_id": "R0152",
+      "role": "pronunciation",
+      "quality_tier": "B"
+    }
+  ],
+  "lexical_verification": {
+    "status": "PASS",
+    "summary": "원어 권위 사전에서 목표 표제어와 카드에 사용할 의미 범위를 확인했다.",
+    "reference_ids": [
+      "R0150"
+    ]
+  },
+  "semantic_definition_and_boundaries": {
+    "status": "PASS",
+    "summary": "한국어 삐치다·서운하다와 겹치지만, 가까운 관계에서 상한 마음을 침묵과 거리두기로 표현하고 상대의 알아차림과 달램을 통해 관계를 다시 잇는 상호작용까지 하나의 관계적 정서 관행으로 묶는 폭이 남는다.",
+    "reference_ids": [
+      "R0150",
+      "R0151"
+    ]
+  },
+  "cultural_context_review": {
+    "status": "PASS",
+    "summary": "언어·문화 맥락을 설명하되 해당 문화 사람만 이 경험을 느낀다는 본질주의나 번역불가능성 주장을 하지 않는다.",
+    "reference_ids": [
+      "R0150",
+      "R0151"
+    ]
+  },
+  "comparisons": {
+    "ko": {
+      "status": "PASS",
+      "near_terms": [
+        "서운해서 말수가 줄다",
+        "삐치다",
+        "마음이 상해 거리를 두다"
+      ],
+      "difference_note": "한국어 근접어 하나로는 핵심 의미 패키지를 모두 보존하기 어렵다.",
+      "verification_note": "Korean Expression Cost review PASS.",
+      "reference_ids": [
+        "R0150",
+        "R0151"
+      ]
+    },
+    "en": {
+      "status": "HOLD",
+      "near_terms": [
+        "sulking",
+        "withdrawn hurt",
+        "relational displeasure expressed through silence"
+      ],
+      "difference_note": "영어 근접어는 provisional이며 독립 lexical verification 전에는 최종 비교로 승격하지 않는다.",
+      "verification_note": "Research-stage provisional mapping.",
+      "reference_ids": [
+        "R0150"
+      ]
+    },
+    "zh": {
+      "status": "HOLD",
+      "near_terms": [
+        "受伤后沉默疏远",
+        "闹别扭并等对方来哄"
+      ],
+      "difference_note": "원어가 중국어이면 target lexical evidence로 자체 의미를 확인했고, 그 외에는 provisional이다.",
+      "verification_note": "Target-language evidence or provisional mapping.",
+      "reference_ids": [
+        "R0150"
+      ]
+    },
+    "ja": {
+      "status": "HOLD",
+      "near_terms": [
+        "拗ねて距離を置く",
+        "傷ついて黙り相手のなだめを待つ"
+      ],
+      "difference_note": "일본어 근접어는 provisional이며 독립 lexical verification 전에는 최종 비교로 승격하지 않는다.",
+      "verification_note": "Research-stage provisional mapping.",
+      "reference_ids": [
+        "R0150"
+      ]
+    }
+  },
+  "pronunciation_verification": {
+    "status": "HOLD",
+    "ipa": "[tɐmˈpo]",
+    "locale": "fil-PH",
+    "reference_ids": [
+      "R0152"
+    ],
+    "audio_asset_id": null,
+    "notes": "IPA/transliteration provenance is recorded, but exact product-safe audio source, creator, locale fit, license, rights, and SHA linkage are not yet verified."
+  },
+  "claim_source_map": [
+    {
+      "claim_id": "CL-001",
+      "claim": "한국어 삐치다·서운하다와 겹치지만, 가까운 관계에서 상한 마음을 침묵과 거리두기로 표현하고 상대의 알아차림과 달램을 통해 관계를 다시 잇는 상호작용까지 하나의 관계적 정서 관행으로 묶는 폭이 남는다.",
+      "reference_ids": [
+        "R0150",
+        "R0151"
+      ],
+      "evidence_locator": "Target lexical definition plus directly relevant scholarly evidence.",
+      "public_safe": true
+    },
+    {
+      "claim_id": "CL-002",
+      "claim": "한국어의 흔한 한 단어 하나로는 핵심 의미 패키지를 모두 보존하기 어렵다.",
+      "reference_ids": [
+        "R0150",
+        "R0151"
+      ],
+      "evidence_locator": "Korean Expression Cost review against target semantic components.",
+      "public_safe": true
+    }
+  ],
+  "relations": [],
+  "illustration_brief": {
+    "status": "HOLD",
+    "summary": "Product audio rights and full multilingual comparison are incomplete; illustration is deferred.",
+    "reference_ids": [
+      "R0150"
+    ]
+  },
+  "editorial_copy": {
+    "status": "HOLD",
+    "summary": "Public poetic copy is deferred until all gates can be evaluated together.",
+    "reference_ids": [
+      "R0150",
+      "R0151"
+    ]
+  },
+  "automated_gates": {
+    "schema": "PASS",
+    "evidence": "PASS",
+    "pronunciation": "HOLD",
+    "cultural_humility": "PASS",
+    "rights": "HOLD",
+    "privacy": "PASS"
+  },
+  "distinctiveness_review": {
+    "status": "PASS",
+    "track": "FOREIGN_KOREAN_GAP",
+    "generic_basic_emotion": false,
+    "nearest_cross_language_terms": {
+      "ko": [
+        "서운해서 말수가 줄다",
+        "삐치다",
+        "마음이 상해 거리를 두다"
+      ],
+      "en": [
+        "sulking",
+        "withdrawn hurt",
+        "relational displeasure expressed through silence"
+      ],
+      "zh": [
+        "受伤后沉默疏远",
+        "闹别扭并等对方来哄"
+      ],
+      "ja": [
+        "拗ねて距離を置く",
+        "傷ついて黙り相手のなだめを待つ"
+      ]
+    },
+    "semantic_residue": "한국어 삐치다·서운하다와 겹치지만, 가까운 관계에서 상한 마음을 침묵과 거리두기로 표현하고 상대의 알아차림과 달램을 통해 관계를 다시 잇는 상호작용까지 하나의 관계적 정서 관행으로 묶는 폭이 남는다.",
+    "residue_reference_ids": [
+      "R0150",
+      "R0151"
+    ],
+    "overclaim_to_avoid": "모든 필리핀 사람이 tampo를 같은 방식으로 사용한다고 일반화하거나 이를 수동공격성·성격장애 같은 진단적 행동으로 해석하지 않는다.",
+    "korean_expression_cost": {
+      "classification": "EXPLANATORY_PHRASE_REQUIRED",
+      "status": "PASS",
+      "nearest_korean_terms": [
+        "서운해서 말수가 줄다",
+        "삐치다",
+        "마음이 상해 거리를 두다"
+      ],
+      "natural_korean_rendering": "가까운 사람에게 서운하거나 마음이 상했을 때 직접 싸우기보다 말과 애정표현을 줄이고 거리를 두며, 상대가 그 마음을 알아차리고 다시 다가와 관계를 풀어 주기를 바라는 마음과 행동",
+      "residue_dimensions": [
+        "relational hurt or displeasure",
+        "silence/withdrawal as expression",
+        "indirect signaling",
+        "expected assuagement or repair"
+      ],
+      "reference_ids": [
+        "R0150",
+        "R0151"
+      ],
+      "rationale": "한국어의 흔한 한 단어가 의미 전체를 보존하는지 먼저 검토했다. 이 후보는 핵심 의미 요소가 여러 한국어 표현으로 분산되거나 설명적 구가 필요하며, 원어 사전과 직접 관련 학술 근거가 그 의미 잔여를 뒷받침한다."
+    }
+  },
+  "human_editorial_release": {
+    "status": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": "Research-stage HOLD. Human Editorial Release is not open until product audio rights and full multilingual comparison pass."
+  },
+  "changelog": [
+    {
+      "date": "2026-09-17",
+      "state": "RESEARCH",
+      "note": "Foreign semantic-gap source-first research under v2.1 Korean Expression Cost contract."
+    },
+    {
+      "date": "2026-09-17",
+      "state": "HOLD",
+      "note": "Core semantic gap passes; product audio rights and full multilingual comparison remain incomplete."
+    }
+  ]
+}

@@ -1,0 +1,231 @@
+{
+  "schema_version": "2.1.0",
+  "research_id": "RR-C0033-FOREIGN",
+  "card_id": "C0033",
+  "candidate": {
+    "term": "viraha",
+    "language_code": "sa",
+    "language_name": "संस्कृतम्",
+    "experience_type": "aesthetic_relational_experience"
+  },
+  "lifecycle_state": "HOLD",
+  "source_inventory": [
+    {
+      "reference_id": "R0147",
+      "role": "lexical",
+      "quality_tier": "A"
+    },
+    {
+      "reference_id": "R0148",
+      "role": "scholarly",
+      "quality_tier": "A"
+    },
+    {
+      "reference_id": "R0149",
+      "role": "pronunciation",
+      "quality_tier": "B"
+    }
+  ],
+  "lexical_verification": {
+    "status": "PASS",
+    "summary": "원어 권위 사전에서 목표 표제어와 카드에 사용할 의미 범위를 확인했다.",
+    "reference_ids": [
+      "R0147"
+    ]
+  },
+  "semantic_definition_and_boundaries": {
+    "status": "PASS",
+    "summary": "한국어 이별의 아픔·그리움과 겹치지만, 고전 인도 미학과 bhakti 맥락에서는 분리 자체가 사랑의 결핍만이 아니라 갈망을 증폭하고 사랑을 지속·심화시키는 정서적 상태로 구조화된다는 의미가 추가된다.",
+    "reference_ids": [
+      "R0147",
+      "R0148"
+    ]
+  },
+  "cultural_context_review": {
+    "status": "PASS",
+    "summary": "언어·문화 맥락을 설명하되 해당 문화 사람만 이 경험을 느낀다는 본질주의나 번역불가능성 주장을 하지 않는다.",
+    "reference_ids": [
+      "R0147",
+      "R0148"
+    ]
+  },
+  "comparisons": {
+    "ko": {
+      "status": "PASS",
+      "near_terms": [
+        "사랑하는 이와 떨어진 그리움",
+        "이별의 고통",
+        "부재 속에서 깊어지는 사랑"
+      ],
+      "difference_note": "한국어 근접어 하나로는 핵심 의미 패키지를 모두 보존하기 어렵다.",
+      "verification_note": "Korean Expression Cost review PASS.",
+      "reference_ids": [
+        "R0147",
+        "R0148"
+      ]
+    },
+    "en": {
+      "status": "HOLD",
+      "near_terms": [
+        "love-in-separation",
+        "longing in absence",
+        "anguish of separation"
+      ],
+      "difference_note": "영어 근접어는 provisional이며 독립 lexical verification 전에는 최종 비교로 승격하지 않는다.",
+      "verification_note": "Research-stage provisional mapping.",
+      "reference_ids": [
+        "R0147"
+      ]
+    },
+    "zh": {
+      "status": "HOLD",
+      "near_terms": [
+        "相思离苦",
+        "别离中的爱恋与渴望"
+      ],
+      "difference_note": "원어가 중국어이면 target lexical evidence로 자체 의미를 확인했고, 그 외에는 provisional이다.",
+      "verification_note": "Target-language evidence or provisional mapping.",
+      "reference_ids": [
+        "R0147"
+      ]
+    },
+    "ja": {
+      "status": "HOLD",
+      "near_terms": [
+        "愛する者との別離の痛み",
+        "不在の相手を恋い慕う思い"
+      ],
+      "difference_note": "일본어 근접어는 provisional이며 독립 lexical verification 전에는 최종 비교로 승격하지 않는다.",
+      "verification_note": "Research-stage provisional mapping.",
+      "reference_ids": [
+        "R0147"
+      ]
+    }
+  },
+  "pronunciation_verification": {
+    "status": "HOLD",
+    "ipa": "[ʋi.ɾɐ.ɦɐ]",
+    "locale": "sa",
+    "reference_ids": [
+      "R0149"
+    ],
+    "audio_asset_id": null,
+    "notes": "IPA/transliteration provenance is recorded, but exact product-safe audio source, creator, locale fit, license, rights, and SHA linkage are not yet verified."
+  },
+  "claim_source_map": [
+    {
+      "claim_id": "CL-001",
+      "claim": "한국어 이별의 아픔·그리움과 겹치지만, 고전 인도 미학과 bhakti 맥락에서는 분리 자체가 사랑의 결핍만이 아니라 갈망을 증폭하고 사랑을 지속·심화시키는 정서적 상태로 구조화된다는 의미가 추가된다.",
+      "reference_ids": [
+        "R0147",
+        "R0148"
+      ],
+      "evidence_locator": "Target lexical definition plus directly relevant scholarly evidence.",
+      "public_safe": true
+    },
+    {
+      "claim_id": "CL-002",
+      "claim": "한국어의 흔한 한 단어 하나로는 핵심 의미 패키지를 모두 보존하기 어렵다.",
+      "reference_ids": [
+        "R0147",
+        "R0148"
+      ],
+      "evidence_locator": "Korean Expression Cost review against target semantic components.",
+      "public_safe": true
+    }
+  ],
+  "relations": [],
+  "illustration_brief": {
+    "status": "HOLD",
+    "summary": "Product audio rights and full multilingual comparison are incomplete; illustration is deferred.",
+    "reference_ids": [
+      "R0147"
+    ]
+  },
+  "editorial_copy": {
+    "status": "HOLD",
+    "summary": "Public poetic copy is deferred until all gates can be evaluated together.",
+    "reference_ids": [
+      "R0147",
+      "R0148"
+    ]
+  },
+  "automated_gates": {
+    "schema": "PASS",
+    "evidence": "PASS",
+    "pronunciation": "HOLD",
+    "cultural_humility": "PASS",
+    "rights": "HOLD",
+    "privacy": "PASS"
+  },
+  "distinctiveness_review": {
+    "status": "PASS",
+    "track": "FOREIGN_KOREAN_GAP",
+    "generic_basic_emotion": false,
+    "nearest_cross_language_terms": {
+      "ko": [
+        "사랑하는 이와 떨어진 그리움",
+        "이별의 고통",
+        "부재 속에서 깊어지는 사랑"
+      ],
+      "en": [
+        "love-in-separation",
+        "longing in absence",
+        "anguish of separation"
+      ],
+      "zh": [
+        "相思离苦",
+        "别离中的爱恋与渴望"
+      ],
+      "ja": [
+        "愛する者との別離の痛み",
+        "不在の相手を恋い慕う思い"
+      ]
+    },
+    "semantic_residue": "한국어 이별의 아픔·그리움과 겹치지만, 고전 인도 미학과 bhakti 맥락에서는 분리 자체가 사랑의 결핍만이 아니라 갈망을 증폭하고 사랑을 지속·심화시키는 정서적 상태로 구조화된다는 의미가 추가된다.",
+    "residue_reference_ids": [
+      "R0147",
+      "R0148"
+    ],
+    "overclaim_to_avoid": "현대 인도 일상어 전체를 대표하는 보편 감정으로 제시하거나 종교적·미학적 맥락을 제거한 채 단순 연애 그리움으로 소비하지 않는다.",
+    "korean_expression_cost": {
+      "classification": "EXPLANATORY_PHRASE_REQUIRED",
+      "status": "PASS",
+      "nearest_korean_terms": [
+        "사랑하는 이와 떨어진 그리움",
+        "이별의 고통",
+        "부재 속에서 깊어지는 사랑"
+      ],
+      "natural_korean_rendering": "사랑하는 사람이나 신적 존재와 떨어져 있기 때문에 생기는 그리움과 고통이, 단순히 없애야 할 슬픔이 아니라 부재 속에서 사랑과 갈망을 계속 깊게 만드는 상태",
+      "residue_dimensions": [
+        "separation from a beloved",
+        "sustained yearning/love-in-separation",
+        "pain and embodied longing",
+        "classical aesthetic or devotional framing"
+      ],
+      "reference_ids": [
+        "R0147",
+        "R0148"
+      ],
+      "rationale": "한국어의 흔한 한 단어가 의미 전체를 보존하는지 먼저 검토했다. 이 후보는 핵심 의미 요소가 여러 한국어 표현으로 분산되거나 설명적 구가 필요하며, 원어 사전과 직접 관련 학술 근거가 그 의미 잔여를 뒷받침한다."
+    }
+  },
+  "human_editorial_release": {
+    "status": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": "Research-stage HOLD. Human Editorial Release is not open until product audio rights and full multilingual comparison pass."
+  },
+  "changelog": [
+    {
+      "date": "2026-09-17",
+      "state": "RESEARCH",
+      "note": "Foreign semantic-gap source-first research under v2.1 Korean Expression Cost contract."
+    },
+    {
+      "date": "2026-09-17",
+      "state": "HOLD",
+      "note": "Core semantic gap passes; product audio rights and full multilingual comparison remain incomplete."
+    }
+  ]
+}

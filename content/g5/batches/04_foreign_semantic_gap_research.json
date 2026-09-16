@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0.0",
+  "batch_id": "G5-F04-FOREIGN-SEMANTIC-GAP",
+  "status": "RESEARCH_CORE_PASS_PRODUCT_GATES_HOLD",
+  "recorded_at": "2026-09-17",
+  "card_ids": [
+    "C0031",
+    "C0032",
+    "C0033",
+    "C0034",
+    "C0035"
+  ],
+  "terms": [
+    "غُرْبَة",
+    "hiraeth",
+    "viraha",
+    "tampo",
+    "querencia"
+  ],
+  "languages": [
+    "Cymraeg",
+    "Español",
+    "Filipino / Tagalog",
+    "العربية",
+    "संस्कृतम्"
+  ],
+  "korean_expression_cost": {
+    "C0031": "EXPLANATORY_PHRASE_REQUIRED",
+    "C0032": "EXPLANATORY_PHRASE_REQUIRED",
+    "C0033": "EXPLANATORY_PHRASE_REQUIRED",
+    "C0034": "EXPLANATORY_PHRASE_REQUIRED",
+    "C0035": "EXPLANATORY_PHRASE_REQUIRED"
+  },
+  "screened_out": [
+    {
+      "term": "dor",
+      "status": "HOLD_NEAR_KOREAN_LEXICAL_COVERAGE",
+      "reason": "Romanian dor is culturally and semantically rich, but ordinary Korean 그리움/향수 already covers much of the central longing/nostalgia sense. Keep for direct comparison rather than priority admission."
+    },
+    {
+      "term": "hüzün",
+      "status": "HOLD_CULTURAL_FRAMING_RISK",
+      "reason": "Turkish hüzün has substantial literary/cultural scholarship, but basic lexical sadness/melancholy is close to Korean 슬픔/우울/애수 and distinctiveness can easily be manufactured by cultural essentialism."
+    }
+  ],
+  "audio_rights": "HOLD_UNTIL_PRODUCT_SAFE_AUDIO_VERIFIED",
+  "full_multilingual_comparison": "HOLD_FOR_INDEPENDENT_EN_ZH_JA_LEXICAL_VERIFICATION",
+  "review_ready": 0,
+  "public_promotion_authorized": false,
+  "config": "content/g5/batches/04_foreign_semantic_gap_config.json"
+}

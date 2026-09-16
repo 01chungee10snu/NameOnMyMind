@@ -1,0 +1,196 @@
+{
+  "schema_version": "1.0.0",
+  "batch_id": "G5-F04-FOREIGN-SEMANTIC-GAP",
+  "recorded_at": "2026-09-17",
+  "cards": [
+    {
+      "card_id": "C0031",
+      "term": "غُرْبَة",
+      "language_code": "ar",
+      "language_name": "العربية",
+      "experience_type": "relational_place_experience",
+      "lexical_ref": "R0141",
+      "scholarly_refs": ["R0142"],
+      "pronunciation_ref": "R0143",
+      "ipa": "[ɣur.ba]",
+      "korean_near_terms": ["타향살이의 외로움", "고향을 떠난 이질감", "이향과 소외감"],
+      "en_near_terms": ["estrangement away from home", "exile", "alienation in foreign lands"],
+      "zh_near_terms": ["离乡异客感", "异乡疏离", "流离中的思乡与陌生感"],
+      "ja_near_terms": ["異郷での疎外感", "故郷から離れた身の孤独", "離郷の痛み"],
+      "korean_expression_cost": "EXPLANATORY_PHRASE_REQUIRED",
+      "natural_korean_rendering": "고향과 익숙한 공동체에서 떨어져 낯선 곳의 이방인이 된 채, 단절과 소외를 느끼면서 돌아갈 집과 고향을 그리워하는 이향의 상태",
+      "residue_dimensions": ["separation from home/homeland", "estrangement and not-belonging", "longing and loss", "rupture/dislocation"],
+      "semantic_residue": "한국어의 향수·타향살이·소외감 가운데 하나만으로는 집/고향에서 떨어져 있다는 물리적 분리, 이방인으로서의 낯섦, 소속감 상실과 돌아가고 싶은 그리움이 함께 묶인 상태를 충분히 보존하기 어렵다.",
+      "overclaim": "모든 아랍권 이주자·난민이 같은 방식으로 ghurba를 느낀다고 일반화하거나 일반적인 향수병과 동일시하지 않는다."
+    },
+    {
+      "card_id": "C0032",
+      "term": "hiraeth",
+      "language_code": "cy-GB",
+      "language_name": "Cymraeg",
+      "experience_type": "mixed_experience",
+      "lexical_ref": "R0144",
+      "scholarly_refs": ["R0145"],
+      "pronunciation_ref": "R0146",
+      "ipa": "[ˈhɪraɨ̯θ]",
+      "korean_near_terms": ["향수", "그리움", "잃어버린 것에 대한 애틋한 그리움", "돌아갈 수 없는 과거에 대한 마음"],
+      "en_near_terms": ["longing", "homesickness", "nostalgia", "wistfulness"],
+      "zh_near_terms": ["乡愁", "怀旧", "对失去之物的绵长思念"],
+      "ja_near_terms": ["郷愁", "懐旧", "失われたものへの切実な憧れ"],
+      "korean_expression_cost": "EXPLANATORY_PHRASE_REQUIRED",
+      "natural_korean_rendering": "잃어버렸거나 떠나온 사람·장소·삶, 때로는 실제로 되돌릴 수 없거나 이상화된 과거와 가능성을 향해 슬픔과 향수가 섞여 오래 남는 그리움",
+      "residue_dimensions": ["longing/yearning", "grief after loss or departure", "homesickness/nostalgia", "wistfulness for what might have been"],
+      "semantic_residue": "한국어 향수·그리움과 강하게 겹치지만, 잃거나 떠난 대상에 대한 슬픔, 고향에 대한 향수, 되돌릴 수 없는 과거와 '그랬을 수도 있었던 것'을 향한 아쉬운 열망까지 한 의미장에 함께 놓인다는 폭이 남는다.",
+      "overclaim": "웨일스 사람만 느끼는 고유 감정 또는 완전히 번역 불가능한 국민 정서라고 본질화하지 않는다."
+    },
+    {
+      "card_id": "C0033",
+      "term": "viraha",
+      "language_code": "sa",
+      "language_name": "संस्कृतम्",
+      "experience_type": "aesthetic_relational_experience",
+      "lexical_ref": "R0147",
+      "scholarly_refs": ["R0148"],
+      "pronunciation_ref": "R0149",
+      "ipa": "[ʋi.ɾɐ.ɦɐ]",
+      "korean_near_terms": ["사랑하는 이와 떨어진 그리움", "이별의 고통", "부재 속에서 깊어지는 사랑"],
+      "en_near_terms": ["love-in-separation", "longing in absence", "anguish of separation"],
+      "zh_near_terms": ["相思离苦", "别离中的爱恋与渴望"],
+      "ja_near_terms": ["愛する者との別離の痛み", "不在の相手を恋い慕う思い"],
+      "korean_expression_cost": "EXPLANATORY_PHRASE_REQUIRED",
+      "natural_korean_rendering": "사랑하는 사람이나 신적 존재와 떨어져 있기 때문에 생기는 그리움과 고통이, 단순히 없애야 할 슬픔이 아니라 부재 속에서 사랑과 갈망을 계속 깊게 만드는 상태",
+      "residue_dimensions": ["separation from a beloved", "sustained yearning/love-in-separation", "pain and embodied longing", "classical aesthetic or devotional framing"],
+      "semantic_residue": "한국어 이별의 아픔·그리움과 겹치지만, 고전 인도 미학과 bhakti 맥락에서는 분리 자체가 사랑의 결핍만이 아니라 갈망을 증폭하고 사랑을 지속·심화시키는 정서적 상태로 구조화된다는 의미가 추가된다.",
+      "overclaim": "현대 인도 일상어 전체를 대표하는 보편 감정으로 제시하거나 종교적·미학적 맥락을 제거한 채 단순 연애 그리움으로 소비하지 않는다."
+    },
+    {
+      "card_id": "C0034",
+      "term": "tampo",
+      "language_code": "fil-PH",
+      "language_name": "Filipino / Tagalog",
+      "experience_type": "relational_experience",
+      "lexical_ref": "R0150",
+      "scholarly_refs": ["R0151"],
+      "pronunciation_ref": "R0152",
+      "ipa": "[tɐmˈpo]",
+      "korean_near_terms": ["서운해서 말수가 줄다", "삐치다", "마음이 상해 거리를 두다"],
+      "en_near_terms": ["sulking", "withdrawn hurt", "relational displeasure expressed through silence"],
+      "zh_near_terms": ["受伤后沉默疏远", "闹别扭并等对方来哄"],
+      "ja_near_terms": ["拗ねて距離を置く", "傷ついて黙り相手のなだめを待つ"],
+      "korean_expression_cost": "EXPLANATORY_PHRASE_REQUIRED",
+      "natural_korean_rendering": "가까운 사람에게 서운하거나 마음이 상했을 때 직접 싸우기보다 말과 애정표현을 줄이고 거리를 두며, 상대가 그 마음을 알아차리고 다시 다가와 관계를 풀어 주기를 바라는 마음과 행동",
+      "residue_dimensions": ["relational hurt or displeasure", "silence/withdrawal as expression", "indirect signaling", "expected assuagement or repair"],
+      "semantic_residue": "한국어 삐치다·서운하다와 겹치지만, 가까운 관계에서 상한 마음을 침묵과 거리두기로 표현하고 상대의 알아차림과 달램을 통해 관계를 다시 잇는 상호작용까지 하나의 관계적 정서 관행으로 묶는 폭이 남는다.",
+      "overclaim": "모든 필리핀 사람이 tampo를 같은 방식으로 사용한다고 일반화하거나 이를 수동공격성·성격장애 같은 진단적 행동으로 해석하지 않는다."
+    },
+    {
+      "card_id": "C0035",
+      "term": "querencia",
+      "language_code": "es-ES",
+      "language_name": "Español",
+      "experience_type": "relational_place_experience",
+      "lexical_ref": "R0153",
+      "scholarly_refs": ["R0154"],
+      "pronunciation_ref": "R0155",
+      "ipa": "[keˈɾenθja]",
+      "korean_near_terms": ["정 붙은 곳", "돌아가고 싶은 내 자리", "애착이 쌓인 장소", "귀소적 끌림"],
+      "en_near_terms": ["fondness", "homing tendency", "a place one is drawn to return to"],
+      "zh_near_terms": ["眷恋并总想回去的地方", "归巢般的地方依恋"],
+      "ja_near_terms": ["愛着があり戻りたくなる場所", "帰巣的な場所への惹かれ"],
+      "korean_expression_cost": "EXPLANATORY_PHRASE_REQUIRED",
+      "natural_korean_rendering": "오래 머물거나 익숙해져 정과 애착이 쌓이고, 떠나 있어도 자꾸 돌아가고 싶어지는 '내 자리' 같은 사람·장소를 향한 끌림과 귀환 성향",
+      "residue_dimensions": ["fondness/affection", "familiar or habitual place", "tendency or pull to return", "place attachment / home-like orientation"],
+      "semantic_residue": "한국어 애착·정·고향·귀소본능과 각각 겹치지만, 좋아하고 정을 주는 마음과 특정 장소에 익숙해져 다시 돌아가려는 성향, 그리고 그 장소 자체를 함께 가리킬 수 있다는 어휘적 결합이 남는다.",
+      "overclaim": "투우 맥락의 전문 의미나 동물의 귀소 의미를 인간의 감정 정의에 무비판적으로 섞지 않고, 스페인 문화만의 고유 심리라고 주장하지 않는다."
+    }
+  ],
+  "references": [
+    {
+      "reference_id": "R0141", "source_type": "lexical", "title": "الغُرْبةُ", "authors": [], "publisher_or_container": "مجمع اللغة العربية بالقاهرة", "year": null, "volume": null, "issue": null, "pages": null, "doi": null, "isbn": null,
+      "url": "https://www.arabicacademy.gov.eg/ar/%D9%85%D8%AD%D8%B1%D9%83-%D8%A7%D9%84%D8%A8%D8%AD%D8%AB/%D8%A7%D9%84%D8%BA%D8%B1%D8%A8%D8%A9", "accessed_at": "2026-09-17", "license": null,
+      "rights_note": "Arabic Academy dictionary defines الغربة in the relevant sense as النوى والبعد (separation/distance). Public wording is an original synthesis and does not reproduce long source text.", "citation_display": "مجمع اللغة العربية بالقاهرة. (n.d.). الغُربةُ."
+    },
+    {
+      "reference_id": "R0142", "source_type": "scholarly", "title": "Home in exile: Palestinianness as moral subjunctive destination", "authors": ["Leonardo Schiocchet"], "publisher_or_container": "HAU: Journal of Ethnographic Theory", "year": 2024, "volume": "14", "issue": "1", "pages": null, "doi": "10.1086/729840", "isbn": null,
+      "url": "https://www.journals.uchicago.edu/doi/full/10.1086/729840", "accessed_at": "2026-09-17", "license": null,
+      "rights_note": "Ethnographic analysis distinguishes ghurba as an affective experience of exile/estrangement, loss, longing and not-belonging; Palestinian context is a direct studied population, not a license to generalize to all Arabic speakers.", "citation_display": "Schiocchet, L. (2024). Home in exile: Palestinianness as moral subjunctive destination. HAU: Journal of Ethnographic Theory, 14(1). https://doi.org/10.1086/729840"
+    },
+    {
+      "reference_id": "R0143", "source_type": "pronunciation", "title": "غُرْبَة — Arabic pronunciation", "authors": [], "publisher_or_container": "Wiktionary", "year": null, "volume": null, "issue": null, "pages": null, "doi": null, "isbn": null,
+      "url": "https://en.wiktionary.org/wiki/%D8%BA%D8%B1%D8%A8%D8%A9", "accessed_at": "2026-09-17", "license": "CC BY-SA 4.0 / source-file terms",
+      "rights_note": "Arabic IPA /ɣur.ba/ used for research. Product audio still requires exact file/creator/locale/license/SHA verification.", "citation_display": "Wiktionary. (n.d.). غربة."
+    },
+    {
+      "reference_id": "R0144", "source_type": "lexical", "title": "hiraeth", "authors": [], "publisher_or_container": "Geiriadur Prifysgol Cymru (University of Wales Dictionary)", "year": null, "volume": null, "issue": null, "pages": null, "doi": null, "isbn": null,
+      "url": "https://geiriadur.ac.uk/gpc/gpc.html", "accessed_at": "2026-09-17", "license": null,
+      "rights_note": "GPC is the standard historical Welsh dictionary. The hiraeth entry is used as the lexical authority; a Cambridge scholarly chapter reproduces its broad definition of grief, longing, nostalgia, homesickness, wistfulness and desire for what might have been.", "citation_display": "Geiriadur Prifysgol Cymru. (n.d.). hiraeth."
+    },
+    {
+      "reference_id": "R0145", "source_type": "scholarly", "title": "Hiraeth and Ambiguous Pastorals: Wales, England and Rural Modernities between the Wars", "authors": [], "publisher_or_container": "Cambridge University Press", "year": 2021, "volume": null, "issue": null, "pages": null, "doi": null, "isbn": null,
+      "url": "https://www.cambridge.org/core/books/abs/rural-modernity-in-britain/hiraeth-and-ambiguous-pastorals-wales-england-and-rural-modernities-between-the-wars/82198AA7BDF4D9097D54FF63A4A8ED1F", "accessed_at": "2026-09-17", "license": null,
+      "rights_note": "Scholarly chapter quotes the GPC lexical definition and situates hiraeth historically. Cultural discussion is used as context, not as proof of a timeless Welsh national character.", "citation_display": "Hiraeth and Ambiguous Pastorals: Wales, England and Rural Modernities between the Wars. (2021). Cambridge University Press."
+    },
+    {
+      "reference_id": "R0146", "source_type": "pronunciation", "title": "hiraeth — Welsh pronunciation", "authors": [], "publisher_or_container": "Wiktionary", "year": null, "volume": null, "issue": null, "pages": null, "doi": null, "isbn": null,
+      "url": "https://en.wiktionary.org/wiki/hiraeth", "accessed_at": "2026-09-17", "license": "CC BY-SA 4.0 / source-file terms",
+      "rights_note": "Welsh North/South IPA variants are recorded. The research record uses a standard North Wales form [ˈhɪraɨ̯θ]; product audio remains unverified.", "citation_display": "Wiktionary. (n.d.). hiraeth."
+    },
+    {
+      "reference_id": "R0147", "source_type": "lexical", "title": "viraha", "authors": ["Monier Monier-Williams"], "publisher_or_container": "Monier-Williams Sanskrit-English Dictionary via SanskritDictionary.com", "year": 1899, "volume": null, "issue": null, "pages": null, "doi": null, "isbn": null,
+      "url": "https://sanskritdictionary.com/viraha/214972/1", "accessed_at": "2026-09-17", "license": null,
+      "rights_note": "Monier-Williams lexical sense: abandonment, desertion, parting, separation especially of lovers, absence. Scholarly rasa/bhakti sources are required for the experiential love-in-separation framing.", "citation_display": "Monier-Williams, M. (1899). viraha. A Sanskrit-English Dictionary."
+    },
+    {
+      "reference_id": "R0148", "source_type": "scholarly", "title": "The Cloud of Longing: A New Translation and Eco-Aesthetic Study of Kalidasa's Meghaduta", "authors": ["E. H. Rick Jarow"], "publisher_or_container": "Oxford University Press", "year": 2021, "volume": null, "issue": null, "pages": null, "doi": "10.1093/oso/9780197566633.001.0001", "isbn": "9780197566633",
+      "url": "https://academic.oup.com/book/39806", "accessed_at": "2026-09-17", "license": null,
+      "rights_note": "Scholarly eco-aesthetic study treats viraha as separation/loss and shows longing amplifying the mood of separation in Sanskrit poetics. Public copy must preserve the classical aesthetic boundary.", "citation_display": "Jarow, E. H. R. (2021). The Cloud of Longing. Oxford University Press."
+    },
+    {
+      "reference_id": "R0149", "source_type": "pronunciation", "title": "viraha — Classical Sanskrit research pronunciation", "authors": [], "publisher_or_container": "Monier-Williams / standard Classical Sanskrit phonological reconstruction", "year": null, "volume": null, "issue": null, "pages": null, "doi": null, "isbn": null,
+      "url": "https://www.sanskrit-lexicon.uni-koeln.de/scans/MWScan/2020/web/index.php", "accessed_at": "2026-09-17", "license": null,
+      "rights_note": "Research IPA [ʋi.ɾɐ.ɦɐ] follows Classical Sanskrit segment values and IAST viraha. This is not a verified product recording; product pronunciation/audio remains HOLD.", "citation_display": "Cologne Digital Sanskrit Lexicon. (n.d.). Monier-Williams Sanskrit-English Dictionary."
+    },
+    {
+      "reference_id": "R0150", "source_type": "lexical", "title": "tampó", "authors": [], "publisher_or_container": "Diksiyonaryo.ph / Pambansang Diksiyonaryo", "year": null, "volume": null, "issue": null, "pages": null, "doi": null, "isbn": null,
+      "url": "https://diksiyonaryo.ph/word/tampo", "accessed_at": "2026-09-17", "license": null,
+      "rights_note": "Filipino lexical entry defines tampo through showing sama-ng-loob/displeasure, usually through silence and distancing from others.", "citation_display": "Diksiyonaryo.ph. (n.d.). tampó."
+    },
+    {
+      "reference_id": "R0151", "source_type": "scholarly", "title": "Understanding Apos as an Emotional Language among Young People in a Commercial Farming Landscape", "authors": ["Ruth Sidchogan-Batani"], "publisher_or_container": "The Cordillera Review", "year": 2021, "volume": null, "issue": null, "pages": null, "doi": "10.64743/EMIV5158", "isbn": null,
+      "url": "https://thecordillerareview.upb.edu.ph/abstract/understanding-apos-as-an-emotional-language-among-young-people-in-a-commercial-farming-landscape/", "accessed_at": "2026-09-17", "license": null,
+      "rights_note": "Ethnographic study links Kankanaey apos with Filipino tampo as a deep-seated emotional/relational idiom expressed through withdrawal; culturally encouraged repair/assuagement is observed in the studied community and must not be universalized.", "citation_display": "Sidchogan-Batani, R. (2021). Understanding Apos as an Emotional Language among Young People in a Commercial Farming Landscape. The Cordillera Review. https://doi.org/10.64743/EMIV5158"
+    },
+    {
+      "reference_id": "R0152", "source_type": "pronunciation", "title": "tampo — Tagalog pronunciation", "authors": [], "publisher_or_container": "Wiktionary", "year": null, "volume": null, "issue": null, "pages": null, "doi": null, "isbn": null,
+      "url": "https://en.wiktionary.org/wiki/tampo", "accessed_at": "2026-09-17", "license": "CC BY-SA 4.0 / source-file terms",
+      "rights_note": "Standard Tagalog IPA /tamˈpo/ is used for research. Product audio requires exact source-file rights verification.", "citation_display": "Wiktionary. (n.d.). tampo."
+    },
+    {
+      "reference_id": "R0153", "source_type": "lexical", "title": "querencia", "authors": [], "publisher_or_container": "Diccionario de la lengua española, RAE-ASALE", "year": null, "volume": null, "issue": null, "pages": null, "doi": null, "isbn": null,
+      "url": "https://dle.rae.es/querencia", "accessed_at": "2026-09-17", "license": null,
+      "rights_note": "RAE defines affection/loving, the tendency to return to a place where one was raised or habitually goes, and the place toward which such querencia is felt. Human-emotion card must fence animal/bullfighting senses.", "citation_display": "Real Academia Española. (n.d.). querencia. Diccionario de la lengua española."
+    },
+    {
+      "reference_id": "R0154", "source_type": "scholarly", "title": "El valor emocional de la experiencia paisajística. Querencias y paisajes afectivos", "authors": ["Paloma Puente Lozano"], "publisher_or_container": "Cuadernos Geográficos", "year": 2012, "volume": "51", "issue": null, "pages": "270-284", "doi": null, "isbn": null,
+      "url": "https://revistaseug.ugr.es/index.php/cuadgeo/article/view/242", "accessed_at": "2026-09-17", "license": null,
+      "rights_note": "Peer-reviewed geography paper examines emotional landscape experience and querencias/affective landscapes. Used to support place-affect framing, not to replace the RAE lexical boundary.", "citation_display": "Puente Lozano, P. (2012). El valor emocional de la experiencia paisajística. Querencias y paisajes afectivos. Cuadernos Geográficos, 51, 270–284."
+    },
+    {
+      "reference_id": "R0155", "source_type": "pronunciation", "title": "querencia — Spanish pronunciation", "authors": [], "publisher_or_container": "Wiktionary", "year": null, "volume": null, "issue": null, "pages": null, "doi": null, "isbn": null,
+      "url": "https://en.wiktionary.org/wiki/querencia", "accessed_at": "2026-09-17", "license": "CC BY-SA 4.0 / source-file terms",
+      "rights_note": "Spanish IPA variants are recorded; the research record uses Spain /keˈɾenθja/. Product audio remains unverified.", "citation_display": "Wiktionary. (n.d.). querencia."
+    }
+  ],
+  "screened_out": [
+    {
+      "term": "dor",
+      "status": "HOLD_NEAR_KOREAN_LEXICAL_COVERAGE",
+      "reason": "Romanian dor is culturally and semantically rich, but ordinary Korean 그리움/향수 already covers much of the central longing/nostalgia sense. Keep for direct comparison rather than priority admission."
+    },
+    {
+      "term": "hüzün",
+      "status": "HOLD_CULTURAL_FRAMING_RISK",
+      "reason": "Turkish hüzün has substantial literary/cultural scholarship, but basic lexical sadness/melancholy is close to Korean 슬픔/우울/애수 and distinctiveness can easily be manufactured by cultural essentialism."
+    }
+  ]
+}

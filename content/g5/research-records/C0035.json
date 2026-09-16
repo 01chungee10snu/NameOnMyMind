@@ -1,0 +1,234 @@
+{
+  "schema_version": "2.1.0",
+  "research_id": "RR-C0035-FOREIGN",
+  "card_id": "C0035",
+  "candidate": {
+    "term": "querencia",
+    "language_code": "es-ES",
+    "language_name": "Español",
+    "experience_type": "relational_place_experience"
+  },
+  "lifecycle_state": "HOLD",
+  "source_inventory": [
+    {
+      "reference_id": "R0153",
+      "role": "lexical",
+      "quality_tier": "A"
+    },
+    {
+      "reference_id": "R0154",
+      "role": "scholarly",
+      "quality_tier": "A"
+    },
+    {
+      "reference_id": "R0155",
+      "role": "pronunciation",
+      "quality_tier": "B"
+    }
+  ],
+  "lexical_verification": {
+    "status": "PASS",
+    "summary": "원어 권위 사전에서 목표 표제어와 카드에 사용할 의미 범위를 확인했다.",
+    "reference_ids": [
+      "R0153"
+    ]
+  },
+  "semantic_definition_and_boundaries": {
+    "status": "PASS",
+    "summary": "한국어 애착·정·고향·귀소본능과 각각 겹치지만, 좋아하고 정을 주는 마음과 특정 장소에 익숙해져 다시 돌아가려는 성향, 그리고 그 장소 자체를 함께 가리킬 수 있다는 어휘적 결합이 남는다.",
+    "reference_ids": [
+      "R0153",
+      "R0154"
+    ]
+  },
+  "cultural_context_review": {
+    "status": "PASS",
+    "summary": "언어·문화 맥락을 설명하되 해당 문화 사람만 이 경험을 느낀다는 본질주의나 번역불가능성 주장을 하지 않는다.",
+    "reference_ids": [
+      "R0153",
+      "R0154"
+    ]
+  },
+  "comparisons": {
+    "ko": {
+      "status": "PASS",
+      "near_terms": [
+        "정 붙은 곳",
+        "돌아가고 싶은 내 자리",
+        "애착이 쌓인 장소",
+        "귀소적 끌림"
+      ],
+      "difference_note": "한국어 근접어 하나로는 핵심 의미 패키지를 모두 보존하기 어렵다.",
+      "verification_note": "Korean Expression Cost review PASS.",
+      "reference_ids": [
+        "R0153",
+        "R0154"
+      ]
+    },
+    "en": {
+      "status": "HOLD",
+      "near_terms": [
+        "fondness",
+        "homing tendency",
+        "a place one is drawn to return to"
+      ],
+      "difference_note": "영어 근접어는 provisional이며 독립 lexical verification 전에는 최종 비교로 승격하지 않는다.",
+      "verification_note": "Research-stage provisional mapping.",
+      "reference_ids": [
+        "R0153"
+      ]
+    },
+    "zh": {
+      "status": "HOLD",
+      "near_terms": [
+        "眷恋并总想回去的地方",
+        "归巢般的地方依恋"
+      ],
+      "difference_note": "원어가 중국어이면 target lexical evidence로 자체 의미를 확인했고, 그 외에는 provisional이다.",
+      "verification_note": "Target-language evidence or provisional mapping.",
+      "reference_ids": [
+        "R0153"
+      ]
+    },
+    "ja": {
+      "status": "HOLD",
+      "near_terms": [
+        "愛着があり戻りたくなる場所",
+        "帰巣的な場所への惹かれ"
+      ],
+      "difference_note": "일본어 근접어는 provisional이며 독립 lexical verification 전에는 최종 비교로 승격하지 않는다.",
+      "verification_note": "Research-stage provisional mapping.",
+      "reference_ids": [
+        "R0153"
+      ]
+    }
+  },
+  "pronunciation_verification": {
+    "status": "HOLD",
+    "ipa": "[keˈɾenθja]",
+    "locale": "es-ES",
+    "reference_ids": [
+      "R0155"
+    ],
+    "audio_asset_id": null,
+    "notes": "IPA/transliteration provenance is recorded, but exact product-safe audio source, creator, locale fit, license, rights, and SHA linkage are not yet verified."
+  },
+  "claim_source_map": [
+    {
+      "claim_id": "CL-001",
+      "claim": "한국어 애착·정·고향·귀소본능과 각각 겹치지만, 좋아하고 정을 주는 마음과 특정 장소에 익숙해져 다시 돌아가려는 성향, 그리고 그 장소 자체를 함께 가리킬 수 있다는 어휘적 결합이 남는다.",
+      "reference_ids": [
+        "R0153",
+        "R0154"
+      ],
+      "evidence_locator": "Target lexical definition plus directly relevant scholarly evidence.",
+      "public_safe": true
+    },
+    {
+      "claim_id": "CL-002",
+      "claim": "한국어의 흔한 한 단어 하나로는 핵심 의미 패키지를 모두 보존하기 어렵다.",
+      "reference_ids": [
+        "R0153",
+        "R0154"
+      ],
+      "evidence_locator": "Korean Expression Cost review against target semantic components.",
+      "public_safe": true
+    }
+  ],
+  "relations": [],
+  "illustration_brief": {
+    "status": "HOLD",
+    "summary": "Product audio rights and full multilingual comparison are incomplete; illustration is deferred.",
+    "reference_ids": [
+      "R0153"
+    ]
+  },
+  "editorial_copy": {
+    "status": "HOLD",
+    "summary": "Public poetic copy is deferred until all gates can be evaluated together.",
+    "reference_ids": [
+      "R0153",
+      "R0154"
+    ]
+  },
+  "automated_gates": {
+    "schema": "PASS",
+    "evidence": "PASS",
+    "pronunciation": "HOLD",
+    "cultural_humility": "PASS",
+    "rights": "HOLD",
+    "privacy": "PASS"
+  },
+  "distinctiveness_review": {
+    "status": "PASS",
+    "track": "FOREIGN_KOREAN_GAP",
+    "generic_basic_emotion": false,
+    "nearest_cross_language_terms": {
+      "ko": [
+        "정 붙은 곳",
+        "돌아가고 싶은 내 자리",
+        "애착이 쌓인 장소",
+        "귀소적 끌림"
+      ],
+      "en": [
+        "fondness",
+        "homing tendency",
+        "a place one is drawn to return to"
+      ],
+      "zh": [
+        "眷恋并总想回去的地方",
+        "归巢般的地方依恋"
+      ],
+      "ja": [
+        "愛着があり戻りたくなる場所",
+        "帰巣的な場所への惹かれ"
+      ]
+    },
+    "semantic_residue": "한국어 애착·정·고향·귀소본능과 각각 겹치지만, 좋아하고 정을 주는 마음과 특정 장소에 익숙해져 다시 돌아가려는 성향, 그리고 그 장소 자체를 함께 가리킬 수 있다는 어휘적 결합이 남는다.",
+    "residue_reference_ids": [
+      "R0153",
+      "R0154"
+    ],
+    "overclaim_to_avoid": "투우 맥락의 전문 의미나 동물의 귀소 의미를 인간의 감정 정의에 무비판적으로 섞지 않고, 스페인 문화만의 고유 심리라고 주장하지 않는다.",
+    "korean_expression_cost": {
+      "classification": "EXPLANATORY_PHRASE_REQUIRED",
+      "status": "PASS",
+      "nearest_korean_terms": [
+        "정 붙은 곳",
+        "돌아가고 싶은 내 자리",
+        "애착이 쌓인 장소",
+        "귀소적 끌림"
+      ],
+      "natural_korean_rendering": "오래 머물거나 익숙해져 정과 애착이 쌓이고, 떠나 있어도 자꾸 돌아가고 싶어지는 '내 자리' 같은 사람·장소를 향한 끌림과 귀환 성향",
+      "residue_dimensions": [
+        "fondness/affection",
+        "familiar or habitual place",
+        "tendency or pull to return",
+        "place attachment / home-like orientation"
+      ],
+      "reference_ids": [
+        "R0153",
+        "R0154"
+      ],
+      "rationale": "한국어의 흔한 한 단어가 의미 전체를 보존하는지 먼저 검토했다. 이 후보는 핵심 의미 요소가 여러 한국어 표현으로 분산되거나 설명적 구가 필요하며, 원어 사전과 직접 관련 학술 근거가 그 의미 잔여를 뒷받침한다."
+    }
+  },
+  "human_editorial_release": {
+    "status": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": "Research-stage HOLD. Human Editorial Release is not open until product audio rights and full multilingual comparison pass."
+  },
+  "changelog": [
+    {
+      "date": "2026-09-17",
+      "state": "RESEARCH",
+      "note": "Foreign semantic-gap source-first research under v2.1 Korean Expression Cost contract."
+    },
+    {
+      "date": "2026-09-17",
+      "state": "HOLD",
+      "note": "Core semantic gap passes; product audio rights and full multilingual comparison remain incomplete."
+    }
+  ]
+}
