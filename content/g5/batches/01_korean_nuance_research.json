@@ -1,0 +1,141 @@
+{
+  "schema_version": "1.0.0",
+  "batch_id": "G5-B01-KOREAN-NUANCE",
+  "status": "RESEARCH_ADMITTED_AUDIO_RIGHTS_HOLD",
+  "selection_contract": "docs/ops/G5_EDITORIAL_SELECTION_CONTRACT.md",
+  "reserved_card_ids": ["C0006", "C0007", "C0008", "C0009", "C0010"],
+  "public_or_review_promotion_authorized": false,
+  "shared_sources": {
+    "korean_emotion_inventory": ["KS001", "KS002"],
+    "near_synonym_distinction": ["KS003", "KS004"],
+    "achievement_satisfaction_distinction": ["KS005"],
+    "being_moved_synonym_distinction": ["KS006"],
+    "multilingual_lexical_snapshot": "content/g5/korean-multilingual-lexical-snapshot.json",
+    "pronunciation_canary": "content/g5/korean-pronunciation-provenance-canary.json",
+    "audio_rights_blocker": "docs/ops/blockers/G5_KRDICT_PRONUNCIATION_AUDIO_RIGHTS_HOLD_2026-09-16.md"
+  },
+  "items": [
+    {
+      "card_id": "C0006",
+      "term": "서운하다",
+      "para_word_no": 62892,
+      "track": "KOREAN_NUANCE",
+      "risk": "STANDARD",
+      "research_status": "PASS_DISTINCTIVENESS_HOLD_AUDIO_RIGHTS",
+      "authoritative_lexical_url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=62892&nation=eng",
+      "pronunciation_display": "[서운하다]",
+      "ipa": "[sʰʌ̹unɦa̠da̠]",
+      "ipa_provenance": "English Wiktionary Korean pronunciation template/page, cross-checked against Krdict phonetic Hangul",
+      "scholarly_source_ids": ["KS001", "KS002", "KS003", "KS004"],
+      "within_korean_near_terms": ["섭섭하다", "아쉽다"],
+      "multilingual_near_terms_from_krdict": {
+        "en": ["sorry", "remorseful"],
+        "ja": ["さびしい", "名残惜しい"],
+        "zh": ["可惜", "不舍"]
+      },
+      "semantic_residue_hypothesis": "기대한 반응·관계·상황이 마음처럼 되지 않아 생기는 불만족과 관계적 마음상함, 이별의 아쉬움이 문맥에 따라 겹친다. 한 가지 영어·일본어·중국어 번역어로 모든 용례를 덮기 어렵고, 한국어 안에서도 섭섭하다·아쉽다와 사용 조건이 구별된다.",
+      "overclaim_to_avoid": "한국인만 느끼는 감정 또는 외국어로 번역 불가능한 감정이라고 주장하지 않는다.",
+      "audio_local_research_path": "assets/media/audio/g5-korean/62892-서운하다.mp3",
+      "audio_sha256": "0c7f71e5c015d2baec854b65ba2ff6a2f49ea5b249016f439b9b026ad52bf52d",
+      "audio_rights_status": "HOLD_FILE_LEVEL_CCL_UNRESOLVED"
+    },
+    {
+      "card_id": "C0007",
+      "term": "아쉽다",
+      "para_word_no": 14687,
+      "track": "KOREAN_NUANCE",
+      "risk": "STANDARD",
+      "research_status": "PASS_DISTINCTIVENESS_HOLD_AUDIO_RIGHTS",
+      "authoritative_lexical_url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=14687&nation=eng",
+      "pronunciation_display": "[아쉽따]",
+      "ipa": "[a̠ʃʰɥip̚t͈a̠]",
+      "ipa_variant": "[a̠ʃʰyp̚t͈a̠]",
+      "ipa_provenance": "English Wiktionary Korean pronunciation template/page, cross-checked against Krdict phonetic Hangul",
+      "scholarly_source_ids": ["KS001", "KS002", "KS003", "KS004"],
+      "within_korean_near_terms": ["서운하다", "섭섭하다", "안타깝다", "아깝다"],
+      "multilingual_near_terms_from_krdict": {
+        "en": ["lacking", "sad", "sorry"],
+        "ja": ["物足りない"],
+        "zh": ["缺", "紧缺"]
+      },
+      "semantic_residue_hypothesis": "필요한 것이 모자라 만족스럽지 않은 상태와, 끝나거나 떠나는 대상에 마음이 남아 서운한 상태가 함께 어휘화되어 있다. 단순 regret나 부족함 하나로 환원하기 어렵다.",
+      "overclaim_to_avoid": "모든 아쉬움을 상실·후회로 동일시하지 않고 사전의 복수 의미를 보존한다.",
+      "audio_local_research_path": "assets/media/audio/g5-korean/14687-아쉽다.mp3",
+      "audio_sha256": "e89f5b8efb1afeb69c60107ab0bf67ae7ab6a58ea52bf0d2c96b46fb0a7d6b5a",
+      "audio_rights_status": "HOLD_FILE_LEVEL_CCL_UNRESOLVED"
+    },
+    {
+      "card_id": "C0008",
+      "term": "섭섭하다",
+      "para_word_no": 49056,
+      "track": "KOREAN_NUANCE",
+      "risk": "STANDARD",
+      "research_status": "PASS_DISTINCTIVENESS_HOLD_AUDIO_RIGHTS",
+      "authoritative_lexical_url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=49056&nation=eng",
+      "pronunciation_display": "[섭써파다]",
+      "ipa": "[sʰʌ̹ps͈ʌ̹pʰa̠da̠]",
+      "ipa_provenance": "English Wiktionary Korean pronunciation template/page, cross-checked against Krdict phonetic Hangul",
+      "scholarly_source_ids": ["KS001", "KS002", "KS003", "KS004"],
+      "within_korean_near_terms": ["서운하다", "아쉽다"],
+      "multilingual_near_terms_from_krdict": {
+        "en": ["sorry", "regrettable"],
+        "ja": ["寂しい"],
+        "zh": ["难舍", "不舍"]
+      },
+      "semantic_residue_hypothesis": "사전 자체가 서운함과 아쉬움이 함께 있는 상태로 풀이하며, 사람의 태도·무관심·헤어짐 같은 관계 문맥에서 사용된다. 단순 sadness나 regret보다 관계적 기대와 마음 남음의 결합을 보존할 필요가 있다.",
+      "overclaim_to_avoid": "서운하다와 완전한 동의어로 취급하거나 모든 섭섭함을 관계 갈등으로 진단하지 않는다.",
+      "audio_local_research_path": "assets/media/audio/g5-korean/49056-섭섭하다.mp3",
+      "audio_sha256": "b1b6c69fcaa4c6f5b7b44a82a6995180fe2d4bdd8ea71fcb795d402224be2427",
+      "audio_rights_status": "HOLD_FILE_LEVEL_CCL_UNRESOLVED"
+    },
+    {
+      "card_id": "C0009",
+      "term": "뿌듯하다",
+      "para_word_no": 62065,
+      "track": "KOREAN_NUANCE",
+      "risk": "STANDARD",
+      "research_status": "PASS_DISTINCTIVENESS_HOLD_AUDIO_RIGHTS",
+      "authoritative_lexical_url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=62065&nation=eng",
+      "pronunciation_display": "[뿌드타다]",
+      "ipa": "[p͈udɯtʰa̠da̠]",
+      "ipa_provenance": "English Wiktionary ko-IPA template expansion with title 뿌듯하다, cross-checked against Krdict phonetic Hangul [뿌드타다]",
+      "scholarly_source_ids": ["KS001", "KS002", "KS005", "KS006"],
+      "within_korean_near_terms": ["만족스럽다", "흐뭇하다", "벅차다"],
+      "multilingual_near_terms_from_krdict": {
+        "en": ["filled with joy", "overwhelmed with pride"],
+        "ja": ["胸一杯だ"],
+        "zh": ["满足", "充实"]
+      },
+      "semantic_residue_hypothesis": "기쁨·감격이 마음에 가득한 상태이면서 실제 용례와 유의어 연구에서는 노력·성취 뒤의 만족감이 두드러진다. ordinary pride, satisfaction, being moved 중 어느 하나만으로는 모든 용례를 포괄하기 어렵다.",
+      "overclaim_to_avoid": "뿌듯함을 자기과시적 pride나 단순 happiness와 동일시하지 않는다.",
+      "audio_local_research_path": "assets/media/audio/g5-korean/62065-뿌듯하다.mp3",
+      "audio_sha256": "553e4e3f86472df2d61a0017bc43c3e3c3a861d93fae8d7fbed054366b9ba52f",
+      "audio_rights_status": "HOLD_FILE_LEVEL_CCL_UNRESOLVED"
+    },
+    {
+      "card_id": "C0010",
+      "term": "뭉클하다",
+      "para_word_no": 57774,
+      "track": "KOREAN_NUANCE",
+      "risk": "STANDARD",
+      "research_status": "PASS_DISTINCTIVENESS_HOLD_AUDIO_RIGHTS",
+      "authoritative_lexical_url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=57774&nation=eng",
+      "pronunciation_display": "[뭉클하다]",
+      "ipa": "[muŋkxɯɾɦa̠da̠]",
+      "ipa_provenance": "English Wiktionary Korean pronunciation template/page, cross-checked against Krdict phonetic Hangul",
+      "scholarly_source_ids": ["KS001", "KS002", "KS006"],
+      "within_korean_near_terms": ["벅차다", "찡하다", "감격스럽다"],
+      "multilingual_near_terms_from_krdict": {
+        "en": ["touching", "moving"],
+        "ja": ["じいんとする", "こみ上げる"],
+        "zh": ["心头一热", "感动", "感慨"]
+      },
+      "semantic_residue_hypothesis": "강한 감정이 갑자기 마음과 가슴을 채우는 체감까지 포함하며, 단순 moving/touching보다 신체적으로 차오르는 느낌이 두드러진다. 한국어 내부의 벅차다·찡하다·감격스럽다와도 화용 차이가 있다.",
+      "overclaim_to_avoid": "눈물이나 슬픔을 필수 조건으로 만들거나 뭉클함을 긍정 정서 하나로 고정하지 않는다.",
+      "audio_local_research_path": "assets/media/audio/g5-korean/57774-뭉클하다.mp3",
+      "audio_sha256": "1c29a169d5f9102bab2f527c18156ee06a7c4fdc7d0caf90ba39a2b023bba706",
+      "audio_rights_status": "HOLD_FILE_LEVEL_CCL_UNRESOLVED"
+    }
+  ],
+  "next_gate": "Resolve exact pronunciation-audio rights or locate separately licensed source; then create v2.0 Research Records, original illustration/share assets, run schema/evidence/comparison/rights/privacy gates, and only then enter REVIEW_READY."
+}

@@ -44,6 +44,7 @@ const cardValidate = compile('schema/card.schema.json');
 const refValidate = compile('schema/reference.schema.json');
 const assetValidate = compile('schema/asset.schema.json');
 const researchValidate = compile('schema/research-record.schema.json');
+const g5ResearchValidate = compile('schema/g5-research-record.schema.json');
 
 const refs = readJson('content/approved/references.json');
 const assets = readJson('content/approved/assets.json');
@@ -59,7 +60,10 @@ const reviewResearch = loadRecords('content/review/research-records');
 const approvedCards = loadRecords('content/approved/cards');
 const approvedResearch = loadRecords('content/approved/research-records');
 for (const x of [...reviewCards, ...approvedCards]) assertValid(cardValidate, x.data, path.relative(ROOT, x.file));
-for (const x of [...reviewResearch, ...approvedResearch]) assertValid(researchValidate, x.data, path.relative(ROOT, x.file));
+for (const x of [...reviewResearch, ...approvedResearch]) {
+  const validate = x.data.schema_version === '2.0.0' ? g5ResearchValidate : researchValidate;
+  assertValid(validate, x.data, path.relative(ROOT, x.file));
+}
 uniqueBy([...reviewCards, ...approvedCards].map((x) => x.data), 'card_id', 'all cards');
 uniqueBy([...reviewResearch, ...approvedResearch].map((x) => x.data), 'card_id', 'all research records');
 
@@ -79,6 +83,21 @@ function validatePair(card, rr, expectedStage) {
   }
 
   for (const id of card.reference_ids) if (!refMap.has(id)) fail(`${card.card_id} missing reference ${id}`);
+  if (Number(card.card_id.slice(1)) >= 6) {
+    const distinct = rr.distinctiveness_review;
+    if (!distinct || distinct.status !== 'PASS') fail(`${card.card_id} G5 distinctiveness gate failed`);
+    if (distinct.generic_basic_emotion !== false) fail(`${card.card_id} G5 generic/basic-emotion candidate is not admissible`);
+    if (!['KOREAN_NUANCE', 'FOREIGN_KOREAN_GAP'].includes(distinct.track)) fail(`${card.card_id} G5 distinctiveness track invalid`);
+    if (!distinct.semantic_residue?.trim()) fail(`${card.card_id} G5 semantic residue missing`);
+    if (!distinct.overclaim_to_avoid?.trim()) fail(`${card.card_id} G5 overclaim boundary missing`);
+    for (const locale of ['ko', 'en', 'zh', 'ja']) {
+      if (!Array.isArray(distinct.nearest_cross_language_terms?.[locale]) || distinct.nearest_cross_language_terms[locale].length < 1) fail(`${card.card_id} G5 distinctiveness ${locale} near-term missing`);
+    }
+    for (const id of distinct.residue_reference_ids || []) {
+      if (!refMap.has(id)) fail(`${card.card_id} G5 distinctiveness reference missing ${id}`);
+      if (!card.reference_ids.includes(id)) fail(`${card.card_id} G5 distinctiveness reference ${id} absent from public reference_ids`);
+    }
+  }
   for (const inv of rr.source_inventory) if (!refMap.has(inv.reference_id)) fail(`${card.card_id} research inventory missing reference ${inv.reference_id}`);
   for (const map of rr.claim_source_map) for (const id of map.reference_ids) if (!refMap.has(id)) fail(`${card.card_id} claim ${map.claim_id} missing reference ${id}`);
 

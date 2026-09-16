@@ -1,0 +1,14 @@
+{
+  "schema_version": "1.0.0",
+  "reason": "G5 editorial distinctiveness gate strengthened after user review. These are not invalid emotions; they are weak final-card choices because ordinary Korean already has close everyday lexical coverage.",
+  "grandfathered_g4_canary_exceptions": [
+    {"card_id":"C0004","term":"envy","reason":"G4 pipeline canary only; Korean 부러움/질투 provides strong everyday coverage."},
+    {"card_id":"C0005","term":"幸福","reason":"G4 pipeline canary only; Korean 행복 provides strong everyday coverage."}
+  ],
+  "rejected_from_new_g5_admission": [
+    "joy","sadness","fear","anger","surprise","happiness","envy","pride","shame","guilt",
+    "tristesse","peur","colère","joie","fierté","tristeza","alegría","miedo","orgullo",
+    "tristeza (pt)","alegria","orgulho","嬉しい","悲しい","幸福"
+  ],
+  "preservation_note": "The archived pre-distinctiveness candidate pool and audio scan are retained under content/g5/archive as failed/exploratory evidence and are not canonical G5 admission inputs."
+}

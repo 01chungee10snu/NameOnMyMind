@@ -1,0 +1,91 @@
+{
+  "schema_version": "1.0.0",
+  "purpose": "Scholarly sources supporting Korean nuanced-emotion admission. These sources do not replace authoritative lexical evidence or card-specific cross-language comparison evidence.",
+  "sources": [
+    {
+      "source_id": "KS001",
+      "title": "한국어 감정단어의 목록 작성과 차원 탐색",
+      "title_en": "Making a List of Korean Emotion Terms and Exploring Dimensions Underlying Them",
+      "authors": ["박인조", "민경환"],
+      "year": 2005,
+      "container": "한국심리학회지: 사회및성격",
+      "volume": "19",
+      "issue": "1",
+      "pages": "109-129",
+      "url": "https://www.kci.go.kr/kciportal/landing/article.kci?arti_id=ART000958746",
+      "supports": ["Korean emotion-term inventory", "familiarity/prototypicality/valence dimensions"],
+      "boundary": "Supports inclusion of Korean emotion terms in a research inventory; does not establish that a term is uniquely Korean or untranslatable."
+    },
+    {
+      "source_id": "KS002",
+      "title": "한국어 감정표현단어의 추출과 범주화",
+      "title_en": "Korean Emotion Vocabulary: Extraction and Categorization of Feeling Words",
+      "authors": ["손선주", "박미숙", "박지은", "손진훈"],
+      "year": 2012,
+      "container": "감성과학",
+      "volume": "15",
+      "issue": "1",
+      "pages": "105-120",
+      "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART001649824",
+      "supports": ["Korean feeling-word inventory", "multi-category emotion classification"],
+      "boundary": "Supports Korean feeling-word categorization; public copy still requires term-specific lexical and semantic evidence."
+    },
+    {
+      "source_id": "KS003",
+      "title": "한국어교육에서 감정형용사의 제시 방안 - ‘아쉽다’, ‘안타깝다’, ‘아깝다’, ‘섭섭하다’, ‘서운하다’를 중심으로",
+      "title_en": "A Study on Setting up the Educational Informations of Synonyms of Emotional Adjective ‘Aswibda’ in Korean Language Education",
+      "authors": ["서희정"],
+      "year": 2010,
+      "container": "한국언어문학",
+      "issue": "74",
+      "pages": "31-59",
+      "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART001480364",
+      "supports_terms": ["아쉽다", "섭섭하다", "서운하다"],
+      "supports": ["semantic/situational differentiation among near-synonymous Korean emotional adjectives", "Sejong balanced-corpus usage distinctions"],
+      "boundary": "Supports nuanced usage differences among near-synonyms; does not imply that other languages cannot express the same experiences."
+    },
+    {
+      "source_id": "KS004",
+      "title": "한국어 감정형용사의 중국어 대응 양상 연구 - ‘아쉽다, 섭섭하다, 서운하다, 안타깝다, 아깝다’를 중심으로-",
+      "title_en": "Study on the Semantic Correspondence Modalities of Emotional Adjectives for Chinese Korean Learners",
+      "authors": ["백효동"],
+      "year": 2023,
+      "container": "언어와 문화",
+      "volume": "19",
+      "issue": "1",
+      "pages": "53-86",
+      "doi": "10.18842/klaces.2023.19.1.003",
+      "url": "https://www.kci.go.kr/kciportal/landing/article.kci?arti_id=ART002934709",
+      "supports_terms": ["아쉽다", "섭섭하다", "서운하다"],
+      "supports": ["multiple Chinese correspondence patterns rather than one fixed equivalent", "corpus/translated-novel comparison"],
+      "boundary": "Directly useful for Chinese comparison; individual public comparison wording must remain source-consistent."
+    },
+    {
+      "source_id": "KS005",
+      "title": "한국어교육을 위한 감정형용사 유의어 변별 연구 - ‘만족스럽다’류의 의미적·통사적·화용적 변별을 중심으로 -",
+      "title_en": "A Study on the Differences Between Synonymous Emotional Adjectives for Korean Language Education",
+      "authors": ["이원이", "이미혜"],
+      "year": 2023,
+      "container": "언어사실과 관점",
+      "volume": "58",
+      "pages": "277-305",
+      "doi": "10.20988/lfp.2023.58..277",
+      "url": "https://www.kci.go.kr/kciportal/landing/article.kci?arti_id=ART002935183",
+      "supports_terms": ["뿌듯하다"],
+      "supports": ["achievement-related semantic/pragmatic distinctiveness of 뿌듯하다 from 만족스럽다/흐뭇하다/흡족하다"],
+      "boundary": "Supports a specific semantic/pragmatic distinction, not cultural exclusivity."
+    },
+    {
+      "source_id": "KS006",
+      "title": "한국어 감동 표현 감정형용사의 유의어 교육 연구 : 유의어 변별 기제를 중심으로",
+      "title_en": "A Study on Korean Emotion Adjectives Expressing Being Moved: Synonym-Differentiation Mechanisms",
+      "authors": ["이슬"],
+      "year": 2020,
+      "container": "서울대학교 대학원 학위논문",
+      "url": "https://s-space.snu.ac.kr/handle/10371/169933",
+      "supports_terms": ["뭉클하다", "뿌듯하다"],
+      "supports": ["morphosyntactic, semantic and pragmatic differentiation of 감격스럽다/벅차다/뭉클하다/찡하다/뿌듯하다 using corpus and native/non-native speaker data"],
+      "boundary": "Supports internal Korean nuance and usage distinctions; public claims require concise original synthesis."
+    }
+  ]
+}

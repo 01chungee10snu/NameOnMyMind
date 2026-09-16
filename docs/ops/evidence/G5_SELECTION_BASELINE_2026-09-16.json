@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "goal": "G5",
+  "artifact": "EDITORIAL_SELECTION_BASELINE",
+  "status": "LOCKED_PASS_WITH_AUDIO_RIGHTS_BLOCKER",
+  "recorded_at": "2026-09-16",
+  "trigger": "User identified envy and 幸福 as too ordinary / closely covered in Korean everyday vocabulary and requested semantically distinctive terms centered on Korean emotional nuance.",
+  "selection_policy": {
+    "new_slots": 45,
+    "target_korean_nuance": 18,
+    "target_foreign_material_korean_gap": 27,
+    "generic_basic_emotions_deprioritized": true,
+    "g4_canary_exceptions_preserved": [
+      "C0004",
+      "C0005"
+    ],
+    "high_risk_candidates": [
+      "정",
+      "한",
+      "눈치",
+      "甘え",
+      "hiraeth",
+      "hüzün",
+      "tarab",
+      "viraha"
+    ],
+    "untranslatable_claim_prohibited": true,
+    "national_emotion_exclusivity_prohibited": true
+  },
+  "first_batch": {
+    "reserved_card_ids": [
+      "C0006",
+      "C0007",
+      "C0008",
+      "C0009",
+      "C0010"
+    ],
+    "terms": [
+      "서운하다",
+      "아쉽다",
+      "섭섭하다",
+      "뿌듯하다",
+      "뭉클하다"
+    ],
+    "status": "RESEARCH_ADMITTED_AUDIO_RIGHTS_HOLD",
+    "distinctiveness": "PASS_RESEARCH_ADMISSION",
+    "review_ready": false,
+    "public_projection_changed": false
+  },
+  "g5_schema": {
+    "file": "schema/g5-research-record.schema.json",
+    "version": "2.0.0",
+    "distinctiveness_review_required": true,
+    "generic_basic_emotion_must_be_false_for_C0006_plus": true
+  },
+  "verification": {
+    "g1": "12/12 PASS",
+    "g2": "5/5 PASS",
+    "g3": "8/8 PASS",
+    "g4": "9/9 PASS",
+    "g5_selection": "8/8 PASS",
+    "privacy_violations": 0,
+    "npm_vulnerabilities": 0,
+    "public_card_ids": [
+      "C0001",
+      "C0002",
+      "C0003",
+      "C0004",
+      "C0005"
+    ]
+  },
+  "audio_rights_blocker": "docs/ops/blockers/G5_KRDICT_PRONUNCIATION_AUDIO_RIGHTS_HOLD_2026-09-16.md",
+  "rights_boundary": "Krdict pronunciation/sound multimedia permissions are per-file; local MP3 research copies are not product assets until exact file-level rights are verified.",
+  "external_publish_authorized": false,
+  "repository_push_authorized": false,
+  "sha256": {
+    "docs/ops/G5_EDITORIAL_SELECTION_CONTRACT.md": "5ed05ce18b0bc1113e241ce424211604ad5cfb32500129fa04cf9eb2473cc7bd",
+    "content/g5/candidate-pool.json": "d9f1c5e28358eef49cae95732de3d73ed4973d26db6e4d70bbc6a8d24b6c7464",
+    "content/g5/generic-candidate-rejections.json": "cd71dd6cb4f274fb377fe55504d900ba725eea221e1f74fc320d41396c112d75",
+    "content/g5/korean-scholarly-source-map.json": "84726dba4f6b0ee1a7d30bc6ba7afd07df1dc3220089a67f883786a2825b9eb5",
+    "content/g5/korean-multilingual-lexical-snapshot.json": "3f3b4d76cc9085d80985fd00bb0e87935bf3938f709380f285289281cbf065dc",
+    "content/g5/korean-pronunciation-provenance-canary.json": "560edba5446f77c91cdf7633c2ee41fadce67f826eebf374e54509512b49d74e",
+    "content/g5/batches/01_korean_nuance_research.json": "a83c029680eb9212c8a4faec8d7ea9c78b335940ba09e72e6be7a4d882c5b55a",
+    "schema/g5-research-record.schema.json": "b80ea66af584d666e847282d719210e1a97f2623d72eaf0f8b980c08a5f9e5e5",
+    "tests/g5/editorial-selection.test.mjs": "0acc326711672c27a5d6bfc41653e35b7c471b83b006ea9f446ced8108131730"
+  }
+}

@@ -1,0 +1,1391 @@
+{
+  "schema_version": "1.0.0",
+  "purpose": "Admission research only; no result is product evidence until source-first download/hash/locale audit.",
+  "source": "Wikimedia Commons MediaWiki Action API bulk title probe",
+  "items": [
+    {
+      "term": "awe",
+      "language_code": "en-US",
+      "language_name": "English (United States)",
+      "construct": "awe",
+      "audio_candidates": [
+        {
+          "title": "File:En-us-awe.ogg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/5/51/En-us-awe.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "description_url": "https://commons.wikimedia.org/wiki/File:En-us-awe.ogg",
+          "sha1": "8ee68966452500340325645d9718f185fe4a98e1",
+          "mime": "application/ogg",
+          "mediatype": "AUDIO",
+          "creator": "Dvortygirl",
+          "credit": "Own work",
+          "description": "Pronunciation of the term in US English",
+          "license_short_name": "CC BY-SA 3.0",
+          "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+          "usage_terms": "Creative Commons Attribution-Share Alike 3.0",
+          "attribution_required": "true",
+          "provisional_status": "PROVISIONAL_PASS",
+          "reasons": []
+        }
+      ],
+      "audio_candidate_count": 1,
+      "probe_method": "predictable_filename_bulk"
+    },
+    {
+      "term": "gratitude",
+      "language_code": "en-US",
+      "language_name": "English (United States)",
+      "construct": "gratitude",
+      "audio_candidates": [
+        {
+          "title": "File:En-us-gratitude.ogg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/c/cb/En-us-gratitude.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "description_url": "https://commons.wikimedia.org/wiki/File:En-us-gratitude.ogg",
+          "sha1": "93a260d9abf90b046f8422aa2df33909226f24d9",
+          "mime": "application/ogg",
+          "mediatype": "AUDIO",
+          "creator": "Dvortygirl",
+          "credit": "Self, recorded using the program Shtooka .",
+          "description": "Audio pronunciation of the term 'gratitude' in United States English.",
+          "license_short_name": "CC BY-SA 3.0",
+          "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+          "usage_terms": "Creative Commons Attribution-Share Alike 3.0",
+          "attribution_required": "true",
+          "provisional_status": "PROVISIONAL_PASS",
+          "reasons": []
+        }
+      ],
+      "audio_candidate_count": 1,
+      "probe_method": "predictable_filename_bulk"
+    },
+    {
+      "term": "relief",
+      "language_code": "en-US",
+      "language_name": "English (United States)",
+      "construct": "relief",
+      "audio_candidates": [
+        {
+          "title": "File:En-us-relief.ogg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/4/47/En-us-relief.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "description_url": "https://commons.wikimedia.org/wiki/File:En-us-relief.ogg",
+          "sha1": "4af5d5d5817114a73cf56355de0031b8ec9a6a08",
+          "mime": "application/ogg",
+          "mediatype": "AUDIO",
+          "creator": "Dvortygirl",
+          "credit": "Self, recorded using the program Shtooka .",
+          "description": "Audio pronunciation of the term 'relief' in United States English.",
+          "license_short_name": "CC BY-SA 3.0",
+          "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+          "usage_terms": "Creative Commons Attribution-Share Alike 3.0",
+          "attribution_required": "true",
+          "provisional_status": "PROVISIONAL_PASS",
+          "reasons": []
+        }
+      ],
+      "audio_candidate_count": 1,
+      "probe_method": "predictable_filename_bulk"
+    },
+    {
+      "term": "nostalgia",
+      "language_code": "en-US",
+      "language_name": "English (United States)",
+      "construct": "nostalgia",
+      "audio_candidates": [],
+      "audio_candidate_count": 0,
+      "probe_method": "predictable_filename_bulk"
+    },
+    {
+      "term": "joy",
+      "language_code": "en-US",
+      "language_name": "English (United States)",
+      "construct": "joy",
+      "audio_candidates": [
+        {
+          "title": "File:En-us-joy.ogg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/9/9d/En-us-joy.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "description_url": "https://commons.wikimedia.org/wiki/File:En-us-joy.ogg",
+          "sha1": "2ec962182361fff775ef973b037c91881cc22cbe",
+          "mime": "application/ogg",
+          "mediatype": "AUDIO",
+          "creator": "Dvortygirl",
+          "credit": "Own work",
+          "description": "Pronunciation of the term in US English",
+          "license_short_name": "CC BY-SA 3.0",
+          "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+          "usage_terms": "Creative Commons Attribution-Share Alike 3.0",
+          "attribution_required": "true",
+          "provisional_status": "PROVISIONAL_PASS",
+          "reasons": []
+        }
+      ],
+      "audio_candidate_count": 1,
+      "probe_method": "predictable_filename_bulk"
+    },
+    {
+      "term": "sadness",
+      "language_code": "en-US",
+      "language_name": "English (United States)",
+      "construct": "sadness",
+      "audio_candidates": [
+        {
+          "title": "File:En-us-sadness.ogg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/2/24/En-us-sadness.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "description_url": "https://commons.wikimedia.org/wiki/File:En-us-sadness.ogg",
+          "sha1": "bbb6a55d281e8ecdb8f9515d883f86c7cccf94c4",
+          "mime": "application/ogg",
+          "mediatype": "AUDIO",
+          "creator": "Neskaya",
+          "credit": "Self, recorded using the program 'Audacity'.",
+          "description": "Audio pronunciation of the term 'sadness' in United States English.",
+          "license_short_name": "CC BY-SA 3.0",
+          "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+          "usage_terms": "Creative Commons Attribution-Share Alike 3.0",
+          "attribution_required": "true",
+          "provisional_status": "PROVISIONAL_PASS",
+          "reasons": []
+        }
+      ],
+      "audio_candidate_count": 1,
+      "probe_method": "predictable_filename_bulk"
+    },
+    {
+      "term": "fear",
+      "language_code": "en-US",
+      "language_name": "English (United States)",
+      "construct": "fear",
+      "audio_candidates": [
+        {
+          "title": "File:En-us-fear.ogg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/d/df/En-us-fear.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "description_url": "https://commons.wikimedia.org/wiki/File:En-us-fear.ogg",
+          "sha1": "21717a14d5864d023606402daf1af6d27b0d4996",
+          "mime": "application/ogg",
+          "mediatype": "AUDIO",
+          "creator": "Dvortygirl",
+          "credit": "Own work",
+          "description": "Pronunciation of the term in US English",
+          "license_short_name": "CC BY-SA 3.0",
+          "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+          "usage_terms": "Creative Commons Attribution-Share Alike 3.0",
+          "attribution_required": "true",
+          "provisional_status": "PROVISIONAL_PASS",
+          "reasons": []
+        }
+      ],
+      "audio_candidate_count": 1,
+      "probe_method": "predictable_filename_bulk"
+    },
+    {
+      "term": "anger",
+      "language_code": "en-US",
+      "language_name": "English (United States)",
+      "construct": "anger",
+      "audio_candidates": [
+        {
+          "title": "File:En-us-anger.ogg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/d/dc/En-us-anger.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "description_url": "https://commons.wikimedia.org/wiki/File:En-us-anger.ogg",
+          "sha1": "428bb339aac2c5b816c044267f0af6132a4e4bdc",
+          "mime": "application/ogg",
+          "mediatype": "AUDIO",
+          "creator": "Dvortygirl",
+          "credit": "Self, recorded using the program Shtooka .",
+          "description": "Audio pronunciation of the term 'anger' in United States English.",
+          "license_short_name": "CC BY-SA 3.0",
+          "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+          "usage_terms": "Creative Commons Attribution-Share Alike 3.0",
+          "attribution_required": "true",
+          "provisional_status": "PROVISIONAL_PASS",
+          "reasons": []
+        }
+      ],
+      "audio_candidate_count": 1,
+      "probe_method": "predictable_filename_bulk"
+    },
+    {
+      "term": "surprise",
+      "language_code": "en-US",
+      "language_name": "English (United States)",
+      "construct": "surprise",
+      "audio_candidates": [
+        {
+          "title": "File:En-us-surprise.ogg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/f/f2/En-us-surprise.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "description_url": "https://commons.wikimedia.org/wiki/File:En-us-surprise.ogg",
+          "sha1": "ccb408b6a504794b0bc5fb01129ef4f09c735010",
+          "mime": "application/ogg",
+          "mediatype": "AUDIO",
+          "creator": "No machine-readable author provided. Muke assumed (based on copyright claims).",
+          "credit": "No machine-readable source provided. Own work assumed (based on copyright claims).",
+          "description": "Pronunciation of the word surprise by Muke Tever",
+          "license_short_name": "Public domain",
+          "license_url": "",
+          "usage_terms": "Public domain",
+          "attribution_required": "false",
+          "provisional_status": "PROVISIONAL_PASS",
+          "reasons": []
+        }
+      ],
+      "audio_candidate_count": 1,
+      "probe_method": "predictable_filename_bulk"
+    },
+    {
+      "term": "amusement",
+      "language_code": "en-US",
+      "language_name": "English (United States)",
+      "construct": "amusement",
+      "audio_candidates": [
+        {
+          "title": "File:En-us-amusement.ogg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/6/60/En-us-amusement.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "description_url": "https://commons.wikimedia.org/wiki/File:En-us-amusement.ogg",
+          "sha1": "7cb11c092f9d1c3ee49975ec5ecf808a87f2e43d",
+          "mime": "application/ogg",
+          "mediatype": "AUDIO",
+          "creator": "Dvortygirl",
+          "credit": "Own work",
+          "description": "Pronunciation of the term in US English",
+          "license_short_name": "CC BY-SA 3.0",
+          "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+          "usage_terms": "Creative Commons Attribution-Share Alike 3.0",
+          "attribution_required": "true",
+          "provisional_status": "PROVISIONAL_PASS",
+          "reasons": []
+        }
+      ],
+      "audio_candidate_count": 1,
+      "probe_method": "predictable_filename_bulk"
+    },
+    {
+      "term": "boredom",
+      "language_code": "en-US",
+      "language_name": "English (United States)",
+      "construct": "boredom",
+      "audio_candidates": [],
+      "audio_candidate_count": 0,
+      "probe_method": "predictable_filename_bulk"
+    },
+    {
+      "term": "calmness",
+      "language_code": "en-US",
+      "language_name": "English (United States)",
+      "construct": "calmness",
+      "audio_candidates": [],
+      "audio_candidate_count": 0,
+      "probe_method": "predictable_filename_bulk"
+    },
+    {
+      "term": "confusion",
+      "language_code": "en-US",
+      "language_name": "English (United States)",
+      "construct": "confusion",
+      "audio_candidates": [
+        {
+          "title": "File:En-us-confusion.ogg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/4/43/En-us-confusion.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "description_url": "https://commons.wikimedia.org/wiki/File:En-us-confusion.ogg",
+          "sha1": "59277bc93e00ada330d12d64497a4e0a6c405131",
+          "mime": "application/ogg",
+          "mediatype": "AUDIO",
+          "creator": "Dvortygirl",
+          "credit": "Self, recorded using the program Shtooka .",
+          "description": "Audio pronunciation of the term 'confusion' in United States English.",
+          "license_short_name": "CC BY-SA 3.0",
+          "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+          "usage_terms": "Creative Commons Attribution-Share Alike 3.0",
+          "attribution_required": "true",
+          "provisional_status": "PROVISIONAL_PASS",
+          "reasons": []
+        }
+      ],
+      "audio_candidate_count": 1,
+      "probe_method": "predictable_filename_bulk"
+    },
+    {
+      "term": "interest",
+      "language_code": "en-US",
+      "language_name": "English (United States)",
+      "construct": "interest",
+      "audio_candidates": [
+        {
+          "title": "File:En-us-interest.ogg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/4/47/En-us-interest.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "description_url": "https://commons.wikimedia.org/wiki/File:En-us-interest.ogg",
+          "sha1": "e2025d1ff285fd75b909786f6538806a45144a54",
+          "mime": "application/ogg",
+          "mediatype": "AUDIO",
+          "creator": "Dvortygirl",
+          "credit": "Own work",
+          "description": "Pronunciation of the word 'interest' in US English",
+          "license_short_name": "Public domain",
+          "license_url": "",
+          "usage_terms": "Public domain",
+          "attribution_required": "false",
+          "provisional_status": "PROVISIONAL_PASS",
+          "reasons": []
+        }
+      ],
+      "audio_candidate_count": 1,
+      "probe_method": "predictable_filename_bulk"
+    },
+    {
+      "term": "excitement",
+      "language_code": "en-US",
+      "language_name": "English (United States)",
+      "construct": "excitement",
+      "audio_candidates": [
+        {
+          "title": "File:En-us-excitement.ogg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/4/4b/En-us-excitement.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "description_url": "https://commons.wikimedia.org/wiki/File:En-us-excitement.ogg",
+          "sha1": "302c833162b5fcc47e2cf29bc6805b1f291dc8a6",
+          "mime": "application/ogg",
+          "mediatype": "AUDIO",
+          "creator": "Dvortygirl",
+          "credit": "Self, recorded using the program Shtooka .",
+          "description": "Audio pronunciation of the term 'excitement' in United States English.",
+          "license_short_name": "CC BY-SA 3.0",
+          "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+          "usage_terms": "Creative Commons Attribution-Share Alike 3.0",
+          "attribution_required": "true",
+          "provisional_status": "PROVISIONAL_PASS",
+          "reasons": []
+        }
+      ],
+      "audio_candidate_count": 1,
+      "probe_method": "predictable_filename_bulk"
+    },
+    {
+      "term": "embarrassment",
+      "language_code": "en-US",
+      "language_name": "English (United States)",
+      "construct": "embarrassment",
+      "audio_candidates": [],
+      "audio_candidate_count": 0,
+      "probe_method": "predictable_filename_bulk"
+    },
+    {
+      "term": "shame",
+      "language_code": "en-US",
+      "language_name": "English (United States)",
+      "construct": "shame",
+      "audio_candidates": [
+        {
+          "title": "File:En-us-shame.ogg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/2/27/En-us-shame.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "description_url": "https://commons.wikimedia.org/wiki/File:En-us-shame.ogg",
+          "sha1": "1dd7f7f7bdbb63c4eb24c931c8c92f04a79e6557",
+          "mime": "application/ogg",
+          "mediatype": "AUDIO",
+          "creator": "Dvortygirl",
+          "credit": "Own work",
+          "description": "Pronunciation of the term in US English",
+          "license_short_name": "CC BY-SA 3.0",
+          "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+          "usage_terms": "Creative Commons Attribution-Share Alike 3.0",
+          "attribution_required": "true",
+          "provisional_status": "PROVISIONAL_PASS",
+          "reasons": []
+        }
+      ],
+      "audio_candidate_count": 1,
+      "probe_method": "predictable_filename_bulk"
+    },
+    {
+      "term": "guilt",
+      "language_code": "en-US",
+      "language_name": "English (United States)",
+      "construct": "guilt",
+      "audio_candidates": [],
+      "audio_candidate_count": 0,
+      "probe_method": "predictable_filename_bulk"
+    },
+    {
+      "term": "pride",
+      "language_code": "en-US",
+      "language_name": "English (United States)",
+      "construct": "pride",
+      "audio_candidates": [
+        {
+          "title": "File:En-us-pride.ogg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/0/0d/En-us-pride.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "description_url": "https://commons.wikimedia.org/wiki/File:En-us-pride.ogg",
+          "sha1": "f4d5062ab886594316260f1d48ad7eb699d5d1a2",
+          "mime": "application/ogg",
+          "mediatype": "AUDIO",
+          "creator": "Dvortygirl",
+          "credit": "Own work",
+          "description": "Pronunciation of the term in US English",
+          "license_short_name": "CC BY-SA 3.0",
+          "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+          "usage_terms": "Creative Commons Attribution-Share Alike 3.0",
+          "attribution_required": "true",
+          "provisional_status": "PROVISIONAL_PASS",
+          "reasons": []
+        }
+      ],
+      "audio_candidate_count": 1,
+      "probe_method": "predictable_filename_bulk"
+    },
+    {
+      "term": "hope",
+      "language_code": "en-US",
+      "language_name": "English (United States)",
+      "construct": "hope",
+      "audio_candidates": [
+        {
+          "title": "File:En-us-hope.ogg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/3/30/En-us-hope.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "description_url": "https://commons.wikimedia.org/wiki/File:En-us-hope.ogg",
+          "sha1": "1f70d17821c977e9845f25469932000aa2ded4b9",
+          "mime": "application/ogg",
+          "mediatype": "AUDIO",
+          "creator": "Dvortygirl",
+          "credit": "Own work",
+          "description": "Pronunciation of the term in US English",
+          "license_short_name": "CC BY-SA 3.0",
+          "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+          "usage_terms": "Creative Commons Attribution-Share Alike 3.0",
+          "attribution_required": "true",
+          "provisional_status": "PROVISIONAL_PASS",
+          "reasons": []
+        }
+      ],
+      "audio_candidate_count": 1,
+      "probe_method": "predictable_filename_bulk"
+    },
+    {
+      "term": "compassion",
+      "language_code": "en-US",
+      "language_name": "English (United States)",
+      "construct": "compassion",
+      "audio_candidates": [
+        {
+          "title": "File:En-us-compassion.ogg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/b/b9/En-us-compassion.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "description_url": "https://commons.wikimedia.org/wiki/File:En-us-compassion.ogg",
+          "sha1": "a7cfd7365cb850801ec4de42d660e7d3c174f69b",
+          "mime": "application/ogg",
+          "mediatype": "AUDIO",
+          "creator": "Dvortygirl",
+          "credit": "Self, recorded using the program Shtooka .",
+          "description": "Audio pronunciation of the term 'compassion' in United States English.",
+          "license_short_name": "CC BY-SA 3.0",
+          "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+          "usage_terms": "Creative Commons Attribution-Share Alike 3.0",
+          "attribution_required": "true",
+          "provisional_status": "PROVISIONAL_PASS",
+          "reasons": []
+        }
+      ],
+      "audio_candidate_count": 1,
+      "probe_method": "predictable_filename_bulk"
+    },
+    {
+      "term": "loneliness",
+      "language_code": "en-US",
+      "language_name": "English (United States)",
+      "construct": "loneliness",
+      "audio_candidates": [
+        {
+          "title": "File:En-us-loneliness.ogg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/b/bb/En-us-loneliness.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "description_url": "https://commons.wikimedia.org/wiki/File:En-us-loneliness.ogg",
+          "sha1": "59a5a66a017564d7f536831bf263768d234df957",
+          "mime": "application/ogg",
+          "mediatype": "AUDIO",
+          "creator": "Neskaya",
+          "credit": "Self, recorded using the program 'Shtooka'.",
+          "description": "Audio pronunciation of the term 'loneliness' in United States English.",
+          "license_short_name": "CC BY-SA 3.0",
+          "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+          "usage_terms": "Creative Commons Attribution-Share Alike 3.0",
+          "attribution_required": "true",
+          "provisional_status": "PROVISIONAL_PASS",
+          "reasons": []
+        }
+      ],
+      "audio_candidate_count": 1,
+      "probe_method": "predictable_filename_bulk"
+    },
+    {
+      "term": "admiration",
+      "language_code": "en-US",
+      "language_name": "English (United States)",
+      "construct": "admiration",
+      "audio_candidates": [
+        {
+          "title": "File:En-us-admiration.ogg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/9/93/En-us-admiration.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "description_url": "https://commons.wikimedia.org/wiki/File:En-us-admiration.ogg",
+          "sha1": "8c1009cdb35cfe99a0bf4111851cac7abf4c6edc",
+          "mime": "application/ogg",
+          "mediatype": "AUDIO",
+          "creator": "Dvortygirl",
+          "credit": "Self, recorded using the program ' Shtooka '.",
+          "description": "Audio pronunciation of the term 'admiration' in United States English.",
+          "license_short_name": "CC BY-SA 3.0",
+          "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+          "usage_terms": "Creative Commons Attribution-Share Alike 3.0",
+          "attribution_required": "true",
+          "provisional_status": "PROVISIONAL_PASS",
+          "reasons": []
+        }
+      ],
+      "audio_candidate_count": 1,
+      "probe_method": "predictable_filename_bulk"
+    },
+    {
+      "term": "Geborgenheit",
+      "language_code": "de-DE",
+      "language_name": "Deutsch",
+      "construct": "security-belonging",
+      "audio_candidates": [
+        {
+          "title": "File:De-Geborgenheit.ogg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/7/76/De-Geborgenheit.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "description_url": "https://commons.wikimedia.org/wiki/File:De-Geborgenheit.ogg",
+          "sha1": "96975b847cec12989f7a95e02824d6d0224ca49e",
+          "mime": "application/ogg",
+          "mediatype": "AUDIO",
+          "creator": "Jeuwre",
+          "credit": "Own work",
+          "description": "Pronunciation recording of German noun \" Geborgenheit \", IPA: /ɡəˈbɔʁɡn̩haɪ̯t/. Male voice, recorded by native German speaker from Berlin, Germany.",
+          "license_short_name": "CC BY-SA 4.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+          "usage_terms": "Creative Commons Attribution-Share Alike 4.0",
+          "attribution_required": "true",
+          "provisional_status": "PROVISIONAL_PASS",
+          "reasons": []
+        }
+      ],
+      "audio_candidate_count": 1,
+      "probe_method": "predictable_filename_bulk"
+    },
+    {
+      "term": "Fernweh",
+      "language_code": "de-DE",
+      "language_name": "Deutsch",
+      "construct": "travel-longing",
+      "audio_candidates": [
+        {
+          "title": "File:De-Fernweh.ogg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/2/27/De-Fernweh.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "description_url": "https://commons.wikimedia.org/wiki/File:De-Fernweh.ogg",
+          "sha1": "f529599fe943314c87852a385667c124ddd30db8",
+          "mime": "application/ogg",
+          "mediatype": "AUDIO",
+          "creator": "Jeuwre",
+          "credit": "Own work",
+          "description": "Pronunciation recording of German noun \"Fernweh\". Male voice, recorded by native German speaker from Berlin, Germany.",
+          "license_short_name": "CC BY-SA 4.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+          "usage_terms": "Creative Commons Attribution-Share Alike 4.0",
+          "attribution_required": "true",
+          "provisional_status": "PROVISIONAL_PASS",
+          "reasons": []
+        }
+      ],
+      "audio_candidate_count": 1,
+      "probe_method": "predictable_filename_bulk"
+    },
+    {
+      "term": "Weltschmerz",
+      "language_code": "de-DE",
+      "language_name": "Deutsch",
+      "construct": "world-weariness",
+      "audio_candidates": [
+        {
+          "title": "File:De-Weltschmerz.ogg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/1/10/De-Weltschmerz.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "description_url": "https://commons.wikimedia.org/wiki/File:De-Weltschmerz.ogg",
+          "sha1": "bb0b2960fc29f0dd3a84cd014cd84492a0344a0c",
+          "mime": "application/ogg",
+          "mediatype": "AUDIO",
+          "creator": "Jeuwre",
+          "credit": "Own work , recorded with Rode NT-USB and Audacity , converted with SoX (Sound eXchange audio editing software)",
+          "description": "Pronunciation recording of German noun \"Weltschmerz\", IPA: /ˈvɛltˌʃmɛʁt͡s/. Male voice, recorded by native German speaker from Berlin, Germany.",
+          "license_short_name": "CC BY-SA 4.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+          "usage_terms": "Creative Commons Attribution-Share Alike 4.0",
+          "attribution_required": "true",
+          "provisional_status": "PROVISIONAL_PASS",
+          "reasons": []
+        }
+      ],
+      "audio_candidate_count": 1,
+      "probe_method": "predictable_filename_bulk"
+    },
+    {
+      "term": "Vorfreude",
+      "language_code": "de-DE",
+      "language_name": "Deutsch",
+      "construct": "anticipatory-joy",
+      "audio_candidates": [
+        {
+          "title": "File:De-Vorfreude.ogg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/c/c7/De-Vorfreude.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "description_url": "https://commons.wikimedia.org/wiki/File:De-Vorfreude.ogg",
+          "sha1": "26a42a4fb2d557d81d7302bb6979f0b06a8a8aca",
+          "mime": "application/ogg",
+          "mediatype": "AUDIO",
+          "creator": "Kampy",
+          "credit": "Own work",
+          "description": "audio sample for the German word \"Vorfreude\"",
+          "license_short_name": "CC BY-SA 3.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+          "usage_terms": "Creative Commons Attribution-Share Alike 3.0",
+          "attribution_required": "true",
+          "provisional_status": "PROVISIONAL_PASS",
+          "reasons": []
+        }
+      ],
+      "audio_candidate_count": 1,
+      "probe_method": "predictable_filename_bulk"
+    },
+    {
+      "term": "Mitgefühl",
+      "language_code": "de-DE",
+      "language_name": "Deutsch",
+      "construct": "compassion",
+      "audio_candidates": [
+        {
+          "title": "File:De-Mitgefühl.ogg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/c/c5/De-Mitgef%C3%BChl.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "description_url": "https://commons.wikimedia.org/wiki/File:De-Mitgef%C3%BChl.ogg",
+          "sha1": "2a2b4387894187c6b63506c5e7dbb419efeaca77",
+          "mime": "application/ogg",
+          "mediatype": "AUDIO",
+          "creator": "Jeuwre",
+          "credit": "Own work",
+          "description": "Pronunciation recording of German noun \" Mitgefühl \", IPA : /ˈmɪtɡəˌfyːl/. Male voice, recorded by native German speaker from Berlin, Germany.",
+          "license_short_name": "CC BY-SA 4.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+          "usage_terms": "Creative Commons Attribution-Share Alike 4.0",
+          "attribution_required": "true",
+          "provisional_status": "PROVISIONAL_PASS",
+          "reasons": []
+        }
+      ],
+      "audio_candidate_count": 1,
+      "probe_method": "predictable_filename_bulk"
+    },
+    {
+      "term": "Neid",
+      "language_code": "de-DE",
+      "language_name": "Deutsch",
+      "construct": "envy",
+      "audio_candidates": [
+        {
+          "title": "File:De-Neid.ogg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/3/3b/De-Neid.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "description_url": "https://commons.wikimedia.org/wiki/File:De-Neid.ogg",
+          "sha1": "bd7fb9c4966c4d2fcb21e6dc31f9c8448265eccd",
+          "mime": "application/ogg",
+          "mediatype": "AUDIO",
+          "creator": "Kampy",
+          "credit": "Own work",
+          "description": "audio sample for the German word \"Neid\"",
+          "license_short_name": "CC BY-SA 3.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+          "usage_terms": "Creative Commons Attribution-Share Alike 3.0",
+          "attribution_required": "true",
+          "provisional_status": "PROVISIONAL_PASS",
+          "reasons": []
+        },
+        {
+          "title": "File:De-neid.ogg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/a6/De-neid.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "description_url": "https://commons.wikimedia.org/wiki/File:De-neid.ogg",
+          "sha1": "b8b7de191e9e55e759fb8ccca48aa98a745a1bd0",
+          "mime": "application/ogg",
+          "mediatype": "AUDIO",
+          "creator": "Jeuwre",
+          "credit": "Own work , recorded with Røde NT-USB and Audacity , converted with SoX (Sound eXchange audio editing software)",
+          "description": "Pronunciation recording of German verb inflection \"nei\", IPA: /naɪ̯t/. Male voice, recorded by native German speaker from Berlin, Germany.",
+          "license_short_name": "CC BY-SA 4.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+          "usage_terms": "Creative Commons Attribution-Share Alike 4.0",
+          "attribution_required": "true",
+          "provisional_status": "PROVISIONAL_PASS",
+          "reasons": []
+        }
+      ],
+      "audio_candidate_count": 2,
+      "probe_method": "predictable_filename_bulk"
+    },
+    {
+      "term": "Stolz",
+      "language_code": "de-DE",
+      "language_name": "Deutsch",
+      "construct": "pride",
+      "audio_candidates": [
+        {
+          "title": "File:De-Stolz.ogg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/0/0c/De-Stolz.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "description_url": "https://commons.wikimedia.org/wiki/File:De-Stolz.ogg",
+          "sha1": "0ee21bfd2704b272f9a939ef7c4c509248f0cb53",
+          "mime": "application/ogg",
+          "mediatype": "AUDIO",
+          "creator": "Jeuwre",
+          "credit": "Own work , recorded with Røde NT-USB and Audacity , converted with SoX (Sound eXchange audio editing software)",
+          "description": "Pronunciation recording of German noun \"Stolz\", IPA: /ʃtɔlt͡s/. Male voice, recorded by native German speaker from Berlin, Germany.",
+          "license_short_name": "CC BY-SA 4.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+          "usage_terms": "Creative Commons Attribution-Share Alike 4.0",
+          "attribution_required": "true",
+          "provisional_status": "PROVISIONAL_PASS",
+          "reasons": []
+        },
+        {
+          "title": "File:De-stolz.ogg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/4/40/De-stolz.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "description_url": "https://commons.wikimedia.org/wiki/File:De-stolz.ogg",
+          "sha1": "be4201ff8655d4d0f5267810c7bcac5452841da2",
+          "mime": "application/ogg",
+          "mediatype": "AUDIO",
+          "creator": "Kampy",
+          "credit": "Own work",
+          "description": "audio sample for the German word \"stolz\"",
+          "license_short_name": "CC BY-SA 3.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+          "usage_terms": "Creative Commons Attribution-Share Alike 3.0",
+          "attribution_required": "true",
+          "provisional_status": "PROVISIONAL_PASS",
+          "reasons": []
+        }
+      ],
+      "audio_candidate_count": 2,
+      "probe_method": "predictable_filename_bulk"
+    },
+    {
+      "term": "Scham",
+      "language_code": "de-DE",
+      "language_name": "Deutsch",
+      "construct": "shame",
+      "audio_candidates": [
+        {
+          "title": "File:De-Scham.ogg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/c/c5/De-Scham.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "description_url": "https://commons.wikimedia.org/wiki/File:De-Scham.ogg",
+          "sha1": "977ba467d80772aa3d61387fb6159fd907e3a043",
+          "mime": "application/ogg",
+          "mediatype": "AUDIO",
+          "creator": "Jeuwre",
+          "credit": "Own work",
+          "description": "Pronunciation recording of German noun \" Scham \". Male voice, recorded by native German speaker from Berlin, Germany.",
+          "license_short_name": "CC BY-SA 4.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+          "usage_terms": "Creative Commons Attribution-Share Alike 4.0",
+          "attribution_required": "true",
+          "provisional_status": "PROVISIONAL_PASS",
+          "reasons": []
+        }
+      ],
+      "audio_candidate_count": 1,
+      "probe_method": "predictable_filename_bulk"
+    },
+    {
+      "term": "Einsamkeit",
+      "language_code": "de-DE",
+      "language_name": "Deutsch",
+      "construct": "loneliness",
+      "audio_candidates": [
+        {
+          "title": "File:De-Einsamkeit.ogg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/0/01/De-Einsamkeit.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "description_url": "https://commons.wikimedia.org/wiki/File:De-Einsamkeit.ogg",
+          "sha1": "493115fe422c1a1f3cbb23d884ddd649a5ed8ba3",
+          "mime": "application/ogg",
+          "mediatype": "AUDIO",
+          "creator": "Kampy",
+          "credit": "Own work",
+          "description": "audio sample for the German word \"Einsamkeit\"",
+          "license_short_name": "CC BY-SA 3.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+          "usage_terms": "Creative Commons Attribution-Share Alike 3.0",
+          "attribution_required": "true",
+          "provisional_status": "PROVISIONAL_PASS",
+          "reasons": []
+        }
+      ],
+      "audio_candidate_count": 1,
+      "probe_method": "predictable_filename_bulk"
+    },
+    {
+      "term": "dépaysement",
+      "language_code": "fr-FR",
+      "language_name": "Français",
+      "construct": "disorientation-away-from-home",
+      "audio_candidates": [],
+      "audio_candidate_count": 0,
+      "probe_method": "predictable_filename_bulk"
+    },
+    {
+      "term": "joie",
+      "language_code": "fr-FR",
+      "language_name": "Français",
+      "construct": "joy",
+      "audio_candidates": [
+        {
+          "title": "File:Fr-joie.ogg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/1/14/Fr-joie.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "description_url": "https://commons.wikimedia.org/wiki/File:Fr-joie.ogg",
+          "sha1": "919eb473ab4b943184ef8363c6e61e4b6c98881d",
+          "mime": "application/ogg",
+          "mediatype": "AUDIO",
+          "creator": "Vion Nicolas",
+          "credit": "The Shtooka Project",
+          "description": "French pronunciation for \"joie\" [la joie] — Speaker from Paris, France. male voice.",
+          "license_short_name": "CC BY 2.0 fr",
+          "license_url": "https://creativecommons.org/licenses/by/2.0/fr/deed.en",
+          "usage_terms": "Creative Commons Attribution 2.0 fr",
+          "attribution_required": "true",
+          "provisional_status": "PROVISIONAL_PASS",
+          "reasons": []
+        }
+      ],
+      "audio_candidate_count": 1,
+      "probe_method": "predictable_filename_bulk"
+    },
+    {
+      "term": "tristesse",
+      "language_code": "fr-FR",
+      "language_name": "Français",
+      "construct": "sadness",
+      "audio_candidates": [
+        {
+          "title": "File:Fr-tristesse.ogg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Fr-tristesse.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "description_url": "https://commons.wikimedia.org/wiki/File:Fr-tristesse.ogg",
+          "sha1": "470402a5cf2a6a3b2be73fc53af0a89cb43372fb",
+          "mime": "application/ogg",
+          "mediatype": "AUDIO",
+          "creator": "Vion Nicolas",
+          "credit": "The Shtooka Project",
+          "description": "French pronunciation for \"tristesse\" [la tristesse] — Speaker from Paris, France. male voice.",
+          "license_short_name": "CC BY 2.0 fr",
+          "license_url": "https://creativecommons.org/licenses/by/2.0/fr/deed.en",
+          "usage_terms": "Creative Commons Attribution 2.0 fr",
+          "attribution_required": "true",
+          "provisional_status": "PROVISIONAL_PASS",
+          "reasons": []
+        }
+      ],
+      "audio_candidate_count": 1,
+      "probe_method": "predictable_filename_bulk"
+    },
+    {
+      "term": "peur",
+      "language_code": "fr-FR",
+      "language_name": "Français",
+      "construct": "fear",
+      "audio_candidates": [
+        {
+          "title": "File:Fr-peur.ogg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/0/02/Fr-peur.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "description_url": "https://commons.wikimedia.org/wiki/File:Fr-peur.ogg",
+          "sha1": "8afa0cb1f9cfc64f08118ef5ffe8bac7bc050d56",
+          "mime": "application/ogg",
+          "mediatype": "AUDIO",
+          "creator": "Vion Nicolas",
+          "credit": "The Shtooka Project",
+          "description": "French pronunciation for \"peur\" [une peur] — Speaker from Paris, France. male voice.",
+          "license_short_name": "CC BY 2.0 fr",
+          "license_url": "https://creativecommons.org/licenses/by/2.0/fr/deed.en",
+          "usage_terms": "Creative Commons Attribution 2.0 fr",
+          "attribution_required": "true",
+          "provisional_status": "PROVISIONAL_PASS",
+          "reasons": []
+        }
+      ],
+      "audio_candidate_count": 1,
+      "probe_method": "predictable_filename_bulk"
+    },
+    {
+      "term": "colère",
+      "language_code": "fr-FR",
+      "language_name": "Français",
+      "construct": "anger",
+      "audio_candidates": [
+        {
+          "title": "File:Fr-colère.ogg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Fr-col%C3%A8re.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "description_url": "https://commons.wikimedia.org/wiki/File:Fr-col%C3%A8re.ogg",
+          "sha1": "e07a952997693d87fb80715f3462d1102e0e9c35",
+          "mime": "application/ogg",
+          "mediatype": "AUDIO",
+          "creator": "Vion Nicolas",
+          "credit": "The Shtooka Project",
+          "description": "Pronunciation of word \"colère\" in French. Male voice. Speaker from Paris region, France.",
+          "license_short_name": "CC BY 2.0 fr",
+          "license_url": "https://creativecommons.org/licenses/by/2.0/fr/deed.en",
+          "usage_terms": "Creative Commons Attribution 2.0 fr",
+          "attribution_required": "true",
+          "provisional_status": "PROVISIONAL_PASS",
+          "reasons": []
+        }
+      ],
+      "audio_candidate_count": 1,
+      "probe_method": "predictable_filename_bulk"
+    },
+    {
+      "term": "honte",
+      "language_code": "fr-FR",
+      "language_name": "Français",
+      "construct": "shame",
+      "audio_candidates": [
+        {
+          "title": "File:Fr-honte.ogg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/2/22/Fr-honte.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "description_url": "https://commons.wikimedia.org/wiki/File:Fr-honte.ogg",
+          "sha1": "ad2156f7a74914570c8b541f88a2245e4d76c658",
+          "mime": "application/ogg",
+          "mediatype": "AUDIO",
+          "creator": "Vion Nicolas",
+          "credit": "The Shtooka Project",
+          "description": "French pronunciation for \"honte\" [la honte] — Speaker from Paris, France. male voice.",
+          "license_short_name": "CC BY 2.0 fr",
+          "license_url": "https://creativecommons.org/licenses/by/2.0/fr/deed.en",
+          "usage_terms": "Creative Commons Attribution 2.0 fr",
+          "attribution_required": "true",
+          "provisional_status": "PROVISIONAL_PASS",
+          "reasons": []
+        }
+      ],
+      "audio_candidate_count": 1,
+      "probe_method": "predictable_filename_bulk"
+    },
+    {
+      "term": "fierté",
+      "language_code": "fr-FR",
+      "language_name": "Français",
+      "construct": "pride",
+      "audio_candidates": [],
+      "audio_candidate_count": 0,
+      "probe_method": "predictable_filename_bulk"
+    },
+    {
+      "term": "espoir",
+      "language_code": "fr-FR",
+      "language_name": "Français",
+      "construct": "hope",
+      "audio_candidates": [
+        {
+          "title": "File:Fr-espoir.ogg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Fr-espoir.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "description_url": "https://commons.wikimedia.org/wiki/File:Fr-espoir.ogg",
+          "sha1": "918f600ee9ff7b38a130a9b94874501fe8182a87",
+          "mime": "application/ogg",
+          "mediatype": "AUDIO",
+          "creator": "Vion Nicolas",
+          "credit": "The Shtooka Project",
+          "description": "French pronunciation for \"espoir\" [l'espoir] — Speaker from Paris, France. male voice.",
+          "license_short_name": "CC BY 2.0 fr",
+          "license_url": "https://creativecommons.org/licenses/by/2.0/fr/deed.en",
+          "usage_terms": "Creative Commons Attribution 2.0 fr",
+          "attribution_required": "true",
+          "provisional_status": "PROVISIONAL_PASS",
+          "reasons": []
+        }
+      ],
+      "audio_candidate_count": 1,
+      "probe_method": "predictable_filename_bulk"
+    },
+    {
+      "term": "soulagement",
+      "language_code": "fr-FR",
+      "language_name": "Français",
+      "construct": "relief",
+      "audio_candidates": [
+        {
+          "title": "File:Fr-soulagement.ogg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Fr-soulagement.ogg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "description_url": "https://commons.wikimedia.org/wiki/File:Fr-soulagement.ogg",
+          "sha1": "4c183d11ca5b4c377042b0d17ed60c5ebde85e5f",
+          "mime": "application/ogg",
+          "mediatype": "AUDIO",
+          "creator": "Vion Nicolas",
+          "credit": "The Shtooka Project",
+          "description": "French pronunciation for \"soulagement\" [le soulagement] — Speaker from Paris, France. male voice.",
+          "license_short_name": "CC BY 2.0 fr",
+          "license_url": "https://creativecommons.org/licenses/by/2.0/fr/deed.en",
+          "usage_terms": "Creative Commons Attribution 2.0 fr",
+          "attribution_required": "true",
+          "provisional_status": "PROVISIONAL_PASS",
+          "reasons": []
+        }
+      ],
+      "audio_candidate_count": 1,
+      "probe_method": "predictable_filename_bulk"
+    },
+    {
+      "term": "añoranza",
+      "language_code": "es-ES",
+      "language_name": "Español",
+      "construct": "nostalgic-longing",
+      "audio_candidates": [],
+      "audio_candidate_count": 0,
+      "probe_method": "predictable_filename_bulk"
+    },
+    {
+      "term": "vergüenza",
+      "language_code": "es-ES",
+      "language_name": "Español",
+      "construct": "shame-embarrassment",
+      "audio_candidates": [],
+      "audio_candidate_count": 0,
+      "probe_method": "predictable_filename_bulk"
+    },
+    {
+      "term": "orgullo",
+      "language_code": "es-ES",
+      "language_name": "Español",
+      "construct": "pride",
+      "audio_candidates": [],
+      "audio_candidate_count": 0,
+      "probe_method": "predictable_filename_bulk"
+    },
+    {
+      "term": "esperanza",
+      "language_code": "es-ES",
+      "language_name": "Español",
+      "construct": "hope",
+      "audio_candidates": [],
+      "audio_candidate_count": 0,
+      "probe_method": "predictable_filename_bulk"
+    },
+    {
+      "term": "tristeza",
+      "language_code": "es-ES",
+      "language_name": "Español",
+      "construct": "sadness",
+      "audio_candidates": [],
+      "audio_candidate_count": 0,
+      "probe_method": "predictable_filename_bulk"
+    },
+    {
+      "term": "alegría",
+      "language_code": "es-ES",
+      "language_name": "Español",
+      "construct": "joy",
+      "audio_candidates": [],
+      "audio_candidate_count": 0,
+      "probe_method": "predictable_filename_bulk"
+    },
+    {
+      "term": "miedo",
+      "language_code": "es-ES",
+      "language_name": "Español",
+      "construct": "fear",
+      "audio_candidates": [],
+      "audio_candidate_count": 0,
+      "probe_method": "predictable_filename_bulk"
+    },
+    {
+      "term": "alivio",
+      "language_code": "es-ES",
+      "language_name": "Español",
+      "construct": "relief",
+      "audio_candidates": [],
+      "audio_candidate_count": 0,
+      "probe_method": "predictable_filename_bulk"
+    },
+    {
+      "term": "carinho",
+      "language_code": "pt-BR",
+      "language_name": "Português (Brasil)",
+      "construct": "affection",
+      "audio_candidates": [],
+      "audio_candidate_count": 0,
+      "probe_method": "predictable_filename_bulk"
+    },
+    {
+      "term": "desassossego",
+      "language_code": "pt-PT",
+      "language_name": "Português",
+      "construct": "restlessness",
+      "audio_candidates": [],
+      "audio_candidate_count": 0,
+      "probe_method": "predictable_filename_bulk"
+    },
+    {
+      "term": "alegria",
+      "language_code": "pt-BR",
+      "language_name": "Português (Brasil)",
+      "construct": "joy",
+      "audio_candidates": [],
+      "audio_candidate_count": 0,
+      "probe_method": "predictable_filename_bulk"
+    },
+    {
+      "term": "tristeza",
+      "language_code": "pt-BR",
+      "language_name": "Português (Brasil)",
+      "construct": "sadness",
+      "audio_candidates": [],
+      "audio_candidate_count": 0,
+      "probe_method": "predictable_filename_bulk"
+    },
+    {
+      "term": "alívio",
+      "language_code": "pt-BR",
+      "language_name": "Português (Brasil)",
+      "construct": "relief",
+      "audio_candidates": [],
+      "audio_candidate_count": 0,
+      "probe_method": "predictable_filename_bulk"
+    },
+    {
+      "term": "orgulho",
+      "language_code": "pt-BR",
+      "language_name": "Português (Brasil)",
+      "construct": "pride",
+      "audio_candidates": [],
+      "audio_candidate_count": 0,
+      "probe_method": "predictable_filename_bulk"
+    },
+    {
+      "term": "懐かしい",
+      "language_code": "ja-JP",
+      "language_name": "日本語",
+      "construct": "nostalgia-fond-remembrance",
+      "audio_candidates": [],
+      "audio_candidate_count": 0,
+      "probe_method": "predictable_filename_bulk"
+    },
+    {
+      "term": "恋しい",
+      "language_code": "ja-JP",
+      "language_name": "日本語",
+      "construct": "longing",
+      "audio_candidates": [],
+      "audio_candidate_count": 0,
+      "probe_method": "predictable_filename_bulk"
+    },
+    {
+      "term": "安心",
+      "language_code": "ja-JP",
+      "language_name": "日本語",
+      "construct": "relief-security",
+      "audio_candidates": [],
+      "audio_candidate_count": 0,
+      "probe_method": "predictable_filename_bulk"
+    },
+    {
+      "term": "切ない",
+      "language_code": "ja-JP",
+      "language_name": "日本語",
+      "construct": "poignant-sorrow",
+      "audio_candidates": [],
+      "audio_candidate_count": 0,
+      "probe_method": "predictable_filename_bulk"
+    },
+    {
+      "term": "悔しい",
+      "language_code": "ja-JP",
+      "language_name": "日本語",
+      "construct": "frustrated-regret",
+      "audio_candidates": [],
+      "audio_candidate_count": 0,
+      "probe_method": "predictable_filename_bulk"
+    },
+    {
+      "term": "嬉しい",
+      "language_code": "ja-JP",
+      "language_name": "日本語",
+      "construct": "joy",
+      "audio_candidates": [],
+      "audio_candidate_count": 0,
+      "probe_method": "predictable_filename_bulk"
+    },
+    {
+      "term": "悲しい",
+      "language_code": "ja-JP",
+      "language_name": "日本語",
+      "construct": "sadness",
+      "audio_candidates": [],
+      "audio_candidate_count": 0,
+      "probe_method": "predictable_filename_bulk"
+    },
+    {
+      "term": "寂しい",
+      "language_code": "ja-JP",
+      "language_name": "日本語",
+      "construct": "loneliness",
+      "audio_candidates": [],
+      "audio_candidate_count": 0,
+      "probe_method": "predictable_filename_bulk"
+    },
+    {
+      "term": "恥ずかしい",
+      "language_code": "ja-JP",
+      "language_name": "日本語",
+      "construct": "embarrassment-shame",
+      "audio_candidates": [],
+      "audio_candidate_count": 0,
+      "probe_method": "predictable_filename_bulk"
+    },
+    {
+      "term": "그리움",
+      "language_code": "ko-KR",
+      "language_name": "한국어",
+      "construct": "longing",
+      "audio_candidates": [],
+      "audio_candidate_count": 0,
+      "probe_method": "predictable_filename_bulk"
+    },
+    {
+      "term": "설렘",
+      "language_code": "ko-KR",
+      "language_name": "한국어",
+      "construct": "anticipatory-excitement",
+      "audio_candidates": [],
+      "audio_candidate_count": 0,
+      "probe_method": "predictable_filename_bulk"
+    },
+    {
+      "term": "아쉬움",
+      "language_code": "ko-KR",
+      "language_name": "한국어",
+      "construct": "regret-lingering-desire",
+      "audio_candidates": [],
+      "audio_candidate_count": 0,
+      "probe_method": "predictable_filename_bulk"
+    },
+    {
+      "term": "서운함",
+      "language_code": "ko-KR",
+      "language_name": "한국어",
+      "construct": "relational-disappointment",
+      "audio_candidates": [],
+      "audio_candidate_count": 0,
+      "probe_method": "predictable_filename_bulk"
+    },
+    {
+      "term": "답답함",
+      "language_code": "ko-KR",
+      "language_name": "한국어",
+      "construct": "frustration-constriction",
+      "audio_candidates": [],
+      "audio_candidate_count": 0,
+      "probe_method": "predictable_filename_bulk"
+    },
+    {
+      "term": "뿌듯함",
+      "language_code": "ko-KR",
+      "language_name": "한국어",
+      "construct": "satisfaction-pride",
+      "audio_candidates": [],
+      "audio_candidate_count": 0,
+      "probe_method": "predictable_filename_bulk"
+    },
+    {
+      "term": "민망함",
+      "language_code": "ko-KR",
+      "language_name": "한국어",
+      "construct": "embarrassment",
+      "audio_candidates": [],
+      "audio_candidate_count": 0,
+      "probe_method": "predictable_filename_bulk"
+    },
+    {
+      "term": "억울함",
+      "language_code": "ko-KR",
+      "language_name": "한국어",
+      "construct": "unjustly-wronged",
+      "audio_candidates": [],
+      "audio_candidate_count": 0,
+      "probe_method": "predictable_filename_bulk"
+    },
+    {
+      "term": "思念",
+      "language_code": "zh-CN",
+      "language_name": "中文",
+      "construct": "longing",
+      "audio_candidates": [],
+      "audio_candidate_count": 0,
+      "probe_method": "predictable_filename_bulk"
+    },
+    {
+      "term": "委屈",
+      "language_code": "zh-CN",
+      "language_name": "中文",
+      "construct": "aggrieved-unfairness",
+      "audio_candidates": [],
+      "audio_candidate_count": 0,
+      "probe_method": "predictable_filename_bulk"
+    },
+    {
+      "term": "安心",
+      "language_code": "zh-CN",
+      "language_name": "中文",
+      "construct": "relief-security",
+      "audio_candidates": [],
+      "audio_candidate_count": 0,
+      "probe_method": "predictable_filename_bulk"
+    },
+    {
+      "term": "羞愧",
+      "language_code": "zh-CN",
+      "language_name": "中文",
+      "construct": "shame",
+      "audio_candidates": [],
+      "audio_candidate_count": 0,
+      "probe_method": "predictable_filename_bulk"
+    },
+    {
+      "term": "欣慰",
+      "language_code": "zh-CN",
+      "language_name": "中文",
+      "construct": "gratified-relief",
+      "audio_candidates": [],
+      "audio_candidate_count": 0,
+      "probe_method": "predictable_filename_bulk"
+    },
+    {
+      "term": "遗憾",
+      "language_code": "zh-CN",
+      "language_name": "中文",
+      "construct": "regret",
+      "audio_candidates": [],
+      "audio_candidate_count": 0,
+      "probe_method": "predictable_filename_bulk"
+    },
+    {
+      "term": "羡慕",
+      "language_code": "zh-CN",
+      "language_name": "中文",
+      "construct": "envy-admiration",
+      "audio_candidates": [],
+      "audio_candidate_count": 0,
+      "probe_method": "predictable_filename_bulk"
+    },
+    {
+      "term": "感激",
+      "language_code": "zh-CN",
+      "language_name": "中文",
+      "construct": "gratitude",
+      "audio_candidates": [],
+      "audio_candidate_count": 0,
+      "probe_method": "predictable_filename_bulk"
+    },
+    {
+      "term": "惊喜",
+      "language_code": "zh-CN",
+      "language_name": "中文",
+      "construct": "pleasant-surprise",
+      "audio_candidates": [],
+      "audio_candidate_count": 0,
+      "probe_method": "predictable_filename_bulk"
+    },
+    {
+      "term": "惆怅",
+      "language_code": "zh-CN",
+      "language_name": "中文",
+      "construct": "melancholy",
+      "audio_candidates": [],
+      "audio_candidate_count": 0,
+      "probe_method": "predictable_filename_bulk"
+    }
+  ]
+}
