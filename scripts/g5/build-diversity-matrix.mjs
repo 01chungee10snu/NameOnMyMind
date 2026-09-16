@@ -26,13 +26,16 @@ const relationPairs=[];
 for (const c of cards) for (const [kind,ids] of Object.entries(c.relations||{})) for (const id of ids) if(c.card_id<id) relationPairs.push({source:c.card_id,target:id,kind});
 const value = {
   schema_version:'1.0.0',
-  generated_at_date:'2026-09-16',
+  generated_at_date:'2026-09-17',
   total_cards:cards.length,
   approved_count:list('content/approved/cards').length,
   review_ready_count:list('content/review/cards').length,
   planned_retirement_ids:['C0004','C0005'],
   prospective_active_count:prospectiveActiveCards.length,
   final_active_target:50,
+  foreign_active_target:45,
+  korean_anchor_target:5,
+  secondary_korean_research_ids:['C0011','C0012','C0013','C0014','C0015'],
   prospective_active_by_language_code:byFor(prospectiveActiveCards,(c)=>c.term.language_code),
   prospective_active_by_experience_type:byFor(prospectiveActiveCards,(c)=>c.experience_type),
   by_language_code:by((c)=>c.term.language_code),
@@ -47,7 +50,9 @@ const value = {
     no_language_quota_overrides_evidence_gates:true,
     failed_candidates_must_be_replaced_not_forced:true,
     c0004_c0005_canary_evidence_preserved_but_final_active_retirement_planned:true,
-    final_release_requires_exactly_50_active_cards:true
+    final_release_requires_exactly_50_active_cards:true,
+    final_release_requires_45_foreign_5_korean:true,
+    c0011_c0015_are_secondary_research_only:true
   }
 };
 fs.mkdirSync(path.dirname(OUT),{recursive:true});

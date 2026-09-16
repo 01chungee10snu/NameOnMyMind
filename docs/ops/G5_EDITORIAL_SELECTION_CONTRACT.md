@@ -1,87 +1,119 @@
-# G5 Editorial Selection Contract — semantic distinctiveness first
+# G5 Editorial Selection Contract — foreign semantic-gap first
 
 Status: **LOCKED FOR G5 ADMISSION**
-Date: 2026-09-16
+Date revised: 2026-09-17
 
-## Product-selection correction
+## Product identity
 
-The G4 canary proved the evidence/runtime pipeline, but a technically valid card is not automatically a strong final editorial choice.
+NameOnMyMind primarily discovers **emotion, feeling, mood, psychological-state, and relational-experience expressions in other languages that Korean usually needs a longer phrase or explanation to render without losing important meaning**.
 
-`envy` (C0004) and `幸福` (C0005) remain valid auditable G4 canary records because they passed the agreed machine and Human Editorial Release gates. Their evidence must not be erased or rewritten. **However, they are canary-only records and are not counted toward the final G5 active 50-card editorial collection.** They remain in the current local public canary until G5 release cutover; after 47 new cards pass every gate and Human Editorial Release, C0004/C0005 are retired from the active/public set while their audit records are preserved.
+The product is not a catalogue of generic foreign emotion words and it is not a Korean-emotion dictionary. Korean nuanced terms remain a small reciprocal anchor that helps show that every language lexicalizes experience differently.
 
-## New G5 admission principle
+`envy` (C0004) and `幸福` (C0005) remain auditable G4 canary records, but they are planned retirements from the final active G5 collection because ordinary Korean `질투/부러움` and `행복` already provide close everyday lexical coverage.
 
-The final collection prioritizes **fine-grained lexicalized experiences that reveal a meaningful semantic gap across languages**.
+## Final active-50 composition
 
-### A. Korean-source cards
+The final active set targets:
 
-A Korean term may enter G5 research when all are true:
+- **45 foreign-language semantic-gap cards**
+  - existing: C0001 `saudade`, C0002 `Sehnsucht`, C0003 `Schadenfreude`
+  - new: **42 foreign cards**, reserved from C0016 onward
+- **5 Korean nuance anchor cards**
+  - C0006 `서운하다`
+  - C0007 `아쉽다`
+  - C0008 `섭섭하다`
+  - C0009 `뿌듯하다`
+  - C0010 `뭉클하다`
 
-1. It expresses a meaningful emotional, feeling, mood, psychological-state, or relational-experience distinction.
-2. Its ordinary Korean use contains a nuance that is not cleanly captured by one ordinary English/Chinese/Japanese word in every context.
-3. The nuance can be verified from authoritative Korean lexical evidence and scholarly/empirical literature without claiming that only Koreans can feel it.
-4. Cross-language comparison explains overlap **and** residual difference rather than declaring the term “untranslatable.”
+C0011–C0015 are preserved as **SECONDARY_RESEARCH_ONLY** Korean records. They are useful evidence but are not part of the final active-50 target.
 
-Priority examples for research include `서운하다`, `아쉽다`, `억울하다`, `뿌듯하다`, `후련하다`, `찜찜하다`, `먹먹하다`, `착잡하다`, `허전하다`, `아련하다`, `애틋하다`, `울컥하다`, `막막하다`, `안쓰럽다`, `시원섭섭하다`, `섭섭하다`, `설레다`, `답답하다`, `민망하다`, `뭉클하다`, `짠하다`, `멋쩍다`, `개운하다`, `씁쓸하다`.
+Thus the final target is:
 
-`정`, `한`, `눈치` are **high-risk research candidates** because cultural-generalization and construct-boundary claims can easily exceed the evidence. They may not be admitted merely because they are commonly described as “Korean concepts.”
+`C0001-C0003 + C0006-C0010 + 42 verified foreign semantic-gap cards = 50 active cards`.
 
-### B. Non-Korean-source cards
+Card IDs that already have auditable research history are never silently reassigned. C0011-C0015 remain reserved to their Korean research records; new foreign card IDs begin at C0016.
 
-A non-Korean term may enter G5 research only when the nearest Korean expression is demonstrably **partial rather than effectively equivalent**.
+## Foreign semantic-gap admission gate
 
-Reject or strongly deprioritize a candidate when:
+A non-Korean candidate enters G5 research only when all are true:
 
-- a common Korean word maps to it with little material semantic residue;
-- the only reason for inclusion is that the spelling/language is foreign;
-- the concept is merely a basic emotion category already ordinary in Korean (`행복`, `슬픔`, `두려움`, `분노`, `기쁨`, `질투/부러움` etc.);
-- “untranslatable” or national-character rhetoric is doing the work instead of evidence.
+1. **Lexical reality** — an authoritative source-language dictionary or equivalent lexical authority confirms the term and relevant sense.
+2. **Actual emotion/experience construct** — the target sense denotes a feeling, mood, psychological state, relational experience, or tightly coupled experiential state rather than merely an activity, object, aesthetic label, or personality trait.
+3. **Korean Expression Cost** — ordinary Korean does not offer one common word that preserves the same central semantic package.
+4. **Semantic residue** — at least one important component remains after giving the nearest Korean expression(s), and the residue is supported by direct lexical, corpus, or scholarly evidence.
+5. **Usage boundary** — archaic, literary, regional, clinical, spiritual, or culture-specific usage is explicitly fenced when applicable.
+6. **Pronunciation and rights** — IPA/pronunciation provenance and product-safe audio rights pass before REVIEW_READY.
+7. **Cross-language comparison** — KO/EN/ZH/JA nearest expressions are presented as overlap + difference, never flat translations.
+8. **Cultural humility** — no national-character essentialism and no claim that speakers of other languages cannot feel the experience.
 
-Priority foreign research candidates include concepts such as `Geborgenheit`, `Fernweh`, `Weltschmerz`, `Vorfreude`, `dépaysement`, `morriña`, `gezelligheid`, `vemod`, `hiraeth`, `hüzün`, `viraha`, `委屈`, `惆怅`, `舍不得`, `心疼`, `欣慰`, `懐かしい`, `切ない`, `もどかしい`, `甘え`, and similar candidates **only if source-first verification passes**.
+## Korean Expression Cost
 
-## Composition target
+Each foreign candidate is classified before card admission:
 
-Because two G4 cards are canary-only planned retirements, G5 requires **47 new editorial cards** so the final active collection still contains exactly 50 cards. The research queue should aim for approximately:
+- `ONE_WORD_EQUIVALENT` — one common Korean word captures the central meaning with little residue → **REJECTED_GENERIC_EQUIVALENT**.
+- `SHORT_PHRASE_PARTIAL` — Korean has a short phrase, but it loses a material semantic component → eligible if residue is directly evidenced.
+- `EXPLANATORY_PHRASE_REQUIRED` — a natural Korean rendering needs multiple semantic components or a sentence-like explanation → **priority candidate**.
+- `UNCLEAR` — evidence is insufficient → HOLD.
 
-- **20 Korean nuanced terms/expressions**
-- **27 non-Korean terms with a material Korean one-word gap**
+The test is semantic, not word-count theatre. An artificially long Korean paraphrase cannot manufacture distinctiveness.
 
-This is an editorial diversity target, not permission to weaken evidence. If a term fails lexical, scholarly, pronunciation, rights, comparison, cultural-humility, or Human Editorial Release gates, it is replaced rather than forced through.
+Examples of strong candidate shapes include:
 
-## Distinctiveness gate
+- `Geborgenheit`: being protected, emotionally secure, warm, accepted, and safely held in a place/relationship;
+- `Fernweh`: longing directed toward faraway or even unknown places;
+- `切ない`: a chest-tightening, painful poignancy involving sadness/longing and an ideal–reality gap;
+- `委屈`: hurt/grievance rooted in being treated unfairly, misunderstood, or unable to vindicate oneself;
+- `舍不得`: reluctance to part with, give up, or let go of someone/something one values.
 
-Every new Research Record must include an internal `distinctiveness_review` answering:
+These examples remain candidates until their own source-first gates pass.
 
-- Why is this more than a generic/basic emotion label?
-- What is the nearest Korean expression (for foreign terms), or nearest EN/ZH/JA expression (for Korean terms)?
-- What semantic/pragmatic residue remains after that comparison?
-- Which sources directly support the residue?
-- What overclaim must the public copy avoid?
+## Discovery sources vs publication evidence
 
-Status is `PASS`, `HOLD`, or `REJECTED_GENERIC_EQUIVALENT`.
+Cross-cultural lexicographies and community lists may be used to discover candidates. They never substitute for target-language lexical verification. Lomas-style cross-cultural lexicography is treated as a research map, not a publication authority for the final card definition.
+
+For each card, publication still requires:
+
+- authoritative target-language lexical source >= 1;
+- scholarly source >= 1 materially relevant to the construct/semantic boundary;
+- direct extra evidence for cultural claims;
+- corpus/usage evidence when modern usage is claimed;
+- pronunciation provenance and rights;
+- KO/EN/ZH/JA comparison trace;
+- Human Editorial Release.
+
+## Korean anchor policy
+
+The five Korean anchor cards exist to demonstrate reciprocity: Korean also lexicalizes shades that other languages distribute differently. They must not expand into the dominant content track during G5.
+
+C0011-C0015 are retained only as secondary research because they were already source-first structured before this correction. They do not consume final active slots.
 
 ## Public wording rule
 
 Never say:
 
-> “Koreans are the only people who feel X”
+> “This word cannot be translated.”
 
 or
 
-> “This word cannot be translated.”
+> “Only people from X culture feel this.”
 
 Prefer:
 
-> “한 단어로 완전히 겹치지는 않는 표현”
+> “한국어에서는 보통 여러 표현으로 나누어 설명하는 마음”
 
-and show the nearest terms plus the remaining difference.
+or
+
+> “가까운 한국어 표현은 있지만, 이 단어가 한데 묶는 의미가 조금 더 남아 있어요.”
+
+Then show the nearest Korean terms and the evidenced residue.
 
 ## G5 final-release cutover
 
-Before G5 Human Release, C0004/C0005 remain PUBLISHED only to preserve the already-verified G4 canary and regression baseline. After C0006-C0052 have all passed machine gates and explicit Human Editorial Release, the release cutover must:
+Before G5 Human Release, C0004/C0005 remain PUBLISHED only to preserve the verified G4 canary baseline. At final cutover:
 
-1. preserve C0004/C0005 card, Research Record, Human Release, and G4 evidence as immutable historical audit material;
-2. remove C0004/C0005 from the active `content/approved/cards` projection through a versioned retirement artifact, not deletion;
-3. promote the 47 new cards;
-4. verify that the active/public bundle contains exactly 50 cards: C0001-C0003 plus C0006-C0052;
-5. run full clean-checkout regression before G5 COMPLETE.
+1. preserve C0004/C0005 card, Research Record, Human Release, and G4 evidence as historical audit material;
+2. retire C0004/C0005 from the active/public projection through a versioned retirement artifact, never deletion;
+3. keep C0011-C0015 as non-public secondary research only;
+4. promote exactly the five Korean anchors C0006-C0010 and 42 Human-approved foreign semantic-gap cards beginning at C0016;
+5. verify **45 foreign + 5 Korean = 50 active cards**;
+6. run full clean-checkout regression before G5 COMPLETE.

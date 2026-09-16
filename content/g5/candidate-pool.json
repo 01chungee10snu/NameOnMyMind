@@ -1,12 +1,31 @@
 {
-  "schema_version": "2.0.0",
+  "schema_version": "3.0.0",
   "selection_contract": "docs/ops/G5_EDITORIAL_SELECTION_CONTRACT.md",
-  "purpose": "Research admission pool centered on Korean nuanced emotion/relational vocabulary and non-Korean terms with a material Korean one-word gap. Candidate status does not imply verification, uniqueness, or publication.",
+  "purpose": "Foreign-semantic-gap-first discovery pool. Primary question: does another language compress an emotional/relational experience that ordinary Korean usually needs a materially longer or distributed expression to preserve? Korean terms are secondary/anchor research only.",
   "composition_target": {
-    "new_korean_nuance": 20,
-    "new_non_korean_gap": 27,
-    "total_new": 47,
     "final_active_cards": 50,
+    "final_foreign_cards": 45,
+    "existing_foreign_cards": [
+      "C0001",
+      "C0002",
+      "C0003"
+    ],
+    "new_foreign_semantic_gap_cards": 42,
+    "new_foreign_id_start": "C0016",
+    "korean_anchor_cards": [
+      "C0006",
+      "C0007",
+      "C0008",
+      "C0009",
+      "C0010"
+    ],
+    "secondary_korean_research": [
+      "C0011",
+      "C0012",
+      "C0013",
+      "C0014",
+      "C0015"
+    ],
     "planned_retirements": [
       "C0004",
       "C0005"
@@ -19,7 +38,8 @@
       "language_name": "한국어",
       "construct": "relational-disappointment",
       "track": "KOREAN_NUANCE",
-      "risk": "STANDARD"
+      "risk": "STANDARD",
+      "g5_role": "ANCHOR_OR_SECONDARY_RESEARCH"
     },
     {
       "term": "아쉽다",
@@ -27,7 +47,8 @@
       "language_name": "한국어",
       "construct": "regret-lingering-desire",
       "track": "KOREAN_NUANCE",
-      "risk": "STANDARD"
+      "risk": "STANDARD",
+      "g5_role": "ANCHOR_OR_SECONDARY_RESEARCH"
     },
     {
       "term": "억울하다",
@@ -35,7 +56,8 @@
       "language_name": "한국어",
       "construct": "unjustly-wronged",
       "track": "KOREAN_NUANCE",
-      "risk": "STANDARD"
+      "risk": "STANDARD",
+      "g5_role": "ANCHOR_OR_SECONDARY_RESEARCH"
     },
     {
       "term": "뿌듯하다",
@@ -43,7 +65,8 @@
       "language_name": "한국어",
       "construct": "earned-satisfaction-pride",
       "track": "KOREAN_NUANCE",
-      "risk": "STANDARD"
+      "risk": "STANDARD",
+      "g5_role": "ANCHOR_OR_SECONDARY_RESEARCH"
     },
     {
       "term": "후련하다",
@@ -51,7 +74,8 @@
       "language_name": "한국어",
       "construct": "release-after-burden",
       "track": "KOREAN_NUANCE",
-      "risk": "STANDARD"
+      "risk": "STANDARD",
+      "g5_role": "ANCHOR_OR_SECONDARY_RESEARCH"
     },
     {
       "term": "찜찜하다",
@@ -59,7 +83,8 @@
       "language_name": "한국어",
       "construct": "lingering-unease",
       "track": "KOREAN_NUANCE",
-      "risk": "STANDARD"
+      "risk": "STANDARD",
+      "g5_role": "ANCHOR_OR_SECONDARY_RESEARCH"
     },
     {
       "term": "먹먹하다",
@@ -67,7 +92,8 @@
       "language_name": "한국어",
       "construct": "emotionally-choked-numb",
       "track": "KOREAN_NUANCE",
-      "risk": "STANDARD"
+      "risk": "STANDARD",
+      "g5_role": "ANCHOR_OR_SECONDARY_RESEARCH"
     },
     {
       "term": "착잡하다",
@@ -75,7 +101,8 @@
       "language_name": "한국어",
       "construct": "mixed-troubled-feelings",
       "track": "KOREAN_NUANCE",
-      "risk": "STANDARD"
+      "risk": "STANDARD",
+      "g5_role": "ANCHOR_OR_SECONDARY_RESEARCH"
     },
     {
       "term": "허전하다",
@@ -83,7 +110,8 @@
       "language_name": "한국어",
       "construct": "felt-emptiness-after-absence",
       "track": "KOREAN_NUANCE",
-      "risk": "STANDARD"
+      "risk": "STANDARD",
+      "g5_role": "ANCHOR_OR_SECONDARY_RESEARCH"
     },
     {
       "term": "아련하다",
@@ -91,7 +119,8 @@
       "language_name": "한국어",
       "construct": "faint-tender-remembrance",
       "track": "KOREAN_NUANCE",
-      "risk": "STANDARD"
+      "risk": "STANDARD",
+      "g5_role": "ANCHOR_OR_SECONDARY_RESEARCH"
     },
     {
       "term": "애틋하다",
@@ -99,7 +128,8 @@
       "language_name": "한국어",
       "construct": "tender-aching-affection",
       "track": "KOREAN_NUANCE",
-      "risk": "STANDARD"
+      "risk": "STANDARD",
+      "g5_role": "ANCHOR_OR_SECONDARY_RESEARCH"
     },
     {
       "term": "울컥하다",
@@ -107,7 +137,8 @@
       "language_name": "한국어",
       "construct": "sudden-emotional-surge",
       "track": "KOREAN_NUANCE",
-      "risk": "STANDARD"
+      "risk": "STANDARD",
+      "g5_role": "ANCHOR_OR_SECONDARY_RESEARCH"
     },
     {
       "term": "막막하다",
@@ -115,7 +146,8 @@
       "language_name": "한국어",
       "construct": "overwhelmed-without-way-forward",
       "track": "KOREAN_NUANCE",
-      "risk": "STANDARD"
+      "risk": "STANDARD",
+      "g5_role": "ANCHOR_OR_SECONDARY_RESEARCH"
     },
     {
       "term": "안쓰럽다",
@@ -123,7 +155,8 @@
       "language_name": "한국어",
       "construct": "tender-pity-concern",
       "track": "KOREAN_NUANCE",
-      "risk": "STANDARD"
+      "risk": "STANDARD",
+      "g5_role": "ANCHOR_OR_SECONDARY_RESEARCH"
     },
     {
       "term": "시원섭섭하다",
@@ -131,7 +164,8 @@
       "language_name": "한국어",
       "construct": "relief-and-regret-together",
       "track": "KOREAN_NUANCE",
-      "risk": "STANDARD"
+      "risk": "STANDARD",
+      "g5_role": "ANCHOR_OR_SECONDARY_RESEARCH"
     },
     {
       "term": "섭섭하다",
@@ -139,7 +173,8 @@
       "language_name": "한국어",
       "construct": "relational-hurt-disappointment",
       "track": "KOREAN_NUANCE",
-      "risk": "STANDARD"
+      "risk": "STANDARD",
+      "g5_role": "ANCHOR_OR_SECONDARY_RESEARCH"
     },
     {
       "term": "설레다",
@@ -147,7 +182,8 @@
       "language_name": "한국어",
       "construct": "fluttering-anticipation",
       "track": "KOREAN_NUANCE",
-      "risk": "STANDARD"
+      "risk": "STANDARD",
+      "g5_role": "ANCHOR_OR_SECONDARY_RESEARCH"
     },
     {
       "term": "답답하다",
@@ -155,7 +191,8 @@
       "language_name": "한국어",
       "construct": "frustrated-constricted-stuck",
       "track": "KOREAN_NUANCE",
-      "risk": "STANDARD"
+      "risk": "STANDARD",
+      "g5_role": "ANCHOR_OR_SECONDARY_RESEARCH"
     },
     {
       "term": "민망하다",
@@ -163,7 +200,8 @@
       "language_name": "한국어",
       "construct": "social-awkward-embarrassment",
       "track": "KOREAN_NUANCE",
-      "risk": "STANDARD"
+      "risk": "STANDARD",
+      "g5_role": "ANCHOR_OR_SECONDARY_RESEARCH"
     },
     {
       "term": "뭉클하다",
@@ -171,7 +209,8 @@
       "language_name": "한국어",
       "construct": "deeply-moved-heart-swelling",
       "track": "KOREAN_NUANCE",
-      "risk": "STANDARD"
+      "risk": "STANDARD",
+      "g5_role": "ANCHOR_OR_SECONDARY_RESEARCH"
     },
     {
       "term": "짠하다",
@@ -179,7 +218,8 @@
       "language_name": "한국어",
       "construct": "aching-sympathy-affection",
       "track": "KOREAN_NUANCE",
-      "risk": "STANDARD"
+      "risk": "STANDARD",
+      "g5_role": "ANCHOR_OR_SECONDARY_RESEARCH"
     },
     {
       "term": "멋쩍다",
@@ -187,7 +227,8 @@
       "language_name": "한국어",
       "construct": "self-conscious-awkwardness",
       "track": "KOREAN_NUANCE",
-      "risk": "STANDARD"
+      "risk": "STANDARD",
+      "g5_role": "ANCHOR_OR_SECONDARY_RESEARCH"
     },
     {
       "term": "개운하다",
@@ -195,7 +236,8 @@
       "language_name": "한국어",
       "construct": "cleared-refreshed-after-release",
       "track": "KOREAN_NUANCE",
-      "risk": "STANDARD"
+      "risk": "STANDARD",
+      "g5_role": "ANCHOR_OR_SECONDARY_RESEARCH"
     },
     {
       "term": "씁쓸하다",
@@ -203,7 +245,8 @@
       "language_name": "한국어",
       "construct": "bitter-mixed-disappointment",
       "track": "KOREAN_NUANCE",
-      "risk": "STANDARD"
+      "risk": "STANDARD",
+      "g5_role": "ANCHOR_OR_SECONDARY_RESEARCH"
     },
     {
       "term": "정",
@@ -211,7 +254,8 @@
       "language_name": "한국어",
       "construct": "accumulated-relational-affection",
       "track": "KOREAN_NUANCE",
-      "risk": "HIGH_CULTURAL_GENERALIZATION"
+      "risk": "HIGH_CULTURAL_GENERALIZATION",
+      "g5_role": "ANCHOR_OR_SECONDARY_RESEARCH"
     },
     {
       "term": "한",
@@ -219,7 +263,8 @@
       "language_name": "한국어",
       "construct": "enduring-grief-resentment-longing",
       "track": "KOREAN_NUANCE",
-      "risk": "HIGH_CULTURAL_GENERALIZATION"
+      "risk": "HIGH_CULTURAL_GENERALIZATION",
+      "g5_role": "ANCHOR_OR_SECONDARY_RESEARCH"
     },
     {
       "term": "눈치",
@@ -227,7 +272,8 @@
       "language_name": "한국어",
       "construct": "relational-attunement-social-reading",
       "track": "KOREAN_NUANCE",
-      "risk": "HIGH_CONSTRUCT_BOUNDARY"
+      "risk": "HIGH_CONSTRUCT_BOUNDARY",
+      "g5_role": "ANCHOR_OR_SECONDARY_RESEARCH"
     },
     {
       "term": "Geborgenheit",
@@ -235,7 +281,8 @@
       "language_name": "Deutsch",
       "construct": "secure-belonging-shelteredness",
       "track": "FOREIGN_KOREAN_GAP",
-      "risk": "STANDARD"
+      "risk": "STANDARD",
+      "g5_role": "PRIMARY_ACTIVE_CANDIDATE"
     },
     {
       "term": "Fernweh",
@@ -243,7 +290,8 @@
       "language_name": "Deutsch",
       "construct": "longing-for-distant-places",
       "track": "FOREIGN_KOREAN_GAP",
-      "risk": "STANDARD"
+      "risk": "STANDARD",
+      "g5_role": "PRIMARY_ACTIVE_CANDIDATE"
     },
     {
       "term": "Weltschmerz",
@@ -251,7 +299,8 @@
       "language_name": "Deutsch",
       "construct": "world-weariness-ideal-reality-pain",
       "track": "FOREIGN_KOREAN_GAP",
-      "risk": "STANDARD"
+      "risk": "STANDARD",
+      "g5_role": "PRIMARY_ACTIVE_CANDIDATE"
     },
     {
       "term": "Vorfreude",
@@ -259,7 +308,8 @@
       "language_name": "Deutsch",
       "construct": "anticipatory-joy",
       "track": "FOREIGN_KOREAN_GAP",
-      "risk": "STANDARD"
+      "risk": "STANDARD",
+      "g5_role": "PRIMARY_ACTIVE_CANDIDATE"
     },
     {
       "term": "Torschlusspanik",
@@ -267,7 +317,8 @@
       "language_name": "Deutsch",
       "construct": "anxiety-about-closing-opportunities",
       "track": "FOREIGN_KOREAN_GAP",
-      "risk": "STANDARD"
+      "risk": "STANDARD",
+      "g5_role": "PRIMARY_ACTIVE_CANDIDATE"
     },
     {
       "term": "dépaysement",
@@ -275,7 +326,8 @@
       "language_name": "Français",
       "construct": "disorientation-away-from-familiar-place",
       "track": "FOREIGN_KOREAN_GAP",
-      "risk": "STANDARD"
+      "risk": "STANDARD",
+      "g5_role": "PRIMARY_ACTIVE_CANDIDATE"
     },
     {
       "term": "retrouvailles",
@@ -283,7 +335,8 @@
       "language_name": "Français",
       "construct": "emotion-of-reunion-after-separation",
       "track": "FOREIGN_KOREAN_GAP",
-      "risk": "STANDARD"
+      "risk": "STANDARD",
+      "g5_role": "PRIMARY_ACTIVE_CANDIDATE"
     },
     {
       "term": "morriña",
@@ -291,7 +344,8 @@
       "language_name": "Galego",
       "construct": "homesick-melancholic-longing",
       "track": "FOREIGN_KOREAN_GAP",
-      "risk": "STANDARD"
+      "risk": "STANDARD",
+      "g5_role": "PRIMARY_ACTIVE_CANDIDATE"
     },
     {
       "term": "vergüenza ajena",
@@ -299,7 +353,8 @@
       "language_name": "Español",
       "construct": "secondhand-embarrassment",
       "track": "FOREIGN_KOREAN_GAP",
-      "risk": "STANDARD"
+      "risk": "STANDARD",
+      "g5_role": "PRIMARY_ACTIVE_CANDIDATE"
     },
     {
       "term": "desassossego",
@@ -307,7 +362,8 @@
       "language_name": "Português",
       "construct": "inner-restlessness-disquiet",
       "track": "FOREIGN_KOREAN_GAP",
-      "risk": "STANDARD"
+      "risk": "STANDARD",
+      "g5_role": "PRIMARY_ACTIVE_CANDIDATE"
     },
     {
       "term": "懐かしい",
@@ -315,7 +371,8 @@
       "language_name": "日本語",
       "construct": "fond-nostalgic-recognition",
       "track": "FOREIGN_KOREAN_GAP",
-      "risk": "STANDARD"
+      "risk": "STANDARD",
+      "g5_role": "PRIMARY_ACTIVE_CANDIDATE"
     },
     {
       "term": "切ない",
@@ -323,7 +380,8 @@
       "language_name": "日本語",
       "construct": "poignant-aching-sadness",
       "track": "FOREIGN_KOREAN_GAP",
-      "risk": "STANDARD"
+      "risk": "STANDARD",
+      "g5_role": "PRIMARY_ACTIVE_CANDIDATE"
     },
     {
       "term": "もどかしい",
@@ -331,7 +389,8 @@
       "language_name": "日本語",
       "construct": "impatient-frustration-at-inability",
       "track": "FOREIGN_KOREAN_GAP",
-      "risk": "STANDARD"
+      "risk": "STANDARD",
+      "g5_role": "PRIMARY_ACTIVE_CANDIDATE"
     },
     {
       "term": "甘え",
@@ -339,7 +398,8 @@
       "language_name": "日本語",
       "construct": "dependent-indulgent-relational-reliance",
       "track": "FOREIGN_KOREAN_GAP",
-      "risk": "HIGH_CULTURAL_GENERALIZATION"
+      "risk": "HIGH_CULTURAL_GENERALIZATION",
+      "g5_role": "PRIMARY_ACTIVE_CANDIDATE"
     },
     {
       "term": "わびしい",
@@ -347,7 +407,8 @@
       "language_name": "日本語",
       "construct": "lonely-desolate-sadness",
       "track": "FOREIGN_KOREAN_GAP",
-      "risk": "STANDARD"
+      "risk": "STANDARD",
+      "g5_role": "PRIMARY_ACTIVE_CANDIDATE"
     },
     {
       "term": "気まずい",
@@ -355,7 +416,8 @@
       "language_name": "日本語",
       "construct": "social-awkward-discomfort",
       "track": "FOREIGN_KOREAN_GAP",
-      "risk": "STANDARD"
+      "risk": "STANDARD",
+      "g5_role": "PRIMARY_ACTIVE_CANDIDATE"
     },
     {
       "term": "愛おしい",
@@ -363,7 +425,8 @@
       "language_name": "日本語",
       "construct": "cherished-tender-affection",
       "track": "FOREIGN_KOREAN_GAP",
-      "risk": "STANDARD"
+      "risk": "STANDARD",
+      "g5_role": "PRIMARY_ACTIVE_CANDIDATE"
     },
     {
       "term": "心細い",
@@ -371,7 +434,8 @@
       "language_name": "日本語",
       "construct": "insecure-lonely-without-support",
       "track": "FOREIGN_KOREAN_GAP",
-      "risk": "STANDARD"
+      "risk": "STANDARD",
+      "g5_role": "PRIMARY_ACTIVE_CANDIDATE"
     },
     {
       "term": "もったいない",
@@ -379,7 +443,8 @@
       "language_name": "日本語",
       "construct": "regret-at-waste-or-lost-value",
       "track": "FOREIGN_KOREAN_GAP",
-      "risk": "STANDARD"
+      "risk": "STANDARD",
+      "g5_role": "PRIMARY_ACTIVE_CANDIDATE"
     },
     {
       "term": "委屈",
@@ -387,7 +452,8 @@
       "language_name": "中文",
       "construct": "aggrieved-unfairly-treated-hurt",
       "track": "FOREIGN_KOREAN_GAP",
-      "risk": "STANDARD"
+      "risk": "STANDARD",
+      "g5_role": "PRIMARY_ACTIVE_CANDIDATE"
     },
     {
       "term": "惆怅",
@@ -395,7 +461,8 @@
       "language_name": "中文",
       "construct": "melancholic-disappointment-longing",
       "track": "FOREIGN_KOREAN_GAP",
-      "risk": "STANDARD"
+      "risk": "STANDARD",
+      "g5_role": "PRIMARY_ACTIVE_CANDIDATE"
     },
     {
       "term": "舍不得",
@@ -403,7 +470,8 @@
       "language_name": "中文",
       "construct": "reluctance-to-part-or-let-go",
       "track": "FOREIGN_KOREAN_GAP",
-      "risk": "STANDARD"
+      "risk": "STANDARD",
+      "g5_role": "PRIMARY_ACTIVE_CANDIDATE"
     },
     {
       "term": "心疼",
@@ -411,7 +479,8 @@
       "language_name": "中文",
       "construct": "heartache-for-someone-or-loss",
       "track": "FOREIGN_KOREAN_GAP",
-      "risk": "STANDARD"
+      "risk": "STANDARD",
+      "g5_role": "PRIMARY_ACTIVE_CANDIDATE"
     },
     {
       "term": "欣慰",
@@ -419,7 +488,8 @@
       "language_name": "中文",
       "construct": "gratified-relief",
       "track": "FOREIGN_KOREAN_GAP",
-      "risk": "STANDARD"
+      "risk": "STANDARD",
+      "g5_role": "PRIMARY_ACTIVE_CANDIDATE"
     },
     {
       "term": "纠结",
@@ -427,7 +497,8 @@
       "language_name": "中文",
       "construct": "tangled-indecision-inner-conflict",
       "track": "FOREIGN_KOREAN_GAP",
-      "risk": "STANDARD"
+      "risk": "STANDARD",
+      "g5_role": "PRIMARY_ACTIVE_CANDIDATE"
     },
     {
       "term": "心酸",
@@ -435,7 +506,8 @@
       "language_name": "中文",
       "construct": "sorrowful-heartache-bitterness",
       "track": "FOREIGN_KOREAN_GAP",
-      "risk": "STANDARD"
+      "risk": "STANDARD",
+      "g5_role": "PRIMARY_ACTIVE_CANDIDATE"
     },
     {
       "term": "无奈",
@@ -443,7 +515,8 @@
       "language_name": "中文",
       "construct": "helpless-resigned-frustration",
       "track": "FOREIGN_KOREAN_GAP",
-      "risk": "STANDARD"
+      "risk": "STANDARD",
+      "g5_role": "PRIMARY_ACTIVE_CANDIDATE"
     },
     {
       "term": "gezelligheid",
@@ -451,7 +524,8 @@
       "language_name": "Nederlands",
       "construct": "cozy-social-belonging-atmosphere",
       "track": "FOREIGN_KOREAN_GAP",
-      "risk": "STANDARD"
+      "risk": "STANDARD",
+      "g5_role": "PRIMARY_ACTIVE_CANDIDATE"
     },
     {
       "term": "voorpret",
@@ -459,7 +533,8 @@
       "language_name": "Nederlands",
       "construct": "anticipatory-fun",
       "track": "FOREIGN_KOREAN_GAP",
-      "risk": "STANDARD"
+      "risk": "STANDARD",
+      "g5_role": "PRIMARY_ACTIVE_CANDIDATE"
     },
     {
       "term": "vemod",
@@ -467,7 +542,8 @@
       "language_name": "Svenska",
       "construct": "tender-melancholy",
       "track": "FOREIGN_KOREAN_GAP",
-      "risk": "STANDARD"
+      "risk": "STANDARD",
+      "g5_role": "PRIMARY_ACTIVE_CANDIDATE"
     },
     {
       "term": "hiraeth",
@@ -475,7 +551,8 @@
       "language_name": "Cymraeg",
       "construct": "longing-for-home-past-or-unreachable-place",
       "track": "FOREIGN_KOREAN_GAP",
-      "risk": "HIGH_CULTURAL_GENERALIZATION"
+      "risk": "HIGH_CULTURAL_GENERALIZATION",
+      "g5_role": "PRIMARY_ACTIVE_CANDIDATE"
     },
     {
       "term": "hüzün",
@@ -483,7 +560,8 @@
       "language_name": "Türkçe",
       "construct": "melancholic-sadness",
       "track": "FOREIGN_KOREAN_GAP",
-      "risk": "HIGH_CULTURAL_GENERALIZATION"
+      "risk": "HIGH_CULTURAL_GENERALIZATION",
+      "g5_role": "PRIMARY_ACTIVE_CANDIDATE"
     },
     {
       "term": "gurbet",
@@ -491,7 +569,8 @@
       "language_name": "Türkçe",
       "construct": "estrangement-away-from-home",
       "track": "FOREIGN_KOREAN_GAP",
-      "risk": "STANDARD"
+      "risk": "STANDARD",
+      "g5_role": "PRIMARY_ACTIVE_CANDIDATE"
     },
     {
       "term": "tarab",
@@ -499,7 +578,8 @@
       "language_name": "العربية",
       "construct": "music-induced-ecstatic-enchantment",
       "track": "FOREIGN_KOREAN_GAP",
-      "risk": "HIGH_CULTURAL_GENERALIZATION"
+      "risk": "HIGH_CULTURAL_GENERALIZATION",
+      "g5_role": "PRIMARY_ACTIVE_CANDIDATE"
     },
     {
       "term": "ghurba",
@@ -507,7 +587,8 @@
       "language_name": "العربية",
       "construct": "estrangement-exile-away-from-home",
       "track": "FOREIGN_KOREAN_GAP",
-      "risk": "STANDARD"
+      "risk": "STANDARD",
+      "g5_role": "PRIMARY_ACTIVE_CANDIDATE"
     },
     {
       "term": "тоска",
@@ -515,7 +596,8 @@
       "language_name": "Русский",
       "construct": "deep-aching-longing-melancholy",
       "track": "FOREIGN_KOREAN_GAP",
-      "risk": "STANDARD"
+      "risk": "STANDARD",
+      "g5_role": "PRIMARY_ACTIVE_CANDIDATE"
     },
     {
       "term": "обида",
@@ -523,7 +605,8 @@
       "language_name": "Русский",
       "construct": "hurt-resentment-from-offense",
       "track": "FOREIGN_KOREAN_GAP",
-      "risk": "STANDARD"
+      "risk": "STANDARD",
+      "g5_role": "PRIMARY_ACTIVE_CANDIDATE"
     },
     {
       "term": "lítost",
@@ -531,7 +614,8 @@
       "language_name": "Čeština",
       "construct": "regret-pity-sorrow-self-torment",
       "track": "FOREIGN_KOREAN_GAP",
-      "risk": "HIGH_POPULAR_CLAIM"
+      "risk": "HIGH_POPULAR_CLAIM",
+      "g5_role": "PRIMARY_ACTIVE_CANDIDATE"
     },
     {
       "term": "kaiho",
@@ -539,7 +623,8 @@
       "language_name": "Suomi",
       "construct": "wistful-longing-melancholy",
       "track": "FOREIGN_KOREAN_GAP",
-      "risk": "STANDARD"
+      "risk": "STANDARD",
+      "g5_role": "PRIMARY_ACTIVE_CANDIDATE"
     },
     {
       "term": "magone",
@@ -547,7 +632,8 @@
       "language_name": "Italiano",
       "construct": "lump-in-throat-distress",
       "track": "FOREIGN_KOREAN_GAP",
-      "risk": "STANDARD"
+      "risk": "STANDARD",
+      "g5_role": "PRIMARY_ACTIVE_CANDIDATE"
     },
     {
       "term": "commozione",
@@ -555,7 +641,8 @@
       "language_name": "Italiano",
       "construct": "being-deeply-moved",
       "track": "FOREIGN_KOREAN_GAP",
-      "risk": "STANDARD"
+      "risk": "STANDARD",
+      "g5_role": "PRIMARY_ACTIVE_CANDIDATE"
     },
     {
       "term": "kilig",
@@ -563,7 +650,8 @@
       "language_name": "Filipino",
       "construct": "romantic-thrill-butterflies",
       "track": "FOREIGN_KOREAN_GAP",
-      "risk": "STANDARD"
+      "risk": "STANDARD",
+      "g5_role": "PRIMARY_ACTIVE_CANDIDATE"
     },
     {
       "term": "gigil",
@@ -571,7 +659,8 @@
       "language_name": "Filipino",
       "construct": "overwhelming-urge-from-intense-cuteness-or-emotion",
       "track": "FOREIGN_KOREAN_GAP",
-      "risk": "STANDARD"
+      "risk": "STANDARD",
+      "g5_role": "PRIMARY_ACTIVE_CANDIDATE"
     },
     {
       "term": "gemas",
@@ -579,7 +668,8 @@
       "language_name": "Bahasa Indonesia",
       "construct": "affectionate-exasperated-urge",
       "track": "FOREIGN_KOREAN_GAP",
-      "risk": "STANDARD"
+      "risk": "STANDARD",
+      "g5_role": "PRIMARY_ACTIVE_CANDIDATE"
     },
     {
       "term": "viraha",
@@ -587,7 +677,8 @@
       "language_name": "हिन्दी",
       "construct": "separation-longing",
       "track": "FOREIGN_KOREAN_GAP",
-      "risk": "HIGH_LITERARY_CULTURAL"
+      "risk": "HIGH_LITERARY_CULTURAL",
+      "g5_role": "PRIMARY_ACTIVE_CANDIDATE"
     },
     {
       "term": "nachas",
@@ -595,7 +686,248 @@
       "language_name": "ייִדיש",
       "construct": "pride-gratification-in-another",
       "track": "FOREIGN_KOREAN_GAP",
-      "risk": "STANDARD"
+      "risk": "STANDARD",
+      "g5_role": "PRIMARY_ACTIVE_CANDIDATE"
+    },
+    {
+      "term": "Fremdscham",
+      "language_code": "de-DE",
+      "language_name": "Deutsch",
+      "construct": "vicarious-embarrassment",
+      "track": "FOREIGN_KOREAN_GAP",
+      "risk": "STANDARD",
+      "g5_role": "PRIMARY_ACTIVE_CANDIDATE",
+      "verification_status": "DISCOVERY_ONLY"
+    },
+    {
+      "term": "Wehmut",
+      "language_code": "de-DE",
+      "language_name": "Deutsch",
+      "construct": "tender-melancholy-regret",
+      "track": "FOREIGN_KOREAN_GAP",
+      "risk": "STANDARD",
+      "g5_role": "PRIMARY_ACTIVE_CANDIDATE",
+      "verification_status": "DISCOVERY_ONLY"
+    },
+    {
+      "term": "名残惜しい",
+      "language_code": "ja-JP",
+      "language_name": "日本語",
+      "construct": "reluctance-at-parting",
+      "track": "FOREIGN_KOREAN_GAP",
+      "risk": "STANDARD",
+      "g5_role": "PRIMARY_ACTIVE_CANDIDATE",
+      "verification_status": "DISCOVERY_ONLY"
+    },
+    {
+      "term": "やるせない",
+      "language_code": "ja-JP",
+      "language_name": "日本語",
+      "construct": "helpless-unrelievable-distress",
+      "track": "FOREIGN_KOREAN_GAP",
+      "risk": "STANDARD",
+      "g5_role": "PRIMARY_ACTIVE_CANDIDATE",
+      "verification_status": "DISCOVERY_ONLY"
+    },
+    {
+      "term": "後ろめたい",
+      "language_code": "ja-JP",
+      "language_name": "日本語",
+      "construct": "guilty-conscience-self-reproach",
+      "track": "FOREIGN_KOREAN_GAP",
+      "risk": "STANDARD",
+      "g5_role": "PRIMARY_ACTIVE_CANDIDATE",
+      "verification_status": "DISCOVERY_ONLY"
+    },
+    {
+      "term": "儚い",
+      "language_code": "ja-JP",
+      "language_name": "日本語",
+      "construct": "poignant-awareness-of-transience",
+      "track": "FOREIGN_KOREAN_GAP",
+      "risk": "STANDARD",
+      "g5_role": "PRIMARY_ACTIVE_CANDIDATE",
+      "verification_status": "DISCOVERY_ONLY"
+    },
+    {
+      "term": "悔しい",
+      "language_code": "ja-JP",
+      "language_name": "日本語",
+      "construct": "frustrated-chagrin-at-defeat-or-failure",
+      "track": "FOREIGN_KOREAN_GAP",
+      "risk": "STANDARD",
+      "g5_role": "PRIMARY_ACTIVE_CANDIDATE",
+      "verification_status": "DISCOVERY_ONLY"
+    },
+    {
+      "term": "憋屈",
+      "language_code": "zh-CN",
+      "language_name": "中文",
+      "construct": "suppressed-aggrieved-frustration",
+      "track": "FOREIGN_KOREAN_GAP",
+      "risk": "STANDARD",
+      "g5_role": "PRIMARY_ACTIVE_CANDIDATE",
+      "verification_status": "DISCOVERY_ONLY"
+    },
+    {
+      "term": "感慨",
+      "language_code": "zh-CN",
+      "language_name": "中文",
+      "construct": "emotion-stirred-by-reflection",
+      "track": "FOREIGN_KOREAN_GAP",
+      "risk": "STANDARD",
+      "g5_role": "PRIMARY_ACTIVE_CANDIDATE",
+      "verification_status": "DISCOVERY_ONLY"
+    },
+    {
+      "term": "怅然",
+      "language_code": "zh-CN",
+      "language_name": "中文",
+      "construct": "melancholic-sense-of-loss",
+      "track": "FOREIGN_KOREAN_GAP",
+      "risk": "STANDARD",
+      "g5_role": "PRIMARY_ACTIVE_CANDIDATE",
+      "verification_status": "DISCOVERY_ONLY"
+    },
+    {
+      "term": "不甘心",
+      "language_code": "zh-CN",
+      "language_name": "中文",
+      "construct": "unwilling-to-accept-an-outcome",
+      "track": "FOREIGN_KOREAN_GAP",
+      "risk": "STANDARD",
+      "g5_role": "PRIMARY_ACTIVE_CANDIDATE",
+      "verification_status": "DISCOVERY_ONLY"
+    },
+    {
+      "term": "难为情",
+      "language_code": "zh-CN",
+      "language_name": "中文",
+      "construct": "social-embarrassment-and-reluctance",
+      "track": "FOREIGN_KOREAN_GAP",
+      "risk": "STANDARD",
+      "g5_role": "PRIMARY_ACTIVE_CANDIDATE",
+      "verification_status": "DISCOVERY_ONLY"
+    },
+    {
+      "term": "百感交集",
+      "language_code": "zh-CN",
+      "language_name": "中文",
+      "construct": "many-emotions-converging-at-once",
+      "track": "FOREIGN_KOREAN_GAP",
+      "risk": "STANDARD",
+      "g5_role": "PRIMARY_ACTIVE_CANDIDATE",
+      "verification_status": "DISCOVERY_ONLY"
+    },
+    {
+      "term": "умиление",
+      "language_code": "ru-RU",
+      "language_name": "Русский",
+      "construct": "tender-affectionate-emotional-warmth",
+      "track": "FOREIGN_KOREAN_GAP",
+      "risk": "STANDARD",
+      "g5_role": "PRIMARY_ACTIVE_CANDIDATE",
+      "verification_status": "DISCOVERY_ONLY"
+    },
+    {
+      "term": "żal",
+      "language_code": "pl-PL",
+      "language_name": "Polski",
+      "construct": "grief-regret-resentful-sorrow",
+      "track": "FOREIGN_KOREAN_GAP",
+      "risk": "HIGH_POLYSEMY",
+      "g5_role": "PRIMARY_ACTIVE_CANDIDATE",
+      "verification_status": "DISCOVERY_ONLY"
+    },
+    {
+      "term": "dor",
+      "language_code": "ro-RO",
+      "language_name": "Română",
+      "construct": "aching-longing-for-person-place-or-time",
+      "track": "FOREIGN_KOREAN_GAP",
+      "risk": "HIGH_CULTURAL_GENERALIZATION",
+      "g5_role": "PRIMARY_ACTIVE_CANDIDATE",
+      "verification_status": "DISCOVERY_ONLY"
+    },
+    {
+      "term": "cianalas",
+      "language_code": "gd-GB",
+      "language_name": "Gàidhlig",
+      "construct": "homesick-longing-for-distant-home",
+      "track": "FOREIGN_KOREAN_GAP",
+      "risk": "HIGH_REGIONAL",
+      "g5_role": "PRIMARY_ACTIVE_CANDIDATE",
+      "verification_status": "DISCOVERY_ONLY"
+    },
+    {
+      "term": "resfeber",
+      "language_code": "sv-SE",
+      "language_name": "Svenska",
+      "construct": "nervous-excitement-before-a-journey",
+      "track": "FOREIGN_KOREAN_GAP",
+      "risk": "STANDARD",
+      "g5_role": "PRIMARY_ACTIVE_CANDIDATE",
+      "verification_status": "DISCOVERY_ONLY"
+    },
+    {
+      "term": "firgun",
+      "language_code": "he-IL",
+      "language_name": "עברית",
+      "construct": "ungrudging-joy-for-anothers-success",
+      "track": "FOREIGN_KOREAN_GAP",
+      "risk": "HIGH_USAGE_BOUNDARY",
+      "g5_role": "PRIMARY_ACTIVE_CANDIDATE",
+      "verification_status": "DISCOVERY_ONLY"
+    },
+    {
+      "term": "tampo",
+      "language_code": "fil-PH",
+      "language_name": "Filipino",
+      "construct": "relational-hurt-expressed-by-withdrawal",
+      "track": "FOREIGN_KOREAN_GAP",
+      "risk": "HIGH_CULTURAL_GENERALIZATION",
+      "g5_role": "PRIMARY_ACTIVE_CANDIDATE",
+      "verification_status": "DISCOVERY_ONLY"
+    },
+    {
+      "term": "kasak",
+      "language_code": "hi-IN",
+      "language_name": "हिन्दी",
+      "construct": "lingering-emotional-pang-or-longing",
+      "track": "FOREIGN_KOREAN_GAP",
+      "risk": "HIGH_POLYSEMY",
+      "g5_role": "PRIMARY_ACTIVE_CANDIDATE",
+      "verification_status": "DISCOVERY_ONLY"
+    },
+    {
+      "term": "wajd",
+      "language_code": "ar",
+      "language_name": "العربية",
+      "construct": "ecstatic-yearning-or-intense-felt-presence",
+      "track": "FOREIGN_KOREAN_GAP",
+      "risk": "HIGH_SPIRITUAL_USAGE",
+      "g5_role": "PRIMARY_ACTIVE_CANDIDATE",
+      "verification_status": "DISCOVERY_ONLY"
+    },
+    {
+      "term": "aconchego",
+      "language_code": "pt-BR",
+      "language_name": "Português",
+      "construct": "warm-protected-affectionate-comfort",
+      "track": "FOREIGN_KOREAN_GAP",
+      "risk": "STANDARD",
+      "g5_role": "PRIMARY_ACTIVE_CANDIDATE",
+      "verification_status": "DISCOVERY_ONLY"
+    },
+    {
+      "term": "querencia",
+      "language_code": "es-ES",
+      "language_name": "Español",
+      "construct": "felt-place-of-strength-belonging-or-affinity",
+      "track": "FOREIGN_KOREAN_GAP",
+      "risk": "HIGH_CONSTRUCT_BOUNDARY",
+      "g5_role": "PRIMARY_ACTIVE_CANDIDATE",
+      "verification_status": "DISCOVERY_ONLY"
     }
   ]
 }

@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0.0",
+  "status": "SECONDARY_RESEARCH_ONLY",
+  "reason": "Preserved source-first Korean research from the earlier over-correction; useful for comparison but excluded from final active-50 target.",
+  "card_ids": [
+    "C0011",
+    "C0012",
+    "C0013",
+    "C0014",
+    "C0015"
+  ],
+  "terms": [
+    "억울하다",
+    "후련하다",
+    "착잡하다",
+    "시원섭섭하다",
+    "멋쩍다"
+  ],
+  "public_promotion_authorized": false,
+  "id_reuse_prohibited": true,
+  "note": "C0006-C0010 remain the only Korean cards targeted for the final active collection."
+}

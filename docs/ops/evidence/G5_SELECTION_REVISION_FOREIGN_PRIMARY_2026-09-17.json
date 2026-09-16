@@ -1,0 +1,102 @@
+{
+  "schema_version": 1,
+  "goal": "G5",
+  "artifact": "SELECTION_REVISION_FOREIGN_PRIMARY",
+  "status": "LOCKED_PASS",
+  "recorded_at": "2026-09-17",
+  "trigger": "User clarified that the product should primarily explore foreign-language expressions that compress emotions or relational experiences Korean would need a longer phrase or explanation to preserve; Korean nuance should be secondary, not the main content track.",
+  "supersedes_artifact": "G5_SELECTION_REVISION_ACTIVE50_2026-09-16.json",
+  "final_active_policy": {
+    "active_count": 50,
+    "foreign_active_count": 45,
+    "korean_anchor_count": 5,
+    "existing_foreign": [
+      "C0001",
+      "C0002",
+      "C0003"
+    ],
+    "new_foreign_count": 42,
+    "new_foreign_id_start": "C0016",
+    "korean_anchors": [
+      "C0006",
+      "C0007",
+      "C0008",
+      "C0009",
+      "C0010"
+    ],
+    "secondary_korean_research": [
+      "C0011",
+      "C0012",
+      "C0013",
+      "C0014",
+      "C0015"
+    ],
+    "planned_retirements": [
+      "C0004",
+      "C0005"
+    ]
+  },
+  "foreign_admission_gate": {
+    "korean_expression_cost_required": true,
+    "classes": [
+      "ONE_WORD_EQUIVALENT",
+      "SHORT_PHRASE_PARTIAL",
+      "EXPLANATORY_PHRASE_REQUIRED",
+      "UNCLEAR"
+    ],
+    "reject_one_word_equivalent": true,
+    "semantic_residue_must_be_evidenced": true,
+    "untranslatable_claim_prohibited": true,
+    "cultural_exclusivity_claim_prohibited": true,
+    "discovery_list_is_not_publication_evidence": true
+  },
+  "candidate_pool": {
+    "foreign_candidates": 70,
+    "replacement_depth_minimum_met": true
+  },
+  "verification": {
+    "g1": "12/12 PASS",
+    "g2": "5/5 PASS",
+    "g3": "8/8 PASS",
+    "g4": "9/9 PASS",
+    "g5_selection": "8/8 PASS",
+    "existing_g5_research_records": 10,
+    "privacy_violations": 0,
+    "npm_vulnerabilities": 0,
+    "public_cards": [
+      "C0001",
+      "C0002",
+      "C0003",
+      "C0004",
+      "C0005"
+    ]
+  },
+  "research_rationale_sources": [
+    {
+      "title": "Towards a positive cross-cultural lexicography",
+      "doi": "10.1080/17439760.2015.1127993",
+      "role": "candidate discovery map only"
+    },
+    {
+      "title": "Cultural attitudes towards the future shape the semantic structure of emotion concepts",
+      "url": "https://www.nature.com/articles/s41599-026-06623-3",
+      "role": "evidence that emotion semantic spaces vary across languages/cultures"
+    },
+    {
+      "title": "Properties of Central and Peripheral Concepts of Emotion in Japanese and Korean",
+      "doi": "10.3389/fpsyg.2022.825404",
+      "role": "cross-language emotion-concept structure evidence"
+    }
+  ],
+  "external_publish_authorized": false,
+  "repository_push_authorized": false,
+  "sha256": {
+    "docs/ops/G5_EDITORIAL_SELECTION_CONTRACT.md": "b0f9ddf853ed0fe268edb5d3ad027e29c416d766c49a2be83e1b2989384554c2",
+    "content/g5/candidate-pool.json": "27340a382845c3781c54a70343e851f38bd1e6467fbb76c85268cd0a3b9a38a8",
+    "content/g5/secondary-korean-research.json": "6962fdf1e483ce4d8cc73d34afe53cf5559e7529e6f83dcbae678de263ca2ea2",
+    "content/g5/generic-candidate-rejections.json": "418015304d5c0473f445fb493b106680cc0e38df52870198c541a4a9c62ab965",
+    "tests/g5/editorial-selection.test.mjs": "bf852f5dd240be93153c7c2e22e4f332dd90501c66b9a8318ed650ecb8025535",
+    "scripts/g5/build-g5-review-packet.mjs": "a76833ffb6e9b4a57635285b7c1905f8960bb969de56d9254b65b4057f651271",
+    "scripts/g5/build-diversity-matrix.mjs": "96b82c8497f9100f1feddb602b3163585b9bc960d443fba0101f3744213d8957"
+  }
+}

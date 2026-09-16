@@ -43,5 +43,5 @@
     "幸福"
   ],
   "preservation_note": "The archived pre-distinctiveness candidate pool and audio scan are retained under content/g5/archive as failed/exploratory evidence and are not canonical G5 admission inputs.",
-  "final_active_collection_rule": "C0004/C0005 audit evidence is preserved, but they are removed from the active/public projection only after 47 replacement cards C0006-C0052 have all passed Human Editorial Release and full regression."
+  "final_active_collection_rule": "Preserve C0004/C0005 as G4 audit evidence but retire them at G5 cutover. Final active target is 45 foreign semantic-gap cards (C0001-C0003 plus 42 new foreign cards beginning C0016) + 5 Korean anchors C0006-C0010. C0011-C0015 remain secondary research only."
 }
