@@ -1,5 +1,6 @@
 # Local-only product discovery / evidence / interview records
-/private/
+/private/*
+!/private/.gitkeep
 
 # Local COS orchestration runtime artifacts
 /reports/harness/cos_goal_chain/
