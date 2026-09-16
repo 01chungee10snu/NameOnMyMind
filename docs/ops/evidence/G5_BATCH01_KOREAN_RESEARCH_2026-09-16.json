@@ -1,0 +1,115 @@
+{
+  "schema_version": 1,
+  "goal": "G5",
+  "batch_id": "G5-B01-KOREAN-NUANCE",
+  "status": "RESEARCH_COMPLETE_AUDIO_RIGHTS_HOLD",
+  "recorded_at": "2026-09-16",
+  "baseline_commit": "94170dcd6215d5f04ea8c2277f8933b8823aee24",
+  "reserved_card_ids": [
+    "C0006",
+    "C0007",
+    "C0008",
+    "C0009",
+    "C0010"
+  ],
+  "terms": [
+    "서운하다",
+    "아쉽다",
+    "섭섭하다",
+    "뿌듯하다",
+    "뭉클하다"
+  ],
+  "research_record_schema": "2.0.0",
+  "gates": {
+    "schema": "5/5 PASS",
+    "distinctiveness": "5/5 PASS",
+    "lexical": "5/5 PASS",
+    "scholarly_semantic": "5/5 PASS",
+    "ko_en_zh_ja_comparison": "5/5 PASS",
+    "cultural_humility": "5/5 PASS",
+    "privacy": "5/5 PASS",
+    "ipa": "5/5 RESEARCH_VERIFIED",
+    "pronunciation_audio_rights": "5/5 HOLD",
+    "illustration": "5/5 HOLD_NOT_STARTED",
+    "editorial_copy": "5/5 HOLD_NOT_FINALIZED",
+    "human_editorial_release": "5/5 PENDING_NOT_OPEN"
+  },
+  "boundary": {
+    "lifecycle_state": "HOLD",
+    "review_ready_count": 0,
+    "published_count_from_batch": 0,
+    "product_audio_registered": 0,
+    "public_card_ids": [
+      "C0001",
+      "C0002",
+      "C0003",
+      "C0004",
+      "C0005"
+    ],
+    "audio_rights_blocker": "docs/ops/blockers/G5_KRDICT_PRONUNCIATION_AUDIO_RIGHTS_HOLD_2026-09-16.md",
+    "local_mp3_research_copies_gitignored": true,
+    "external_publish_authorized": false,
+    "repository_push_authorized": false
+  },
+  "reference_registry": {
+    "first_new_id": "R0043",
+    "last_new_id": "R0069",
+    "registry_count": 69
+  },
+  "verification": {
+    "g1": "12/12 PASS",
+    "g2": "5/5 PASS",
+    "g3": "8/8 PASS",
+    "g4": "9/9 PASS",
+    "g5_selection": "8/8 PASS",
+    "g5_batch01_validator": "PASS",
+    "private_leakage": 0
+  },
+  "sha256": {
+    "content/g5/research-records/C0006.json": "5f51d9015537c57747d61c970404432c8ed8d5112a92605f8e61b01ac47b42a5",
+    "content/g5/research-records/C0007.json": "5131bdc77b205f348496aff5d117e0af5927e724f35663a83d6f64c9ec043eee",
+    "content/g5/research-records/C0008.json": "dff31c6387c01cfd6d2227932c7e11616f678292f831ffb85347baa6ddcf7a1a",
+    "content/g5/research-records/C0009.json": "d408d519520ba712ca148d50ace3ea9558dabd968d668391c6dc56b354dfa560",
+    "content/g5/research-records/C0010.json": "fcc940c8747917e9139595ce8542674c8ac431f0f2c563ddf5e9eea7264a434e",
+    "schema/g5-research-record.schema.json": "f21932d4ba5c6d5c378c31911639dd59b258fc1298dc4023ab6c77d23430b4e0",
+    "content/approved/references.json": "2f53bc029d2e994fdf41aab74af3ed25548cf26e55b210adf45ad9fadbffae59",
+    "scripts/g5/prepare-korean-batch01-research.py": "4e375b5ec1ecf4a9cf794d45b1d1d4e436c7fce0433347a492b2f2a33aa4c78f",
+    "scripts/g5/validate-korean-batch01-research.mjs": "f9be15c314cad1031568dec278888ad6831904d940d1d478039fd5c5e23f670d",
+    "content/g5/batches/01_korean_nuance_research.json": "a83c029680eb9212c8a4faec8d7ea9c78b335940ba09e72e6be7a4d882c5b55a",
+    "content/g5/korean-pronunciation-provenance-canary.json": "560edba5446f77c91cdf7633c2ee41fadce67f826eebf374e54509512b49d74e",
+    "docs/ops/blockers/G5_KRDICT_PRONUNCIATION_AUDIO_RIGHTS_HOLD_2026-09-16.md": "23b0ef331be19cadf006849d421c0741cadc9b946389a9b45d439cf1a1717cd0",
+    "scripts/build-public.mjs": "16de4b0dbcd444f3f35efd071b7ed290c75a99a5fdbde9459958eb5629dadb33",
+    "public/BUILD_MANIFEST.json": "8558d52583a1595bda3904fa6acb723bb8c8aa200e5c8f49ae1224ebc2f76aad"
+  },
+  "source_commit": "98bf52a0e10ab1ccf021fb480353726e73eef237",
+  "clean_checkout": {
+    "status": "PASS",
+    "tested_commit": "98bf52a0e10ab1ccf021fb480353726e73eef237",
+    "npm_ci": "PASS",
+    "npm_vulnerabilities": 0,
+    "g1": "12/12 PASS",
+    "g2": "5/5 PASS",
+    "g3": "8/8 PASS",
+    "g4": "9/9 PASS",
+    "g5_selection": "8/8 PASS",
+    "g5_batch01_validator": "PASS",
+    "privacy_violations": 0,
+    "git_status": "CLEAN",
+    "local_research_audio_present": false,
+    "marker": "FINAL_G5_BATCH01_CLEAN_CHECKOUT_PASS"
+  },
+  "public_projection": {
+    "card_ids": [
+      "C0001",
+      "C0002",
+      "C0003",
+      "C0004",
+      "C0005"
+    ],
+    "reference_count": 42,
+    "asset_count": 15,
+    "snapshot_version": "24aebc81d2a7088d",
+    "unpublished_g5_sources_excluded": true,
+    "snapshot_hashes_released_projection_only": true
+  }
+}
