@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.0.0",
+  "assets": [
+    {
+      "asset_id": "A0001",
+      "card_id": "C0001",
+      "asset_type": "illustration",
+      "path": "assets/media/illustrations/C0001.svg",
+      "source_or_generation_method": "Original project-authored SVG illustration created for the G1 vertical slice from the approved visual art direction.",
+      "source_url": null,
+      "creator_or_model": "OpenAI-assisted local development output",
+      "license_or_rights_basis": "Original project asset; no third-party source material embedded.",
+      "attribution": null,
+      "sha256": "8b3efee0dafe6c35a94104ef5064b76377a21334a67512c914e61afb42e33413",
+      "review_status": "AUTOMATED_PASS",
+      "reviewed_at": "2026-09-16"
+    },
+    {
+      "asset_id": "A0002",
+      "card_id": "C0001",
+      "asset_type": "share",
+      "path": "assets/media/share/C0001.svg",
+      "source_or_generation_method": "Original project-authored static share SVG derived from the card's verified term and project visual tokens.",
+      "source_url": null,
+      "creator_or_model": "OpenAI-assisted local development output",
+      "license_or_rights_basis": "Original project asset; no third-party source material embedded.",
+      "attribution": null,
+      "sha256": "0bed3a02e97c556b37745297ed4d194c389b1f274b9c936dc2eae330aeb3c916",
+      "review_status": "AUTOMATED_PASS",
+      "reviewed_at": "2026-09-16"
+    },
+    {
+      "asset_id": "A0003",
+      "card_id": "C0001",
+      "asset_type": "pronunciation_audio",
+      "path": "assets/media/audio/saudade-pronunciation-ptbr.ogg",
+      "source_or_generation_method": "Unmodified Brazilian Portuguese pronunciation recording downloaded from Wikimedia Commons.",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Saudade-pronunciation-ptbr.ogg",
+      "creator_or_model": "Sepguilherme",
+      "license_or_rights_basis": "Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0).",
+      "attribution": "Saudade-pronunciation-ptbr.ogg by Sepguilherme, Wikimedia Commons, CC BY-SA 4.0.",
+      "sha256": "3929a9e17d5905c0ab759b89bb3dacae3c3944bf96d2072fc3b7da59ceaf9df9",
+      "review_status": "AUTOMATED_PASS",
+      "reviewed_at": "2026-09-16"
+    }
+  ]
+}

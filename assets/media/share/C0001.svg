@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Name On My Mind — saudade</title>
+  <desc id="desc">따뜻한 종이색 배경 위에 saudade라는 단어와 창가의 빈 의자 선화가 배치된 공유용 이미지</desc>
+  <rect width="1200" height="630" fill="#f6f0e8"/>
+  <rect x="58" y="58" width="1084" height="514" rx="34" fill="#fffdf9" stroke="#d8ccc1" stroke-width="3"/>
+  <g transform="translate(735 130) scale(.42)">
+    <path d="M315 400 Q410 350 494 404 L518 645 M315 400 L290 645 M306 490 L502 490 M300 645 L520 645" fill="none" stroke="#5c514c" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="760" y="145" width="285" height="355" rx="14" fill="#f9f5ef" stroke="#8f8178" stroke-width="10"/>
+    <path d="M778 390 C845 356 936 354 1028 388" fill="none" stroke="#c97d6a" stroke-width="22" opacity=".3"/>
+  </g>
+  <text x="120" y="150" font-family="Georgia, 'Times New Roman', serif" font-size="34" fill="#6d625d">Name On My Mind</text>
+  <text x="120" y="315" font-family="Georgia, 'Times New Roman', serif" font-size="108" fill="#241f1c">saudade</text>
+  <text x="120" y="378" font-family="Arial, sans-serif" font-size="28" fill="#6d625d">Português · /sawˈda.dʒi/</text>
+  <text x="120" y="476" font-family="Arial, sans-serif" font-size="28" fill="#3e3733">멀리 있어도 마음 안에서 계속 가까운 것들.</text>
+</svg>

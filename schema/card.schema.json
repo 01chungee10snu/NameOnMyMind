@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "urn:nameonmymind:schema:card:v1",
-  "title": "NameOnMyMind Public Card v1",
+  "$id": "urn:nameonmymind:schema:card:v1.1.0",
+  "title": "NameOnMyMind Card Contract v1.1.0",
   "type": "object",
   "additionalProperties": false,
   "required": [
@@ -22,7 +22,7 @@
   ],
   "properties": {
     "schema_version": {
-      "const": "1.0.0"
+      "const": "1.1.0"
     },
     "card_id": {
       "type": "string",
@@ -34,9 +34,11 @@
     },
     "status": {
       "enum": [
+        "REVIEW_READY",
         "PUBLISHED",
         "REVISED"
-      ]
+      ],
+      "description": "REVIEW_READY is validated editorial content that must not enter the public build until human editorial release."
     },
     "term": {
       "type": "object",

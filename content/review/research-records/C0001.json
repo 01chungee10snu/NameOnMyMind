@@ -1,0 +1,230 @@
+{
+  "schema_version": "1.0.0",
+  "research_id": "RR-C0001-SAUDADE",
+  "card_id": "C0001",
+  "candidate": {
+    "term": "saudade",
+    "language_code": "pt-BR",
+    "language_name": "Português (Brasil)",
+    "experience_type": "mixed_experience"
+  },
+  "lifecycle_state": "REVIEW_READY",
+  "source_inventory": [
+    {
+      "reference_id": "R0001",
+      "role": "lexical",
+      "quality_tier": "A"
+    },
+    {
+      "reference_id": "R0002",
+      "role": "lexical",
+      "quality_tier": "A"
+    },
+    {
+      "reference_id": "R0003",
+      "role": "scholarly",
+      "quality_tier": "A"
+    },
+    {
+      "reference_id": "R0004",
+      "role": "scholarly",
+      "quality_tier": "A"
+    },
+    {
+      "reference_id": "R0005",
+      "role": "cultural",
+      "quality_tier": "B"
+    },
+    {
+      "reference_id": "R0006",
+      "role": "pronunciation",
+      "quality_tier": "B"
+    },
+    {
+      "reference_id": "R0007",
+      "role": "rights",
+      "quality_tier": "A"
+    },
+    {
+      "reference_id": "R0008",
+      "role": "lexical",
+      "quality_tier": "A"
+    },
+    {
+      "reference_id": "R0009",
+      "role": "lexical",
+      "quality_tier": "B"
+    },
+    {
+      "reference_id": "R0010",
+      "role": "lexical",
+      "quality_tier": "A"
+    },
+    {
+      "reference_id": "R0011",
+      "role": "lexical",
+      "quality_tier": "A"
+    },
+    {
+      "reference_id": "R0012",
+      "role": "lexical",
+      "quality_tier": "B"
+    }
+  ],
+  "lexical_verification": {
+    "status": "PASS",
+    "summary": "Priberam and Infopédia independently attest saudade as a current Portuguese noun centered on affectionate remembrance, absence, deprivation, longing, and the pain associated with that absence.",
+    "reference_ids": [
+      "R0001",
+      "R0002"
+    ]
+  },
+  "semantic_definition_and_boundaries": {
+    "status": "PASS",
+    "summary": "The public definition is an original synthesis of lexical and scholarly evidence. It avoids reducing saudade to nostalgia alone and avoids claiming a universally unique or literally untranslatable emotion.",
+    "reference_ids": [
+      "R0001",
+      "R0002",
+      "R0003",
+      "R0004"
+    ]
+  },
+  "cultural_context_review": {
+    "status": "PASS",
+    "summary": "Saudade is treated as culturally salient in Portugal and across Portuguese-speaking contexts without presenting all Portuguese or Brazilian people as experiencing it identically. The card explicitly rejects exoticizing 'only this culture can feel it' framing and treats untranslatability as partial semantic non-equivalence rather than mystique.",
+    "reference_ids": [
+      "R0003",
+      "R0004",
+      "R0005"
+    ]
+  },
+  "comparisons": {
+    "ko": {
+      "status": "PASS",
+      "near_terms": [
+        "그리움",
+        "향수"
+      ],
+      "difference_note": "그리움/향수는 의미 일부가 가깝지만 saudade의 전체 문화적·정서적 범위를 일대일로 대체하지 않는다.",
+      "verification_note": "국립국어원 한국어기초사전의 그리움 의미와 Portuguese evidence를 대조해 근접 개념으로만 사용했다."
+    },
+    "en": {
+      "status": "PASS",
+      "near_terms": [
+        "longing",
+        "yearning",
+        "nostalgia",
+        "missing"
+      ],
+      "difference_note": "영어의 여러 단어가 의미 요소를 나누어 담으므로 단일 완전 대응어를 제시하지 않는다.",
+      "verification_note": "Infopédia bilingual entry and scholarly literature both support partial English equivalents rather than exact identity."
+    },
+    "zh": {
+      "status": "PASS",
+      "near_terms": [
+        "思念",
+        "怀念"
+      ],
+      "difference_note": "사람·대상에 대한 그리움과 회상의 측면은 가깝지만 saudade의 문화적 사용 범위 전체와 같다고 하지 않는다.",
+      "verification_note": "汉典에서 思念과 怀念을 각각 확인하고, 비교문은 일대일 번역이 아니라 근접어 안내로 제한했다."
+    },
+    "ja": {
+      "status": "PASS",
+      "near_terms": [
+        "恋しさ",
+        "懐かしさ"
+      ],
+      "difference_note": "恋しさ와 懐かしさ가 각각 부재에 대한 그리움과 과거 회상의 다른 측면을 비추며 어느 하나도 완전 대응어가 아니다.",
+      "verification_note": "デジタル大辞泉 계열 사전에서 恋しい와 懐かしい를 각각 확인해 부재에 대한 그리움과 과거 회상의 서로 다른 측면을 구분했다."
+    }
+  },
+  "pronunciation_verification": {
+    "status": "PASS",
+    "ipa": "/sawˈda.dʒi/",
+    "locale": "pt-BR",
+    "reference_ids": [
+      "R0006",
+      "R0007"
+    ],
+    "audio_asset_id": "A0003",
+    "notes": "Brazilian Portuguese IPA is attested in Wikcionário; the linked audio is an unmodified Brazilian Portuguese recording from Wikimedia Commons with CC BY-SA 4.0 provenance."
+  },
+  "claim_source_map": [
+    {
+      "claim_id": "CL-001",
+      "claim": "Saudade is used for affective remembrance and longing connected to absence, distance, or loss.",
+      "reference_ids": [
+        "R0001",
+        "R0002",
+        "R0003"
+      ],
+      "evidence_locator": "Priberam senses 1–2; Infopédia senses 1–2; Neto (2019) abstract framing of reaction to absence of significant others and familiar places.",
+      "public_safe": true
+    },
+    {
+      "claim_id": "CL-002",
+      "claim": "Saudade is culturally salient in Portuguese contexts but should not be framed as an emotion literally inaccessible to other cultures.",
+      "reference_ids": [
+        "R0004",
+        "R0005"
+      ],
+      "evidence_locator": "Bułat Silva (2012) abstract and cultural-linguistic analysis; Esteves Agostinho (2021) discussion of saudade as a cultural trope and collective identity marker.",
+      "public_safe": true
+    },
+    {
+      "claim_id": "CL-003",
+      "claim": "Brazilian Portuguese pronunciation can be represented as /sawˈda.dʒi/ for the selected locale.",
+      "reference_ids": [
+        "R0006",
+        "R0007"
+      ],
+      "evidence_locator": "Wikcionário Brazil IPA entry; Wikimedia Commons Brazilian Portuguese recording metadata.",
+      "public_safe": true
+    }
+  ],
+  "relations": [],
+  "illustration_brief": {
+    "status": "PASS",
+    "summary": "Use an anonymous, scene-first image: an empty chair, a folded letter, and a distant horizon. No face, flag, fado iconography, national stereotype, or diagnostic cue. Alt text describes visible objects only.",
+    "reference_ids": [
+      "R0003",
+      "R0004"
+    ]
+  },
+  "editorial_copy": {
+    "status": "PASS",
+    "summary": "Poetic line and reflection question are original, low-pressure, non-diagnostic, and do not claim more than the evidence supports.",
+    "reference_ids": [
+      "R0001",
+      "R0002",
+      "R0003",
+      "R0004"
+    ]
+  },
+  "automated_gates": {
+    "schema": "PASS",
+    "evidence": "PASS",
+    "pronunciation": "PASS",
+    "cultural_humility": "PASS",
+    "rights": "PASS",
+    "privacy": "PASS"
+  },
+  "human_editorial_release": {
+    "status": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": "Required before promotion from REVIEW_READY to PUBLISHED. Automation must not fill or approve this field."
+  },
+  "changelog": [
+    {
+      "date": "2026-09-16",
+      "state": "RESEARCH",
+      "note": "Source-first lexical, scholarly, pronunciation, cultural, cross-language, and rights research completed for the G1 candidate."
+    },
+    {
+      "date": "2026-09-16",
+      "state": "REVIEW_READY",
+      "note": "Automated gates prepared as PASS; human editorial release intentionally remains PENDING."
+    }
+  ]
+}

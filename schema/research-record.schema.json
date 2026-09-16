@@ -1,0 +1,165 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:nameonmymind:schema:research-record:v1.0.0",
+  "title": "NameOnMyMind Card Research Record v1.0.0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "research_id",
+    "card_id",
+    "candidate",
+    "lifecycle_state",
+    "source_inventory",
+    "lexical_verification",
+    "semantic_definition_and_boundaries",
+    "cultural_context_review",
+    "comparisons",
+    "pronunciation_verification",
+    "claim_source_map",
+    "relations",
+    "illustration_brief",
+    "editorial_copy",
+    "automated_gates",
+    "human_editorial_release",
+    "changelog"
+  ],
+  "properties": {
+    "schema_version": {"const": "1.0.0"},
+    "research_id": {"type": "string", "pattern": "^RR-[A-Z0-9-]+$"},
+    "card_id": {"type": "string", "pattern": "^C[0-9]{4}$"},
+    "candidate": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["term", "language_code", "language_name", "experience_type"],
+      "properties": {
+        "term": {"type": "string", "minLength": 1},
+        "language_code": {"type": "string", "minLength": 2},
+        "language_name": {"type": "string", "minLength": 1},
+        "experience_type": {"type": "string", "minLength": 1}
+      }
+    },
+    "lifecycle_state": {"enum": ["CANDIDATE", "RESEARCH", "REVIEW", "HOLD", "REJECTED", "REVIEW_READY", "APPROVED"]},
+    "source_inventory": {
+      "type": "array",
+      "minItems": 3,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["reference_id", "role", "quality_tier"],
+        "properties": {
+          "reference_id": {"type": "string", "pattern": "^R[0-9]{4,}$"},
+          "role": {"enum": ["lexical", "scholarly", "pronunciation", "cultural", "rights"]},
+          "quality_tier": {"enum": ["A", "B"]}
+        }
+      }
+    },
+    "lexical_verification": {"$ref": "#/$defs/reviewBlock"},
+    "semantic_definition_and_boundaries": {"$ref": "#/$defs/reviewBlock"},
+    "cultural_context_review": {"$ref": "#/$defs/reviewBlock"},
+    "comparisons": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["ko", "en", "zh", "ja"],
+      "properties": {
+        "ko": {"$ref": "#/$defs/comparisonReview"},
+        "en": {"$ref": "#/$defs/comparisonReview"},
+        "zh": {"$ref": "#/$defs/comparisonReview"},
+        "ja": {"$ref": "#/$defs/comparisonReview"}
+      }
+    },
+    "pronunciation_verification": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "ipa", "locale", "reference_ids", "audio_asset_id", "notes"],
+      "properties": {
+        "status": {"enum": ["PASS", "HOLD"]},
+        "ipa": {"type": "string", "minLength": 1},
+        "locale": {"type": "string", "minLength": 2},
+        "reference_ids": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "pattern": "^R[0-9]{4,}$"}},
+        "audio_asset_id": {"type": "string", "pattern": "^A[0-9]{4,}$"},
+        "notes": {"type": "string", "minLength": 1}
+      }
+    },
+    "claim_source_map": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["claim_id", "claim", "reference_ids", "evidence_locator", "public_safe"],
+        "properties": {
+          "claim_id": {"type": "string", "pattern": "^CL-[0-9]{3}$"},
+          "claim": {"type": "string", "minLength": 1},
+          "reference_ids": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "pattern": "^R[0-9]{4,}$"}},
+          "evidence_locator": {"type": "string", "minLength": 1},
+          "public_safe": {"type": "boolean"}
+        }
+      }
+    },
+    "relations": {"type": "array", "items": {"type": "string", "pattern": "^C[0-9]{4}$"}},
+    "illustration_brief": {"$ref": "#/$defs/reviewBlock"},
+    "editorial_copy": {"$ref": "#/$defs/reviewBlock"},
+    "automated_gates": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["schema", "evidence", "pronunciation", "cultural_humility", "rights", "privacy"],
+      "properties": {
+        "schema": {"enum": ["PASS", "HOLD"]},
+        "evidence": {"enum": ["PASS", "HOLD"]},
+        "pronunciation": {"enum": ["PASS", "HOLD"]},
+        "cultural_humility": {"enum": ["PASS", "HOLD"]},
+        "rights": {"enum": ["PASS", "HOLD"]},
+        "privacy": {"enum": ["PASS", "HOLD"]}
+      }
+    },
+    "human_editorial_release": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "reviewer", "reviewed_at", "notes"],
+      "properties": {
+        "status": {"enum": ["PENDING", "APPROVED", "CHANGES_REQUESTED"]},
+        "reviewer": {"type": ["string", "null"]},
+        "reviewed_at": {"type": ["string", "null"], "format": "date"},
+        "notes": {"type": "string"}
+      }
+    },
+    "changelog": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["date", "state", "note"],
+        "properties": {
+          "date": {"type": "string", "format": "date"},
+          "state": {"type": "string", "minLength": 1},
+          "note": {"type": "string", "minLength": 1}
+        }
+      }
+    }
+  },
+  "$defs": {
+    "reviewBlock": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "summary", "reference_ids"],
+      "properties": {
+        "status": {"enum": ["PASS", "HOLD"]},
+        "summary": {"type": "string", "minLength": 1},
+        "reference_ids": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "pattern": "^R[0-9]{4,}$"}}
+      }
+    },
+    "comparisonReview": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "near_terms", "difference_note", "verification_note"],
+      "properties": {
+        "status": {"enum": ["PASS", "HOLD"]},
+        "near_terms": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
+        "difference_note": {"type": "string", "minLength": 1},
+        "verification_note": {"type": "string", "minLength": 1}
+      }
+    }
+  }
+}

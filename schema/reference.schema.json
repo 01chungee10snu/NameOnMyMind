@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:nameonmymind:schema:reference-registry:v1.0.0",
+  "title": "NameOnMyMind Reference Registry v1.0.0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "references"],
+  "properties": {
+    "schema_version": {"const": "1.0.0"},
+    "references": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"$ref": "#/$defs/reference"}
+    }
+  },
+  "$defs": {
+    "reference": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["reference_id", "source_type", "title", "publisher_or_container", "url", "accessed_at", "rights_note"],
+      "properties": {
+        "reference_id": {"type": "string", "pattern": "^R[0-9]{4,}$"},
+        "source_type": {"enum": ["lexical", "scholarly", "pronunciation", "rights", "other"]},
+        "title": {"type": "string", "minLength": 1},
+        "authors": {"type": "array", "items": {"type": "string", "minLength": 1}},
+        "publisher_or_container": {"type": "string", "minLength": 1},
+        "year": {"type": ["integer", "null"], "minimum": 1},
+        "volume": {"type": ["string", "null"]},
+        "issue": {"type": ["string", "null"]},
+        "pages": {"type": ["string", "null"]},
+        "doi": {"type": ["string", "null"]},
+        "isbn": {"type": ["string", "null"]},
+        "url": {"type": "string", "format": "uri"},
+        "accessed_at": {"type": "string", "format": "date"},
+        "license": {"type": ["string", "null"]},
+        "rights_note": {"type": "string", "minLength": 1},
+        "citation_display": {"type": "string", "minLength": 1}
+      }
+    }
+  }
+}

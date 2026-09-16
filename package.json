@@ -1,0 +1,19 @@
+{
+  "name": "nameonmymind",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Standards-first static Name On My Mind MVP",
+  "scripts": {
+    "validate:g1": "node scripts/validate-content.mjs --scope=g1",
+    "build:review": "node scripts/build-review-preview.mjs",
+    "build:public": "node scripts/build-public.mjs",
+    "test:g1": "node --test tests/g1",
+    "check:privacy": "node scripts/check-private-leakage.mjs",
+    "check:g1": "npm run validate:g1 && npm run test:g1 && npm run build:review && npm run check:privacy"
+  },
+  "devDependencies": {
+    "ajv": "8.20.0",
+    "ajv-formats": "3.0.1"
+  }
+}
