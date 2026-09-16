@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "card_id": "C0001",
+  "term": "saudade",
+  "decision": "APPROVED_AFTER_CHANGES",
+  "human_approval_source": "explicit_user_message_in_current_chat",
+  "reviewed_at": "2026-09-16",
+  "required_corrections": {
+    "ko_hyangsu_independent_lexical_provenance": "PASS_R0013",
+    "en_near_terms_independent_lexical_provenance": "PASS_R0014_R0015_R0016_R0017",
+    "cultural_language_wide_usage_overclaim_removed": "PASS",
+    "share_locale_pt_br_consistency": "PASS",
+    "cc_by_sa_audio_source_and_license_ui_linkage": "PASS"
+  },
+  "human_editorial_release_checklist": {
+    "poetic_copy_does_not_exceed_evidence": "PASS",
+    "cross_language_comparisons_not_one_to_one": "PASS",
+    "cultural_framing_avoids_exoticization_and_overgeneralization": "PASS",
+    "illustration_does_not_stereotype_or_diagnose": "PASS",
+    "reflection_is_optional_low_pressure_non_diagnostic": "PASS",
+    "verification_and_reference_presentation_is_understandable": "PASS",
+    "share_and_public_assets_contain_no_private_or_local_state": "PASS"
+  },
+  "external_publish_authorized": false,
+  "repository_push_authorized": false
+}

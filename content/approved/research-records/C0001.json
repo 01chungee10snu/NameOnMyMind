@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "1.1.0",
   "research_id": "RR-C0001-SAUDADE",
   "card_id": "C0001",
   "candidate": {
@@ -8,7 +8,7 @@
     "language_name": "Português (Brasil)",
     "experience_type": "mixed_experience"
   },
-  "lifecycle_state": "REVIEW_READY",
+  "lifecycle_state": "APPROVED",
   "source_inventory": [
     {
       "reference_id": "R0001",
@@ -69,6 +69,31 @@
       "reference_id": "R0012",
       "role": "lexical",
       "quality_tier": "B"
+    },
+    {
+      "reference_id": "R0013",
+      "role": "lexical",
+      "quality_tier": "A"
+    },
+    {
+      "reference_id": "R0014",
+      "role": "lexical",
+      "quality_tier": "A"
+    },
+    {
+      "reference_id": "R0015",
+      "role": "lexical",
+      "quality_tier": "A"
+    },
+    {
+      "reference_id": "R0016",
+      "role": "lexical",
+      "quality_tier": "A"
+    },
+    {
+      "reference_id": "R0017",
+      "role": "lexical",
+      "quality_tier": "A"
     }
   ],
   "lexical_verification": {
@@ -91,7 +116,7 @@
   },
   "cultural_context_review": {
     "status": "PASS",
-    "summary": "Saudade is treated as culturally salient in Portugal and across Portuguese-speaking contexts without presenting all Portuguese or Brazilian people as experiencing it identically. The card explicitly rejects exoticizing 'only this culture can feel it' framing and treats untranslatability as partial semantic non-equivalence rather than mystique.",
+    "summary": "Saudade is treated as culturally salient in Portuguese scholarship without claiming that all Portuguese-speaking communities use it identically or that only this culture can experience it. The public copy is deliberately limited to absence, memory, longing, and loss supported by the registered lexical and scholarly evidence, and avoids an unsupported language-wide everyday-usage claim.",
     "reference_ids": [
       "R0003",
       "R0004",
@@ -106,7 +131,11 @@
         "향수"
       ],
       "difference_note": "그리움/향수는 의미 일부가 가깝지만 saudade의 전체 문화적·정서적 범위를 일대일로 대체하지 않는다.",
-      "verification_note": "국립국어원 한국어기초사전의 그리움 의미와 Portuguese evidence를 대조해 근접 개념으로만 사용했다."
+      "verification_note": "국립국어원 한국어기초사전에서 그리움과 향수(鄕愁)를 각각 확인하고 Portuguese evidence와 대조해 근접 개념으로만 사용했다.",
+      "reference_ids": [
+        "R0008",
+        "R0013"
+      ]
     },
     "en": {
       "status": "PASS",
@@ -117,7 +146,13 @@
         "missing"
       ],
       "difference_note": "영어의 여러 단어가 의미 요소를 나누어 담으므로 단일 완전 대응어를 제시하지 않는다.",
-      "verification_note": "Infopédia bilingual entry and scholarly literature both support partial English equivalents rather than exact identity."
+      "verification_note": "Oxford에서 longing·yearning·nostalgia를, Cambridge에서 miss의 부재 관련 감정 의미를 각각 확인했다. 네 표현은 의미 요소를 나누어 담는 near-terms이며 단일 완전 대응어로 취급하지 않는다.",
+      "reference_ids": [
+        "R0014",
+        "R0015",
+        "R0016",
+        "R0017"
+      ]
     },
     "zh": {
       "status": "PASS",
@@ -126,7 +161,11 @@
         "怀念"
       ],
       "difference_note": "사람·대상에 대한 그리움과 회상의 측면은 가깝지만 saudade의 문화적 사용 범위 전체와 같다고 하지 않는다.",
-      "verification_note": "汉典에서 思念과 怀念을 각각 확인하고, 비교문은 일대일 번역이 아니라 근접어 안내로 제한했다."
+      "verification_note": "汉典에서 思念과 怀念을 각각 확인하고, 비교문은 일대일 번역이 아니라 근접어 안내로 제한했다.",
+      "reference_ids": [
+        "R0009",
+        "R0012"
+      ]
     },
     "ja": {
       "status": "PASS",
@@ -135,7 +174,11 @@
         "懐かしさ"
       ],
       "difference_note": "恋しさ와 懐かしさ가 각각 부재에 대한 그리움과 과거 회상의 다른 측면을 비추며 어느 하나도 완전 대응어가 아니다.",
-      "verification_note": "デジタル大辞泉 계열 사전에서 恋しい와 懐かしい를 각각 확인해 부재에 대한 그리움과 과거 회상의 서로 다른 측면을 구분했다."
+      "verification_note": "デジタル大辞泉 계열 사전에서 恋しい와 懐かしい를 각각 확인해 부재에 대한 그리움과 과거 회상의 서로 다른 측면을 구분했다.",
+      "reference_ids": [
+        "R0010",
+        "R0011"
+      ]
     }
   },
   "pronunciation_verification": {
@@ -210,10 +253,10 @@
     "privacy": "PASS"
   },
   "human_editorial_release": {
-    "status": "PENDING",
-    "reviewer": null,
-    "reviewed_at": null,
-    "notes": "Required before promotion from REVIEW_READY to PUBLISHED. Automation must not fill or approve this field."
+    "status": "APPROVED",
+    "reviewer": "human_user",
+    "reviewed_at": "2026-09-16",
+    "notes": "Explicit human approval in chat, conditional on the requested provenance, cultural-context, locale, and CC BY-SA linkage corrections plus full revalidation. Those conditions passed before promotion."
   },
   "changelog": [
     {
@@ -225,6 +268,16 @@
       "date": "2026-09-16",
       "state": "REVIEW_READY",
       "note": "Automated gates prepared as PASS; human editorial release intentionally remains PENDING."
+    },
+    {
+      "date": "2026-09-16",
+      "state": "REVIEW_READY",
+      "note": "Human review requested targeted provenance/cultural/rights corrections; comparison-level references added and unsupported language-wide usage wording narrowed before release decision."
+    },
+    {
+      "date": "2026-09-16",
+      "state": "APPROVED",
+      "note": "Human Editorial Release approved after targeted corrections and revalidation; promoted to public PUBLISHED source."
     }
   ]
 }

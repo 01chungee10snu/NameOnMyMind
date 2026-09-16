@@ -10,20 +10,19 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const readJson = (rel) => JSON.parse(fs.readFileSync(path.join(ROOT, rel), 'utf8'));
 const sha256 = (abs) => crypto.createHash('sha256').update(fs.readFileSync(abs)).digest('hex');
 const fail = (message) => { throw new Error(message); };
+const scope = process.argv.includes('--scope=g1') ? 'g1' : 'all';
 
 function compile(schemaRel) {
   const ajv = new Ajv2020({ allErrors: true, strict: true });
   addFormats(ajv);
   return ajv.compile(readJson(schemaRel));
 }
-
 function assertValid(validate, data, label) {
   if (!validate(data)) {
     const details = validate.errors?.map((e) => `${e.instancePath || '/'} ${e.message}`).join('; ');
     fail(`${label} schema validation failed: ${details}`);
   }
 }
-
 function uniqueBy(items, key, label) {
   const seen = new Set();
   for (const item of items) {
@@ -32,11 +31,13 @@ function uniqueBy(items, key, label) {
     seen.add(value);
   }
 }
-
 function filesUnder(relDir, suffix = '.json') {
   const dir = path.join(ROOT, relDir);
   if (!fs.existsSync(dir)) return [];
   return fs.readdirSync(dir).filter((x) => x.endsWith(suffix)).sort().map((x) => path.join(dir, x));
+}
+function loadRecords(relDir) {
+  return filesUnder(relDir).map((file) => ({ file, data: JSON.parse(fs.readFileSync(file, 'utf8')) }));
 }
 
 const cardValidate = compile('schema/card.schema.json');
@@ -53,24 +54,29 @@ uniqueBy(assets.assets, 'asset_id', 'asset registry');
 const refMap = new Map(refs.references.map((r) => [r.reference_id, r]));
 const assetMap = new Map(assets.assets.map((a) => [a.asset_id, a]));
 
-const reviewCards = filesUnder('content/review/cards');
-const reviewResearch = filesUnder('content/review/research-records');
-if (reviewCards.length !== 1 || reviewResearch.length !== 1) fail(`G1 expects exactly one review card and research record, got ${reviewCards.length}/${reviewResearch.length}`);
+const reviewCards = loadRecords('content/review/cards');
+const reviewResearch = loadRecords('content/review/research-records');
+const approvedCards = loadRecords('content/approved/cards');
+const approvedResearch = loadRecords('content/approved/research-records');
+for (const x of [...reviewCards, ...approvedCards]) assertValid(cardValidate, x.data, path.relative(ROOT, x.file));
+for (const x of [...reviewResearch, ...approvedResearch]) assertValid(researchValidate, x.data, path.relative(ROOT, x.file));
+uniqueBy([...reviewCards, ...approvedCards].map((x) => x.data), 'card_id', 'all cards');
+uniqueBy([...reviewResearch, ...approvedResearch].map((x) => x.data), 'card_id', 'all research records');
 
-const cards = reviewCards.map((file) => ({ file, data: JSON.parse(fs.readFileSync(file, 'utf8')) }));
-const research = reviewResearch.map((file) => ({ file, data: JSON.parse(fs.readFileSync(file, 'utf8')) }));
-for (const { file, data } of cards) assertValid(cardValidate, data, path.relative(ROOT, file));
-for (const { file, data } of research) assertValid(researchValidate, data, path.relative(ROOT, file));
-uniqueBy(cards.map((x) => x.data), 'card_id', 'review cards');
-uniqueBy(research.map((x) => x.data), 'card_id', 'research records');
+const reviewResearchMap = new Map(reviewResearch.map((x) => [x.data.card_id, x.data]));
+const approvedResearchMap = new Map(approvedResearch.map((x) => [x.data.card_id, x.data]));
 
-const researchMap = new Map(research.map((x) => [x.data.card_id, x.data]));
-for (const { data: card } of cards) {
-  if (card.status !== 'REVIEW_READY') fail(`${card.card_id} must remain REVIEW_READY before human release`);
-  const rr = researchMap.get(card.card_id);
-  if (!rr) fail(`${card.card_id} missing research record`);
-  if (rr.lifecycle_state !== 'REVIEW_READY') fail(`${card.card_id} research record not REVIEW_READY`);
-  if (rr.human_editorial_release.status !== 'PENDING') fail(`${card.card_id} human release must remain PENDING until a human approves it`);
+function validatePair(card, rr, expectedStage) {
+  if (!rr) fail(`${card.card_id} missing ${expectedStage} research record`);
+  const approved = expectedStage === 'approved';
+  if (approved) {
+    if (!['PUBLISHED', 'REVISED'].includes(card.status)) fail(`${card.card_id} approved card must be PUBLISHED/REVISED`);
+    if (rr.lifecycle_state !== 'APPROVED' || rr.human_editorial_release?.status !== 'APPROVED') fail(`${card.card_id} approved source lacks Human Editorial Release APPROVED`);
+    if (!rr.human_editorial_release?.reviewer || !rr.human_editorial_release?.reviewed_at) fail(`${card.card_id} approved source lacks human reviewer/date provenance`);
+  } else {
+    if (card.status !== 'REVIEW_READY') fail(`${card.card_id} review card must be REVIEW_READY`);
+    if (rr.lifecycle_state !== 'REVIEW_READY' || rr.human_editorial_release?.status !== 'PENDING') fail(`${card.card_id} review source must remain REVIEW_READY/PENDING`);
+  }
 
   for (const id of card.reference_ids) if (!refMap.has(id)) fail(`${card.card_id} missing reference ${id}`);
   for (const inv of rr.source_inventory) if (!refMap.has(inv.reference_id)) fail(`${card.card_id} research inventory missing reference ${inv.reference_id}`);
@@ -83,10 +89,21 @@ for (const { data: card } of cards) {
   if (card.verification.lexical_source_count !== lexicalRefs.length) fail(`${card.card_id} lexical_source_count must count target-term lexical sources only`);
   if (card.verification.scholarly_source_count !== scholarlyRefs.length) fail(`${card.card_id} scholarly_source_count mismatch`);
   if (rr.cultural_context_review.status !== 'PASS' || rr.cultural_context_review.reference_ids.length < 1) fail(`${card.card_id} cultural-context gate failed`);
-  for (const locale of ['ko', 'en', 'zh', 'ja']) if (rr.comparisons[locale]?.status !== 'PASS') fail(`${card.card_id} ${locale} comparison gate failed`);
+
+  for (const locale of ['ko', 'en', 'zh', 'ja']) {
+    const comparison = rr.comparisons[locale];
+    if (comparison?.status !== 'PASS') fail(`${card.card_id} ${locale} comparison gate failed`);
+    if (!Array.isArray(comparison.reference_ids) || comparison.reference_ids.length < 1) fail(`${card.card_id} ${locale} comparison provenance missing`);
+    for (const id of comparison.reference_ids) {
+      const ref = refMap.get(id);
+      if (!ref) fail(`${card.card_id} ${locale} comparison missing reference ${id}`);
+      if (ref.source_type !== 'lexical') fail(`${card.card_id} ${locale} comparison reference ${id} is not lexical`);
+      if (!card.reference_ids.includes(id)) fail(`${card.card_id} ${locale} comparison reference ${id} is absent from public reference_ids`);
+    }
+  }
+
   if (rr.pronunciation_verification.status !== 'PASS' || rr.pronunciation_verification.ipa !== card.term.ipa) fail(`${card.card_id} pronunciation gate failed`);
   if (!card.term.ipa.trim()) fail(`${card.card_id} IPA is empty`);
-
   const requiredAssetIds = [card.assets.illustration_asset_id, card.assets.share_asset_id, card.assets.audio_asset_id];
   for (const id of requiredAssetIds) {
     const asset = assetMap.get(id);
@@ -96,35 +113,38 @@ for (const { data: card } of cards) {
     if (!fs.existsSync(abs)) fail(`${id} file missing: ${asset.path}`);
     if (!asset.sha256 || sha256(abs) !== asset.sha256) fail(`${id} sha256 mismatch`);
     if (asset.review_status === 'HOLD') fail(`${id} asset review is HOLD`);
+    if (approved && asset.review_status !== 'HUMAN_APPROVED') fail(`${id} must be HUMAN_APPROVED for published card ${card.card_id}`);
   }
   const audio = assetMap.get(card.assets.audio_asset_id);
   if (audio.asset_type !== 'pronunciation_audio') fail(`${card.card_id} audio_asset_id does not point to pronunciation_audio`);
   if (!audio.source_url || !audio.license_or_rights_basis || !audio.attribution) fail(`${card.card_id} pronunciation audio provenance/rights incomplete`);
+  if (!/^https:\/\//.test(audio.source_url)) fail(`${card.card_id} pronunciation audio source URL must be HTTPS`);
+  if (/CC BY-SA 4\.0/i.test(audio.license_or_rights_basis) && !/Wikimedia Commons/i.test(audio.attribution)) fail(`${card.card_id} CC BY-SA audio attribution incomplete`);
   if (rr.pronunciation_verification.audio_asset_id !== audio.asset_id) fail(`${card.card_id} pronunciation research/audio asset mismatch`);
 
-  const automated = rr.automated_gates;
-  for (const [gate, state] of Object.entries(automated)) if (state !== 'PASS') fail(`${card.card_id} declared automated gate ${gate} is ${state}`);
+  for (const [gate, state] of Object.entries(rr.automated_gates)) if (state !== 'PASS') fail(`${card.card_id} declared automated gate ${gate} is ${state}`);
   if (/only (portuguese|brazilian)|untranslatable emotion/i.test(card.meaning.cultural_context)) fail(`${card.card_id} cultural framing contains a prohibited exclusivity shortcut`);
+  if (/포르투갈어권에서도 일상적으로 쓰이며/.test(card.meaning.cultural_context)) fail(`${card.card_id} cultural context retains unsupported language-wide everyday-usage claim`);
 }
 
-const approvedCards = filesUnder('content/approved/cards');
-for (const file of approvedCards) {
-  const card = JSON.parse(fs.readFileSync(file, 'utf8'));
-  assertValid(cardValidate, card, path.relative(ROOT, file));
-  if (!['PUBLISHED', 'REVISED'].includes(card.status)) fail(`approved public card must be PUBLISHED/REVISED: ${card.card_id}`);
-  const rrFile = path.join(ROOT, 'content/approved/research-records', `${card.card_id}.json`);
-  if (!fs.existsSync(rrFile)) fail(`${card.card_id} approved card lacks approved research record`);
-  const rr = JSON.parse(fs.readFileSync(rrFile, 'utf8'));
-  assertValid(researchValidate, rr, path.relative(ROOT, rrFile));
-  if (rr.lifecycle_state !== 'APPROVED' || rr.human_editorial_release.status !== 'APPROVED') fail(`${card.card_id} cannot be public without human editorial release`);
+for (const { data: card } of reviewCards) validatePair(card, reviewResearchMap.get(card.card_id), 'review');
+for (const { data: card } of approvedCards) validatePair(card, approvedResearchMap.get(card.card_id), 'approved');
+
+const allCards = [...reviewCards, ...approvedCards].map((x) => x.data);
+const allIds = new Set(allCards.map((c) => c.card_id));
+for (const card of allCards) {
+  for (const ids of Object.values(card.relations || {})) for (const id of ids) if (!allIds.has(id)) fail(`${card.card_id} relation target missing: ${id}`);
+}
+if (scope === 'g1') {
+  if (allCards.length !== 1 || allCards[0].card_id !== 'C0001') fail(`G1 expects exactly C0001 across review+approved source, got ${allCards.map((x) => x.card_id).join(',')}`);
 }
 
 console.log(JSON.stringify({
   status: 'PASS',
-  scope: process.argv.includes('--scope=g1') ? 'g1' : 'all',
-  review_cards: cards.map((x) => x.data.card_id),
-  approved_public_cards: approvedCards.length,
+  scope,
+  review_cards: reviewCards.map((x) => x.data.card_id),
+  approved_public_cards: approvedCards.map((x) => x.data.card_id),
   reference_count: refs.references.length,
   asset_count: assets.assets.length,
-  human_release_pending: cards.filter((x) => researchMap.get(x.data.card_id)?.human_editorial_release.status === 'PENDING').map((x) => x.data.card_id)
+  human_release_pending: reviewCards.filter((x) => reviewResearchMap.get(x.data.card_id)?.human_editorial_release.status === 'PENDING').map((x) => x.data.card_id)
 }, null, 2));

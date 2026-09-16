@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0.0",
+  "artifact_type": "LOCAL_PUBLIC_BUILD",
+  "deployable": true,
+  "external_publish_authorized": false,
+  "snapshot_version": "ff965421b0c7694e",
+  "card_ids": [
+    "C0001"
+  ],
+  "input_sha256": {
+    "card_schema": "8e29503186d27440efe2ee12dba84c964879c57be0b6ebb16907d743bc9cf17e",
+    "reference_schema": "7e39d4a9d110e8aad57aa6b99c2b8ab6412587d70faa816fe19ff52ae5d12c53",
+    "asset_schema": "b62911b5b3d1fcba93e21e5ab580269e01edfbdde3cb0e71c4401e9cf20ad78b",
+    "research_schema": "eaea3e24d57694de75821d90f076e844a02c8c644c80cedab4497ac1625deab0",
+    "references": "f4b645798a1c21206468217185e12466c8b9960810fe4bb785b18c3c2a2c819c",
+    "assets": "5b70b1dab872743a0c884aecae60cffacd147b6c44ad77351d7f460358e20d55",
+    "card_C0001": "6c422bca5bfdde8373a4f2b685237d0e1c4133cedc7d6488b74a04afbac4f8a0"
+  },
+  "excluded_source_classes": [
+    "private/**",
+    "content/review/**",
+    "content/approved/research-records/**",
+    "reports/**"
+  ]
+}

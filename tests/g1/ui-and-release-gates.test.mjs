@@ -24,18 +24,38 @@ test('UI source imports the canonical domain and read-only agent adapter', () =>
   assert.match(source, /new URLSearchParams\(location\.search\)\.get\('card'\)/);
 });
 
-test('review card is not human-released or present in approved public cards', () => {
-  const card = readJson('content/review/cards/C0001.json');
-  const rr = readJson('content/review/research-records/C0001.json');
-  assert.equal(card.status, 'REVIEW_READY');
-  assert.equal(rr.human_editorial_release.status, 'PENDING');
-  assert.equal(fs.existsSync(path.join(ROOT, 'content/approved/cards/C0001.json')), false);
+test('C0001 is human-released and promoted to approved PUBLISHED source', () => {
+  const card = readJson('content/approved/cards/C0001.json');
+  const rr = readJson('content/approved/research-records/C0001.json');
+  assert.equal(card.status, 'PUBLISHED');
+  assert.equal(rr.lifecycle_state, 'APPROVED');
+  assert.equal(rr.human_editorial_release.status, 'APPROVED');
+  assert.equal(rr.human_editorial_release.reviewed_at, '2026-09-16');
+  assert.equal(fs.existsSync(path.join(ROOT, 'content/review/cards/C0001.json')), false);
 });
 
-test('public builder fails closed while human editorial release is pending', () => {
+test('public builder produces a local deployable bundle without external publish authority', () => {
   const result = spawnSync(process.execPath, ['scripts/build-public.mjs'], { cwd: ROOT, encoding: 'utf8' });
-  assert.equal(result.status, 2);
-  assert.match(result.stderr, /PUBLIC_BUILD_BLOCKED/);
+  assert.equal(result.status, 0, result.stderr);
+  const manifest = readJson('public/BUILD_MANIFEST.json');
+  const dataManifest = readJson('public/data/manifest.json');
+  assert.equal(manifest.deployable, true);
+  assert.equal(manifest.external_publish_authorized, false);
+  assert.deepEqual(manifest.card_ids, ['C0001']);
+  assert.equal(dataManifest.release_mode, 'PUBLIC_LOCAL_BUILD');
+  assert.equal(dataManifest.card_count, 1);
+});
+
+test('pronunciation attribution exposes source and CC BY-SA license links', () => {
+  const source = readText('src/ui/app.mjs');
+  assert.match(source, /audioAsset\.source_url/);
+  assert.match(source, /creativecommons\.org\/licenses\/by-sa\/4\.0/);
+  assert.match(source, /CC BY-SA 4\.0 라이선스/);
+});
+
+test('share asset locale matches the selected pt-BR card locale', () => {
+  const share = readText('assets/media/share/C0001.svg');
+  assert.match(share, /Português \(Brasil\) · \/sawˈda\.dʒi\//);
 });
 
 test('styles include reduced motion and visible focus support', () => {

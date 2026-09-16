@@ -8,7 +8,7 @@ import { createReadOnlyAgentApi, registerWebMcpReadOnlyTools } from '../../src/a
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
 const read = (rel) => JSON.parse(fs.readFileSync(path.join(ROOT, rel), 'utf8'));
-const card = read('content/review/cards/C0001.json');
+const card = read('content/approved/cards/C0001.json');
 const references = read('content/approved/references.json').references;
 const assets = read('content/approved/assets.json').assets;
 const catalog = createCatalog({ cards: [card], references, assets });

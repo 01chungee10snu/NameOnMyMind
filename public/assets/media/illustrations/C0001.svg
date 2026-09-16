@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">창가에 놓인 빈 의자와 접힌 편지</title>
+  <desc id="desc">창가의 빈 의자 옆 작은 탁자에 접힌 편지가 놓여 있고, 멀리 흐릿한 수평선이 보이는 차분한 선화</desc>
+  <rect width="1200" height="900" fill="#f6f0e8"/>
+  <path d="M110 690 C260 650 390 675 520 660 S800 625 1090 665" fill="none" stroke="#c8b6a6" stroke-width="5" opacity=".55"/>
+  <rect x="760" y="145" width="285" height="355" rx="14" fill="#f9f5ef" stroke="#8f8178" stroke-width="7"/>
+  <path d="M778 390 C845 356 936 354 1028 388" fill="none" stroke="#c97d6a" stroke-width="18" opacity=".28"/>
+  <path d="M798 315 C870 292 952 298 1018 320" fill="none" stroke="#c97d6a" stroke-width="10" opacity=".18"/>
+  <g fill="none" stroke="#5c514c" stroke-width="11" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M315 400 Q410 350 494 404 L518 645"/>
+    <path d="M315 400 L290 645"/>
+    <path d="M306 490 L502 490"/>
+    <path d="M300 645 L520 645"/>
+    <path d="M590 542 L710 542 L730 666 L568 666 Z"/>
+  </g>
+  <g transform="translate(598 565) rotate(-5)">
+    <rect width="104" height="68" rx="3" fill="#fffdf8" stroke="#7a6e67" stroke-width="4"/>
+    <path d="M4 6 L52 38 L100 6" fill="none" stroke="#7a6e67" stroke-width="3"/>
+  </g>
+  <circle cx="874" cy="204" r="18" fill="#c97d6a" opacity=".7"/>
+</svg>
