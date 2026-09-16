@@ -1,0 +1,127 @@
+{
+  "schema_version": 1,
+  "goal": "G4",
+  "goal_name": "Five-card evidence canary",
+  "status": "MACHINE_COMPLETE_HUMAN_BLOCKED",
+  "recorded_at": "2026-09-16",
+  "tested_commit": "68bd5cf05e6792d88d89ef3254c8034d78143754",
+  "branch": "main",
+  "external_publish_authorized": false,
+  "repository_push_authorized": false,
+  "canary": {
+    "approved_baseline": [
+      "C0001"
+    ],
+    "review_ready_pending": [
+      "C0002",
+      "C0003",
+      "C0004",
+      "C0005"
+    ],
+    "human_release_status": "PENDING_4_OF_4",
+    "g5_admission_allowed": false
+  },
+  "machine_gates": [
+    {
+      "criterion": "5/5 schema",
+      "status": "PASS"
+    },
+    {
+      "criterion": "5/5 minimum evidence",
+      "status": "PASS"
+    },
+    {
+      "criterion": "5/5 IPA and pronunciation provenance",
+      "status": "PASS"
+    },
+    {
+      "criterion": "5/5 cultural humility",
+      "status": "PASS"
+    },
+    {
+      "criterion": "5/5 rights",
+      "status": "PASS"
+    },
+    {
+      "criterion": "5/5 ko/en/zh/ja comparison provenance",
+      "status": "PASS"
+    },
+    {
+      "criterion": "language/script/experience diversity and close semantic pair",
+      "status": "PASS"
+    },
+    {
+      "criterion": "relation graph integrity",
+      "status": "PASS"
+    },
+    {
+      "criterion": "Human UI-Agent semantic parity",
+      "status": "PASS"
+    },
+    {
+      "criterion": "private leakage",
+      "status": "PASS_ZERO"
+    },
+    {
+      "criterion": "Human Editorial Release Checklist 5/5",
+      "status": "BLOCKED_HUMAN_ACTION",
+      "detail": "C0001 already approved; C0002-C0005 remain REVIEW_READY/PENDING."
+    }
+  ],
+  "audio_provenance": {
+    "audit": "docs/ops/evidence/G4_AUDIO_PROVENANCE_AUDIT_2026-09-16.json",
+    "held_not_product_evidence": [
+      "assets/media/audio/de-schadenfreude.ogg",
+      "assets/media/audio/ru-toska.ogg"
+    ],
+    "verified_product_audio": [
+      "assets/media/audio/de-schadenfreude-verified.ogg",
+      "assets/media/audio/de-sehnsucht.ogg",
+      "assets/media/audio/en-us-envy.ogg",
+      "assets/media/audio/ja-kofuku.ogg"
+    ]
+  },
+  "verification_summary": {
+    "validation": "PASS",
+    "review_preview": "PASS_NON_DEPLOYABLE",
+    "human_review_packet": "PASS_GENERATED",
+    "public_build": "PASS_C0001_ONLY",
+    "g1_regression": "12/12 PASS",
+    "g2_regression": "5/5 PASS",
+    "g3_regression": "8/8 PASS",
+    "g4_tests": "9/9 PASS",
+    "private_leakage": 0,
+    "npm_vulnerabilities": 0,
+    "clean_checkout": "PASS",
+    "clean_checkout_git_status": "CLEAN",
+    "public_reference_count": 17,
+    "public_asset_count": 3,
+    "public_card_ids": [
+      "C0001"
+    ],
+    "review_snapshot": "dff71075fa5d0372",
+    "public_snapshot": "a8bd1a8d1c307a72"
+  },
+  "human_blocker": {
+    "artifact": "docs/ops/blockers/G4_HUMAN_EDITORIAL_RELEASE_REQUIRED_2026-09-16.json",
+    "review_packet": "docs/ops/review/G4_HUMAN_EDITORIAL_REVIEW_PACKET_2026-09-16.json",
+    "required_action": "Explicit human approve/change/HOLD decision for C0002-C0005."
+  },
+  "sha256": {
+    "content/review/cards/C0002.json": "9f821dc4ba3809878c9b7ac237e973bb9159d844bf6f367671a049d38b4db04f",
+    "content/review/cards/C0003.json": "1a6363e647f3e5d0014f9b3744b38e2d456b09167c15328bf4a50bbd80ebbca2",
+    "content/review/cards/C0004.json": "2005f7f6b1fcf6089324d1247666409f5ce69f488c528d1d3b2b470ffdd0eeab",
+    "content/review/cards/C0005.json": "e46838b8dfe1b11a21653abea3604aa36103e4901dbd7fc6b9ddae8b38f2891d",
+    "content/review/research-records/C0002.json": "bb265f44d25456b77e6a87ee5c8a2163bbd5b4d36fd830b0c2f51f40e458bea5",
+    "content/review/research-records/C0003.json": "38f2fe5b59d09d40c6760e8d402fe9534057764ab2adc3fe4700b3479ea20a6d",
+    "content/review/research-records/C0004.json": "e3d61172189918df0d750c5b0e6c579535f453881f6b081a09993563f83ce250",
+    "content/review/research-records/C0005.json": "83d4e6c90f4994c78cbc89d679baac499d29dc15c1c88b216331e208fa54728f",
+    "content/approved/references.json": "af0a373d05cdc8c8aef79d53ff828202f18058f49a151bbafe339cb55bdc1701",
+    "content/approved/assets.json": "3ae4b34a1e3a1461089a397ab2712d98fa95436120cc0ba184091aedcc759793",
+    "docs/ops/evidence/G4_AUDIO_PROVENANCE_AUDIT_2026-09-16.json": "3c25471a00dc4ff7d04bc85d3d8f89ef52c7d8136934335f7f4f56778e60dc02",
+    "docs/ops/review/G4_HUMAN_EDITORIAL_REVIEW_PACKET_2026-09-16.json": "003abd54eec869c4918c0027b58e46034a14c864d242ab277b3284b88505c58a",
+    "docs/ops/blockers/G4_HUMAN_EDITORIAL_RELEASE_REQUIRED_2026-09-16.json": "a4b68cafbe8fe5baf2725e51a8f369b7b1041e298e33dabd8211b060e5b4d785",
+    "tests/g4/five-card-canary.test.mjs": "4256b5c7003aacd2d0dfeb5f87b00cacb87fa610ea6cb2692133a1ee61ea55ee",
+    "public/BUILD_MANIFEST.json": "3bf8c1c5f3acb56905d1b27636ec1ed45254155d7bb6f4912300c04962ad32a4"
+  }
+}
