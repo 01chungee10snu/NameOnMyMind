@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "goal": "G2",
+  "goal_name": "Core human experience",
+  "status": "COMPLETE",
+  "recorded_at": "2026-09-16",
+  "tested_commit": "d7a5c4414ecdd2eb9ae4c79383343c2dab14fe43",
+  "branch": "main",
+  "external_publish_authorized": false,
+  "repository_push_authorized": false,
+  "public_snapshot": "f8e05b710e2c5f76",
+  "exit_criteria": [
+    {
+      "criterion": "three-space navigation works",
+      "status": "PASS",
+      "evidence": "오늘의 마음/찾아보기/내가 만난 마음 panels and keyboard-reachable native button navigation implemented."
+    },
+    {
+      "criterion": "same-day deterministic daily card freeze works",
+      "status": "PASS",
+      "evidence": "Local-state test proves same-day selected card remains frozen across later seed/catalog changes."
+    },
+    {
+      "criterion": "reveal to detail flow works",
+      "status": "PASS",
+      "evidence": "Compact reveal and canonical ?card=C0001#meaning detail flow retained from G1 and passes regression."
+    },
+    {
+      "criterion": "search and guided discovery work without diagnostic framing",
+      "status": "PASS",
+      "evidence": "Search uses term/tag/verified-definition/comparison matches with explicit rationale; diagnostic wording regression rejects diagnosis-like rationale."
+    },
+    {
+      "criterion": "favorites/viewed/local reflection work",
+      "status": "PASS",
+      "evidence": "Favorites, viewed history and reflection persist only in browser localStorage; collection projection excludes reflection body."
+    },
+    {
+      "criterion": "relations and stable deep links work",
+      "status": "PASS",
+      "evidence": "Shared relation resolver supports relation types and canonical ?card=Cxxxx#relations links; synthetic test fixture only used in tests."
+    },
+    {
+      "criterion": "accessibility baseline PASS",
+      "status": "PASS",
+      "evidence": "Native controls/labels/search landmarks, focus-visible, reduced-motion and forced-colors coverage preserved."
+    },
+    {
+      "criterion": "regression PASS",
+      "status": "PASS",
+      "evidence": "Detached clean checkout at d7a5c44: G1 12/12 + G2 5/5, leakage 0, npm audit 0, identical snapshot f8e05b710e2c5f76, git clean."
+    }
+  ],
+  "verification_summary": {
+    "g1_regression": "12/12 PASS",
+    "g2_tests": "5/5 PASS",
+    "private_leakage": 0,
+    "npm_vulnerabilities": 0,
+    "local_http_smoke": "PASS",
+    "clean_checkout": "PASS"
+  },
+  "sha256": {
+    "src/domain/discovery.mjs": "9d042c768bb35c1001a93e57b0c87f3c2506eae70d2f8a9a0a8b740080a7fc49",
+    "src/local/state.mjs": "975e7372486aace916597b7e2bb70f357f892a00434b9094e9718460fe2c1c36",
+    "src/ui/index.html": "8b9ad4dcf5aa97dd8e984cf31fdec2465f0b2f62168a46566ccbed503881d932",
+    "src/ui/app.mjs": "ae8e4e7278e0d0a1d59208d5ffa4c1554a7082781ae1d261e293e9ba3ffaa2ce",
+    "assets/css/styles.css": "7bc6afebe350b1ec2ac85a855222cc8e58b69f7256dc933d44d458ce3bcbec9d",
+    "public/BUILD_MANIFEST.json": "df2750d30b730f2560bf74639f853083cbaf36d78701e59d4f92aa30b4874d91"
+  }
+}
