@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "goal": "G5",
+  "batch_id": "G5-F02-FOREIGN-SEMANTIC-GAP",
+  "status": "RESEARCH_CORE_PASS_PRODUCT_GATES_HOLD",
+  "recorded_at": "2026-09-17",
+  "source_commit": "f9ec84f77333878794d50f8cf5cbb6d012320585",
+  "card_ids": [
+    "C0021",
+    "C0022",
+    "C0023",
+    "C0024",
+    "C0025"
+  ],
+  "terms": [
+    "Torschlusspanik",
+    "舍不得",
+    "тоска",
+    "обида",
+    "طَرَب"
+  ],
+  "korean_expression_cost": "5/5 EXPLANATORY_PHRASE_REQUIRED",
+  "screened_out": [
+    {
+      "term": "vergüenza ajena",
+      "reason": "Korean 대리 수치(심) is already a compact conventional equivalent; not priority admission."
+    },
+    {
+      "term": "委屈",
+      "reason": "Korean 억울하다 may preserve much of the core unfair-treatment grievance meaning; direct comparison required."
+    }
+  ],
+  "gates": {
+    "foreign_schema": "5/5 PASS",
+    "target_lexical": "5/5 PASS",
+    "scholarly": "5/5 PASS",
+    "distinctiveness": "5/5 PASS",
+    "korean_expression_cost": "5/5 PASS",
+    "korean_comparison": "5/5 PASS",
+    "full_en_zh_ja_comparison": "HOLD",
+    "pronunciation_audio_rights": "HOLD",
+    "human_editorial_release": "NOT_OPEN"
+  },
+  "boundary": {
+    "lifecycle": "HOLD",
+    "review_ready": 0,
+    "published_from_batch": 0,
+    "product_assets_registered": 0,
+    "public_cards": [
+      "C0001",
+      "C0002",
+      "C0003",
+      "C0004",
+      "C0005"
+    ],
+    "public_snapshot": "24aebc81d2a7088d",
+    "external_publish_authorized": false,
+    "repository_push_authorized": false
+  },
+  "clean_checkout": {
+    "status": "PASS",
+    "tested_commit": "f9ec84f77333878794d50f8cf5cbb6d012320585",
+    "npm_ci": "PASS",
+    "npm_vulnerabilities": 0,
+    "g1": "12/12 PASS",
+    "g2": "5/5 PASS",
+    "g3": "8/8 PASS",
+    "g4": "9/9 PASS",
+    "g5_selection": "8/8 PASS",
+    "g5_research_records": 20,
+    "privacy_violations": 0,
+    "git_status": "CLEAN",
+    "marker": "FINAL_G5_FOREIGN_BATCH02_CLEAN_CHECKOUT_PASS"
+  },
+  "sha256": {
+    "content/g5/batches/02_foreign_semantic_gap_config.json": "c01f4813a1f2345725160dbf53aa339b239819c61e3e199d66a45425517165be",
+    "content/g5/batches/02_foreign_semantic_gap_research.json": "109c8c13f17c26efd480894f04fe2530b83799dc682b2f6e2c354e2eab4c87b9",
+    "scripts/g5/prepare-foreign-batch02-research.py": "cf191121db11e0ff2fe8d9e2144b67af85dd0f43f6d6b03ec05c20b6b6eeea72",
+    "scripts/g5/validate-foreign-batch02-research.mjs": "cd551f712b8de74811a5c491f2f889855e09c54b77216f455d277ab78baf43d8",
+    "content/g5/research-records/C0021.json": "f77c1ead2875aa34284f08fa72822bdebc155a8ce80ee67bb3a3c8a9192a810e",
+    "content/g5/research-records/C0022.json": "0a8011c5cc96da4a6b46a00ce40d6df1ce9419da892f635f3b4223211ca6ad33",
+    "content/g5/research-records/C0023.json": "1256078073627ffae0860cc885570ae2e3a904768c9ec2b746c0f1347c010439",
+    "content/g5/research-records/C0024.json": "a41dcd2f0cc810f5211a40051929f64916c7507f25ac33a1d24274a93f8f77fa",
+    "content/g5/research-records/C0025.json": "6afe6b5c790e0afe157b78d4c163d1d882d69e33c05fd8ad0b4d74ec75c5005b"
+  }
+}
