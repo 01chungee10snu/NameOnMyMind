@@ -1,0 +1,82 @@
+{
+  "schema_version": "1.0.0",
+  "goal": "G4",
+  "audited_at": "2026-09-16",
+  "method": "Supplied OGG files were SHA-256 hashed and independently downloaded from Wikimedia Commons Special:Redirect/file into temporary storage; cmp verified byte identity. Metadata was checked for exact term/locale/creator/license fit. Ja-kofuku.ogg was downloaded directly from its verified source as replacement.",
+  "items": [
+    {
+      "term": "Schadenfreude",
+      "local_path": "assets/media/audio/de-schadenfreude.ogg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:De-schadenfreude.ogg",
+      "local_sha256": "22a9bb298f3d465f6c7b860eea20490decba775c076f411dfce53da15f88890f",
+      "source_sha256": "22a9bb298f3d465f6c7b860eea20490decba775c076f411dfce53da15f88890f",
+      "byte_identical": true,
+      "creator": null,
+      "locale": "de",
+      "license": "Commons license set present but source/author metadata are machine-readable assumed",
+      "decision": "HOLD_NOT_LINKED",
+      "blocker": "Exact source/author provenance is marked assumed on Commons; user-required exact creator/rights provenance is not met."
+    },
+    {
+      "term": "Schadenfreude",
+      "local_path": "assets/media/audio/de-schadenfreude-verified.ogg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Schadenfreude.ogg",
+      "local_sha256": "7b7b1bbd7ab2b044a60bcc5daeb9257f7727f482725add4e2521a8b2aa66e44c",
+      "source_sha256": "7b7b1bbd7ab2b044a60bcc5daeb9257f7727f482725add4e2521a8b2aa66e44c",
+      "byte_identical": true,
+      "creator": "Howdoesgermansound (original creator); Andrybak (current-file cleanup/trim)",
+      "locale": "de",
+      "license": "CC0 1.0",
+      "decision": "PASS_LINKABLE_REPLACEMENT"
+    },
+    {
+      "term": "Sehnsucht",
+      "local_path": "assets/media/audio/de-sehnsucht.ogg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:De-Sehnsucht.ogg",
+      "local_sha256": "45cd7b57dbd8981b7e108ebefe5130f6f305b3f8e6de956a99c38a72f1c66f1b",
+      "source_sha256": "45cd7b57dbd8981b7e108ebefe5130f6f305b3f8e6de956a99c38a72f1c66f1b",
+      "byte_identical": true,
+      "creator": "Jeuwre",
+      "locale": "de-DE (native speaker from Berlin per Commons)",
+      "license": "CC BY-SA 4.0",
+      "decision": "PASS_LINKABLE"
+    },
+    {
+      "term": "envy",
+      "local_path": "assets/media/audio/en-us-envy.ogg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:En-us-envy.ogg",
+      "local_sha256": "ab1efde47a3660889e949b8086f8444fa817b5114b15f23f07f314f6a26222c8",
+      "source_sha256": "ab1efde47a3660889e949b8086f8444fa817b5114b15f23f07f314f6a26222c8",
+      "byte_identical": true,
+      "creator": "Dvortygirl",
+      "locale": "en-US",
+      "license": "CC BY-SA/GFDL multi-license per Commons",
+      "decision": "PASS_LINKABLE"
+    },
+    {
+      "term": "тоска",
+      "local_path": "assets/media/audio/ru-toska.ogg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Ru-%D1%82%D0%BE%D1%81%D0%BA%D0%B0.ogg",
+      "local_sha256": "729c3580671a2b1bf228ddb63c84db0f1899065d268073d7e63bf0e9f0121732",
+      "source_sha256": "729c3580671a2b1bf228ddb63c84db0f1899065d268073d7e63bf0e9f0121732",
+      "byte_identical": true,
+      "creator": null,
+      "locale": "ru",
+      "license": "CC BY 2.0 France",
+      "decision": "HOLD_NOT_LINKED",
+      "blocker": "Commons explicitly marks the file as lacking author information; exact creator provenance is not verifiable."
+    },
+    {
+      "term": "幸福",
+      "local_path": "assets/media/audio/ja-kofuku.ogg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Ja-kofuku.ogg",
+      "local_sha256": "3019788d32aa6df5a657f827be3800651919977545e595d66b9dc41c80f35957",
+      "source_sha256": "3019788d32aa6df5a657f827be3800651919977545e595d66b9dc41c80f35957",
+      "byte_identical": true,
+      "creator": "Spesco",
+      "locale": "ja",
+      "license": "CC BY-SA 4.0",
+      "decision": "PASS_LINKABLE_REPLACEMENT"
+    }
+  ]
+}

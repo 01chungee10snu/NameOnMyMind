@@ -1,0 +1,88 @@
+{
+  "schema_version": "1.1.0",
+  "card_id": "C0003",
+  "concept_version": "1.0.0",
+  "status": "REVIEW_READY",
+  "term": {
+    "original": "Schadenfreude",
+    "language_code": "de",
+    "language_name": "Deutsch",
+    "ipa": "[ˈʃaːdn̩ˌfʁɔɪ̯də]"
+  },
+  "experience_type": "emotion",
+  "front": {
+    "poetic_line": "누군가의 실패가 뜻밖의 만족으로 스칠 때.",
+    "scene": "기울어진 도미노 하나와 멈춰 선 다른 도미노들 사이로 작은 미소 모양의 곡선이 아주 희미하게 놓인다.",
+    "reflection_question": "타인의 결과를 보며 내 안에서 예상 밖의 만족이 올라온 적이 있나요?"
+  },
+  "meaning": {
+    "verified_definition": "다른 사람의 불행·실패·곤경을 보며 느끼는 즐거움이나 만족을 가리키는 독일어 명사.",
+    "usage_context": "사회정서 연구에서는 타인의 행운에 대한 불쾌감인 envy와 구분해, 타인의 불운에서 생기는 즐거움으로 다룬다. 두 정서는 사회비교 상황에서 관련될 수 있지만 같은 정서는 아니다.",
+    "cultural_context": "독일어 단어라는 이유로 이 반응을 독일 문화의 고유한 성향으로 해석하지 않는다. 여러 국가의 심리학 연구가 사회비교 정서로 다루는 현상을 독일어 표제어를 통해 설명할 뿐이다."
+  },
+  "comparisons": {
+    "ko": {
+      "near_terms": [
+        "고소함"
+      ],
+      "difference_note": "한국어 고소하다의 한 의미는 미워하던 사람이 잘못되는 것을 보고 속이 시원하고 기분 좋은 상태를 가리켜 가깝지만, 모든 Schadenfreude가 선행 혐오를 요구하는 것은 아니다."
+    },
+    "en": {
+      "near_terms": [
+        "gloating"
+      ],
+      "difference_note": "gloating은 자신의 성공이나 타인의 실패에 만족을 드러내는 행동·태도까지 포함할 수 있어, 내적 즐거움 자체를 가리키는 Schadenfreude와 범위가 완전히 같지 않다."
+    },
+    "zh": {
+      "near_terms": [
+        "幸灾乐祸"
+      ],
+      "difference_note": "幸灾乐祸는 타인의 재난이나 곤경을 기뻐한다는 점에서 매우 가깝지만, 이 카드는 언어 간 완전한 일대일 동일성을 주장하지 않는다."
+    },
+    "ja": {
+      "near_terms": [
+        "いい気味"
+      ],
+      "difference_note": "いい気味는 타인의 불행이나 실패에 통쾌함을 느끼는 맥락에서 가깝지만, 일상 표현의 화용과 독일어 명사의 연구적 사용 범위는 구분한다."
+    }
+  },
+  "semantic_tags": [
+    "social-comparison",
+    "others-misfortune",
+    "pleasure",
+    "fortune-of-other",
+    "evaluation"
+  ],
+  "relations": {
+    "similar_to": [],
+    "partially_overlaps": [
+      "C0004"
+    ],
+    "contrasts_with": [],
+    "broader_than": [],
+    "narrower_than": [],
+    "often_confused_with": []
+  },
+  "reference_ids": [
+    "R0021",
+    "R0022",
+    "R0023",
+    "R0024",
+    "R0025",
+    "R0026",
+    "R0027",
+    "R0028"
+  ],
+  "verification": {
+    "status": "VERIFIED",
+    "last_reviewed_at": "2026-09-16",
+    "lexical_source_count": 1,
+    "scholarly_source_count": 2
+  },
+  "assets": {
+    "illustration_asset_id": "A0007",
+    "share_asset_id": "A0008",
+    "audio_asset_id": "A0009",
+    "alt_text": "도미노 조각 몇 개 중 하나가 기울고, 배경에 작은 곡선이 놓인 비인물 추상 선화. 특정 집단이나 얼굴 표현은 없다."
+  }
+}

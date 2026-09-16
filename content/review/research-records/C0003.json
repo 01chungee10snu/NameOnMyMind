@@ -1,0 +1,218 @@
+{
+  "schema_version": "1.1.0",
+  "research_id": "RR-C0003-SCHADENFREUDE",
+  "card_id": "C0003",
+  "candidate": {
+    "term": "Schadenfreude",
+    "language_code": "de",
+    "language_name": "Deutsch",
+    "experience_type": "emotion"
+  },
+  "lifecycle_state": "REVIEW_READY",
+  "source_inventory": [
+    {
+      "reference_id": "R0021",
+      "role": "lexical",
+      "quality_tier": "B"
+    },
+    {
+      "reference_id": "R0022",
+      "role": "scholarly",
+      "quality_tier": "A"
+    },
+    {
+      "reference_id": "R0023",
+      "role": "scholarly",
+      "quality_tier": "A"
+    },
+    {
+      "reference_id": "R0024",
+      "role": "pronunciation",
+      "quality_tier": "B"
+    },
+    {
+      "reference_id": "R0024",
+      "role": "rights",
+      "quality_tier": "B"
+    },
+    {
+      "reference_id": "R0025",
+      "role": "lexical",
+      "quality_tier": "A"
+    },
+    {
+      "reference_id": "R0026",
+      "role": "lexical",
+      "quality_tier": "A"
+    },
+    {
+      "reference_id": "R0027",
+      "role": "lexical",
+      "quality_tier": "B"
+    },
+    {
+      "reference_id": "R0028",
+      "role": "lexical",
+      "quality_tier": "A"
+    }
+  ],
+  "lexical_verification": {
+    "status": "PASS",
+    "summary": "Target-term lexical meaning is directly attested by the registered lexical source; public copy is an original synthesis.",
+    "reference_ids": [
+      "R0021"
+    ]
+  },
+  "semantic_definition_and_boundaries": {
+    "status": "PASS",
+    "summary": "German lexical evidence defines Schadenfreude as pleasure at another person’s mishap or misfortune. Scholarship distinguishes it from envy while documenting empirical relations.",
+    "reference_ids": [
+      "R0021",
+      "R0022",
+      "R0023"
+    ]
+  },
+  "cultural_context_review": {
+    "status": "PASS",
+    "summary": "The German word is not evidence that the emotion is uniquely German; public copy avoids national-character claims.",
+    "reference_ids": [
+      "R0022",
+      "R0023"
+    ]
+  },
+  "comparisons": {
+    "ko": {
+      "status": "PASS",
+      "near_terms": [
+        "고소함"
+      ],
+      "difference_note": "한국어 고소하다의 한 의미는 미워하던 사람이 잘못되는 것을 보고 속이 시원하고 기분 좋은 상태를 가리켜 가깝지만, 모든 Schadenfreude가 선행 혐오를 요구하는 것은 아니다.",
+      "verification_note": "국립국어원 verifies relevant 고소하다 sense.",
+      "reference_ids": [
+        "R0025"
+      ]
+    },
+    "en": {
+      "status": "PASS",
+      "near_terms": [
+        "gloating"
+      ],
+      "difference_note": "gloating은 자신의 성공이나 타인의 실패에 만족을 드러내는 행동·태도까지 포함할 수 있어, 내적 즐거움 자체를 가리키는 Schadenfreude와 범위가 완전히 같지 않다.",
+      "verification_note": "Cambridge verifies gloat/gloating.",
+      "reference_ids": [
+        "R0026"
+      ]
+    },
+    "zh": {
+      "status": "PASS",
+      "near_terms": [
+        "幸灾乐祸"
+      ],
+      "difference_note": "幸灾乐祸는 타인의 재난이나 곤경을 기뻐한다는 점에서 매우 가깝지만, 이 카드는 언어 간 완전한 일대일 동일성을 주장하지 않는다.",
+      "verification_note": "汉典 directly verifies the near expression.",
+      "reference_ids": [
+        "R0027"
+      ]
+    },
+    "ja": {
+      "status": "PASS",
+      "near_terms": [
+        "いい気味"
+      ],
+      "difference_note": "いい気味는 타인의 불행이나 실패에 통쾌함을 느끼는 맥락에서 가깝지만, 일상 표현의 화용과 독일어 명사의 연구적 사용 범위는 구분한다.",
+      "verification_note": "Japanese dictionary verifies the relevant satisfaction-at-misfortune sense.",
+      "reference_ids": [
+        "R0028"
+      ]
+    }
+  },
+  "pronunciation_verification": {
+    "status": "PASS",
+    "ipa": "[ˈʃaːdn̩ˌfʁɔɪ̯də]",
+    "locale": "de",
+    "reference_ids": [
+      "R0021",
+      "R0024"
+    ],
+    "audio_asset_id": "A0009",
+    "notes": "German Wiktionary attests IPA. Commons identifies the exact German word recording as own work by Howdoesgermansound, with the current file history recording noise cleanup/trim by Andrybak, under CC0. The verified replacement is byte-identical to the current Commons original."
+  },
+  "claim_source_map": [
+    {
+      "claim_id": "CL-001",
+      "claim": "Schadenfreude denotes pleasure at another person’s mishap or misfortune.",
+      "reference_ids": [
+        "R0021",
+        "R0022"
+      ],
+      "evidence_locator": "Lexical and scholarly sources.",
+      "public_safe": true
+    },
+    {
+      "claim_id": "CL-002",
+      "claim": "Envy and schadenfreude are distinct but related fortune-of-other emotions.",
+      "reference_ids": [
+        "R0022",
+        "R0023"
+      ],
+      "evidence_locator": "Review/meta-analysis.",
+      "public_safe": true
+    },
+    {
+      "claim_id": "CL-003",
+      "claim": "Selected IPA is [ˈʃaːdn̩ˌfʁɔɪ̯də].",
+      "reference_ids": [
+        "R0021",
+        "R0024"
+      ],
+      "evidence_locator": "Wiktionary IPA plus Commons source.",
+      "public_safe": true
+    }
+  ],
+  "relations": [
+    "C0004"
+  ],
+  "illustration_brief": {
+    "status": "PASS",
+    "summary": "Abstract object-only scene; no face, nationality cue, humiliation scene, or target-group depiction.",
+    "reference_ids": [
+      "R0021",
+      "R0022"
+    ]
+  },
+  "editorial_copy": {
+    "status": "PASS",
+    "summary": "Poetic line, scene, and reflection question are original, low-pressure, non-diagnostic, and stay inside the verified semantic boundary.",
+    "reference_ids": [
+      "R0021",
+      "R0022",
+      "R0023"
+    ]
+  },
+  "automated_gates": {
+    "schema": "PASS",
+    "evidence": "PASS",
+    "pronunciation": "PASS",
+    "cultural_humility": "PASS",
+    "rights": "PASS",
+    "privacy": "PASS"
+  },
+  "human_editorial_release": {
+    "status": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": "Machine gates passed. Human Editorial Release is intentionally blocked pending explicit user approval."
+  },
+  "changelog": [
+    {
+      "date": "2026-09-16",
+      "state": "RESEARCH",
+      "note": "Source-first lexical, scholarly, pronunciation, rights, and cross-language comparison research completed."
+    },
+    {
+      "date": "2026-09-16",
+      "state": "REVIEW_READY",
+      "note": "All automated gates declared PASS after local validation; Human Editorial Release remains PENDING."
+    }
+  ]
+}

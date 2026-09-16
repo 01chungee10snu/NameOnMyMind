@@ -1,0 +1,208 @@
+{
+  "schema_version": "1.1.0",
+  "research_id": "RR-C0004-ENVY",
+  "card_id": "C0004",
+  "candidate": {
+    "term": "envy",
+    "language_code": "en-US",
+    "language_name": "English (United States)",
+    "experience_type": "emotion"
+  },
+  "lifecycle_state": "REVIEW_READY",
+  "source_inventory": [
+    {
+      "reference_id": "R0029",
+      "role": "lexical",
+      "quality_tier": "A"
+    },
+    {
+      "reference_id": "R0023",
+      "role": "scholarly",
+      "quality_tier": "A"
+    },
+    {
+      "reference_id": "R0030",
+      "role": "pronunciation",
+      "quality_tier": "A"
+    },
+    {
+      "reference_id": "R0030",
+      "role": "rights",
+      "quality_tier": "A"
+    },
+    {
+      "reference_id": "R0031",
+      "role": "lexical",
+      "quality_tier": "A"
+    },
+    {
+      "reference_id": "R0032",
+      "role": "lexical",
+      "quality_tier": "A"
+    },
+    {
+      "reference_id": "R0033",
+      "role": "lexical",
+      "quality_tier": "B"
+    },
+    {
+      "reference_id": "R0034",
+      "role": "lexical",
+      "quality_tier": "A"
+    }
+  ],
+  "lexical_verification": {
+    "status": "PASS",
+    "summary": "Target-term lexical meaning is directly attested by the registered lexical source; public copy is an original synthesis.",
+    "reference_ids": [
+      "R0029"
+    ]
+  },
+  "semantic_definition_and_boundaries": {
+    "status": "PASS",
+    "summary": "Cambridge supports wanting something another person has. Lange et al. show research operationalizations include pain and benign/malicious forms; the card avoids personality diagnosis.",
+    "reference_ids": [
+      "R0029",
+      "R0023"
+    ]
+  },
+  "cultural_context_review": {
+    "status": "PASS",
+    "summary": "The English label is not used as a cultural or moral diagnosis; construct variation is preserved.",
+    "reference_ids": [
+      "R0023"
+    ]
+  },
+  "comparisons": {
+    "ko": {
+      "status": "PASS",
+      "near_terms": [
+        "부러움"
+      ],
+      "difference_note": "부러움은 남이 가진 것을 자신도 원한다는 핵심에서 가깝지만, 한국어 일상어의 긍정적·가벼운 쓰임과 영어 envy의 연구적 범위가 항상 일치하지는 않는다.",
+      "verification_note": "Cambridge English–Korean gives 부러움/부러워하다.",
+      "reference_ids": [
+        "R0031"
+      ]
+    },
+    "en": {
+      "status": "PASS",
+      "near_terms": [
+        "jealousy"
+      ],
+      "difference_note": "jealousy는 원하는 것을 다른 사람이 가졌다는 불쾌감에서 겹치지만, 관계의 위협이나 애정 대상의 경쟁을 포함하는 쓰임도 있어 envy와 구별될 수 있다.",
+      "verification_note": "Cambridge verifies jealousy as overlapping but distinct headword.",
+      "reference_ids": [
+        "R0032"
+      ]
+    },
+    "zh": {
+      "status": "PASS",
+      "near_terms": [
+        "羡慕"
+      ],
+      "difference_note": "羡慕는 다른 사람의 장점이나 유리한 조건을 자신도 갖고 싶어 하는 의미에서 가깝지만, 악의적 요소가 필수라고 보지 않는다는 점을 함께 주의한다.",
+      "verification_note": "汉典 verifies wanting another person’s advantages or conditions.",
+      "reference_ids": [
+        "R0033"
+      ]
+    },
+    "ja": {
+      "status": "PASS",
+      "near_terms": [
+        "羨望"
+      ],
+      "difference_note": "羨望는 다른 사람의 성취나 우위를 부러워하는 의미에서 가깝지만, 영어 envy의 다양한 이론적 하위형태 전체와 동일하다고 보지 않는다.",
+      "verification_note": "Japanese dictionary verifies 羨望.",
+      "reference_ids": [
+        "R0034"
+      ]
+    }
+  },
+  "pronunciation_verification": {
+    "status": "PASS",
+    "ipa": "/ˈen.vi/",
+    "locale": "en-US",
+    "reference_ids": [
+      "R0029",
+      "R0030"
+    ],
+    "audio_asset_id": "A0012",
+    "notes": "Cambridge attests US IPA /ˈen.vi/. Commons identifies exact US English recording, creator Dvortygirl, self-recording, and reuse licenses. Local candidate is byte-identical to source."
+  },
+  "claim_source_map": [
+    {
+      "claim_id": "CL-001",
+      "claim": "Envy involves wishing one had something another person has.",
+      "reference_ids": [
+        "R0029"
+      ],
+      "evidence_locator": "Cambridge meaning.",
+      "public_safe": true
+    },
+    {
+      "claim_id": "CL-002",
+      "claim": "Envy research distinguishes pain and benign/malicious patterns.",
+      "reference_ids": [
+        "R0023"
+      ],
+      "evidence_locator": "Lange et al. results.",
+      "public_safe": true
+    },
+    {
+      "claim_id": "CL-003",
+      "claim": "Selected US English IPA is /ˈen.vi/.",
+      "reference_ids": [
+        "R0029",
+        "R0030"
+      ],
+      "evidence_locator": "Cambridge pronunciation plus Commons metadata.",
+      "public_safe": true
+    }
+  ],
+  "relations": [
+    "C0003"
+  ],
+  "illustration_brief": {
+    "status": "PASS",
+    "summary": "Abstract comparison composition without bodies, status groups, luxury goods, or moral judgment.",
+    "reference_ids": [
+      "R0029",
+      "R0023"
+    ]
+  },
+  "editorial_copy": {
+    "status": "PASS",
+    "summary": "Poetic line, scene, and reflection question are original, low-pressure, non-diagnostic, and stay inside the verified semantic boundary.",
+    "reference_ids": [
+      "R0029",
+      "R0023"
+    ]
+  },
+  "automated_gates": {
+    "schema": "PASS",
+    "evidence": "PASS",
+    "pronunciation": "PASS",
+    "cultural_humility": "PASS",
+    "rights": "PASS",
+    "privacy": "PASS"
+  },
+  "human_editorial_release": {
+    "status": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": "Machine gates passed. Human Editorial Release is intentionally blocked pending explicit user approval."
+  },
+  "changelog": [
+    {
+      "date": "2026-09-16",
+      "state": "RESEARCH",
+      "note": "Source-first lexical, scholarly, pronunciation, rights, and cross-language comparison research completed."
+    },
+    {
+      "date": "2026-09-16",
+      "state": "REVIEW_READY",
+      "note": "All automated gates declared PASS after local validation; Human Editorial Release remains PENDING."
+    }
+  ]
+}

@@ -16,3 +16,6 @@ __pycache__/
 
 # macOS
 .DS_Store
+# Quarantined G4 supplied audio with unresolved exact creator provenance
+/assets/media/audio/de-schadenfreude.ogg
+/assets/media/audio/ru-toska.ogg

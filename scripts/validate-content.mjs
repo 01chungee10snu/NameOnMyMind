@@ -132,11 +132,31 @@ for (const { data: card } of approvedCards) validatePair(card, approvedResearchM
 
 const allCards = [...reviewCards, ...approvedCards].map((x) => x.data);
 const allIds = new Set(allCards.map((c) => c.card_id));
+const allCardMap = new Map(allCards.map((c) => [c.card_id, c]));
+const symmetricRelations = new Set(['similar_to', 'partially_overlaps', 'contrasts_with', 'often_confused_with']);
 for (const card of allCards) {
-  for (const ids of Object.values(card.relations || {})) for (const id of ids) if (!allIds.has(id)) fail(`${card.card_id} relation target missing: ${id}`);
+  for (const [relation, ids] of Object.entries(card.relations || {})) {
+    for (const id of ids) {
+      if (!allIds.has(id)) fail(`${card.card_id} relation target missing: ${id}`);
+      if (id === card.card_id) fail(`${card.card_id} relation ${relation} cannot self-reference`);
+      const target = allCardMap.get(id);
+      if (symmetricRelations.has(relation) && !(target.relations?.[relation] || []).includes(card.card_id)) {
+        fail(`${card.card_id} relation ${relation} -> ${id} is not symmetric`);
+      }
+      if (relation === 'broader_than' && !(target.relations?.narrower_than || []).includes(card.card_id)) {
+        fail(`${card.card_id} broader_than -> ${id} lacks inverse narrower_than`);
+      }
+      if (relation === 'narrower_than' && !(target.relations?.broader_than || []).includes(card.card_id)) {
+        fail(`${card.card_id} narrower_than -> ${id} lacks inverse broader_than`);
+      }
+    }
+  }
 }
 if (scope === 'g1') {
-  if (allCards.length !== 1 || allCards[0].card_id !== 'C0001') fail(`G1 expects exactly C0001 across review+approved source, got ${allCards.map((x) => x.card_id).join(',')}`);
+  const g1 = approvedCards.filter((x) => x.data.card_id === 'C0001');
+  if (g1.length !== 1 || g1[0].data.status !== 'PUBLISHED') fail('G1 baseline C0001 must remain approved PUBLISHED source');
+  const rr = approvedResearchMap.get('C0001');
+  if (!rr || rr.lifecycle_state !== 'APPROVED' || rr.human_editorial_release?.status !== 'APPROVED') fail('G1 baseline C0001 Human Editorial Release must remain APPROVED');
 }
 
 console.log(JSON.stringify({

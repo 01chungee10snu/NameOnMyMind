@@ -27,7 +27,7 @@ function writeJson(rel, value) {
 fs.rmSync(OUT, { recursive: true, force: true });
 fs.mkdirSync(OUT, { recursive: true });
 const cards = fs.readdirSync(path.join(ROOT, 'content/review/cards')).filter((x) => x.endsWith('.json')).sort().map((name) => readJson(`content/review/cards/${name}`));
-if (cards.length !== 1) throw new Error(`G1 review preview requires exactly one card, got ${cards.length}`);
+if (cards.length === 0) throw new Error('review preview requires at least one REVIEW_READY card');
 if (cards.some((card) => card.status !== 'REVIEW_READY')) throw new Error('review preview accepts REVIEW_READY cards only');
 const refs = readJson('content/approved/references.json');
 const assets = readJson('content/approved/assets.json');
@@ -46,15 +46,17 @@ const inputHashes = {
   reference_schema: sha(path.join(ROOT, 'schema/reference.schema.json')),
   asset_schema: sha(path.join(ROOT, 'schema/asset.schema.json')),
   research_schema: sha(path.join(ROOT, 'schema/research-record.schema.json')),
-  card: sha(path.join(ROOT, 'content/review/cards', `${cards[0].card_id}.json`)),
+  ...Object.fromEntries(cards.map((card) => [`card_${card.card_id}`, sha(path.join(ROOT, 'content/review/cards', `${card.card_id}.json`))])),
   references: sha(path.join(ROOT, 'content/approved/references.json')),
   assets: sha(path.join(ROOT, 'content/approved/assets.json')),
 };
 const snapshotSeed = Object.entries(inputHashes).sort(([a], [b]) => a.localeCompare(b)).map(([k, v]) => `${k}:${v}`).join('|');
 const snapshotVersion = crypto.createHash('sha256').update(snapshotSeed).digest('hex').slice(0, 16);
-writeJson('data/manifest.json', { schema_version: '1.0.0', release_mode: 'REVIEW_ONLY', public_release_authorized: false, snapshot_version: snapshotVersion, daily_seed: 'nameonmymind-g1-review-v1', card_count: cards.length, generated_from: 'validated REVIEW_READY source; not a publishable public bundle' });
-writeJson('data/cards-index.json', { schema_version: '1.0.0', cards });
-writeJson('data/references.json', { schema_version: refs.schema_version, references: selectedRefs });
-writeJson('data/assets.json', { schema_version: assets.schema_version, assets: selectedAssets });
-writeJson('BUILD_MANIFEST.json', { schema_version: '1.0.0', artifact_type: 'LOCAL_REVIEW_PREVIEW', deployable: false, human_editorial_release_required: true, snapshot_version: snapshotVersion, input_sha256: inputHashes, excluded_source_classes: ['private/**', 'content/review/research-records/**', 'reports/**'] });
+writeJson('data/manifest.json', { schema_version: '1.1.0', release_mode: 'REVIEW_ONLY', public_release_authorized: false, snapshot_version: snapshotVersion, daily_seed: 'nameonmymind-review-v1', card_count: cards.length, card_documents: cards.map((card) => `./cards/${card.card_id}.json`), relations_location: './relations.json', references_location: './references.json', assets_location: './assets.json', generated_from: 'validated REVIEW_READY source; not a publishable public bundle' });
+writeJson('data/cards-index.json', { schema_version: '1.1.0', snapshot_version: snapshotVersion, cards });
+for (const card of cards) writeJson(`data/cards/${card.card_id}.json`, card);
+writeJson('data/relations.json', { schema_version: '1.0.0', snapshot_version: snapshotVersion, relations: cards.map((card) => ({ card_id: card.card_id, ...card.relations })) });
+writeJson('data/references.json', { schema_version: refs.schema_version, snapshot_version: snapshotVersion, references: selectedRefs });
+writeJson('data/assets.json', { schema_version: assets.schema_version, snapshot_version: snapshotVersion, assets: selectedAssets });
+writeJson('BUILD_MANIFEST.json', { schema_version: '1.1.0', artifact_type: 'LOCAL_REVIEW_PREVIEW', deployable: false, human_editorial_release_required: true, snapshot_version: snapshotVersion, card_ids: cards.map((x) => x.card_id), input_sha256: inputHashes, excluded_source_classes: ['private/**', 'content/review/research-records/**', 'reports/**'] });
 console.log(JSON.stringify({ status: 'PASS', output: OUT, card_ids: cards.map((x) => x.card_id), snapshot_version: snapshotVersion, deployable: false }, null, 2));

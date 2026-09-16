@@ -1,0 +1,1230 @@
+{
+  "schema_version": "1.0.0",
+  "goal": "G4",
+  "packet_type": "FOUR_CARD_HUMAN_EDITORIAL_RELEASE_REVIEW",
+  "generated_at_date": "2026-09-16",
+  "baseline_card": {
+    "card_id": "C0001",
+    "term": "saudade",
+    "human_release_status": "APPROVED",
+    "reused_evidence": "docs/ops/evidence/C0001_HUMAN_EDITORIAL_RELEASE_2026-09-16.json",
+    "re_review_required": false
+  },
+  "pending_card_ids": [
+    "C0002",
+    "C0003",
+    "C0004",
+    "C0005"
+  ],
+  "cards": [
+    {
+      "card_id": "C0002",
+      "term": {
+        "original": "Sehnsucht",
+        "language_code": "de-DE",
+        "language_name": "Deutsch",
+        "ipa": "/ˈzeːnˌzʊxt/"
+      },
+      "experience_type": "mixed_experience",
+      "front": {
+        "poetic_line": "아직 닿지 않은 삶이 멀리서 나를 부르는 듯한 마음.",
+        "scene": "열린 창가에 접지 않은 지도와 빈 여행가방이 놓이고, 멀리 작은 불빛들이 이어진다.",
+        "reflection_question": "지금의 삶 너머에서 오래 마음이 향하는 모습이 있나요?"
+      },
+      "meaning": {
+        "verified_definition": "부재하거나 멀리 있는 사람·대상, 또는 아직 이루어지지 않은 다른 삶의 상태를 향한 깊고 때로 아픈 갈망을 가리키는 독일어 명사.",
+        "usage_context": "사전에서는 멀거나 결핍된 사람·대상을 향한 깊고 아픈 갈망으로 설명되며, 심리학 연구에서는 아직 실현되지 않은 대안적 삶의 상태를 향한 강한 열망인 “life longings”를 연구하는 개념으로도 사용된다.",
+        "cultural_context": "독일어에 이름이 붙어 있다는 사실을 독일인에게만 존재하는 정서라는 주장으로 확대하지 않는다. 여기서는 독일어 사전의 실제 쓰임과 심리학 연구가 직접 다루는 갈망의 범위만 설명한다."
+      },
+      "comparisons": {
+        "ko": {
+          "near_terms": [
+            "그리움"
+          ],
+          "difference_note": "그리움은 떨어져 있거나 지나간 대상을 그리는 마음에서 가깝지만, Sehnsucht는 아직 실현되지 않은 삶의 가능성을 향한 강한 갈망까지 포함할 수 있다."
+        },
+        "en": {
+          "near_terms": [
+            "longing",
+            "yearning"
+          ],
+          "difference_note": "longing·yearning은 강한 바람과 갈망을 나타내지만, 심리학의 Sehnsucht 연구는 대안적 삶의 상태와 실현 가능성까지 구조화해 다룬다."
+        },
+        "zh": {
+          "near_terms": [
+            "思念"
+          ],
+          "difference_note": "思念은 사람이나 대상을 그리워하는 의미가 가깝지만, Sehnsucht의 잠재적 삶·미실현 상태에 대한 갈망 전체와 동일하지 않다."
+        },
+        "ja": {
+          "near_terms": [
+            "恋しい"
+          ],
+          "difference_note": "恋しさ는 떨어진 사람·장소·사물을 그리워하는 면이 가깝지만, Sehnsucht가 포괄할 수 있는 미실현 삶에 대한 열망 전체를 대체하지는 않는다."
+        }
+      },
+      "semantic_tags": [
+        "longing",
+        "distance",
+        "absence",
+        "possibility",
+        "unrealized-life",
+        "yearning"
+      ],
+      "relations": {
+        "similar_to": [],
+        "partially_overlaps": [],
+        "contrasts_with": [],
+        "broader_than": [],
+        "narrower_than": [],
+        "often_confused_with": []
+      },
+      "verification": {
+        "status": "VERIFIED",
+        "last_reviewed_at": "2026-09-16",
+        "lexical_source_count": 1,
+        "scholarly_source_count": 1
+      },
+      "machine_evidence": {
+        "lexical_verification": {
+          "status": "PASS",
+          "summary": "Target-term lexical meaning is directly attested by the registered lexical source; public copy is an original synthesis.",
+          "reference_ids": [
+            "R0018"
+          ]
+        },
+        "semantic_definition_and_boundaries": {
+          "status": "PASS",
+          "summary": "Duden supports deep/painful longing for an absent or distant person or thing; Scheibe et al. operationalize Sehnsucht as intense life-longing toward alternative states and realizations of life. The card does not collapse it into nostalgia or claim untranslatability.",
+          "reference_ids": [
+            "R0018",
+            "R0019"
+          ]
+        },
+        "cultural_context_review": {
+          "status": "PASS",
+          "summary": "The card treats Sehnsucht as a German lexical concept with a researched psychological use, not as an emotion exclusive to German speakers.",
+          "reference_ids": [
+            "R0018",
+            "R0019"
+          ]
+        },
+        "comparisons": {
+          "ko": {
+            "status": "PASS",
+            "near_terms": [
+              "그리움"
+            ],
+            "difference_note": "그리움은 떨어져 있거나 지나간 대상을 그리는 마음에서 가깝지만, Sehnsucht는 아직 실현되지 않은 삶의 가능성을 향한 강한 갈망까지 포함할 수 있다.",
+            "verification_note": "국립국어원 verifies 그리움; overlap, not equivalence.",
+            "reference_ids": [
+              "R0008"
+            ]
+          },
+          "en": {
+            "status": "PASS",
+            "near_terms": [
+              "longing",
+              "yearning"
+            ],
+            "difference_note": "longing·yearning은 강한 바람과 갈망을 나타내지만, 심리학의 Sehnsucht 연구는 대안적 삶의 상태와 실현 가능성까지 구조화해 다룬다.",
+            "verification_note": "Registered lexical sources verify longing/yearning; scholarly source supports life-longing boundary.",
+            "reference_ids": [
+              "R0014",
+              "R0015"
+            ]
+          },
+          "zh": {
+            "status": "PASS",
+            "near_terms": [
+              "思念"
+            ],
+            "difference_note": "思念은 사람이나 대상을 그리워하는 의미가 가깝지만, Sehnsucht의 잠재적 삶·미실현 상태에 대한 갈망 전체와 동일하지 않다.",
+            "verification_note": "Registered lexical source verifies 思念; no one-to-one claim.",
+            "reference_ids": [
+              "R0009"
+            ]
+          },
+          "ja": {
+            "status": "PASS",
+            "near_terms": [
+              "恋しい"
+            ],
+            "difference_note": "恋しさ는 떨어진 사람·장소·사물을 그리워하는 면이 가깝지만, Sehnsucht가 포괄할 수 있는 미실현 삶에 대한 열망 전체를 대체하지는 않는다.",
+            "verification_note": "Registered Japanese lexical source verifies 恋しい; nominal 恋しさ is used only as near-expression.",
+            "reference_ids": [
+              "R0010"
+            ]
+          }
+        },
+        "pronunciation_verification": {
+          "status": "PASS",
+          "ipa": "/ˈzeːnˌzʊxt/",
+          "locale": "de-DE",
+          "reference_ids": [
+            "R0020"
+          ],
+          "audio_asset_id": "A0006",
+          "notes": "Commons explicitly identifies term, IPA, native German speaker from Berlin, creator Jeuwre, own work, and CC BY-SA 4.0; local candidate is byte-identical to source."
+        },
+        "illustration_brief": {
+          "status": "PASS",
+          "summary": "Anonymous scene-first illustration; no national symbols, people, diagnostic cues, or stereotypes.",
+          "reference_ids": [
+            "R0018",
+            "R0019"
+          ]
+        },
+        "editorial_copy": {
+          "status": "PASS",
+          "summary": "Poetic line, scene, and reflection question are original, low-pressure, non-diagnostic, and stay inside the verified semantic boundary.",
+          "reference_ids": [
+            "R0018",
+            "R0019"
+          ]
+        },
+        "automated_gates": {
+          "schema": "PASS",
+          "evidence": "PASS",
+          "pronunciation": "PASS",
+          "cultural_humility": "PASS",
+          "rights": "PASS",
+          "privacy": "PASS"
+        }
+      },
+      "public_references": [
+        {
+          "reference_id": "R0018",
+          "source_type": "lexical",
+          "title": "Sehnsucht",
+          "publisher_or_container": "Duden",
+          "citation_display": "Duden. (n.d.). Sehnsucht.",
+          "url": "https://www.duden.de/rechtschreibung/Sehnsucht",
+          "license": null,
+          "rights_note": "Target lexical verification; public wording is original paraphrase."
+        },
+        {
+          "reference_id": "R0019",
+          "source_type": "scholarly",
+          "title": "Toward a developmental psychology of Sehnsucht (life longings): the optimal (utopian) life.",
+          "publisher_or_container": "Developmental Psychology",
+          "citation_display": "Scheibe, S., Freund, A. M., & Baltes, P. B. (2007). Developmental Psychology, 43(3), 778–795. https://doi.org/10.1037/0012-1649.43.3.778",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/17484587/",
+          "license": null,
+          "rights_note": "Bibliographic metadata and original synthesis only."
+        },
+        {
+          "reference_id": "R0020",
+          "source_type": "rights",
+          "title": "De-Sehnsucht.ogg",
+          "publisher_or_container": "Wikimedia Commons",
+          "citation_display": "Jeuwre. (2016). De-Sehnsucht.ogg [Audio]. Wikimedia Commons. CC BY-SA 4.0.",
+          "url": "https://commons.wikimedia.org/wiki/File:De-Sehnsucht.ogg",
+          "license": "CC BY-SA 4.0",
+          "rights_note": "Jeuwre; own work; native German speaker from Berlin; IPA /ˈzeːnˌzʊxt/; CC BY-SA 4.0. Local file byte-compared to source."
+        },
+        {
+          "reference_id": "R0008",
+          "source_type": "lexical",
+          "title": "그리움",
+          "publisher_or_container": "국립국어원 한국어기초사전",
+          "citation_display": "국립국어원. (n.d.). 그리움. 한국어기초사전.",
+          "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=37066&nation=eng",
+          "license": null,
+          "rights_note": "Used to verify the Korean near-term concept; public output contains original comparison prose only."
+        },
+        {
+          "reference_id": "R0014",
+          "source_type": "lexical",
+          "title": "longing",
+          "publisher_or_container": "Oxford Advanced Learner's Dictionary",
+          "citation_display": "Oxford University Press. (n.d.). longing. Oxford Advanced Learner's Dictionary.",
+          "url": "https://www.oxfordlearnersdictionaries.com/us/definition/english/longing_1",
+          "license": null,
+          "rights_note": "Used to verify the English near-term longing; public output uses original comparison prose only."
+        },
+        {
+          "reference_id": "R0015",
+          "source_type": "lexical",
+          "title": "yearning",
+          "publisher_or_container": "Oxford Advanced Learner's Dictionary",
+          "citation_display": "Oxford University Press. (n.d.). yearning. Oxford Advanced Learner's Dictionary.",
+          "url": "https://www.oxfordlearnersdictionaries.com/us/definition/english/yearning",
+          "license": null,
+          "rights_note": "Used to verify the English near-term yearning; public output uses original comparison prose only."
+        },
+        {
+          "reference_id": "R0009",
+          "source_type": "lexical",
+          "title": "思念",
+          "publisher_or_container": "汉典",
+          "citation_display": "汉典. (n.d.). 思念.",
+          "url": "https://zdic.net/hans/%E6%80%9D%E5%BF%B5",
+          "license": null,
+          "rights_note": "Used to verify the Chinese near-term concept; public output contains original comparison prose only."
+        },
+        {
+          "reference_id": "R0010",
+          "source_type": "lexical",
+          "title": "恋しい",
+          "publisher_or_container": "コトバンク / デジタル大辞泉",
+          "citation_display": "小学館. (n.d.). 恋しい. デジタル大辞泉 via コトバンク.",
+          "url": "https://kotobank.jp/word/%E6%81%8B%E3%81%97%E3%81%84-493587",
+          "license": null,
+          "rights_note": "Used to verify Japanese near-term concepts; public output contains original comparison prose only."
+        }
+      ],
+      "assets": [
+        {
+          "asset_id": "A0004",
+          "asset_type": "illustration",
+          "path": "assets/media/illustrations/C0002.svg",
+          "creator_or_model": "OpenAI-assisted local development output",
+          "source_url": null,
+          "license_or_rights_basis": "Original project asset; no third-party source material embedded.",
+          "attribution": null,
+          "sha256": "90fcf4d8b5dd4f7d77b21add856f9307a9e6f56f52133deb860ef6d283333372",
+          "review_status": "AUTOMATED_PASS"
+        },
+        {
+          "asset_id": "A0005",
+          "asset_type": "share",
+          "path": "assets/media/share/C0002.svg",
+          "creator_or_model": "OpenAI-assisted local development output",
+          "source_url": null,
+          "license_or_rights_basis": "Original project asset; no third-party source material embedded.",
+          "attribution": null,
+          "sha256": "0af47331c8d65af91b89e68dea03682b700d5716ef44e9fb31a473e194dc7cdb",
+          "review_status": "AUTOMATED_PASS"
+        },
+        {
+          "asset_id": "A0006",
+          "asset_type": "pronunciation_audio",
+          "path": "assets/media/audio/de-sehnsucht.ogg",
+          "creator_or_model": "Jeuwre",
+          "source_url": "https://commons.wikimedia.org/wiki/File:De-Sehnsucht.ogg",
+          "license_or_rights_basis": "Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0).",
+          "attribution": "De-Sehnsucht.ogg by Jeuwre, Wikimedia Commons, CC BY-SA 4.0.",
+          "sha256": "45cd7b57dbd8981b7e108ebefe5130f6f305b3f8e6de956a99c38a72f1c66f1b",
+          "review_status": "AUTOMATED_PASS"
+        }
+      ],
+      "human_editorial_release_checklist": {
+        "semantic_and_editorial_accuracy": "PENDING",
+        "cultural_humility_and_non_othering": "PENDING",
+        "ko_en_zh_ja_comparison_quality": "PENDING",
+        "pronunciation_provenance_and_rights": "PENDING",
+        "illustration_alt_and_accessibility": "PENDING",
+        "release_decision": "PENDING"
+      },
+      "human_release_status": "PENDING"
+    },
+    {
+      "card_id": "C0003",
+      "term": {
+        "original": "Schadenfreude",
+        "language_code": "de",
+        "language_name": "Deutsch",
+        "ipa": "[ˈʃaːdn̩ˌfʁɔɪ̯də]"
+      },
+      "experience_type": "emotion",
+      "front": {
+        "poetic_line": "누군가의 실패가 뜻밖의 만족으로 스칠 때.",
+        "scene": "기울어진 도미노 하나와 멈춰 선 다른 도미노들 사이로 작은 미소 모양의 곡선이 아주 희미하게 놓인다.",
+        "reflection_question": "타인의 결과를 보며 내 안에서 예상 밖의 만족이 올라온 적이 있나요?"
+      },
+      "meaning": {
+        "verified_definition": "다른 사람의 불행·실패·곤경을 보며 느끼는 즐거움이나 만족을 가리키는 독일어 명사.",
+        "usage_context": "사회정서 연구에서는 타인의 행운에 대한 불쾌감인 envy와 구분해, 타인의 불운에서 생기는 즐거움으로 다룬다. 두 정서는 사회비교 상황에서 관련될 수 있지만 같은 정서는 아니다.",
+        "cultural_context": "독일어 단어라는 이유로 이 반응을 독일 문화의 고유한 성향으로 해석하지 않는다. 여러 국가의 심리학 연구가 사회비교 정서로 다루는 현상을 독일어 표제어를 통해 설명할 뿐이다."
+      },
+      "comparisons": {
+        "ko": {
+          "near_terms": [
+            "고소함"
+          ],
+          "difference_note": "한국어 고소하다의 한 의미는 미워하던 사람이 잘못되는 것을 보고 속이 시원하고 기분 좋은 상태를 가리켜 가깝지만, 모든 Schadenfreude가 선행 혐오를 요구하는 것은 아니다."
+        },
+        "en": {
+          "near_terms": [
+            "gloating"
+          ],
+          "difference_note": "gloating은 자신의 성공이나 타인의 실패에 만족을 드러내는 행동·태도까지 포함할 수 있어, 내적 즐거움 자체를 가리키는 Schadenfreude와 범위가 완전히 같지 않다."
+        },
+        "zh": {
+          "near_terms": [
+            "幸灾乐祸"
+          ],
+          "difference_note": "幸灾乐祸는 타인의 재난이나 곤경을 기뻐한다는 점에서 매우 가깝지만, 이 카드는 언어 간 완전한 일대일 동일성을 주장하지 않는다."
+        },
+        "ja": {
+          "near_terms": [
+            "いい気味"
+          ],
+          "difference_note": "いい気味는 타인의 불행이나 실패에 통쾌함을 느끼는 맥락에서 가깝지만, 일상 표현의 화용과 독일어 명사의 연구적 사용 범위는 구분한다."
+        }
+      },
+      "semantic_tags": [
+        "social-comparison",
+        "others-misfortune",
+        "pleasure",
+        "fortune-of-other",
+        "evaluation"
+      ],
+      "relations": {
+        "similar_to": [],
+        "partially_overlaps": [
+          "C0004"
+        ],
+        "contrasts_with": [],
+        "broader_than": [],
+        "narrower_than": [],
+        "often_confused_with": []
+      },
+      "verification": {
+        "status": "VERIFIED",
+        "last_reviewed_at": "2026-09-16",
+        "lexical_source_count": 1,
+        "scholarly_source_count": 2
+      },
+      "machine_evidence": {
+        "lexical_verification": {
+          "status": "PASS",
+          "summary": "Target-term lexical meaning is directly attested by the registered lexical source; public copy is an original synthesis.",
+          "reference_ids": [
+            "R0021"
+          ]
+        },
+        "semantic_definition_and_boundaries": {
+          "status": "PASS",
+          "summary": "German lexical evidence defines Schadenfreude as pleasure at another person’s mishap or misfortune. Scholarship distinguishes it from envy while documenting empirical relations.",
+          "reference_ids": [
+            "R0021",
+            "R0022",
+            "R0023"
+          ]
+        },
+        "cultural_context_review": {
+          "status": "PASS",
+          "summary": "The German word is not evidence that the emotion is uniquely German; public copy avoids national-character claims.",
+          "reference_ids": [
+            "R0022",
+            "R0023"
+          ]
+        },
+        "comparisons": {
+          "ko": {
+            "status": "PASS",
+            "near_terms": [
+              "고소함"
+            ],
+            "difference_note": "한국어 고소하다의 한 의미는 미워하던 사람이 잘못되는 것을 보고 속이 시원하고 기분 좋은 상태를 가리켜 가깝지만, 모든 Schadenfreude가 선행 혐오를 요구하는 것은 아니다.",
+            "verification_note": "국립국어원 verifies relevant 고소하다 sense.",
+            "reference_ids": [
+              "R0025"
+            ]
+          },
+          "en": {
+            "status": "PASS",
+            "near_terms": [
+              "gloating"
+            ],
+            "difference_note": "gloating은 자신의 성공이나 타인의 실패에 만족을 드러내는 행동·태도까지 포함할 수 있어, 내적 즐거움 자체를 가리키는 Schadenfreude와 범위가 완전히 같지 않다.",
+            "verification_note": "Cambridge verifies gloat/gloating.",
+            "reference_ids": [
+              "R0026"
+            ]
+          },
+          "zh": {
+            "status": "PASS",
+            "near_terms": [
+              "幸灾乐祸"
+            ],
+            "difference_note": "幸灾乐祸는 타인의 재난이나 곤경을 기뻐한다는 점에서 매우 가깝지만, 이 카드는 언어 간 완전한 일대일 동일성을 주장하지 않는다.",
+            "verification_note": "汉典 directly verifies the near expression.",
+            "reference_ids": [
+              "R0027"
+            ]
+          },
+          "ja": {
+            "status": "PASS",
+            "near_terms": [
+              "いい気味"
+            ],
+            "difference_note": "いい気味는 타인의 불행이나 실패에 통쾌함을 느끼는 맥락에서 가깝지만, 일상 표현의 화용과 독일어 명사의 연구적 사용 범위는 구분한다.",
+            "verification_note": "Japanese dictionary verifies the relevant satisfaction-at-misfortune sense.",
+            "reference_ids": [
+              "R0028"
+            ]
+          }
+        },
+        "pronunciation_verification": {
+          "status": "PASS",
+          "ipa": "[ˈʃaːdn̩ˌfʁɔɪ̯də]",
+          "locale": "de",
+          "reference_ids": [
+            "R0021",
+            "R0024"
+          ],
+          "audio_asset_id": "A0009",
+          "notes": "German Wiktionary attests IPA. Commons identifies the exact German word recording as own work by Howdoesgermansound, with the current file history recording noise cleanup/trim by Andrybak, under CC0. The verified replacement is byte-identical to the current Commons original."
+        },
+        "illustration_brief": {
+          "status": "PASS",
+          "summary": "Abstract object-only scene; no face, nationality cue, humiliation scene, or target-group depiction.",
+          "reference_ids": [
+            "R0021",
+            "R0022"
+          ]
+        },
+        "editorial_copy": {
+          "status": "PASS",
+          "summary": "Poetic line, scene, and reflection question are original, low-pressure, non-diagnostic, and stay inside the verified semantic boundary.",
+          "reference_ids": [
+            "R0021",
+            "R0022",
+            "R0023"
+          ]
+        },
+        "automated_gates": {
+          "schema": "PASS",
+          "evidence": "PASS",
+          "pronunciation": "PASS",
+          "cultural_humility": "PASS",
+          "rights": "PASS",
+          "privacy": "PASS"
+        }
+      },
+      "public_references": [
+        {
+          "reference_id": "R0021",
+          "source_type": "lexical",
+          "title": "Schadenfreude",
+          "publisher_or_container": "Wiktionary (German)",
+          "citation_display": "Wiktionary. (n.d.). Schadenfreude.",
+          "url": "https://de.wiktionary.org/wiki/Schadenfreude",
+          "license": "CC BY-SA / site terms",
+          "rights_note": "German target meaning and IPA; public wording is original paraphrase."
+        },
+        {
+          "reference_id": "R0022",
+          "source_type": "scholarly",
+          "title": "Cognitive neuroscience of social emotions and implications for psychopathology: examining embarrassment, guilt, envy, and schadenfreude",
+          "publisher_or_container": "Psychiatry and Clinical Neurosciences",
+          "citation_display": "Jankowski, K. F., & Takahashi, H. (2014). Psychiatry and Clinical Neurosciences, 68(5), 319–336. https://doi.org/10.1111/pcn.12182",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/24649887/",
+          "license": null,
+          "rights_note": "Bibliographic metadata and original synthesis only."
+        },
+        {
+          "reference_id": "R0023",
+          "source_type": "scholarly",
+          "title": "The painful duality of envy: Evidence for an integrative theory and a meta-analysis on the relation of envy and schadenfreude",
+          "publisher_or_container": "Journal of Personality and Social Psychology",
+          "citation_display": "Lange, J., Weidman, A. C., & Crusius, J. (2018). Journal of Personality and Social Psychology, 114(4), 572–598. https://doi.org/10.1037/pspi0000118",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29376662/",
+          "license": null,
+          "rights_note": "Bibliographic metadata and original synthesis only."
+        },
+        {
+          "reference_id": "R0024",
+          "source_type": "rights",
+          "title": "Schadenfreude.ogg",
+          "publisher_or_container": "Wikimedia Commons",
+          "citation_display": "Howdoesgermansound; Andrybak (file cleanup). Schadenfreude.ogg [Audio]. Wikimedia Commons. CC0 1.0.",
+          "url": "https://commons.wikimedia.org/wiki/File:Schadenfreude.ogg",
+          "license": "CC0 1.0",
+          "rights_note": "German pronunciation. Original work by Howdoesgermansound; current file history records noise cleanup/trim by Andrybak; CC0. Verified local replacement byte-compared to current Commons original."
+        },
+        {
+          "reference_id": "R0025",
+          "source_type": "lexical",
+          "title": "고소하다³ — sense 2",
+          "publisher_or_container": "국립국어원 한국어기초사전",
+          "citation_display": "국립국어원. (n.d.). 고소하다³. 한국어기초사전.",
+          "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaNationCode=6&ParaWordNo=17967",
+          "license": null,
+          "rights_note": "Korean near-term sense involving satisfaction at a disliked person’s misfortune."
+        },
+        {
+          "reference_id": "R0026",
+          "source_type": "lexical",
+          "title": "gloat",
+          "publisher_or_container": "Cambridge Dictionary",
+          "citation_display": "Cambridge University Press & Assessment. (n.d.). gloat.",
+          "url": "https://dictionary.cambridge.org/dictionary/english/gloat",
+          "license": null,
+          "rights_note": "English near-term verification; original comparison wording."
+        },
+        {
+          "reference_id": "R0027",
+          "source_type": "lexical",
+          "title": "幸灾乐祸",
+          "publisher_or_container": "汉典",
+          "citation_display": "汉典. (n.d.). 幸灾乐祸.",
+          "url": "https://zdic.net/hans/%E5%B9%B8%E7%81%BE%E4%B9%90%E7%A5%B8",
+          "license": null,
+          "rights_note": "Chinese near-term verification; original comparison wording."
+        },
+        {
+          "reference_id": "R0028",
+          "source_type": "lexical",
+          "title": "好気味",
+          "publisher_or_container": "コトバンク / 精選版 日本国語大辞典",
+          "citation_display": "小学館. (n.d.). 好気味. 精選版 日本国語大辞典 via コトバンク.",
+          "url": "https://kotobank.jp/word/%E5%A5%BD%E6%B0%97%E5%91%B3-2004709",
+          "license": null,
+          "rights_note": "Japanese near-term sense involving satisfaction at another person’s misfortune or failure."
+        }
+      ],
+      "assets": [
+        {
+          "asset_id": "A0007",
+          "asset_type": "illustration",
+          "path": "assets/media/illustrations/C0003.svg",
+          "creator_or_model": "OpenAI-assisted local development output",
+          "source_url": null,
+          "license_or_rights_basis": "Original project asset; no third-party source material embedded.",
+          "attribution": null,
+          "sha256": "9a4fd3bb3b686d2dc13a89b65506c1150b6579d87a17a99f582359571572f519",
+          "review_status": "AUTOMATED_PASS"
+        },
+        {
+          "asset_id": "A0008",
+          "asset_type": "share",
+          "path": "assets/media/share/C0003.svg",
+          "creator_or_model": "OpenAI-assisted local development output",
+          "source_url": null,
+          "license_or_rights_basis": "Original project asset; no third-party source material embedded.",
+          "attribution": null,
+          "sha256": "aa4a612c68119fe5c0ca109531f1e073aeba432bf637537fcaab84779df8fa5d",
+          "review_status": "AUTOMATED_PASS"
+        },
+        {
+          "asset_id": "A0009",
+          "asset_type": "pronunciation_audio",
+          "path": "assets/media/audio/de-schadenfreude-verified.ogg",
+          "creator_or_model": "Howdoesgermansound (original creator); Andrybak (current-file noise cleanup/trim)",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Schadenfreude.ogg",
+          "license_or_rights_basis": "CC0 1.0 Universal Public Domain Dedication.",
+          "attribution": "Schadenfreude.ogg by Howdoesgermansound; current-file cleanup by Andrybak, Wikimedia Commons, CC0 1.0.",
+          "sha256": "7b7b1bbd7ab2b044a60bcc5daeb9257f7727f482725add4e2521a8b2aa66e44c",
+          "review_status": "AUTOMATED_PASS"
+        }
+      ],
+      "human_editorial_release_checklist": {
+        "semantic_and_editorial_accuracy": "PENDING",
+        "cultural_humility_and_non_othering": "PENDING",
+        "ko_en_zh_ja_comparison_quality": "PENDING",
+        "pronunciation_provenance_and_rights": "PENDING",
+        "illustration_alt_and_accessibility": "PENDING",
+        "release_decision": "PENDING"
+      },
+      "human_release_status": "PENDING"
+    },
+    {
+      "card_id": "C0004",
+      "term": {
+        "original": "envy",
+        "language_code": "en-US",
+        "language_name": "English (United States)",
+        "ipa": "/ˈen.vi/"
+      },
+      "experience_type": "emotion",
+      "front": {
+        "poetic_line": "저 사람의 것을 바라보는 순간, 내게 없는 것이 선명해질 때.",
+        "scene": "높이가 다른 두 개의 단순한 받침대 위에 같은 모양의 작은 원이 놓여 있고, 한쪽 원을 향한 얇은 선이 이어진다.",
+        "reflection_question": "누군가가 가진 것을 보며 나에게도 있었으면 하고 느낀 적이 있나요?"
+      },
+      "meaning": {
+        "verified_definition": "다른 사람이 가진 능력·대상·유리한 조건을 자신도 갖고 싶어 할 때 생기는 사회비교 정서.",
+        "usage_context": "심리학에서는 envy를 타인의 우위와 관련된 고통·열등감, 원하는 대상에 대한 욕구, 자기향상 또는 공격적 동기 등 서로 다른 요소와 형태를 가질 수 있는 정서로 연구한다.",
+        "cultural_context": "영어 단어 하나를 사람의 성격이나 도덕성 진단으로 사용하지 않는다. 연구에서도 envy의 구성과 benign/malicious 형태를 구분하는 방식이 논의되므로, 경험의 맥락과 강도를 단일한 낙인으로 환원하지 않는다."
+      },
+      "comparisons": {
+        "ko": {
+          "near_terms": [
+            "부러움"
+          ],
+          "difference_note": "부러움은 남이 가진 것을 자신도 원한다는 핵심에서 가깝지만, 한국어 일상어의 긍정적·가벼운 쓰임과 영어 envy의 연구적 범위가 항상 일치하지는 않는다."
+        },
+        "en": {
+          "near_terms": [
+            "jealousy"
+          ],
+          "difference_note": "jealousy는 원하는 것을 다른 사람이 가졌다는 불쾌감에서 겹치지만, 관계의 위협이나 애정 대상의 경쟁을 포함하는 쓰임도 있어 envy와 구별될 수 있다."
+        },
+        "zh": {
+          "near_terms": [
+            "羡慕"
+          ],
+          "difference_note": "羡慕는 다른 사람의 장점이나 유리한 조건을 자신도 갖고 싶어 하는 의미에서 가깝지만, 악의적 요소가 필수라고 보지 않는다는 점을 함께 주의한다."
+        },
+        "ja": {
+          "near_terms": [
+            "羨望"
+          ],
+          "difference_note": "羨望는 다른 사람의 성취나 우위를 부러워하는 의미에서 가깝지만, 영어 envy의 다양한 이론적 하위형태 전체와 동일하다고 보지 않는다."
+        }
+      },
+      "semantic_tags": [
+        "social-comparison",
+        "desire",
+        "inferiority",
+        "advantage",
+        "fortune-of-other"
+      ],
+      "relations": {
+        "similar_to": [],
+        "partially_overlaps": [
+          "C0003"
+        ],
+        "contrasts_with": [],
+        "broader_than": [],
+        "narrower_than": [],
+        "often_confused_with": []
+      },
+      "verification": {
+        "status": "VERIFIED",
+        "last_reviewed_at": "2026-09-16",
+        "lexical_source_count": 1,
+        "scholarly_source_count": 1
+      },
+      "machine_evidence": {
+        "lexical_verification": {
+          "status": "PASS",
+          "summary": "Target-term lexical meaning is directly attested by the registered lexical source; public copy is an original synthesis.",
+          "reference_ids": [
+            "R0029"
+          ]
+        },
+        "semantic_definition_and_boundaries": {
+          "status": "PASS",
+          "summary": "Cambridge supports wanting something another person has. Lange et al. show research operationalizations include pain and benign/malicious forms; the card avoids personality diagnosis.",
+          "reference_ids": [
+            "R0029",
+            "R0023"
+          ]
+        },
+        "cultural_context_review": {
+          "status": "PASS",
+          "summary": "The English label is not used as a cultural or moral diagnosis; construct variation is preserved.",
+          "reference_ids": [
+            "R0023"
+          ]
+        },
+        "comparisons": {
+          "ko": {
+            "status": "PASS",
+            "near_terms": [
+              "부러움"
+            ],
+            "difference_note": "부러움은 남이 가진 것을 자신도 원한다는 핵심에서 가깝지만, 한국어 일상어의 긍정적·가벼운 쓰임과 영어 envy의 연구적 범위가 항상 일치하지는 않는다.",
+            "verification_note": "Cambridge English–Korean gives 부러움/부러워하다.",
+            "reference_ids": [
+              "R0031"
+            ]
+          },
+          "en": {
+            "status": "PASS",
+            "near_terms": [
+              "jealousy"
+            ],
+            "difference_note": "jealousy는 원하는 것을 다른 사람이 가졌다는 불쾌감에서 겹치지만, 관계의 위협이나 애정 대상의 경쟁을 포함하는 쓰임도 있어 envy와 구별될 수 있다.",
+            "verification_note": "Cambridge verifies jealousy as overlapping but distinct headword.",
+            "reference_ids": [
+              "R0032"
+            ]
+          },
+          "zh": {
+            "status": "PASS",
+            "near_terms": [
+              "羡慕"
+            ],
+            "difference_note": "羡慕는 다른 사람의 장점이나 유리한 조건을 자신도 갖고 싶어 하는 의미에서 가깝지만, 악의적 요소가 필수라고 보지 않는다는 점을 함께 주의한다.",
+            "verification_note": "汉典 verifies wanting another person’s advantages or conditions.",
+            "reference_ids": [
+              "R0033"
+            ]
+          },
+          "ja": {
+            "status": "PASS",
+            "near_terms": [
+              "羨望"
+            ],
+            "difference_note": "羨望는 다른 사람의 성취나 우위를 부러워하는 의미에서 가깝지만, 영어 envy의 다양한 이론적 하위형태 전체와 동일하다고 보지 않는다.",
+            "verification_note": "Japanese dictionary verifies 羨望.",
+            "reference_ids": [
+              "R0034"
+            ]
+          }
+        },
+        "pronunciation_verification": {
+          "status": "PASS",
+          "ipa": "/ˈen.vi/",
+          "locale": "en-US",
+          "reference_ids": [
+            "R0029",
+            "R0030"
+          ],
+          "audio_asset_id": "A0012",
+          "notes": "Cambridge attests US IPA /ˈen.vi/. Commons identifies exact US English recording, creator Dvortygirl, self-recording, and reuse licenses. Local candidate is byte-identical to source."
+        },
+        "illustration_brief": {
+          "status": "PASS",
+          "summary": "Abstract comparison composition without bodies, status groups, luxury goods, or moral judgment.",
+          "reference_ids": [
+            "R0029",
+            "R0023"
+          ]
+        },
+        "editorial_copy": {
+          "status": "PASS",
+          "summary": "Poetic line, scene, and reflection question are original, low-pressure, non-diagnostic, and stay inside the verified semantic boundary.",
+          "reference_ids": [
+            "R0029",
+            "R0023"
+          ]
+        },
+        "automated_gates": {
+          "schema": "PASS",
+          "evidence": "PASS",
+          "pronunciation": "PASS",
+          "cultural_humility": "PASS",
+          "rights": "PASS",
+          "privacy": "PASS"
+        }
+      },
+      "public_references": [
+        {
+          "reference_id": "R0029",
+          "source_type": "lexical",
+          "title": "envy",
+          "publisher_or_container": "Cambridge Dictionary",
+          "citation_display": "Cambridge University Press & Assessment. (n.d.). envy.",
+          "url": "https://dictionary.cambridge.org/us/dictionary/english/envy",
+          "license": null,
+          "rights_note": "Target meaning and US/UK IPA; original public paraphrase."
+        },
+        {
+          "reference_id": "R0023",
+          "source_type": "scholarly",
+          "title": "The painful duality of envy: Evidence for an integrative theory and a meta-analysis on the relation of envy and schadenfreude",
+          "publisher_or_container": "Journal of Personality and Social Psychology",
+          "citation_display": "Lange, J., Weidman, A. C., & Crusius, J. (2018). Journal of Personality and Social Psychology, 114(4), 572–598. https://doi.org/10.1037/pspi0000118",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29376662/",
+          "license": null,
+          "rights_note": "Bibliographic metadata and original synthesis only."
+        },
+        {
+          "reference_id": "R0030",
+          "source_type": "rights",
+          "title": "En-us-envy.ogg",
+          "publisher_or_container": "Wikimedia Commons",
+          "citation_display": "Dvortygirl. (2007). En-us-envy.ogg [Audio]. Wikimedia Commons.",
+          "url": "https://commons.wikimedia.org/wiki/File:En-us-envy.ogg",
+          "license": "CC BY-SA 2.5 (multi-licensed with GFDL 1.2+ and CC BY-SA 1.0/2.0 per Commons)",
+          "rights_note": "Dvortygirl; self-recorded US English using Shtooka; GFDL/CC BY-SA licensing. Local file byte-compared to source."
+        },
+        {
+          "reference_id": "R0031",
+          "source_type": "lexical",
+          "title": "envy — English–Korean translation",
+          "publisher_or_container": "Cambridge Dictionary",
+          "citation_display": "Cambridge University Press & Assessment. (n.d.). envy. English–Korean Dictionary.",
+          "url": "https://dictionary.cambridge.org/dictionary/english-korean/envy",
+          "license": null,
+          "rights_note": "Verifies 부러움/부러워하다 as Korean near expressions."
+        },
+        {
+          "reference_id": "R0032",
+          "source_type": "lexical",
+          "title": "jealousy",
+          "publisher_or_container": "Cambridge Dictionary",
+          "citation_display": "Cambridge University Press & Assessment. (n.d.). jealousy.",
+          "url": "https://dictionary.cambridge.org/dictionary/english/jealousy",
+          "license": null,
+          "rights_note": "English near-term distinction."
+        },
+        {
+          "reference_id": "R0033",
+          "source_type": "lexical",
+          "title": "羡慕",
+          "publisher_or_container": "汉典",
+          "citation_display": "汉典. (n.d.). 羡慕.",
+          "url": "https://zdic.net/hans/%E7%BE%A1%E6%85%95",
+          "license": null,
+          "rights_note": "Chinese near-term verification."
+        },
+        {
+          "reference_id": "R0034",
+          "source_type": "lexical",
+          "title": "羨望",
+          "publisher_or_container": "コトバンク / デジタル大辞泉",
+          "citation_display": "小学館. (n.d.). 羨望. デジタル大辞泉 via コトバンク.",
+          "url": "https://kotobank.jp/word/%E7%BE%A8%E6%9C%9B-551246",
+          "license": null,
+          "rights_note": "Japanese near-term verification."
+        }
+      ],
+      "assets": [
+        {
+          "asset_id": "A0010",
+          "asset_type": "illustration",
+          "path": "assets/media/illustrations/C0004.svg",
+          "creator_or_model": "OpenAI-assisted local development output",
+          "source_url": null,
+          "license_or_rights_basis": "Original project asset; no third-party source material embedded.",
+          "attribution": null,
+          "sha256": "6cee3afbe4023547c209d3a3b59a979e4a0a5533026fdf5bcf70c6d71e6fed0f",
+          "review_status": "AUTOMATED_PASS"
+        },
+        {
+          "asset_id": "A0011",
+          "asset_type": "share",
+          "path": "assets/media/share/C0004.svg",
+          "creator_or_model": "OpenAI-assisted local development output",
+          "source_url": null,
+          "license_or_rights_basis": "Original project asset; no third-party source material embedded.",
+          "attribution": null,
+          "sha256": "ae797ed632b38abc5784f5ad9e0c541018ea0605901d87e230a08ae78e722661",
+          "review_status": "AUTOMATED_PASS"
+        },
+        {
+          "asset_id": "A0012",
+          "asset_type": "pronunciation_audio",
+          "path": "assets/media/audio/en-us-envy.ogg",
+          "creator_or_model": "Dvortygirl",
+          "source_url": "https://commons.wikimedia.org/wiki/File:En-us-envy.ogg",
+          "license_or_rights_basis": "CC BY-SA 2.5 selected from Commons multi-license grant; GFDL 1.2+ and CC BY-SA 1.0/2.0 also listed.",
+          "attribution": "En-us-envy.ogg by Dvortygirl, Wikimedia Commons, CC BY-SA 2.5.",
+          "sha256": "ab1efde47a3660889e949b8086f8444fa817b5114b15f23f07f314f6a26222c8",
+          "review_status": "AUTOMATED_PASS"
+        }
+      ],
+      "human_editorial_release_checklist": {
+        "semantic_and_editorial_accuracy": "PENDING",
+        "cultural_humility_and_non_othering": "PENDING",
+        "ko_en_zh_ja_comparison_quality": "PENDING",
+        "pronunciation_provenance_and_rights": "PENDING",
+        "illustration_alt_and_accessibility": "PENDING",
+        "release_decision": "PENDING"
+      },
+      "human_release_status": "PENDING"
+    },
+    {
+      "card_id": "C0005",
+      "term": {
+        "original": "幸福",
+        "language_code": "ja",
+        "language_name": "日本語",
+        "ipa": "[ko̞ːɸɯ̟̊kɯ̟]"
+      },
+      "experience_type": "psychological_state",
+      "front": {
+        "poetic_line": "충분하다고 느끼는 순간, 마음이 조용히 밝아질 때.",
+        "scene": "둥근 빛을 닮은 큰 원과 그 아래 안정적으로 놓인 세 개의 작은 돌 모양이 균형을 이룬다.",
+        "reflection_question": "요즘의 삶에서 “충분하다”는 느낌을 주는 작은 장면은 무엇인가요?"
+      },
+      "meaning": {
+        "verified_definition": "마음이 충족되어 기쁘고, 불평이나 불만이 적은 만족스러운 상태를 나타내는 일본어 명사·형용동사.",
+        "usage_context": "일본어 사전은 만족되고 즐거운 상태로 설명한다. 일본어판 Subjective Happiness Scale 연구처럼 심리학에서는 사람들이 자신의 행복을 주관적으로 평가하는 구성도 측정하지만, 한 단어가 삶의 질 전체를 자동으로 뜻하는 것은 아니다.",
+        "cultural_context": "幸福은 한국어·중국어에도 같은 한자 형태가 존재하지만, 문자 형태가 같다는 이유로 각 언어의 쓰임과 문화적 의미가 완전히 같다고 가정하지 않는다. 일본어 카드에서는 일본어 사전과 일본 연구가 직접 지지하는 범위만 다룬다."
+      },
+      "comparisons": {
+        "ko": {
+          "near_terms": [
+            "행복"
+          ],
+          "difference_note": "한국어 행복은 삶의 만족과 기쁨을 느끼는 상태라는 점에서 가깝고 한자도 같지만, 각 언어의 실제 용법을 같은 것으로 자동 취급하지 않는다."
+        },
+        "en": {
+          "near_terms": [
+            "happiness"
+          ],
+          "difference_note": "happiness는 happy한 느낌과 상태를 가리켜 가깝지만, 일본어 幸福의 모든 화용과 문화적 맥락을 영어 한 단어가 대체한다고 보지 않는다."
+        },
+        "zh": {
+          "near_terms": [
+            "幸福"
+          ],
+          "difference_note": "중국어 幸福도 삶에 대한 만족과 즐거운 상태를 가리키지만, 공유된 한자 표기만으로 일본어와 완전한 의미 동일성을 주장하지 않는다."
+        },
+        "ja": {
+          "near_terms": [
+            "幸せ"
+          ],
+          "difference_note": "幸せ는 일본어 안에서 幸福과 매우 가까운 표현이지만 운·좋은 처지 같은 의미도 가질 수 있어 모든 문맥에서 교환 가능한 것은 아니다."
+        }
+      },
+      "semantic_tags": [
+        "happiness",
+        "contentment",
+        "satisfaction",
+        "wellbeing",
+        "positive-state"
+      ],
+      "relations": {
+        "similar_to": [],
+        "partially_overlaps": [],
+        "contrasts_with": [],
+        "broader_than": [],
+        "narrower_than": [],
+        "often_confused_with": []
+      },
+      "verification": {
+        "status": "VERIFIED",
+        "last_reviewed_at": "2026-09-16",
+        "lexical_source_count": 1,
+        "scholarly_source_count": 1
+      },
+      "machine_evidence": {
+        "lexical_verification": {
+          "status": "PASS",
+          "summary": "Target-term lexical meaning is directly attested by the registered lexical source; public copy is an original synthesis.",
+          "reference_ids": [
+            "R0035"
+          ]
+        },
+        "semantic_definition_and_boundaries": {
+          "status": "PASS",
+          "summary": "Japanese dictionary evidence describes 幸福 as a satisfied, pleasant state without discontent. Japanese SHS research supports subjective happiness as a measurable self-evaluative construct without equating the word to total wellbeing.",
+          "reference_ids": [
+            "R0035",
+            "R0037"
+          ]
+        },
+        "cultural_context_review": {
+          "status": "PASS",
+          "summary": "Shared Sino-character forms across Japanese, Korean, and Chinese are not treated as proof of identical cultural meaning.",
+          "reference_ids": [
+            "R0035",
+            "R0037"
+          ]
+        },
+        "comparisons": {
+          "ko": {
+            "status": "PASS",
+            "near_terms": [
+              "행복"
+            ],
+            "difference_note": "한국어 행복은 삶의 만족과 기쁨을 느끼는 상태라는 점에서 가깝고 한자도 같지만, 각 언어의 실제 용법을 같은 것으로 자동 취급하지 않는다.",
+            "verification_note": "국립국어원 verifies Korean 행복.",
+            "reference_ids": [
+              "R0039"
+            ]
+          },
+          "en": {
+            "status": "PASS",
+            "near_terms": [
+              "happiness"
+            ],
+            "difference_note": "happiness는 happy한 느낌과 상태를 가리켜 가깝지만, 일본어 幸福의 모든 화용과 문화적 맥락을 영어 한 단어가 대체한다고 보지 않는다.",
+            "verification_note": "Cambridge verifies happiness.",
+            "reference_ids": [
+              "R0040"
+            ]
+          },
+          "zh": {
+            "status": "PASS",
+            "near_terms": [
+              "幸福"
+            ],
+            "difference_note": "중국어 幸福도 삶에 대한 만족과 즐거운 상태를 가리키지만, 공유된 한자 표기만으로 일본어와 완전한 의미 동일성을 주장하지 않는다.",
+            "verification_note": "汉典 verifies Chinese 幸福; identity-by-script is rejected.",
+            "reference_ids": [
+              "R0041"
+            ]
+          },
+          "ja": {
+            "status": "PASS",
+            "near_terms": [
+              "幸せ"
+            ],
+            "difference_note": "幸せ는 일본어 안에서 幸福과 매우 가까운 표현이지만 운·좋은 처지 같은 의미도 가질 수 있어 모든 문맥에서 교환 가능한 것은 아니다.",
+            "verification_note": "Japanese dictionary verifies 幸せ and its broader senses.",
+            "reference_ids": [
+              "R0042"
+            ]
+          }
+        },
+        "pronunciation_verification": {
+          "status": "PASS",
+          "ipa": "[ko̞ːɸɯ̟̊kɯ̟]",
+          "locale": "ja",
+          "reference_ids": [
+            "R0036",
+            "R0038"
+          ],
+          "audio_asset_id": "A0015",
+          "notes": "Japanese Wiktionary attests reading/IPA. Commons identifies Ja-kofuku.ogg as Japanese pronunciation by Spesco, own work, CC BY-SA 4.0. Local file downloaded directly from source."
+        },
+        "illustration_brief": {
+          "status": "PASS",
+          "summary": "Object-only balanced-stones motif; no national iconography, smiling face, prosperity stereotype, or diagnostic cue.",
+          "reference_ids": [
+            "R0035",
+            "R0037"
+          ]
+        },
+        "editorial_copy": {
+          "status": "PASS",
+          "summary": "Poetic line, scene, and reflection question are original, low-pressure, non-diagnostic, and stay inside the verified semantic boundary.",
+          "reference_ids": [
+            "R0035",
+            "R0037"
+          ]
+        },
+        "automated_gates": {
+          "schema": "PASS",
+          "evidence": "PASS",
+          "pronunciation": "PASS",
+          "cultural_humility": "PASS",
+          "rights": "PASS",
+          "privacy": "PASS"
+        }
+      },
+      "public_references": [
+        {
+          "reference_id": "R0035",
+          "source_type": "lexical",
+          "title": "幸福",
+          "publisher_or_container": "コトバンク / デジタル大辞泉・精選版 日本国語大辞典",
+          "citation_display": "小学館. (n.d.). 幸福. デジタル大辞泉 / 精選版 日本国語大辞典 via コトバンク.",
+          "url": "https://kotobank.jp/word/%E5%B9%B8%E7%A6%8F-63084",
+          "license": null,
+          "rights_note": "Japanese target lexical verification; original public paraphrase."
+        },
+        {
+          "reference_id": "R0036",
+          "source_type": "pronunciation",
+          "title": "幸福",
+          "publisher_or_container": "ウィクショナリー日本語版",
+          "citation_display": "ウィクショナリー. (n.d.). 幸福.",
+          "url": "https://ja.wiktionary.org/wiki/%E5%B9%B8%E7%A6%8F",
+          "license": "CC BY-SA / site terms",
+          "rights_note": "Japanese reading and IPA provenance."
+        },
+        {
+          "reference_id": "R0037",
+          "source_type": "scholarly",
+          "title": "Development of a Japanese version of the Subjective Happiness Scale (SHS), and examination of its validity and reliability",
+          "publisher_or_container": "Japanese Journal of Public Health",
+          "citation_display": "Shimai, S., et al. (2004). Japanese Journal of Public Health, 51(10), 845–853.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/15565993/",
+          "license": null,
+          "rights_note": "Bibliographic metadata and original synthesis only."
+        },
+        {
+          "reference_id": "R0038",
+          "source_type": "rights",
+          "title": "Ja-kofuku.ogg",
+          "publisher_or_container": "Wikimedia Commons",
+          "citation_display": "Spesco. (2022). Ja-kofuku.ogg [Audio]. Wikimedia Commons. CC BY-SA 4.0.",
+          "url": "https://commons.wikimedia.org/wiki/File:Ja-kofuku.ogg",
+          "license": "CC BY-SA 4.0",
+          "rights_note": "Spesco; own work; Japanese pronunciation of Kofuku; CC BY-SA 4.0. Direct source download."
+        },
+        {
+          "reference_id": "R0039",
+          "source_type": "lexical",
+          "title": "행복",
+          "publisher_or_container": "국립국어원 한국어기초사전",
+          "citation_display": "국립국어원. (n.d.). 행복. 한국어기초사전.",
+          "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=72480&nation=eng",
+          "license": null,
+          "rights_note": "Korean near-term verification."
+        },
+        {
+          "reference_id": "R0040",
+          "source_type": "lexical",
+          "title": "happiness",
+          "publisher_or_container": "Cambridge Dictionary",
+          "citation_display": "Cambridge University Press & Assessment. (n.d.). happiness.",
+          "url": "https://dictionary.cambridge.org/dictionary/english/happiness",
+          "license": null,
+          "rights_note": "English near-term verification."
+        },
+        {
+          "reference_id": "R0041",
+          "source_type": "lexical",
+          "title": "幸福",
+          "publisher_or_container": "汉典",
+          "citation_display": "汉典. (n.d.). 幸福.",
+          "url": "https://zdic.net/hans/%E5%B9%B8%E7%A6%8F",
+          "license": null,
+          "rights_note": "Chinese near-term verification; shared characters do not establish semantic identity."
+        },
+        {
+          "reference_id": "R0042",
+          "source_type": "lexical",
+          "title": "幸せ",
+          "publisher_or_container": "コトバンク / デジタル大辞泉",
+          "citation_display": "小学館. (n.d.). 幸せ. デジタル大辞泉 via コトバンク.",
+          "url": "https://kotobank.jp/word/%E5%B9%B8%E3%81%9B-515403",
+          "license": null,
+          "rights_note": "Japanese near-term 幸せ distinction."
+        }
+      ],
+      "assets": [
+        {
+          "asset_id": "A0013",
+          "asset_type": "illustration",
+          "path": "assets/media/illustrations/C0005.svg",
+          "creator_or_model": "OpenAI-assisted local development output",
+          "source_url": null,
+          "license_or_rights_basis": "Original project asset; no third-party source material embedded.",
+          "attribution": null,
+          "sha256": "8998d827e276c56214b14596f1876ce7465041ba66a6571b29239ed88e23724a",
+          "review_status": "AUTOMATED_PASS"
+        },
+        {
+          "asset_id": "A0014",
+          "asset_type": "share",
+          "path": "assets/media/share/C0005.svg",
+          "creator_or_model": "OpenAI-assisted local development output",
+          "source_url": null,
+          "license_or_rights_basis": "Original project asset; no third-party source material embedded.",
+          "attribution": null,
+          "sha256": "fee056c271baa77c8b4c25e88bcad711dcf62108b912b742c78281823dac60bc",
+          "review_status": "AUTOMATED_PASS"
+        },
+        {
+          "asset_id": "A0015",
+          "asset_type": "pronunciation_audio",
+          "path": "assets/media/audio/ja-kofuku.ogg",
+          "creator_or_model": "Spesco",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Ja-kofuku.ogg",
+          "license_or_rights_basis": "Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0).",
+          "attribution": "Ja-kofuku.ogg by Spesco, Wikimedia Commons, CC BY-SA 4.0.",
+          "sha256": "3019788d32aa6df5a657f827be3800651919977545e595d66b9dc41c80f35957",
+          "review_status": "AUTOMATED_PASS"
+        }
+      ],
+      "human_editorial_release_checklist": {
+        "semantic_and_editorial_accuracy": "PENDING",
+        "cultural_humility_and_non_othering": "PENDING",
+        "ko_en_zh_ja_comparison_quality": "PENDING",
+        "pronunciation_provenance_and_rights": "PENDING",
+        "illustration_alt_and_accessibility": "PENDING",
+        "release_decision": "PENDING"
+      },
+      "human_release_status": "PENDING"
+    }
+  ],
+  "release_boundary": {
+    "current_public_cards": [
+      "C0001"
+    ],
+    "pending_cards_must_not_be_public": [
+      "C0002",
+      "C0003",
+      "C0004",
+      "C0005"
+    ],
+    "external_publish_authorized": false,
+    "repository_push_authorized": false,
+    "g5_admission_allowed": false
+  },
+  "approval_instruction": "Human review must explicitly approve C0002, C0003, C0004, and C0005 (or request changes) before any of them can move from REVIEW_READY to APPROVED/PUBLISHED. Machine PASS does not constitute release approval."
+}

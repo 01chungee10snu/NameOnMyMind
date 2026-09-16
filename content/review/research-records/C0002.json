@@ -1,0 +1,212 @@
+{
+  "schema_version": "1.1.0",
+  "research_id": "RR-C0002-SEHNSUCHT",
+  "card_id": "C0002",
+  "candidate": {
+    "term": "Sehnsucht",
+    "language_code": "de-DE",
+    "language_name": "Deutsch",
+    "experience_type": "mixed_experience"
+  },
+  "lifecycle_state": "REVIEW_READY",
+  "source_inventory": [
+    {
+      "reference_id": "R0018",
+      "role": "lexical",
+      "quality_tier": "A"
+    },
+    {
+      "reference_id": "R0019",
+      "role": "scholarly",
+      "quality_tier": "A"
+    },
+    {
+      "reference_id": "R0020",
+      "role": "pronunciation",
+      "quality_tier": "A"
+    },
+    {
+      "reference_id": "R0020",
+      "role": "rights",
+      "quality_tier": "A"
+    },
+    {
+      "reference_id": "R0008",
+      "role": "lexical",
+      "quality_tier": "A"
+    },
+    {
+      "reference_id": "R0014",
+      "role": "lexical",
+      "quality_tier": "A"
+    },
+    {
+      "reference_id": "R0015",
+      "role": "lexical",
+      "quality_tier": "A"
+    },
+    {
+      "reference_id": "R0009",
+      "role": "lexical",
+      "quality_tier": "B"
+    },
+    {
+      "reference_id": "R0010",
+      "role": "lexical",
+      "quality_tier": "A"
+    }
+  ],
+  "lexical_verification": {
+    "status": "PASS",
+    "summary": "Target-term lexical meaning is directly attested by the registered lexical source; public copy is an original synthesis.",
+    "reference_ids": [
+      "R0018"
+    ]
+  },
+  "semantic_definition_and_boundaries": {
+    "status": "PASS",
+    "summary": "Duden supports deep/painful longing for an absent or distant person or thing; Scheibe et al. operationalize Sehnsucht as intense life-longing toward alternative states and realizations of life. The card does not collapse it into nostalgia or claim untranslatability.",
+    "reference_ids": [
+      "R0018",
+      "R0019"
+    ]
+  },
+  "cultural_context_review": {
+    "status": "PASS",
+    "summary": "The card treats Sehnsucht as a German lexical concept with a researched psychological use, not as an emotion exclusive to German speakers.",
+    "reference_ids": [
+      "R0018",
+      "R0019"
+    ]
+  },
+  "comparisons": {
+    "ko": {
+      "status": "PASS",
+      "near_terms": [
+        "그리움"
+      ],
+      "difference_note": "그리움은 떨어져 있거나 지나간 대상을 그리는 마음에서 가깝지만, Sehnsucht는 아직 실현되지 않은 삶의 가능성을 향한 강한 갈망까지 포함할 수 있다.",
+      "verification_note": "국립국어원 verifies 그리움; overlap, not equivalence.",
+      "reference_ids": [
+        "R0008"
+      ]
+    },
+    "en": {
+      "status": "PASS",
+      "near_terms": [
+        "longing",
+        "yearning"
+      ],
+      "difference_note": "longing·yearning은 강한 바람과 갈망을 나타내지만, 심리학의 Sehnsucht 연구는 대안적 삶의 상태와 실현 가능성까지 구조화해 다룬다.",
+      "verification_note": "Registered lexical sources verify longing/yearning; scholarly source supports life-longing boundary.",
+      "reference_ids": [
+        "R0014",
+        "R0015"
+      ]
+    },
+    "zh": {
+      "status": "PASS",
+      "near_terms": [
+        "思念"
+      ],
+      "difference_note": "思念은 사람이나 대상을 그리워하는 의미가 가깝지만, Sehnsucht의 잠재적 삶·미실현 상태에 대한 갈망 전체와 동일하지 않다.",
+      "verification_note": "Registered lexical source verifies 思念; no one-to-one claim.",
+      "reference_ids": [
+        "R0009"
+      ]
+    },
+    "ja": {
+      "status": "PASS",
+      "near_terms": [
+        "恋しい"
+      ],
+      "difference_note": "恋しさ는 떨어진 사람·장소·사물을 그리워하는 면이 가깝지만, Sehnsucht가 포괄할 수 있는 미실현 삶에 대한 열망 전체를 대체하지는 않는다.",
+      "verification_note": "Registered Japanese lexical source verifies 恋しい; nominal 恋しさ is used only as near-expression.",
+      "reference_ids": [
+        "R0010"
+      ]
+    }
+  },
+  "pronunciation_verification": {
+    "status": "PASS",
+    "ipa": "/ˈzeːnˌzʊxt/",
+    "locale": "de-DE",
+    "reference_ids": [
+      "R0020"
+    ],
+    "audio_asset_id": "A0006",
+    "notes": "Commons explicitly identifies term, IPA, native German speaker from Berlin, creator Jeuwre, own work, and CC BY-SA 4.0; local candidate is byte-identical to source."
+  },
+  "claim_source_map": [
+    {
+      "claim_id": "CL-001",
+      "claim": "Sehnsucht can denote deep and painful longing for absent/distant people or things.",
+      "reference_ids": [
+        "R0018"
+      ],
+      "evidence_locator": "Duden meaning.",
+      "public_safe": true
+    },
+    {
+      "claim_id": "CL-002",
+      "claim": "Psychology research has operationalized Sehnsucht as intense desire for alternative states and realizations of life.",
+      "reference_ids": [
+        "R0019"
+      ],
+      "evidence_locator": "Scheibe et al. abstract.",
+      "public_safe": true
+    },
+    {
+      "claim_id": "CL-003",
+      "claim": "Selected pronunciation is /ˈzeːnˌzʊxt/.",
+      "reference_ids": [
+        "R0020"
+      ],
+      "evidence_locator": "Commons description/audio metadata.",
+      "public_safe": true
+    }
+  ],
+  "relations": [],
+  "illustration_brief": {
+    "status": "PASS",
+    "summary": "Anonymous scene-first illustration; no national symbols, people, diagnostic cues, or stereotypes.",
+    "reference_ids": [
+      "R0018",
+      "R0019"
+    ]
+  },
+  "editorial_copy": {
+    "status": "PASS",
+    "summary": "Poetic line, scene, and reflection question are original, low-pressure, non-diagnostic, and stay inside the verified semantic boundary.",
+    "reference_ids": [
+      "R0018",
+      "R0019"
+    ]
+  },
+  "automated_gates": {
+    "schema": "PASS",
+    "evidence": "PASS",
+    "pronunciation": "PASS",
+    "cultural_humility": "PASS",
+    "rights": "PASS",
+    "privacy": "PASS"
+  },
+  "human_editorial_release": {
+    "status": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": "Machine gates passed. Human Editorial Release is intentionally blocked pending explicit user approval."
+  },
+  "changelog": [
+    {
+      "date": "2026-09-16",
+      "state": "RESEARCH",
+      "note": "Source-first lexical, scholarly, pronunciation, rights, and cross-language comparison research completed."
+    },
+    {
+      "date": "2026-09-16",
+      "state": "REVIEW_READY",
+      "note": "All automated gates declared PASS after local validation; Human Editorial Release remains PENDING."
+    }
+  ]
+}

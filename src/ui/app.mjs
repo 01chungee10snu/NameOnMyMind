@@ -101,8 +101,15 @@ function renderCard(catalog, card, manifest, storage) {
     audio.hidden=false; audio.src=`./${audioAsset.path}`; attribution.replaceChildren();
     const label=document.createElement('span'); label.textContent=`${audioAsset.attribution||'발음 음원'} · `; attribution.append(label);
     if(audioAsset.source_url){ attribution.append(safeExternalLink(audioAsset.source_url,'원본 음원')); attribution.append(document.createTextNode(' · ')); }
-    const licenseUrl=/CC BY-SA 4\.0/i.test(audioAsset.license_or_rights_basis||'')?'https://creativecommons.org/licenses/by-sa/4.0/':null;
-    if(licenseUrl) attribution.append(safeExternalLink(licenseUrl,'CC BY-SA 4.0 라이선스')); else attribution.append(document.createTextNode(audioAsset.license_or_rights_basis||'권리 정보 확인 필요'));
+    const rights=audioAsset.license_or_rights_basis||'';
+    const licenseOptions=[
+      [/CC BY-SA 4\.0/i,'https://creativecommons.org/licenses/by-sa/4.0/','CC BY-SA 4.0 라이선스'],
+      [/CC BY-SA 3\.0/i,'https://creativecommons.org/licenses/by-sa/3.0/','CC BY-SA 3.0 라이선스'],
+      [/CC BY-SA 2\.5/i,'https://creativecommons.org/licenses/by-sa/2.5/','CC BY-SA 2.5 라이선스'],
+      [/CC0 1\.0/i,'https://creativecommons.org/publicdomain/zero/1.0/','CC0 1.0 권리 정보'],
+    ];
+    const license=licenseOptions.find(([pattern])=>pattern.test(rights));
+    if(license) attribution.append(safeExternalLink(license[1],license[2])); else attribution.append(document.createTextNode(rights||'권리 정보 확인 필요'));
   } else { audio.hidden=true; attribution.textContent='검증된 발음 음원을 사용할 수 없습니다.'; }
 
   markViewed(storage,card.card_id);
