@@ -1,9 +1,16 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "1.1.0",
   "release_mode": "PUBLIC_LOCAL_BUILD",
   "external_publish_authorized": false,
-  "snapshot_version": "f8e05b710e2c5f76",
+  "snapshot_version": "3c575289c7bd749c",
   "daily_seed": "nameonmymind-public-v1",
   "card_count": 1,
+  "card_documents": [
+    "./cards/C0001.json"
+  ],
+  "relations_location": "./relations.json",
+  "references_location": "./references.json",
+  "assets_location": "./assets.json",
+  "share_asset_base": "./assets/media/share/",
   "generated_from": "human-released approved editorial source"
 }

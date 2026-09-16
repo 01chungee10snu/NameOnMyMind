@@ -12,7 +12,9 @@
     "check:privacy": "node scripts/check-private-leakage.mjs",
     "check:g1": "npm run validate:g1 && npm run build:public && npm run test:g1 && npm run check:privacy",
     "test:g2": "node --test tests/g2",
-    "check:g2": "npm run check:g1 && npm run test:g2 && npm run check:privacy"
+    "check:g2": "npm run check:g1 && npm run test:g2 && npm run check:privacy",
+    "test:g3": "node --test tests/g3",
+    "check:g3": "npm run check:g2 && npm run test:g3 && npm run check:privacy"
   },
   "devDependencies": {
     "ajv": "8.20.0",

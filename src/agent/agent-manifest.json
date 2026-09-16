@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0.0",
+  "product_name": "Name On My Mind",
+  "product_purpose": "검증된 언어·문화 근거를 바탕으로 이름 붙이기 어려운 마음의 표현을 탐색하는 비진단적 카드 경험",
+  "content_schema_version": "1.1.0",
+  "agent_contract_version": "1.1.0",
+  "data_snapshot_version": "__BUILD_SNAPSHOT__",
+  "public_data_location": "./data/manifest.json",
+  "webmcp_capabilities": [
+    "get_card",
+    "get_daily_card",
+    "search_feelings",
+    "discover_by_feeling",
+    "get_related_feelings",
+    "get_references",
+    "get_verification_status"
+  ],
+  "card_id_policy": "Stable C#### concept IDs; revisions preserve card_id unless concept identity was wrong.",
+  "evidence_policy": "Public cards require validated lexical and scholarly evidence, pronunciation provenance, cultural review, rights checks and Human Editorial Release.",
+  "privacy_policy_summary": "Public tools expose validated public card data only. User-written local notes remain on-device and are not exposed to agents by default.",
+  "editorial_boundary": "Public agent tools are read-only and cannot mutate repositories, publication state, remote storage, or bypass editorial gates.",
+  "last_updated": "2026-09-16",
+  "external_publish_authorized": false,
+  "repository_write_authorized": false
+}

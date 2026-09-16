@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Name On My Mind 심벌</title>
+  <desc id="desc">둥근 카드 안에 부드러운 비대칭 윤곽과 작은 이름표 점이 있는 단색 심벌</desc>
+  <rect width="512" height="512" rx="112" fill="#f6f0e8"/>
+  <rect x="78" y="78" width="356" height="356" rx="86" fill="none" stroke="#2f2925" stroke-width="24"/>
+  <path d="M151 267c13-81 84-130 162-103 54 19 83 78 56 132-26 52-89 78-145 51-45-21-81-27-73-80Z" fill="none" stroke="#2f2925" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="407" cy="194" r="29" fill="#c97d6a" stroke="#2f2925" stroke-width="14"/>
+</svg>

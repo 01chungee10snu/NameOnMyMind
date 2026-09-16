@@ -1,0 +1,20 @@
+{
+  "id": "./",
+  "name": "Name On My Mind",
+  "short_name": "NameOnMyMind",
+  "description": "이름 붙이기 어려운 마음의 표현을 검증된 근거와 함께 천천히 살펴보는 카드 경험",
+  "lang": "ko",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f6f0e8",
+  "theme_color": "#f4eee6",
+  "icons": [
+    {
+      "src": "./assets/brand/app-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

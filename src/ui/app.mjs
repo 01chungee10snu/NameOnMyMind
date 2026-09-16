@@ -130,9 +130,19 @@ async function main() {
   const tagRoot=qs('#guided-tags'); for(const tag of tags){ const button=document.createElement('button'); button.type='button'; button.className='tag-button'; button.textContent=tag; button.addEventListener('click',()=>renderResultList(qs('#search-results'),discoverByTag(catalog,tag))); tagRoot.append(button); }
   qs('#search-form').addEventListener('submit',(event)=>{ event.preventDefault(); renderResultList(qs('#search-results'),searchCards(catalog,qs('#search-input').value)); });
 
-  const api=createReadOnlyAgentApi({catalog,clock:()=>new Date(),dailySeed:manifest.daily_seed});
-  globalThis.NameOnMyMind=Object.freeze({domain:Object.freeze({getCard:(id)=>getCard(catalog,id),getDailyCard:()=>resolveDailyCard(catalog,{storage,date:new Date(),seed:manifest.daily_seed}).card,search:(q)=>searchCards(catalog,q)}),agent:api});
+  const dailyResolver=()=>resolveDailyCard(catalog,{storage,date:new Date(),seed:manifest.daily_seed}).card;
+  const api=createReadOnlyAgentApi({catalog,clock:()=>new Date(),dailySeed:manifest.daily_seed,dailyResolver,dataSnapshotVersion:manifest.snapshot_version});
+  globalThis.NameOnMyMind=Object.freeze({domain:Object.freeze({getCard:(id)=>getCard(catalog,id),getDailyCard:dailyResolver,search:(q)=>searchCards(catalog,q)}),agent:api});
   registerWebMcpReadOnlyTools({api});
+
+  const freshness=qs('#freshness-status');
+  const syncFreshness=()=>{ if(freshness) freshness.textContent=`콘텐츠 스냅샷 ${manifest.snapshot_version}${navigator.onLine?'':' · 오프라인 — 마지막 검증본을 표시합니다.'}`; };
+  syncFreshness();
+  globalThis.addEventListener('online',syncFreshness);
+  globalThis.addEventListener('offline',syncFreshness);
+  if('serviceWorker' in navigator){
+    navigator.serviceWorker.register('./service-worker.js').catch(()=>{ if(freshness) freshness.textContent=`콘텐츠 스냅샷 ${manifest.snapshot_version} · 오프라인 기능을 사용할 수 없지만 온라인 읽기는 계속됩니다.`; });
+  }
 }
 
 main().catch((error)=>{ console.error(error); const app=qs('#main-content'); if(app) app.innerHTML='<section class="error-state" role="alert"><h1>카드를 불러오지 못했습니다</h1><p>검증된 로컬 데이터를 다시 확인해 주세요.</p></section>'; });

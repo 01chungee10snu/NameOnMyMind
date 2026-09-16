@@ -39,11 +39,13 @@ test('agent get_daily_card uses identical domain semantics to daily UI selection
   assert.deepEqual(api.get_daily_card().data, toPublicCardSemantics(getDailyCard(catalog, { date: fixedDate, seed })));
 });
 
-test('WebMCP registration is read-only and contains G1 tools only', () => {
+test('WebMCP registration preserves G1 read-only card tools as the agent surface expands', () => {
   const api = createReadOnlyAgentApi({ catalog, clock: () => fixedDate, dailySeed: seed });
   const captured = [];
   const result = registerWebMcpReadOnlyTools({ api, modelContext: { registerTool(tool) { captured.push(tool); } } });
-  assert.deepEqual(result.registered, ['get_card', 'get_daily_card']);
+  assert.equal(result.registered.includes('get_card'), true);
+  assert.equal(result.registered.includes('get_daily_card'), true);
   assert.equal(captured.every((tool) => tool.annotations?.readOnlyHint === true), true);
+  assert.equal(captured.every((tool) => tool.annotations?.consequentialHint === false), true);
   assert.equal(captured.some((tool) => /write|publish|repository mutation/i.test(tool.name)), false);
 });

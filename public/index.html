@@ -6,6 +6,7 @@
   <meta name="theme-color" content="#f4eee6" />
   <meta name="description" content="Name On My Mind — 이름 붙이기 어려운 마음을 천천히 만나보는 카드" />
   <title>Name On My Mind</title>
+  <link rel="manifest" href="./manifest.webmanifest" />
   <link rel="stylesheet" href="./assets/css/styles.css" />
 </head>
 <body>
@@ -84,7 +85,10 @@
     </section>
   </main>
 
-  <footer class="site-footer"><p>마음을 진단하지 않습니다. 서로 다른 언어가 마음을 어떻게 이름 붙이는지 천천히 살펴봅니다.</p></footer>
+  <footer class="site-footer">
+    <p>마음을 진단하지 않습니다. 서로 다른 언어가 마음을 어떻게 이름 붙이는지 천천히 살펴봅니다.</p>
+    <p id="freshness-status" class="fine-print" role="status" aria-live="polite"></p>
+  </footer>
   <script type="module" src="./src/ui/app.mjs"></script>
 </body>
 </html>

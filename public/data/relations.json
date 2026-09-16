@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0.0",
+  "snapshot_version": "3c575289c7bd749c",
+  "relations": [
+    {
+      "card_id": "C0001",
+      "similar_to": [],
+      "partially_overlaps": [],
+      "contrasts_with": [],
+      "broader_than": [],
+      "narrower_than": [],
+      "often_confused_with": []
+    }
+  ]
+}
