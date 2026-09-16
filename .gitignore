@@ -1,0 +1,12 @@
+# Local-only product discovery / interview records
+/private/interviews/
+
+# Local COS orchestration runtime artifacts
+/reports/harness/cos_goal_chain/
+
+# Python caches
+__pycache__/
+*.pyc
+
+# macOS
+.DS_Store

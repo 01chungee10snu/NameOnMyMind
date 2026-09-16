@@ -1,0 +1,284 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:nameonmymind:schema:card:v1",
+  "title": "NameOnMyMind Public Card v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "card_id",
+    "concept_version",
+    "status",
+    "term",
+    "experience_type",
+    "front",
+    "meaning",
+    "comparisons",
+    "semantic_tags",
+    "relations",
+    "reference_ids",
+    "verification",
+    "assets"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "card_id": {
+      "type": "string",
+      "pattern": "^C[0-9]{4}$"
+    },
+    "concept_version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+    },
+    "status": {
+      "enum": [
+        "PUBLISHED",
+        "REVISED"
+      ]
+    },
+    "term": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "original",
+        "language_code",
+        "language_name",
+        "ipa"
+      ],
+      "properties": {
+        "original": {
+          "type": "string",
+          "minLength": 1
+        },
+        "language_code": {
+          "type": "string",
+          "minLength": 2
+        },
+        "language_name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "ipa": {
+          "type": "string"
+        }
+      }
+    },
+    "experience_type": {
+      "enum": [
+        "emotion",
+        "feeling",
+        "mood",
+        "psychological_state",
+        "relational_experience",
+        "mixed_experience"
+      ]
+    },
+    "front": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "poetic_line",
+        "scene",
+        "reflection_question"
+      ],
+      "properties": {
+        "poetic_line": {
+          "type": "string",
+          "minLength": 1
+        },
+        "scene": {
+          "type": "string",
+          "minLength": 1
+        },
+        "reflection_question": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "meaning": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "verified_definition",
+        "usage_context"
+      ],
+      "properties": {
+        "verified_definition": {
+          "type": "string",
+          "minLength": 1
+        },
+        "usage_context": {
+          "type": "string",
+          "minLength": 1
+        },
+        "cultural_context": {
+          "type": "string"
+        },
+        "etymology": {
+          "type": "string"
+        },
+        "usage_examples": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "comparisons": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "ko",
+        "en",
+        "zh",
+        "ja"
+      ],
+      "properties": {
+        "ko": {
+          "$ref": "#/$defs/comparison"
+        },
+        "en": {
+          "$ref": "#/$defs/comparison"
+        },
+        "zh": {
+          "$ref": "#/$defs/comparison"
+        },
+        "ja": {
+          "$ref": "#/$defs/comparison"
+        }
+      }
+    },
+    "semantic_tags": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "relations": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "similar_to": {
+          "$ref": "#/$defs/cardIdArray"
+        },
+        "partially_overlaps": {
+          "$ref": "#/$defs/cardIdArray"
+        },
+        "contrasts_with": {
+          "$ref": "#/$defs/cardIdArray"
+        },
+        "broader_than": {
+          "$ref": "#/$defs/cardIdArray"
+        },
+        "narrower_than": {
+          "$ref": "#/$defs/cardIdArray"
+        },
+        "often_confused_with": {
+          "$ref": "#/$defs/cardIdArray"
+        }
+      }
+    },
+    "reference_ids": {
+      "type": "array",
+      "minItems": 2,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "pattern": "^R[0-9]{4,}$"
+      }
+    },
+    "verification": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "last_reviewed_at",
+        "lexical_source_count",
+        "scholarly_source_count"
+      ],
+      "properties": {
+        "status": {
+          "const": "VERIFIED"
+        },
+        "last_reviewed_at": {
+          "type": "string",
+          "format": "date"
+        },
+        "lexical_source_count": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "scholarly_source_count": {
+          "type": "integer",
+          "minimum": 1
+        }
+      }
+    },
+    "assets": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "illustration_asset_id",
+        "share_asset_id",
+        "audio_asset_id",
+        "alt_text"
+      ],
+      "properties": {
+        "illustration_asset_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "share_asset_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "audio_asset_id": {
+          "type": "string"
+        },
+        "alt_text": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    }
+  },
+  "$defs": {
+    "comparison": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "near_terms",
+        "difference_note"
+      ],
+      "properties": {
+        "near_terms": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "difference_note": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "cardIdArray": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "pattern": "^C[0-9]{4}$"
+      }
+    }
+  }
+}
