@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "goal": "G3",
+  "goal_name": "Agent/PWA parity",
+  "status": "COMPLETE",
+  "recorded_at": "2026-09-16",
+  "tested_commit": "eb242e1b20227c2fe0d15fd189905c8a3d5d288f",
+  "branch": "main",
+  "public_snapshot": "3c575289c7bd749c",
+  "external_publish_authorized": false,
+  "repository_push_authorized": false,
+  "exit_criteria": [
+    {
+      "criterion": "versioned public machine-readable data exist",
+      "status": "PASS",
+      "evidence": "Snapshot-versioned manifest/index/reference/assets/relations plus stable data/cards/C0001.json are generated from approved source."
+    },
+    {
+      "criterion": "agent-manifest.json exists",
+      "status": "PASS",
+      "evidence": "Root public agent-manifest.json records content/agent versions, capabilities, privacy/editorial boundaries, snapshot and false write/publish authority."
+    },
+    {
+      "criterion": "read-mostly WebMCP tools registered behind adapter",
+      "status": "PASS",
+      "evidence": "7 same-origin default tools behind src/agent/webmcp-adapter.mjs; all readOnlyHint=true, consequentialHint=false, no local-reflection/write/publication tool."
+    },
+    {
+      "criterion": "UI-Agent semantic parity PASS",
+      "status": "PASS",
+      "evidence": "Daily resolver is shared with same-day local freeze; search/relations and card/reference semantics use shared domain modules; conformance tests PASS."
+    },
+    {
+      "criterion": "reflection body default agent exposure 0",
+      "status": "PASS",
+      "evidence": "Agent adapter has no reflection read/write API and public machine bundle excludes user local notes; leakage scan 0."
+    },
+    {
+      "criterion": "PWA manifest/service-worker/cache versioning PASS",
+      "status": "PASS",
+      "evidence": "manifest.webmanifest and service-worker.js generated; shell/content/asset caches are namespaced by validated snapshot 3c575289c7bd749c."
+    },
+    {
+      "criterion": "graceful offline fallback works",
+      "status": "PASS",
+      "evidence": "Service-worker navigation fallback uses cached shell/offline page; online UI remains functional if registration fails and freshness status signals offline state."
+    },
+    {
+      "criterion": "share asset path works",
+      "status": "PASS",
+      "evidence": "Public asset registry resolves C0001 share asset to stable assets/media/share/C0001.svg and file exists in public build."
+    },
+    {
+      "criterion": "contract conformance PASS",
+      "status": "PASS",
+      "evidence": "Detached clean checkout at eb242e1: G1 12/12 + G2 5/5 + G3 8/8, leakage 0, npm audit 0, HTTP smoke PASS, git clean."
+    }
+  ],
+  "verification_summary": {
+    "g1": "12/12 PASS",
+    "g2": "5/5 PASS",
+    "g3": "8/8 PASS",
+    "private_leakage": 0,
+    "npm_vulnerabilities": 0,
+    "local_http_smoke": "PASS",
+    "clean_checkout": "PASS"
+  },
+  "sha256": {
+    "src/agent/webmcp-adapter.mjs": "21bf996f9161e693c751992042b5373231c90266c647f9344b9a3f59db4b8e6c",
+    "src/agent/agent-manifest.json": "1119ca3131df01ee430667f16a96dce3bcb39cb8d86785eb7db49d8ff9a04fc4",
+    "src/pwa/manifest.webmanifest": "afa3c7026db3026616f15150bc92a201a41e762b08938551b6540d53eabdfa92",
+    "src/pwa/service-worker.template.js": "aea101dcbdeffb517d127daa3d905ef5c65bc89b43be795b03b9f71dd3bdc324",
+    "src/pwa/offline.html": "dececcd5775f3506377aae82735b0e2fcb6b5fe973d69569712a711ba7feb4cd",
+    "assets/brand/app-icon.svg": "da9acf16edf791676c25df5407c92b8128e3313c7352afbe8bfdbd96440ec8bc",
+    "public/BUILD_MANIFEST.json": "6d9c42feac5366acb00f775a1ff912dca01200821797e9da7feece896cdd2021",
+    "public/agent-manifest.json": "a452629bcbce5312417c4f391c77b5c6f3a1593f97e384ab344973d466c62199",
+    "public/service-worker.js": "aa01012b43bfcfee5d1da4cf275386775908314ebd316821e9ea17f983b58250"
+  }
+}
