@@ -38,6 +38,16 @@ test('daily card treats generated imagery as background-only while text and cont
   assert.match(app, /setProperty\('--card-art-image'/);
 });
 
+test('editorial mobile art direction keeps the image dominant and supporting UI visually restrained', () => {
+  const css = readText('assets/css/styles.css');
+  assert.match(css, /\.card-body\s*\{[\s\S]*margin:\s*-16px 10px 0/);
+  assert.match(css, /\.language\s*\{[\s\S]*border-radius:\s*999px[\s\S]*backdrop-filter/);
+  assert.match(css, /\.card-actions \.primary-action\s*\{\s*flex:\s*1 1 100%/);
+  assert.match(css, /\.detail section\s*\{[\s\S]*border-top:\s*1px solid[\s\S]*background:\s*transparent/);
+  assert.match(css, /\.primary-nav\s*\{[\s\S]*bottom:\s*calc\(8px \+ env\(safe-area-inset-bottom\)\)[\s\S]*border-radius:\s*25px[\s\S]*backdrop-filter:\s*blur\(26px\)/);
+  assert.match(css, /@media \(prefers-reduced-motion: no-preference\)[\s\S]*art-settle[\s\S]*copy-rise/);
+});
+
 test('mobile-first shell uses a constrained app canvas, safe-area bottom navigation, and image-led discovery cards', () => {
   const html = readText('src/ui/index.html');
   const css = readText('assets/css/styles.css');

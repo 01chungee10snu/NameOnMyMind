@@ -2,7 +2,7 @@
   "schema_version": "1.1.0",
   "release_mode": "PUBLIC_LOCAL_BUILD",
   "external_publish_authorized": false,
-  "snapshot_version": "bc1e74d4143c17ff",
+  "snapshot_version": "48229d84c2b85de7",
   "content_snapshot_version": "867d91c0737e29c7",
   "daily_seed": "nameonmymind-public-v1",
   "card_count": 5,

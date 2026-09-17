@@ -3,7 +3,7 @@
   "artifact_type": "LOCAL_PUBLIC_BUILD",
   "deployable": true,
   "external_publish_authorized": false,
-  "snapshot_version": "bc1e74d4143c17ff",
+  "snapshot_version": "48229d84c2b85de7",
   "content_snapshot_version": "867d91c0737e29c7",
   "card_ids": [
     "C0001",
@@ -17,9 +17,9 @@
     "manifest": "manifest.webmanifest",
     "service_worker": "service-worker.js",
     "offline_fallback": "offline.html",
-    "shell_cache": "nomm-shell-v1-bc1e74d4143c17ff",
-    "content_cache": "nomm-content-bc1e74d4143c17ff",
-    "asset_cache": "nomm-assets-v1-bc1e74d4143c17ff"
+    "shell_cache": "nomm-shell-v1-48229d84c2b85de7",
+    "content_cache": "nomm-content-48229d84c2b85de7",
+    "asset_cache": "nomm-assets-v1-48229d84c2b85de7"
   },
   "input_sha256": {
     "card_schema": "8e29503186d27440efe2ee12dba84c964879c57be0b6ebb16907d743bc9cf17e",
@@ -43,7 +43,7 @@
     "runtime_src_pwa_manifest.webmanifest": "afa3c7026db3026616f15150bc92a201a41e762b08938551b6540d53eabdfa92",
     "runtime_src_pwa_service-worker.template.js": "aea101dcbdeffb517d127daa3d905ef5c65bc89b43be795b03b9f71dd3bdc324",
     "runtime_src_pwa_offline.html": "dececcd5775f3506377aae82735b0e2fcb6b5fe973d69569712a711ba7feb4cd",
-    "runtime_assets_css_styles.css": "d16b7967e95d118a592250a1d9116763a2105a05051ee14f47b009b0de53ecfd",
+    "runtime_assets_css_styles.css": "8e84321d1a4531277df27f6acc7cdc0ac2b868430afe166bc7d467f94a9df998",
     "runtime_assets_brand_app-icon.svg": "da9acf16edf791676c25df5407c92b8128e3313c7352afbe8bfdbd96440ec8bc"
   },
   "excluded_source_classes": [
