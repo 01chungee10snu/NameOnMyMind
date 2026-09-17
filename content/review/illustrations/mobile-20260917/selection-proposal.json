@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.0.0",
+  "review_set": "mobile-20260917",
+  "status": "HUMAN_APPROVAL_PENDING",
+  "selection_basis": "Automated provenance/dimension/hash checks plus prompt-to-Flow-accessibility-description fit. This proposal is not Human Editorial Release and must not mutate content/approved/assets.json before explicit human approval.",
+  "proposed": {
+    "C0001": {
+      "candidate": "C0001-v2",
+      "reason": "The approved illustration brief explicitly requires an empty chair, a folded letter, and a distant horizon. Flow describes v2 as 'Empty chair with letter by window', making it a closer observable fit than v1 ('Empty chair by open window')."
+    },
+    "C0002": {
+      "candidate": "C0002-v1",
+      "reason": "Flow describes the candidate as 'Open window with map and suitcase', directly matching the approved scene brief without national-symbol cues in the generated description."
+    },
+    "C0003": {
+      "candidate": "C0003-v1",
+      "reason": "Flow describes the candidate as 'Dominoes tipping on tabletop', directly matching the object-only Schadenfreude brief and avoiding a depicted victim in the generated description."
+    },
+    "C0004": {
+      "candidate": "C0004-v1",
+      "reason": "Flow describes the candidate as an abstract still life representing comparison, consistent with the approved non-person social-comparison composition."
+    },
+    "C0005": {
+      "candidate": "C0005-v1",
+      "reason": "Flow describes the candidate as 'Balanced stones with soft glow', directly matching the approved object-only quiet-sufficiency motif."
+    }
+  },
+  "approval_effect_if_accepted": "Only after explicit human approval: replace the five approved illustration asset paths/SHA/provenance with approved generated-image assets, update alt text if needed after human visual inspection, rebuild public, run full regression/privacy checks, and then consider repository push separately."
+}

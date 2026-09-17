@@ -60,6 +60,22 @@ test('each published canary card resolves to its own approved illustration', () 
     assert.ok(asset, `${card.card_id} illustration missing`);
     assert.equal(asset.asset_type, 'illustration');
     assert.equal(asset.review_status, 'HUMAN_APPROVED');
+    assert.equal(asset.path.includes('/candidates/'), false, `${card.card_id} review candidate leaked into approved registry`);
     assert.equal(fs.existsSync(path.join(ROOT, asset.path)), true);
   }
+});
+
+test('Flow-generated mobile illustration candidates remain review-only and cannot enter public build before human approval', () => {
+  const review = readJson('content/review/illustrations/mobile-20260917/manifest.json');
+  const proposal = readJson('content/review/illustrations/mobile-20260917/selection-proposal.json');
+  assert.equal(review.status, 'HUMAN_REVIEW_REQUIRED');
+  assert.equal(proposal.status, 'HUMAN_APPROVAL_PENDING');
+  const candidates = Object.values(review.cards).flatMap((row) => row.candidate_files || []);
+  assert.equal(candidates.length, 6);
+  for (const candidate of candidates) {
+    assert.match(candidate.path, /^assets\/media\/illustrations\/candidates\/mobile-20260917\//);
+    assert.equal(fs.existsSync(path.join(ROOT, candidate.path)), true);
+  }
+  const publicCandidateRoot = path.join(ROOT, 'public/assets/media/illustrations/candidates');
+  assert.equal(fs.existsSync(publicCandidateRoot), false, 'review candidates must not be copied to public output');
 });
