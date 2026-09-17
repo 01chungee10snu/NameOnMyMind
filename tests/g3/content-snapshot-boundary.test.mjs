@@ -15,7 +15,9 @@ test('public build separates content snapshot from runtime/UI snapshot', () => {
     .sort(([a], [b]) => a.localeCompare(b));
   const seed = contentInputs.map(([key, value]) => `${key}:${value}`).join('|');
   const expected = crypto.createHash('sha256').update(seed).digest('hex').slice(0, 16);
+  const baseline = readJson('content/approved/public-content-baseline.json');
   assert.equal(build.content_snapshot_version, expected);
-  assert.equal(build.content_snapshot_version, '4952b4fe18c503ee');
+  assert.equal(build.content_snapshot_version, baseline.content_snapshot_version);
+  assert.equal(baseline.approval_record, 'content/approved/illustration-background-release-20260917.json');
   assert.notEqual(build.snapshot_version, build.content_snapshot_version);
 });

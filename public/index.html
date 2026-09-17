@@ -31,23 +31,28 @@
   <main class="page-shell" id="main-content">
     <section class="space" id="space-today" data-space-panel="today">
       <section class="daily-shell" id="daily-card" aria-labelledby="card-term">
-        <div class="card-hero">
-          <div id="card-illustration" class="card-illustration" aria-live="off"></div>
+        <div class="card-hero" data-visual-contract="generated-background-dom-overlay">
+          <div id="card-illustration" class="card-visual-background" aria-hidden="true"></div>
           <div class="card-hero-scrim" aria-hidden="true"></div>
           <div class="card-hero-content">
-            <p class="today-marker">오늘의 마음</p>
-            <div class="term-row">
-              <h1 id="card-term" class="term"></h1>
-              <p id="card-language" class="language"></p>
+            <div class="hero-topbar">
+              <p class="today-marker">오늘의 마음</p>
+              <div class="hero-actions" aria-label="카드 빠른 동작">
+                <button type="button" id="pronunciation-button" class="hero-action" aria-label="발음 듣기" hidden><span aria-hidden="true">◖</span></button>
+                <button type="button" id="favorite-button" class="hero-action" aria-label="마음에 담기" aria-pressed="false"><span id="favorite-icon" aria-hidden="true">♡</span></button>
+              </div>
             </div>
-            <p id="poetic-line" class="poetic-line"></p>
+            <div class="hero-copy">
+              <div class="term-row">
+                <h1 id="card-term" class="term"></h1>
+                <p id="card-language" class="language"></p>
+              </div>
+              <p id="poetic-line" class="poetic-line"></p>
+            </div>
+            <p id="card-background-description" class="sr-only"></p>
           </div>
         </div>
         <div class="card-body">
-          <div class="mobile-card-tools" aria-label="카드 빠른 동작">
-            <button type="button" id="pronunciation-button" class="icon-action" hidden><span aria-hidden="true">◖</span> 발음 듣기</button>
-            <button type="button" id="favorite-button" class="icon-action" aria-pressed="false"><span aria-hidden="true">♡</span> 마음에 담기</button>
-          </div>
           <p class="question-kicker">오늘의 질문</p>
           <p id="reflection-question" class="reflection-question"></p>
           <div class="card-actions">

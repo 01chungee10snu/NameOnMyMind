@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0.0",
+  "content_snapshot_version": "867d91c0737e29c7",
+  "effective_at": "2026-09-17",
+  "reason": "Human-approved mobile background illustration release for C0001-C0005 plus corresponding background alt metadata. Linguistic/editorial evidence and public card IDs remain unchanged.",
+  "approval_record": "content/approved/illustration-background-release-20260917.json",
+  "public_card_ids": [
+    "C0001",
+    "C0002",
+    "C0003",
+    "C0004",
+    "C0005"
+  ],
+  "boundary": "Future G5 research must not change this content snapshot unless another explicit approved public-content release updates this baseline."
+}

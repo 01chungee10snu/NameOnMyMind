@@ -1,0 +1,55 @@
+{
+  "schema_version": "1.0.0",
+  "decision": "APPROVED_FOR_BACKGROUND_LAYER",
+  "reviewed_at": "2026-09-17",
+  "review_scope": {
+    "approved": "Generated-image visual suitability as mobile card backgrounds and the background-only rendering architecture.",
+    "not_approved_by_this_decision": [
+      "foreign-language semantics",
+      "translations",
+      "pronunciation",
+      "cultural interpretation"
+    ],
+    "editorial_evidence": "Existing source-first G4 evidence remains authoritative for linguistic/editorial content."
+  },
+  "layer_contract": {
+    "generated_raster": "Background visual only; contains no application typography, buttons, labels, chips, icons, gradients, or interactive controls.",
+    "text": "Rendered separately as DOM text.",
+    "ui_objects": "Rendered separately as HTML/CSS/JS controls and decorative UI layers.",
+    "accessibility_description": "Stored separately as card metadata and rendered outside the raster image."
+  },
+  "selected": {
+    "C0001": {
+      "asset_id": "A0001",
+      "candidate": "C0001-v2",
+      "canonical_path": "assets/media/illustrations/generated/C0001.jpg",
+      "flow_content_id": "c5ceebb0-2bef-4713-9bc6-d200e6b3d7c8"
+    },
+    "C0002": {
+      "asset_id": "A0004",
+      "candidate": "C0002-v1",
+      "canonical_path": "assets/media/illustrations/generated/C0002.jpg",
+      "flow_content_id": "e073bfb4-23a2-4212-a9a6-5516dfcdbbe0"
+    },
+    "C0003": {
+      "asset_id": "A0007",
+      "candidate": "C0003-v1",
+      "canonical_path": "assets/media/illustrations/generated/C0003.jpg",
+      "flow_content_id": "be347562-139d-4821-a5a4-afb6fe8f280d"
+    },
+    "C0004": {
+      "asset_id": "A0010",
+      "candidate": "C0004-v1",
+      "canonical_path": "assets/media/illustrations/generated/C0004.jpg",
+      "flow_content_id": "b9509071-2b78-46ea-9157-3a003be83aba"
+    },
+    "C0005": {
+      "asset_id": "A0013",
+      "candidate": "C0005-v1",
+      "canonical_path": "assets/media/illustrations/generated/C0005.jpg",
+      "flow_content_id": "e9d302cf-b8e8-4841-94c4-85f655ec9da0"
+    }
+  },
+  "supersedes_background_only": true,
+  "note": "Project owner reported no major visual issue and clarified that generated imagery must function only as the background; every textual or UI object must remain an independent overlay layer."
+}

@@ -104,12 +104,25 @@ function renderCard(catalog, card, manifest, storage) {
 
   const illustrationAsset = getCardAssets(catalog, card.card_id).find((asset) => asset.asset_type === 'illustration');
   const illustrationRoot = qs('#card-illustration'); illustrationRoot.replaceChildren();
+  const backgroundDescription = qs('#card-background-description');
+  backgroundDescription.textContent = card.assets.alt_text;
   if (illustrationAsset) {
     const illustrationUrl = `./${illustrationAsset.path}`;
     const ambientIllustrationUrl = new URL(illustrationUrl, document.baseURI).href;
-    const img=document.createElement('img'); img.className='card-hero-image'; img.src=illustrationUrl; img.alt=card.assets.alt_text; img.width=1200; img.height=900; img.decoding='async'; img.fetchPriority='high'; illustrationRoot.append(img);
+    const img=document.createElement('img');
+    img.className='card-background-image';
+    img.src=illustrationUrl;
+    img.alt='';
+    img.setAttribute('aria-hidden','true');
+    img.setAttribute('role','presentation');
+    img.width=1200;
+    img.height=896;
+    img.decoding='async';
+    img.fetchPriority='high';
+    illustrationRoot.append(img);
     document.documentElement.style.setProperty('--card-art-image', `url("${ambientIllustrationUrl}")`);
   } else {
+    backgroundDescription.textContent = '';
     document.documentElement.style.removeProperty('--card-art-image');
   }
 
@@ -126,8 +139,14 @@ function renderCard(catalog, card, manifest, storage) {
   if(audioAsset){
     audio.hidden=false; audio.src=`./${audioAsset.path}`; attribution.replaceChildren();
     pronunciationButton.hidden=false;
-    pronunciationButton.onclick=()=>{ audio.currentTime=0; audio.play().catch(()=>{}); pronunciationButton.textContent='◖ 재생 중…'; };
-    audio.addEventListener('ended',()=>{ pronunciationButton.textContent='◖ 발음 듣기'; });
+    pronunciationButton.setAttribute('aria-label','발음 듣기');
+    pronunciationButton.onclick=()=>{
+      audio.currentTime=0;
+      pronunciationButton.dataset.playing='true';
+      pronunciationButton.setAttribute('aria-label','발음 재생 중');
+      audio.play().catch(()=>{ pronunciationButton.dataset.playing='false'; pronunciationButton.setAttribute('aria-label','발음 듣기'); });
+    };
+    audio.addEventListener('ended',()=>{ pronunciationButton.dataset.playing='false'; pronunciationButton.setAttribute('aria-label','발음 듣기'); });
     const label=document.createElement('span'); label.textContent=`${audioAsset.attribution||'발음 음원'} · `; attribution.append(label);
     if(audioAsset.source_url){ attribution.append(safeExternalLink(audioAsset.source_url,'원본 음원')); attribution.append(document.createTextNode(' · ')); }
     const rights=audioAsset.license_or_rights_basis||'';
@@ -142,7 +161,13 @@ function renderCard(catalog, card, manifest, storage) {
   } else { audio.hidden=true; pronunciationButton.hidden=true; attribution.textContent='검증된 발음 음원을 사용할 수 없습니다.'; }
 
   markViewed(storage,card.card_id);
-  const favoriteButton=qs('#favorite-button'); const syncFavorite=()=>{ const active=listFavorites(storage).includes(card.card_id); favoriteButton.setAttribute('aria-pressed',String(active)); const icon=document.createElement('span'); icon.setAttribute('aria-hidden','true'); icon.textContent=active?'♥':'♡'; favoriteButton.replaceChildren(icon,document.createTextNode(active?' 담아 둔 마음':' 마음에 담기')); }; syncFavorite();
+  const favoriteButton=qs('#favorite-button'); const favoriteIcon=qs('#favorite-icon');
+  const syncFavorite=()=>{
+    const active=listFavorites(storage).includes(card.card_id);
+    favoriteButton.setAttribute('aria-pressed',String(active));
+    favoriteButton.setAttribute('aria-label',active?'마음에서 빼기':'마음에 담기');
+    favoriteIcon.textContent=active?'♥':'♡';
+  }; syncFavorite();
   favoriteButton.onclick=()=>{ toggleFavorite(storage,card.card_id); syncFavorite(); renderCollection(catalog,storage); };
   const note=qs('#reflection-note'); note.value=readReflection(storage,card.card_id);
   qs('#save-reflection').onclick=()=>{ saveReflection(storage,card.card_id,note.value); qs('#reflection-status').textContent='이 기기에 저장했습니다.'; };

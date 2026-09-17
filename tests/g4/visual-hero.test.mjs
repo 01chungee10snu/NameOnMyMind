@@ -8,21 +8,32 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..')
 const readText = (rel) => fs.readFileSync(path.join(ROOT, rel), 'utf8');
 const readJson = (rel) => JSON.parse(readText(rel));
 
-test('daily card uses a full-bleed illustration hero with semantic text overlay', () => {
+test('daily card treats generated imagery as background-only while text and controls remain DOM overlays', () => {
   const html = readText('src/ui/index.html');
   const css = readText('assets/css/styles.css');
-  assert.match(html, /class="card-hero"/);
-  assert.match(html, /id="card-illustration" class="card-illustration"/);
+  const app = readText('src/ui/app.mjs');
+  assert.match(html, /class="card-hero" data-visual-contract="generated-background-dom-overlay"/);
+  assert.match(html, /id="card-illustration" class="card-visual-background" aria-hidden="true"/);
   assert.match(html, /class="card-hero-scrim" aria-hidden="true"/);
   assert.match(html, /class="card-hero-content"/);
+  assert.match(html, /class="hero-actions"/);
+  assert.match(html, /id="pronunciation-button" class="hero-action"/);
+  assert.match(html, /id="favorite-button" class="hero-action"/);
+  assert.match(html, /id="card-background-description" class="sr-only"/);
   assert.ok(html.indexOf('id="card-illustration"') < html.indexOf('id="card-term"'));
+  assert.ok(html.indexOf('id="favorite-button"') < html.indexOf('id="card-term"'));
   assert.ok(html.indexOf('id="card-term"') < html.indexOf('id="poetic-line"'));
   assert.match(css, /\.card-hero\s*\{[\s\S]*position:\s*relative/);
-  assert.match(css, /\.card-illustration\s*\{[\s\S]*position:\s*absolute/);
+  assert.match(css, /\.card-visual-background\s*\{[\s\S]*position:\s*absolute/);
+  assert.match(css, /\.card-background-image\s*\{[\s\S]*object-fit:\s*cover/);
   assert.match(css, /\.card-hero-scrim\s*\{[\s\S]*linear-gradient/);
+  assert.match(css, /\.hero-action\s*\{[\s\S]*backdrop-filter/);
   assert.match(css, /\.card-hero-content\s*\{[\s\S]*color:\s*#fffaf5/);
   assert.match(css, /var\(--card-art-image, none\)/);
-  const app = readText('src/ui/app.mjs');
+  assert.match(app, /img\.className='card-background-image'/);
+  assert.match(app, /img\.alt=''/);
+  assert.match(app, /img\.setAttribute\('aria-hidden','true'\)/);
+  assert.match(app, /backgroundDescription\.textContent = card\.assets\.alt_text/);
   assert.match(app, /new URL\(illustrationUrl, document\.baseURI\)\.href/);
   assert.match(app, /setProperty\('--card-art-image'/);
 });
@@ -45,7 +56,7 @@ test('mobile-first shell uses a constrained app canvas, safe-area bottom navigat
   assert.match(app, /img\.loading = 'lazy'/);
 });
 
-test('each published canary card resolves to its own approved illustration', () => {
+test('each published canary card resolves to its own human-approved generated background illustration', () => {
   const cards = fs.readdirSync(path.join(ROOT, 'content/approved/cards'))
     .filter((name) => /^C000[1-5]\.json$/.test(name))
     .sort()
@@ -60,16 +71,27 @@ test('each published canary card resolves to its own approved illustration', () 
     assert.ok(asset, `${card.card_id} illustration missing`);
     assert.equal(asset.asset_type, 'illustration');
     assert.equal(asset.review_status, 'HUMAN_APPROVED');
+    assert.match(asset.path, /^assets\/media\/illustrations\/generated\/C000[1-5]\.jpg$/);
+    assert.match(asset.creator_or_model, /Google Flow \/ Nano Banana 2/);
+    assert.match(asset.source_or_generation_method, /background layer/);
     assert.equal(asset.path.includes('/candidates/'), false, `${card.card_id} review candidate leaked into approved registry`);
     assert.equal(fs.existsSync(path.join(ROOT, asset.path)), true);
   }
 });
 
-test('Flow-generated mobile illustration candidates remain review-only and cannot enter public build before human approval', () => {
+test('Flow candidate archive stays review-only after selected backgrounds are promoted through scoped human approval', () => {
   const review = readJson('content/review/illustrations/mobile-20260917/manifest.json');
   const proposal = readJson('content/review/illustrations/mobile-20260917/selection-proposal.json');
+  const approval = readJson('content/approved/illustration-background-release-20260917.json');
   assert.equal(review.status, 'HUMAN_REVIEW_REQUIRED');
-  assert.equal(proposal.status, 'HUMAN_APPROVAL_PENDING');
+  assert.equal(proposal.status, 'HUMAN_BACKGROUND_APPROVED');
+  assert.equal(proposal.approval_record, 'content/approved/illustration-background-release-20260917.json');
+  assert.equal(approval.decision, 'APPROVED_FOR_BACKGROUND_LAYER');
+  assert.match(approval.review_scope.approved, /backgrounds/);
+  assert.deepEqual(approval.review_scope.not_approved_by_this_decision, ['foreign-language semantics','translations','pronunciation','cultural interpretation']);
+  assert.match(approval.layer_contract.generated_raster, /Background visual only/);
+  assert.match(approval.layer_contract.text, /DOM text/);
+  assert.match(approval.layer_contract.ui_objects, /HTML\/CSS\/JS/);
   const candidates = Object.values(review.cards).flatMap((row) => row.candidate_files || []);
   assert.equal(candidates.length, 6);
   for (const candidate of candidates) {

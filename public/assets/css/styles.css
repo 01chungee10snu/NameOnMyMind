@@ -22,6 +22,17 @@
 }
 
 * { box-sizing: border-box; }
+.sr-only {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
 html { scroll-behavior: smooth; background: #e8ddd1; }
 body {
   margin: 0;
@@ -137,20 +148,22 @@ button, a { -webkit-tap-highlight-color: transparent; }
   overflow: hidden;
   background: #403a36;
 }
-.card-illustration {
+.card-visual-background {
   position: absolute;
   inset: 0;
   z-index: -2;
   overflow: hidden;
   background: #eee5dc;
+  pointer-events: none;
 }
-.card-illustration img {
+.card-background-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center;
   transform: scale(1.018);
   filter: saturate(1.04) contrast(1.01);
+  user-select: none;
 }
 .card-hero-scrim {
   position: absolute;
@@ -165,10 +178,42 @@ button, a { -webkit-tap-highlight-color: transparent; }
   min-height: 100%;
   flex-direction: column;
   justify-content: flex-end;
-  padding: 22px 22px 24px;
+  padding: 18px 18px 22px;
   color: #fffaf5;
   text-shadow: 0 2px 18px rgb(27 20 17 / .32);
 }
+.hero-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: auto;
+}
+.hero-actions {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.hero-action {
+  display: inline-grid;
+  width: 42px;
+  height: 42px;
+  place-items: center;
+  border: 1px solid rgb(255 250 245 / .34);
+  border-radius: 999px;
+  background: rgb(31 23 19 / .28);
+  color: #fffaf5;
+  font: 700 21px/1 var(--font-ui);
+  text-shadow: none;
+  box-shadow: 0 6px 18px rgb(20 14 11 / .16);
+  backdrop-filter: blur(12px) saturate(1.12);
+  cursor: pointer;
+}
+.hero-action:hover { background: rgb(31 23 19 / .42); }
+.hero-action[aria-pressed="true"] { background: rgb(181 95 73 / .82); border-color: rgb(255 241 234 / .62); }
+.hero-action[data-playing="true"] { animation: hero-pulse 1.15s ease-in-out infinite; }
+.hero-copy { display: grid; gap: 0; }
+@keyframes hero-pulse { 50% { transform: scale(.92); opacity: .76; } }
 .today-marker,
 .detail-kicker,
 .section-kicker,
@@ -181,7 +226,6 @@ button, a { -webkit-tap-highlight-color: transparent; }
   text-transform: uppercase;
 }
 .card-hero .today-marker {
-  margin-bottom: auto;
   color: #fff5ec;
   text-shadow: 0 1px 12px rgb(20 15 13 / .42);
 }
@@ -226,14 +270,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
   letter-spacing: -.02em;
 }
 
-.card-body { padding: 18px 18px 20px; }
-.mobile-card-tools {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 9px;
-  margin-bottom: 24px;
-}
-.icon-action,
+.card-body { padding: 20px 18px 20px; }
 .secondary-action,
 .tag-button {
   min-height: 44px;
@@ -243,19 +280,6 @@ button, a { -webkit-tap-highlight-color: transparent; }
   color: var(--ink);
   padding: 10px 13px;
   cursor: pointer;
-}
-.icon-action {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 7px;
-  font-size: 13px;
-  font-weight: 700;
-}
-.icon-action[aria-pressed="true"] {
-  border-color: #d2a494;
-  background: #f9ebe5;
-  color: var(--accent-deep);
 }
 .question-kicker { margin-bottom: 9px; }
 .reflection-question {
@@ -301,7 +325,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .record-link { margin-left: auto; }
 .primary-action:focus-visible,
 .secondary-action:focus-visible,
-.icon-action:focus-visible,
+.hero-action:focus-visible,
 .tag-button:focus-visible,
 .primary-nav button:focus-visible,
 input:focus-visible,
@@ -547,7 +571,8 @@ audio:focus-visible {
   .brand-kicker { font-size: 8px; letter-spacing: .18em; }
   .tagline { display: none; }
   .page-shell { padding-inline: 10px; }
-  .card-hero-content { padding: 18px; }
+  .card-hero-content { padding: 15px 15px 18px; }
+  .hero-action { width: 40px; height: 40px; }
   .term { font-size: clamp(40px, 13vw, 54px); }
   .poetic-line { font-size: 18px; }
   .card-body { padding-inline: 15px; }
@@ -580,6 +605,6 @@ audio:focus-visible {
 }
 
 @media (forced-colors: active) {
-  .primary-action, .daily-shell, .detail section, .reflection-box, #space-discover, #space-collection, .discovery-card { border: 1px solid ButtonText; }
+  .primary-action, .hero-action, .daily-shell, .detail section, .reflection-box, #space-discover, #space-collection, .discovery-card { border: 1px solid ButtonText; }
   .card-hero-scrim { background: transparent; }
 }

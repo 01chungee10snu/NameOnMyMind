@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "review_set": "mobile-20260917",
-  "status": "HUMAN_APPROVAL_PENDING",
+  "status": "HUMAN_BACKGROUND_APPROVED",
   "selection_basis": "Automated provenance/dimension/hash checks plus prompt-to-Flow-accessibility-description fit. This proposal is not Human Editorial Release and must not mutate content/approved/assets.json before explicit human approval.",
   "proposed": {
     "C0001": {
@@ -25,5 +25,7 @@
       "reason": "Flow describes the candidate as 'Balanced stones with soft glow', directly matching the approved object-only quiet-sufficiency motif."
     }
   },
-  "approval_effect_if_accepted": "Only after explicit human approval: replace the five approved illustration asset paths/SHA/provenance with approved generated-image assets, update alt text if needed after human visual inspection, rebuild public, run full regression/privacy checks, and then consider repository push separately."
+  "approval_effect_if_accepted": "Only after explicit human approval: replace the five approved illustration asset paths/SHA/provenance with approved generated-image assets, update alt text if needed after human visual inspection, rebuild public, run full regression/privacy checks, and then consider repository push separately.",
+  "approval_record": "content/approved/illustration-background-release-20260917.json",
+  "approval_scope": "Visual background suitability only; no claim that the human reviewer re-verified foreign-language semantics, translations, pronunciation, or cultural interpretation."
 }
