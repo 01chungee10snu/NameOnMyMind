@@ -78,6 +78,9 @@ const inputHashes = {
 };
 const snapshotSeed = Object.entries(inputHashes).sort(([a], [b]) => a.localeCompare(b)).map(([k, v]) => `${k}:${v}`).join('|');
 const snapshotVersion = crypto.createHash('sha256').update(snapshotSeed).digest('hex').slice(0, 16);
+const contentInputHashes = Object.fromEntries(Object.entries(inputHashes).filter(([key]) => !key.startsWith('runtime_')));
+const contentSnapshotSeed = Object.entries(contentInputHashes).sort(([a], [b]) => a.localeCompare(b)).map(([k, v]) => `${k}:${v}`).join('|');
+const contentSnapshotVersion = crypto.createHash('sha256').update(contentSnapshotSeed).digest('hex').slice(0, 16);
 
 fs.rmSync(OUT, { recursive: true, force: true });
 fs.mkdirSync(OUT, { recursive: true });
@@ -93,6 +96,7 @@ writeJson('data/manifest.json', {
   release_mode: externalPublishAuthorized ? 'PUBLIC_EXTERNAL_RELEASE' : 'PUBLIC_LOCAL_BUILD',
   external_publish_authorized: externalPublishAuthorized,
   snapshot_version: snapshotVersion,
+  content_snapshot_version: contentSnapshotVersion,
   daily_seed: 'nameonmymind-public-v1',
   card_count: cards.length,
   card_documents: cards.map((card) => `./cards/${card.card_id}.json`),
@@ -129,6 +133,7 @@ writeJson('BUILD_MANIFEST.json', {
   deployable: true,
   external_publish_authorized: externalPublishAuthorized,
   snapshot_version: snapshotVersion,
+  content_snapshot_version: contentSnapshotVersion,
   card_ids: cards.map((x) => x.card_id),
   agent_contract_version: agentManifest.agent_contract_version,
   pwa: {
@@ -145,5 +150,6 @@ writeJson('BUILD_MANIFEST.json', {
 
 console.log(JSON.stringify({
   status: 'PASS', output: OUT, card_ids: cards.map((x) => x.card_id), snapshot_version: snapshotVersion,
+  content_snapshot_version: contentSnapshotVersion,
   deployable: true, external_publish_authorized: externalPublishAuthorized, agent_manifest: true, pwa: true,
 }, null, 2));

@@ -3,7 +3,8 @@
   "artifact_type": "LOCAL_PUBLIC_BUILD",
   "deployable": true,
   "external_publish_authorized": false,
-  "snapshot_version": "24aebc81d2a7088d",
+  "snapshot_version": "5f13659e190f0b18",
+  "content_snapshot_version": "4952b4fe18c503ee",
   "card_ids": [
     "C0001",
     "C0002",
@@ -16,9 +17,9 @@
     "manifest": "manifest.webmanifest",
     "service_worker": "service-worker.js",
     "offline_fallback": "offline.html",
-    "shell_cache": "nomm-shell-v1-24aebc81d2a7088d",
-    "content_cache": "nomm-content-24aebc81d2a7088d",
-    "asset_cache": "nomm-assets-v1-24aebc81d2a7088d"
+    "shell_cache": "nomm-shell-v1-5f13659e190f0b18",
+    "content_cache": "nomm-content-5f13659e190f0b18",
+    "asset_cache": "nomm-assets-v1-5f13659e190f0b18"
   },
   "input_sha256": {
     "card_schema": "8e29503186d27440efe2ee12dba84c964879c57be0b6ebb16907d743bc9cf17e",
@@ -32,8 +33,8 @@
     "card_C0003": "e429078c9e9e2e85c889538f71d91051ecdc6b323e3492bc62e596817b9d7744",
     "card_C0004": "07a52cc549a6200390ad2026734a0eb0d824826b0a567a54c4dc8798afb5053e",
     "card_C0005": "1331855205f7b79964bca9fed94fbea135945eb122499050bc82cfe07ba7c682",
-    "runtime_src_ui_index.html": "7691b32e17b38c64c9e69c95e26829d35998678517ea5a82f7ff08c54c1ea3b5",
-    "runtime_src_ui_app.mjs": "44e8fc29c1486913fa2b95ffee75c25464055a3700730adf40c80463d750370b",
+    "runtime_src_ui_index.html": "3167596e68cf15922e3ae2fe16e393c2f61cfd7b0a363ce7d7180904338a4775",
+    "runtime_src_ui_app.mjs": "6a57e4db28f16548988e07b3e6018d5cd0f41b8a18556d579da55624381a6575",
     "runtime_src_domain_cards.mjs": "f8dde7b533cd43d1c2687195a934991534b7c670c461791a145e88fb617fce08",
     "runtime_src_domain_discovery.mjs": "9d042c768bb35c1001a93e57b0c87f3c2506eae70d2f8a9a0a8b740080a7fc49",
     "runtime_src_local_state.mjs": "975e7372486aace916597b7e2bb70f357f892a00434b9094e9718460fe2c1c36",
@@ -42,7 +43,7 @@
     "runtime_src_pwa_manifest.webmanifest": "afa3c7026db3026616f15150bc92a201a41e762b08938551b6540d53eabdfa92",
     "runtime_src_pwa_service-worker.template.js": "aea101dcbdeffb517d127daa3d905ef5c65bc89b43be795b03b9f71dd3bdc324",
     "runtime_src_pwa_offline.html": "dececcd5775f3506377aae82735b0e2fcb6b5fe973d69569712a711ba7feb4cd",
-    "runtime_assets_css_styles.css": "7bc6afebe350b1ec2ac85a855222cc8e58b69f7256dc933d44d458ce3bcbec9d",
+    "runtime_assets_css_styles.css": "57e39f9dd9409116379d4addaf90510a75611bb932fb202836168749e9d8c387",
     "runtime_assets_brand_app-icon.svg": "da9acf16edf791676c25df5407c92b8128e3313c7352afbe8bfdbd96440ec8bc"
   },
   "excluded_source_classes": [

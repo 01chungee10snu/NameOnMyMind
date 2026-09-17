@@ -85,7 +85,13 @@ function renderCard(catalog, card, manifest, storage) {
 
   const illustrationAsset = getCardAssets(catalog, card.card_id).find((asset) => asset.asset_type === 'illustration');
   const illustrationRoot = qs('#card-illustration'); illustrationRoot.replaceChildren();
-  if (illustrationAsset) { const img=document.createElement('img'); img.src=`./${illustrationAsset.path}`; img.alt=card.assets.alt_text; img.width=1200; img.height=900; illustrationRoot.append(img); }
+  if (illustrationAsset) {
+    const illustrationUrl = `./${illustrationAsset.path}`;
+    const img=document.createElement('img'); img.className='card-hero-image'; img.src=illustrationUrl; img.alt=card.assets.alt_text; img.width=1200; img.height=900; img.decoding='async'; img.fetchPriority='high'; illustrationRoot.append(img);
+    document.documentElement.style.setProperty('--card-art-image', `url("${illustrationUrl}")`);
+  } else {
+    document.documentElement.style.removeProperty('--card-art-image');
+  }
 
   const compact = qs('#compact-meaning'); compact.textContent = card.meaning.verified_definition;
   const reveal = qs('#reveal-button'); reveal.onclick = () => { const willOpen=compact.hidden; compact.hidden=!willOpen; reveal.setAttribute('aria-expanded',String(willOpen)); reveal.textContent=willOpen?'뜻 접기':'뜻을 살짝 펼쳐보기'; };

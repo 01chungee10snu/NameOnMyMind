@@ -1,0 +1,46 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+
+const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
+const readText = (rel) => fs.readFileSync(path.join(ROOT, rel), 'utf8');
+const readJson = (rel) => JSON.parse(readText(rel));
+
+test('daily card uses a full-bleed illustration hero with semantic text overlay', () => {
+  const html = readText('src/ui/index.html');
+  const css = readText('assets/css/styles.css');
+  assert.match(html, /class="card-hero"/);
+  assert.match(html, /id="card-illustration" class="card-illustration"/);
+  assert.match(html, /class="card-hero-scrim" aria-hidden="true"/);
+  assert.match(html, /class="card-hero-content"/);
+  assert.ok(html.indexOf('id="card-illustration"') < html.indexOf('id="card-term"'));
+  assert.ok(html.indexOf('id="card-term"') < html.indexOf('id="poetic-line"'));
+  assert.match(css, /\.card-hero\s*\{[\s\S]*position:\s*relative/);
+  assert.match(css, /\.card-illustration\s*\{[\s\S]*position:\s*absolute/);
+  assert.match(css, /\.card-hero-scrim\s*\{[\s\S]*linear-gradient/);
+  assert.match(css, /\.card-hero-content\s*\{[\s\S]*color:\s*#fffaf5/);
+  assert.match(css, /var\(--card-art-image, none\)/);
+  const app = readText('src/ui/app.mjs');
+  assert.match(app, /setProperty\('--card-art-image'/);
+});
+
+test('each published canary card resolves to its own approved illustration', () => {
+  const cards = fs.readdirSync(path.join(ROOT, 'content/approved/cards'))
+    .filter((name) => /^C000[1-5]\.json$/.test(name))
+    .sort()
+    .map((name) => readJson(`content/approved/cards/${name}`));
+  const assets = readJson('content/approved/assets.json').assets;
+  const assetMap = new Map(assets.map((asset) => [asset.asset_id, asset]));
+  const illustrationIds = cards.map((card) => card.assets.illustration_asset_id);
+  assert.equal(cards.length, 5);
+  assert.equal(new Set(illustrationIds).size, 5);
+  for (const card of cards) {
+    const asset = assetMap.get(card.assets.illustration_asset_id);
+    assert.ok(asset, `${card.card_id} illustration missing`);
+    assert.equal(asset.asset_type, 'illustration');
+    assert.equal(asset.review_status, 'HUMAN_APPROVED');
+    assert.equal(fs.existsSync(path.join(ROOT, asset.path)), true);
+  }
+});

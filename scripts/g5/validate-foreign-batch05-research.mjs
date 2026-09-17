@@ -42,5 +42,5 @@ for(let i=0;i<ids.length;i+=1){
 }
 const publicManifest=read('public/BUILD_MANIFEST.json');
 if(JSON.stringify(publicManifest.card_ids)!==JSON.stringify(['C0001','C0002','C0003','C0004','C0005']))fail('public boundary changed');
-if(publicManifest.snapshot_version!=='24aebc81d2a7088d')fail('public snapshot changed due unpublished G5 research');
+if(publicManifest.content_snapshot_version!=='4952b4fe18c503ee')fail('public content snapshot changed due unpublished G5 research');
 console.log(JSON.stringify({status:'PASS',batch_id:batch.batch_id,card_ids:ids,expression_cost:'5/5 EXPLANATORY_PHRASE_REQUIRED',screened_out:cfg.screened_out,review_ready:0,product_assets_registered:0,public_cards:publicManifest.card_ids,snapshot_version:publicManifest.snapshot_version},null,2));
