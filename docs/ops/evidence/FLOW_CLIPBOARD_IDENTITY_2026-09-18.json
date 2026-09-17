@@ -1,0 +1,119 @@
+{
+  "schema_version": "1.0.0",
+  "evidence_id": "NOMM-FLOW-CLIPBOARD-IDENTITY-2026-09-18",
+  "verified_at": "2026-09-18",
+  "status": "PASS_PIXEL_IDENTITY",
+  "scope": "Independent recovery check of the six Google Flow mobile illustration results already recorded and approved in the repository.",
+  "flow_project_id": "7e035e7b-73f2-4d6f-a9c4-5990c4f7b97d",
+  "generator_surface": "Google Flow",
+  "observed_model_in_project": "Nano Banana 2",
+  "recovery_method": "In the existing AI-controllable Ego Lite Space, each Flow media tile was opened via its context menu and copied using Flow's Copy action. The macOS clipboard PNG representation was saved temporarily, then compared against every existing 2026-09-17 JPG candidate after RGB decoding.",
+  "important_interpretation": "The clipboard PNG representations are NOT treated as newly generated or higher-fidelity source originals. Each recovered PNG decoded to exactly the same RGB pixels as one existing JPG candidate, so the PNGs are redundant containers of the already-recorded Flow result.",
+  "comparison_method": {
+    "dimensions": "1200x896 for all compared images",
+    "full_rgb_mean_absolute_error": "0.0 for each mapped pair",
+    "rgb_correlation": "1.0 for each mapped pair",
+    "dhash_hamming_distance_64": "0 for each mapped pair",
+    "cross_candidate_check": "Each of the six recovered PNG representations was compared against all six existing JPG candidates; the expected card/version pair was the unique zero-error match."
+  },
+  "mapping": [
+    {
+      "card_id": "C0001",
+      "recovered_label": "saudade-A",
+      "temporary_png_sha256": "5af82bb09423a263ae2182c4e405bee6a6563fbd02fc102b777791551c702e71",
+      "matched_candidate": "C0001-v1",
+      "candidate_jpg_path": "assets/media/illustrations/candidates/mobile-20260917/C0001-v1.jpg",
+      "candidate_jpg_sha256": "f55b295f5700f50022c12a83735d40a102a926bb01e07662220b9c439902fa86",
+      "pixel_mae": 0.0,
+      "rgb_correlation": 1.0,
+      "dhash_distance": 0,
+      "release_selection": false
+    },
+    {
+      "card_id": "C0001",
+      "recovered_label": "saudade-B",
+      "temporary_png_sha256": "7967c5fa248a82e4ef84b4f08969f0b89f744983f3f5585c3800b8543810cc2d",
+      "matched_candidate": "C0001-v2",
+      "candidate_jpg_path": "assets/media/illustrations/candidates/mobile-20260917/C0001-v2.jpg",
+      "candidate_jpg_sha256": "3f00d6d094e1b08e746c624c94445436de8db5146b00c22fa3294624a74d77d8",
+      "pixel_mae": 0.0,
+      "rgb_correlation": 1.0,
+      "dhash_distance": 0,
+      "release_selection": true,
+      "canonical_path": "assets/media/illustrations/generated/C0001.jpg"
+    },
+    {
+      "card_id": "C0002",
+      "recovered_label": "sehnsucht",
+      "temporary_png_sha256": "408f18bcd293e40207529e52a5e261b6ea3b4e2d354a91435b6335a9af651f22",
+      "matched_candidate": "C0002-v1",
+      "candidate_jpg_path": "assets/media/illustrations/candidates/mobile-20260917/C0002-v1.jpg",
+      "candidate_jpg_sha256": "10eb9936f751093c3b60c11643ab0e0298adb555be5595361a72e468797759f2",
+      "pixel_mae": 0.0,
+      "rgb_correlation": 1.0,
+      "dhash_distance": 0,
+      "release_selection": true,
+      "canonical_path": "assets/media/illustrations/generated/C0002.jpg"
+    },
+    {
+      "card_id": "C0003",
+      "recovered_label": "schadenfreude",
+      "temporary_png_sha256": "9af82c0406b91d1b3bf0fa38707aa877a04aa2f4a1e95a3b8d9392138394fc24",
+      "matched_candidate": "C0003-v1",
+      "candidate_jpg_path": "assets/media/illustrations/candidates/mobile-20260917/C0003-v1.jpg",
+      "candidate_jpg_sha256": "821ed071d041789953bdb8a33b64ef4300ab5182017a394ada452fe40df1d2d2",
+      "pixel_mae": 0.0,
+      "rgb_correlation": 1.0,
+      "dhash_distance": 0,
+      "release_selection": true,
+      "canonical_path": "assets/media/illustrations/generated/C0003.jpg"
+    },
+    {
+      "card_id": "C0004",
+      "recovered_label": "envy",
+      "temporary_png_sha256": "2729065039c42fa8ca77a25e756bc2dbb6abfb47baa5bdcfa2b45021b062c741",
+      "matched_candidate": "C0004-v1",
+      "candidate_jpg_path": "assets/media/illustrations/candidates/mobile-20260917/C0004-v1.jpg",
+      "candidate_jpg_sha256": "71f2751838ed8a2eeea6164fc9460e5c1b8f1156fddd38425ad00d689899dd18",
+      "pixel_mae": 0.0,
+      "rgb_correlation": 1.0,
+      "dhash_distance": 0,
+      "release_selection": true,
+      "canonical_path": "assets/media/illustrations/generated/C0004.jpg"
+    },
+    {
+      "card_id": "C0005",
+      "recovered_label": "kofuku",
+      "temporary_png_sha256": "88ba8a67a00ee1494e7824faebcc851f5489d092817db6264b0cfe0b8379e736",
+      "matched_candidate": "C0005-v1",
+      "candidate_jpg_path": "assets/media/illustrations/candidates/mobile-20260917/C0005-v1.jpg",
+      "candidate_jpg_sha256": "3d1b28d342a30d2b8ae5a9c9cf8098d3e5c76b009121af65846b7df60ddacef6",
+      "pixel_mae": 0.0,
+      "rgb_correlation": 1.0,
+      "dhash_distance": 0,
+      "release_selection": true,
+      "canonical_path": "assets/media/illustrations/generated/C0005.jpg"
+    }
+  ],
+  "release_effect": {
+    "approved_asset_registry_changed": false,
+    "approved_generated_background_selection_changed": false,
+    "beauty_v2_lock_changed": false,
+    "content_snapshot_change_intended": false,
+    "external_publish_authorized": false
+  },
+  "post_check_regression": {
+    "command": "npm run check:g5-research",
+    "status": "PASS",
+    "g1": "PASS",
+    "g2": "PASS",
+    "g3": "PASS",
+    "g4": "PASS",
+    "g5_selection": "PASS",
+    "g5_research": "PASS",
+    "privacy_violations": 0,
+    "runtime_snapshot_version": "a1c474f884d64648",
+    "content_snapshot_version": "867d91c0737e29c7"
+  },
+  "cleanup": "The temporary recovered PNG representations are deleted after this identity evidence is recorded because they add no visual information beyond the existing JPG candidates and would add unnecessary repository weight."
+}
