@@ -435,7 +435,8 @@
       "construct": "insecure-lonely-without-support",
       "track": "FOREIGN_KOREAN_GAP",
       "risk": "STANDARD",
-      "g5_role": "PRIMARY_ACTIVE_CANDIDATE"
+      "g5_role": "PRIMARY_ACTIVE_CANDIDATE",
+      "verification_status": "RESEARCH_CORE_PASS_PRODUCT_GATES_HOLD"
     },
     {
       "term": "もったいない",
@@ -480,7 +481,8 @@
       "construct": "heartache-for-someone-or-loss",
       "track": "FOREIGN_KOREAN_GAP",
       "risk": "STANDARD",
-      "g5_role": "PRIMARY_ACTIVE_CANDIDATE"
+      "g5_role": "PRIMARY_ACTIVE_CANDIDATE",
+      "verification_status": "RESEARCH_CORE_PASS_PRODUCT_GATES_HOLD"
     },
     {
       "term": "欣慰",
@@ -928,6 +930,36 @@
       "risk": "HIGH_CONSTRUCT_BOUNDARY",
       "g5_role": "PRIMARY_ACTIVE_CANDIDATE",
       "verification_status": "DISCOVERY_ONLY"
+    },
+    {
+      "term": "เกรงใจ",
+      "language_code": "th",
+      "language_name": "ไทย",
+      "construct": "considerate-reluctance-to-impose",
+      "track": "FOREIGN_KOREAN_GAP",
+      "risk": "HIGH_CULTURAL_GENERALIZATION",
+      "g5_role": "PRIMARY_ACTIVE_CANDIDATE",
+      "verification_status": "RESEARCH_CORE_PASS_PRODUCT_GATES_HOLD"
+    },
+    {
+      "term": "sungkan",
+      "language_code": "id",
+      "language_name": "Bahasa Indonesia / Javanese context",
+      "construct": "deferential-social-reluctance",
+      "track": "FOREIGN_KOREAN_GAP",
+      "risk": "HIGH_CULTURAL_GENERALIZATION",
+      "g5_role": "PRIMARY_ACTIVE_CANDIDATE",
+      "verification_status": "RESEARCH_CORE_PASS_PRODUCT_GATES_HOLD"
+    },
+    {
+      "term": "物の哀れ",
+      "language_code": "ja-JP",
+      "language_name": "日本語",
+      "construct": "aesthetic-sensitivity-to-transience",
+      "track": "FOREIGN_KOREAN_GAP",
+      "risk": "HIGH_LITERARY_CULTURAL",
+      "g5_role": "PRIMARY_ACTIVE_CANDIDATE",
+      "verification_status": "RESEARCH_CORE_PASS_PRODUCT_GATES_HOLD"
     }
   ]
 }

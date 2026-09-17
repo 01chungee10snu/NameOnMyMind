@@ -1,0 +1,55 @@
+{
+  "schema_version": "1.0.0",
+  "batch_id": "G5-F06-FOREIGN-SEMANTIC-GAP",
+  "status": "RESEARCH_CORE_PASS_PRODUCT_GATES_HOLD",
+  "recorded_at": "2026-09-18",
+  "card_ids": [
+    "C0041",
+    "C0042",
+    "C0043",
+    "C0044",
+    "C0045"
+  ],
+  "terms": [
+    "เกรงใจ",
+    "sungkan",
+    "心細い",
+    "物の哀れ",
+    "心疼"
+  ],
+  "languages": [
+    "Bahasa Indonesia / Javanese context",
+    "ไทย",
+    "中文",
+    "日本語"
+  ],
+  "korean_expression_cost": {
+    "C0041": "EXPLANATORY_PHRASE_REQUIRED",
+    "C0042": "EXPLANATORY_PHRASE_REQUIRED",
+    "C0043": "EXPLANATORY_PHRASE_REQUIRED",
+    "C0044": "EXPLANATORY_PHRASE_REQUIRED",
+    "C0045": "EXPLANATORY_PHRASE_REQUIRED"
+  },
+  "screened_out": [
+    {
+      "term": "Fremdscham",
+      "status": "HOLD_NEAR_KOREAN_EQUIVALENT",
+      "reason": "Korean 대리 수치/대리 수치심 already provides a compact conventional equivalent for vicarious embarrassment, so expression cost is too low for priority admission."
+    },
+    {
+      "term": "百感交集",
+      "status": "HOLD_NEAR_KOREAN_IDIOM",
+      "reason": "Korean 만감이 교차하다 is a compact conventional idiom preserving the central sense of many emotions converging at once."
+    },
+    {
+      "term": "儚い",
+      "status": "HOLD_NEAR_KOREAN_EQUIVALENT",
+      "reason": "Korean 덧없다 already compresses much of the transience/ephemerality sense; preserve for comparison rather than priority admission."
+    }
+  ],
+  "audio_rights": "HOLD_UNTIL_PRODUCT_SAFE_AUDIO_VERIFIED",
+  "full_multilingual_comparison": "HOLD_FOR_INDEPENDENT_EN_ZH_JA_LEXICAL_VERIFICATION",
+  "review_ready": 0,
+  "public_promotion_authorized": false,
+  "config": "content/g5/batches/06_foreign_semantic_gap_config.json"
+}

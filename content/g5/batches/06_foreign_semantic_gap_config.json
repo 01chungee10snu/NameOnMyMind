@@ -1,0 +1,201 @@
+{
+  "schema_version": "1.0.0",
+  "batch_id": "G5-F06-FOREIGN-SEMANTIC-GAP",
+  "recorded_at": "2026-09-18",
+  "cards": [
+    {
+      "card_id": "C0041",
+      "term": "เกรงใจ",
+      "language_code": "th",
+      "language_name": "ไทย",
+      "experience_type": "relational_deferential_experience",
+      "lexical_ref": "R0171",
+      "scholarly_refs": ["R0172"],
+      "pronunciation_ref": "R0173",
+      "ipa": "/kreːŋ˧.t͡ɕaj˧/",
+      "korean_near_terms": ["폐를 끼칠까 미안하고 조심스럽다", "상대가 불편할까 봐 부탁하기 어렵다", "눈치가 보여 사양하다"],
+      "en_near_terms": ["reluctance to impose", "considerate deference", "concern about inconveniencing another"],
+      "zh_near_terms": ["怕给别人添麻烦而有所顾忌", "顾虑对方感受而不愿麻烦他人"],
+      "ja_near_terms": ["相手に迷惑をかけまいと遠慮する気持ち", "相手の気持ちを気遣う遠慮"],
+      "korean_expression_cost": "EXPLANATORY_PHRASE_REQUIRED",
+      "natural_korean_rendering": "상대를 불편하게 하거나 폐를 끼치고 싶지 않아 부탁·거절·행동을 스스로 조심하면서, 상대의 감정과 관계적 위치까지 함께 의식하는 마음",
+      "residue_dimensions": ["consideration for another's feelings", "reluctance to impose or inconvenience", "fear of displeasing or offending", "relational/deferential constraint"],
+      "semantic_residue": "한국어의 배려·미안함·눈치·사양 가운데 하나만으로는 타인을 불편하게 하거나 폐를 끼치지 않으려는 배려, 상대가 불쾌해할 수 있다는 우려, 관계적 거리나 위계를 의식한 자기제약을 함께 담기 어렵다.",
+      "overclaim": "태국 사람만 느끼는 고유 감정이라고 본질화하거나 단순한 예의·공포·수동성 하나로 축소하지 않는다."
+    },
+    {
+      "card_id": "C0042",
+      "term": "sungkan",
+      "language_code": "id",
+      "language_name": "Bahasa Indonesia / Javanese context",
+      "experience_type": "relational_reluctance_experience",
+      "lexical_ref": "R0174",
+      "scholarly_refs": ["R0175"],
+      "pronunciation_ref": "R0176",
+      "ipa": "/ˈsuŋkan/",
+      "korean_near_terms": ["미안하고 어려워서 선뜻 못하다", "상대가 어려워서 사양하다", "체면과 관계가 신경 쓰여 망설이다"],
+      "en_near_terms": ["reluctant out of respect", "social hesitation", "deferential discomfort"],
+      "zh_near_terms": ["因尊重和关系顾虑而不好意思开口", "顾及对方而犹豫或退让"],
+      "ja_near_terms": ["相手への敬意や気まずさから遠慮する", "関係を気にして言い出せずためらう"],
+      "korean_expression_cost": "EXPLANATORY_PHRASE_REQUIRED",
+      "natural_korean_rendering": "상대를 존중하거나 관계를 어색하게 만들고 싶지 않아 마음이 불편하고 망설여지며, 부탁·거절·지적을 선뜻 하지 못하고 한발 물러서게 되는 관계적 주저함",
+      "residue_dimensions": ["reluctance", "felt interpersonal discomfort", "respect or deference", "conflict-avoidant social hesitation"],
+      "semantic_residue": "한국어의 어렵다·미안하다·사양하다·눈치 보다와 겹치지만, 존중과 관계적 불편함 때문에 직접 행동이나 발화를 주저하고 물러서는 태도를 한 단어가 함께 묶는 폭이 남는다.",
+      "overclaim": "모든 인도네시아인이나 자바인이 같은 방식으로 sungkan을 사용한다고 일반화하거나, 이를 병리적 people-pleasing 또는 수동공격성으로 진단하지 않는다."
+    },
+    {
+      "card_id": "C0043",
+      "term": "心細い",
+      "language_code": "ja-JP",
+      "language_name": "日本語",
+      "experience_type": "unsupported_anxious_loneliness",
+      "lexical_ref": "R0177",
+      "scholarly_refs": ["R0178"],
+      "pronunciation_ref": "R0179",
+      "ipa": "[ko̞ko̞ɾo̞bo̞so̞i]",
+      "korean_near_terms": ["의지할 데 없어 불안하다", "막막하고 외롭다", "기댈 곳이 없어 마음이 불안하다"],
+      "en_near_terms": ["forlorn", "anxious for lack of support", "lonely and helpless"],
+      "zh_near_terms": ["无所依靠而不安", "孤单又心里没底"],
+      "ja_near_terms": ["頼るものがなく不安である", "なんとなく寂しく感じる"],
+      "korean_expression_cost": "EXPLANATORY_PHRASE_REQUIRED",
+      "natural_korean_rendering": "의지하거나 도와줄 사람·기반이 부족해서 혼자인 듯 외롭고, 앞으로의 상황을 감당할 자신이나 버팀목이 없어 마음이 불안하고 막막한 느낌",
+      "residue_dimensions": ["lack of a reliable support or basis", "anxiety", "loneliness/forlornness", "felt helplessness"],
+      "semantic_residue": "한국어의 불안하다·외롭다·막막하다 가운데 하나만으로는 의지할 대상이나 기반이 없다는 조건과 그 때문에 생기는 불안, 외로움, 무력한 막막함을 함께 보존하기 어렵다.",
+      "overclaim": "모든 외로움이나 불안을 心細い로 번역하거나 임상적 불안장애·우울 상태와 동일시하지 않는다."
+    },
+    {
+      "card_id": "C0044",
+      "term": "物の哀れ",
+      "language_code": "ja-JP",
+      "language_name": "日本語",
+      "experience_type": "aesthetic_sensitivity_to_transience",
+      "lexical_ref": "R0180",
+      "scholarly_refs": ["R0181"],
+      "pronunciation_ref": "R0182",
+      "ipa": "[mo̞no̞ no̞ a̠β̞a̠ɾe̞]",
+      "korean_near_terms": ["덧없음에서 오는 애잔한 감동", "사라지는 아름다움에 대한 애수", "무상함을 느끼는 감상"],
+      "en_near_terms": ["pathos of things", "sensitivity to transience", "poignant awareness of impermanence"],
+      "zh_near_terms": ["对事物无常的细腻感怀", "因消逝与变迁而生的幽情"],
+      "ja_near_terms": ["外界の事物に触れて起こるしみじみとした情感", "無常や移ろいへの繊細な感受性"],
+      "korean_expression_cost": "EXPLANATORY_PHRASE_REQUIRED",
+      "natural_korean_rendering": "사물과 삶의 아름다움이 변하고 사라진다는 사실을 섬세하게 느끼면서, 그 덧없음 때문에 오히려 대상이 더 소중하고 애잔하게 다가와 깊이 마음이 움직이는 미적 감응",
+      "residue_dimensions": ["sensitivity to things", "awareness of transience", "beauty intertwined with pathos", "literary/aesthetic affective response"],
+      "semantic_residue": "한국어의 무상함·애수·애잔함·감동 가운데 하나만으로는 사물에 대한 섬세한 감수성, 변화와 소멸의 자각, 그 덧없음에서 생기는 아름다움과 애수의 미적 감응을 함께 담기 어렵다.",
+      "overclaim": "일본인만 느낄 수 있는 국민적 정서나 완전히 번역불가능한 감정으로 본질화하지 않고, 일반적인 슬픔과 동일시하지 않으며 역사적 문학·미학 맥락을 보존한다."
+    },
+    {
+      "card_id": "C0045",
+      "term": "心疼",
+      "language_code": "zh-CN",
+      "language_name": "中文",
+      "experience_type": "cherishing_sympathetic_distress",
+      "lexical_ref": "R0183",
+      "scholarly_refs": ["R0184"],
+      "pronunciation_ref": "R0185",
+      "ipa": "xīnténg",
+      "korean_near_terms": ["안쓰럽고 마음 아프다", "아까워서 속상하다", "소중해서 다치는 걸 못 보겠다"],
+      "en_near_terms": ["to ache for someone", "cherishing sympathetic distress", "pain at harm or loss to something cherished"],
+      "zh_near_terms": ["怜惜、舍不得", "因珍爱而感到难过或惋惜", "疼爱并为其受损而难受"],
+      "ja_near_terms": ["大切だから傷つくのがつらい", "いとおしくて気の毒に思う", "惜しくて心が痛む"],
+      "korean_expression_cost": "EXPLANATORY_PHRASE_REQUIRED",
+      "natural_korean_rendering": "아끼고 사랑하는 사람이나 소중한 물건이 힘들어하거나 다치고 손상되는 것을 보면서, 안쓰러움·아까움·보호하고 싶은 마음과 함께 내 마음도 아프게 느껴지는 감정",
+      "residue_dimensions": ["cherishing or affection", "pity/sympathetic concern", "reluctance to part with or lose", "felt distress when the cherished target is harmed"],
+      "semantic_residue": "한국어의 안쓰럽다·아깝다·마음 아프다·아끼다 가운데 하나만으로는 소중히 여기는 애정, 불쌍히 여기는 마음, 잃거나 손상되기 싫은 아까움, 대상의 고통 때문에 함께 마음 아픈 느낌을 폭넓게 묶기 어렵다.",
+      "overclaim": "문자 그대로의 심장 통증과 혼동하거나 모든 슬픔·동정을 心疼으로 번역하지 않으며, 애정·아낌·연민·아까움으로 넓어지는 다의적 사용 범위를 과도하게 하나의 감정으로 고정하지 않는다."
+    }
+  ],
+  "references": [
+    {
+      "reference_id": "R0171", "source_type": "lexical", "title": "เกรงใจ", "authors": [], "publisher_or_container": "NECTEC Lexitron-2 Dictionary via Longdo", "year": null, "volume": null, "issue": null, "pages": null, "doi": null, "isbn": null,
+      "url": "https://dict.longdo.com/search/%E0%B9%80%E0%B8%81%E0%B8%A3%E0%B8%87%E0%B9%83%E0%B8%88", "accessed_at": "2026-09-18", "license": null,
+      "rights_note": "Thai lexical evidence supports considerateness/thoughtfulness and not wanting to inconvenience another; semantic boundaries are supplemented by Thai scholarly analysis.", "citation_display": "NECTEC Lexitron-2 Dictionary. (n.d.). เกรงใจ. via Longdo Dictionary."
+    },
+    {
+      "reference_id": "R0172", "source_type": "scholarly", "title": "ความหมายของคำว่า เกรงใจ และลักษณะเด่นของวัฒนธรรมไทย The comprehensive meanings of krengchai and the important aspects of Thai culture", "authors": ["ทัศนีย์ เมฆถาวรวัฒนา"], "publisher_or_container": "NIDA Development Journal", "year": 2012, "volume": "52", "issue": "1", "pages": "235-263", "doi": null, "isbn": null,
+      "url": "https://so04.tci-thaijo.org/index.php/NDJ/article/view/3042", "accessed_at": "2026-09-18", "license": null,
+      "rights_note": "Direct semantic analysis identifies deference, fear of displeasing another, concern that an event may be bothersome, and speech-act/social meanings. Used without turning population-level cultural observations into an essentialist claim.", "citation_display": "เมฆถาวรวัฒนา, ท. (2012). ความหมายของคำว่า เกรงใจ และลักษณะเด่นของวัฒนธรรมไทย. NIDA Development Journal, 52(1), 235–263."
+    },
+    {
+      "reference_id": "R0173", "source_type": "pronunciation", "title": "เกรงใจ — Thai pronunciation", "authors": [], "publisher_or_container": "Wiktionary", "year": null, "volume": null, "issue": null, "pages": null, "doi": null, "isbn": null,
+      "url": "https://en.wiktionary.org/wiki/%E0%B9%80%E0%B8%81%E0%B8%A3%E0%B8%87%E0%B9%83%E0%B8%88", "accessed_at": "2026-09-18", "license": "CC BY-SA 4.0 / source-file terms",
+      "rights_note": "Standard Thai IPA /kreːŋ˧.t͡ɕaj˧/ and Royal Institute romanization kreng-chai are recorded for research. Product audio remains unverified.", "citation_display": "Wiktionary. (n.d.). เกรงใจ."
+    },
+    {
+      "reference_id": "R0174", "source_type": "lexical", "title": "sungkan", "authors": [], "publisher_or_container": "Kamus Besar Bahasa Indonesia archive via kbbi.web.id", "year": null, "volume": null, "issue": null, "pages": null, "doi": null, "isbn": null,
+      "url": "https://kbbi.web.id/sungkan", "accessed_at": "2026-09-18", "license": null,
+      "rights_note": "Archived KBBI entry records senses including reluctance, feeling uncomfortable/uneasy in one's heart, and respect/deference. The mirror is unofficial; claims are kept narrow and paired with scholarly evidence.", "citation_display": "Kamus Besar Bahasa Indonesia. (n.d.). sungkan. archived via kbbi.web.id."
+    },
+    {
+      "reference_id": "R0175", "source_type": "scholarly", "title": "People Pleaser Behavior within the Perspective of Sungkan: A Psycho-Anthropological Interpretation", "authors": ["Faiqal Dima Hanif", "Rinta Anjani Oktafiani", "Dewi Kurnia Rachmawati", "Talitha Vania Sasikirana"], "publisher_or_container": "Jurnal Antropologi: Isu-Isu Sosial Budaya", "year": 2025, "volume": "27", "issue": "2", "pages": "249-259", "doi": "10.25077/jantro.v27.n2.p249-259.2025", "isbn": null,
+      "url": "https://jurnalantropologi.fisip.unand.ac.id/index.php/jantro/article/view/1982", "accessed_at": "2026-09-18", "license": null,
+      "rights_note": "Study discusses sungkan in relation to respect, modesty and conflict avoidance in a Javanese cultural context; it is not used to pathologize or generalize all speakers.", "citation_display": "Hanif, F. D., Oktafiani, R. A., Rachmawati, D. K., & Sasikirana, T. V. (2025). People Pleaser Behavior within the Perspective of Sungkan. Jurnal Antropologi: Isu-Isu Sosial Budaya, 27(2), 249–259. https://doi.org/10.25077/jantro.v27.n2.p249-259.2025"
+    },
+    {
+      "reference_id": "R0176", "source_type": "pronunciation", "title": "sungkan — Indonesian pronunciation", "authors": [], "publisher_or_container": "Wiktionary", "year": null, "volume": null, "issue": null, "pages": null, "doi": null, "isbn": null,
+      "url": "https://en.wiktionary.org/wiki/sungkan", "accessed_at": "2026-09-18", "license": "CC BY-SA 4.0 / source-file terms",
+      "rights_note": "Standard Indonesian IPA /ˈsuŋkan/ is recorded for research. Product audio remains unverified.", "citation_display": "Wiktionary. (n.d.). sungkan."
+    },
+    {
+      "reference_id": "R0177", "source_type": "lexical", "title": "心細い", "authors": [], "publisher_or_container": "小学館デジタル大辞泉 via コトバンク", "year": null, "volume": null, "issue": null, "pages": null, "doi": null, "isbn": null,
+      "url": "https://kotobank.jp/word/%E5%BF%83%E7%B4%B0%E3%81%84-500728", "accessed_at": "2026-09-18", "license": null,
+      "rights_note": "Digital Daijisen defines the term as anxious because there is nothing/someone to rely on, and as somehow lonely. Public wording is original synthesis.", "citation_display": "小学館. (n.d.). 心細い. デジタル大辞泉 via コトバンク."
+    },
+    {
+      "reference_id": "R0178", "source_type": "scholarly", "title": "Words shape characters: a case study of correspondence analysis on characters’ words in The Tale of Genji", "authors": ["Ayano Takeuchi", "Toshinobu Ogiso"], "publisher_or_container": "Digital Scholarship in the Humanities", "year": 2026, "volume": "41", "issue": "Supplement_1", "pages": "i284-i293", "doi": "10.1093/llc/fqaf116", "isbn": null,
+      "url": "https://academic.oup.com/dsh/article/41/Supplement_1/i284/8340516", "accessed_at": "2026-09-18", "license": null,
+      "rights_note": "Peer-reviewed study treats kokorobosoi as an emotive adjective in The Tale of Genji and glosses it as lonely; exact contemporary semantic boundaries are fixed by Japanese lexical evidence.", "citation_display": "Takeuchi, A., & Ogiso, T. (2026). Words shape characters: a case study of correspondence analysis on characters’ words in The Tale of Genji. Digital Scholarship in the Humanities, 41(Supplement_1), i284–i293. https://doi.org/10.1093/llc/fqaf116"
+    },
+    {
+      "reference_id": "R0179", "source_type": "pronunciation", "title": "心細い — Japanese pronunciation", "authors": [], "publisher_or_container": "Wiktionary", "year": null, "volume": null, "issue": null, "pages": null, "doi": null, "isbn": null,
+      "url": "https://en.wiktionary.org/wiki/%E5%BF%83%E7%B4%B0%E3%81%84", "accessed_at": "2026-09-18", "license": "CC BY-SA 4.0 / source-file terms",
+      "rights_note": "Japanese IPA [ko̞ko̞ɾo̞bo̞so̞i] and Tokyo accent information are recorded for research. Product audio remains unverified.", "citation_display": "Wiktionary. (n.d.). 心細い."
+    },
+    {
+      "reference_id": "R0180", "source_type": "lexical", "title": "物の哀れ", "authors": [], "publisher_or_container": "小学館デジタル大辞泉 / 精選版日本国語大辞典 via コトバンク", "year": null, "volume": null, "issue": null, "pages": null, "doi": null, "isbn": null,
+      "url": "https://kotobank.jp/word/%E7%89%A9%E3%81%AE%E5%93%80%E3%82%8C-646372", "accessed_at": "2026-09-18", "license": null,
+      "rights_note": "Lexical sources define both the historical literary/aesthetic concept and the deeply felt affect arising on contact with external things; public wording keeps this literary boundary.", "citation_display": "小学館・精選版日本国語大辞典. (n.d.). 物の哀れ. via コトバンク."
+    },
+    {
+      "reference_id": "R0181", "source_type": "scholarly", "title": "An analysis of japanese aesthetic values of the Heian period: Miyabi and Mono No Aware", "authors": ["Waldemiro Francisco Sorte Junior"], "publisher_or_container": "Estudos Japoneses", "year": 2018, "volume": "40", "issue": null, "pages": "81-100", "doi": "10.11606/issn.2447-7125.v40i0p81-100", "isbn": null,
+      "url": "https://revistas.usp.br/ej/en/article/view/159798", "accessed_at": "2026-09-18", "license": "CC BY-NC 4.0",
+      "rights_note": "Scholarly analysis situates mono no aware as sensitivity to things and an aesthetic value linked to perishability in Heian literature. Used without essentializing Japanese people.", "citation_display": "Sorte Junior, W. F. (2018). An analysis of japanese aesthetic values of the Heian period: Miyabi and Mono No Aware. Estudos Japoneses, 40, 81–100. https://doi.org/10.11606/issn.2447-7125.v40i0p81-100"
+    },
+    {
+      "reference_id": "R0182", "source_type": "pronunciation", "title": "物の哀れ — Japanese pronunciation", "authors": [], "publisher_or_container": "Wiktionary", "year": null, "volume": null, "issue": null, "pages": null, "doi": null, "isbn": null,
+      "url": "https://en.wiktionary.org/wiki/%E7%89%A9%E3%81%AE%E5%93%80%E3%82%8C", "accessed_at": "2026-09-18", "license": "CC BY-SA 4.0 / source-file terms",
+      "rights_note": "Japanese IPA [mo̞no̞ no̞ a̠β̞a̠ɾe̞] and Tokyo pitch accent are recorded for research. Product audio remains unverified.", "citation_display": "Wiktionary. (n.d.). 物の哀れ."
+    },
+    {
+      "reference_id": "R0183", "source_type": "lexical", "title": "心疼", "authors": [], "publisher_or_container": "Ministry of Education, R.O.C. — Concised Mandarin Chinese Dictionary", "year": 2021, "volume": null, "issue": null, "pages": null, "doi": null, "isbn": null,
+      "url": "https://dict.concised.moe.edu.tw/dictView.jsp?ID=27598&la=1&powerMode=0", "accessed_at": "2026-09-18", "license": null,
+      "rights_note": "Taiwan Ministry of Education dictionary defines 心疼 as 憐惜、捨不得 and provides Hanyu Pinyin xīn téng. A broader revised entry also records 憐惜、痛惜、吝惜.", "citation_display": "Ministry of Education, R.O.C. (2021). 心疼. Concised Mandarin Chinese Dictionary."
+    },
+    {
+      "reference_id": "R0184", "source_type": "scholarly", "title": "Exploring Affective Priming Effect of Emotion-Label Words and Emotion-Laden Words: An Event-Related Potential Study", "authors": ["Chenggang Wu", "Juan Zhang", "Zhen Yuan"], "publisher_or_container": "Brain Sciences", "year": 2021, "volume": "11", "issue": "5", "pages": "553", "doi": "10.3390/brainsci11050553", "isbn": null,
+      "url": "https://doi.org/10.3390/brainsci11050553", "accessed_at": "2026-09-18", "license": "CC BY 4.0",
+      "rights_note": "Peer-reviewed study includes 心疼 as a negative emotion-label word (sadness) in its Chinese stimulus set. Fine-grained cherishing/reluctance senses come from the Ministry of Education lexical entry.", "citation_display": "Wu, C., Zhang, J., & Yuan, Z. (2021). Exploring Affective Priming Effect of Emotion-Label Words and Emotion-Laden Words. Brain Sciences, 11(5), 553. https://doi.org/10.3390/brainsci11050553"
+    },
+    {
+      "reference_id": "R0185", "source_type": "pronunciation", "title": "心疼 — Mandarin pronunciation", "authors": [], "publisher_or_container": "Wiktionary", "year": null, "volume": null, "issue": null, "pages": null, "doi": null, "isbn": null,
+      "url": "https://en.wiktionary.org/wiki/%E5%BF%83%E7%96%BC", "accessed_at": "2026-09-18", "license": "CC BY-SA 4.0 / source-file terms",
+      "rights_note": "Mandarin Hanyu Pinyin xīnténg and Zhuyin are recorded for research; exact IPA/audio remains pending product-safe verification.", "citation_display": "Wiktionary. (n.d.). 心疼."
+    }
+  ],
+  "screened_out": [
+    {
+      "term": "Fremdscham",
+      "status": "HOLD_NEAR_KOREAN_EQUIVALENT",
+      "reason": "Korean 대리 수치/대리 수치심 already provides a compact conventional equivalent for vicarious embarrassment, so expression cost is too low for priority admission."
+    },
+    {
+      "term": "百感交集",
+      "status": "HOLD_NEAR_KOREAN_IDIOM",
+      "reason": "Korean 만감이 교차하다 is a compact conventional idiom preserving the central sense of many emotions converging at once."
+    },
+    {
+      "term": "儚い",
+      "status": "HOLD_NEAR_KOREAN_EQUIVALENT",
+      "reason": "Korean 덧없다 already compresses much of the transience/ephemerality sense; preserve for comparison rather than priority admission."
+    }
+  ]
+}

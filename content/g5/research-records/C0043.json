@@ -1,0 +1,231 @@
+{
+  "schema_version": "2.1.0",
+  "research_id": "RR-C0043-FOREIGN",
+  "card_id": "C0043",
+  "candidate": {
+    "term": "心細い",
+    "language_code": "ja-JP",
+    "language_name": "日本語",
+    "experience_type": "unsupported_anxious_loneliness"
+  },
+  "lifecycle_state": "HOLD",
+  "source_inventory": [
+    {
+      "reference_id": "R0177",
+      "role": "lexical",
+      "quality_tier": "A"
+    },
+    {
+      "reference_id": "R0178",
+      "role": "scholarly",
+      "quality_tier": "A"
+    },
+    {
+      "reference_id": "R0179",
+      "role": "pronunciation",
+      "quality_tier": "B"
+    }
+  ],
+  "lexical_verification": {
+    "status": "PASS",
+    "summary": "원어 권위 사전에서 목표 표제어와 카드에 사용할 의미 범위를 확인했다.",
+    "reference_ids": [
+      "R0177"
+    ]
+  },
+  "semantic_definition_and_boundaries": {
+    "status": "PASS",
+    "summary": "한국어의 불안하다·외롭다·막막하다 가운데 하나만으로는 의지할 대상이나 기반이 없다는 조건과 그 때문에 생기는 불안, 외로움, 무력한 막막함을 함께 보존하기 어렵다.",
+    "reference_ids": [
+      "R0177",
+      "R0178"
+    ]
+  },
+  "cultural_context_review": {
+    "status": "PASS",
+    "summary": "언어·문화 맥락을 설명하되 해당 문화 사람만 이 경험을 느낀다는 본질주의나 번역불가능성 주장을 하지 않는다.",
+    "reference_ids": [
+      "R0177",
+      "R0178"
+    ]
+  },
+  "comparisons": {
+    "ko": {
+      "status": "PASS",
+      "near_terms": [
+        "의지할 데 없어 불안하다",
+        "막막하고 외롭다",
+        "기댈 곳이 없어 마음이 불안하다"
+      ],
+      "difference_note": "한국어 근접어 하나로는 핵심 의미 패키지를 모두 보존하기 어렵다.",
+      "verification_note": "Korean Expression Cost review PASS.",
+      "reference_ids": [
+        "R0177",
+        "R0178"
+      ]
+    },
+    "en": {
+      "status": "HOLD",
+      "near_terms": [
+        "forlorn",
+        "anxious for lack of support",
+        "lonely and helpless"
+      ],
+      "difference_note": "영어 근접어는 provisional이며 독립 lexical verification 전에는 최종 비교로 승격하지 않는다.",
+      "verification_note": "Research-stage provisional mapping.",
+      "reference_ids": [
+        "R0177"
+      ]
+    },
+    "zh": {
+      "status": "HOLD",
+      "near_terms": [
+        "无所依靠而不安",
+        "孤单又心里没底"
+      ],
+      "difference_note": "원어가 중국어이면 target lexical evidence로 자체 의미를 확인했고, 그 외에는 provisional이다.",
+      "verification_note": "Target-language evidence or provisional mapping.",
+      "reference_ids": [
+        "R0177"
+      ]
+    },
+    "ja": {
+      "status": "PASS",
+      "near_terms": [
+        "頼るものがなく不安である",
+        "なんとなく寂しく感じる"
+      ],
+      "difference_note": "일본어 근접어는 provisional이며 독립 lexical verification 전에는 최종 비교로 승격하지 않는다.",
+      "verification_note": "Research-stage provisional mapping.",
+      "reference_ids": [
+        "R0177"
+      ]
+    }
+  },
+  "pronunciation_verification": {
+    "status": "HOLD",
+    "ipa": "[ko̞ko̞ɾo̞bo̞so̞i]",
+    "locale": "ja-JP",
+    "reference_ids": [
+      "R0179"
+    ],
+    "audio_asset_id": null,
+    "notes": "IPA/transliteration provenance is recorded, but exact product-safe audio source, creator, locale fit, license, rights, and SHA linkage are not yet verified."
+  },
+  "claim_source_map": [
+    {
+      "claim_id": "CL-001",
+      "claim": "한국어의 불안하다·외롭다·막막하다 가운데 하나만으로는 의지할 대상이나 기반이 없다는 조건과 그 때문에 생기는 불안, 외로움, 무력한 막막함을 함께 보존하기 어렵다.",
+      "reference_ids": [
+        "R0177",
+        "R0178"
+      ],
+      "evidence_locator": "Target lexical definition plus directly relevant scholarly evidence.",
+      "public_safe": true
+    },
+    {
+      "claim_id": "CL-002",
+      "claim": "한국어의 흔한 한 단어 하나로는 핵심 의미 패키지를 모두 보존하기 어렵다.",
+      "reference_ids": [
+        "R0177",
+        "R0178"
+      ],
+      "evidence_locator": "Korean Expression Cost review against target semantic components.",
+      "public_safe": true
+    }
+  ],
+  "relations": [],
+  "illustration_brief": {
+    "status": "HOLD",
+    "summary": "Product audio rights and full multilingual comparison are incomplete; illustration is deferred.",
+    "reference_ids": [
+      "R0177"
+    ]
+  },
+  "editorial_copy": {
+    "status": "HOLD",
+    "summary": "Public poetic copy is deferred until all gates can be evaluated together.",
+    "reference_ids": [
+      "R0177",
+      "R0178"
+    ]
+  },
+  "automated_gates": {
+    "schema": "PASS",
+    "evidence": "PASS",
+    "pronunciation": "HOLD",
+    "cultural_humility": "PASS",
+    "rights": "HOLD",
+    "privacy": "PASS"
+  },
+  "distinctiveness_review": {
+    "status": "PASS",
+    "track": "FOREIGN_KOREAN_GAP",
+    "generic_basic_emotion": false,
+    "nearest_cross_language_terms": {
+      "ko": [
+        "의지할 데 없어 불안하다",
+        "막막하고 외롭다",
+        "기댈 곳이 없어 마음이 불안하다"
+      ],
+      "en": [
+        "forlorn",
+        "anxious for lack of support",
+        "lonely and helpless"
+      ],
+      "zh": [
+        "无所依靠而不安",
+        "孤单又心里没底"
+      ],
+      "ja": [
+        "頼るものがなく不安である",
+        "なんとなく寂しく感じる"
+      ]
+    },
+    "semantic_residue": "한국어의 불안하다·외롭다·막막하다 가운데 하나만으로는 의지할 대상이나 기반이 없다는 조건과 그 때문에 생기는 불안, 외로움, 무력한 막막함을 함께 보존하기 어렵다.",
+    "residue_reference_ids": [
+      "R0177",
+      "R0178"
+    ],
+    "overclaim_to_avoid": "모든 외로움이나 불안을 心細い로 번역하거나 임상적 불안장애·우울 상태와 동일시하지 않는다.",
+    "korean_expression_cost": {
+      "classification": "EXPLANATORY_PHRASE_REQUIRED",
+      "status": "PASS",
+      "nearest_korean_terms": [
+        "의지할 데 없어 불안하다",
+        "막막하고 외롭다",
+        "기댈 곳이 없어 마음이 불안하다"
+      ],
+      "natural_korean_rendering": "의지하거나 도와줄 사람·기반이 부족해서 혼자인 듯 외롭고, 앞으로의 상황을 감당할 자신이나 버팀목이 없어 마음이 불안하고 막막한 느낌",
+      "residue_dimensions": [
+        "lack of a reliable support or basis",
+        "anxiety",
+        "loneliness/forlornness",
+        "felt helplessness"
+      ],
+      "reference_ids": [
+        "R0177",
+        "R0178"
+      ],
+      "rationale": "한국어의 흔한 한 단어가 의미 전체를 보존하는지 먼저 검토했다. 이 후보는 핵심 의미 요소가 여러 한국어 표현으로 분산되거나 설명적 구가 필요하며, 원어 사전과 직접 관련 학술 근거가 그 의미 잔여를 뒷받침한다."
+    }
+  },
+  "human_editorial_release": {
+    "status": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": "Research-stage HOLD. Human Editorial Release is not open until product audio rights and full multilingual comparison pass."
+  },
+  "changelog": [
+    {
+      "date": "2026-09-18",
+      "state": "RESEARCH",
+      "note": "Foreign semantic-gap source-first research under v2.1 Korean Expression Cost contract."
+    },
+    {
+      "date": "2026-09-18",
+      "state": "HOLD",
+      "note": "Core semantic gap passes; product audio rights and full multilingual comparison remain incomplete."
+    }
+  ]
+}

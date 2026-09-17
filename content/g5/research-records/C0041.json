@@ -1,0 +1,231 @@
+{
+  "schema_version": "2.1.0",
+  "research_id": "RR-C0041-FOREIGN",
+  "card_id": "C0041",
+  "candidate": {
+    "term": "เกรงใจ",
+    "language_code": "th",
+    "language_name": "ไทย",
+    "experience_type": "relational_deferential_experience"
+  },
+  "lifecycle_state": "HOLD",
+  "source_inventory": [
+    {
+      "reference_id": "R0171",
+      "role": "lexical",
+      "quality_tier": "A"
+    },
+    {
+      "reference_id": "R0172",
+      "role": "scholarly",
+      "quality_tier": "A"
+    },
+    {
+      "reference_id": "R0173",
+      "role": "pronunciation",
+      "quality_tier": "B"
+    }
+  ],
+  "lexical_verification": {
+    "status": "PASS",
+    "summary": "원어 권위 사전에서 목표 표제어와 카드에 사용할 의미 범위를 확인했다.",
+    "reference_ids": [
+      "R0171"
+    ]
+  },
+  "semantic_definition_and_boundaries": {
+    "status": "PASS",
+    "summary": "한국어의 배려·미안함·눈치·사양 가운데 하나만으로는 타인을 불편하게 하거나 폐를 끼치지 않으려는 배려, 상대가 불쾌해할 수 있다는 우려, 관계적 거리나 위계를 의식한 자기제약을 함께 담기 어렵다.",
+    "reference_ids": [
+      "R0171",
+      "R0172"
+    ]
+  },
+  "cultural_context_review": {
+    "status": "PASS",
+    "summary": "언어·문화 맥락을 설명하되 해당 문화 사람만 이 경험을 느낀다는 본질주의나 번역불가능성 주장을 하지 않는다.",
+    "reference_ids": [
+      "R0171",
+      "R0172"
+    ]
+  },
+  "comparisons": {
+    "ko": {
+      "status": "PASS",
+      "near_terms": [
+        "폐를 끼칠까 미안하고 조심스럽다",
+        "상대가 불편할까 봐 부탁하기 어렵다",
+        "눈치가 보여 사양하다"
+      ],
+      "difference_note": "한국어 근접어 하나로는 핵심 의미 패키지를 모두 보존하기 어렵다.",
+      "verification_note": "Korean Expression Cost review PASS.",
+      "reference_ids": [
+        "R0171",
+        "R0172"
+      ]
+    },
+    "en": {
+      "status": "HOLD",
+      "near_terms": [
+        "reluctance to impose",
+        "considerate deference",
+        "concern about inconveniencing another"
+      ],
+      "difference_note": "영어 근접어는 provisional이며 독립 lexical verification 전에는 최종 비교로 승격하지 않는다.",
+      "verification_note": "Research-stage provisional mapping.",
+      "reference_ids": [
+        "R0171"
+      ]
+    },
+    "zh": {
+      "status": "HOLD",
+      "near_terms": [
+        "怕给别人添麻烦而有所顾忌",
+        "顾虑对方感受而不愿麻烦他人"
+      ],
+      "difference_note": "원어가 중국어이면 target lexical evidence로 자체 의미를 확인했고, 그 외에는 provisional이다.",
+      "verification_note": "Target-language evidence or provisional mapping.",
+      "reference_ids": [
+        "R0171"
+      ]
+    },
+    "ja": {
+      "status": "HOLD",
+      "near_terms": [
+        "相手に迷惑をかけまいと遠慮する気持ち",
+        "相手の気持ちを気遣う遠慮"
+      ],
+      "difference_note": "일본어 근접어는 provisional이며 독립 lexical verification 전에는 최종 비교로 승격하지 않는다.",
+      "verification_note": "Research-stage provisional mapping.",
+      "reference_ids": [
+        "R0171"
+      ]
+    }
+  },
+  "pronunciation_verification": {
+    "status": "HOLD",
+    "ipa": "/kreːŋ˧.t͡ɕaj˧/",
+    "locale": "th",
+    "reference_ids": [
+      "R0173"
+    ],
+    "audio_asset_id": null,
+    "notes": "IPA/transliteration provenance is recorded, but exact product-safe audio source, creator, locale fit, license, rights, and SHA linkage are not yet verified."
+  },
+  "claim_source_map": [
+    {
+      "claim_id": "CL-001",
+      "claim": "한국어의 배려·미안함·눈치·사양 가운데 하나만으로는 타인을 불편하게 하거나 폐를 끼치지 않으려는 배려, 상대가 불쾌해할 수 있다는 우려, 관계적 거리나 위계를 의식한 자기제약을 함께 담기 어렵다.",
+      "reference_ids": [
+        "R0171",
+        "R0172"
+      ],
+      "evidence_locator": "Target lexical definition plus directly relevant scholarly evidence.",
+      "public_safe": true
+    },
+    {
+      "claim_id": "CL-002",
+      "claim": "한국어의 흔한 한 단어 하나로는 핵심 의미 패키지를 모두 보존하기 어렵다.",
+      "reference_ids": [
+        "R0171",
+        "R0172"
+      ],
+      "evidence_locator": "Korean Expression Cost review against target semantic components.",
+      "public_safe": true
+    }
+  ],
+  "relations": [],
+  "illustration_brief": {
+    "status": "HOLD",
+    "summary": "Product audio rights and full multilingual comparison are incomplete; illustration is deferred.",
+    "reference_ids": [
+      "R0171"
+    ]
+  },
+  "editorial_copy": {
+    "status": "HOLD",
+    "summary": "Public poetic copy is deferred until all gates can be evaluated together.",
+    "reference_ids": [
+      "R0171",
+      "R0172"
+    ]
+  },
+  "automated_gates": {
+    "schema": "PASS",
+    "evidence": "PASS",
+    "pronunciation": "HOLD",
+    "cultural_humility": "PASS",
+    "rights": "HOLD",
+    "privacy": "PASS"
+  },
+  "distinctiveness_review": {
+    "status": "PASS",
+    "track": "FOREIGN_KOREAN_GAP",
+    "generic_basic_emotion": false,
+    "nearest_cross_language_terms": {
+      "ko": [
+        "폐를 끼칠까 미안하고 조심스럽다",
+        "상대가 불편할까 봐 부탁하기 어렵다",
+        "눈치가 보여 사양하다"
+      ],
+      "en": [
+        "reluctance to impose",
+        "considerate deference",
+        "concern about inconveniencing another"
+      ],
+      "zh": [
+        "怕给别人添麻烦而有所顾忌",
+        "顾虑对方感受而不愿麻烦他人"
+      ],
+      "ja": [
+        "相手に迷惑をかけまいと遠慮する気持ち",
+        "相手の気持ちを気遣う遠慮"
+      ]
+    },
+    "semantic_residue": "한국어의 배려·미안함·눈치·사양 가운데 하나만으로는 타인을 불편하게 하거나 폐를 끼치지 않으려는 배려, 상대가 불쾌해할 수 있다는 우려, 관계적 거리나 위계를 의식한 자기제약을 함께 담기 어렵다.",
+    "residue_reference_ids": [
+      "R0171",
+      "R0172"
+    ],
+    "overclaim_to_avoid": "태국 사람만 느끼는 고유 감정이라고 본질화하거나 단순한 예의·공포·수동성 하나로 축소하지 않는다.",
+    "korean_expression_cost": {
+      "classification": "EXPLANATORY_PHRASE_REQUIRED",
+      "status": "PASS",
+      "nearest_korean_terms": [
+        "폐를 끼칠까 미안하고 조심스럽다",
+        "상대가 불편할까 봐 부탁하기 어렵다",
+        "눈치가 보여 사양하다"
+      ],
+      "natural_korean_rendering": "상대를 불편하게 하거나 폐를 끼치고 싶지 않아 부탁·거절·행동을 스스로 조심하면서, 상대의 감정과 관계적 위치까지 함께 의식하는 마음",
+      "residue_dimensions": [
+        "consideration for another's feelings",
+        "reluctance to impose or inconvenience",
+        "fear of displeasing or offending",
+        "relational/deferential constraint"
+      ],
+      "reference_ids": [
+        "R0171",
+        "R0172"
+      ],
+      "rationale": "한국어의 흔한 한 단어가 의미 전체를 보존하는지 먼저 검토했다. 이 후보는 핵심 의미 요소가 여러 한국어 표현으로 분산되거나 설명적 구가 필요하며, 원어 사전과 직접 관련 학술 근거가 그 의미 잔여를 뒷받침한다."
+    }
+  },
+  "human_editorial_release": {
+    "status": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": "Research-stage HOLD. Human Editorial Release is not open until product audio rights and full multilingual comparison pass."
+  },
+  "changelog": [
+    {
+      "date": "2026-09-18",
+      "state": "RESEARCH",
+      "note": "Foreign semantic-gap source-first research under v2.1 Korean Expression Cost contract."
+    },
+    {
+      "date": "2026-09-18",
+      "state": "HOLD",
+      "note": "Core semantic gap passes; product audio rights and full multilingual comparison remain incomplete."
+    }
+  ]
+}

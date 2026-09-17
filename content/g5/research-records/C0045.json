@@ -1,0 +1,235 @@
+{
+  "schema_version": "2.1.0",
+  "research_id": "RR-C0045-FOREIGN",
+  "card_id": "C0045",
+  "candidate": {
+    "term": "心疼",
+    "language_code": "zh-CN",
+    "language_name": "中文",
+    "experience_type": "cherishing_sympathetic_distress"
+  },
+  "lifecycle_state": "HOLD",
+  "source_inventory": [
+    {
+      "reference_id": "R0183",
+      "role": "lexical",
+      "quality_tier": "A"
+    },
+    {
+      "reference_id": "R0184",
+      "role": "scholarly",
+      "quality_tier": "A"
+    },
+    {
+      "reference_id": "R0185",
+      "role": "pronunciation",
+      "quality_tier": "B"
+    }
+  ],
+  "lexical_verification": {
+    "status": "PASS",
+    "summary": "원어 권위 사전에서 목표 표제어와 카드에 사용할 의미 범위를 확인했다.",
+    "reference_ids": [
+      "R0183"
+    ]
+  },
+  "semantic_definition_and_boundaries": {
+    "status": "PASS",
+    "summary": "한국어의 안쓰럽다·아깝다·마음 아프다·아끼다 가운데 하나만으로는 소중히 여기는 애정, 불쌍히 여기는 마음, 잃거나 손상되기 싫은 아까움, 대상의 고통 때문에 함께 마음 아픈 느낌을 폭넓게 묶기 어렵다.",
+    "reference_ids": [
+      "R0183",
+      "R0184"
+    ]
+  },
+  "cultural_context_review": {
+    "status": "PASS",
+    "summary": "언어·문화 맥락을 설명하되 해당 문화 사람만 이 경험을 느낀다는 본질주의나 번역불가능성 주장을 하지 않는다.",
+    "reference_ids": [
+      "R0183",
+      "R0184"
+    ]
+  },
+  "comparisons": {
+    "ko": {
+      "status": "PASS",
+      "near_terms": [
+        "안쓰럽고 마음 아프다",
+        "아까워서 속상하다",
+        "소중해서 다치는 걸 못 보겠다"
+      ],
+      "difference_note": "한국어 근접어 하나로는 핵심 의미 패키지를 모두 보존하기 어렵다.",
+      "verification_note": "Korean Expression Cost review PASS.",
+      "reference_ids": [
+        "R0183",
+        "R0184"
+      ]
+    },
+    "en": {
+      "status": "HOLD",
+      "near_terms": [
+        "to ache for someone",
+        "cherishing sympathetic distress",
+        "pain at harm or loss to something cherished"
+      ],
+      "difference_note": "영어 근접어는 provisional이며 독립 lexical verification 전에는 최종 비교로 승격하지 않는다.",
+      "verification_note": "Research-stage provisional mapping.",
+      "reference_ids": [
+        "R0183"
+      ]
+    },
+    "zh": {
+      "status": "PASS",
+      "near_terms": [
+        "怜惜、舍不得",
+        "因珍爱而感到难过或惋惜",
+        "疼爱并为其受损而难受"
+      ],
+      "difference_note": "원어가 중국어이면 target lexical evidence로 자체 의미를 확인했고, 그 외에는 provisional이다.",
+      "verification_note": "Target-language evidence or provisional mapping.",
+      "reference_ids": [
+        "R0183"
+      ]
+    },
+    "ja": {
+      "status": "HOLD",
+      "near_terms": [
+        "大切だから傷つくのがつらい",
+        "いとおしくて気の毒に思う",
+        "惜しくて心が痛む"
+      ],
+      "difference_note": "일본어 근접어는 provisional이며 독립 lexical verification 전에는 최종 비교로 승격하지 않는다.",
+      "verification_note": "Research-stage provisional mapping.",
+      "reference_ids": [
+        "R0183"
+      ]
+    }
+  },
+  "pronunciation_verification": {
+    "status": "HOLD",
+    "ipa": "xīnténg",
+    "locale": "zh-CN",
+    "reference_ids": [
+      "R0185"
+    ],
+    "audio_asset_id": null,
+    "notes": "IPA/transliteration provenance is recorded, but exact product-safe audio source, creator, locale fit, license, rights, and SHA linkage are not yet verified."
+  },
+  "claim_source_map": [
+    {
+      "claim_id": "CL-001",
+      "claim": "한국어의 안쓰럽다·아깝다·마음 아프다·아끼다 가운데 하나만으로는 소중히 여기는 애정, 불쌍히 여기는 마음, 잃거나 손상되기 싫은 아까움, 대상의 고통 때문에 함께 마음 아픈 느낌을 폭넓게 묶기 어렵다.",
+      "reference_ids": [
+        "R0183",
+        "R0184"
+      ],
+      "evidence_locator": "Target lexical definition plus directly relevant scholarly evidence.",
+      "public_safe": true
+    },
+    {
+      "claim_id": "CL-002",
+      "claim": "한국어의 흔한 한 단어 하나로는 핵심 의미 패키지를 모두 보존하기 어렵다.",
+      "reference_ids": [
+        "R0183",
+        "R0184"
+      ],
+      "evidence_locator": "Korean Expression Cost review against target semantic components.",
+      "public_safe": true
+    }
+  ],
+  "relations": [],
+  "illustration_brief": {
+    "status": "HOLD",
+    "summary": "Product audio rights and full multilingual comparison are incomplete; illustration is deferred.",
+    "reference_ids": [
+      "R0183"
+    ]
+  },
+  "editorial_copy": {
+    "status": "HOLD",
+    "summary": "Public poetic copy is deferred until all gates can be evaluated together.",
+    "reference_ids": [
+      "R0183",
+      "R0184"
+    ]
+  },
+  "automated_gates": {
+    "schema": "PASS",
+    "evidence": "PASS",
+    "pronunciation": "HOLD",
+    "cultural_humility": "PASS",
+    "rights": "HOLD",
+    "privacy": "PASS"
+  },
+  "distinctiveness_review": {
+    "status": "PASS",
+    "track": "FOREIGN_KOREAN_GAP",
+    "generic_basic_emotion": false,
+    "nearest_cross_language_terms": {
+      "ko": [
+        "안쓰럽고 마음 아프다",
+        "아까워서 속상하다",
+        "소중해서 다치는 걸 못 보겠다"
+      ],
+      "en": [
+        "to ache for someone",
+        "cherishing sympathetic distress",
+        "pain at harm or loss to something cherished"
+      ],
+      "zh": [
+        "怜惜、舍不得",
+        "因珍爱而感到难过或惋惜",
+        "疼爱并为其受损而难受"
+      ],
+      "ja": [
+        "大切だから傷つくのがつらい",
+        "いとおしくて気の毒に思う",
+        "惜しくて心が痛む"
+      ]
+    },
+    "semantic_residue": "한국어의 안쓰럽다·아깝다·마음 아프다·아끼다 가운데 하나만으로는 소중히 여기는 애정, 불쌍히 여기는 마음, 잃거나 손상되기 싫은 아까움, 대상의 고통 때문에 함께 마음 아픈 느낌을 폭넓게 묶기 어렵다.",
+    "residue_reference_ids": [
+      "R0183",
+      "R0184"
+    ],
+    "overclaim_to_avoid": "문자 그대로의 심장 통증과 혼동하거나 모든 슬픔·동정을 心疼으로 번역하지 않으며, 애정·아낌·연민·아까움으로 넓어지는 다의적 사용 범위를 과도하게 하나의 감정으로 고정하지 않는다.",
+    "korean_expression_cost": {
+      "classification": "EXPLANATORY_PHRASE_REQUIRED",
+      "status": "PASS",
+      "nearest_korean_terms": [
+        "안쓰럽고 마음 아프다",
+        "아까워서 속상하다",
+        "소중해서 다치는 걸 못 보겠다"
+      ],
+      "natural_korean_rendering": "아끼고 사랑하는 사람이나 소중한 물건이 힘들어하거나 다치고 손상되는 것을 보면서, 안쓰러움·아까움·보호하고 싶은 마음과 함께 내 마음도 아프게 느껴지는 감정",
+      "residue_dimensions": [
+        "cherishing or affection",
+        "pity/sympathetic concern",
+        "reluctance to part with or lose",
+        "felt distress when the cherished target is harmed"
+      ],
+      "reference_ids": [
+        "R0183",
+        "R0184"
+      ],
+      "rationale": "한국어의 흔한 한 단어가 의미 전체를 보존하는지 먼저 검토했다. 이 후보는 핵심 의미 요소가 여러 한국어 표현으로 분산되거나 설명적 구가 필요하며, 원어 사전과 직접 관련 학술 근거가 그 의미 잔여를 뒷받침한다."
+    }
+  },
+  "human_editorial_release": {
+    "status": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": "Research-stage HOLD. Human Editorial Release is not open until product audio rights and full multilingual comparison pass."
+  },
+  "changelog": [
+    {
+      "date": "2026-09-18",
+      "state": "RESEARCH",
+      "note": "Foreign semantic-gap source-first research under v2.1 Korean Expression Cost contract."
+    },
+    {
+      "date": "2026-09-18",
+      "state": "HOLD",
+      "note": "Core semantic gap passes; product audio rights and full multilingual comparison remain incomplete."
+    }
+  ]
+}

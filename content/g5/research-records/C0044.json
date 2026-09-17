@@ -1,0 +1,231 @@
+{
+  "schema_version": "2.1.0",
+  "research_id": "RR-C0044-FOREIGN",
+  "card_id": "C0044",
+  "candidate": {
+    "term": "物の哀れ",
+    "language_code": "ja-JP",
+    "language_name": "日本語",
+    "experience_type": "aesthetic_sensitivity_to_transience"
+  },
+  "lifecycle_state": "HOLD",
+  "source_inventory": [
+    {
+      "reference_id": "R0180",
+      "role": "lexical",
+      "quality_tier": "A"
+    },
+    {
+      "reference_id": "R0181",
+      "role": "scholarly",
+      "quality_tier": "A"
+    },
+    {
+      "reference_id": "R0182",
+      "role": "pronunciation",
+      "quality_tier": "B"
+    }
+  ],
+  "lexical_verification": {
+    "status": "PASS",
+    "summary": "원어 권위 사전에서 목표 표제어와 카드에 사용할 의미 범위를 확인했다.",
+    "reference_ids": [
+      "R0180"
+    ]
+  },
+  "semantic_definition_and_boundaries": {
+    "status": "PASS",
+    "summary": "한국어의 무상함·애수·애잔함·감동 가운데 하나만으로는 사물에 대한 섬세한 감수성, 변화와 소멸의 자각, 그 덧없음에서 생기는 아름다움과 애수의 미적 감응을 함께 담기 어렵다.",
+    "reference_ids": [
+      "R0180",
+      "R0181"
+    ]
+  },
+  "cultural_context_review": {
+    "status": "PASS",
+    "summary": "언어·문화 맥락을 설명하되 해당 문화 사람만 이 경험을 느낀다는 본질주의나 번역불가능성 주장을 하지 않는다.",
+    "reference_ids": [
+      "R0180",
+      "R0181"
+    ]
+  },
+  "comparisons": {
+    "ko": {
+      "status": "PASS",
+      "near_terms": [
+        "덧없음에서 오는 애잔한 감동",
+        "사라지는 아름다움에 대한 애수",
+        "무상함을 느끼는 감상"
+      ],
+      "difference_note": "한국어 근접어 하나로는 핵심 의미 패키지를 모두 보존하기 어렵다.",
+      "verification_note": "Korean Expression Cost review PASS.",
+      "reference_ids": [
+        "R0180",
+        "R0181"
+      ]
+    },
+    "en": {
+      "status": "HOLD",
+      "near_terms": [
+        "pathos of things",
+        "sensitivity to transience",
+        "poignant awareness of impermanence"
+      ],
+      "difference_note": "영어 근접어는 provisional이며 독립 lexical verification 전에는 최종 비교로 승격하지 않는다.",
+      "verification_note": "Research-stage provisional mapping.",
+      "reference_ids": [
+        "R0180"
+      ]
+    },
+    "zh": {
+      "status": "HOLD",
+      "near_terms": [
+        "对事物无常的细腻感怀",
+        "因消逝与变迁而生的幽情"
+      ],
+      "difference_note": "원어가 중국어이면 target lexical evidence로 자체 의미를 확인했고, 그 외에는 provisional이다.",
+      "verification_note": "Target-language evidence or provisional mapping.",
+      "reference_ids": [
+        "R0180"
+      ]
+    },
+    "ja": {
+      "status": "PASS",
+      "near_terms": [
+        "外界の事物に触れて起こるしみじみとした情感",
+        "無常や移ろいへの繊細な感受性"
+      ],
+      "difference_note": "일본어 근접어는 provisional이며 독립 lexical verification 전에는 최종 비교로 승격하지 않는다.",
+      "verification_note": "Research-stage provisional mapping.",
+      "reference_ids": [
+        "R0180"
+      ]
+    }
+  },
+  "pronunciation_verification": {
+    "status": "HOLD",
+    "ipa": "[mo̞no̞ no̞ a̠β̞a̠ɾe̞]",
+    "locale": "ja-JP",
+    "reference_ids": [
+      "R0182"
+    ],
+    "audio_asset_id": null,
+    "notes": "IPA/transliteration provenance is recorded, but exact product-safe audio source, creator, locale fit, license, rights, and SHA linkage are not yet verified."
+  },
+  "claim_source_map": [
+    {
+      "claim_id": "CL-001",
+      "claim": "한국어의 무상함·애수·애잔함·감동 가운데 하나만으로는 사물에 대한 섬세한 감수성, 변화와 소멸의 자각, 그 덧없음에서 생기는 아름다움과 애수의 미적 감응을 함께 담기 어렵다.",
+      "reference_ids": [
+        "R0180",
+        "R0181"
+      ],
+      "evidence_locator": "Target lexical definition plus directly relevant scholarly evidence.",
+      "public_safe": true
+    },
+    {
+      "claim_id": "CL-002",
+      "claim": "한국어의 흔한 한 단어 하나로는 핵심 의미 패키지를 모두 보존하기 어렵다.",
+      "reference_ids": [
+        "R0180",
+        "R0181"
+      ],
+      "evidence_locator": "Korean Expression Cost review against target semantic components.",
+      "public_safe": true
+    }
+  ],
+  "relations": [],
+  "illustration_brief": {
+    "status": "HOLD",
+    "summary": "Product audio rights and full multilingual comparison are incomplete; illustration is deferred.",
+    "reference_ids": [
+      "R0180"
+    ]
+  },
+  "editorial_copy": {
+    "status": "HOLD",
+    "summary": "Public poetic copy is deferred until all gates can be evaluated together.",
+    "reference_ids": [
+      "R0180",
+      "R0181"
+    ]
+  },
+  "automated_gates": {
+    "schema": "PASS",
+    "evidence": "PASS",
+    "pronunciation": "HOLD",
+    "cultural_humility": "PASS",
+    "rights": "HOLD",
+    "privacy": "PASS"
+  },
+  "distinctiveness_review": {
+    "status": "PASS",
+    "track": "FOREIGN_KOREAN_GAP",
+    "generic_basic_emotion": false,
+    "nearest_cross_language_terms": {
+      "ko": [
+        "덧없음에서 오는 애잔한 감동",
+        "사라지는 아름다움에 대한 애수",
+        "무상함을 느끼는 감상"
+      ],
+      "en": [
+        "pathos of things",
+        "sensitivity to transience",
+        "poignant awareness of impermanence"
+      ],
+      "zh": [
+        "对事物无常的细腻感怀",
+        "因消逝与变迁而生的幽情"
+      ],
+      "ja": [
+        "外界の事物に触れて起こるしみじみとした情感",
+        "無常や移ろいへの繊細な感受性"
+      ]
+    },
+    "semantic_residue": "한국어의 무상함·애수·애잔함·감동 가운데 하나만으로는 사물에 대한 섬세한 감수성, 변화와 소멸의 자각, 그 덧없음에서 생기는 아름다움과 애수의 미적 감응을 함께 담기 어렵다.",
+    "residue_reference_ids": [
+      "R0180",
+      "R0181"
+    ],
+    "overclaim_to_avoid": "일본인만 느낄 수 있는 국민적 정서나 완전히 번역불가능한 감정으로 본질화하지 않고, 일반적인 슬픔과 동일시하지 않으며 역사적 문학·미학 맥락을 보존한다.",
+    "korean_expression_cost": {
+      "classification": "EXPLANATORY_PHRASE_REQUIRED",
+      "status": "PASS",
+      "nearest_korean_terms": [
+        "덧없음에서 오는 애잔한 감동",
+        "사라지는 아름다움에 대한 애수",
+        "무상함을 느끼는 감상"
+      ],
+      "natural_korean_rendering": "사물과 삶의 아름다움이 변하고 사라진다는 사실을 섬세하게 느끼면서, 그 덧없음 때문에 오히려 대상이 더 소중하고 애잔하게 다가와 깊이 마음이 움직이는 미적 감응",
+      "residue_dimensions": [
+        "sensitivity to things",
+        "awareness of transience",
+        "beauty intertwined with pathos",
+        "literary/aesthetic affective response"
+      ],
+      "reference_ids": [
+        "R0180",
+        "R0181"
+      ],
+      "rationale": "한국어의 흔한 한 단어가 의미 전체를 보존하는지 먼저 검토했다. 이 후보는 핵심 의미 요소가 여러 한국어 표현으로 분산되거나 설명적 구가 필요하며, 원어 사전과 직접 관련 학술 근거가 그 의미 잔여를 뒷받침한다."
+    }
+  },
+  "human_editorial_release": {
+    "status": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": "Research-stage HOLD. Human Editorial Release is not open until product audio rights and full multilingual comparison pass."
+  },
+  "changelog": [
+    {
+      "date": "2026-09-18",
+      "state": "RESEARCH",
+      "note": "Foreign semantic-gap source-first research under v2.1 Korean Expression Cost contract."
+    },
+    {
+      "date": "2026-09-18",
+      "state": "HOLD",
+      "note": "Core semantic gap passes; product audio rights and full multilingual comparison remain incomplete."
+    }
+  ]
+}
