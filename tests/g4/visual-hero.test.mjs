@@ -66,6 +66,24 @@ test('mobile interaction polish preserves navigation semantics while adding rest
   assert.match(css, /@media \(prefers-reduced-motion: reduce\)/);
 });
 
+test('Beauty V2 mobile UI baseline is explicitly locked to the validated interaction commit and content snapshot', () => {
+  const lock = readJson('content/approved/mobile-ui-beauty-v2-lock.json');
+  assert.equal(lock.status, 'LOCKED');
+  assert.equal(lock.canonical_commit, '4218017');
+  assert.equal(lock.visual_baseline_commit, '20e3a34');
+  assert.equal(lock.generated_background_release_commit, 'c685816');
+  assert.equal(lock.runtime_snapshot_version, 'a1c474f884d64648');
+  assert.equal(lock.content_snapshot_version, '867d91c0737e29c7');
+  assert.equal(lock.invariants.generated_raster_is_background_only, true);
+  assert.equal(lock.invariants.text_and_controls_are_dom_layers, true);
+  assert.equal(lock.invariants.daily_card_semantics_unchanged, true);
+  assert.equal(lock.invariants.reflection_storage_remains_local_only, true);
+  assert.equal(lock.invariants.external_publish_authorized, false);
+  for (const artifact of Object.values(lock.verification_artifacts)) {
+    assert.equal(fs.existsSync(path.join(ROOT, artifact)), true, `missing Beauty V2 lock artifact ${artifact}`);
+  }
+});
+
 test('mobile-first shell uses a constrained app canvas, safe-area bottom navigation, and image-led discovery cards', () => {
   const html = readText('src/ui/index.html');
   const css = readText('assets/css/styles.css');

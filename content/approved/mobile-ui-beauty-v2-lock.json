@@ -1,0 +1,34 @@
+{
+  "schema_version": "1.0.0",
+  "status": "LOCKED",
+  "locked_at": "2026-09-17",
+  "name": "NameOnMyMind Mobile Beauty V2 + Interaction V1",
+  "canonical_commit": "4218017",
+  "visual_baseline_commit": "20e3a34",
+  "generated_background_release_commit": "c685816",
+  "runtime_snapshot_version": "a1c474f884d64648",
+  "content_snapshot_version": "867d91c0737e29c7",
+  "target_viewport": "390x844",
+  "scope": [
+    "mobile-first editorial visual hierarchy",
+    "generated-background plus DOM-overlay rendering contract",
+    "today/discover/journal/collection mobile spaces",
+    "restrained tactile interaction feedback",
+    "reduced-motion accessibility behavior"
+  ],
+  "invariants": {
+    "generated_raster_is_background_only": true,
+    "text_and_controls_are_dom_layers": true,
+    "daily_card_semantics_unchanged": true,
+    "reflection_storage_remains_local_only": true,
+    "content_snapshot_must_remain": "867d91c0737e29c7",
+    "external_publish_authorized": false
+  },
+  "verification_artifacts": {
+    "beauty_v2_contact_sheet": "reports/ui/mobile-first-20260917/beauty-v2/beauty-v2-contact-sheet.jpg",
+    "beauty_v2_qa": "reports/ui/mobile-first-20260917/beauty-v2/QA.md",
+    "interaction_v1_contact_sheet": "reports/ui/mobile-first-20260917/interaction-v1/interaction-v1-contact-sheet.jpg",
+    "interaction_v1_qa": "reports/ui/mobile-first-20260917/interaction-v1/QA.md"
+  },
+  "change_policy": "Future UI changes may improve implementation details, but any change to the listed invariants, content snapshot, approved generated-background selection, or daily-card semantics requires a new versioned baseline instead of silently mutating this lock."
+}
