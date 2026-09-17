@@ -56,10 +56,25 @@ function focusFragment() {
   const target = document.getElementById(location.hash.slice(1));
   if (target) requestAnimationFrame(() => { target.focus({ preventScroll: true }); target.scrollIntoView({ block: 'start' }); });
 }
-function showSpace(name) {
-  for (const panel of qsa('[data-space-panel]')) panel.hidden = panel.dataset.spacePanel !== name;
+function prefersReducedMotion() {
+  return globalThis.matchMedia?.('(prefers-reduced-motion: reduce)').matches ?? false;
+}
+function showSpace(name, { animate = false } = {}) {
+  let activePanel = null;
+  for (const panel of qsa('[data-space-panel]')) {
+    const selected = panel.dataset.spacePanel === name;
+    panel.hidden = !selected;
+    if (selected) activePanel = panel;
+  }
   for (const button of qsa('[data-space]')) {
     if (button.dataset.space === name) button.setAttribute('aria-current', 'page'); else button.removeAttribute('aria-current');
+  }
+  document.documentElement.dataset.activeSpace = name;
+  if (activePanel && animate && !prefersReducedMotion()) {
+    activePanel.classList.remove('space-entering');
+    void activePanel.offsetWidth;
+    activePanel.classList.add('space-entering');
+    activePanel.addEventListener('animationend', () => activePanel.classList.remove('space-entering'), { once: true });
   }
 }
 function renderResultList(catalog, root, rows, emptyMessage = '조건에 맞는 카드를 찾지 못했습니다.') {
@@ -187,9 +202,19 @@ async function main() {
   if(!card) throw new Error('요청한 검증 카드를 찾을 수 없습니다.');
   renderCard(catalog,card,manifest,storage);
   if(['today','discover','journal','collection'].includes(requestedSpace)) showSpace(requestedSpace);
+  else showSpace('today');
 
-  qsa('[data-space]').forEach((button)=>button.addEventListener('click',()=>{ showSpace(button.dataset.space); if(button.dataset.space==='collection') renderCollection(catalog,storage); globalThis.scrollTo({top:0,behavior:'auto'}); }));
-  qs('#journal-jump').addEventListener('click',()=>{ showSpace('journal'); globalThis.scrollTo({top:0,behavior:'auto'}); requestAnimationFrame(()=>qs('#reflection-note').focus()); });
+  qsa('[data-space]').forEach((button)=>button.addEventListener('click',()=>{
+    const targetSpace = button.dataset.space;
+    showSpace(targetSpace, { animate: true });
+    if(targetSpace==='collection') renderCollection(catalog,storage);
+    globalThis.scrollTo({top:0,behavior:'auto'});
+  }));
+  qs('#journal-jump').addEventListener('click',()=>{
+    showSpace('journal', { animate: true });
+    globalThis.scrollTo({top:0,behavior:'auto'});
+    requestAnimationFrame(()=>qs('#reflection-note').focus());
+  });
   const tags=[...new Set(catalog.cards.flatMap((x)=>x.semantic_tags))].sort();
   const tagRoot=qs('#guided-tags'); for(const tag of tags){ const button=document.createElement('button'); button.type='button'; button.className='tag-button'; button.textContent=tag; button.addEventListener('click',()=>renderResultList(catalog,qs('#search-results'),discoverByTag(catalog,tag))); tagRoot.append(button); }
   qs('#search-form').addEventListener('submit',(event)=>{ event.preventDefault(); renderResultList(catalog,qs('#search-results'),searchCards(catalog,qs('#search-input').value)); });

@@ -48,6 +48,24 @@ test('editorial mobile art direction keeps the image dominant and supporting UI 
   assert.match(css, /@media \(prefers-reduced-motion: no-preference\)[\s\S]*art-settle[\s\S]*copy-rise/);
 });
 
+test('mobile interaction polish preserves navigation semantics while adding restrained tactile feedback', () => {
+  const css = readText('assets/css/styles.css');
+  const app = readText('src/ui/app.mjs');
+  assert.match(app, /function prefersReducedMotion\(\)/);
+  assert.match(app, /function showSpace\(name, \{ animate = false \} = \{\}\)/);
+  assert.match(app, /document\.documentElement\.dataset\.activeSpace = name/);
+  assert.match(app, /activePanel\.classList\.add\('space-entering'\)/);
+  assert.match(app, /showSpace\(targetSpace, \{ animate: true \}\)/);
+  assert.match(app, /showSpace\('journal', \{ animate: true \}\)/);
+  assert.match(css, /\.hero-action:active\s*\{[\s\S]*scale\(\.92\)/);
+  assert.match(css, /\.primary-action:active\s*\{[\s\S]*scale\(\.985\)/);
+  assert.match(css, /\.discovery-card:active\s*\{[\s\S]*scale\(\.988\)/);
+  assert.match(css, /\.primary-nav button:active\s*\{[\s\S]*scale\(\.955\)/);
+  assert.match(css, /\.space-entering\s*\{[\s\S]*transform-origin/);
+  assert.match(css, /@keyframes space-reveal/);
+  assert.match(css, /@media \(prefers-reduced-motion: reduce\)/);
+});
+
 test('mobile-first shell uses a constrained app canvas, safe-area bottom navigation, and image-led discovery cards', () => {
   const html = readText('src/ui/index.html');
   const css = readText('assets/css/styles.css');
