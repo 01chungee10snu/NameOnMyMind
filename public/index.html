@@ -2,25 +2,30 @@
 <html lang="ko" data-release-mode="runtime">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <meta name="theme-color" content="#f4eee6" />
   <meta name="description" content="Name On My Mind — 이름 붙이기 어려운 마음을 천천히 만나보는 카드" />
   <title>Name On My Mind</title>
   <link rel="manifest" href="./manifest.webmanifest" />
+  <link rel="icon" href="./assets/brand/app-icon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="./assets/css/styles.css" />
 </head>
 <body>
   <a class="skip-link" href="#main-content">본문으로 건너뛰기</a>
   <div id="release-banner" class="review-banner" role="status" hidden>로컬 검토 미리보기 · 아직 공개 승인되지 않은 카드입니다</div>
   <header class="site-header">
-    <a class="wordmark" href="./" aria-label="Name On My Mind 홈">Name On My Mind</a>
+    <div class="brand-block">
+      <a class="wordmark" href="./" aria-label="Name On My Mind 홈">NameOnMyMind</a>
+      <p class="brand-kicker">WORDS FOR A RICHER HUMANITY</p>
+    </div>
     <p class="tagline">이 마음에도 이름이 있을까요?</p>
   </header>
 
   <nav class="primary-nav" aria-label="주요 공간">
-    <button type="button" data-space="today" aria-current="page">오늘의 마음</button>
-    <button type="button" data-space="discover">찾아보기</button>
-    <button type="button" data-space="collection">내가 만난 마음</button>
+    <button type="button" data-space="today" aria-current="page"><span class="nav-icon" aria-hidden="true">⌂</span><span>오늘</span></button>
+    <button type="button" data-space="discover"><span class="nav-icon" aria-hidden="true">◫</span><span>찾기</span></button>
+    <button type="button" data-space="journal"><span class="nav-icon" aria-hidden="true">✎</span><span>기록</span></button>
+    <button type="button" data-space="collection"><span class="nav-icon" aria-hidden="true">♡</span><span>보관함</span></button>
   </nav>
 
   <main class="page-shell" id="main-content">
@@ -39,22 +44,21 @@
           </div>
         </div>
         <div class="card-body">
+          <div class="mobile-card-tools" aria-label="카드 빠른 동작">
+            <button type="button" id="pronunciation-button" class="icon-action" hidden><span aria-hidden="true">◖</span> 발음 듣기</button>
+            <button type="button" id="favorite-button" class="icon-action" aria-pressed="false"><span aria-hidden="true">♡</span> 마음에 담기</button>
+          </div>
+          <p class="question-kicker">오늘의 질문</p>
           <p id="reflection-question" class="reflection-question"></p>
           <div class="card-actions">
             <button type="button" id="reveal-button" class="primary-action" aria-expanded="false" aria-controls="compact-meaning">뜻을 살짝 펼쳐보기</button>
             <a id="detail-link" class="text-link" href="#meaning">더 알아보기</a>
-            <button type="button" id="favorite-button" class="secondary-action" aria-pressed="false">마음에 담기</button>
+            <button type="button" id="journal-jump" class="text-button record-link">한 줄 기록하기</button>
           </div>
           <div id="compact-meaning" class="compact-meaning" hidden></div>
         </div>
       </section>
 
-      <section class="reflection-box" aria-labelledby="reflection-label">
-        <label id="reflection-label" for="reflection-note">나만 보는 짧은 기록 <span class="fine-print">이 기기에만 저장됩니다.</span></label>
-        <textarea id="reflection-note" rows="4" maxlength="2000" placeholder="적지 않아도 괜찮아요."></textarea>
-        <button type="button" id="save-reflection" class="secondary-action">기기에 저장</button>
-        <span id="reflection-status" role="status" aria-live="polite"></span>
-      </section>
 
       <article id="detail" class="detail" aria-labelledby="detail-title">
         <header class="detail-header">
@@ -72,6 +76,23 @@
           <details><summary>참고한 자료 보기</summary><ol id="reference-list" class="reference-list"></ol></details>
         </section>
       </article>
+    </section>
+
+    <section class="space journal-space" id="space-journal" data-space-panel="journal" hidden aria-labelledby="journal-title">
+      <header class="journal-heading">
+        <p class="section-kicker">JOURNAL</p>
+        <h1 id="journal-title">오늘의 기록</h1>
+        <p>단어를 정답처럼 해석하기보다, 지금 떠오르는 장면을 잠깐 적어보는 공간입니다.</p>
+      </header>
+      <div class="journal-word-card" aria-label="오늘의 마음 단어">
+        <span id="journal-term" class="journal-term"></span>
+        <span id="journal-line" class="journal-line"></span>
+      </div>
+      <section class="reflection-box" aria-labelledby="reflection-label">
+        <label id="reflection-label" for="reflection-note">오늘 이 마음을 한 줄 남겨볼까요? <span class="fine-print">이 기기에만 저장됩니다.</span></label>
+        <textarea id="reflection-note" rows="7" maxlength="2000" placeholder="떠오르는 사람, 장면, 감정을 자유롭게 적어보세요."></textarea>
+        <div class="reflection-save-row"><button type="button" id="save-reflection" class="primary-action">기기에 저장</button><span id="reflection-status" role="status" aria-live="polite"></span></div>
+      </section>
     </section>
 
     <section class="space" id="space-discover" data-space-panel="discover" hidden aria-labelledby="discover-title">

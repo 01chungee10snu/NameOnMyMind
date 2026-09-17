@@ -22,6 +22,28 @@ function cardLink(card, section = 'meaning') {
   a.textContent = card.term.original;
   return a;
 }
+function illustrationFor(catalog, card) {
+  return getCardAssets(catalog, card.card_id).find((asset) => asset.asset_type === 'illustration') || null;
+}
+function renderCardTile(catalog, card, supportingText = '') {
+  const link = document.createElement('a');
+  link.className = 'discovery-card';
+  link.href = canonicalCardHref(card.card_id, 'meaning');
+  const asset = illustrationFor(catalog, card);
+  if (asset) {
+    const media = document.createElement('span'); media.className = 'discovery-card-media';
+    const img = document.createElement('img'); img.src = `./${asset.path}`; img.alt = ''; img.loading = 'lazy'; img.decoding = 'async';
+    media.append(img); link.append(media);
+  }
+  const copy = document.createElement('span'); copy.className = 'discovery-card-copy';
+  const term = document.createElement('strong'); term.className = 'discovery-card-term'; term.textContent = card.term.original;
+  const meta = document.createElement('span'); meta.className = 'discovery-card-meta'; meta.textContent = `${card.term.language_name} · ${card.term.ipa}`;
+  const line = document.createElement('span'); line.className = 'discovery-card-line'; line.textContent = supportingText || card.front.poetic_line;
+  copy.append(term, meta, line);
+  const arrow = document.createElement('span'); arrow.className = 'discovery-card-arrow'; arrow.setAttribute('aria-hidden', 'true'); arrow.textContent = '›';
+  link.append(copy, arrow);
+  return link;
+}
 function renderComparison(locale, comparison) {
   const article = document.createElement('article'); article.className = 'comparison-card';
   const title = document.createElement('h4'); title.textContent = locale.toUpperCase();
@@ -40,26 +62,21 @@ function showSpace(name) {
     if (button.dataset.space === name) button.setAttribute('aria-current', 'page'); else button.removeAttribute('aria-current');
   }
 }
-function renderResultList(root, rows, emptyMessage = '조건에 맞는 카드를 찾지 못했습니다.') {
+function renderResultList(catalog, root, rows, emptyMessage = '조건에 맞는 카드를 찾지 못했습니다.') {
   root.replaceChildren();
-  if (!rows.length) { const p = document.createElement('p'); p.textContent = emptyMessage; root.append(p); return; }
-  const list = document.createElement('ul'); list.className = 'result-list';
-  for (const row of rows) {
-    const li = document.createElement('li');
-    const link = cardLink(row.card);
-    const reason = document.createElement('span'); reason.className = 'fine-print'; reason.textContent = row.rationale ? ` · ${row.rationale}` : '';
-    li.append(link, reason); list.append(li);
-  }
+  if (!rows.length) { const p = document.createElement('p'); p.className = 'empty-state'; p.textContent = emptyMessage; root.append(p); return; }
+  const list = document.createElement('div'); list.className = 'card-tile-list';
+  for (const row of rows) list.append(renderCardTile(catalog, row.card, row.rationale || row.card.front.poetic_line));
   root.append(list);
 }
 function renderCollection(catalog, storage) {
   const collection = getLocalCollection(catalog, storage);
   const favorites = qs('#favorite-list'); favorites.replaceChildren();
-  if (!collection.favorites.length) favorites.textContent = '아직 담아 둔 카드가 없습니다.';
-  else { const ul = document.createElement('ul'); for (const card of collection.favorites) { const li = document.createElement('li'); li.append(cardLink(card)); ul.append(li); } favorites.append(ul); }
+  if (!collection.favorites.length) favorites.innerHTML = '<p class="empty-state">아직 담아 둔 카드가 없습니다.</p>';
+  else { const list = document.createElement('div'); list.className = 'card-tile-list'; for (const card of collection.favorites) list.append(renderCardTile(catalog, card, '마음에 담아 둔 단어')); favorites.append(list); }
   const viewed = qs('#viewed-list'); viewed.replaceChildren();
-  if (!collection.viewed.length) viewed.textContent = '아직 만난 카드가 없습니다.';
-  else { const ul = document.createElement('ul'); for (const row of collection.viewed) { const li = document.createElement('li'); li.append(cardLink(row.card)); const time = document.createElement('span'); time.className='fine-print'; time.textContent=` · ${row.viewed_at.slice(0,10)}`; li.append(time); ul.append(li); } viewed.append(ul); }
+  if (!collection.viewed.length) viewed.innerHTML = '<p class="empty-state">아직 만난 카드가 없습니다.</p>';
+  else { const list = document.createElement('div'); list.className = 'card-tile-list'; for (const row of collection.viewed) list.append(renderCardTile(catalog, row.card, `${row.viewed_at.slice(0,10)}에 만난 단어`)); viewed.append(list); }
 }
 function renderRelations(catalog, card) {
   const root = qs('#relation-list'); root.replaceChildren();
@@ -78,6 +95,8 @@ function renderCard(catalog, card, manifest, storage) {
   qs('#card-language').textContent = `${card.term.language_name} · ${card.term.ipa}`;
   qs('#poetic-line').textContent = card.front.poetic_line;
   qs('#reflection-question').textContent = card.front.reflection_question;
+  qs('#journal-term').textContent = card.term.original;
+  qs('#journal-line').textContent = card.front.poetic_line;
   qs('#verified-definition').textContent = card.meaning.verified_definition;
   qs('#usage-context').textContent = card.meaning.usage_context;
   qs('#cultural-context').textContent = card.meaning.cultural_context || '';
@@ -103,9 +122,12 @@ function renderCard(catalog, card, manifest, storage) {
   const references=qs('#reference-list'); references.replaceChildren();
   for (const ref of getCardReferences(catalog,card.card_id)) { const li=document.createElement('li'); li.append(safeExternalLink(ref.url,ref.citation_display||ref.title)); references.append(li); }
   const audioAsset=getCardAssets(catalog,card.card_id).find((asset)=>asset.asset_type==='pronunciation_audio');
-  const audio=qs('#pronunciation-audio'); const attribution=qs('#audio-attribution');
+  const audio=qs('#pronunciation-audio'); const attribution=qs('#audio-attribution'); const pronunciationButton=qs('#pronunciation-button');
   if(audioAsset){
     audio.hidden=false; audio.src=`./${audioAsset.path}`; attribution.replaceChildren();
+    pronunciationButton.hidden=false;
+    pronunciationButton.onclick=()=>{ audio.currentTime=0; audio.play().catch(()=>{}); pronunciationButton.textContent='◖ 재생 중…'; };
+    audio.addEventListener('ended',()=>{ pronunciationButton.textContent='◖ 발음 듣기'; });
     const label=document.createElement('span'); label.textContent=`${audioAsset.attribution||'발음 음원'} · `; attribution.append(label);
     if(audioAsset.source_url){ attribution.append(safeExternalLink(audioAsset.source_url,'원본 음원')); attribution.append(document.createTextNode(' · ')); }
     const rights=audioAsset.license_or_rights_basis||'';
@@ -117,10 +139,10 @@ function renderCard(catalog, card, manifest, storage) {
     ];
     const license=licenseOptions.find(([pattern])=>pattern.test(rights));
     if(license) attribution.append(safeExternalLink(license[1],license[2])); else attribution.append(document.createTextNode(rights||'권리 정보 확인 필요'));
-  } else { audio.hidden=true; attribution.textContent='검증된 발음 음원을 사용할 수 없습니다.'; }
+  } else { audio.hidden=true; pronunciationButton.hidden=true; attribution.textContent='검증된 발음 음원을 사용할 수 없습니다.'; }
 
   markViewed(storage,card.card_id);
-  const favoriteButton=qs('#favorite-button'); const syncFavorite=()=>{ const active=listFavorites(storage).includes(card.card_id); favoriteButton.setAttribute('aria-pressed',String(active)); favoriteButton.textContent=active?'담아 둔 마음':'마음에 담기'; }; syncFavorite();
+  const favoriteButton=qs('#favorite-button'); const syncFavorite=()=>{ const active=listFavorites(storage).includes(card.card_id); favoriteButton.setAttribute('aria-pressed',String(active)); const icon=document.createElement('span'); icon.setAttribute('aria-hidden','true'); icon.textContent=active?'♥':'♡'; favoriteButton.replaceChildren(icon,document.createTextNode(active?' 담아 둔 마음':' 마음에 담기')); }; syncFavorite();
   favoriteButton.onclick=()=>{ toggleFavorite(storage,card.card_id); syncFavorite(); renderCollection(catalog,storage); };
   const note=qs('#reflection-note'); note.value=readReflection(storage,card.card_id);
   qs('#save-reflection').onclick=()=>{ saveReflection(storage,card.card_id,note.value); qs('#reflection-status').textContent='이 기기에 저장했습니다.'; };
@@ -134,15 +156,18 @@ async function main() {
   const catalog=createCatalog({cards:cardsData.cards,references:referencesData.references,assets:assetsData.assets});
   const storage=globalThis.localStorage;
   const requested=new URLSearchParams(location.search).get('card');
+  const requestedSpace=new URLSearchParams(location.search).get('space');
   const daily=resolveDailyCard(catalog,{storage,date:new Date(),seed:manifest.daily_seed});
   const card=requested?getCard(catalog,requested):daily.card;
   if(!card) throw new Error('요청한 검증 카드를 찾을 수 없습니다.');
   renderCard(catalog,card,manifest,storage);
+  if(['today','discover','journal','collection'].includes(requestedSpace)) showSpace(requestedSpace);
 
-  qsa('[data-space]').forEach((button)=>button.addEventListener('click',()=>{ showSpace(button.dataset.space); if(button.dataset.space==='collection') renderCollection(catalog,storage); }));
+  qsa('[data-space]').forEach((button)=>button.addEventListener('click',()=>{ showSpace(button.dataset.space); if(button.dataset.space==='collection') renderCollection(catalog,storage); globalThis.scrollTo({top:0,behavior:'auto'}); }));
+  qs('#journal-jump').addEventListener('click',()=>{ showSpace('journal'); globalThis.scrollTo({top:0,behavior:'auto'}); requestAnimationFrame(()=>qs('#reflection-note').focus()); });
   const tags=[...new Set(catalog.cards.flatMap((x)=>x.semantic_tags))].sort();
-  const tagRoot=qs('#guided-tags'); for(const tag of tags){ const button=document.createElement('button'); button.type='button'; button.className='tag-button'; button.textContent=tag; button.addEventListener('click',()=>renderResultList(qs('#search-results'),discoverByTag(catalog,tag))); tagRoot.append(button); }
-  qs('#search-form').addEventListener('submit',(event)=>{ event.preventDefault(); renderResultList(qs('#search-results'),searchCards(catalog,qs('#search-input').value)); });
+  const tagRoot=qs('#guided-tags'); for(const tag of tags){ const button=document.createElement('button'); button.type='button'; button.className='tag-button'; button.textContent=tag; button.addEventListener('click',()=>renderResultList(catalog,qs('#search-results'),discoverByTag(catalog,tag))); tagRoot.append(button); }
+  qs('#search-form').addEventListener('submit',(event)=>{ event.preventDefault(); renderResultList(catalog,qs('#search-results'),searchCards(catalog,qs('#search-input').value)); });
 
   const dailyResolver=()=>resolveDailyCard(catalog,{storage,date:new Date(),seed:manifest.daily_seed}).card;
   const api=createReadOnlyAgentApi({catalog,clock:()=>new Date(),dailySeed:manifest.daily_seed,dailyResolver,dataSnapshotVersion:manifest.snapshot_version});

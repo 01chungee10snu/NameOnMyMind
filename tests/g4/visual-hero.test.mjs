@@ -27,6 +27,24 @@ test('daily card uses a full-bleed illustration hero with semantic text overlay'
   assert.match(app, /setProperty\('--card-art-image'/);
 });
 
+test('mobile-first shell uses a constrained app canvas, safe-area bottom navigation, and image-led discovery cards', () => {
+  const html = readText('src/ui/index.html');
+  const css = readText('assets/css/styles.css');
+  const app = readText('src/ui/app.mjs');
+  assert.match(html, /viewport-fit=cover/);
+  assert.match(html, /class="nav-icon"/);
+  assert.match(html, /id="space-journal"/);
+  assert.match(html, /id="pronunciation-button"/);
+  assert.match(css, /--app-width:\s*540px/);
+  assert.match(css, /\.primary-nav\s*\{[\s\S]*position:\s*fixed/);
+  assert.match(css, /grid-template-columns:\s*repeat\(4,/);
+  assert.match(css, /env\(safe-area-inset-bottom\)/);
+  assert.match(css, /\.card-hero\s*\{[\s\S]*aspect-ratio:\s*4\s*\/\s*3/);
+  assert.match(css, /\.discovery-card\s*\{[\s\S]*grid-template-columns/);
+  assert.match(app, /function renderCardTile\(catalog, card/);
+  assert.match(app, /img\.loading = 'lazy'/);
+});
+
 test('each published canary card resolves to its own approved illustration', () => {
   const cards = fs.readdirSync(path.join(ROOT, 'content/approved/cards'))
     .filter((name) => /^C000[1-5]\.json$/.test(name))
