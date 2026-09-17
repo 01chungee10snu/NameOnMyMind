@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "product": "NameOnMyMind",
+  "approval_type": "GITHUB_PUSH_AND_PAGES_PUBLICATION",
+  "approved_at_local_date": "2026-09-17",
+  "approval_source": "Explicit user message in the product development conversation: '이제 깃헙에 푸시하고 페이지로 보여줘봐'",
+  "approved_scope": {
+    "github_repository_creation_or_push": true,
+    "github_pages_publication": true,
+    "public_bundle": "Only Human Editorial Release approved cards emitted by scripts/build-public.mjs",
+    "g5_hold_research_publication": false,
+    "private_interview_publication": false
+  },
+  "baseline_commit": "09b1584",
+  "expected_public_cards": ["C0001", "C0002", "C0003", "C0004", "C0005"],
+  "external_publish_authorized_for_this_release": true,
+  "future_automatic_external_publish_authorized": false
+}

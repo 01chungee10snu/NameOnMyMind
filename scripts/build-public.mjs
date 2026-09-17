@@ -6,6 +6,7 @@ import { fileURLToPath } from 'node:url';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const OUT = path.join(ROOT, 'public');
+const externalPublishAuthorized = process.env.NAMEONMYMIND_EXTERNAL_PUBLISH_AUTHORIZED === '1';
 const readJsonAbs = (file) => JSON.parse(fs.readFileSync(file, 'utf8'));
 const readJson = (rel) => readJsonAbs(path.join(ROOT, rel));
 const sha = (file) => crypto.createHash('sha256').update(fs.readFileSync(file)).digest('hex');
@@ -89,8 +90,8 @@ for (const asset of selectedAssets) copyFile(asset.path);
 
 writeJson('data/manifest.json', {
   schema_version: '1.1.0',
-  release_mode: 'PUBLIC_LOCAL_BUILD',
-  external_publish_authorized: false,
+  release_mode: externalPublishAuthorized ? 'PUBLIC_EXTERNAL_RELEASE' : 'PUBLIC_LOCAL_BUILD',
+  external_publish_authorized: externalPublishAuthorized,
   snapshot_version: snapshotVersion,
   daily_seed: 'nameonmymind-public-v1',
   card_count: cards.length,
@@ -124,9 +125,9 @@ writeText('service-worker.js', swTemplate
 
 writeJson('BUILD_MANIFEST.json', {
   schema_version: '1.1.0',
-  artifact_type: 'LOCAL_PUBLIC_BUILD',
+  artifact_type: externalPublishAuthorized ? 'EXTERNAL_PUBLIC_RELEASE' : 'LOCAL_PUBLIC_BUILD',
   deployable: true,
-  external_publish_authorized: false,
+  external_publish_authorized: externalPublishAuthorized,
   snapshot_version: snapshotVersion,
   card_ids: cards.map((x) => x.card_id),
   agent_contract_version: agentManifest.agent_contract_version,
@@ -144,5 +145,5 @@ writeJson('BUILD_MANIFEST.json', {
 
 console.log(JSON.stringify({
   status: 'PASS', output: OUT, card_ids: cards.map((x) => x.card_id), snapshot_version: snapshotVersion,
-  deployable: true, external_publish_authorized: false, agent_manifest: true, pwa: true,
+  deployable: true, external_publish_authorized: externalPublishAuthorized, agent_manifest: true, pwa: true,
 }, null, 2));
