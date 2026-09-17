@@ -80,6 +80,18 @@
       "lifecycle_state": "HOLD"
     },
     {
+      "card_id": "C0024",
+      "term": "обида",
+      "language": "Русский",
+      "korean_rendering": "부당하거나 모욕적인 대우를 받았다고 느낄 때 생기는 쓰라림·상처·분함·원망이 함께 남는 마음",
+      "expression_cost": "EXPLANATORY_PHRASE_REQUIRED",
+      "flow_media_title": "Shared table showing relational grievance",
+      "image": "../../assets/media/illustrations/candidates/g5-preview-20260918/C0024-obida.png",
+      "sha256": "eaa631682a21a0357946848a863b6c3468d05f8fe07c726e6a1dfb7b647b0298",
+      "research_record": "../../content/g5/research-records/C0024.json",
+      "lifecycle_state": "HOLD"
+    },
+    {
       "card_id": "C0025",
       "term": "طَرَب",
       "language": "العربية",
@@ -188,5 +200,18 @@
       "lifecycle_state": "HOLD"
     }
   ],
-  "card_count": 15
+  "card_count": 16,
+  "generation_backlog": {
+    "prepared_prompts": [
+      "C0034",
+      "C0035",
+      "C0036",
+      "C0037",
+      "C0038",
+      "C0039",
+      "C0040"
+    ],
+    "flow_state": "C0034 submitted once; image render not yet observed. C0035-C0040 not submitted after C0034 stalled.",
+    "promotion_authorized": false
+  }
 }
