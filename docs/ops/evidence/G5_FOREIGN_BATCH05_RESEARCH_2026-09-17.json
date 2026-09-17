@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "goal": "G5",
+  "batch_id": "G5-F05-FOREIGN-SEMANTIC-GAP",
+  "status": "RESEARCH_CORE_PASS_PRODUCT_GATES_HOLD",
+  "recorded_at": "2026-09-17",
+  "source_commit": "fa3c836e91cd3e6b244f5e92cfc4195d7c3f8fcd",
+  "card_ids": [
+    "C0036",
+    "C0037",
+    "C0038",
+    "C0039",
+    "C0040"
+  ],
+  "terms": [
+    "saṃvega",
+    "甘え",
+    "憋屈",
+    "limerence",
+    "compersion"
+  ],
+  "korean_expression_cost": "5/5 EXPLANATORY_PHRASE_REQUIRED",
+  "screened_out": [
+    {
+      "term": "naches",
+      "reason": "Korean 대견하다/자랑스럽다 already compress much of proud pleasure in another's achievement; preserve as relation/comparison candidate rather than priority active admission."
+    },
+    {
+      "term": "resfeber",
+      "reason": "Authoritative Swedish evidence centers on nervousness before an upcoming journey, which Korean 여행 전 긴장감/불안 already renders compactly."
+    },
+    {
+      "term": "żal",
+      "reason": "The Polish lexeme spans sorrow, pity, grudge, regret and repentance across constructions; breadth may reflect polysemy rather than one bundled experiential state."
+    }
+  ],
+  "gates": {
+    "foreign_schema": "5/5 PASS",
+    "target_lexical": "5/5 PASS",
+    "scholarly": "5/5 PASS",
+    "distinctiveness": "5/5 PASS",
+    "korean_expression_cost": "5/5 PASS",
+    "korean_comparison": "5/5 PASS",
+    "full_en_zh_ja_comparison": "HOLD_OR_PARTIAL_BY_TARGET_LANGUAGE",
+    "pronunciation_audio_rights": "HOLD",
+    "human_editorial_release": "NOT_OPEN"
+  },
+  "boundary": {
+    "lifecycle": "HOLD",
+    "review_ready": 0,
+    "published_from_batch": 0,
+    "product_assets_registered": 0,
+    "public_cards": [
+      "C0001",
+      "C0002",
+      "C0003",
+      "C0004",
+      "C0005"
+    ],
+    "public_snapshot": "24aebc81d2a7088d",
+    "external_publish_authorized": false,
+    "repository_push_authorized": false
+  },
+  "clean_checkout": {
+    "status": "PASS",
+    "tested_commit": "fa3c836e91cd3e6b244f5e92cfc4195d7c3f8fcd",
+    "npm_ci": "PASS",
+    "npm_vulnerabilities": 0,
+    "g1": "12/12 PASS",
+    "g2": "5/5 PASS",
+    "g3": "8/8 PASS",
+    "g4": "9/9 PASS",
+    "g5_selection": "8/8 PASS",
+    "g5_research_records": 35,
+    "track_counts": {
+      "KOREAN_NUANCE": 10,
+      "FOREIGN_KOREAN_GAP": 25
+    },
+    "privacy_violations": 0,
+    "git_status": "CLEAN",
+    "marker": "FINAL_G5_FOREIGN_BATCH05_CLEAN_CHECKOUT_PASS"
+  },
+  "sha256": {
+    "content/g5/batches/05_foreign_semantic_gap_config.json": "755edcd93ae340c5221a8c3ca664b98b8ea9c3397972689c0795bbed6cf12fe0",
+    "content/g5/batches/05_foreign_semantic_gap_research.json": "80e22cfc4ef0e22fef27a0e6ee8bdf1fc8b943b362a4fdc4ec753d9e5e44edb2",
+    "scripts/g5/prepare-foreign-batch05-research.py": "0ea35b1a0c8418ab7023515879f19478d3b1f9004bfbbd504227ce2bf8f374ad",
+    "scripts/g5/validate-foreign-batch05-research.mjs": "c52820224561ddfd153c654fa37042fd63b8dc837eb5888f1418d41bd79e0f53",
+    "content/g5/research-records/C0036.json": "88d629c1e638ae961033461486f91fe7171960fc1e7cb2385f789e947c00bce6",
+    "content/g5/research-records/C0037.json": "58d8921532ee941d55011f35583f2dab9726da836f43dd80b1a6ccde889840f5",
+    "content/g5/research-records/C0038.json": "93087c467fa8cac0db5f5018249f3ead1f8b3c0f00d98a60b1a3be95ed194d77",
+    "content/g5/research-records/C0039.json": "a67f155f4abdc8efd9f77671bc6a0c3f3c8001fa4f51f57e84826c7a5efa05cb",
+    "content/g5/research-records/C0040.json": "a6fd58160b471f0b9ffd0d50b222355d50c32bad70c6b46b0ecfe7b1cceac8af"
+  }
+}
