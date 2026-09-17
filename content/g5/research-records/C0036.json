@@ -1,0 +1,235 @@
+{
+  "schema_version": "2.1.0",
+  "research_id": "RR-C0036-FOREIGN",
+  "card_id": "C0036",
+  "candidate": {
+    "term": "saṃvega",
+    "language_code": "pi",
+    "language_name": "Pāḷi",
+    "experience_type": "spiritual_psychological_state"
+  },
+  "lifecycle_state": "HOLD",
+  "source_inventory": [
+    {
+      "reference_id": "R0156",
+      "role": "lexical",
+      "quality_tier": "A"
+    },
+    {
+      "reference_id": "R0157",
+      "role": "scholarly",
+      "quality_tier": "A"
+    },
+    {
+      "reference_id": "R0158",
+      "role": "pronunciation",
+      "quality_tier": "B"
+    }
+  ],
+  "lexical_verification": {
+    "status": "PASS",
+    "summary": "원어 권위 사전에서 목표 표제어와 카드에 사용할 의미 범위를 확인했다.",
+    "reference_ids": [
+      "R0156"
+    ]
+  },
+  "semantic_definition_and_boundaries": {
+    "status": "PASS",
+    "summary": "한국어의 불안·충격·허무·절박감 중 하나만으로는 무상과 괴로움의 통찰에서 오는 정서적 동요와, 그 충격이 곧바로 삶의 방향을 바꾸고 해탈의 길을 찾아야 한다는 수행적 긴박감으로 전환되는 구조를 함께 담기 어렵다.",
+    "reference_ids": [
+      "R0156",
+      "R0157"
+    ]
+  },
+  "cultural_context_review": {
+    "status": "PASS",
+    "summary": "언어·문화 맥락을 설명하되 해당 문화 사람만 이 경험을 느낀다는 본질주의나 번역불가능성 주장을 하지 않는다.",
+    "reference_ids": [
+      "R0156",
+      "R0157"
+    ]
+  },
+  "comparisons": {
+    "ko": {
+      "status": "PASS",
+      "near_terms": [
+        "존재에 대한 충격",
+        "삶을 바꿔야 한다는 절박감",
+        "무상함을 깨달은 뒤의 두려움과 긴박함"
+      ],
+      "difference_note": "한국어 근접어 하나로는 핵심 의미 패키지를 모두 보존하기 어렵다.",
+      "verification_note": "Korean Expression Cost review PASS.",
+      "reference_ids": [
+        "R0156",
+        "R0157"
+      ]
+    },
+    "en": {
+      "status": "HOLD",
+      "near_terms": [
+        "existential shock",
+        "spiritual urgency",
+        "dismay and urgency"
+      ],
+      "difference_note": "영어 근접어는 provisional이며 독립 lexical verification 전에는 최종 비교로 승격하지 않는다.",
+      "verification_note": "Research-stage provisional mapping.",
+      "reference_ids": [
+        "R0156"
+      ]
+    },
+    "zh": {
+      "status": "HOLD",
+      "near_terms": [
+        "存在性的震动与警醒",
+        "修行上的紧迫感",
+        "惊惧与出离心的催促"
+      ],
+      "difference_note": "원어가 중국어이면 target lexical evidence로 자체 의미를 확인했고, 그 외에는 provisional이다.",
+      "verification_note": "Target-language evidence or provisional mapping.",
+      "reference_ids": [
+        "R0156"
+      ]
+    },
+    "ja": {
+      "status": "HOLD",
+      "near_terms": [
+        "存在への衝撃と切迫感",
+        "無常を悟った際の動揺",
+        "修行への緊迫感"
+      ],
+      "difference_note": "일본어 근접어는 provisional이며 독립 lexical verification 전에는 최종 비교로 승격하지 않는다.",
+      "verification_note": "Research-stage provisional mapping.",
+      "reference_ids": [
+        "R0156"
+      ]
+    }
+  },
+  "pronunciation_verification": {
+    "status": "HOLD",
+    "ipa": "[s̪ə̃ʋeːgə]",
+    "locale": "pi",
+    "reference_ids": [
+      "R0158"
+    ],
+    "audio_asset_id": null,
+    "notes": "IPA/transliteration provenance is recorded, but exact product-safe audio source, creator, locale fit, license, rights, and SHA linkage are not yet verified."
+  },
+  "claim_source_map": [
+    {
+      "claim_id": "CL-001",
+      "claim": "한국어의 불안·충격·허무·절박감 중 하나만으로는 무상과 괴로움의 통찰에서 오는 정서적 동요와, 그 충격이 곧바로 삶의 방향을 바꾸고 해탈의 길을 찾아야 한다는 수행적 긴박감으로 전환되는 구조를 함께 담기 어렵다.",
+      "reference_ids": [
+        "R0156",
+        "R0157"
+      ],
+      "evidence_locator": "Target lexical definition plus directly relevant scholarly evidence.",
+      "public_safe": true
+    },
+    {
+      "claim_id": "CL-002",
+      "claim": "한국어의 흔한 한 단어 하나로는 핵심 의미 패키지를 모두 보존하기 어렵다.",
+      "reference_ids": [
+        "R0156",
+        "R0157"
+      ],
+      "evidence_locator": "Korean Expression Cost review against target semantic components.",
+      "public_safe": true
+    }
+  ],
+  "relations": [],
+  "illustration_brief": {
+    "status": "HOLD",
+    "summary": "Product audio rights and full multilingual comparison are incomplete; illustration is deferred.",
+    "reference_ids": [
+      "R0156"
+    ]
+  },
+  "editorial_copy": {
+    "status": "HOLD",
+    "summary": "Public poetic copy is deferred until all gates can be evaluated together.",
+    "reference_ids": [
+      "R0156",
+      "R0157"
+    ]
+  },
+  "automated_gates": {
+    "schema": "PASS",
+    "evidence": "PASS",
+    "pronunciation": "HOLD",
+    "cultural_humility": "PASS",
+    "rights": "HOLD",
+    "privacy": "PASS"
+  },
+  "distinctiveness_review": {
+    "status": "PASS",
+    "track": "FOREIGN_KOREAN_GAP",
+    "generic_basic_emotion": false,
+    "nearest_cross_language_terms": {
+      "ko": [
+        "존재에 대한 충격",
+        "삶을 바꿔야 한다는 절박감",
+        "무상함을 깨달은 뒤의 두려움과 긴박함"
+      ],
+      "en": [
+        "existential shock",
+        "spiritual urgency",
+        "dismay and urgency"
+      ],
+      "zh": [
+        "存在性的震动与警醒",
+        "修行上的紧迫感",
+        "惊惧与出离心的催促"
+      ],
+      "ja": [
+        "存在への衝撃と切迫感",
+        "無常を悟った際の動揺",
+        "修行への緊迫感"
+      ]
+    },
+    "semantic_residue": "한국어의 불안·충격·허무·절박감 중 하나만으로는 무상과 괴로움의 통찰에서 오는 정서적 동요와, 그 충격이 곧바로 삶의 방향을 바꾸고 해탈의 길을 찾아야 한다는 수행적 긴박감으로 전환되는 구조를 함께 담기 어렵다.",
+    "residue_reference_ids": [
+      "R0156",
+      "R0157"
+    ],
+    "overclaim_to_avoid": "일반적인 불안장애·공황·실존불안과 동일시하지 않고, 초기 불교와 아비달마의 기술적·수행적 맥락을 지운 채 보편 심리용어로 사용하지 않는다.",
+    "korean_expression_cost": {
+      "classification": "EXPLANATORY_PHRASE_REQUIRED",
+      "status": "PASS",
+      "nearest_korean_terms": [
+        "존재에 대한 충격",
+        "삶을 바꿔야 한다는 절박감",
+        "무상함을 깨달은 뒤의 두려움과 긴박함"
+      ],
+      "natural_korean_rendering": "삶의 무상함과 괴로움을 갑자기 절감해 충격·불안·허무가 밀려오면서, 그대로 살아서는 안 된다는 절박함과 벗어날 길을 찾아야 한다는 수행적 긴박감이 함께 생기는 상태",
+      "residue_dimensions": [
+        "shock/dismay at impermanence or suffering",
+        "fear or alienation",
+        "urgent need to find a way out",
+        "Buddhist soteriological motivation"
+      ],
+      "reference_ids": [
+        "R0156",
+        "R0157"
+      ],
+      "rationale": "한국어의 흔한 한 단어가 의미 전체를 보존하는지 먼저 검토했다. 이 후보는 핵심 의미 요소가 여러 한국어 표현으로 분산되거나 설명적 구가 필요하며, 원어 사전과 직접 관련 학술 근거가 그 의미 잔여를 뒷받침한다."
+    }
+  },
+  "human_editorial_release": {
+    "status": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": "Research-stage HOLD. Human Editorial Release is not open until product audio rights and full multilingual comparison pass."
+  },
+  "changelog": [
+    {
+      "date": "2026-09-17",
+      "state": "RESEARCH",
+      "note": "Foreign semantic-gap source-first research under v2.1 Korean Expression Cost contract."
+    },
+    {
+      "date": "2026-09-17",
+      "state": "HOLD",
+      "note": "Core semantic gap passes; product audio rights and full multilingual comparison remain incomplete."
+    }
+  ]
+}

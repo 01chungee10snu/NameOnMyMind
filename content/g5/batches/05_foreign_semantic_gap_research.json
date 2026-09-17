@@ -1,0 +1,56 @@
+{
+  "schema_version": "1.0.0",
+  "batch_id": "G5-F05-FOREIGN-SEMANTIC-GAP",
+  "status": "RESEARCH_CORE_PASS_PRODUCT_GATES_HOLD",
+  "recorded_at": "2026-09-17",
+  "card_ids": [
+    "C0036",
+    "C0037",
+    "C0038",
+    "C0039",
+    "C0040"
+  ],
+  "terms": [
+    "saṃvega",
+    "甘え",
+    "憋屈",
+    "limerence",
+    "compersion"
+  ],
+  "languages": [
+    "English (CNM/polyamory usage)",
+    "English (psychology)",
+    "Pāḷi",
+    "中文",
+    "日本語"
+  ],
+  "korean_expression_cost": {
+    "C0036": "EXPLANATORY_PHRASE_REQUIRED",
+    "C0037": "EXPLANATORY_PHRASE_REQUIRED",
+    "C0038": "EXPLANATORY_PHRASE_REQUIRED",
+    "C0039": "EXPLANATORY_PHRASE_REQUIRED",
+    "C0040": "EXPLANATORY_PHRASE_REQUIRED"
+  },
+  "screened_out": [
+    {
+      "term": "naches",
+      "status": "HOLD_NEAR_KOREAN_EQUIVALENT",
+      "reason": "Korean 대견하다/자랑스럽다 already compress much of proud pleasure in another's achievement; preserve as candidate for relation/comparison rather than priority active admission."
+    },
+    {
+      "term": "resfeber",
+      "status": "HOLD_SHORT_KOREAN_RENDERING",
+      "reason": "Authoritative Swedish evidence centers on nervousness before an upcoming journey, which Korean 여행 전 긴장감/불안 already renders compactly."
+    },
+    {
+      "term": "żal",
+      "status": "HOLD_POLYSEMY_NOT_BUNDLE",
+      "reason": "The Polish lexeme spans sorrow, pity, grudge, regret and repentance across constructions; breadth may reflect polysemy rather than one bundled experiential state, so it should not be admitted merely because Korean needs several translations."
+    }
+  ],
+  "audio_rights": "HOLD_UNTIL_PRODUCT_SAFE_AUDIO_VERIFIED",
+  "full_multilingual_comparison": "HOLD_FOR_INDEPENDENT_EN_ZH_JA_LEXICAL_VERIFICATION",
+  "review_ready": 0,
+  "public_promotion_authorized": false,
+  "config": "content/g5/batches/05_foreign_semantic_gap_config.json"
+}

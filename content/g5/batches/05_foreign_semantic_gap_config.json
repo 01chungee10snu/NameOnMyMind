@@ -1,0 +1,201 @@
+{
+  "schema_version": "1.0.0",
+  "batch_id": "G5-F05-FOREIGN-SEMANTIC-GAP",
+  "recorded_at": "2026-09-17",
+  "cards": [
+    {
+      "card_id": "C0036",
+      "term": "saṃvega",
+      "language_code": "pi",
+      "language_name": "Pāḷi",
+      "experience_type": "spiritual_psychological_state",
+      "lexical_ref": "R0156",
+      "scholarly_refs": ["R0157"],
+      "pronunciation_ref": "R0158",
+      "ipa": "[s̪ə̃ʋeːgə]",
+      "korean_near_terms": ["존재에 대한 충격", "삶을 바꿔야 한다는 절박감", "무상함을 깨달은 뒤의 두려움과 긴박함"],
+      "en_near_terms": ["existential shock", "spiritual urgency", "dismay and urgency"],
+      "zh_near_terms": ["存在性的震动与警醒", "修行上的紧迫感", "惊惧与出离心的催促"],
+      "ja_near_terms": ["存在への衝撃と切迫感", "無常を悟った際の動揺", "修行への緊迫感"],
+      "korean_expression_cost": "EXPLANATORY_PHRASE_REQUIRED",
+      "natural_korean_rendering": "삶의 무상함과 괴로움을 갑자기 절감해 충격·불안·허무가 밀려오면서, 그대로 살아서는 안 된다는 절박함과 벗어날 길을 찾아야 한다는 수행적 긴박감이 함께 생기는 상태",
+      "residue_dimensions": ["shock/dismay at impermanence or suffering", "fear or alienation", "urgent need to find a way out", "Buddhist soteriological motivation"],
+      "semantic_residue": "한국어의 불안·충격·허무·절박감 중 하나만으로는 무상과 괴로움의 통찰에서 오는 정서적 동요와, 그 충격이 곧바로 삶의 방향을 바꾸고 해탈의 길을 찾아야 한다는 수행적 긴박감으로 전환되는 구조를 함께 담기 어렵다.",
+      "overclaim": "일반적인 불안장애·공황·실존불안과 동일시하지 않고, 초기 불교와 아비달마의 기술적·수행적 맥락을 지운 채 보편 심리용어로 사용하지 않는다."
+    },
+    {
+      "card_id": "C0037",
+      "term": "甘え",
+      "language_code": "ja-JP",
+      "language_name": "日本語",
+      "experience_type": "relational_experience",
+      "lexical_ref": "R0159",
+      "scholarly_refs": ["R0160"],
+      "pronunciation_ref": "R0161",
+      "ipa": "[a̠ma̠e̞]",
+      "korean_near_terms": ["응석", "어리광", "애교", "상대가 받아줄 거라 믿고 기대는 마음"],
+      "en_near_terms": ["dependence expecting acceptance", "indulgent reliance", "presuming on another's goodwill"],
+      "zh_near_terms": ["依赖并期待对方包容", "撒娇式依赖", "仗着对方好意而依赖"],
+      "ja_near_terms": ["人の好意をあてにする気持ち", "受け入れてもらえることを期待する依存"],
+      "korean_expression_cost": "EXPLANATORY_PHRASE_REQUIRED",
+      "natural_korean_rendering": "상대가 나를 받아주고 특별히 너그럽게 대해 줄 것이라는 관계적 믿음 위에서 의존하거나 응석을 부리고, 그 호의를 기대해도 괜찮다고 느끼는 마음과 행동",
+      "residue_dimensions": ["reliance on another's goodwill", "expectation of acceptance", "dependent/indulgent relational stance", "can extend beyond child-parent relations"],
+      "semantic_residue": "한국어의 응석·어리광·애교는 행동 일부를 가리킬 수 있지만, 상대의 호의와 수용을 전제로 의존하려는 심리적 기대와 관계적 기능까지 한 단어로 묶지는 않는다. 한국 연구도 amae에 대응하는 단일 한국어가 없고 여러 표현으로 번역된다고 직접 지적한다.",
+      "overclaim": "일본인만 느끼는 고유 감정이라고 주장하지 않고, 모든 甘え를 유아적 의존이나 부정적 미성숙으로 고정하지 않는다."
+    },
+    {
+      "card_id": "C0038",
+      "term": "憋屈",
+      "language_code": "zh-CN",
+      "language_name": "中文",
+      "experience_type": "feeling",
+      "lexical_ref": "R0162",
+      "scholarly_refs": ["R0163"],
+      "pronunciation_ref": "R0164",
+      "ipa": "[pi̯ɛ⁵⁵ t͡ɕʰy²]",
+      "korean_near_terms": ["속이 답답하고 억울하다", "참고 눌러 두느라 괴롭다", "부당한데 풀어내지 못해 속이 막히다"],
+      "en_near_terms": ["aggrieved and stifled", "feeling wronged and pent-up", "oppressed frustration"],
+      "zh_near_terms": ["心中郁闷难受", "受委屈又憋闷", "有气无法舒展"],
+      "ja_near_terms": ["理不尽さを抱え込んで息苦しい感じ", "悔しくても吐き出せず鬱屈する感じ"],
+      "korean_expression_cost": "EXPLANATORY_PHRASE_REQUIRED",
+      "natural_korean_rendering": "부당하거나 답답한 일을 겪어 속상하고 억울한데, 그 감정을 제대로 말하거나 풀어내지 못해 안으로 눌러 담은 채 마음이 막히고 괴로운 느낌",
+      "residue_dimensions": ["inner stifling/depression", "felt wrong or unfairness", "blocked expression or inability to resolve", "frustration/helplessness"],
+      "semantic_residue": "한국어 억울하다·답답하다·분하다와 각각 겹치지만, 부당함이나 좌절을 느끼면서도 표현하거나 해결하지 못해 감정이 안에 눌리고 막혀 있다는 신체화된 답답함을 함께 보존하려면 보통 여러 표현이 필요하다.",
+      "overclaim": "중국 문화의 억압적 성향으로 일반화하지 않고, 임상적 우울·불안 진단어처럼 사용하지 않는다."
+    },
+    {
+      "card_id": "C0039",
+      "term": "limerence",
+      "language_code": "en",
+      "language_name": "English (psychology)",
+      "experience_type": "psychological_state",
+      "lexical_ref": "R0165",
+      "scholarly_refs": ["R0166"],
+      "pronunciation_ref": "R0167",
+      "ipa": "[ˈlɪməɹəns]",
+      "korean_near_terms": ["상대의 사랑이 돌아오길 갈망하는 강박적 짝사랑", "상대 반응에 과도하게 민감한 몰입", "확신과 불확실성 사이의 집착적 연정"],
+      "en_near_terms": ["obsessive romantic infatuation", "longing for reciprocation", "intrusive romantic preoccupation"],
+      "zh_near_terms": ["渴望情感回应的强迫性迷恋", "对回应极度敏感的爱恋执着"],
+      "ja_near_terms": ["相手からの愛情の返報を強く求める強迫的な恋愛没入", "反応への過敏さを伴う執着的恋慕"],
+      "korean_expression_cost": "EXPLANATORY_PHRASE_REQUIRED",
+      "natural_korean_rendering": "특정 사람에게 비자발적으로 강하게 빠져 그 사람의 관심과 사랑이 돌아오기를 압도적으로 갈망하고, 상대의 작은 반응에 희망과 절망이 크게 흔들리며 생각이 반복적으로 그 사람에게 붙잡히는 상태",
+      "residue_dimensions": ["involuntary intense infatuation", "intrusive/obsessive preoccupation", "longing for reciprocation", "hope-uncertainty sensitivity"],
+      "semantic_residue": "한국어 짝사랑·집착·반함 중 하나만으로는 비자발적 몰입, 반복적 침투사고, 사랑의 상호성에 대한 강한 갈망, 그리고 상대의 반응이 불확실할수록 감정이 증폭되는 구조를 함께 보존하기 어렵다.",
+      "overclaim": "공식 정신질환 진단명으로 제시하거나 모든 강한 짝사랑·연애 초기의 몰입을 limerence라고 병리화하지 않는다."
+    },
+    {
+      "card_id": "C0040",
+      "term": "compersion",
+      "language_code": "en",
+      "language_name": "English (CNM/polyamory usage)",
+      "experience_type": "relational_experience",
+      "lexical_ref": "R0168",
+      "scholarly_refs": ["R0169"],
+      "pronunciation_ref": "R0170",
+      "ipa": "[kəmˈpɜɹʒən]",
+      "korean_near_terms": ["파트너의 다른 관계에서 생긴 행복을 함께 기뻐하다", "질투 대신 상대의 다른 친밀관계를 보고 느끼는 기쁨"],
+      "en_near_terms": ["joy at a partner's other relationship", "positive emotion about a partner's intimacy with another"],
+      "zh_near_terms": ["因伴侣与另一位伴侣的幸福关系而感到喜悦", "看到伴侣在其他亲密关系中幸福而产生的正向情绪"],
+      "ja_near_terms": ["パートナーが別の相手との関係で幸せであることを喜ぶ感情", "嫉妬とは異なる他関係への肯定的感情"],
+      "korean_expression_cost": "EXPLANATORY_PHRASE_REQUIRED",
+      "natural_korean_rendering": "합의된 비일부일처 관계에서, 내가 사랑하는 파트너가 다른 파트너와 나누는 친밀감과 행복을 알거나 보면서 질투만이 아니라 오히려 기쁨·만족을 느끼는 관계적 감정",
+      "residue_dimensions": ["positive affect", "one's romantic partner as the focal person", "partner's intimacy/relationship with another person", "consensual non-monogamy usage boundary"],
+      "semantic_residue": "한국어의 함께 기뻐하다·대리 기쁨은 일반적 타인의 행복에도 쓰이지만, compersion은 특히 파트너가 다른 사람과 맺는 합의된 친밀관계에서 생기는 긍정 정서를 가리키는 현대 관계어라는 좁은 사용경계를 갖는다.",
+      "overclaim": "단순히 질투의 반대말 하나로 환원하거나, 모든 비일부일처 관계 참여자가 compersion을 느껴야 한다는 규범으로 제시하지 않는다."
+    }
+  ],
+  "references": [
+    {
+      "reference_id": "R0156", "source_type": "lexical", "title": "saṃvega", "authors": [], "publisher_or_container": "Digital Pāḷi Dictionary", "year": null, "volume": null, "issue": null, "pages": null, "doi": null, "isbn": null,
+      "url": "https://dpdict.net/?q=sa%E1%B9%81vega", "accessed_at": "2026-09-17", "license": null,
+      "rights_note": "Digital Pāḷi Dictionary lists alarm, sense of urgency, dismay, religious emotion, dread, shock and awe across senses, with corpus examples. Public definition must preserve Buddhist technical context.", "citation_display": "Digital Pāḷi Dictionary. (n.d.). saṃvega."
+    },
+    {
+      "reference_id": "R0157", "source_type": "scholarly", "title": "The Buddhist Logic of Distress (Saṃvega): An Exploration of Early Abhidharma Sources", "authors": ["Nir Feinberg"], "publisher_or_container": "Religions", "year": 2024, "volume": "15", "issue": "10", "pages": "1241", "doi": "10.3390/rel15101241", "isbn": null,
+      "url": "https://www.mdpi.com/2077-1444/15/10/1241", "accessed_at": "2026-09-17", "license": "CC BY",
+      "rights_note": "Peer-reviewed study analyzes saṃvega as distress/existential shock and as urgency/intense fervor supporting Buddhist practice; used to preserve the technical soteriological boundary.", "citation_display": "Feinberg, N. (2024). The Buddhist Logic of Distress (Saṃvega). Religions, 15(10), 1241. https://doi.org/10.3390/rel15101241"
+    },
+    {
+      "reference_id": "R0158", "source_type": "pronunciation", "title": "saṃvega — Pāḷi pronunciation", "authors": [], "publisher_or_container": "Digital Pāḷi Dictionary", "year": null, "volume": null, "issue": null, "pages": null, "doi": null, "isbn": null,
+      "url": "https://dpdict.net/?q=sa%E1%B9%81vega", "accessed_at": "2026-09-17", "license": null,
+      "rights_note": "DPD provides IPA /s̪ə̃ʋeːgə/. No product audio is authorized by this reference.", "citation_display": "Digital Pāḷi Dictionary. (n.d.). saṃvega — IPA."
+    },
+    {
+      "reference_id": "R0159", "source_type": "lexical", "title": "甘え", "authors": [], "publisher_or_container": "小学館デジタル大辞泉 via コトバンク", "year": null, "volume": null, "issue": null, "pages": null, "doi": null, "isbn": null,
+      "url": "https://kotobank.jp/word/%E7%94%98%E3%81%88-426877", "accessed_at": "2026-09-17", "license": null,
+      "rights_note": "Digital Daijisen defines amae as a feeling of relying/counting on another person's goodwill. Nipponica context broadens the interpersonal boundary. Public wording must be original synthesis.", "citation_display": "小学館. (n.d.). 甘え. デジタル大辞泉 via コトバンク."
+    },
+    {
+      "reference_id": "R0160", "source_type": "scholarly", "title": "한국의 ‘정(情)’과 일본의 ‘아마에(甘え)’에 대한 인지적 고찰", "authors": ["김명희"], "publisher_or_container": "비교문화연구", "year": 2012, "volume": "27", "issue": null, "pages": "471-496", "doi": "10.21049/ccs.2012.27..471", "isbn": null,
+      "url": "https://www.kci.go.kr/kciportal/landing/article.kci?arti_id=ART001673598", "accessed_at": "2026-09-17", "license": null,
+      "rights_note": "Direct Korean-Japanese cognitive comparison states that Korean has no single term corresponding to amae and discusses multiple Korean renderings plus dependence/expected acceptance in adult relations.", "citation_display": "김명희. (2012). 한국의 ‘정(情)’과 일본의 ‘아마에(甘え)’에 대한 인지적 고찰. 비교문화연구, 27, 471–496. https://doi.org/10.21049/ccs.2012.27..471"
+    },
+    {
+      "reference_id": "R0161", "source_type": "pronunciation", "title": "甘え — Japanese pronunciation", "authors": [], "publisher_or_container": "Wiktionary", "year": null, "volume": null, "issue": null, "pages": null, "doi": null, "isbn": null,
+      "url": "https://en.wiktionary.org/wiki/%E7%94%98%E3%81%88", "accessed_at": "2026-09-17", "license": "CC BY-SA 4.0 / source-file terms",
+      "rights_note": "Japanese pronunciation research gives /a̠ma̠e̞/ and accent information. Product audio still requires exact file-level verification.", "citation_display": "Wiktionary. (n.d.). 甘え."
+    },
+    {
+      "reference_id": "R0162", "source_type": "lexical", "title": "憋屈", "authors": [], "publisher_or_container": "汉典", "year": null, "volume": null, "issue": null, "pages": null, "doi": null, "isbn": null,
+      "url": "https://zdic.net/hans/%E6%86%8B%E5%B1%88", "accessed_at": "2026-09-17", "license": null,
+      "rights_note": "Chinese lexical entry defines 憋屈 as 心中郁闷难受 and gives English 'feel wronged'. Public wording adds no unsupported national-character claim.", "citation_display": "汉典. (n.d.). 憋屈."
+    },
+    {
+      "reference_id": "R0163", "source_type": "scholarly", "title": "부당한 상황에서 경험되는 정서의 문화 차이: 한국, 중국, 일본, 미국을 중심으로", "authors": ["한민", "류승아"], "publisher_or_container": "한국심리학회지: 문화 및 사회문제", "year": 2018, "volume": "24", "issue": "2", "pages": "251-272", "doi": "10.20406/kjcs.2018.5.24.2.251", "isbn": null,
+      "url": "https://www.kci.go.kr/kciportal/landing/article.kci?arti_id=ART002348482", "accessed_at": "2026-09-17", "license": null,
+      "rights_note": "Cross-cultural study of emotion in unfair situations across Korea, China, Japan and the U.S.; used only for the unfair-situation construct boundary, while exact 憋屈 semantics come from Chinese lexical evidence.", "citation_display": "한민, 류승아. (2018). 부당한 상황에서 경험되는 정서의 문화 차이. 한국심리학회지: 문화 및 사회문제, 24(2), 251–272. https://doi.org/10.20406/kjcs.2018.5.24.2.251"
+    },
+    {
+      "reference_id": "R0164", "source_type": "pronunciation", "title": "憋屈 — Mandarin pronunciation", "authors": [], "publisher_or_container": "Wiktionary", "year": null, "volume": null, "issue": null, "pages": null, "doi": null, "isbn": null,
+      "url": "https://en.wiktionary.org/wiki/%E6%86%8B%E5%B1%88", "accessed_at": "2026-09-17", "license": "CC BY-SA 4.0 / source-file terms",
+      "rights_note": "Mandarin pinyin biēqu and Sinological IPA /pi̯ɛ⁵⁵ t͡ɕʰy²/ recorded for research; product audio remains unverified.", "citation_display": "Wiktionary. (n.d.). 憋屈."
+    },
+    {
+      "reference_id": "R0165", "source_type": "lexical", "title": "limerence", "authors": [], "publisher_or_container": "APA Dictionary of Psychology", "year": 2018, "volume": null, "issue": null, "pages": null, "doi": null, "isbn": null,
+      "url": "https://dictionary.apa.org/limerence", "accessed_at": "2026-09-17", "license": null,
+      "rights_note": "APA Dictionary defines an intense romantic/sexual desire with strong concern for the other's reactions. Card wording is further bounded by contemporary scholarly research on reciprocation uncertainty and intrusive preoccupation.", "citation_display": "American Psychological Association. (2018). limerence. APA Dictionary of Psychology."
+    },
+    {
+      "reference_id": "R0166", "source_type": "scholarly", "title": "Limerence, Hidden Obsession, Fixation, and Rumination: A Scoping Review of Human Behaviour", "authors": ["Craig Harper", "Daniel Lievesley"], "publisher_or_container": "Journal of Police and Criminal Psychology", "year": 2024, "volume": null, "issue": null, "pages": null, "doi": "10.1007/s11896-024-09674-x", "isbn": null,
+      "url": "https://link.springer.com/article/10.1007/s11896-024-09674-x", "accessed_at": "2026-09-17", "license": null,
+      "rights_note": "Scoping review defines limerence through obsessive attachment, overwhelming longing for attention, intrusive thoughts, hope/uncertainty around reciprocation, and distinguishes it from a crush or ordinary being in love.", "citation_display": "Harper, C., & Lievesley, D. (2024). Limerence, Hidden Obsession, Fixation, and Rumination: A Scoping Review of Human Behaviour. Journal of Police and Criminal Psychology. https://doi.org/10.1007/s11896-024-09674-x"
+    },
+    {
+      "reference_id": "R0167", "source_type": "pronunciation", "title": "limerence — English pronunciation", "authors": [], "publisher_or_container": "Wiktionary", "year": null, "volume": null, "issue": null, "pages": null, "doi": null, "isbn": null,
+      "url": "https://en.wiktionary.org/wiki/limerence", "accessed_at": "2026-09-17", "license": "CC BY-SA 4.0 / source-file terms",
+      "rights_note": "General American and RP IPA available; research record uses General American /ˈlɪməɹəns/. Product audio rights remain unverified.", "citation_display": "Wiktionary. (n.d.). limerence."
+    },
+    {
+      "reference_id": "R0168", "source_type": "lexical", "title": "compersion", "authors": [], "publisher_or_container": "Dictionary.com", "year": null, "volume": null, "issue": null, "pages": null, "doi": null, "isbn": null,
+      "url": "https://www.dictionary.com/browse/compersion", "accessed_at": "2026-09-17", "license": null,
+      "rights_note": "Dictionary entry defines happiness caused by another's happiness, especially a romantic/sexual partner interacting positively with another partner. Scholarly evidence fixes the narrower CNM use for this card.", "citation_display": "Dictionary.com. (n.d.). compersion."
+    },
+    {
+      "reference_id": "R0169", "source_type": "scholarly", "title": "Feeling Good About Your Partners' Relationships: Compersion in Consensually Non-Monogamous Relationships", "authors": ["Sharon M. Flicker", "Michelle D. Vaughan", "Lawrence S. Meyers"], "publisher_or_container": "Archives of Sexual Behavior", "year": 2021, "volume": null, "issue": null, "pages": null, "doi": "10.1007/s10508-021-01985-y", "isbn": null,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34075503/", "accessed_at": "2026-09-17", "license": null,
+      "rights_note": "Peer-reviewed study defines compersion as positive emotion experienced in relation to a partner's relationship with another partner and examines factors facilitating/inhibiting it.", "citation_display": "Flicker, S. M., Vaughan, M. D., & Meyers, L. S. (2021). Feeling Good About Your Partners' Relationships: Compersion in Consensually Non-Monogamous Relationships. Archives of Sexual Behavior. https://doi.org/10.1007/s10508-021-01985-y"
+    },
+    {
+      "reference_id": "R0170", "source_type": "pronunciation", "title": "compersion — English pronunciation", "authors": [], "publisher_or_container": "Wiktionary", "year": null, "volume": null, "issue": null, "pages": null, "doi": null, "isbn": null,
+      "url": "https://en.wiktionary.org/wiki/compersion", "accessed_at": "2026-09-17", "license": "CC BY-SA 4.0 / source-file terms",
+      "rights_note": "General American and RP IPA recorded for research; product audio requires exact source-file creator/license/SHA verification.", "citation_display": "Wiktionary. (n.d.). compersion."
+    }
+  ],
+  "screened_out": [
+    {
+      "term": "naches",
+      "status": "HOLD_NEAR_KOREAN_EQUIVALENT",
+      "reason": "Korean 대견하다/자랑스럽다 already compress much of proud pleasure in another's achievement; preserve as candidate for relation/comparison rather than priority active admission."
+    },
+    {
+      "term": "resfeber",
+      "status": "HOLD_SHORT_KOREAN_RENDERING",
+      "reason": "Authoritative Swedish evidence centers on nervousness before an upcoming journey, which Korean 여행 전 긴장감/불안 already renders compactly."
+    },
+    {
+      "term": "żal",
+      "status": "HOLD_POLYSEMY_NOT_BUNDLE",
+      "reason": "The Polish lexeme spans sorrow, pity, grudge, regret and repentance across constructions; breadth may reflect polysemy rather than one bundled experiential state, so it should not be admitted merely because Korean needs several translations."
+    }
+  ]
+}

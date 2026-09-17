@@ -1,0 +1,226 @@
+{
+  "schema_version": "2.1.0",
+  "research_id": "RR-C0040-FOREIGN",
+  "card_id": "C0040",
+  "candidate": {
+    "term": "compersion",
+    "language_code": "en",
+    "language_name": "English (CNM/polyamory usage)",
+    "experience_type": "relational_experience"
+  },
+  "lifecycle_state": "HOLD",
+  "source_inventory": [
+    {
+      "reference_id": "R0168",
+      "role": "lexical",
+      "quality_tier": "A"
+    },
+    {
+      "reference_id": "R0169",
+      "role": "scholarly",
+      "quality_tier": "A"
+    },
+    {
+      "reference_id": "R0170",
+      "role": "pronunciation",
+      "quality_tier": "B"
+    }
+  ],
+  "lexical_verification": {
+    "status": "PASS",
+    "summary": "원어 권위 사전에서 목표 표제어와 카드에 사용할 의미 범위를 확인했다.",
+    "reference_ids": [
+      "R0168"
+    ]
+  },
+  "semantic_definition_and_boundaries": {
+    "status": "PASS",
+    "summary": "한국어의 함께 기뻐하다·대리 기쁨은 일반적 타인의 행복에도 쓰이지만, compersion은 특히 파트너가 다른 사람과 맺는 합의된 친밀관계에서 생기는 긍정 정서를 가리키는 현대 관계어라는 좁은 사용경계를 갖는다.",
+    "reference_ids": [
+      "R0168",
+      "R0169"
+    ]
+  },
+  "cultural_context_review": {
+    "status": "PASS",
+    "summary": "언어·문화 맥락을 설명하되 해당 문화 사람만 이 경험을 느낀다는 본질주의나 번역불가능성 주장을 하지 않는다.",
+    "reference_ids": [
+      "R0168",
+      "R0169"
+    ]
+  },
+  "comparisons": {
+    "ko": {
+      "status": "PASS",
+      "near_terms": [
+        "파트너의 다른 관계에서 생긴 행복을 함께 기뻐하다",
+        "질투 대신 상대의 다른 친밀관계를 보고 느끼는 기쁨"
+      ],
+      "difference_note": "한국어 근접어 하나로는 핵심 의미 패키지를 모두 보존하기 어렵다.",
+      "verification_note": "Korean Expression Cost review PASS.",
+      "reference_ids": [
+        "R0168",
+        "R0169"
+      ]
+    },
+    "en": {
+      "status": "PASS",
+      "near_terms": [
+        "joy at a partner's other relationship",
+        "positive emotion about a partner's intimacy with another"
+      ],
+      "difference_note": "영어 근접어는 provisional이며 독립 lexical verification 전에는 최종 비교로 승격하지 않는다.",
+      "verification_note": "Research-stage provisional mapping.",
+      "reference_ids": [
+        "R0168"
+      ]
+    },
+    "zh": {
+      "status": "HOLD",
+      "near_terms": [
+        "因伴侣与另一位伴侣的幸福关系而感到喜悦",
+        "看到伴侣在其他亲密关系中幸福而产生的正向情绪"
+      ],
+      "difference_note": "원어가 중국어이면 target lexical evidence로 자체 의미를 확인했고, 그 외에는 provisional이다.",
+      "verification_note": "Target-language evidence or provisional mapping.",
+      "reference_ids": [
+        "R0168"
+      ]
+    },
+    "ja": {
+      "status": "HOLD",
+      "near_terms": [
+        "パートナーが別の相手との関係で幸せであることを喜ぶ感情",
+        "嫉妬とは異なる他関係への肯定的感情"
+      ],
+      "difference_note": "일본어 근접어는 provisional이며 독립 lexical verification 전에는 최종 비교로 승격하지 않는다.",
+      "verification_note": "Research-stage provisional mapping.",
+      "reference_ids": [
+        "R0168"
+      ]
+    }
+  },
+  "pronunciation_verification": {
+    "status": "HOLD",
+    "ipa": "[kəmˈpɜɹʒən]",
+    "locale": "en",
+    "reference_ids": [
+      "R0170"
+    ],
+    "audio_asset_id": null,
+    "notes": "IPA/transliteration provenance is recorded, but exact product-safe audio source, creator, locale fit, license, rights, and SHA linkage are not yet verified."
+  },
+  "claim_source_map": [
+    {
+      "claim_id": "CL-001",
+      "claim": "한국어의 함께 기뻐하다·대리 기쁨은 일반적 타인의 행복에도 쓰이지만, compersion은 특히 파트너가 다른 사람과 맺는 합의된 친밀관계에서 생기는 긍정 정서를 가리키는 현대 관계어라는 좁은 사용경계를 갖는다.",
+      "reference_ids": [
+        "R0168",
+        "R0169"
+      ],
+      "evidence_locator": "Target lexical definition plus directly relevant scholarly evidence.",
+      "public_safe": true
+    },
+    {
+      "claim_id": "CL-002",
+      "claim": "한국어의 흔한 한 단어 하나로는 핵심 의미 패키지를 모두 보존하기 어렵다.",
+      "reference_ids": [
+        "R0168",
+        "R0169"
+      ],
+      "evidence_locator": "Korean Expression Cost review against target semantic components.",
+      "public_safe": true
+    }
+  ],
+  "relations": [],
+  "illustration_brief": {
+    "status": "HOLD",
+    "summary": "Product audio rights and full multilingual comparison are incomplete; illustration is deferred.",
+    "reference_ids": [
+      "R0168"
+    ]
+  },
+  "editorial_copy": {
+    "status": "HOLD",
+    "summary": "Public poetic copy is deferred until all gates can be evaluated together.",
+    "reference_ids": [
+      "R0168",
+      "R0169"
+    ]
+  },
+  "automated_gates": {
+    "schema": "PASS",
+    "evidence": "PASS",
+    "pronunciation": "HOLD",
+    "cultural_humility": "PASS",
+    "rights": "HOLD",
+    "privacy": "PASS"
+  },
+  "distinctiveness_review": {
+    "status": "PASS",
+    "track": "FOREIGN_KOREAN_GAP",
+    "generic_basic_emotion": false,
+    "nearest_cross_language_terms": {
+      "ko": [
+        "파트너의 다른 관계에서 생긴 행복을 함께 기뻐하다",
+        "질투 대신 상대의 다른 친밀관계를 보고 느끼는 기쁨"
+      ],
+      "en": [
+        "joy at a partner's other relationship",
+        "positive emotion about a partner's intimacy with another"
+      ],
+      "zh": [
+        "因伴侣与另一位伴侣的幸福关系而感到喜悦",
+        "看到伴侣在其他亲密关系中幸福而产生的正向情绪"
+      ],
+      "ja": [
+        "パートナーが別の相手との関係で幸せであることを喜ぶ感情",
+        "嫉妬とは異なる他関係への肯定的感情"
+      ]
+    },
+    "semantic_residue": "한국어의 함께 기뻐하다·대리 기쁨은 일반적 타인의 행복에도 쓰이지만, compersion은 특히 파트너가 다른 사람과 맺는 합의된 친밀관계에서 생기는 긍정 정서를 가리키는 현대 관계어라는 좁은 사용경계를 갖는다.",
+    "residue_reference_ids": [
+      "R0168",
+      "R0169"
+    ],
+    "overclaim_to_avoid": "단순히 질투의 반대말 하나로 환원하거나, 모든 비일부일처 관계 참여자가 compersion을 느껴야 한다는 규범으로 제시하지 않는다.",
+    "korean_expression_cost": {
+      "classification": "EXPLANATORY_PHRASE_REQUIRED",
+      "status": "PASS",
+      "nearest_korean_terms": [
+        "파트너의 다른 관계에서 생긴 행복을 함께 기뻐하다",
+        "질투 대신 상대의 다른 친밀관계를 보고 느끼는 기쁨"
+      ],
+      "natural_korean_rendering": "합의된 비일부일처 관계에서, 내가 사랑하는 파트너가 다른 파트너와 나누는 친밀감과 행복을 알거나 보면서 질투만이 아니라 오히려 기쁨·만족을 느끼는 관계적 감정",
+      "residue_dimensions": [
+        "positive affect",
+        "one's romantic partner as the focal person",
+        "partner's intimacy/relationship with another person",
+        "consensual non-monogamy usage boundary"
+      ],
+      "reference_ids": [
+        "R0168",
+        "R0169"
+      ],
+      "rationale": "한국어의 흔한 한 단어가 의미 전체를 보존하는지 먼저 검토했다. 이 후보는 핵심 의미 요소가 여러 한국어 표현으로 분산되거나 설명적 구가 필요하며, 원어 사전과 직접 관련 학술 근거가 그 의미 잔여를 뒷받침한다."
+    }
+  },
+  "human_editorial_release": {
+    "status": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": "Research-stage HOLD. Human Editorial Release is not open until product audio rights and full multilingual comparison pass."
+  },
+  "changelog": [
+    {
+      "date": "2026-09-17",
+      "state": "RESEARCH",
+      "note": "Foreign semantic-gap source-first research under v2.1 Korean Expression Cost contract."
+    },
+    {
+      "date": "2026-09-17",
+      "state": "HOLD",
+      "note": "Core semantic gap passes; product audio rights and full multilingual comparison remain incomplete."
+    }
+  ]
+}

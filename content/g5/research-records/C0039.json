@@ -1,0 +1,231 @@
+{
+  "schema_version": "2.1.0",
+  "research_id": "RR-C0039-FOREIGN",
+  "card_id": "C0039",
+  "candidate": {
+    "term": "limerence",
+    "language_code": "en",
+    "language_name": "English (psychology)",
+    "experience_type": "psychological_state"
+  },
+  "lifecycle_state": "HOLD",
+  "source_inventory": [
+    {
+      "reference_id": "R0165",
+      "role": "lexical",
+      "quality_tier": "A"
+    },
+    {
+      "reference_id": "R0166",
+      "role": "scholarly",
+      "quality_tier": "A"
+    },
+    {
+      "reference_id": "R0167",
+      "role": "pronunciation",
+      "quality_tier": "B"
+    }
+  ],
+  "lexical_verification": {
+    "status": "PASS",
+    "summary": "원어 권위 사전에서 목표 표제어와 카드에 사용할 의미 범위를 확인했다.",
+    "reference_ids": [
+      "R0165"
+    ]
+  },
+  "semantic_definition_and_boundaries": {
+    "status": "PASS",
+    "summary": "한국어 짝사랑·집착·반함 중 하나만으로는 비자발적 몰입, 반복적 침투사고, 사랑의 상호성에 대한 강한 갈망, 그리고 상대의 반응이 불확실할수록 감정이 증폭되는 구조를 함께 보존하기 어렵다.",
+    "reference_ids": [
+      "R0165",
+      "R0166"
+    ]
+  },
+  "cultural_context_review": {
+    "status": "PASS",
+    "summary": "언어·문화 맥락을 설명하되 해당 문화 사람만 이 경험을 느낀다는 본질주의나 번역불가능성 주장을 하지 않는다.",
+    "reference_ids": [
+      "R0165",
+      "R0166"
+    ]
+  },
+  "comparisons": {
+    "ko": {
+      "status": "PASS",
+      "near_terms": [
+        "상대의 사랑이 돌아오길 갈망하는 강박적 짝사랑",
+        "상대 반응에 과도하게 민감한 몰입",
+        "확신과 불확실성 사이의 집착적 연정"
+      ],
+      "difference_note": "한국어 근접어 하나로는 핵심 의미 패키지를 모두 보존하기 어렵다.",
+      "verification_note": "Korean Expression Cost review PASS.",
+      "reference_ids": [
+        "R0165",
+        "R0166"
+      ]
+    },
+    "en": {
+      "status": "PASS",
+      "near_terms": [
+        "obsessive romantic infatuation",
+        "longing for reciprocation",
+        "intrusive romantic preoccupation"
+      ],
+      "difference_note": "영어 근접어는 provisional이며 독립 lexical verification 전에는 최종 비교로 승격하지 않는다.",
+      "verification_note": "Research-stage provisional mapping.",
+      "reference_ids": [
+        "R0165"
+      ]
+    },
+    "zh": {
+      "status": "HOLD",
+      "near_terms": [
+        "渴望情感回应的强迫性迷恋",
+        "对回应极度敏感的爱恋执着"
+      ],
+      "difference_note": "원어가 중국어이면 target lexical evidence로 자체 의미를 확인했고, 그 외에는 provisional이다.",
+      "verification_note": "Target-language evidence or provisional mapping.",
+      "reference_ids": [
+        "R0165"
+      ]
+    },
+    "ja": {
+      "status": "HOLD",
+      "near_terms": [
+        "相手からの愛情の返報を強く求める強迫的な恋愛没入",
+        "反応への過敏さを伴う執着的恋慕"
+      ],
+      "difference_note": "일본어 근접어는 provisional이며 독립 lexical verification 전에는 최종 비교로 승격하지 않는다.",
+      "verification_note": "Research-stage provisional mapping.",
+      "reference_ids": [
+        "R0165"
+      ]
+    }
+  },
+  "pronunciation_verification": {
+    "status": "HOLD",
+    "ipa": "[ˈlɪməɹəns]",
+    "locale": "en",
+    "reference_ids": [
+      "R0167"
+    ],
+    "audio_asset_id": null,
+    "notes": "IPA/transliteration provenance is recorded, but exact product-safe audio source, creator, locale fit, license, rights, and SHA linkage are not yet verified."
+  },
+  "claim_source_map": [
+    {
+      "claim_id": "CL-001",
+      "claim": "한국어 짝사랑·집착·반함 중 하나만으로는 비자발적 몰입, 반복적 침투사고, 사랑의 상호성에 대한 강한 갈망, 그리고 상대의 반응이 불확실할수록 감정이 증폭되는 구조를 함께 보존하기 어렵다.",
+      "reference_ids": [
+        "R0165",
+        "R0166"
+      ],
+      "evidence_locator": "Target lexical definition plus directly relevant scholarly evidence.",
+      "public_safe": true
+    },
+    {
+      "claim_id": "CL-002",
+      "claim": "한국어의 흔한 한 단어 하나로는 핵심 의미 패키지를 모두 보존하기 어렵다.",
+      "reference_ids": [
+        "R0165",
+        "R0166"
+      ],
+      "evidence_locator": "Korean Expression Cost review against target semantic components.",
+      "public_safe": true
+    }
+  ],
+  "relations": [],
+  "illustration_brief": {
+    "status": "HOLD",
+    "summary": "Product audio rights and full multilingual comparison are incomplete; illustration is deferred.",
+    "reference_ids": [
+      "R0165"
+    ]
+  },
+  "editorial_copy": {
+    "status": "HOLD",
+    "summary": "Public poetic copy is deferred until all gates can be evaluated together.",
+    "reference_ids": [
+      "R0165",
+      "R0166"
+    ]
+  },
+  "automated_gates": {
+    "schema": "PASS",
+    "evidence": "PASS",
+    "pronunciation": "HOLD",
+    "cultural_humility": "PASS",
+    "rights": "HOLD",
+    "privacy": "PASS"
+  },
+  "distinctiveness_review": {
+    "status": "PASS",
+    "track": "FOREIGN_KOREAN_GAP",
+    "generic_basic_emotion": false,
+    "nearest_cross_language_terms": {
+      "ko": [
+        "상대의 사랑이 돌아오길 갈망하는 강박적 짝사랑",
+        "상대 반응에 과도하게 민감한 몰입",
+        "확신과 불확실성 사이의 집착적 연정"
+      ],
+      "en": [
+        "obsessive romantic infatuation",
+        "longing for reciprocation",
+        "intrusive romantic preoccupation"
+      ],
+      "zh": [
+        "渴望情感回应的强迫性迷恋",
+        "对回应极度敏感的爱恋执着"
+      ],
+      "ja": [
+        "相手からの愛情の返報を強く求める強迫的な恋愛没入",
+        "反応への過敏さを伴う執着的恋慕"
+      ]
+    },
+    "semantic_residue": "한국어 짝사랑·집착·반함 중 하나만으로는 비자발적 몰입, 반복적 침투사고, 사랑의 상호성에 대한 강한 갈망, 그리고 상대의 반응이 불확실할수록 감정이 증폭되는 구조를 함께 보존하기 어렵다.",
+    "residue_reference_ids": [
+      "R0165",
+      "R0166"
+    ],
+    "overclaim_to_avoid": "공식 정신질환 진단명으로 제시하거나 모든 강한 짝사랑·연애 초기의 몰입을 limerence라고 병리화하지 않는다.",
+    "korean_expression_cost": {
+      "classification": "EXPLANATORY_PHRASE_REQUIRED",
+      "status": "PASS",
+      "nearest_korean_terms": [
+        "상대의 사랑이 돌아오길 갈망하는 강박적 짝사랑",
+        "상대 반응에 과도하게 민감한 몰입",
+        "확신과 불확실성 사이의 집착적 연정"
+      ],
+      "natural_korean_rendering": "특정 사람에게 비자발적으로 강하게 빠져 그 사람의 관심과 사랑이 돌아오기를 압도적으로 갈망하고, 상대의 작은 반응에 희망과 절망이 크게 흔들리며 생각이 반복적으로 그 사람에게 붙잡히는 상태",
+      "residue_dimensions": [
+        "involuntary intense infatuation",
+        "intrusive/obsessive preoccupation",
+        "longing for reciprocation",
+        "hope-uncertainty sensitivity"
+      ],
+      "reference_ids": [
+        "R0165",
+        "R0166"
+      ],
+      "rationale": "한국어의 흔한 한 단어가 의미 전체를 보존하는지 먼저 검토했다. 이 후보는 핵심 의미 요소가 여러 한국어 표현으로 분산되거나 설명적 구가 필요하며, 원어 사전과 직접 관련 학술 근거가 그 의미 잔여를 뒷받침한다."
+    }
+  },
+  "human_editorial_release": {
+    "status": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": "Research-stage HOLD. Human Editorial Release is not open until product audio rights and full multilingual comparison pass."
+  },
+  "changelog": [
+    {
+      "date": "2026-09-17",
+      "state": "RESEARCH",
+      "note": "Foreign semantic-gap source-first research under v2.1 Korean Expression Cost contract."
+    },
+    {
+      "date": "2026-09-17",
+      "state": "HOLD",
+      "note": "Core semantic gap passes; product audio rights and full multilingual comparison remain incomplete."
+    }
+  ]
+}

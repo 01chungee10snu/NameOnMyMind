@@ -1,0 +1,233 @@
+{
+  "schema_version": "2.1.0",
+  "research_id": "RR-C0038-FOREIGN",
+  "card_id": "C0038",
+  "candidate": {
+    "term": "憋屈",
+    "language_code": "zh-CN",
+    "language_name": "中文",
+    "experience_type": "feeling"
+  },
+  "lifecycle_state": "HOLD",
+  "source_inventory": [
+    {
+      "reference_id": "R0162",
+      "role": "lexical",
+      "quality_tier": "A"
+    },
+    {
+      "reference_id": "R0163",
+      "role": "scholarly",
+      "quality_tier": "A"
+    },
+    {
+      "reference_id": "R0164",
+      "role": "pronunciation",
+      "quality_tier": "B"
+    }
+  ],
+  "lexical_verification": {
+    "status": "PASS",
+    "summary": "원어 권위 사전에서 목표 표제어와 카드에 사용할 의미 범위를 확인했다.",
+    "reference_ids": [
+      "R0162"
+    ]
+  },
+  "semantic_definition_and_boundaries": {
+    "status": "PASS",
+    "summary": "한국어 억울하다·답답하다·분하다와 각각 겹치지만, 부당함이나 좌절을 느끼면서도 표현하거나 해결하지 못해 감정이 안에 눌리고 막혀 있다는 신체화된 답답함을 함께 보존하려면 보통 여러 표현이 필요하다.",
+    "reference_ids": [
+      "R0162",
+      "R0163"
+    ]
+  },
+  "cultural_context_review": {
+    "status": "PASS",
+    "summary": "언어·문화 맥락을 설명하되 해당 문화 사람만 이 경험을 느낀다는 본질주의나 번역불가능성 주장을 하지 않는다.",
+    "reference_ids": [
+      "R0162",
+      "R0163"
+    ]
+  },
+  "comparisons": {
+    "ko": {
+      "status": "PASS",
+      "near_terms": [
+        "속이 답답하고 억울하다",
+        "참고 눌러 두느라 괴롭다",
+        "부당한데 풀어내지 못해 속이 막히다"
+      ],
+      "difference_note": "한국어 근접어 하나로는 핵심 의미 패키지를 모두 보존하기 어렵다.",
+      "verification_note": "Korean Expression Cost review PASS.",
+      "reference_ids": [
+        "R0162",
+        "R0163"
+      ]
+    },
+    "en": {
+      "status": "HOLD",
+      "near_terms": [
+        "aggrieved and stifled",
+        "feeling wronged and pent-up",
+        "oppressed frustration"
+      ],
+      "difference_note": "영어 근접어는 provisional이며 독립 lexical verification 전에는 최종 비교로 승격하지 않는다.",
+      "verification_note": "Research-stage provisional mapping.",
+      "reference_ids": [
+        "R0162"
+      ]
+    },
+    "zh": {
+      "status": "PASS",
+      "near_terms": [
+        "心中郁闷难受",
+        "受委屈又憋闷",
+        "有气无法舒展"
+      ],
+      "difference_note": "원어가 중국어이면 target lexical evidence로 자체 의미를 확인했고, 그 외에는 provisional이다.",
+      "verification_note": "Target-language evidence or provisional mapping.",
+      "reference_ids": [
+        "R0162"
+      ]
+    },
+    "ja": {
+      "status": "HOLD",
+      "near_terms": [
+        "理不尽さを抱え込んで息苦しい感じ",
+        "悔しくても吐き出せず鬱屈する感じ"
+      ],
+      "difference_note": "일본어 근접어는 provisional이며 독립 lexical verification 전에는 최종 비교로 승격하지 않는다.",
+      "verification_note": "Research-stage provisional mapping.",
+      "reference_ids": [
+        "R0162"
+      ]
+    }
+  },
+  "pronunciation_verification": {
+    "status": "HOLD",
+    "ipa": "[pi̯ɛ⁵⁵ t͡ɕʰy²]",
+    "locale": "zh-CN",
+    "reference_ids": [
+      "R0164"
+    ],
+    "audio_asset_id": null,
+    "notes": "IPA/transliteration provenance is recorded, but exact product-safe audio source, creator, locale fit, license, rights, and SHA linkage are not yet verified."
+  },
+  "claim_source_map": [
+    {
+      "claim_id": "CL-001",
+      "claim": "한국어 억울하다·답답하다·분하다와 각각 겹치지만, 부당함이나 좌절을 느끼면서도 표현하거나 해결하지 못해 감정이 안에 눌리고 막혀 있다는 신체화된 답답함을 함께 보존하려면 보통 여러 표현이 필요하다.",
+      "reference_ids": [
+        "R0162",
+        "R0163"
+      ],
+      "evidence_locator": "Target lexical definition plus directly relevant scholarly evidence.",
+      "public_safe": true
+    },
+    {
+      "claim_id": "CL-002",
+      "claim": "한국어의 흔한 한 단어 하나로는 핵심 의미 패키지를 모두 보존하기 어렵다.",
+      "reference_ids": [
+        "R0162",
+        "R0163"
+      ],
+      "evidence_locator": "Korean Expression Cost review against target semantic components.",
+      "public_safe": true
+    }
+  ],
+  "relations": [],
+  "illustration_brief": {
+    "status": "HOLD",
+    "summary": "Product audio rights and full multilingual comparison are incomplete; illustration is deferred.",
+    "reference_ids": [
+      "R0162"
+    ]
+  },
+  "editorial_copy": {
+    "status": "HOLD",
+    "summary": "Public poetic copy is deferred until all gates can be evaluated together.",
+    "reference_ids": [
+      "R0162",
+      "R0163"
+    ]
+  },
+  "automated_gates": {
+    "schema": "PASS",
+    "evidence": "PASS",
+    "pronunciation": "HOLD",
+    "cultural_humility": "PASS",
+    "rights": "HOLD",
+    "privacy": "PASS"
+  },
+  "distinctiveness_review": {
+    "status": "PASS",
+    "track": "FOREIGN_KOREAN_GAP",
+    "generic_basic_emotion": false,
+    "nearest_cross_language_terms": {
+      "ko": [
+        "속이 답답하고 억울하다",
+        "참고 눌러 두느라 괴롭다",
+        "부당한데 풀어내지 못해 속이 막히다"
+      ],
+      "en": [
+        "aggrieved and stifled",
+        "feeling wronged and pent-up",
+        "oppressed frustration"
+      ],
+      "zh": [
+        "心中郁闷难受",
+        "受委屈又憋闷",
+        "有气无法舒展"
+      ],
+      "ja": [
+        "理不尽さを抱え込んで息苦しい感じ",
+        "悔しくても吐き出せず鬱屈する感じ"
+      ]
+    },
+    "semantic_residue": "한국어 억울하다·답답하다·분하다와 각각 겹치지만, 부당함이나 좌절을 느끼면서도 표현하거나 해결하지 못해 감정이 안에 눌리고 막혀 있다는 신체화된 답답함을 함께 보존하려면 보통 여러 표현이 필요하다.",
+    "residue_reference_ids": [
+      "R0162",
+      "R0163"
+    ],
+    "overclaim_to_avoid": "중국 문화의 억압적 성향으로 일반화하지 않고, 임상적 우울·불안 진단어처럼 사용하지 않는다.",
+    "korean_expression_cost": {
+      "classification": "EXPLANATORY_PHRASE_REQUIRED",
+      "status": "PASS",
+      "nearest_korean_terms": [
+        "속이 답답하고 억울하다",
+        "참고 눌러 두느라 괴롭다",
+        "부당한데 풀어내지 못해 속이 막히다"
+      ],
+      "natural_korean_rendering": "부당하거나 답답한 일을 겪어 속상하고 억울한데, 그 감정을 제대로 말하거나 풀어내지 못해 안으로 눌러 담은 채 마음이 막히고 괴로운 느낌",
+      "residue_dimensions": [
+        "inner stifling/depression",
+        "felt wrong or unfairness",
+        "blocked expression or inability to resolve",
+        "frustration/helplessness"
+      ],
+      "reference_ids": [
+        "R0162",
+        "R0163"
+      ],
+      "rationale": "한국어의 흔한 한 단어가 의미 전체를 보존하는지 먼저 검토했다. 이 후보는 핵심 의미 요소가 여러 한국어 표현으로 분산되거나 설명적 구가 필요하며, 원어 사전과 직접 관련 학술 근거가 그 의미 잔여를 뒷받침한다."
+    }
+  },
+  "human_editorial_release": {
+    "status": "PENDING",
+    "reviewer": null,
+    "reviewed_at": null,
+    "notes": "Research-stage HOLD. Human Editorial Release is not open until product audio rights and full multilingual comparison pass."
+  },
+  "changelog": [
+    {
+      "date": "2026-09-17",
+      "state": "RESEARCH",
+      "note": "Foreign semantic-gap source-first research under v2.1 Korean Expression Cost contract."
+    },
+    {
+      "date": "2026-09-17",
+      "state": "HOLD",
+      "note": "Core semantic gap passes; product audio rights and full multilingual comparison remain incomplete."
+    }
+  ]
+}
