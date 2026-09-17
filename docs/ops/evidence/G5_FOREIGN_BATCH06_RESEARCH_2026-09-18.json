@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "goal": "G5",
+  "batch_id": "G5-F06-FOREIGN-SEMANTIC-GAP",
+  "status": "RESEARCH_CORE_PASS_PRODUCT_GATES_HOLD",
+  "recorded_at": "2026-09-18",
+  "source_commit": "79dd6ad29e7c9440a2b13538f61d65c2e818182a",
+  "card_ids": [
+    "C0041",
+    "C0042",
+    "C0043",
+    "C0044",
+    "C0045"
+  ],
+  "terms": [
+    "เกรงใจ",
+    "sungkan",
+    "心細い",
+    "物の哀れ",
+    "心疼"
+  ],
+  "korean_expression_cost": "5/5 EXPLANATORY_PHRASE_REQUIRED",
+  "screened_out": [
+    {
+      "term": "Fremdscham",
+      "reason": "Korean 대리 수치/대리 수치심 already provides a compact conventional equivalent for vicarious embarrassment, so expression cost is too low for priority admission."
+    },
+    {
+      "term": "百感交集",
+      "reason": "Korean 만감이 교차하다 is a compact conventional idiom preserving the central sense of many emotions converging at once."
+    },
+    {
+      "term": "儚い",
+      "reason": "Korean 덧없다 already compresses much of the transience/ephemerality sense; preserve for comparison rather than priority admission."
+    }
+  ],
+  "gates": {
+    "foreign_schema": "5/5 PASS",
+    "target_lexical": "5/5 PASS",
+    "scholarly": "5/5 PASS",
+    "distinctiveness": "5/5 PASS",
+    "korean_expression_cost": "5/5 PASS",
+    "korean_comparison": "5/5 PASS",
+    "full_en_zh_ja_comparison": "HOLD_OR_PARTIAL_BY_TARGET_LANGUAGE",
+    "pronunciation_audio_rights": "HOLD",
+    "human_editorial_release": "NOT_OPEN"
+  },
+  "boundary": {
+    "lifecycle": "HOLD",
+    "review_ready": 0,
+    "published_from_batch": 0,
+    "product_assets_registered": 0,
+    "public_cards": [
+      "C0001",
+      "C0002",
+      "C0003",
+      "C0004",
+      "C0005"
+    ],
+    "public_runtime_snapshot": "a1c474f884d64648",
+    "public_content_snapshot": "867d91c0737e29c7",
+    "external_publish_authorized": false,
+    "repository_push_authorized": false
+  },
+  "clean_checkout": {
+    "status": "PASS",
+    "tested_commit": "79dd6ad29e7c9440a2b13538f61d65c2e818182a",
+    "npm_ci": "PASS",
+    "npm_vulnerabilities": 0,
+    "g1": "12/12 PASS",
+    "g2": "5/5 PASS",
+    "g3": "9/9 PASS",
+    "g4": "16/16 PASS",
+    "g5_selection": "8/8 PASS",
+    "g5_research_records": 40,
+    "track_counts": {
+      "KOREAN_NUANCE": 10,
+      "FOREIGN_KOREAN_GAP": 30
+    },
+    "privacy_violations": 0,
+    "git_status": "CLEAN",
+    "marker": "FINAL_G5_FOREIGN_BATCH06_CLEAN_CHECKOUT_PASS"
+  },
+  "sha256": {
+    "content/g5/batches/06_foreign_semantic_gap_config.json": "f1974094646226cfecbabe65942886df1478662f525fa21b59ce261c59f2aa96",
+    "content/g5/batches/06_foreign_semantic_gap_research.json": "05929c1986ad5a16f411f16161be36a50207515fb2fe917966ee2d730571afcc",
+    "scripts/g5/prepare-foreign-batch06-research.py": "888fbe128184f8557810b05bfc787f8d090d23ed3eaf71e8ed382d08e95e8d16",
+    "scripts/g5/validate-foreign-batch06-research.mjs": "7e23d44a0ac31ea1ea6627090eade5775412054aeda965287c38f2807056a7b5",
+    "content/g5/research-records/C0041.json": "f05fff0b0eaf1e2bc2cd08a0bc591a11e2ef7248fec2989b5a1970986eb2f260",
+    "content/g5/research-records/C0042.json": "5a53acd394fc1b19111f11fc65d25d4d362f43081715ab78b2e519cf9f59035d",
+    "content/g5/research-records/C0043.json": "44560da8d58b6f1ae6af8557c8f3d0420d65b063d888e2ae0306fa4b7c924e23",
+    "content/g5/research-records/C0044.json": "99f38002f962530f9fccdb56c45ffda8abd6216589d90ef9803ef48900ba4c1c",
+    "content/g5/research-records/C0045.json": "ccbc310c8fa412c64d33e5f7f1777f772f48e447ae15de76377e31d6f5105b6b"
+  }
+}
