@@ -1,0 +1,118 @@
+{
+  "schema_version": "1.0.0",
+  "purpose": "Mobile illustration generation candidates only; not approved product assets.",
+  "generated_at": "2026-09-17",
+  "flow_project_id": "7e035e7b-73f2-4d6f-a9c4-5990c4f7b97d",
+  "generator_surface": "Google Flow",
+  "observed_image_model": "Nano Banana 2",
+  "requested_format": "4:3 landscape, x1 request; Flow may return more than one candidate across submissions",
+  "status": "HUMAN_REVIEW_REQUIRED",
+  "cards": {
+    "C0001": {
+      "prompt_file": "content/review/illustrations/mobile-20260917/C0001.prompt.txt",
+      "candidate_files": [
+        {
+          "label": "C0001-v1",
+          "path": "assets/media/illustrations/candidates/mobile-20260917/C0001-v1.jpg",
+          "flow_content_id": "c2e69133-5940-4816-87f6-72e2da317753",
+          "sha256": "f55b295f5700f50022c12a83735d40a102a926bb01e07662220b9c439902fa86",
+          "width": 1200,
+          "height": 896,
+          "format": "JPEG",
+          "dhash": "e36367cce2c2c787",
+          "flow_media_title": "Empty chair by open window"
+        },
+        {
+          "label": "C0001-v2",
+          "path": "assets/media/illustrations/candidates/mobile-20260917/C0001-v2.jpg",
+          "flow_content_id": "c5ceebb0-2bef-4713-9bc6-d200e6b3d7c8",
+          "sha256": "3f00d6d094e1b08e746c624c94445436de8db5146b00c22fa3294624a74d77d8",
+          "width": 1200,
+          "height": 896,
+          "format": "JPEG",
+          "dhash": "e1e3e3e387d39c0e",
+          "flow_media_title": "Empty chair with letter by windo…"
+        }
+      ]
+    },
+    "C0002": {
+      "prompt_file": "content/review/illustrations/mobile-20260917/C0002.prompt.txt",
+      "candidate_files": [
+        {
+          "label": "C0002-v1",
+          "path": "assets/media/illustrations/candidates/mobile-20260917/C0002-v1.jpg",
+          "flow_content_id": "e073bfb4-23a2-4212-a9a6-5516dfcdbbe0",
+          "sha256": "10eb9936f751093c3b60c11643ab0e0298adb555be5595361a72e468797759f2",
+          "width": 1200,
+          "height": 896,
+          "format": "JPEG",
+          "dhash": "c4ccf0c89c8cc4c4",
+          "flow_media_title": "Open window with map and suitcas…"
+        }
+      ]
+    },
+    "C0003": {
+      "prompt_file": "content/review/illustrations/mobile-20260917/C0003.prompt.txt",
+      "candidate_files": [
+        {
+          "label": "C0003-v1",
+          "path": "assets/media/illustrations/candidates/mobile-20260917/C0003-v1.jpg",
+          "flow_content_id": "be347562-139d-4821-a5a4-afb6fe8f280d",
+          "sha256": "821ed071d041789953bdb8a33b64ef4300ab5182017a394ada452fe40df1d2d2",
+          "width": 1200,
+          "height": 896,
+          "format": "JPEG",
+          "dhash": "02800c2627078118",
+          "flow_media_title": "Dominoes tipping on tabletop"
+        }
+      ]
+    },
+    "C0004": {
+      "prompt_file": "content/review/illustrations/mobile-20260917/C0004.prompt.txt",
+      "candidate_files": [
+        {
+          "label": "C0004-v1",
+          "path": "assets/media/illustrations/candidates/mobile-20260917/C0004-v1.jpg",
+          "flow_content_id": "b9509071-2b78-46ea-9157-3a003be83aba",
+          "sha256": "71f2751838ed8a2eeea6164fc9460e5c1b8f1156fddd38425ad00d689899dd18",
+          "width": 1200,
+          "height": 896,
+          "format": "JPEG",
+          "dhash": "373739e8292b2760",
+          "flow_media_title": "Abstract still life representing…"
+        }
+      ]
+    },
+    "C0005": {
+      "prompt_file": "content/review/illustrations/mobile-20260917/C0005.prompt.txt",
+      "candidate_files": [
+        {
+          "label": "C0005-v1",
+          "path": "assets/media/illustrations/candidates/mobile-20260917/C0005-v1.jpg",
+          "flow_content_id": "e9d302cf-b8e8-4841-94c4-85f655ec9da0",
+          "sha256": "3d1b28d342a30d2b8ae5a9c9cf8098d3e5c76b009121af65846b7df60ddacef6",
+          "width": 1200,
+          "height": 896,
+          "format": "JPEG",
+          "dhash": "0c0f0e17333362c2",
+          "flow_media_title": "Balanced stones with soft glow"
+        }
+      ]
+    }
+  },
+  "automated_candidate_qa": {
+    "all_dimensions_identical": true,
+    "all_sha256_unique": true,
+    "all_flow_content_ids_unique": true,
+    "target_ratio": "4:3",
+    "actual_dimensions": "1200x896",
+    "actual_ratio": 1.3392857142857142,
+    "ratio_relative_error_vs_4_3": 0.004464285714285698,
+    "closest_perceptual_hash_pair": {
+      "a": "C0001-v1",
+      "b": "C0001-v2",
+      "hamming_distance_64": 23
+    },
+    "result": "PASS_FOR_HUMAN_VISUAL_REVIEW"
+  }
+}

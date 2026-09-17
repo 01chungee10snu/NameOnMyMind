@@ -1,0 +1,9 @@
+Create ONE standalone hero illustration for a mobile-first reflective language app. Landscape 4:3 composition, designed to sit at the top of a 390px-wide phone screen with text overlaid by the app later. NO words, NO lettering, NO typography, NO logos, NO watermark, NO people or faces. Keep the important objects within the central safe area so mobile crops still work.
+
+Concept: saudade — affectionate longing for someone, somewhere, or some time that is absent or distant, where warmth of memory and loss coexist.
+
+Scene: a quiet empty chair beside a small table near an open window; a folded handwritten letter resting on the table, but the writing itself must not be readable; beyond the window, a distant soft horizon fading into sea and sky. The room feels inhabited but currently empty. No Portuguese flags, fado symbols, landmarks, national stereotypes, or diagnostic imagery.
+
+Art direction: refined editorial watercolor and gouache, subtle paper texture, cinematic natural light, muted warm terracotta / dusty rose / sand / blue-gray palette, emotionally restrained rather than sentimental, sophisticated adult illustration, painterly but clearly legible objects. Leave a slightly darker calm zone toward the lower third so white app text can remain readable after a gradient overlay. Avoid photorealism and avoid childish storybook styling.
+
+Output only the image, 4:3 landscape, no border, no collage, no UI mockup.
