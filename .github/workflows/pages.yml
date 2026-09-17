@@ -33,17 +33,27 @@ jobs:
         env:
           NAMEONMYMIND_EXTERNAL_PUBLISH_AUTHORIZED: "1"
         run: npm run build:public
+      - name: Stage authorized research preview
+        env:
+          NAMEONMYMIND_RESEARCH_PREVIEW_PUBLISH_AUTHORIZED: "1"
+        run: npm run stage:research-preview
       - name: Verify publication boundary
         run: |
           node - <<'NODE'
           const fs = require('fs');
           const build = JSON.parse(fs.readFileSync('public/BUILD_MANIFEST.json','utf8'));
           const data = JSON.parse(fs.readFileSync('public/data/manifest.json','utf8'));
+          const preview = JSON.parse(fs.readFileSync('public/RESEARCH_PREVIEW_MANIFEST.json','utf8'));
+          const stagedPreview = JSON.parse(fs.readFileSync('public/prototypes/g5-research-preview-20260918/manifest.json','utf8'));
           const expected = ['C0001','C0002','C0003','C0004','C0005'];
           if (JSON.stringify(build.card_ids) !== JSON.stringify(expected)) throw new Error('Unexpected Pages card set');
           if (!build.external_publish_authorized || !data.external_publish_authorized) throw new Error('Release authorization flag missing');
-          if (fs.existsSync('public/data/cards/C0006.json')) throw new Error('G5 HOLD card leaked into Pages');
-          console.log(JSON.stringify({status:'PASS',card_ids:build.card_ids,snapshot_version:build.snapshot_version,external_publish_authorized:true},null,2));
+          if (fs.existsSync('public/data/cards/C0006.json')) throw new Error('G5 HOLD card leaked into product data');
+          if (!preview.preview_web_publish_authorized || preview.product_release_authorized) throw new Error('Research preview authorization boundary invalid');
+          if (preview.preview_card_count !== 16 || stagedPreview.card_count !== 16) throw new Error('Unexpected research preview card count');
+          if (stagedPreview.cards.some(card => 'research_record' in card)) throw new Error('Internal research record path leaked into staged manifest');
+          if (!fs.existsSync('public/preview/index.html')) throw new Error('Short preview alias missing');
+          console.log(JSON.stringify({status:'PASS',card_ids:build.card_ids,preview_card_count:preview.preview_card_count,snapshot_version:build.snapshot_version,external_publish_authorized:true},null,2));
           NODE
       - name: Check private leakage
         run: npm run check:privacy

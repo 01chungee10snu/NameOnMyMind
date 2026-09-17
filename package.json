@@ -8,6 +8,7 @@
     "validate:g1": "node scripts/validate-content.mjs --scope=g1",
     "build:review": "node scripts/build-review-preview.mjs",
     "build:public": "node scripts/build-public.mjs",
+    "stage:research-preview": "node scripts/stage-research-preview.mjs",
     "test:g1": "node --test tests/g1",
     "check:privacy": "node scripts/check-private-leakage.mjs",
     "check:g1": "npm run validate:g1 && npm run build:public && npm run test:g1 && npm run check:privacy",
