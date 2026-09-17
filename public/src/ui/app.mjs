@@ -87,8 +87,9 @@ function renderCard(catalog, card, manifest, storage) {
   const illustrationRoot = qs('#card-illustration'); illustrationRoot.replaceChildren();
   if (illustrationAsset) {
     const illustrationUrl = `./${illustrationAsset.path}`;
+    const ambientIllustrationUrl = new URL(illustrationUrl, document.baseURI).href;
     const img=document.createElement('img'); img.className='card-hero-image'; img.src=illustrationUrl; img.alt=card.assets.alt_text; img.width=1200; img.height=900; img.decoding='async'; img.fetchPriority='high'; illustrationRoot.append(img);
-    document.documentElement.style.setProperty('--card-art-image', `url("${illustrationUrl}")`);
+    document.documentElement.style.setProperty('--card-art-image', `url("${ambientIllustrationUrl}")`);
   } else {
     document.documentElement.style.removeProperty('--card-art-image');
   }

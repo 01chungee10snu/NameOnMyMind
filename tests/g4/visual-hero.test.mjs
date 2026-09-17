@@ -23,6 +23,7 @@ test('daily card uses a full-bleed illustration hero with semantic text overlay'
   assert.match(css, /\.card-hero-content\s*\{[\s\S]*color:\s*#fffaf5/);
   assert.match(css, /var\(--card-art-image, none\)/);
   const app = readText('src/ui/app.mjs');
+  assert.match(app, /new URL\(illustrationUrl, document\.baseURI\)\.href/);
   assert.match(app, /setProperty\('--card-art-image'/);
 });
 

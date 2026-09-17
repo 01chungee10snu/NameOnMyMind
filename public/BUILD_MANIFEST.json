@@ -3,7 +3,7 @@
   "artifact_type": "LOCAL_PUBLIC_BUILD",
   "deployable": true,
   "external_publish_authorized": false,
-  "snapshot_version": "5f13659e190f0b18",
+  "snapshot_version": "b23e0c8b41e43e6b",
   "content_snapshot_version": "4952b4fe18c503ee",
   "card_ids": [
     "C0001",
@@ -17,9 +17,9 @@
     "manifest": "manifest.webmanifest",
     "service_worker": "service-worker.js",
     "offline_fallback": "offline.html",
-    "shell_cache": "nomm-shell-v1-5f13659e190f0b18",
-    "content_cache": "nomm-content-5f13659e190f0b18",
-    "asset_cache": "nomm-assets-v1-5f13659e190f0b18"
+    "shell_cache": "nomm-shell-v1-b23e0c8b41e43e6b",
+    "content_cache": "nomm-content-b23e0c8b41e43e6b",
+    "asset_cache": "nomm-assets-v1-b23e0c8b41e43e6b"
   },
   "input_sha256": {
     "card_schema": "8e29503186d27440efe2ee12dba84c964879c57be0b6ebb16907d743bc9cf17e",
@@ -34,7 +34,7 @@
     "card_C0004": "07a52cc549a6200390ad2026734a0eb0d824826b0a567a54c4dc8798afb5053e",
     "card_C0005": "1331855205f7b79964bca9fed94fbea135945eb122499050bc82cfe07ba7c682",
     "runtime_src_ui_index.html": "3167596e68cf15922e3ae2fe16e393c2f61cfd7b0a363ce7d7180904338a4775",
-    "runtime_src_ui_app.mjs": "6a57e4db28f16548988e07b3e6018d5cd0f41b8a18556d579da55624381a6575",
+    "runtime_src_ui_app.mjs": "6b9711636363e19f7f059fc4d885c8b42ef6e4ab1a35c2fc72a18418ce767eba",
     "runtime_src_domain_cards.mjs": "f8dde7b533cd43d1c2687195a934991534b7c670c461791a145e88fb617fce08",
     "runtime_src_domain_discovery.mjs": "9d042c768bb35c1001a93e57b0c87f3c2506eae70d2f8a9a0a8b740080a7fc49",
     "runtime_src_local_state.mjs": "975e7372486aace916597b7e2bb70f357f892a00434b9094e9718460fe2c1c36",
