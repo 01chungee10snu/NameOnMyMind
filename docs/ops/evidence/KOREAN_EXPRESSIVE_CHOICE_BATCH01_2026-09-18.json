@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "track_id": "KOREAN_EXPRESSIVE_CHOICE",
+  "status": "BATCH01_VALIDATED",
+  "recorded_at": "2026-09-18",
+  "source_commit": "10cd4e0ba5972d9eeade0f72f2f2de7633ec5a4d",
+  "purpose": "자주 쓰는 만능 강조어와 감탄어를 금지하기보다 상황에 맞는 표현 선택지를 늘려 어휘 폭과 표현 정확도를 높이는 한국어 표현력 확장 트랙",
+  "batch": {
+    "verified_lexemes": 12,
+    "expression_ladders": 6,
+    "candidate_pool": 61,
+    "lexical_pass": 11,
+    "usage_pass": 1,
+    "source_hosts": [
+      "krdict.korean.go.kr",
+      "www.korean.go.kr"
+    ]
+  },
+  "core_examples": {
+    "emphasis": [
+      "무척",
+      "몹시",
+      "대단히",
+      "유난히",
+      "제법"
+    ],
+    "satisfaction": [
+      "흡족하다",
+      "흐뭇하다",
+      "뿌듯하다"
+    ],
+    "success_exclamation": [
+      "됐다!",
+      "해냈다!",
+      "쾌재!"
+    ]
+  },
+  "pedagogical_boundary": {
+    "punitive_language_policing": false,
+    "one_to_one_replacement": false,
+    "contextual_choice_required": true,
+    "discovery_only_candidates_public_ready": false
+  },
+  "regression": {
+    "clean_checkout": "PASS",
+    "npm_ci": "PASS",
+    "npm_vulnerabilities": 0,
+    "korean_expression_validator": "PASS",
+    "g1": "12/12 PASS",
+    "g2": "5/5 PASS",
+    "g3": "9/9 PASS",
+    "g4": "16/16 PASS",
+    "g5_selection": "8/8 PASS",
+    "privacy_violations": 0
+  },
+  "public_boundary": {
+    "public_cards": [
+      "C0001",
+      "C0002",
+      "C0003",
+      "C0004",
+      "C0005"
+    ],
+    "snapshot_version": "a1c474f884d64648",
+    "content_snapshot_version": "867d91c0737e29c7",
+    "korean_expression_published": false
+  },
+  "sha256": {
+    "content/korean-expression/README.md": "9ed60eef3fdeffda6bfde71835813a324c8ac7c746cc16b1157faa2e4f92a5c0",
+    "content/korean-expression/batches/01_everyday_expression_ladders.json": "3c36b51185ee8ddeed539a6edf4b3667316a2e610b661962ad1ab020ec3f01a3",
+    "content/korean-expression/candidate-pool.json": "38435286454aeebdf087dd56c6dfbd24c76a17496c01a6ac7800e231e07a4e70",
+    "schema/korean-expression-ladder.schema.json": "a4fce2ae1a8a8aa302d07d30ef7fd5f4622ec6fc132c63d7250df5350f78e23d",
+    "scripts/korean/validate-expression-ladders.mjs": "5d053be46b09d98da261d439e65bd9818ba5cb4131f2dba8637ca9ddb6b8c707"
+  }
+}
