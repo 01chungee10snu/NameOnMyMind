@@ -1,0 +1,291 @@
+{
+  "schema_version": "1.0.0",
+  "track_id": "KOREAN_EXPRESSIVE_CHOICE",
+  "purpose": "자주 쓰는 만능 강조어와 감탄어를 금지하기보다, 상황과 감정의 결에 맞는 한국어 표현을 골라 쓰는 습관을 길러 어휘 폭과 표현 정확도를 함께 높인다.",
+  "principles": [
+    "진짜, 너무, 겁나, 대박, Yes 같은 표현을 나쁜 말이나 금지어로 낙인찍지 않는다.",
+    "한 표현을 다른 표현으로 기계적으로 치환하지 않고, 강도·비교·만족·성취·감탄의 의미 차이를 먼저 구별한다.",
+    "아이에게 정답을 요구하기보다 같은 장면을 여러 말로 바꾸어 말해 보게 하여 선택 가능한 어휘를 늘린다.",
+    "문어적이거나 격식 있는 표현은 일상어보다 우월하다고 가르치지 않고, 상황에 맞는 말투와 말맛의 차이로 설명한다."
+  ],
+  "lexemes": [
+    {
+      "id": "KX0001",
+      "expression": "무척",
+      "pos": "부사",
+      "function": "높은 정도를 자연스럽게 강조",
+      "register": "neutral",
+      "meaning": "다른 것과 비교하기 어려울 만큼 정도가 매우 크다는 뜻으로 쓰는 강조 부사.",
+      "nuance": "일상 대화에서 폭넓게 쓸 수 있어 ‘진짜’나 거친 강조어를 대신하기 좋은 중립적 선택지다.",
+      "example": "오늘 하늘이 무척 맑다.",
+      "source": {
+        "provider": "국립국어원 한국어기초사전",
+        "url": "https://krdict.korean.go.kr/jpn/dicSearch/wordLinkViewPopup?ParaWordNo=55175&nation=jpn&nationCode=7",
+        "source_type": "dictionary",
+        "verified_at": "2026-09-18"
+      },
+      "status": "LEXICAL_PASS"
+    },
+    {
+      "id": "KX0002",
+      "expression": "몹시",
+      "pos": "부사",
+      "function": "정도가 아주 심함을 강조",
+      "register": "neutral",
+      "meaning": "어떤 상태나 감정의 정도가 아주 심함을 나타내는 강조 부사.",
+      "nuance": "아픔·추위·긴장처럼 강도가 센 상태에 특히 잘 어울리지만 기쁨 같은 긍정 감정에도 쓸 수 있다.",
+      "example": "바람이 불어서 몹시 추웠다.",
+      "source": {
+        "provider": "국립국어원 한국어기초사전",
+        "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaNationCode=6&ParaWordNo=54767&nation=eng&nationCode=6",
+        "source_type": "dictionary",
+        "verified_at": "2026-09-18"
+      },
+      "status": "LEXICAL_PASS"
+    },
+    {
+      "id": "KX0003",
+      "expression": "대단히",
+      "pos": "부사",
+      "function": "보통보다 훨씬 큰 정도를 힘주어 강조",
+      "register": "formal",
+      "meaning": "보통 수준보다 훨씬 더한 정도임을 나타내는 강조 부사.",
+      "nuance": "말에 힘을 주면서도 격식을 갖출 수 있어 감사·중요성·훌륭함을 강조할 때 특히 잘 맞는다.",
+      "example": "그 생각은 대단히 흥미롭다.",
+      "source": {
+        "provider": "국립국어원 한국어기초사전",
+        "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=46707&nation=eng&nationCode=6",
+        "source_type": "dictionary",
+        "verified_at": "2026-09-18"
+      },
+      "status": "LEXICAL_PASS"
+    },
+    {
+      "id": "KX0004",
+      "expression": "유난히",
+      "pos": "부사",
+      "function": "평소나 다른 대상과 비교해 두드러짐을 강조",
+      "register": "neutral",
+      "meaning": "상태·성격·행동 등이 보통과 아주 다르게 두드러짐을 나타내는 부사.",
+      "nuance": "단순히 ‘매우’가 아니라 다른 날·다른 사람·평소와 비교해 특별히 두드러진다는 뜻이 들어간다.",
+      "example": "오늘은 별이 유난히 밝다.",
+      "source": {
+        "provider": "국립국어원 한국어기초사전",
+        "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=72421&nation=eng",
+        "source_type": "dictionary",
+        "verified_at": "2026-09-18"
+      },
+      "status": "LEXICAL_PASS"
+    },
+    {
+      "id": "KX0005",
+      "expression": "아주",
+      "pos": "부사",
+      "function": "보통을 훨씬 넘는 정도를 넓게 강조",
+      "register": "everyday",
+      "meaning": "보통 정도보다 훨씬 더 넘어선 상태임을 나타내는 폭넓은 강조 부사.",
+      "nuance": "세련됨을 위해 어려운 말을 고르는 것보다, 자연스럽고 정확한 기본 표현이 필요한 상황에서 좋은 기준점이 된다.",
+      "example": "이 책은 아주 흥미롭다.",
+      "source": {
+        "provider": "국립국어원 한국어기초사전",
+        "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=72484&lang=eng",
+        "source_type": "dictionary",
+        "verified_at": "2026-09-18"
+      },
+      "status": "LEXICAL_PASS"
+    },
+    {
+      "id": "KX0006",
+      "expression": "제법",
+      "pos": "부사",
+      "function": "기대보다 수준이나 솜씨가 꽤 높음을 표현",
+      "register": "everyday",
+      "meaning": "수준이나 솜씨가 어느 정도에 이르렀음을 나타내는 말.",
+      "nuance": "‘엄청 잘한다’보다 강도는 낮지만, 생각했던 것보다 제법 괜찮거나 실력이 올라왔다는 평가를 자연스럽게 담는다.",
+      "example": "연습을 많이 하더니 이제 제법 잘한다.",
+      "source": {
+        "provider": "국립국어원 온라인가나다",
+        "url": "https://www.korean.go.kr/front/onlineQna/onlineQnaView.do?mn_id=216&pageIndex=1&qna_seq=322212",
+        "source_type": "official_qna",
+        "verified_at": "2026-09-18"
+      },
+      "status": "USAGE_PASS"
+    },
+    {
+      "id": "KX0007",
+      "expression": "흡족하다",
+      "pos": "형용사",
+      "function": "부족함 없이 충분히 만족함을 표현",
+      "register": "formal",
+      "meaning": "조금도 모자람이 없을 만큼 넉넉하여 만족스러운 상태를 나타낸다.",
+      "nuance": "단순히 ‘좋다’보다 결과나 수준이 기준에 충분히 차서 만족스럽다는 느낌이 강하다.",
+      "example": "완성된 결과를 보니 마음이 흡족했다.",
+      "source": {
+        "provider": "국립국어원 한국어기초사전",
+        "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=87497",
+        "source_type": "dictionary",
+        "verified_at": "2026-09-18"
+      },
+      "status": "LEXICAL_PASS"
+    },
+    {
+      "id": "KX0008",
+      "expression": "흐뭇하다",
+      "pos": "형용사",
+      "function": "바라보거나 생각하며 따뜻하게 만족함을 표현",
+      "register": "neutral",
+      "meaning": "마음에 들어 매우 만족스럽고 기분 좋은 상태를 나타낸다.",
+      "nuance": "내가 직접 성취했을 때보다, 누군가의 성장이나 좋은 모습을 바라보며 미소 짓게 되는 만족에 특히 잘 어울린다.",
+      "example": "서로 도와주는 모습을 보니 마음이 흐뭇했다.",
+      "source": {
+        "provider": "국립국어원 한국어기초사전",
+        "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=89194",
+        "source_type": "dictionary",
+        "verified_at": "2026-09-18"
+      },
+      "status": "LEXICAL_PASS"
+    },
+    {
+      "id": "KX0009",
+      "expression": "뿌듯하다",
+      "pos": "형용사",
+      "function": "성취나 성장 뒤에 차오르는 기쁨과 자부심을 표현",
+      "register": "everyday",
+      "meaning": "기쁨이나 감격이 마음에 가득한 상태를 나타낸다.",
+      "nuance": "노력 끝에 무언가를 해냈거나 나와 가까운 사람의 성장을 보며 생기는 가득 찬 만족감에 잘 맞는다.",
+      "example": "끝까지 포기하지 않고 해내서 정말 뿌듯하다.",
+      "source": {
+        "provider": "국립국어원 한국어기초사전",
+        "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=62065&nation=eng",
+        "source_type": "dictionary",
+        "verified_at": "2026-09-18"
+      },
+      "status": "LEXICAL_PASS"
+    },
+    {
+      "id": "KX0010",
+      "expression": "쾌재",
+      "pos": "명사",
+      "function": "일이 뜻대로 잘되었을 때 만족과 환호를 표현",
+      "register": "literary",
+      "meaning": "일이 마음먹은 대로 잘되어 만족스럽게 여기는 마음이나 그때 지르는 소리.",
+      "nuance": "영어식 ‘Yes!’를 그대로 쓰는 대신 성공의 순간을 조금 더 말맛 있게 표현하고 싶을 때 재미있게 익힐 수 있는 말이다.",
+      "example": "마지막 문제까지 맞히자 모두 쾌재를 외쳤다.",
+      "source": {
+        "provider": "국립국어원 한국어기초사전",
+        "url": "https://krdict.korean.go.kr/jpn/dicSearch/SearchView?ParaWordNo=81563&blockCount=10&currentPage=1&exaType=&mainSearchWord=%EB%81%9D&nation=jpn&nationCode=7&proverbType=&searchType=E&sort=W&viewType=A&wordMatchFlag=N",
+        "source_type": "dictionary",
+        "verified_at": "2026-09-18"
+      },
+      "status": "LEXICAL_PASS"
+    },
+    {
+      "id": "KX0011",
+      "expression": "마음껏",
+      "pos": "부사",
+      "function": "원하는 만큼 충분히 행동함을 표현",
+      "register": "everyday",
+      "meaning": "마음이 흡족하도록 원하는 만큼 얼마든지 한다는 뜻을 나타낸다.",
+      "nuance": "‘진짜 많이’처럼 양만 키우기보다 하고 싶은 만큼 충분히 누렸다는 뜻을 선명하게 표현한다.",
+      "example": "주말에는 공원에서 마음껏 뛰어놀았다.",
+      "source": {
+        "provider": "국립국어원 한국어기초사전",
+        "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=15717",
+        "source_type": "dictionary",
+        "verified_at": "2026-09-18"
+      },
+      "status": "LEXICAL_PASS"
+    },
+    {
+      "id": "KX0012",
+      "expression": "실컷",
+      "pos": "부사",
+      "function": "하고 싶은 만큼 충분히 했음을 표현",
+      "register": "everyday",
+      "meaning": "하고 싶은 대로 한껏, 또는 아주 심한 정도로 한다는 뜻을 나타낸다.",
+      "nuance": "즐기거나 웃거나 놀거나 쉬는 행동을 ‘충분히 했다’는 뜻에 잘 맞지만, 두 번째 뜻은 꾸중·폭행처럼 거친 문맥에도 쓰이므로 문맥을 함께 배워야 한다.",
+      "example": "친구들과 실컷 웃고 나니 기분이 한결 가벼워졌다.",
+      "source": {
+        "provider": "국립국어원 한국어기초사전",
+        "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=14126",
+        "source_type": "dictionary",
+        "verified_at": "2026-09-18"
+      },
+      "status": "LEXICAL_PASS"
+    }
+  ],
+  "ladders": [
+    {
+      "id": "KL001",
+      "speech_function": "강한 긍정 강조",
+      "common_expression": ["진짜 좋아", "겁나 좋아", "완전 좋아"],
+      "choice_rule": "그저 강도를 높이고 싶은지, 격식을 더하고 싶은지, 평소보다 특별히 두드러지는지를 구별해 고른다.",
+      "options": [
+        {"expression": "무척", "when_to_use": "자연스럽고 중립적으로 높은 정도를 말할 때", "example": "이 책은 무척 재미있어."},
+        {"expression": "대단히", "when_to_use": "조금 더 힘 있고 격식 있게 강조할 때", "example": "그 생각은 대단히 흥미로워."},
+        {"expression": "유난히", "when_to_use": "평소나 다른 것보다 오늘 특히 두드러질 때", "example": "오늘 하늘이 유난히 맑아."}
+      ],
+      "child_prompt": "‘진짜 좋다’에서 무엇이 좋은지, 평소보다 특별한지, 아주 강한지 먼저 생각해 볼까?"
+    },
+    {
+      "id": "KL002",
+      "speech_function": "강한 불편·고통 강조",
+      "common_expression": ["겁나 추워", "진짜 아파", "완전 힘들어"],
+      "choice_rule": "아픔·추위·긴장처럼 상태가 아주 심한 경우에는 심한 정도 자체를 정확히 말하는 표현을 고른다.",
+      "options": [
+        {"expression": "몹시", "when_to_use": "상태나 감정의 정도가 매우 심할 때", "example": "오늘은 몹시 춥다."},
+        {"expression": "무척", "when_to_use": "강하지만 조금 더 일반적이고 부드럽게 말할 때", "example": "오늘은 무척 춥다."},
+        {"expression": "아주", "when_to_use": "어렵지 않고 자연스러운 기본 강조어가 필요할 때", "example": "상처가 아주 아프다."}
+      ],
+      "child_prompt": "그냥 ‘겁나’라고 하지 않고 얼마나 심한지 말의 느낌을 바꾸어 세 가지로 말해 볼까?"
+    },
+    {
+      "id": "KL003",
+      "speech_function": "기대보다 잘함을 칭찬",
+      "common_expression": ["진짜 잘하는데?", "완전 잘하네"],
+      "choice_rule": "압도적으로 뛰어나다는 뜻인지, 기대했던 것보다 솜씨가 꽤 좋아졌다는 뜻인지 구별한다.",
+      "options": [
+        {"expression": "제법", "when_to_use": "기대보다 수준이나 솜씨가 어느 정도 올라왔을 때", "example": "이제 제법 잘하는데?"},
+        {"expression": "대단히", "when_to_use": "수준이 보통보다 훨씬 뛰어나다고 힘주어 평가할 때", "example": "대단히 잘했어."},
+        {"expression": "유난히", "when_to_use": "여러 모습 중 특정 부분이 특별히 두드러질 때", "example": "오늘은 집중력이 유난히 좋았어."}
+      ],
+      "child_prompt": "‘잘한다’도 기대보다 잘한 건지, 아주 뛰어난 건지, 오늘 특히 잘한 건지 나누어 볼까?"
+    },
+    {
+      "id": "KL004",
+      "speech_function": "결과에 만족",
+      "common_expression": ["좋다!", "Yes!", "완전 마음에 들어"],
+      "choice_rule": "결과가 충분해서 만족한지, 따뜻하게 바라보며 만족한지, 노력의 성취감이 큰지를 구별한다.",
+      "options": [
+        {"expression": "흡족하다", "when_to_use": "결과나 수준이 부족함 없이 충분해서 만족할 때", "example": "이번 결과는 꽤 흡족해."},
+        {"expression": "흐뭇하다", "when_to_use": "누군가의 좋은 모습이나 성장을 바라보며 만족할 때", "example": "서로 돕는 모습을 보니 흐뭇해."},
+        {"expression": "뿌듯하다", "when_to_use": "노력 끝의 성취나 성장 때문에 마음이 가득 찰 때", "example": "끝까지 해내서 뿌듯해."}
+      ],
+      "child_prompt": "지금의 ‘좋다’는 결과가 충분해서 좋은 걸까, 바라보니 좋은 걸까, 내가 해내서 좋은 걸까?"
+    },
+    {
+      "id": "KL005",
+      "speech_function": "성공 순간의 환호",
+      "common_expression": ["Yes!!", "예스!", "대박!"],
+      "choice_rule": "성공 그 자체를 외치는지, 어려운 일을 끝냈다는 성취를 말하는지, 일이 뜻대로 풀린 만족을 말하는지 구별한다.",
+      "options": [
+        {"expression": "됐다!", "when_to_use": "원하던 상태나 결과가 마침내 이루어졌을 때", "example": "됐다! 드디어 맞았다."},
+        {"expression": "해냈다!", "when_to_use": "내가 노력해서 목표를 이루었음을 강조할 때", "example": "해냈다! 끝까지 풀었어."},
+        {"expression": "쾌재!", "when_to_use": "일이 뜻대로 잘 풀린 기쁨을 말맛 있게 표현해 보고 싶을 때", "example": "마지막 문제도 맞혔다. 쾌재!"}
+      ],
+      "child_prompt": "‘Yes!’ 대신 지금은 ‘됐다’, ‘해냈다’, ‘쾌재’ 가운데 어느 말이 가장 정확할까?"
+    },
+    {
+      "id": "KL006",
+      "speech_function": "충분히 즐김",
+      "common_expression": ["진짜 많이 놀았어", "엄청 웃었어"],
+      "choice_rule": "양이 많았다는 사실보다 원하는 만큼 충분히 즐겼다는 의미를 말하고 싶을 때 알맞은 부사를 고른다.",
+      "options": [
+        {"expression": "마음껏", "when_to_use": "원하는 만큼 자유롭게 충분히 했을 때", "example": "운동장에서 마음껏 뛰었어."},
+        {"expression": "실컷", "when_to_use": "하고 싶었던 행동을 충분히 해서 만족했을 때", "example": "친구들과 실컷 웃었어."},
+        {"expression": "무척", "when_to_use": "행동량보다 감정이나 상태의 높은 정도를 말할 때", "example": "오늘은 무척 즐거웠어."}
+      ],
+      "child_prompt": "‘많이’ 했다는 말과 ‘원하는 만큼 충분히’ 했다는 말은 어떻게 다를까?"
+    }
+  ]
+}
