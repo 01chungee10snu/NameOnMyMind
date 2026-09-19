@@ -1,0 +1,195 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:nameonmymind:schema:korean-emotion-map:v1.0.0",
+  "title": "NameOnMyMind Korean Emotion Articulation Map v1.0.0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "track_id",
+    "purpose",
+    "learning_model",
+    "families",
+    "terms",
+    "contrast_sets"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "track_id": {
+      "const": "KOREAN_EMOTION_ARTICULATION"
+    },
+    "purpose": {
+      "type": "string",
+      "minLength": 30
+    },
+    "learning_model": {
+      "type": "array",
+      "minItems": 4,
+      "items": {
+        "type": "string",
+        "minLength": 10
+      }
+    },
+    "families": {
+      "type": "array",
+      "minItems": 18,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "label",
+          "question",
+          "description"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^KF[0-9]{2}$"
+          },
+          "label": {
+            "type": "string",
+            "minLength": 1
+          },
+          "question": {
+            "type": "string",
+            "minLength": 5
+          },
+          "description": {
+            "type": "string",
+            "minLength": 10
+          }
+        }
+      }
+    },
+    "terms": {
+      "type": "array",
+      "minItems": 80,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "expression",
+          "family_id",
+          "level",
+          "register",
+          "status"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^KE[0-9]{4}$"
+          },
+          "expression": {
+            "type": "string",
+            "minLength": 1
+          },
+          "family_id": {
+            "type": "string",
+            "pattern": "^KF[0-9]{2}$"
+          },
+          "level": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 3
+          },
+          "register": {
+            "enum": [
+              "everyday",
+              "neutral",
+              "formal",
+              "literary",
+              "marked"
+            ]
+          },
+          "status": {
+            "enum": [
+              "SOURCE_VERIFIED",
+              "DISCOVERY_ONLY"
+            ]
+          },
+          "evidence_ref": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "note": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        }
+      }
+    },
+    "contrast_sets": {
+      "type": "array",
+      "minItems": 10,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "title",
+          "terms",
+          "choice_cues",
+          "reflection_prompt",
+          "status"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^KC[0-9]{3}$"
+          },
+          "title": {
+            "type": "string",
+            "minLength": 5
+          },
+          "terms": {
+            "type": "array",
+            "minItems": 2,
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "choice_cues": {
+            "type": "array",
+            "minItems": 2,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "expression",
+                "cue"
+              ],
+              "properties": {
+                "expression": {
+                  "type": "string"
+                },
+                "cue": {
+                  "type": "string",
+                  "minLength": 10
+                }
+              }
+            }
+          },
+          "reflection_prompt": {
+            "type": "string",
+            "minLength": 10
+          },
+          "status": {
+            "enum": [
+              "SOURCE_VERIFIED",
+              "RESEARCH_DRAFT"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

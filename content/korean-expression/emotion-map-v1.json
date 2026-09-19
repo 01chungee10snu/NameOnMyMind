@@ -1,0 +1,2080 @@
+{
+  "schema_version": "1.0.0",
+  "track_id": "KOREAN_EMOTION_ARTICULATION",
+  "purpose": "한국어를 중심으로 자신의 마음과 감정을 더 정확하게 알아차리고, 비슷한 감정 사이의 차이를 구별하며, 강도·원인·관계 맥락을 고려해 자기 문장으로 표현할 수 있도록 돕는 감정 어휘 학습 지도.",
+  "learning_model": [
+    "먼저 지금 마음과 가장 가까운 감정 영역을 고른다.",
+    "같은 영역의 가까운 표현들을 비교해 가장 맞는 말을 찾는다.",
+    "감정의 강도와 원인, 관계 맥락, 몸에서 느껴지는 신호를 함께 살핀다.",
+    "마지막에는 ‘나는 ___해서 ___하다’처럼 자신의 경험을 한 문장으로 표현한다.",
+    "어려운 말이 쉬운 말보다 우월하다고 가르치지 않고, 상황에 더 잘 맞는 표현을 선택하는 힘을 기른다."
+  ],
+  "families": [
+    {
+      "id": "KF01",
+      "label": "기쁨·즐거움",
+      "question": "지금 마음이 밝고 즐거운가?",
+      "description": "즐거움의 기본 감정부터 흥겨움과 강한 기쁨까지 구별한다."
+    },
+    {
+      "id": "KF02",
+      "label": "기대·설렘",
+      "question": "앞으로 일어날 일이 기다려지는가?",
+      "description": "미래의 좋은 일을 기다리며 생기는 설렘·기대·들뜸을 구별한다."
+    },
+    {
+      "id": "KF03",
+      "label": "만족·성취",
+      "question": "해낸 일이나 결과가 마음에 차는가?",
+      "description": "결과 만족, 노력의 성취감, 다른 사람을 바라보는 흐뭇함을 구별한다."
+    },
+    {
+      "id": "KF04",
+      "label": "안도·해방",
+      "question": "무거웠던 걱정이나 일이 풀렸는가?",
+      "description": "걱정이 사라진 안심, 막힘이 풀린 후련함, 부담이 사라진 홀가분함을 구별한다."
+    },
+    {
+      "id": "KF05",
+      "label": "평온·안정",
+      "question": "마음이 조용하고 안전하게 느껴지는가?",
+      "description": "편안함, 평온함, 든든함처럼 긴장이 낮아진 안정감을 표현한다."
+    },
+    {
+      "id": "KF06",
+      "label": "애정·친밀감",
+      "question": "누군가를 소중하고 가깝게 느끼는가?",
+      "description": "애틋함·정겨움·고마움·반가움처럼 관계에서 생기는 따뜻한 감정을 다룬다."
+    },
+    {
+      "id": "KF07",
+      "label": "그리움·마음 남음",
+      "question": "떠난 사람이나 지나간 일이 자꾸 마음에 남는가?",
+      "description": "그리움, 아련함, 아쉬움, 애잔함처럼 부재와 시간에 얽힌 감정을 세분화한다."
+    },
+    {
+      "id": "KF08",
+      "label": "관계의 상처",
+      "question": "누군가의 말이나 태도 때문에 마음이 상했는가?",
+      "description": "서운함·섭섭함·야속함처럼 관계적 기대가 어긋날 때 생기는 마음을 구별한다."
+    },
+    {
+      "id": "KF09",
+      "label": "외로움·허전함",
+      "question": "마음이나 주변이 비어 있는 듯한가?",
+      "description": "외로움, 쓸쓸함, 허전함, 공허함처럼 비어 있음의 결을 나눈다."
+    },
+    {
+      "id": "KF10",
+      "label": "슬픔·비애",
+      "question": "마음이 가라앉거나 아픈가?",
+      "description": "일상적 슬픔부터 깊은 비통함까지 슬픔의 강도와 결을 구별한다."
+    },
+    {
+      "id": "KF11",
+      "label": "실망·허탈",
+      "question": "기대했던 것이 무너지거나 의미가 사라진 느낌인가?",
+      "description": "실망, 허탈, 허무, 씁쓸함처럼 기대가 꺾인 뒤의 감정을 구별한다."
+    },
+    {
+      "id": "KF12",
+      "label": "걱정·불안",
+      "question": "앞으로 일어날 일이 걱정되어 마음이 편치 않은가?",
+      "description": "걱정·불안·조마조마함·초조함처럼 미래 지향적 불편감을 세분화한다."
+    },
+    {
+      "id": "KF13",
+      "label": "두려움·공포",
+      "question": "위험하거나 무서운 일이 닥칠 것 같은가?",
+      "description": "두려움의 강도와 신체 반응이 동반되는 표현을 함께 익힌다."
+    },
+    {
+      "id": "KF14",
+      "label": "답답함·막막함",
+      "question": "어떻게 해야 할지 모르거나 풀리지 않는가?",
+      "description": "답답함, 막막함, 갑갑함, 좌절처럼 출구가 보이지 않는 감정을 다룬다."
+    },
+    {
+      "id": "KF15",
+      "label": "분노·짜증",
+      "question": "무언가가 거슬리거나 화가 나는가?",
+      "description": "가벼운 짜증부터 강한 분노까지 강도와 원인을 구별한다."
+    },
+    {
+      "id": "KF16",
+      "label": "억울함·원망",
+      "question": "부당하거나 야속하다고 느끼는가?",
+      "description": "억울함, 원망, 분함처럼 부당성·관계적 탓·상처의 초점을 구별한다."
+    },
+    {
+      "id": "KF17",
+      "label": "부끄러움·자기의식",
+      "question": "다른 사람의 시선이나 내 행동이 신경 쓰이는가?",
+      "description": "부끄러움, 창피함, 민망함, 쑥스러움, 멋쩍음을 구별한다."
+    },
+    {
+      "id": "KF18",
+      "label": "미안함·후회",
+      "question": "내 행동이 다른 사람이나 나 자신에게 마음에 걸리는가?",
+      "description": "미안함, 죄책감, 후회, 뉘우침처럼 책임과 되돌아봄의 감정을 다룬다."
+    },
+    {
+      "id": "KF19",
+      "label": "부러움·질투",
+      "question": "다른 사람이 가진 것이 마음에 걸리거나 갖고 싶은가?",
+      "description": "부러움·샘·질투·시기·선망의 차이를 탐색한다."
+    },
+    {
+      "id": "KF20",
+      "label": "놀람·혼란·경이",
+      "question": "예상하지 못했거나 이해하기 어려운 일이 생겼는가?",
+      "description": "놀람, 당황, 어리둥절함, 신기함, 경이로움을 상황별로 나눈다."
+    },
+    {
+      "id": "KF21",
+      "label": "복합·양가감정",
+      "question": "서로 다른 마음이 한꺼번에 드는가?",
+      "description": "착잡함·시원섭섭함·심란함처럼 한 가지 감정으로 설명하기 어려운 상태를 다룬다."
+    },
+    {
+      "id": "KF22",
+      "label": "몸으로 치미는 감정",
+      "question": "감정이 가슴·목·몸에서 먼저 느껴지는가?",
+      "description": "울컥함·찡함·뭉클함·벅참처럼 신체 감각과 함께 올라오는 감정을 언어화한다."
+    }
+  ],
+  "terms": [
+    {
+      "id": "KE0001",
+      "expression": "기쁘다",
+      "family_id": "KF01",
+      "level": 1,
+      "register": "everyday",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0002",
+      "expression": "즐겁다",
+      "family_id": "KF01",
+      "level": 1,
+      "register": "everyday",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0003",
+      "expression": "신나다",
+      "family_id": "KF01",
+      "level": 1,
+      "register": "everyday",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0004",
+      "expression": "유쾌하다",
+      "family_id": "KF01",
+      "level": 2,
+      "register": "neutral",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0005",
+      "expression": "흥겹다",
+      "family_id": "KF01",
+      "level": 2,
+      "register": "neutral",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0006",
+      "expression": "행복하다",
+      "family_id": "KF01",
+      "level": 1,
+      "register": "everyday",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0007",
+      "expression": "희열을 느끼다",
+      "family_id": "KF01",
+      "level": 3,
+      "register": "formal",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0008",
+      "expression": "설레다",
+      "family_id": "KF02",
+      "level": 1,
+      "register": "everyday",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0009",
+      "expression": "기대되다",
+      "family_id": "KF02",
+      "level": 1,
+      "register": "everyday",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0010",
+      "expression": "들뜨다",
+      "family_id": "KF02",
+      "level": 2,
+      "register": "neutral",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0011",
+      "expression": "두근거리다",
+      "family_id": "KF02",
+      "level": 1,
+      "register": "everyday",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0012",
+      "expression": "고대하다",
+      "family_id": "KF02",
+      "level": 3,
+      "register": "formal",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0013",
+      "expression": "벅차다",
+      "family_id": "KF02",
+      "level": 2,
+      "register": "neutral",
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "KRD:58356",
+      "note": "기존 NameOnMyMind 연구 또는 국립국어원 사전 근거가 연결된 표현."
+    },
+    {
+      "id": "KE0014",
+      "expression": "만족스럽다",
+      "family_id": "KF03",
+      "level": 1,
+      "register": "neutral",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0015",
+      "expression": "흡족하다",
+      "family_id": "KF03",
+      "level": 3,
+      "register": "formal",
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "KX0007",
+      "note": "기존 NameOnMyMind 연구 또는 국립국어원 사전 근거가 연결된 표현."
+    },
+    {
+      "id": "KE0016",
+      "expression": "흐뭇하다",
+      "family_id": "KF03",
+      "level": 2,
+      "register": "neutral",
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "KX0008",
+      "note": "기존 NameOnMyMind 연구 또는 국립국어원 사전 근거가 연결된 표현."
+    },
+    {
+      "id": "KE0017",
+      "expression": "뿌듯하다",
+      "family_id": "KF03",
+      "level": 2,
+      "register": "everyday",
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "G5:C0009",
+      "note": "기존 NameOnMyMind 연구 또는 국립국어원 사전 근거가 연결된 표현."
+    },
+    {
+      "id": "KE0018",
+      "expression": "대견하다",
+      "family_id": "KF03",
+      "level": 2,
+      "register": "neutral",
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "KRD:42236",
+      "note": "국립국어원 한국어기초사전의 뜻풀이와 용례를 확인한 표현."
+    },
+    {
+      "id": "KE0019",
+      "expression": "보람차다",
+      "family_id": "KF03",
+      "level": 2,
+      "register": "neutral",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0020",
+      "expression": "장하다",
+      "family_id": "KF03",
+      "level": 3,
+      "register": "neutral",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0021",
+      "expression": "안심되다",
+      "family_id": "KF04",
+      "level": 1,
+      "register": "everyday",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0022",
+      "expression": "후련하다",
+      "family_id": "KF04",
+      "level": 2,
+      "register": "everyday",
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "G5:C0012",
+      "note": "기존 NameOnMyMind 연구 또는 국립국어원 사전 근거가 연결된 표현."
+    },
+    {
+      "id": "KE0023",
+      "expression": "홀가분하다",
+      "family_id": "KF04",
+      "level": 2,
+      "register": "neutral",
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "KRD:87285",
+      "note": "기존 NameOnMyMind 연구 또는 국립국어원 사전 근거가 연결된 표현."
+    },
+    {
+      "id": "KE0024",
+      "expression": "개운하다",
+      "family_id": "KF04",
+      "level": 2,
+      "register": "everyday",
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "KRD:26673",
+      "note": "국립국어원 한국어기초사전의 뜻풀이와 용례를 확인한 표현."
+    },
+    {
+      "id": "KE0025",
+      "expression": "마음이 놓이다",
+      "family_id": "KF04",
+      "level": 1,
+      "register": "everyday",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0026",
+      "expression": "한숨 돌리다",
+      "family_id": "KF04",
+      "level": 2,
+      "register": "everyday",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0027",
+      "expression": "편안하다",
+      "family_id": "KF05",
+      "level": 1,
+      "register": "everyday",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0028",
+      "expression": "평온하다",
+      "family_id": "KF05",
+      "level": 2,
+      "register": "neutral",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0029",
+      "expression": "느긋하다",
+      "family_id": "KF05",
+      "level": 2,
+      "register": "neutral",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0030",
+      "expression": "포근하다",
+      "family_id": "KF05",
+      "level": 2,
+      "register": "neutral",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0031",
+      "expression": "든든하다",
+      "family_id": "KF05",
+      "level": 2,
+      "register": "everyday",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0032",
+      "expression": "안정되다",
+      "family_id": "KF05",
+      "level": 2,
+      "register": "neutral",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0033",
+      "expression": "고요하다",
+      "family_id": "KF05",
+      "level": 3,
+      "register": "literary",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0034",
+      "expression": "애틋하다",
+      "family_id": "KF06",
+      "level": 3,
+      "register": "neutral",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0035",
+      "expression": "정겹다",
+      "family_id": "KF06",
+      "level": 3,
+      "register": "neutral",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0036",
+      "expression": "친근하다",
+      "family_id": "KF06",
+      "level": 2,
+      "register": "neutral",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0037",
+      "expression": "다정하다",
+      "family_id": "KF06",
+      "level": 2,
+      "register": "neutral",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0038",
+      "expression": "사랑스럽다",
+      "family_id": "KF06",
+      "level": 1,
+      "register": "everyday",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0039",
+      "expression": "소중하다",
+      "family_id": "KF06",
+      "level": 1,
+      "register": "everyday",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0040",
+      "expression": "고맙다",
+      "family_id": "KF06",
+      "level": 1,
+      "register": "everyday",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0041",
+      "expression": "반갑다",
+      "family_id": "KF06",
+      "level": 1,
+      "register": "everyday",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0042",
+      "expression": "그립다",
+      "family_id": "KF07",
+      "level": 1,
+      "register": "everyday",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0043",
+      "expression": "아련하다",
+      "family_id": "KF07",
+      "level": 3,
+      "register": "literary",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0044",
+      "expression": "아쉽다",
+      "family_id": "KF07",
+      "level": 2,
+      "register": "everyday",
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "G5:C0007",
+      "note": "기존 NameOnMyMind 연구 또는 국립국어원 사전 근거가 연결된 표현."
+    },
+    {
+      "id": "KE0045",
+      "expression": "애잔하다",
+      "family_id": "KF07",
+      "level": 3,
+      "register": "literary",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0046",
+      "expression": "애절하다",
+      "family_id": "KF07",
+      "level": 3,
+      "register": "literary",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0047",
+      "expression": "미련이 남다",
+      "family_id": "KF07",
+      "level": 2,
+      "register": "everyday",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0048",
+      "expression": "마음이 남다",
+      "family_id": "KF07",
+      "level": 2,
+      "register": "everyday",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0049",
+      "expression": "서운하다",
+      "family_id": "KF08",
+      "level": 2,
+      "register": "everyday",
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "G5:C0006",
+      "note": "기존 NameOnMyMind 연구 또는 국립국어원 사전 근거가 연결된 표현."
+    },
+    {
+      "id": "KE0050",
+      "expression": "섭섭하다",
+      "family_id": "KF08",
+      "level": 2,
+      "register": "everyday",
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "G5:C0008",
+      "note": "기존 NameOnMyMind 연구 또는 국립국어원 사전 근거가 연결된 표현."
+    },
+    {
+      "id": "KE0051",
+      "expression": "야속하다",
+      "family_id": "KF08",
+      "level": 3,
+      "register": "neutral",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0052",
+      "expression": "서럽다",
+      "family_id": "KF08",
+      "level": 2,
+      "register": "neutral",
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "KRD:62679",
+      "note": "국립국어원 한국어기초사전의 뜻풀이와 용례를 확인한 표현."
+    },
+    {
+      "id": "KE0053",
+      "expression": "속상하다",
+      "family_id": "KF08",
+      "level": 1,
+      "register": "everyday",
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "KRD:15595",
+      "note": "기존 NameOnMyMind 연구 또는 국립국어원 사전 근거가 연결된 표현."
+    },
+    {
+      "id": "KE0054",
+      "expression": "안타깝다",
+      "family_id": "KF08",
+      "level": 2,
+      "register": "neutral",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0055",
+      "expression": "마음이 상하다",
+      "family_id": "KF08",
+      "level": 1,
+      "register": "everyday",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0056",
+      "expression": "허전하다",
+      "family_id": "KF09",
+      "level": 2,
+      "register": "everyday",
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "KRD:87927",
+      "note": "기존 NameOnMyMind 연구 또는 국립국어원 사전 근거가 연결된 표현."
+    },
+    {
+      "id": "KE0057",
+      "expression": "외롭다",
+      "family_id": "KF09",
+      "level": 1,
+      "register": "everyday",
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "KRD:67854",
+      "note": "국립국어원 한국어기초사전의 뜻풀이와 용례를 확인한 표현."
+    },
+    {
+      "id": "KE0058",
+      "expression": "쓸쓸하다",
+      "family_id": "KF09",
+      "level": 2,
+      "register": "neutral",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0059",
+      "expression": "적적하다",
+      "family_id": "KF09",
+      "level": 3,
+      "register": "literary",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0060",
+      "expression": "공허하다",
+      "family_id": "KF09",
+      "level": 3,
+      "register": "formal",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0061",
+      "expression": "고독하다",
+      "family_id": "KF09",
+      "level": 3,
+      "register": "literary",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0062",
+      "expression": "적막하다",
+      "family_id": "KF09",
+      "level": 3,
+      "register": "literary",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0063",
+      "expression": "슬프다",
+      "family_id": "KF10",
+      "level": 1,
+      "register": "everyday",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0064",
+      "expression": "서글프다",
+      "family_id": "KF10",
+      "level": 2,
+      "register": "neutral",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0065",
+      "expression": "울적하다",
+      "family_id": "KF10",
+      "level": 2,
+      "register": "neutral",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0066",
+      "expression": "침울하다",
+      "family_id": "KF10",
+      "level": 3,
+      "register": "formal",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0067",
+      "expression": "비통하다",
+      "family_id": "KF10",
+      "level": 3,
+      "register": "formal",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0068",
+      "expression": "참담하다",
+      "family_id": "KF10",
+      "level": 3,
+      "register": "formal",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0069",
+      "expression": "처연하다",
+      "family_id": "KF10",
+      "level": 3,
+      "register": "literary",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0070",
+      "expression": "애석하다",
+      "family_id": "KF10",
+      "level": 3,
+      "register": "formal",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0071",
+      "expression": "실망하다",
+      "family_id": "KF11",
+      "level": 1,
+      "register": "everyday",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0072",
+      "expression": "허탈하다",
+      "family_id": "KF11",
+      "level": 2,
+      "register": "neutral",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0073",
+      "expression": "허무하다",
+      "family_id": "KF11",
+      "level": 2,
+      "register": "neutral",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0074",
+      "expression": "허망하다",
+      "family_id": "KF11",
+      "level": 3,
+      "register": "literary",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0075",
+      "expression": "씁쓸하다",
+      "family_id": "KF11",
+      "level": 2,
+      "register": "neutral",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0076",
+      "expression": "낙담하다",
+      "family_id": "KF11",
+      "level": 3,
+      "register": "formal",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0077",
+      "expression": "맥이 빠지다",
+      "family_id": "KF11",
+      "level": 2,
+      "register": "everyday",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0078",
+      "expression": "걱정스럽다",
+      "family_id": "KF12",
+      "level": 1,
+      "register": "everyday",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0079",
+      "expression": "불안하다",
+      "family_id": "KF12",
+      "level": 1,
+      "register": "everyday",
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "KRD:60397",
+      "note": "국립국어원 한국어기초사전의 뜻풀이와 용례를 확인한 표현."
+    },
+    {
+      "id": "KE0080",
+      "expression": "조마조마하다",
+      "family_id": "KF12",
+      "level": 2,
+      "register": "everyday",
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "KRD:75511",
+      "note": "기존 NameOnMyMind 연구 또는 국립국어원 사전 근거가 연결된 표현."
+    },
+    {
+      "id": "KE0081",
+      "expression": "초조하다",
+      "family_id": "KF12",
+      "level": 2,
+      "register": "neutral",
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "KRD:25462",
+      "note": "기존 NameOnMyMind 연구 또는 국립국어원 사전 근거가 연결된 표현."
+    },
+    {
+      "id": "KE0082",
+      "expression": "조바심나다",
+      "family_id": "KF12",
+      "level": 3,
+      "register": "neutral",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0083",
+      "expression": "마음을 졸이다",
+      "family_id": "KF12",
+      "level": 2,
+      "register": "everyday",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0084",
+      "expression": "노심초사하다",
+      "family_id": "KF12",
+      "level": 3,
+      "register": "formal",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0085",
+      "expression": "두렵다",
+      "family_id": "KF13",
+      "level": 1,
+      "register": "neutral",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0086",
+      "expression": "무섭다",
+      "family_id": "KF13",
+      "level": 1,
+      "register": "everyday",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0087",
+      "expression": "겁나다",
+      "family_id": "KF13",
+      "level": 1,
+      "register": "everyday",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0088",
+      "expression": "오싹하다",
+      "family_id": "KF13",
+      "level": 2,
+      "register": "everyday",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0089",
+      "expression": "섬뜩하다",
+      "family_id": "KF13",
+      "level": 3,
+      "register": "neutral",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0090",
+      "expression": "아찔하다",
+      "family_id": "KF13",
+      "level": 2,
+      "register": "neutral",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0091",
+      "expression": "가슴이 철렁하다",
+      "family_id": "KF13",
+      "level": 2,
+      "register": "everyday",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0092",
+      "expression": "답답하다",
+      "family_id": "KF14",
+      "level": 1,
+      "register": "everyday",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0093",
+      "expression": "막막하다",
+      "family_id": "KF14",
+      "level": 2,
+      "register": "everyday",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0094",
+      "expression": "갑갑하다",
+      "family_id": "KF14",
+      "level": 2,
+      "register": "neutral",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0095",
+      "expression": "애가 타다",
+      "family_id": "KF14",
+      "level": 2,
+      "register": "everyday",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0096",
+      "expression": "좌절하다",
+      "family_id": "KF14",
+      "level": 2,
+      "register": "neutral",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0097",
+      "expression": "무력하다",
+      "family_id": "KF14",
+      "level": 3,
+      "register": "formal",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0098",
+      "expression": "진퇴양난이다",
+      "family_id": "KF14",
+      "level": 3,
+      "register": "formal",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0099",
+      "expression": "화나다",
+      "family_id": "KF15",
+      "level": 1,
+      "register": "everyday",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0100",
+      "expression": "성나다",
+      "family_id": "KF15",
+      "level": 2,
+      "register": "neutral",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0101",
+      "expression": "노엽다",
+      "family_id": "KF15",
+      "level": 3,
+      "register": "literary",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0102",
+      "expression": "짜증나다",
+      "family_id": "KF15",
+      "level": 1,
+      "register": "everyday",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0103",
+      "expression": "분하다",
+      "family_id": "KF15",
+      "level": 2,
+      "register": "neutral",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0104",
+      "expression": "격분하다",
+      "family_id": "KF15",
+      "level": 3,
+      "register": "formal",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0105",
+      "expression": "울화가 치밀다",
+      "family_id": "KF15",
+      "level": 3,
+      "register": "neutral",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0106",
+      "expression": "억울하다",
+      "family_id": "KF16",
+      "level": 2,
+      "register": "everyday",
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "G5:C0011",
+      "note": "기존 NameOnMyMind 연구 또는 국립국어원 사전 근거가 연결된 표현."
+    },
+    {
+      "id": "KE0107",
+      "expression": "원망스럽다",
+      "family_id": "KF16",
+      "level": 2,
+      "register": "neutral",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0108",
+      "expression": "분통이 터지다",
+      "family_id": "KF16",
+      "level": 3,
+      "register": "neutral",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0109",
+      "expression": "괘씸하다",
+      "family_id": "KF16",
+      "level": 3,
+      "register": "neutral",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0110",
+      "expression": "못마땅하다",
+      "family_id": "KF16",
+      "level": 2,
+      "register": "neutral",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0111",
+      "expression": "부끄럽다",
+      "family_id": "KF17",
+      "level": 1,
+      "register": "everyday",
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "KRD:60125",
+      "note": "국립국어원 한국어기초사전의 뜻풀이와 용례를 확인한 표현."
+    },
+    {
+      "id": "KE0112",
+      "expression": "창피하다",
+      "family_id": "KF17",
+      "level": 1,
+      "register": "everyday",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0113",
+      "expression": "민망하다",
+      "family_id": "KF17",
+      "level": 2,
+      "register": "neutral",
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "KRD:56352",
+      "note": "국립국어원 한국어기초사전의 뜻풀이와 용례를 확인한 표현."
+    },
+    {
+      "id": "KE0114",
+      "expression": "쑥스럽다",
+      "family_id": "KF17",
+      "level": 2,
+      "register": "everyday",
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "KRD:66519",
+      "note": "국립국어원 한국어기초사전의 뜻풀이와 용례를 확인한 표현."
+    },
+    {
+      "id": "KE0115",
+      "expression": "멋쩍다",
+      "family_id": "KF17",
+      "level": 3,
+      "register": "neutral",
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "G5:C0015",
+      "note": "기존 NameOnMyMind 연구 또는 국립국어원 사전 근거가 연결된 표현."
+    },
+    {
+      "id": "KE0116",
+      "expression": "난처하다",
+      "family_id": "KF17",
+      "level": 2,
+      "register": "neutral",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0117",
+      "expression": "낯뜨겁다",
+      "family_id": "KF17",
+      "level": 3,
+      "register": "marked",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0118",
+      "expression": "미안하다",
+      "family_id": "KF18",
+      "level": 1,
+      "register": "everyday",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0119",
+      "expression": "죄송하다",
+      "family_id": "KF18",
+      "level": 2,
+      "register": "formal",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0120",
+      "expression": "송구하다",
+      "family_id": "KF18",
+      "level": 3,
+      "register": "formal",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0121",
+      "expression": "죄책감이 들다",
+      "family_id": "KF18",
+      "level": 2,
+      "register": "neutral",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0122",
+      "expression": "후회스럽다",
+      "family_id": "KF18",
+      "level": 2,
+      "register": "neutral",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0123",
+      "expression": "뉘우치다",
+      "family_id": "KF18",
+      "level": 3,
+      "register": "formal",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0124",
+      "expression": "마음에 걸리다",
+      "family_id": "KF18",
+      "level": 2,
+      "register": "everyday",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0125",
+      "expression": "부럽다",
+      "family_id": "KF19",
+      "level": 1,
+      "register": "everyday",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0126",
+      "expression": "샘나다",
+      "family_id": "KF19",
+      "level": 2,
+      "register": "everyday",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0127",
+      "expression": "질투하다",
+      "family_id": "KF19",
+      "level": 2,
+      "register": "neutral",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0128",
+      "expression": "시기하다",
+      "family_id": "KF19",
+      "level": 3,
+      "register": "formal",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0129",
+      "expression": "선망하다",
+      "family_id": "KF19",
+      "level": 3,
+      "register": "formal",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0130",
+      "expression": "배가 아프다",
+      "family_id": "KF19",
+      "level": 2,
+      "register": "marked",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0131",
+      "expression": "놀랍다",
+      "family_id": "KF20",
+      "level": 1,
+      "register": "everyday",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0132",
+      "expression": "신기하다",
+      "family_id": "KF20",
+      "level": 1,
+      "register": "everyday",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0133",
+      "expression": "경이롭다",
+      "family_id": "KF20",
+      "level": 3,
+      "register": "formal",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0134",
+      "expression": "당황하다",
+      "family_id": "KF20",
+      "level": 1,
+      "register": "everyday",
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "KRD:18921",
+      "note": "국립국어원 한국어기초사전의 뜻풀이와 용례를 확인한 표현."
+    },
+    {
+      "id": "KE0135",
+      "expression": "어리둥절하다",
+      "family_id": "KF20",
+      "level": 2,
+      "register": "everyday",
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "KRD:70500",
+      "note": "국립국어원 한국어기초사전의 뜻풀이와 용례를 확인한 표현."
+    },
+    {
+      "id": "KE0136",
+      "expression": "얼떨떨하다",
+      "family_id": "KF20",
+      "level": 2,
+      "register": "everyday",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0137",
+      "expression": "황당하다",
+      "family_id": "KF20",
+      "level": 2,
+      "register": "neutral",
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "KRD:87402",
+      "note": "국립국어원 한국어기초사전의 뜻풀이와 용례를 확인한 표현."
+    },
+    {
+      "id": "KE0138",
+      "expression": "의아하다",
+      "family_id": "KF20",
+      "level": 3,
+      "register": "formal",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0139",
+      "expression": "착잡하다",
+      "family_id": "KF21",
+      "level": 3,
+      "register": "neutral",
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "G5:C0013",
+      "note": "기존 NameOnMyMind 연구 또는 국립국어원 사전 근거가 연결된 표현."
+    },
+    {
+      "id": "KE0140",
+      "expression": "시원섭섭하다",
+      "family_id": "KF21",
+      "level": 2,
+      "register": "everyday",
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "G5:C0014",
+      "note": "기존 NameOnMyMind 연구 또는 국립국어원 사전 근거가 연결된 표현."
+    },
+    {
+      "id": "KE0141",
+      "expression": "심란하다",
+      "family_id": "KF21",
+      "level": 2,
+      "register": "neutral",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0142",
+      "expression": "미묘하다",
+      "family_id": "KF21",
+      "level": 2,
+      "register": "neutral",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0143",
+      "expression": "복잡하다",
+      "family_id": "KF21",
+      "level": 1,
+      "register": "everyday",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0144",
+      "expression": "갈등되다",
+      "family_id": "KF21",
+      "level": 2,
+      "register": "neutral",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0145",
+      "expression": "울컥하다",
+      "family_id": "KF22",
+      "level": 2,
+      "register": "everyday",
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "KRD:71378",
+      "note": "국립국어원 한국어기초사전의 뜻풀이와 용례를 확인한 표현."
+    },
+    {
+      "id": "KE0146",
+      "expression": "찡하다",
+      "family_id": "KF22",
+      "level": 2,
+      "register": "everyday",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0147",
+      "expression": "뭉클하다",
+      "family_id": "KF22",
+      "level": 2,
+      "register": "everyday",
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "G5:C0010",
+      "note": "기존 NameOnMyMind 연구 또는 국립국어원 사전 근거가 연결된 표현."
+    },
+    {
+      "id": "KE0148",
+      "expression": "목이 메다",
+      "family_id": "KF22",
+      "level": 2,
+      "register": "everyday",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0149",
+      "expression": "가슴이 벅차다",
+      "family_id": "KF22",
+      "level": 2,
+      "register": "everyday",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0150",
+      "expression": "가슴이 먹먹하다",
+      "family_id": "KF22",
+      "level": 2,
+      "register": "neutral",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    },
+    {
+      "id": "KE0151",
+      "expression": "가슴이 두근거리다",
+      "family_id": "KF22",
+      "level": 1,
+      "register": "everyday",
+      "status": "DISCOVERY_ONLY",
+      "evidence_ref": null,
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+    }
+  ],
+  "contrast_sets": [
+    {
+      "id": "KC001",
+      "title": "서운하다 · 섭섭하다 · 아쉽다",
+      "terms": [
+        "서운하다",
+        "섭섭하다",
+        "아쉽다"
+      ],
+      "choice_cues": [
+        {
+          "expression": "서운하다",
+          "cue": "기대했던 관계나 반응이 마음처럼 되지 않아 마음이 상하고 아쉬울 때."
+        },
+        {
+          "expression": "섭섭하다",
+          "cue": "상대의 태도나 이별 같은 관계 상황에서 서운함과 아쉬움이 함께 있을 때."
+        },
+        {
+          "expression": "아쉽다",
+          "cue": "무언가 부족하거나 끝나 버려 마음이 남지만 꼭 상대를 탓하는 것은 아닐 때."
+        }
+      ],
+      "reflection_prompt": "지금 마음에는 ‘상대에게 바랐던 것’이 큰가, 아니면 ‘끝나거나 부족한 것’이 더 큰가?",
+      "status": "SOURCE_VERIFIED"
+    },
+    {
+      "id": "KC002",
+      "title": "후련하다 · 홀가분하다 · 개운하다",
+      "terms": [
+        "후련하다",
+        "홀가분하다",
+        "개운하다"
+      ],
+      "choice_cues": [
+        {
+          "expression": "후련하다",
+          "cue": "답답하게 맺힌 일이나 감정이 풀려 속이 시원해졌을 때."
+        },
+        {
+          "expression": "홀가분하다",
+          "cue": "책임·걱정·부담이 사라져 몸과 마음이 가벼워졌을 때."
+        },
+        {
+          "expression": "개운하다",
+          "cue": "찜찜함이나 피로가 가시고 산뜻해졌다고 느낄 때."
+        }
+      ],
+      "reflection_prompt": "무엇이 ‘풀린’ 걸까, 무엇을 ‘내려놓은’ 걸까, 아니면 무엇이 ‘말끔해진’ 걸까?",
+      "status": "SOURCE_VERIFIED"
+    },
+    {
+      "id": "KC003",
+      "title": "뿌듯하다 · 흐뭇하다 · 대견하다",
+      "terms": [
+        "뿌듯하다",
+        "흐뭇하다",
+        "대견하다"
+      ],
+      "choice_cues": [
+        {
+          "expression": "뿌듯하다",
+          "cue": "내 노력이나 성취 때문에 기쁨과 만족이 마음에 가득 찰 때."
+        },
+        {
+          "expression": "흐뭇하다",
+          "cue": "좋은 모습이나 결과를 바라보며 따뜻하고 만족스러운 마음이 들 때."
+        },
+        {
+          "expression": "대견하다",
+          "cue": "누군가가 기대 이상으로 잘 자라거나 해낸 모습을 기특하게 평가할 때."
+        }
+      ],
+      "reflection_prompt": "내가 해낸 것이 기쁜가, 바라보니 좋은가, 누군가의 성장이 기특한가?",
+      "status": "SOURCE_VERIFIED"
+    },
+    {
+      "id": "KC004",
+      "title": "불안하다 · 조마조마하다 · 초조하다",
+      "terms": [
+        "불안하다",
+        "조마조마하다",
+        "초조하다"
+      ],
+      "choice_cues": [
+        {
+          "expression": "불안하다",
+          "cue": "좋지 않은 일이 생길 것 같아 마음이 편하지 않고 안정되지 않을 때."
+        },
+        {
+          "expression": "조마조마하다",
+          "cue": "앞으로 닥칠 일이 걱정되어 결과를 기다리며 마음을 졸일 때."
+        },
+        {
+          "expression": "초조하다",
+          "cue": "걱정·답답함·안타까움 때문에 가만히 있기 어려울 만큼 마음이 조급할 때."
+        }
+      ],
+      "reflection_prompt": "막연히 불안한가, 결과를 기다리며 마음 졸이는가, 빨리 해결되길 바라며 조급한가?",
+      "status": "SOURCE_VERIFIED"
+    },
+    {
+      "id": "KC005",
+      "title": "허전하다 · 외롭다 · 쓸쓸하다",
+      "terms": [
+        "허전하다",
+        "외롭다",
+        "쓸쓸하다"
+      ],
+      "choice_cues": [
+        {
+          "expression": "허전하다",
+          "cue": "의지하던 사람·것이 사라져 빈자리처럼 느껴질 때."
+        },
+        {
+          "expression": "외롭다",
+          "cue": "함께할 사람이나 정서적 연결이 부족하다고 느낄 때."
+        },
+        {
+          "expression": "쓸쓸하다",
+          "cue": "주변의 분위기까지 적막하고 정서적으로 외로운 느낌이 들 때."
+        }
+      ],
+      "reflection_prompt": "빈자리가 느껴지는가, 연결될 사람이 필요한가, 아니면 주변 분위기까지 쓸쓸한가?",
+      "status": "RESEARCH_DRAFT"
+    },
+    {
+      "id": "KC006",
+      "title": "속상하다 · 안타깝다 · 서럽다",
+      "terms": [
+        "속상하다",
+        "안타깝다",
+        "서럽다"
+      ],
+      "choice_cues": [
+        {
+          "expression": "속상하다",
+          "cue": "일이 뜻대로 되지 않아 마음이 편하지 않고 괴로울 때."
+        },
+        {
+          "expression": "안타깝다",
+          "cue": "원하는 대로 되지 않거나 다른 사람의 어려움을 보며 마음이 아플 때."
+        },
+        {
+          "expression": "서럽다",
+          "cue": "억울하거나 외롭고 슬퍼서 스스로 불쌍하게 느껴질 만큼 마음이 아플 때."
+        }
+      ],
+      "reflection_prompt": "내 일이 뜻대로 안 돼 괴로운가, 누군가가 안쓰러운가, 아니면 나 자신이 서럽게 느껴지는가?",
+      "status": "RESEARCH_DRAFT"
+    },
+    {
+      "id": "KC007",
+      "title": "부끄럽다 · 민망하다 · 쑥스럽다 · 멋쩍다",
+      "terms": [
+        "부끄럽다",
+        "민망하다",
+        "쑥스럽다",
+        "멋쩍다"
+      ],
+      "choice_cues": [
+        {
+          "expression": "부끄럽다",
+          "cue": "내 행동이나 모습이 남에게 드러나는 것이 떳떳하지 않거나 수줍을 때."
+        },
+        {
+          "expression": "민망하다",
+          "cue": "상황이나 행동이 난처하고 남의 시선이 신경 쓰여 어색할 때."
+        },
+        {
+          "expression": "쑥스럽다",
+          "cue": "칭찬이나 관심을 받아 기쁘면서도 자연스럽게 행동하기 어려울 때."
+        },
+        {
+          "expression": "멋쩍다",
+          "cue": "상황이 어색하고 쑥스러워 마음이 편하지 않을 때."
+        }
+      ],
+      "reflection_prompt": "잘못한 느낌인가, 상황이 난처한가, 관심을 받아 쑥스러운가, 그냥 어색한가?",
+      "status": "SOURCE_VERIFIED"
+    },
+    {
+      "id": "KC008",
+      "title": "화나다 · 분하다 · 억울하다 · 원망스럽다",
+      "terms": [
+        "화나다",
+        "분하다",
+        "억울하다",
+        "원망스럽다"
+      ],
+      "choice_cues": [
+        {
+          "expression": "화나다",
+          "cue": "불쾌하거나 뜻대로 되지 않아 분노가 생길 때의 가장 넓은 표현."
+        },
+        {
+          "expression": "분하다",
+          "cue": "진 일·모욕·부당한 결과가 마음에 맺혀 화가 나고 억센 감정이 들 때."
+        },
+        {
+          "expression": "억울하다",
+          "cue": "내 잘못이 아닌데 피해·비난·불이익을 받았다고 느낄 때."
+        },
+        {
+          "expression": "원망스럽다",
+          "cue": "힘든 결과의 책임이나 서운함을 특정 사람이나 대상에게 돌리고 싶을 때."
+        }
+      ],
+      "reflection_prompt": "그냥 화가 난 건가, 결과가 분한가, 부당한 피해가 억울한가, 누군가를 탓하고 싶은가?",
+      "status": "RESEARCH_DRAFT"
+    },
+    {
+      "id": "KC009",
+      "title": "벅차다 · 뭉클하다 · 울컥하다",
+      "terms": [
+        "벅차다",
+        "뭉클하다",
+        "울컥하다"
+      ],
+      "choice_cues": [
+        {
+          "expression": "벅차다",
+          "cue": "기쁨·희망·감동이 가슴에 가득 차오를 만큼 크게 느껴질 때."
+        },
+        {
+          "expression": "뭉클하다",
+          "cue": "강한 감정이 갑자기 가슴에 차오르며 마음이 움직일 때."
+        },
+        {
+          "expression": "울컥하다",
+          "cue": "참고 있던 감정이 갑자기 목이나 가슴까지 치밀어 오를 때."
+        }
+      ],
+      "reflection_prompt": "가슴이 가득 찬 느낌인가, 마음이 순간 움직였나, 아니면 참던 감정이 갑자기 치밀었나?",
+      "status": "SOURCE_VERIFIED"
+    },
+    {
+      "id": "KC010",
+      "title": "실망하다 · 허탈하다 · 허무하다 · 씁쓸하다",
+      "terms": [
+        "실망하다",
+        "허탈하다",
+        "허무하다",
+        "씁쓸하다"
+      ],
+      "choice_cues": [
+        {
+          "expression": "실망하다",
+          "cue": "기대했던 결과나 사람의 모습이 기대에 미치지 못했을 때."
+        },
+        {
+          "expression": "허탈하다",
+          "cue": "기대나 노력이 무너진 뒤 힘이 빠지고 텅 빈 느낌이 들 때."
+        },
+        {
+          "expression": "허무하다",
+          "cue": "애쓴 일이나 삶의 의미 자체가 덧없고 의미 없게 느껴질 때."
+        },
+        {
+          "expression": "씁쓸하다",
+          "cue": "기쁘지도 슬프지도 않게 불편하고 개운치 않은 뒷맛이 남을 때."
+        }
+      ],
+      "reflection_prompt": "기대가 깨졌나, 힘이 빠졌나, 의미가 사라졌나, 아니면 불편한 뒷맛이 남았나?",
+      "status": "RESEARCH_DRAFT"
+    },
+    {
+      "id": "KC011",
+      "title": "설레다 · 기대되다 · 들뜨다",
+      "terms": [
+        "설레다",
+        "기대되다",
+        "들뜨다"
+      ],
+      "choice_cues": [
+        {
+          "expression": "설레다",
+          "cue": "좋은 일이 다가올 것 같아 마음이 두근거리고 가만히 있지 못할 때."
+        },
+        {
+          "expression": "기대되다",
+          "cue": "앞으로 좋은 결과나 경험이 있을 것이라고 생각하며 기다릴 때."
+        },
+        {
+          "expression": "들뜨다",
+          "cue": "기대나 기쁨 때문에 마음이 차분하지 못하고 평소보다 붕 뜬 듯할 때."
+        }
+      ],
+      "reflection_prompt": "두근거리는가, 좋은 결과를 기다리는가, 아니면 마음이 들떠 차분하기 어려운가?",
+      "status": "RESEARCH_DRAFT"
+    },
+    {
+      "id": "KC012",
+      "title": "안심되다 · 후련하다 · 홀가분하다",
+      "terms": [
+        "안심되다",
+        "후련하다",
+        "홀가분하다"
+      ],
+      "choice_cues": [
+        {
+          "expression": "안심되다",
+          "cue": "걱정하던 위험이나 문제가 없다는 것을 알고 마음이 놓일 때."
+        },
+        {
+          "expression": "후련하다",
+          "cue": "답답하게 맺힌 일이 풀려 속이 시원해졌을 때."
+        },
+        {
+          "expression": "홀가분하다",
+          "cue": "맡았던 부담이나 책임이 끝나 가볍고 편해졌을 때."
+        }
+      ],
+      "reflection_prompt": "걱정이 사라졌나, 맺힌 것이 풀렸나, 부담을 내려놓았나?",
+      "status": "RESEARCH_DRAFT"
+    },
+    {
+      "id": "KC013",
+      "title": "부럽다 · 샘나다 · 질투하다 · 선망하다",
+      "terms": [
+        "부럽다",
+        "샘나다",
+        "질투하다",
+        "선망하다"
+      ],
+      "choice_cues": [
+        {
+          "expression": "부럽다",
+          "cue": "다른 사람이 가진 좋은 점이나 상황을 나도 갖고 싶다고 느낄 때."
+        },
+        {
+          "expression": "샘나다",
+          "cue": "가까운 사람의 관심·칭찬·좋은 것을 보고 나도 받고 싶어 마음이 삐죽할 때."
+        },
+        {
+          "expression": "질투하다",
+          "cue": "소중한 관계나 관심을 다른 사람에게 빼앗길까 불편하거나 미워질 때."
+        },
+        {
+          "expression": "선망하다",
+          "cue": "다른 사람의 삶·능력·위치를 높이 평가하며 닮거나 갖고 싶다고 바랄 때."
+        }
+      ],
+      "reflection_prompt": "나도 갖고 싶은가, 관심을 나도 받고 싶은가, 관계를 빼앗길까 불안한가, 닮고 싶은가?",
+      "status": "RESEARCH_DRAFT"
+    },
+    {
+      "id": "KC014",
+      "title": "당황하다 · 황당하다 · 어리둥절하다",
+      "terms": [
+        "당황하다",
+        "황당하다",
+        "어리둥절하다"
+      ],
+      "choice_cues": [
+        {
+          "expression": "당황하다",
+          "cue": "예상하지 못한 일이 생겨 어떻게 반응해야 할지 순간적으로 흔들릴 때."
+        },
+        {
+          "expression": "황당하다",
+          "cue": "상식이나 예상에서 너무 벗어나 어처구니없고 납득하기 어려울 때."
+        },
+        {
+          "expression": "어리둥절하다",
+          "cue": "무슨 일이 일어난 건지 바로 이해하지 못해 정신이 얼떨떨할 때."
+        }
+      ],
+      "reflection_prompt": "대처가 안 되는가, 말도 안 된다고 느끼는가, 상황 자체가 이해되지 않는가?",
+      "status": "SOURCE_VERIFIED"
+    },
+    {
+      "id": "KC015",
+      "title": "착잡하다 · 시원섭섭하다 · 심란하다",
+      "terms": [
+        "착잡하다",
+        "시원섭섭하다",
+        "심란하다"
+      ],
+      "choice_cues": [
+        {
+          "expression": "착잡하다",
+          "cue": "여러 생각과 감정이 얽혀 마음이 복잡하고 갈피를 잡기 어려울 때."
+        },
+        {
+          "expression": "시원섭섭하다",
+          "cue": "끝나서 후련하면서도 떠나거나 끝나는 것이 아쉬운 마음이 함께 들 때."
+        },
+        {
+          "expression": "심란하다",
+          "cue": "걱정거리나 여러 생각 때문에 마음이 어수선하고 안정되지 않을 때."
+        }
+      ],
+      "reflection_prompt": "감정이 여러 갈래로 얽혔나, 후련함과 아쉬움이 동시에 있나, 걱정 때문에 마음이 어수선한가?",
+      "status": "RESEARCH_DRAFT"
+    },
+    {
+      "id": "KC016",
+      "title": "그립다 · 아련하다 · 애틋하다",
+      "terms": [
+        "그립다",
+        "아련하다",
+        "애틋하다"
+      ],
+      "choice_cues": [
+        {
+          "expression": "그립다",
+          "cue": "보고 싶거나 다시 만나고 싶은 사람·장소·시간이 마음에 떠오를 때."
+        },
+        {
+          "expression": "아련하다",
+          "cue": "기억이나 감정이 멀리 있는 듯 희미하면서도 부드럽게 마음에 남을 때."
+        },
+        {
+          "expression": "애틋하다",
+          "cue": "사랑하고 아끼는 마음에 안타까움이나 간절함까지 섞여 깊게 느껴질 때."
+        }
+      ],
+      "reflection_prompt": "다시 보고 싶은가, 희미한 기억이 마음에 남는가, 사랑과 안타까움이 함께 깊은가?",
+      "status": "RESEARCH_DRAFT"
+    }
+  ]
+}

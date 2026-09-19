@@ -1,0 +1,186 @@
+{
+  "schema_version": "1.0.0",
+  "provider_policy": "SOURCE_VERIFIED emotion terms must resolve to a local source-first research record or an official National Institute of Korean Language dictionary source.",
+  "entries": [
+    {
+      "evidence_ref": "G5:C0006",
+      "source_type": "local_research_record",
+      "path": "content/g5/research-records/C0006.json",
+      "url": null
+    },
+    {
+      "evidence_ref": "G5:C0007",
+      "source_type": "local_research_record",
+      "path": "content/g5/research-records/C0007.json",
+      "url": null
+    },
+    {
+      "evidence_ref": "G5:C0008",
+      "source_type": "local_research_record",
+      "path": "content/g5/research-records/C0008.json",
+      "url": null
+    },
+    {
+      "evidence_ref": "G5:C0009",
+      "source_type": "local_research_record",
+      "path": "content/g5/research-records/C0009.json",
+      "url": null
+    },
+    {
+      "evidence_ref": "G5:C0010",
+      "source_type": "local_research_record",
+      "path": "content/g5/research-records/C0010.json",
+      "url": null
+    },
+    {
+      "evidence_ref": "G5:C0011",
+      "source_type": "local_research_record",
+      "path": "content/g5/research-records/C0011.json",
+      "url": null
+    },
+    {
+      "evidence_ref": "G5:C0012",
+      "source_type": "local_research_record",
+      "path": "content/g5/research-records/C0012.json",
+      "url": null
+    },
+    {
+      "evidence_ref": "G5:C0013",
+      "source_type": "local_research_record",
+      "path": "content/g5/research-records/C0013.json",
+      "url": null
+    },
+    {
+      "evidence_ref": "G5:C0014",
+      "source_type": "local_research_record",
+      "path": "content/g5/research-records/C0014.json",
+      "url": null
+    },
+    {
+      "evidence_ref": "G5:C0015",
+      "source_type": "local_research_record",
+      "path": "content/g5/research-records/C0015.json",
+      "url": null
+    },
+    {
+      "evidence_ref": "KX0007",
+      "source_type": "official_dictionary",
+      "path": "content/korean-expression/batches/01_everyday_expression_ladders.json",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=87497"
+    },
+    {
+      "evidence_ref": "KX0008",
+      "source_type": "official_dictionary",
+      "path": "content/korean-expression/batches/01_everyday_expression_ladders.json",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=89194"
+    },
+    {
+      "evidence_ref": "KRD:58356",
+      "source_type": "official_dictionary",
+      "path": null,
+      "url": "https://krdict.korean.go.kr/vie/dicSearch/SearchView?ParaWordNo=58356&nation=vie"
+    },
+    {
+      "evidence_ref": "KRD:75511",
+      "source_type": "official_dictionary",
+      "path": null,
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=75511&nation=eng"
+    },
+    {
+      "evidence_ref": "KRD:25462",
+      "source_type": "official_dictionary",
+      "path": null,
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=25462&nation=eng"
+    },
+    {
+      "evidence_ref": "KRD:15595",
+      "source_type": "official_dictionary",
+      "path": null,
+      "url": "https://krdict.korean.go.kr/spa/dicSearch/SearchView?ParaWordNo=15595&nation=spa"
+    },
+    {
+      "evidence_ref": "KRD:87285",
+      "source_type": "official_dictionary",
+      "path": null,
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=87285&nation=eng"
+    },
+    {
+      "evidence_ref": "KRD:87927",
+      "source_type": "official_dictionary",
+      "path": null,
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=87927&nation=eng"
+    },
+    {
+      "evidence_ref": "KRD:26673",
+      "source_type": "official_dictionary",
+      "path": null,
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=26673&nation=eng"
+    },
+    {
+      "evidence_ref": "KRD:42236",
+      "source_type": "official_dictionary",
+      "path": null,
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=42236"
+    },
+    {
+      "evidence_ref": "KRD:60397",
+      "source_type": "official_dictionary",
+      "path": null,
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=60397&nation=eng"
+    },
+    {
+      "evidence_ref": "KRD:67854",
+      "source_type": "official_dictionary",
+      "path": null,
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=67854&nation=eng"
+    },
+    {
+      "evidence_ref": "KRD:71378",
+      "source_type": "official_dictionary",
+      "path": null,
+      "url": "https://krdict.korean.go.kr/jpn/dicSearch/SearchView?ParaWordNo=71378&nation=jpn"
+    },
+    {
+      "evidence_ref": "KRD:60125",
+      "source_type": "official_dictionary",
+      "path": null,
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=60125"
+    },
+    {
+      "evidence_ref": "KRD:56352",
+      "source_type": "official_dictionary",
+      "path": null,
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=56352&nation=eng"
+    },
+    {
+      "evidence_ref": "KRD:62679",
+      "source_type": "official_dictionary",
+      "path": null,
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=62679&nation=eng"
+    },
+    {
+      "evidence_ref": "KRD:18921",
+      "source_type": "official_dictionary",
+      "path": null,
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=18921"
+    },
+    {
+      "evidence_ref": "KRD:87402",
+      "source_type": "official_dictionary",
+      "path": null,
+      "url": "https://krdict.korean.go.kr/jpn/dicSearch/SearchView?ParaWordNo=87402&nation=jpn"
+    },
+    {
+      "evidence_ref": "KRD:70500",
+      "source_type": "official_dictionary",
+      "path": null,
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=70500&nation=eng"
+    },
+    {
+      "evidence_ref": "KRD:66519",
+      "source_type": "official_dictionary",
+      "path": null,
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=66519&nation=eng"
+    }
+  ]
+}

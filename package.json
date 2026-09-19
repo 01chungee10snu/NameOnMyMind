@@ -25,7 +25,9 @@
     "check:g5-selection": "npm run check:g4 && npm run test:g5-selection && npm run check:privacy",
     "validate:g5-research": "node scripts/g5/validate-korean-batch01-research.mjs && node scripts/g5/validate-all-g5-research.mjs && node scripts/g5/validate-foreign-batch01-research.mjs && node scripts/g5/validate-foreign-batch02-research.mjs && node scripts/g5/validate-foreign-batch03-research.mjs && node scripts/g5/validate-foreign-batch04-research.mjs && node scripts/g5/validate-foreign-batch05-research.mjs && node scripts/g5/validate-foreign-batch06-research.mjs",
     "check:g5-research": "npm run check:g5-selection && npm run validate:g5-research && npm run check:privacy",
-    "validate:korean-expression": "node scripts/korean/validate-expression-ladders.mjs"
+    "validate:korean-expression": "node scripts/korean/validate-expression-ladders.mjs",
+    "validate:korean-emotion": "node scripts/korean/validate-emotion-map.mjs",
+    "check:korean-language": "npm run validate:korean-expression && npm run validate:korean-emotion"
   },
   "devDependencies": {
     "ajv": "8.20.0",
