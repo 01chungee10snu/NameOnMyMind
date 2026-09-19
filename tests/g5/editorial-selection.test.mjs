@@ -128,6 +128,14 @@ test('app discovery exposes research surfaces without promoting research candida
   assert.match(ui, /KOREAN MAP/);
   assert.match(app, /hydrateResearchDiscovery/);
   assert.match(app, /readJsonOptional/);
+  assert.match(app, /renderResearchSearch/);
+  assert.match(app, /syncDiscoverQuery/);
+  assert.match(app, /requestedQuery/);
+  assert.match(app, /worldResearchHref/);
+  assert.match(app, /koreanResearchHref/);
+  assert.match(readText('prototypes/g5-research-preview-20260918/index.html'), /requestedCard/);
+  assert.match(readText('prototypes/korean-emotion-map-20260919/index.html'), /requestedFamily/);
+  assert.match(readText('prototypes/korean-emotion-map-20260919/index.html'), /syncUrl/);
   assert.match(stage, /product_release_authorized: false/);
   assert.equal(sourcePreview.status, 'RESEARCH_PREVIEW_ONLY');
   assert.equal(sourcePreview.public_release_authorized, false);

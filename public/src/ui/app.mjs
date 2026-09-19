@@ -5,6 +5,7 @@ import { createReadOnlyAgentApi, registerWebMcpReadOnlyTools } from '../agent/we
 
 const qs = (selector) => document.querySelector(selector);
 const qsa = (selector) => [...document.querySelectorAll(selector)];
+const researchDiscoveryData = { preview: null, korean: null };
 
 async function readJson(url) {
   const response = await fetch(url, { cache: 'no-store' });
@@ -87,10 +88,18 @@ function renderResultList(catalog, root, rows, emptyMessage = '조건에 맞는 
   for (const row of rows) list.append(renderCardTile(catalog, row.card, row.rationale || row.card.front.poetic_line));
   root.append(list);
 }
+function worldResearchHref(cardId) {
+  return `./prototypes/g5-research-preview-20260918/?card=${encodeURIComponent(cardId)}`;
+}
+function koreanResearchHref(familyId, expression = '') {
+  const params = new URLSearchParams({ family: familyId });
+  if (expression) params.set('term', expression);
+  return `./prototypes/korean-emotion-map-20260919/?${params.toString()}`;
+}
 function renderResearchWorldCard(card, previewBase) {
   const link = document.createElement('a');
   link.className = 'research-preview-card';
-  link.href = './preview/';
+  link.href = worldResearchHref(card.card_id);
   link.setAttribute('aria-label', `${card.term}, ${card.language} 연구 미리보기`);
 
   const media = document.createElement('span');
@@ -134,8 +143,10 @@ function renderKoreanResearchSummary(data) {
   const sample = document.createElement('div');
   sample.className = 'verified-sample-row';
   for (const term of verified.slice(0, 8)) {
-    const chip = document.createElement('span');
+    const chip = document.createElement('a');
+    chip.href = koreanResearchHref(term.family_id, term.expression);
     chip.textContent = term.expression;
+    chip.setAttribute('aria-label', `${term.expression} 표현을 한국어 마음 지도에서 보기`);
     sample.append(chip);
   }
   root.append(sample);
@@ -144,12 +155,108 @@ function renderKoreanResearchSummary(data) {
   familyStrip.replaceChildren();
   for (const family of data.families) {
     const chip = document.createElement('a');
-    chip.href = './prototypes/korean-emotion-map-20260919/';
+    chip.href = koreanResearchHref(family.id);
     chip.className = 'research-family-chip';
     chip.textContent = family.label;
     chip.setAttribute('aria-label', `${family.label} 영역을 한국어 마음 지도에서 보기`);
     familyStrip.append(chip);
   }
+}
+
+function createResearchSearchItem({ href, term, meta, description }) {
+  const link = document.createElement('a');
+  link.className = 'research-search-item';
+  link.href = href;
+  const strong = document.createElement('strong');
+  strong.textContent = term;
+  const span = document.createElement('span');
+  span.textContent = meta;
+  const small = document.createElement('small');
+  small.textContent = description;
+  link.append(strong, span, small);
+  return link;
+}
+
+function renderResearchSearch(query) {
+  const root = qs('#research-search-results');
+  root.replaceChildren();
+  const q = query.trim().toLocaleLowerCase();
+  if (!q) return 0;
+
+  const section = document.createElement('section');
+  section.className = 'research-search-section';
+  const heading = document.createElement('div');
+  heading.className = 'research-search-heading';
+  const title = document.createElement('h2');
+  title.textContent = '연구 중인 마음말에서도 찾았어요';
+  const badge = document.createElement('span');
+  badge.className = 'research-status-pill';
+  badge.textContent = '정식 카드 아님';
+  heading.append(title, badge);
+  section.append(heading);
+
+  let matchCount = 0;
+  const preview = researchDiscoveryData.preview;
+  if (preview?.cards?.length) {
+    const matches = preview.cards.filter((card) =>
+      [card.term, card.language, card.korean_rendering].some((value) => String(value || '').toLocaleLowerCase().includes(q))
+    ).slice(0, 6);
+    if (matches.length) {
+      const label = document.createElement('p');
+      label.className = 'research-search-label';
+      label.textContent = '다른 언어';
+      const list = document.createElement('div');
+      list.className = 'research-search-list';
+      for (const card of matches) {
+        list.append(createResearchSearchItem({
+          href: worldResearchHref(card.card_id),
+          term: card.term,
+          meta: card.language,
+          description: card.korean_rendering,
+        }));
+      }
+      section.append(label, list);
+      matchCount += matches.length;
+    }
+  }
+
+  const korean = researchDiscoveryData.korean;
+  if (korean?.terms?.length) {
+    const familyMap = new Map(korean.families.map((family) => [family.id, family]));
+    const matches = korean.terms.filter((term) => {
+      const family = familyMap.get(term.family_id);
+      return [term.expression, family?.label, family?.description, term.note].some((value) => String(value || '').toLocaleLowerCase().includes(q));
+    }).slice(0, 8);
+    if (matches.length) {
+      const label = document.createElement('p');
+      label.className = 'research-search-label';
+      label.textContent = '한국어 마음 지도';
+      const list = document.createElement('div');
+      list.className = 'research-search-list';
+      for (const term of matches) {
+        const family = familyMap.get(term.family_id);
+        const status = term.status === 'SOURCE_VERIFIED' ? '근거 연결' : '탐색 중';
+        list.append(createResearchSearchItem({
+          href: koreanResearchHref(term.family_id, term.expression),
+          term: term.expression,
+          meta: `${family?.label || ''} · ${status}`,
+          description: family?.description || '',
+        }));
+      }
+      section.append(label, list);
+      matchCount += matches.length;
+    }
+  }
+
+  if (matchCount) root.append(section);
+  return matchCount;
+}
+
+function syncDiscoverQuery(query) {
+  const url = new URL(location.href);
+  url.searchParams.set('space', 'discover');
+  if (query.trim()) url.searchParams.set('q', query.trim()); else url.searchParams.delete('q');
+  history.replaceState(null, '', url);
 }
 
 async function hydrateResearchDiscovery() {
@@ -159,6 +266,9 @@ async function hydrateResearchDiscovery() {
     readJsonOptional(previewManifestUrl),
     readJsonOptional(koreanMapUrl),
   ]);
+
+  researchDiscoveryData.preview = preview;
+  researchDiscoveryData.korean = korean;
 
   let hasResearch = false;
   if (preview?.status === 'RESEARCH_PREVIEW_ONLY' && Array.isArray(preview.cards) && preview.cards.length) {
@@ -292,11 +402,13 @@ async function main() {
   const storage=globalThis.localStorage;
   const requested=new URLSearchParams(location.search).get('card');
   const requestedSpace=new URLSearchParams(location.search).get('space');
+  const requestedQuery=new URLSearchParams(location.search).get('q') || '';
   const daily=resolveDailyCard(catalog,{storage,date:new Date(),seed:manifest.daily_seed});
   const card=requested?getCard(catalog,requested):daily.card;
   if(!card) throw new Error('요청한 검증 카드를 찾을 수 없습니다.');
   renderCard(catalog,card,manifest,storage);
-  if(['today','discover','journal','collection'].includes(requestedSpace)) showSpace(requestedSpace);
+  if(requestedQuery) showSpace('discover');
+  else if(['today','discover','journal','collection'].includes(requestedSpace)) showSpace(requestedSpace);
   else showSpace('today');
 
   qsa('[data-space]').forEach((button)=>button.addEventListener('click',()=>{
@@ -311,9 +423,22 @@ async function main() {
     requestAnimationFrame(()=>qs('#reflection-note').focus());
   });
   const tags=[...new Set(catalog.cards.flatMap((x)=>x.semantic_tags))].sort();
-  const tagRoot=qs('#guided-tags'); for(const tag of tags){ const button=document.createElement('button'); button.type='button'; button.className='tag-button'; button.textContent=tag; button.addEventListener('click',()=>renderResultList(catalog,qs('#search-results'),discoverByTag(catalog,tag))); tagRoot.append(button); }
-  qs('#search-form').addEventListener('submit',(event)=>{ event.preventDefault(); renderResultList(catalog,qs('#search-results'),searchCards(catalog,qs('#search-input').value)); });
+  const tagRoot=qs('#guided-tags'); for(const tag of tags){ const button=document.createElement('button'); button.type='button'; button.className='tag-button'; button.textContent=tag; button.addEventListener('click',()=>{ renderResultList(catalog,qs('#search-results'),discoverByTag(catalog,tag)); qs('#research-search-results').replaceChildren(); syncDiscoverQuery(''); }); tagRoot.append(button); }
   await hydrateResearchDiscovery();
+  const searchInput=qs('#search-input');
+  const runSearch=(query)=>{
+    const publicRows=searchCards(catalog,query);
+    const researchMatches=renderResearchSearch(query);
+    renderResultList(
+      catalog,
+      qs('#search-results'),
+      publicRows,
+      researchMatches ? '정식 카드에서는 찾지 못했습니다. 아래 연구 중인 마음말에서 관련 표현을 찾았습니다.' : '조건에 맞는 카드를 찾지 못했습니다.'
+    );
+    syncDiscoverQuery(query);
+  };
+  qs('#search-form').addEventListener('submit',(event)=>{ event.preventDefault(); runSearch(searchInput.value); });
+  if(requestedQuery){ searchInput.value=requestedQuery; runSearch(requestedQuery); }
 
   const dailyResolver=()=>resolveDailyCard(catalog,{storage,date:new Date(),seed:manifest.daily_seed}).card;
   const api=createReadOnlyAgentApi({catalog,clock:()=>new Date(),dailySeed:manifest.daily_seed,dailyResolver,dataSnapshotVersion:manifest.snapshot_version});

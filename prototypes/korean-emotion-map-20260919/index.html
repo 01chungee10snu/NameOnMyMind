@@ -47,11 +47,24 @@
 <script type="module">
 const data=await fetch('../../content/korean-expression/emotion-map-v1.json').then(r=>r.json());
 const familyBox=document.querySelector('#families'), termsBox=document.querySelector('#terms'), selectedBox=document.querySelector('#selected'), contrastBox=document.querySelector('#contrast'), reason=document.querySelector('#reason'), sentence=document.querySelector('#sentence'), familyTitle=document.querySelector('#family-title');
-let familyId='KF08', level='all', selectedExpression='서운하다', verifiedOnly=false;
+const params=new URLSearchParams(location.search);
+const requestedFamily=params.get('family');
+const requestedTerm=params.get('term');
+const requestedTermData=data.terms.find(x=>x.expression===requestedTerm);
+let familyId=requestedTermData?.family_id || (data.families.some(x=>x.id===requestedFamily)?requestedFamily:'KF08');
+let selectedExpression=requestedTermData?.expression || (familyId==='KF08'?'서운하다':(data.terms.find(x=>x.family_id===familyId)?.expression||''));
+let level='all', verifiedOnly=params.get('verified')==='1';
 const familyMap=new Map(data.families.map(x=>[x.id,x]));
+function syncUrl(){
+  const url=new URL(location.href);
+  url.searchParams.set('family',familyId);
+  if(selectedExpression)url.searchParams.set('term',selectedExpression);else url.searchParams.delete('term');
+  if(verifiedOnly)url.searchParams.set('verified','1');else url.searchParams.delete('verified');
+  history.replaceState(null,'',url);
+}
 function renderFamilies(){
   familyBox.innerHTML='';
-  data.families.forEach(f=>{const b=document.createElement('button');b.className='chip';b.textContent=f.label;b.setAttribute('aria-pressed',String(f.id===familyId));b.onclick=()=>{familyId=f.id;const first=data.terms.find(x=>x.family_id===familyId);selectedExpression=first?.expression||'';renderAll();};familyBox.append(b);});
+  data.families.forEach(f=>{const b=document.createElement('button');b.className='chip';b.textContent=f.label;b.setAttribute('aria-pressed',String(f.id===familyId));b.onclick=()=>{familyId=f.id;const first=data.terms.find(x=>x.family_id===familyId&&(!verifiedOnly||x.status==='SOURCE_VERIFIED'))||data.terms.find(x=>x.family_id===familyId);selectedExpression=first?.expression||'';syncUrl();renderAll();};familyBox.append(b);});
 }
 function renderTerms(){
   const f=familyMap.get(familyId);familyTitle.textContent=f.label;
@@ -64,7 +77,7 @@ function renderTerms(){
     return false;
   }
   if(!rows.some(x=>x.expression===selectedExpression)) selectedExpression=rows[0].expression;
-  rows.forEach(t=>{const b=document.createElement('button');b.className='term';b.setAttribute('aria-pressed',String(t.expression===selectedExpression));b.innerHTML='<strong>'+t.expression+'</strong><small>Level '+t.level+' · '+(t.status==='SOURCE_VERIFIED'?'근거 연결':'탐색 중')+'</small>';b.onclick=()=>{selectedExpression=t.expression;renderTerms();renderSelected();renderContrast();renderSentence();};termsBox.append(b);});
+  rows.forEach(t=>{const b=document.createElement('button');b.className='term';b.setAttribute('aria-pressed',String(t.expression===selectedExpression));b.innerHTML='<strong>'+t.expression+'</strong><small>Level '+t.level+' · '+(t.status==='SOURCE_VERIFIED'?'근거 연결':'탐색 중')+'</small>';b.onclick=()=>{selectedExpression=t.expression;syncUrl();renderTerms();renderSelected();renderContrast();renderSentence();};termsBox.append(b);});
   selectedBox.hidden=false;
   return true;
 }
@@ -86,8 +99,10 @@ function renderSentence(){
   sentence.textContent=text?'지금 내 마음은 ‘'+selectedExpression+'’라는 말에 가깝다. 왜냐하면 '+text+' 때문이다.':'지금 내 마음은 ‘'+selectedExpression+'’라는 말에 가깝다.';
 }
 function renderAll(){renderFamilies();if(renderTerms()){renderSelected();renderContrast();renderSentence();}}
-document.querySelectorAll('.level[data-level]').forEach(b=>b.onclick=()=>{level=b.dataset.level;document.querySelectorAll('.level[data-level]').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));if(renderTerms()){renderSelected();renderContrast();renderSentence();}});
-document.querySelector('#verified-only').onclick=()=>{verifiedOnly=!verifiedOnly;document.querySelector('#verified-only').setAttribute('aria-pressed',String(verifiedOnly));if(renderTerms()){renderSelected();renderContrast();renderSentence();}};
-reason.addEventListener('input',renderSentence);renderAll();
+document.querySelectorAll('.level[data-level]').forEach(b=>b.onclick=()=>{level=b.dataset.level;document.querySelectorAll('.level[data-level]').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));if(renderTerms()){syncUrl();renderSelected();renderContrast();renderSentence();}});
+const verifiedButton=document.querySelector('#verified-only');verifiedButton.setAttribute('aria-pressed',String(verifiedOnly));
+verifiedButton.onclick=()=>{verifiedOnly=!verifiedOnly;verifiedButton.setAttribute('aria-pressed',String(verifiedOnly));if(renderTerms()){syncUrl();renderSelected();renderContrast();renderSentence();}else syncUrl();};
+reason.addEventListener('input',renderSentence);renderAll();syncUrl();
+requestAnimationFrame(()=>document.querySelector('.chip[aria-pressed="true"]')?.scrollIntoView({behavior:'auto',inline:'center',block:'nearest'}));
 </script>
 </body></html>

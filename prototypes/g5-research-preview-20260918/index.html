@@ -61,9 +61,13 @@
 </div>
 <script>
   const deck=document.querySelector('#deck'); const cards=[...deck.querySelectorAll('.card')]; const dots=document.querySelector('#dots'); const current=document.querySelector('#current');
+  const requestedCard=new URLSearchParams(location.search).get('card');
+  const syncCardUrl=(card)=>{const url=new URL(location.href);url.searchParams.set('card',card.dataset.card);history.replaceState(null,'',url);};
   cards.forEach((card,i)=>{const b=document.createElement('button');b.type='button';b.setAttribute('aria-label',`${i+1}번째 카드`);b.addEventListener('click',()=>card.scrollIntoView({behavior:'smooth',inline:'center',block:'nearest'}));dots.append(b);});
-  const buttons=[...dots.children]; const setActive=(i)=>{current.textContent=String(i+1);buttons.forEach((b,j)=>b.setAttribute('aria-current',String(i===j)));};setActive(0);
-  const observer=new IntersectionObserver(entries=>{const visible=entries.filter(x=>x.isIntersecting).sort((a,b)=>b.intersectionRatio-a.intersectionRatio)[0];if(visible){const i=cards.indexOf(visible.target);if(i>=0)setActive(i);}}, {root:deck,threshold:[.45,.6,.75]});cards.forEach(c=>observer.observe(c));
+  const buttons=[...dots.children]; const setActive=(i,{syncUrl=false}={})=>{current.textContent=String(i+1);buttons.forEach((b,j)=>b.setAttribute('aria-current',String(i===j)));if(syncUrl)syncCardUrl(cards[i]);};
+  const initialIndex=Math.max(0,cards.findIndex(card=>card.dataset.card===requestedCard));setActive(initialIndex);
+  const observer=new IntersectionObserver(entries=>{const visible=entries.filter(x=>x.isIntersecting).sort((a,b)=>b.intersectionRatio-a.intersectionRatio)[0];if(visible){const i=cards.indexOf(visible.target);if(i>=0)setActive(i,{syncUrl:true});}}, {root:deck,threshold:[.45,.6,.75]});cards.forEach(c=>observer.observe(c));
+  if(initialIndex>0||requestedCard){requestAnimationFrame(()=>cards[initialIndex].scrollIntoView({behavior:'auto',inline:'center',block:'nearest'}));}
 </script>
 </body>
 </html>
