@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "track_id": "KOREAN_EMOTION_ARTICULATION",
+  "status": "V1_RESEARCH_MAP_VALIDATED",
+  "recorded_at": "2026-09-19",
+  "source_commit": "3e8d441f159a3d049e52a049a90adfa6fa649cdc",
+  "scope": {
+    "emotion_families": 22,
+    "terms": 151,
+    "contrast_sets": 16,
+    "source_verified_terms": 30,
+    "discovery_only_terms": 121,
+    "source_verified_contrast_sets": [
+      "KC001",
+      "KC002",
+      "KC003",
+      "KC004",
+      "KC007",
+      "KC009",
+      "KC014"
+    ],
+    "learning_levels": [
+      1,
+      2,
+      3
+    ]
+  },
+  "learning_model": [
+    "먼저 지금 마음과 가장 가까운 감정 영역을 고른다.",
+    "같은 영역의 가까운 표현들을 비교해 가장 맞는 말을 찾는다.",
+    "감정의 강도와 원인, 관계 맥락, 몸에서 느껴지는 신호를 함께 살핀다.",
+    "마지막에는 ‘나는 ___해서 ___하다’처럼 자신의 경험을 한 문장으로 표현한다.",
+    "어려운 말이 쉬운 말보다 우월하다고 가르치지 않고, 상황에 더 잘 맞는 표현을 선택하는 힘을 기른다."
+  ],
+  "pedagogical_boundary": {
+    "goal": "정확한 감정 알아차림, 비슷한 감정 구별, 자기 문장 표현",
+    "punitive_language_policing": false,
+    "difficult_word_superiority": false,
+    "diagnostic_use": false,
+    "personality_labeling": false,
+    "skip_allowed": true
+  },
+  "prototype": {
+    "path": "prototypes/korean-emotion-map-20260919/index.html",
+    "viewport": "390x844",
+    "http": "PASS",
+    "data_http": "PASS",
+    "screenshot": "reports/ui/mobile-first-20260919/korean-emotion-map/preview-390x844.png",
+    "default_family": "관계의 상처",
+    "default_expression": "서운하다"
+  },
+  "clean_checkout": {
+    "status": "PASS",
+    "tested_commit": "3e8d441f159a3d049e52a049a90adfa6fa649cdc",
+    "npm_ci": "PASS",
+    "npm_vulnerabilities": 0,
+    "korean_language_validation": "PASS",
+    "g1": "12/12 PASS",
+    "g2": "5/5 PASS",
+    "g3": "9/9 PASS",
+    "g4": "16/16 PASS",
+    "g5_selection": "8/8 PASS",
+    "privacy_violations": 0,
+    "git_status": "CLEAN"
+  },
+  "public_boundary": {
+    "public_cards": [
+      "C0001",
+      "C0002",
+      "C0003",
+      "C0004",
+      "C0005"
+    ],
+    "runtime_snapshot": "a1c474f884d64648",
+    "content_snapshot": "867d91c0737e29c7",
+    "korean_emotion_map_published": false
+  },
+  "sha256": {
+    "content/korean-expression/README.md": "80236d7c4117fa4a6de16253a8c9ae9a49c2cdc1efb9dc0e5de07a3a7d2aa0d6",
+    "content/korean-expression/emotion-map-v1.json": "7d86637697ce0ab87ec29b814c316e953867603f8313ff3a34619122670f78fd",
+    "content/korean-expression/evidence/registry.json": "5b84e467f9f28588dc5e7e36474261ce00218be61b5b29f0eb13702047c4f037",
+    "docs/architecture/KOREAN_EMOTION_ARTICULATION.md": "9373e23afe75feb9014bf3fea0a2a44f72eba493eea8670b1601edcd01b58986",
+    "prototypes/korean-emotion-map-20260919/index.html": "b81cb7fc4d71611af7b76f7e888fa68b4f0f40651a0bdd789a3b7e94f5074390",
+    "reports/ui/mobile-first-20260919/korean-emotion-map/QA.md": "0b62cdb13bb450bae01aae6fbd3f9ae33ca3c477d6ac340c295935669577a2a5",
+    "reports/ui/mobile-first-20260919/korean-emotion-map/preview-390x844.png": "d512c851dd04999731d08bb1371ae54f9db865648866cd2edd2d3b5f4ac91320",
+    "schema/korean-emotion-map.schema.json": "80e4fb0027b3306060e0ec47516386ee5092e474beb352974d63c40e5fcb8f83",
+    "scripts/korean/validate-emotion-map.mjs": "92f5447e0d4e5248b04f15bc9972d7489ec9010fa40ac3f6797cab728cc8f41e"
+  }
+}
