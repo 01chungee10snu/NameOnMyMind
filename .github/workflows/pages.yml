@@ -53,7 +53,17 @@ jobs:
           if (preview.preview_card_count !== 16 || stagedPreview.card_count !== 16) throw new Error('Unexpected research preview card count');
           if (stagedPreview.cards.some(card => 'research_record' in card)) throw new Error('Internal research record path leaked into staged manifest');
           if (!fs.existsSync('public/preview/index.html')) throw new Error('Short preview alias missing');
-          console.log(JSON.stringify({status:'PASS',card_ids:build.card_ids,preview_card_count:preview.preview_card_count,snapshot_version:build.snapshot_version,external_publish_authorized:true},null,2));
+          const korean = preview.korean_emotion_map;
+          if (!korean || korean.product_release_authorized) throw new Error('Korean research-map release boundary invalid');
+          if (korean.family_count !== 22 || korean.term_count !== 151 || korean.source_verified_term_count !== 30 || korean.contrast_set_count !== 16) {
+            throw new Error('Unexpected Korean emotion-map research counts');
+          }
+          for (const file of [
+            'public/korean/index.html',
+            'public/prototypes/korean-emotion-map-20260919/index.html',
+            'public/content/korean-expression/emotion-map-v1.json',
+          ]) if (!fs.existsSync(file)) throw new Error(`Korean research-map staged file missing: ${file}`);
+          console.log(JSON.stringify({status:'PASS',card_ids:build.card_ids,preview_card_count:preview.preview_card_count,korean_emotion_map:korean,snapshot_version:build.snapshot_version,external_publish_authorized:true},null,2));
           NODE
       - name: Check private leakage
         run: npm run check:privacy

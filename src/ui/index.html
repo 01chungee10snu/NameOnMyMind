@@ -109,6 +109,34 @@
       </form>
       <div id="guided-tags" class="tag-list" aria-label="가이드 탐색"></div>
       <div id="search-results" aria-live="polite"></div>
+
+      <section id="research-discovery" class="research-discovery" hidden aria-labelledby="research-discovery-title">
+        <header class="research-section-heading">
+          <div>
+            <p class="section-kicker">RESEARCH PREVIEW</p>
+            <h2 id="research-discovery-title">아직 다듬고 있는 마음말</h2>
+          </div>
+          <span class="research-status-pill">연구 후보</span>
+        </header>
+        <p class="research-intro">정식 카드와 분리된 탐색 공간입니다. 의미·발음·권리·문화 맥락 검토가 끝나기 전까지 제품 카드로 취급하지 않습니다.</p>
+
+        <section class="research-lane" id="world-research-lane" hidden aria-labelledby="world-research-title">
+          <div class="research-lane-heading">
+            <div><span class="research-lane-kicker">WORLD WORDS</span><h3 id="world-research-title">다른 언어의 마음말</h3></div>
+            <a id="world-research-link" class="text-link" href="./preview/">모두 보기</a>
+          </div>
+          <div id="world-research-cards" class="research-card-strip" aria-label="외국어 연구 카드"></div>
+        </section>
+
+        <section class="research-lane" id="korean-research-lane" hidden aria-labelledby="korean-research-title">
+          <div class="research-lane-heading">
+            <div><span class="research-lane-kicker">KOREAN MAP</span><h3 id="korean-research-title">한국어 마음 지도</h3></div>
+            <a id="korean-research-link" class="text-link" href="./prototypes/korean-emotion-map-20260919/">지도 열기</a>
+          </div>
+          <div id="korean-research-summary" class="korean-research-summary"></div>
+          <div id="korean-family-strip" class="research-chip-strip" aria-label="한국어 감정 영역"></div>
+        </section>
+      </section>
     </section>
 
     <section class="space" id="space-collection" data-space-panel="collection" hidden aria-labelledby="collection-title">

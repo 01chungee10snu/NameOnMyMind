@@ -8,6 +8,10 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const OUT = path.join(ROOT, 'public');
 const SOURCE_DIR = path.join(ROOT, 'prototypes/g5-research-preview-20260918');
 const TARGET_DIR = path.join(OUT, 'prototypes/g5-research-preview-20260918');
+const KOREAN_SOURCE_DIR = path.join(ROOT, 'prototypes/korean-emotion-map-20260919');
+const KOREAN_TARGET_DIR = path.join(OUT, 'prototypes/korean-emotion-map-20260919');
+const KOREAN_DATA_SOURCE = path.join(ROOT, 'content/korean-expression/emotion-map-v1.json');
+const KOREAN_DATA_TARGET = path.join(OUT, 'content/korean-expression/emotion-map-v1.json');
 const PREVIEW_AUTHORIZED = process.env.NAMEONMYMIND_RESEARCH_PREVIEW_PUBLISH_AUTHORIZED === '1';
 
 if (!PREVIEW_AUTHORIZED) {
@@ -41,8 +45,22 @@ for (const card of sourceManifest.cards) {
   if (actualSha !== card.sha256) throw new Error(`${card.card_id} SHA mismatch.`);
 }
 
+if (!fs.existsSync(path.join(KOREAN_SOURCE_DIR, 'index.html'))) throw new Error('Korean emotion map prototype missing.');
+if (!fs.existsSync(KOREAN_DATA_SOURCE)) throw new Error('Korean emotion map data missing.');
+const koreanMap = JSON.parse(fs.readFileSync(KOREAN_DATA_SOURCE, 'utf8'));
+if (koreanMap.track_id !== 'KOREAN_EMOTION_ARTICULATION') throw new Error('Korean emotion map track_id mismatch.');
+if (!Array.isArray(koreanMap.families) || !Array.isArray(koreanMap.terms) || !Array.isArray(koreanMap.contrast_sets)) {
+  throw new Error('Korean emotion map shape invalid.');
+}
+const koreanVerifiedCount = koreanMap.terms.filter((term) => term.status === 'SOURCE_VERIFIED').length;
+if (koreanVerifiedCount === 0) throw new Error('Korean emotion map has no source-verified terms.');
+
 fs.mkdirSync(TARGET_DIR, { recursive: true });
 fs.copyFileSync(path.join(SOURCE_DIR, 'index.html'), path.join(TARGET_DIR, 'index.html'));
+fs.mkdirSync(KOREAN_TARGET_DIR, { recursive: true });
+fs.copyFileSync(path.join(KOREAN_SOURCE_DIR, 'index.html'), path.join(KOREAN_TARGET_DIR, 'index.html'));
+fs.mkdirSync(path.dirname(KOREAN_DATA_TARGET), { recursive: true });
+fs.copyFileSync(KOREAN_DATA_SOURCE, KOREAN_DATA_TARGET);
 
 const stagedCards = sourceManifest.cards.map(({ research_record, ...card }) => card);
 const stagedManifest = {
@@ -78,6 +96,12 @@ fs.writeFileSync(
   path.join(aliasDir, 'index.html'),
   '<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>NameOnMyMind Preview</title><meta http-equiv="refresh" content="0; url=../prototypes/g5-research-preview-20260918/"><link rel="canonical" href="../prototypes/g5-research-preview-20260918/"><p><a href="../prototypes/g5-research-preview-20260918/">NameOnMyMind Research Preview 열기</a></p>\n'
 );
+const koreanAliasDir = path.join(OUT, 'korean');
+fs.mkdirSync(koreanAliasDir, { recursive: true });
+fs.writeFileSync(
+  path.join(koreanAliasDir, 'index.html'),
+  '<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>NameOnMyMind Korean Map</title><meta http-equiv="refresh" content="0; url=../prototypes/korean-emotion-map-20260919/"><link rel="canonical" href="../prototypes/korean-emotion-map-20260919/"><p><a href="../prototypes/korean-emotion-map-20260919/">한국어 마음 지도 열기</a></p>\n'
+);
 
 const stagedEvidence = {
   schema_version: '1.0.0',
@@ -89,6 +113,17 @@ const stagedEvidence = {
   preview_card_count: ids.length,
   preview_path: 'prototypes/g5-research-preview-20260918/',
   alias_path: 'preview/',
+  korean_emotion_map: {
+    track_id: koreanMap.track_id,
+    family_count: koreanMap.families.length,
+    term_count: koreanMap.terms.length,
+    source_verified_term_count: koreanVerifiedCount,
+    contrast_set_count: koreanMap.contrast_sets.length,
+    preview_path: 'prototypes/korean-emotion-map-20260919/',
+    data_path: 'content/korean-expression/emotion-map-v1.json',
+    alias_path: 'korean/',
+    product_release_authorized: false,
+  },
 };
 fs.writeFileSync(path.join(OUT, 'RESEARCH_PREVIEW_MANIFEST.json'), JSON.stringify(stagedEvidence, null, 2) + '\n');
 

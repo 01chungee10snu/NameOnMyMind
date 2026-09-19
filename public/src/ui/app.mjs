@@ -11,6 +11,9 @@ async function readJson(url) {
   if (!response.ok) throw new Error(`Failed to load ${url}: HTTP ${response.status}`);
   return response.json();
 }
+async function readJsonOptional(url) {
+  try { return await readJson(url); } catch { return null; }
+}
 function safeExternalLink(url, label) {
   const a = document.createElement('a');
   a.href = url; a.target = '_blank'; a.rel = 'noopener noreferrer'; a.textContent = label;
@@ -84,6 +87,98 @@ function renderResultList(catalog, root, rows, emptyMessage = '조건에 맞는 
   for (const row of rows) list.append(renderCardTile(catalog, row.card, row.rationale || row.card.front.poetic_line));
   root.append(list);
 }
+function renderResearchWorldCard(card, previewBase) {
+  const link = document.createElement('a');
+  link.className = 'research-preview-card';
+  link.href = './preview/';
+  link.setAttribute('aria-label', `${card.term}, ${card.language} 연구 미리보기`);
+
+  const media = document.createElement('span');
+  media.className = 'research-preview-media';
+  const img = document.createElement('img');
+  img.src = new URL(card.image, previewBase).href;
+  img.alt = '';
+  img.loading = 'lazy';
+  img.decoding = 'async';
+  media.append(img);
+
+  const copy = document.createElement('span');
+  copy.className = 'research-preview-copy';
+  const badge = document.createElement('span');
+  badge.className = 'research-mini-badge';
+  badge.textContent = 'RESEARCH';
+  const term = document.createElement('strong');
+  term.className = 'research-preview-term';
+  term.textContent = card.term;
+  const language = document.createElement('span');
+  language.className = 'research-preview-language';
+  language.textContent = card.language;
+  const rendering = document.createElement('span');
+  rendering.className = 'research-preview-rendering';
+  rendering.textContent = card.korean_rendering;
+  copy.append(badge, term, language, rendering);
+  link.append(media, copy);
+  return link;
+}
+
+function renderKoreanResearchSummary(data) {
+  const root = qs('#korean-research-summary');
+  const verified = data.terms.filter((term) => term.status === 'SOURCE_VERIFIED');
+  root.replaceChildren();
+
+  const stats = document.createElement('p');
+  stats.className = 'korean-map-stats';
+  stats.textContent = `${data.families.length}개 감정 영역 · ${data.terms.length}개 표현 · 근거 연결 ${verified.length}개 · 비교 ${data.contrast_sets.length}세트`;
+  root.append(stats);
+
+  const sample = document.createElement('div');
+  sample.className = 'verified-sample-row';
+  for (const term of verified.slice(0, 8)) {
+    const chip = document.createElement('span');
+    chip.textContent = term.expression;
+    sample.append(chip);
+  }
+  root.append(sample);
+
+  const familyStrip = qs('#korean-family-strip');
+  familyStrip.replaceChildren();
+  for (const family of data.families) {
+    const chip = document.createElement('a');
+    chip.href = './prototypes/korean-emotion-map-20260919/';
+    chip.className = 'research-family-chip';
+    chip.textContent = family.label;
+    chip.setAttribute('aria-label', `${family.label} 영역을 한국어 마음 지도에서 보기`);
+    familyStrip.append(chip);
+  }
+}
+
+async function hydrateResearchDiscovery() {
+  const previewManifestUrl = './prototypes/g5-research-preview-20260918/manifest.json';
+  const koreanMapUrl = './content/korean-expression/emotion-map-v1.json';
+  const [preview, korean] = await Promise.all([
+    readJsonOptional(previewManifestUrl),
+    readJsonOptional(koreanMapUrl),
+  ]);
+
+  let hasResearch = false;
+  if (preview?.status === 'RESEARCH_PREVIEW_ONLY' && Array.isArray(preview.cards) && preview.cards.length) {
+    const lane = qs('#world-research-lane');
+    const root = qs('#world-research-cards');
+    const previewBase = new URL('./prototypes/g5-research-preview-20260918/', document.baseURI);
+    root.replaceChildren(...preview.cards.map((card) => renderResearchWorldCard(card, previewBase)));
+    lane.hidden = false;
+    hasResearch = true;
+  }
+
+  if (korean?.track_id === 'KOREAN_EMOTION_ARTICULATION' && Array.isArray(korean.families) && Array.isArray(korean.terms)) {
+    renderKoreanResearchSummary(korean);
+    qs('#korean-research-lane').hidden = false;
+    hasResearch = true;
+  }
+
+  qs('#research-discovery').hidden = !hasResearch;
+}
+
 function renderCollection(catalog, storage) {
   const collection = getLocalCollection(catalog, storage);
   const favorites = qs('#favorite-list'); favorites.replaceChildren();
@@ -218,6 +313,7 @@ async function main() {
   const tags=[...new Set(catalog.cards.flatMap((x)=>x.semantic_tags))].sort();
   const tagRoot=qs('#guided-tags'); for(const tag of tags){ const button=document.createElement('button'); button.type='button'; button.className='tag-button'; button.textContent=tag; button.addEventListener('click',()=>renderResultList(catalog,qs('#search-results'),discoverByTag(catalog,tag))); tagRoot.append(button); }
   qs('#search-form').addEventListener('submit',(event)=>{ event.preventDefault(); renderResultList(catalog,qs('#search-results'),searchCards(catalog,qs('#search-input').value)); });
+  await hydrateResearchDiscovery();
 
   const dailyResolver=()=>resolveDailyCard(catalog,{storage,date:new Date(),seed:manifest.daily_seed}).card;
   const api=createReadOnlyAgentApi({catalog,clock:()=>new Date(),dailySeed:manifest.daily_seed,dailyResolver,dataSnapshotVersion:manifest.snapshot_version});

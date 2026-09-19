@@ -114,3 +114,32 @@ test('G5 final cutover targets 45 foreign plus 5 Korean anchors while current ca
     assert.equal(fs.existsSync(path.join(ROOT, 'public/data/cards', `${id}.json`)), false);
   }
 });
+
+test('app discovery exposes research surfaces without promoting research candidates', () => {
+  const ui = readText('src/ui/index.html');
+  const app = readText('src/ui/app.mjs');
+  const stage = readText('scripts/stage-research-preview.mjs');
+  const korean = readJson('content/korean-expression/emotion-map-v1.json');
+  const sourcePreview = readJson('prototypes/g5-research-preview-20260918/manifest.json');
+
+  assert.match(ui, /RESEARCH PREVIEW/);
+  assert.match(ui, /아직 다듬고 있는 마음말/);
+  assert.match(ui, /WORLD WORDS/);
+  assert.match(ui, /KOREAN MAP/);
+  assert.match(app, /hydrateResearchDiscovery/);
+  assert.match(app, /readJsonOptional/);
+  assert.match(stage, /product_release_authorized: false/);
+  assert.equal(sourcePreview.status, 'RESEARCH_PREVIEW_ONLY');
+  assert.equal(sourcePreview.public_release_authorized, false);
+  assert.equal(sourcePreview.cards.length, 16);
+  assert.ok(sourcePreview.cards.every((card) => card.lifecycle_state === 'HOLD'));
+
+  assert.equal(korean.track_id, 'KOREAN_EMOTION_ARTICULATION');
+  assert.equal(korean.families.length, 22);
+  assert.equal(korean.terms.length, 151);
+  assert.equal(korean.terms.filter((term) => term.status === 'SOURCE_VERIFIED').length, 30);
+  assert.equal(korean.contrast_sets.length, 16);
+
+  const manifest = readJson('public/BUILD_MANIFEST.json');
+  assert.deepEqual(manifest.card_ids, ['C0001','C0002','C0003','C0004','C0005']);
+});
