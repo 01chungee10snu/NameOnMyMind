@@ -140,6 +140,20 @@ function renderKoreanResearchSummary(data) {
   stats.textContent = `${data.families.length}개 감정 영역 · ${data.terms.length}개 표현 · 근거 연결 ${verified.length}개 · 비교 ${data.contrast_sets.length}세트`;
   root.append(stats);
 
+  const guideLink = document.createElement('a');
+  guideLink.className = 'korean-guide-link';
+  guideLink.href = './prototypes/korean-emotion-map-20260919/?guide=1';
+  const guideTitle = document.createElement('strong');
+  guideTitle.textContent = '상황에서 마음말 찾기';
+  const guideCopy = document.createElement('span');
+  guideCopy.textContent = '상황을 적고 비슷한 표현의 차이를 직접 비교해 보세요.';
+  const guideArrow = document.createElement('span');
+  guideArrow.className = 'korean-guide-arrow';
+  guideArrow.setAttribute('aria-hidden', 'true');
+  guideArrow.textContent = '›';
+  guideLink.append(guideTitle, guideCopy, guideArrow);
+  root.append(guideLink);
+
   const sample = document.createElement('div');
   sample.className = 'verified-sample-row';
   for (const term of verified.slice(0, 8)) {
