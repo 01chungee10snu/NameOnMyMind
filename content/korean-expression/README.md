@@ -19,7 +19,7 @@
 - 151개 한국어 표현
 - 16개 비슷한 말 비교 세트
 - Level 1–3 점진 노출
-- Source-verified 99 / Discovery-only 52 구분
+- Source-verified 112 / Discovery-only 39 구분
 - 근거 연결 완료 비교 세트 16개 전체
 - 공식 표제어 정규화: `샘나다` 탐색표현 → `샘내다`
 
@@ -88,7 +88,8 @@
 
 - Level 1 ‘기본’ 38개는 모두 source-first 검증 완료
 - Level 2 ‘확장’은 72개 중 55개 검증 완료, 공식 표제어/관용구 근거를 아직 확정하지 못한 17개는 DISCOVERY_ONLY 유지
-- 남은 Discovery-only 52개는 Level 2 HOLD 17개와 Level 3 ‘섬세’ 35개이며, 근거를 억지로 맞추지 않고 source-first로 순차 검증
+- Level 3 ‘섬세’는 41개 중 19개 검증 완료, 공식 표제어·정서 관련 뜻풀이를 확인하지 못한 22개는 DISCOVERY_ONLY 유지
+- 남은 Discovery-only 39개는 Level 2 HOLD 17개 + Level 3 HOLD 22개이며, 근거를 억지로 맞추지 않고 source-first로 순차 검증
 - 16개 검증 비교세트를 실제 상황 예문·말 고르기 학습으로 확장
 - 어휘 깊이(기본/확장/섬세)와 학령기 근거를 별도 축으로 관리
 - 3~6학년 연구 직접 연결 21개 + 관련형 1개를 별도 표시하며, 이를 1~2학년 적합성 근거로 일반화하지 않음

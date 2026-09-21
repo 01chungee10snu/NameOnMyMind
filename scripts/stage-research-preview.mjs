@@ -18,6 +18,8 @@ const KOREAN_LEVEL1_SOURCE = path.join(ROOT, 'content/korean-expression/evidence
 const KOREAN_LEVEL1_TARGET = path.join(OUT, 'content/korean-expression/evidence/level1-source-v1.json');
 const KOREAN_LEVEL2_SOURCE = path.join(ROOT, 'content/korean-expression/evidence/level2-exact-source-v1.json');
 const KOREAN_LEVEL2_TARGET = path.join(OUT, 'content/korean-expression/evidence/level2-exact-source-v1.json');
+const KOREAN_LEVEL3_SOURCE = path.join(ROOT, 'content/korean-expression/evidence/level3-exact-source-v1.json');
+const KOREAN_LEVEL3_TARGET = path.join(OUT, 'content/korean-expression/evidence/level3-exact-source-v1.json');
 const PREVIEW_AUTHORIZED = process.env.NAMEONMYMIND_RESEARCH_PREVIEW_PUBLISH_AUTHORIZED === '1';
 
 if (!PREVIEW_AUTHORIZED) {
@@ -56,6 +58,7 @@ if (!fs.existsSync(KOREAN_DATA_SOURCE)) throw new Error('Korean emotion map data
 if (!fs.existsSync(KOREAN_SCHOOL_SOURCE)) throw new Error('Korean school-age evidence missing.');
 if (!fs.existsSync(KOREAN_LEVEL1_SOURCE)) throw new Error('Korean Level 1 evidence missing.');
 if (!fs.existsSync(KOREAN_LEVEL2_SOURCE)) throw new Error('Korean Level 2 evidence missing.');
+if (!fs.existsSync(KOREAN_LEVEL3_SOURCE)) throw new Error('Korean Level 3 evidence missing.');
 const koreanMap = JSON.parse(fs.readFileSync(KOREAN_DATA_SOURCE, 'utf8'));
 if (koreanMap.track_id !== 'KOREAN_EMOTION_ARTICULATION') throw new Error('Korean emotion map track_id mismatch.');
 if (!Array.isArray(koreanMap.families) || !Array.isArray(koreanMap.terms) || !Array.isArray(koreanMap.contrast_sets)) {
@@ -67,6 +70,8 @@ const koreanSchoolAgeRelatedCount = koreanMap.terms.filter((term) => term.learni
 const koreanLevel1VerifiedCount = koreanMap.terms.filter((term) => term.level === 1 && term.status === 'SOURCE_VERIFIED').length;
 const koreanLevel2VerifiedCount = koreanMap.terms.filter((term) => term.level === 2 && term.status === 'SOURCE_VERIFIED').length;
 const koreanLevel2DiscoveryCount = koreanMap.terms.filter((term) => term.level === 2 && term.status === 'DISCOVERY_ONLY').length;
+const koreanLevel3VerifiedCount = koreanMap.terms.filter((term) => term.level === 3 && term.status === 'SOURCE_VERIFIED').length;
+const koreanLevel3DiscoveryCount = koreanMap.terms.filter((term) => term.level === 3 && term.status === 'DISCOVERY_ONLY').length;
 if (koreanVerifiedCount === 0) throw new Error('Korean emotion map has no source-verified terms.');
 
 fs.mkdirSync(TARGET_DIR, { recursive: true });
@@ -79,6 +84,7 @@ fs.mkdirSync(path.dirname(KOREAN_SCHOOL_TARGET), { recursive: true });
 fs.copyFileSync(KOREAN_SCHOOL_SOURCE, KOREAN_SCHOOL_TARGET);
 fs.copyFileSync(KOREAN_LEVEL1_SOURCE, KOREAN_LEVEL1_TARGET);
 fs.copyFileSync(KOREAN_LEVEL2_SOURCE, KOREAN_LEVEL2_TARGET);
+fs.copyFileSync(KOREAN_LEVEL3_SOURCE, KOREAN_LEVEL3_TARGET);
 
 const stagedCards = sourceManifest.cards.map(({ research_record, ...card }) => card);
 const stagedManifest = {
@@ -139,6 +145,8 @@ const stagedEvidence = {
     level1_verified_term_count: koreanLevel1VerifiedCount,
     level2_verified_term_count: koreanLevel2VerifiedCount,
     level2_discovery_term_count: koreanLevel2DiscoveryCount,
+    level3_verified_term_count: koreanLevel3VerifiedCount,
+    level3_discovery_term_count: koreanLevel3DiscoveryCount,
     school_age_direct_term_count: koreanSchoolAgeDirectCount,
     school_age_related_term_count: koreanSchoolAgeRelatedCount,
     contrast_set_count: koreanMap.contrast_sets.length,
@@ -147,6 +155,7 @@ const stagedEvidence = {
     school_age_evidence_path: 'content/korean-expression/evidence/school-age-v1.json',
     level1_evidence_path: 'content/korean-expression/evidence/level1-source-v1.json',
     level2_evidence_path: 'content/korean-expression/evidence/level2-exact-source-v1.json',
+    level3_evidence_path: 'content/korean-expression/evidence/level3-exact-source-v1.json',
     alias_path: 'korean/',
     product_release_authorized: false,
   },

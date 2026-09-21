@@ -147,9 +147,11 @@ function renderKoreanResearchSummary(data) {
   stats.className = 'korean-map-stats';
   const level1 = data.terms.filter((term) => term.level === 1);
   const level2 = data.terms.filter((term) => term.level === 2);
+  const level3 = data.terms.filter((term) => term.level === 3);
   const level1Verified = level1.filter((term) => term.status === 'SOURCE_VERIFIED').length;
   const level2Verified = level2.filter((term) => term.status === 'SOURCE_VERIFIED').length;
-  stats.textContent = `${data.families.length}개 감정 영역 · ${data.terms.length}개 표현 · 근거 연결 ${verified.length}개 · 기본 ${level1Verified}/${level1.length} · 확장 ${level2Verified}/${level2.length} · 3–6학년 연구 연결 ${schoolAgeLinked.length}개 · 비교 ${data.contrast_sets.length}세트`;
+  const level3Verified = level3.filter((term) => term.status === 'SOURCE_VERIFIED').length;
+  stats.textContent = `${data.families.length}개 감정 영역 · ${data.terms.length}개 표현 · 근거 연결 ${verified.length}개 · 기본 ${level1Verified}/${level1.length} · 확장 ${level2Verified}/${level2.length} · 섬세 ${level3Verified}/${level3.length} · 3–6학년 연구 연결 ${schoolAgeLinked.length}개 · 비교 ${data.contrast_sets.length}세트`;
   root.append(stats);
 
   const guideLink = document.createElement('a');

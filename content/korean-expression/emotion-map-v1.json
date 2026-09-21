@@ -497,13 +497,15 @@
       "family_id": "KF03",
       "level": 3,
       "register": "neutral",
-      "status": "DISCOVERY_ONLY",
-      "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "KRD:81742",
+      "note": "2026-09-22 국립국어원 한국어기초사전의 정확한 표제어·뜻풀이를 확인한 섬세 표현.",
       "learning_profile": {
         "lexical_depth": "NUANCED",
-        "school_age_evidence": "AGE_REVIEW_REQUIRED",
-        "evidence_refs": [],
+        "school_age_evidence": "LEXICAL_ONLY",
+        "evidence_refs": [
+          "KRD:81742"
+        ],
         "school_age_source_form": null
       }
     },
@@ -729,13 +731,15 @@
       "family_id": "KF05",
       "level": 3,
       "register": "literary",
-      "status": "DISCOVERY_ONLY",
-      "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "KRD:18788",
+      "note": "2026-09-22 국립국어원 한국어기초사전의 정확한 표제어·뜻풀이를 확인한 섬세 표현.",
       "learning_profile": {
         "lexical_depth": "NUANCED",
-        "school_age_evidence": "AGE_REVIEW_REQUIRED",
-        "evidence_refs": [],
+        "school_age_evidence": "LEXICAL_ONLY",
+        "evidence_refs": [
+          "KRD:18788"
+        ],
         "school_age_source_form": null
       }
     },
@@ -763,13 +767,15 @@
       "family_id": "KF06",
       "level": 3,
       "register": "neutral",
-      "status": "DISCOVERY_ONLY",
-      "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "KRD:74974",
+      "note": "2026-09-22 국립국어원 한국어기초사전의 정확한 표제어·뜻풀이를 확인한 섬세 표현.",
       "learning_profile": {
         "lexical_depth": "NUANCED",
-        "school_age_evidence": "AGE_REVIEW_REQUIRED",
-        "evidence_refs": [],
+        "school_age_evidence": "LEXICAL_ONLY",
+        "evidence_refs": [
+          "KRD:74974"
+        ],
         "school_age_source_form": null
       }
     },
@@ -1202,13 +1208,15 @@
       "family_id": "KF09",
       "level": 3,
       "register": "formal",
-      "status": "DISCOVERY_ONLY",
-      "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "KRD:25629",
+      "note": "2026-09-22 국립국어원 한국어기초사전의 정확한 표제어·뜻풀이를 확인한 섬세 표현.",
       "learning_profile": {
         "lexical_depth": "NUANCED",
-        "school_age_evidence": "AGE_REVIEW_REQUIRED",
-        "evidence_refs": [],
+        "school_age_evidence": "LEXICAL_ONLY",
+        "evidence_refs": [
+          "KRD:25629"
+        ],
         "school_age_source_form": null
       }
     },
@@ -1218,13 +1226,15 @@
       "family_id": "KF09",
       "level": 3,
       "register": "literary",
-      "status": "DISCOVERY_ONLY",
-      "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "KRD:23338",
+      "note": "2026-09-22 국립국어원 한국어기초사전의 정확한 표제어·뜻풀이를 확인한 섬세 표현.",
       "learning_profile": {
         "lexical_depth": "NUANCED",
-        "school_age_evidence": "AGE_REVIEW_REQUIRED",
-        "evidence_refs": [],
+        "school_age_evidence": "LEXICAL_ONLY",
+        "evidence_refs": [
+          "KRD:23338"
+        ],
         "school_age_source_form": null
       }
     },
@@ -1321,13 +1331,15 @@
       "family_id": "KF10",
       "level": 3,
       "register": "formal",
-      "status": "DISCOVERY_ONLY",
-      "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "KRD:60180",
+      "note": "2026-09-22 국립국어원 한국어기초사전의 정확한 표제어·뜻풀이를 확인한 섬세 표현.",
       "learning_profile": {
         "lexical_depth": "NUANCED",
-        "school_age_evidence": "AGE_REVIEW_REQUIRED",
-        "evidence_refs": [],
+        "school_age_evidence": "LEXICAL_ONLY",
+        "evidence_refs": [
+          "KRD:60180"
+        ],
         "school_age_source_form": null
       }
     },
@@ -1337,13 +1349,15 @@
       "family_id": "KF10",
       "level": 3,
       "register": "formal",
-      "status": "DISCOVERY_ONLY",
-      "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "KRD:78307",
+      "note": "2026-09-22 국립국어원 한국어기초사전의 정확한 표제어·뜻풀이를 확인한 섬세 표현.",
       "learning_profile": {
         "lexical_depth": "NUANCED",
-        "school_age_evidence": "AGE_REVIEW_REQUIRED",
-        "evidence_refs": [],
+        "school_age_evidence": "LEXICAL_ONLY",
+        "evidence_refs": [
+          "KRD:78307"
+        ],
         "school_age_source_form": null
       }
     },
@@ -1439,13 +1453,15 @@
       "family_id": "KF11",
       "level": 3,
       "register": "literary",
-      "status": "DISCOVERY_ONLY",
-      "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "KRD:87887",
+      "note": "2026-09-22 국립국어원 한국어기초사전의 정확한 표제어·뜻풀이를 확인한 섬세 표현.",
       "learning_profile": {
         "lexical_depth": "NUANCED",
-        "school_age_evidence": "AGE_REVIEW_REQUIRED",
-        "evidence_refs": [],
+        "school_age_evidence": "LEXICAL_ONLY",
+        "evidence_refs": [
+          "KRD:87887"
+        ],
         "school_age_source_form": null
       }
     },
@@ -1611,13 +1627,15 @@
       "family_id": "KF12",
       "level": 3,
       "register": "formal",
-      "status": "DISCOVERY_ONLY",
-      "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "KRD:42875",
+      "note": "2026-09-22 국립국어원 한국어기초사전의 정확한 표제어·뜻풀이를 확인한 섬세 표현.",
       "learning_profile": {
         "lexical_depth": "NUANCED",
-        "school_age_evidence": "AGE_REVIEW_REQUIRED",
-        "evidence_refs": [],
+        "school_age_evidence": "LEXICAL_ONLY",
+        "evidence_refs": [
+          "KRD:42875"
+        ],
         "school_age_source_form": null
       }
     },
@@ -1835,13 +1853,15 @@
       "family_id": "KF14",
       "level": 3,
       "register": "formal",
-      "status": "DISCOVERY_ONLY",
-      "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "KRD:57824",
+      "note": "2026-09-22 국립국어원 한국어기초사전의 정확한 표제어·뜻풀이를 확인한 섬세 표현.",
       "learning_profile": {
         "lexical_depth": "NUANCED",
-        "school_age_evidence": "AGE_REVIEW_REQUIRED",
-        "evidence_refs": [],
+        "school_age_evidence": "LEXICAL_ONLY",
+        "evidence_refs": [
+          "KRD:57824"
+        ],
         "school_age_source_form": null
       }
     },
@@ -2286,13 +2306,15 @@
       "family_id": "KF18",
       "level": 3,
       "register": "formal",
-      "status": "DISCOVERY_ONLY",
-      "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "KRD:40339",
+      "note": "2026-09-22 국립국어원 한국어기초사전의 정확한 표제어·뜻풀이를 확인한 섬세 표현.",
       "learning_profile": {
         "lexical_depth": "NUANCED",
-        "school_age_evidence": "AGE_REVIEW_REQUIRED",
-        "evidence_refs": [],
+        "school_age_evidence": "LEXICAL_ONLY",
+        "evidence_refs": [
+          "KRD:40339"
+        ],
         "school_age_source_form": null
       }
     },
@@ -2458,13 +2480,15 @@
       "family_id": "KF20",
       "level": 3,
       "register": "formal",
-      "status": "DISCOVERY_ONLY",
-      "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "KRD:30409",
+      "note": "2026-09-22 국립국어원 한국어기초사전의 정확한 표제어·뜻풀이를 확인한 섬세 표현.",
       "learning_profile": {
         "lexical_depth": "NUANCED",
-        "school_age_evidence": "AGE_REVIEW_REQUIRED",
-        "evidence_refs": [],
+        "school_age_evidence": "LEXICAL_ONLY",
+        "evidence_refs": [
+          "KRD:30409"
+        ],
         "school_age_source_form": null
       }
     },
@@ -2546,13 +2570,15 @@
       "family_id": "KF20",
       "level": 3,
       "register": "formal",
-      "status": "DISCOVERY_ONLY",
-      "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "KRD:71904",
+      "note": "2026-09-22 국립국어원 한국어기초사전의 정확한 표제어·뜻풀이를 확인한 섬세 표현.",
       "learning_profile": {
         "lexical_depth": "NUANCED",
-        "school_age_evidence": "AGE_REVIEW_REQUIRED",
-        "evidence_refs": [],
+        "school_age_evidence": "LEXICAL_ONLY",
+        "evidence_refs": [
+          "KRD:71904"
+        ],
         "school_age_source_form": null
       }
     },

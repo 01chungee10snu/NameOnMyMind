@@ -1,0 +1,117 @@
+{
+  "schema_version": "1.0.0",
+  "snapshot_id": "KOREAN_LEVEL3_EXACT_EVIDENCE_V1_2026-09-22",
+  "captured_at": "2026-09-22",
+  "provider": "National Institute of Korean Language Basic Korean Dictionary",
+  "policy": "This snapshot admits only Level 3 expressions whose exact official headword identity and affect-relevant dictionary meaning were previously or currently cross-checked. Phrase forms and terms not conclusively resolved remain DISCOVERY_ONLY.",
+  "admitted_count": 13,
+  "unresolved_count": 22,
+  "entries": [
+    {
+      "term": "장하다",
+      "evidence_ref": "KRD:81742",
+      "selected_definition": "하는 일이나 인품 등이 자랑스러울 만큼 훌륭하다.",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=81742&nation=eng"
+    },
+    {
+      "term": "고요하다",
+      "evidence_ref": "KRD:18788",
+      "selected_definition": "시끄럽거나 어지럽지 않고 조용하다.",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=18788&nation=eng"
+    },
+    {
+      "term": "정겹다",
+      "evidence_ref": "KRD:74974",
+      "selected_definition": "정이 넘칠 만큼 매우 다정하다.",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=74974&nation=eng"
+    },
+    {
+      "term": "공허하다",
+      "evidence_ref": "KRD:25629",
+      "selected_definition": "아무것도 없이 텅 비다.",
+      "sense_note": "마음이 공허하다, 이별 뒤 공허했다 등 감정적 용례가 공식 예문에 직접 제시됨.",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=25629&nation=eng"
+    },
+    {
+      "term": "고독하다",
+      "evidence_ref": "KRD:23338",
+      "selected_definition": "세상에 혼자 있는 듯이 외롭고 쓸쓸하다.",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=23338&nation=eng"
+    },
+    {
+      "term": "비통하다",
+      "evidence_ref": "KRD:60180",
+      "selected_definition": "매우 슬퍼서 마음이 아프다.",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=60180&nation=eng"
+    },
+    {
+      "term": "참담하다",
+      "evidence_ref": "KRD:78307",
+      "selected_definition": "몹시 슬프고 괴롭다.",
+      "sense_note": "정서 관련 뜻을 선택함.",
+      "url": "https://krdict.korean.go.kr/jpn/dicSearch/SearchView?ParaWordNo=78307&nation=jpn"
+    },
+    {
+      "term": "허망하다",
+      "evidence_ref": "KRD:87887",
+      "selected_definition": "어이없고 아무 보람이 없다.",
+      "sense_note": "감정·결과 관련 두 번째 뜻을 선택함.",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=87887&nation=eng"
+    },
+    {
+      "term": "노심초사하다",
+      "evidence_ref": "KRD:42875",
+      "selected_definition": "몹시 마음을 쓰며 걱정하고 애를 태우다.",
+      "url": "https://krdict.korean.go.kr/jpn/dicSearch/SearchView?ParaWordNo=42875&nation=jpn"
+    },
+    {
+      "term": "무력하다",
+      "evidence_ref": "KRD:57824",
+      "selected_definition": "힘이 약하거나 없다.",
+      "sense_note": "답답함·막막함 영역에서 힘이 없다고 느끼는 상태를 설명하는 어휘 근거로만 사용하며 임상 상태로 해석하지 않음.",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=57824&nation=eng"
+    },
+    {
+      "term": "뉘우치다",
+      "evidence_ref": "KRD:40339",
+      "selected_definition": "스스로 자신의 잘못을 깨닫고 반성하다.",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=40339&nation=eng"
+    },
+    {
+      "term": "경이롭다",
+      "evidence_ref": "KRD:30409",
+      "selected_definition": "놀랍고 신기하다.",
+      "url": "https://krdict.korean.go.kr/jpn/dicSearch/SearchView?ParaWordNo=30409&nation=jpn"
+    },
+    {
+      "term": "의아하다",
+      "evidence_ref": "KRD:71904",
+      "selected_definition": "의심스럽고 이상하다.",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=71904&nation=eng"
+    }
+  ],
+  "unresolved_terms": [
+    "희열을 느끼다",
+    "고대하다",
+    "애잔하다",
+    "애절하다",
+    "야속하다",
+    "적적하다",
+    "적막하다",
+    "침울하다",
+    "처연하다",
+    "애석하다",
+    "낙담하다",
+    "조바심나다",
+    "섬뜩하다",
+    "진퇴양난이다",
+    "노엽다",
+    "격분하다",
+    "울화가 치밀다",
+    "분통이 터지다",
+    "괘씸하다",
+    "낯뜨겁다",
+    "송구하다",
+    "시기하다"
+  ]
+}
