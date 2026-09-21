@@ -91,10 +91,17 @@ function renderResultList(catalog, root, rows, emptyMessage = '조건에 맞는 
 function worldResearchHref(cardId) {
   return `./prototypes/g5-research-preview-20260918/?card=${encodeURIComponent(cardId)}`;
 }
-function koreanResearchHref(familyId, expression = '') {
+function koreanResearchHref(familyId, expression = '', options = {}) {
   const params = new URLSearchParams({ family: familyId });
   if (expression) params.set('term', expression);
+  if (options.school) params.set('school', '1');
   return `./prototypes/korean-emotion-map-20260919/?${params.toString()}`;
+}
+function schoolAgeResearchLabel(term) {
+  const value = term.learning_profile?.school_age_evidence;
+  if (value === 'GRADE_3_6_SUPPORTED') return '3–6학년 연구';
+  if (value === 'GRADE_3_6_RELATED_FORM') return '3–6학년 관련형';
+  return '';
 }
 function renderResearchWorldCard(card, previewBase) {
   const link = document.createElement('a');
@@ -133,11 +140,12 @@ function renderResearchWorldCard(card, previewBase) {
 function renderKoreanResearchSummary(data) {
   const root = qs('#korean-research-summary');
   const verified = data.terms.filter((term) => term.status === 'SOURCE_VERIFIED');
+  const schoolAgeLinked = data.terms.filter((term) => schoolAgeResearchLabel(term));
   root.replaceChildren();
 
   const stats = document.createElement('p');
   stats.className = 'korean-map-stats';
-  stats.textContent = `${data.families.length}개 감정 영역 · ${data.terms.length}개 표현 · 근거 연결 ${verified.length}개 · 비교 ${data.contrast_sets.length}세트`;
+  stats.textContent = `${data.families.length}개 감정 영역 · ${data.terms.length}개 표현 · 근거 연결 ${verified.length}개 · 3–6학년 연구 연결 ${schoolAgeLinked.length}개 · 비교 ${data.contrast_sets.length}세트`;
   root.append(stats);
 
   const guideLink = document.createElement('a');
@@ -153,6 +161,20 @@ function renderKoreanResearchSummary(data) {
   guideArrow.textContent = '›';
   guideLink.append(guideTitle, guideCopy, guideArrow);
   root.append(guideLink);
+
+  const schoolLink = document.createElement('a');
+  schoolLink.className = 'korean-guide-link';
+  schoolLink.href = koreanResearchHref('KF01', '', { school: true });
+  const schoolTitle = document.createElement('strong');
+  schoolTitle.textContent = '3–6학년 연구 연결 표현 보기';
+  const schoolCopy = document.createElement('span');
+  schoolCopy.textContent = '해당 연구에 직접 또는 관련형으로 포함된 표현만 좁혀 봅니다. 1–2학년 적합성 판정은 아닙니다.';
+  const schoolArrow = document.createElement('span');
+  schoolArrow.className = 'korean-guide-arrow';
+  schoolArrow.setAttribute('aria-hidden', 'true');
+  schoolArrow.textContent = '›';
+  schoolLink.append(schoolTitle, schoolCopy, schoolArrow);
+  root.append(schoolLink);
 
   const sample = document.createElement('div');
   sample.className = 'verified-sample-row';
@@ -250,10 +272,11 @@ function renderResearchSearch(query) {
       for (const term of matches) {
         const family = familyMap.get(term.family_id);
         const status = term.status === 'SOURCE_VERIFIED' ? '근거 연결' : '탐색 중';
+        const schoolAge = schoolAgeResearchLabel(term);
         list.append(createResearchSearchItem({
           href: koreanResearchHref(term.family_id, term.expression),
           term: term.expression,
-          meta: `${family?.label || ''} · ${status}`,
+          meta: `${family?.label || ''} · ${status}${schoolAge ? ` · ${schoolAge}` : ''}`,
           description: family?.description || '',
         }));
       }

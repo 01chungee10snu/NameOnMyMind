@@ -120,6 +120,8 @@ test('app discovery exposes research surfaces without promoting research candida
   const app = readText('src/ui/app.mjs');
   const stage = readText('scripts/stage-research-preview.mjs');
   const korean = readJson('content/korean-expression/emotion-map-v1.json');
+  const schoolAge = readJson('content/korean-expression/evidence/school-age-v1.json');
+  const level1Evidence = readJson('content/korean-expression/evidence/level1-source-v1.json');
   const sourcePreview = readJson('prototypes/g5-research-preview-20260918/manifest.json');
 
   assert.match(ui, /RESEARCH PREVIEW/);
@@ -144,6 +146,10 @@ test('app discovery exposes research surfaces without promoting research candida
   assert.doesNotMatch(koreanPrototype, /연구 중 비교도 보기/);
   assert.match(koreanPrototype, /앱이 감정을 판정하지 않습니다/);
   assert.match(koreanPrototype, /선택 사항 · 저장하지 않음/);
+  assert.match(koreanPrototype, /id="school-age-only"/);
+  assert.match(koreanPrototype, /1–2학년 적합성 판정을 뜻하지 않습니다/);
+  assert.match(koreanPrototype, /schoolAgeEligible/);
+  assert.match(app, /3–6학년 연구 연결/);
   assert.doesNotMatch(koreanPrototype, /localStorage/);
   assert.doesNotMatch(koreanPrototype, /searchParams\.set\(['"]situation/);
   assert.match(app, /상황에서 마음말 찾기/);
@@ -156,11 +162,30 @@ test('app discovery exposes research surfaces without promoting research candida
   assert.equal(korean.track_id, 'KOREAN_EMOTION_ARTICULATION');
   assert.equal(korean.families.length, 22);
   assert.equal(korean.terms.length, 151);
-  assert.equal(korean.terms.filter((term) => term.status === 'SOURCE_VERIFIED').length, 51);
+  assert.equal(korean.terms.filter((term) => term.status === 'SOURCE_VERIFIED').length, 77);
+  assert.equal(korean.terms.filter((term) => term.level === 1).length, 38);
+  assert.ok(korean.terms.filter((term) => term.level === 1).every((term) => term.status === 'SOURCE_VERIFIED'));
+  assert.equal(korean.terms.filter((term) => term.learning_profile?.school_age_evidence === 'GRADE_3_6_SUPPORTED').length, 21);
+  assert.equal(korean.terms.filter((term) => term.learning_profile?.school_age_evidence === 'GRADE_3_6_RELATED_FORM').length, 1);
+  assert.ok(korean.terms.every((term) => term.learning_profile?.lexical_depth));
   assert.equal(korean.contrast_sets.length, 16);
   assert.ok(korean.contrast_sets.every((set) => set.status === 'SOURCE_VERIFIED'));
   assert.equal(korean.terms.some((term) => term.expression === '샘나다'), false);
   assert.equal(korean.terms.some((term) => term.expression === '샘내다'), true);
+  assert.equal(korean.terms.some((term) => term.expression === '짜증나다'), false);
+  assert.equal(korean.terms.some((term) => term.expression === '짜증이 나다'), true);
+
+  assert.equal(schoolAge.evidence_id, 'KICCE:2026:PR2012');
+  assert.equal(schoolAge.study_scope.grades, '초등학교 3~6학년');
+  assert.match(schoolAge.study_scope.lower_grade_boundary, /1~2학년/);
+  assert.equal(schoolAge.doi, '10.5718/kcep.2026.20.1.29');
+  assert.equal(schoolAge.map_crosswalk.filter((row) => row.support === 'GRADE_3_6_SUPPORTED').length, 21);
+  assert.equal(schoolAge.map_crosswalk.filter((row) => row.support === 'GRADE_3_6_RELATED_FORM').length, 1);
+  assert.equal(level1Evidence.snapshot_id, 'KOREAN_LEVEL1_LEXICAL_EVIDENCE_V1_2026-09-21');
+  assert.equal(level1Evidence.entries.length, 26);
+  assert.ok(level1Evidence.entries.every((row) => row.evidence_ref && row.url?.includes('korean.go.kr')));
+  assert.match(stage, /school_age_evidence_path/);
+  assert.match(stage, /level1_evidence_path/);
 
   const manifest = readJson('public/BUILD_MANIFEST.json');
   assert.deepEqual(manifest.card_ids, ['C0001','C0002','C0003','C0004','C0005']);

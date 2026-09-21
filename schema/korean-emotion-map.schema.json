@@ -76,7 +76,8 @@
           "family_id",
           "level",
           "register",
-          "status"
+          "status",
+          "learning_profile"
         ],
         "properties": {
           "id": {
@@ -122,6 +123,47 @@
               "string",
               "null"
             ]
+          },
+          "learning_profile": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "lexical_depth",
+              "school_age_evidence",
+              "evidence_refs",
+              "school_age_source_form"
+            ],
+            "properties": {
+              "lexical_depth": {
+                "enum": [
+                  "BASIC",
+                  "EXPANDED",
+                  "NUANCED"
+                ]
+              },
+              "school_age_evidence": {
+                "enum": [
+                  "GRADE_3_6_SUPPORTED",
+                  "GRADE_3_6_RELATED_FORM",
+                  "LEXICAL_ONLY",
+                  "AGE_REVIEW_REQUIRED"
+                ]
+              },
+              "evidence_refs": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "uniqueItems": true
+              },
+              "school_age_source_form": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            }
           }
         }
       }

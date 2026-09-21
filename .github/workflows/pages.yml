@@ -55,17 +55,19 @@ jobs:
           if (!fs.existsSync('public/preview/index.html')) throw new Error('Short preview alias missing');
           const korean = preview.korean_emotion_map;
           if (!korean || korean.product_release_authorized) throw new Error('Korean research-map release boundary invalid');
-          if (korean.family_count !== 22 || korean.term_count !== 151 || korean.source_verified_term_count !== 51 || korean.contrast_set_count !== 16) {
+          if (korean.family_count !== 22 || korean.term_count !== 151 || korean.source_verified_term_count !== 77 || korean.level1_verified_term_count !== 38 || korean.school_age_direct_term_count !== 21 || korean.school_age_related_term_count !== 1 || korean.contrast_set_count !== 16) {
             throw new Error('Unexpected Korean emotion-map research counts');
           }
           for (const file of [
             'public/korean/index.html',
             'public/prototypes/korean-emotion-map-20260919/index.html',
             'public/content/korean-expression/emotion-map-v1.json',
+            'public/content/korean-expression/evidence/school-age-v1.json',
+            'public/content/korean-expression/evidence/level1-source-v1.json',
           ]) if (!fs.existsSync(file)) throw new Error(`Korean research-map staged file missing: ${file}`);
           const koreanHtml = fs.readFileSync('public/prototypes/korean-emotion-map-20260919/index.html','utf8');
           const publicApp = fs.readFileSync('public/src/ui/app.mjs','utf8');
-          if (!koreanHtml.includes('상황에서 찾기') || !koreanHtml.includes('앱이 감정을 판정하지 않습니다.')) {
+          if (!koreanHtml.includes('상황에서 찾기') || !koreanHtml.includes('앱이 감정을 판정하지 않습니다.') || !koreanHtml.includes('3–6학년') || !koreanHtml.includes('1–2학년 적합성 판정을 뜻하지 않습니다.')) {
             throw new Error('Guided Korean articulation boundary missing');
           }
           if (!publicApp.includes('상황에서 마음말 찾기')) throw new Error('Guided Korean articulation entry link missing');

@@ -1,0 +1,207 @@
+{
+  "schema_version": "1.0.0",
+  "evidence_id": "KICCE:2026:PR2012",
+  "title": "학령기 아동의 감정 측정을 위한 정서 어휘 선정 및 군집구조 분석: 3~6학년을 대상으로",
+  "author": "김도형",
+  "publisher": "육아정책연구소",
+  "journal": "육아정책연구",
+  "volume_issue_pages": "20(1), 29–52",
+  "issued_date": "2026-04-30",
+  "doi": "10.5718/kcep.2026.20.1.29",
+  "kci_article_id": "ART003331358",
+  "verified_at": "2026-09-22",
+  "repository_url": "https://repo.kicce.re.kr/handle/2019.oak/5938",
+  "pdf_url": "https://repo.kicce.re.kr/bitstream/2019.oak/5938/2/PR2012.pdf",
+  "study_scope": {
+    "grades": "초등학교 3~6학년",
+    "survey_2016_analyzed_n": 233,
+    "survey_2025_analyzed_n": 133,
+    "sampling_note": "편의표본이며 학년·성별 분포를 별도 통제하지 않아 일반화에 신중해야 한다.",
+    "lower_grade_boundary": "연구는 자기보고 신뢰성과 혼합정서 이해를 고려해 초등 저학년을 제외했다. 따라서 이 근거를 1~2학년 적합성 근거로 사용하지 않는다."
+  },
+  "preliminary_vocabulary": {
+    "positive_16": [
+      "즐거운",
+      "편안한",
+      "기쁜",
+      "행복한",
+      "만족스러운",
+      "사랑스러운",
+      "자랑스러운",
+      "뿌듯한",
+      "유쾌한",
+      "설레는",
+      "자신감 있는",
+      "흐뭇한",
+      "신나는",
+      "홀가분한",
+      "희망적인",
+      "보람된"
+    ],
+    "negative_12": [
+      "우울한",
+      "슬픈",
+      "외로운",
+      "화난",
+      "무서운",
+      "불안한",
+      "속상한",
+      "짜증난",
+      "괴로운",
+      "두려운",
+      "부끄러운",
+      "걱정스러운"
+    ]
+  },
+  "representative_vocabulary_6": [
+    "즐거운",
+    "행복한",
+    "자신감 있는",
+    "희망적인",
+    "우울한",
+    "불안한"
+  ],
+  "mapping_policy": "활용형은 동일 표제어로 정규화하되, 의미가 가까울 뿐 다른 어휘는 직접 아동 근거로 승격하지 않는다.",
+  "map_crosswalk": [
+    {
+      "source_form": "즐거운",
+      "map_expression": "즐겁다",
+      "support": "GRADE_3_6_SUPPORTED"
+    },
+    {
+      "source_form": "편안한",
+      "map_expression": "편안하다",
+      "support": "GRADE_3_6_SUPPORTED"
+    },
+    {
+      "source_form": "기쁜",
+      "map_expression": "기쁘다",
+      "support": "GRADE_3_6_SUPPORTED"
+    },
+    {
+      "source_form": "행복한",
+      "map_expression": "행복하다",
+      "support": "GRADE_3_6_SUPPORTED"
+    },
+    {
+      "source_form": "만족스러운",
+      "map_expression": "만족스럽다",
+      "support": "GRADE_3_6_SUPPORTED"
+    },
+    {
+      "source_form": "사랑스러운",
+      "map_expression": "사랑스럽다",
+      "support": "GRADE_3_6_SUPPORTED"
+    },
+    {
+      "source_form": "뿌듯한",
+      "map_expression": "뿌듯하다",
+      "support": "GRADE_3_6_SUPPORTED"
+    },
+    {
+      "source_form": "유쾌한",
+      "map_expression": "유쾌하다",
+      "support": "GRADE_3_6_SUPPORTED"
+    },
+    {
+      "source_form": "설레는",
+      "map_expression": "설레다",
+      "support": "GRADE_3_6_SUPPORTED"
+    },
+    {
+      "source_form": "흐뭇한",
+      "map_expression": "흐뭇하다",
+      "support": "GRADE_3_6_SUPPORTED"
+    },
+    {
+      "source_form": "신나는",
+      "map_expression": "신나다",
+      "support": "GRADE_3_6_SUPPORTED"
+    },
+    {
+      "source_form": "홀가분한",
+      "map_expression": "홀가분하다",
+      "support": "GRADE_3_6_SUPPORTED"
+    },
+    {
+      "source_form": "슬픈",
+      "map_expression": "슬프다",
+      "support": "GRADE_3_6_SUPPORTED"
+    },
+    {
+      "source_form": "외로운",
+      "map_expression": "외롭다",
+      "support": "GRADE_3_6_SUPPORTED"
+    },
+    {
+      "source_form": "화난",
+      "map_expression": "화나다",
+      "support": "GRADE_3_6_SUPPORTED"
+    },
+    {
+      "source_form": "무서운",
+      "map_expression": "무섭다",
+      "support": "GRADE_3_6_SUPPORTED"
+    },
+    {
+      "source_form": "불안한",
+      "map_expression": "불안하다",
+      "support": "GRADE_3_6_SUPPORTED"
+    },
+    {
+      "source_form": "속상한",
+      "map_expression": "속상하다",
+      "support": "GRADE_3_6_SUPPORTED"
+    },
+    {
+      "source_form": "짜증난",
+      "map_expression": "짜증이 나다",
+      "support": "GRADE_3_6_RELATED_FORM"
+    },
+    {
+      "source_form": "두려운",
+      "map_expression": "두렵다",
+      "support": "GRADE_3_6_SUPPORTED"
+    },
+    {
+      "source_form": "부끄러운",
+      "map_expression": "부끄럽다",
+      "support": "GRADE_3_6_SUPPORTED"
+    },
+    {
+      "source_form": "걱정스러운",
+      "map_expression": "걱정스럽다",
+      "support": "GRADE_3_6_SUPPORTED"
+    },
+    {
+      "source_form": "자랑스러운",
+      "map_expression": null,
+      "support": "NO_CANONICAL_MATCH"
+    },
+    {
+      "source_form": "자신감 있는",
+      "map_expression": null,
+      "support": "NO_CANONICAL_MATCH"
+    },
+    {
+      "source_form": "희망적인",
+      "map_expression": null,
+      "support": "NO_CANONICAL_MATCH"
+    },
+    {
+      "source_form": "보람된",
+      "map_expression": "보람차다",
+      "support": "RELATED_BUT_NOT_EQUIVALENT"
+    },
+    {
+      "source_form": "우울한",
+      "map_expression": null,
+      "support": "NO_CANONICAL_MATCH"
+    },
+    {
+      "source_form": "괴로운",
+      "map_expression": null,
+      "support": "NO_CANONICAL_MATCH"
+    }
+  ]
+}

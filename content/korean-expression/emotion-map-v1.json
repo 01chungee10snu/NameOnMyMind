@@ -150,9 +150,18 @@
       "family_id": "KF01",
       "level": 1,
       "register": "everyday",
-      "status": "DISCOVERY_ONLY",
-      "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "KRD:40078",
+      "note": "2026-09-21 국립국어원 한국어기초사전의 표제어·뜻풀이를 직접 확인한 기본 표현.",
+      "learning_profile": {
+        "lexical_depth": "BASIC",
+        "school_age_evidence": "GRADE_3_6_SUPPORTED",
+        "evidence_refs": [
+          "KRD:40078",
+          "KICCE:2026:PR2012"
+        ],
+        "school_age_source_form": "기쁜"
+      }
     },
     {
       "id": "KE0002",
@@ -160,9 +169,18 @@
       "family_id": "KF01",
       "level": 1,
       "register": "everyday",
-      "status": "DISCOVERY_ONLY",
-      "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "KRD:62101",
+      "note": "2026-09-21 국립국어원 한국어기초사전의 표제어·뜻풀이를 직접 확인한 기본 표현.",
+      "learning_profile": {
+        "lexical_depth": "BASIC",
+        "school_age_evidence": "GRADE_3_6_SUPPORTED",
+        "evidence_refs": [
+          "KRD:62101",
+          "KICCE:2026:PR2012"
+        ],
+        "school_age_source_form": "즐거운"
+      }
     },
     {
       "id": "KE0003",
@@ -170,9 +188,18 @@
       "family_id": "KF01",
       "level": 1,
       "register": "everyday",
-      "status": "DISCOVERY_ONLY",
-      "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "KRD:66189",
+      "note": "2026-09-21 국립국어원 한국어기초사전의 표제어·뜻풀이를 직접 확인한 기본 표현.",
+      "learning_profile": {
+        "lexical_depth": "BASIC",
+        "school_age_evidence": "GRADE_3_6_SUPPORTED",
+        "evidence_refs": [
+          "KRD:66189",
+          "KICCE:2026:PR2012"
+        ],
+        "school_age_source_form": "신나는"
+      }
     },
     {
       "id": "KE0004",
@@ -182,7 +209,15 @@
       "register": "neutral",
       "status": "DISCOVERY_ONLY",
       "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "learning_profile": {
+        "lexical_depth": "EXPANDED",
+        "school_age_evidence": "GRADE_3_6_SUPPORTED",
+        "evidence_refs": [
+          "KICCE:2026:PR2012"
+        ],
+        "school_age_source_form": "유쾌한"
+      }
     },
     {
       "id": "KE0005",
@@ -192,7 +227,13 @@
       "register": "neutral",
       "status": "DISCOVERY_ONLY",
       "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "learning_profile": {
+        "lexical_depth": "EXPANDED",
+        "school_age_evidence": "AGE_REVIEW_REQUIRED",
+        "evidence_refs": [],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0006",
@@ -200,9 +241,18 @@
       "family_id": "KF01",
       "level": 1,
       "register": "everyday",
-      "status": "DISCOVERY_ONLY",
-      "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "KRD:72481",
+      "note": "2026-09-21 국립국어원 한국어기초사전의 표제어·뜻풀이를 직접 확인한 기본 표현.",
+      "learning_profile": {
+        "lexical_depth": "BASIC",
+        "school_age_evidence": "GRADE_3_6_SUPPORTED",
+        "evidence_refs": [
+          "KRD:72481",
+          "KICCE:2026:PR2012"
+        ],
+        "school_age_source_form": "행복한"
+      }
     },
     {
       "id": "KE0007",
@@ -212,7 +262,13 @@
       "register": "formal",
       "status": "DISCOVERY_ONLY",
       "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "learning_profile": {
+        "lexical_depth": "NUANCED",
+        "school_age_evidence": "AGE_REVIEW_REQUIRED",
+        "evidence_refs": [],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0008",
@@ -222,7 +278,16 @@
       "register": "everyday",
       "status": "SOURCE_VERIFIED",
       "evidence_ref": "KRD:62645",
-      "note": "2026-09-21 국립국어원 한국어기초사전의 표제어·뜻풀이를 직접 확인한 표현."
+      "note": "2026-09-21 국립국어원 한국어기초사전의 표제어·뜻풀이를 직접 확인한 표현.",
+      "learning_profile": {
+        "lexical_depth": "BASIC",
+        "school_age_evidence": "GRADE_3_6_SUPPORTED",
+        "evidence_refs": [
+          "KRD:62645",
+          "KICCE:2026:PR2012"
+        ],
+        "school_age_source_form": "설레는"
+      }
     },
     {
       "id": "KE0009",
@@ -232,7 +297,15 @@
       "register": "everyday",
       "status": "SOURCE_VERIFIED",
       "evidence_ref": "KRD:32495",
-      "note": "2026-09-21 국립국어원 한국어기초사전의 표제어·뜻풀이를 직접 확인한 표현."
+      "note": "2026-09-21 국립국어원 한국어기초사전의 표제어·뜻풀이를 직접 확인한 표현.",
+      "learning_profile": {
+        "lexical_depth": "BASIC",
+        "school_age_evidence": "LEXICAL_ONLY",
+        "evidence_refs": [
+          "KRD:32495"
+        ],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0010",
@@ -242,7 +315,15 @@
       "register": "neutral",
       "status": "SOURCE_VERIFIED",
       "evidence_ref": "KRD:49859",
-      "note": "2026-09-21 국립국어원 한국어기초사전의 표제어·뜻풀이를 직접 확인한 표현."
+      "note": "2026-09-21 국립국어원 한국어기초사전의 표제어·뜻풀이를 직접 확인한 표현.",
+      "learning_profile": {
+        "lexical_depth": "EXPANDED",
+        "school_age_evidence": "LEXICAL_ONLY",
+        "evidence_refs": [
+          "KRD:49859"
+        ],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0011",
@@ -250,9 +331,17 @@
       "family_id": "KF02",
       "level": 1,
       "register": "everyday",
-      "status": "DISCOVERY_ONLY",
-      "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "KRD:48261",
+      "note": "2026-09-21 국립국어원 한국어기초사전의 표제어·뜻풀이를 직접 확인한 기본 표현.",
+      "learning_profile": {
+        "lexical_depth": "BASIC",
+        "school_age_evidence": "LEXICAL_ONLY",
+        "evidence_refs": [
+          "KRD:48261"
+        ],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0012",
@@ -262,7 +351,13 @@
       "register": "formal",
       "status": "DISCOVERY_ONLY",
       "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "learning_profile": {
+        "lexical_depth": "NUANCED",
+        "school_age_evidence": "AGE_REVIEW_REQUIRED",
+        "evidence_refs": [],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0013",
@@ -272,7 +367,15 @@
       "register": "neutral",
       "status": "SOURCE_VERIFIED",
       "evidence_ref": "KRD:58356",
-      "note": "기존 NameOnMyMind 연구 또는 국립국어원 사전 근거가 연결된 표현."
+      "note": "기존 NameOnMyMind 연구 또는 국립국어원 사전 근거가 연결된 표현.",
+      "learning_profile": {
+        "lexical_depth": "EXPANDED",
+        "school_age_evidence": "LEXICAL_ONLY",
+        "evidence_refs": [
+          "KRD:58356"
+        ],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0014",
@@ -280,9 +383,18 @@
       "family_id": "KF03",
       "level": 1,
       "register": "neutral",
-      "status": "DISCOVERY_ONLY",
-      "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "KRD:15837",
+      "note": "2026-09-21 국립국어원 한국어기초사전의 표제어·뜻풀이를 직접 확인한 기본 표현.",
+      "learning_profile": {
+        "lexical_depth": "BASIC",
+        "school_age_evidence": "GRADE_3_6_SUPPORTED",
+        "evidence_refs": [
+          "KRD:15837",
+          "KICCE:2026:PR2012"
+        ],
+        "school_age_source_form": "만족스러운"
+      }
     },
     {
       "id": "KE0015",
@@ -292,7 +404,15 @@
       "register": "formal",
       "status": "SOURCE_VERIFIED",
       "evidence_ref": "KX0007",
-      "note": "기존 NameOnMyMind 연구 또는 국립국어원 사전 근거가 연결된 표현."
+      "note": "기존 NameOnMyMind 연구 또는 국립국어원 사전 근거가 연결된 표현.",
+      "learning_profile": {
+        "lexical_depth": "NUANCED",
+        "school_age_evidence": "LEXICAL_ONLY",
+        "evidence_refs": [
+          "KX0007"
+        ],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0016",
@@ -302,7 +422,16 @@
       "register": "neutral",
       "status": "SOURCE_VERIFIED",
       "evidence_ref": "KX0008",
-      "note": "기존 NameOnMyMind 연구 또는 국립국어원 사전 근거가 연결된 표현."
+      "note": "기존 NameOnMyMind 연구 또는 국립국어원 사전 근거가 연결된 표현.",
+      "learning_profile": {
+        "lexical_depth": "EXPANDED",
+        "school_age_evidence": "GRADE_3_6_SUPPORTED",
+        "evidence_refs": [
+          "KX0008",
+          "KICCE:2026:PR2012"
+        ],
+        "school_age_source_form": "흐뭇한"
+      }
     },
     {
       "id": "KE0017",
@@ -312,7 +441,16 @@
       "register": "everyday",
       "status": "SOURCE_VERIFIED",
       "evidence_ref": "G5:C0009",
-      "note": "기존 NameOnMyMind 연구 또는 국립국어원 사전 근거가 연결된 표현."
+      "note": "기존 NameOnMyMind 연구 또는 국립국어원 사전 근거가 연결된 표현.",
+      "learning_profile": {
+        "lexical_depth": "EXPANDED",
+        "school_age_evidence": "GRADE_3_6_SUPPORTED",
+        "evidence_refs": [
+          "G5:C0009",
+          "KICCE:2026:PR2012"
+        ],
+        "school_age_source_form": "뿌듯한"
+      }
     },
     {
       "id": "KE0018",
@@ -322,7 +460,15 @@
       "register": "neutral",
       "status": "SOURCE_VERIFIED",
       "evidence_ref": "KRD:42236",
-      "note": "국립국어원 한국어기초사전의 뜻풀이와 용례를 확인한 표현."
+      "note": "국립국어원 한국어기초사전의 뜻풀이와 용례를 확인한 표현.",
+      "learning_profile": {
+        "lexical_depth": "EXPANDED",
+        "school_age_evidence": "LEXICAL_ONLY",
+        "evidence_refs": [
+          "KRD:42236"
+        ],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0019",
@@ -332,7 +478,13 @@
       "register": "neutral",
       "status": "DISCOVERY_ONLY",
       "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "learning_profile": {
+        "lexical_depth": "EXPANDED",
+        "school_age_evidence": "AGE_REVIEW_REQUIRED",
+        "evidence_refs": [],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0020",
@@ -342,7 +494,13 @@
       "register": "neutral",
       "status": "DISCOVERY_ONLY",
       "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "learning_profile": {
+        "lexical_depth": "NUANCED",
+        "school_age_evidence": "AGE_REVIEW_REQUIRED",
+        "evidence_refs": [],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0021",
@@ -352,7 +510,15 @@
       "register": "everyday",
       "status": "SOURCE_VERIFIED",
       "evidence_ref": "KRD:66428",
-      "note": "2026-09-21 국립국어원 한국어기초사전의 표제어·뜻풀이를 직접 확인한 표현."
+      "note": "2026-09-21 국립국어원 한국어기초사전의 표제어·뜻풀이를 직접 확인한 표현.",
+      "learning_profile": {
+        "lexical_depth": "BASIC",
+        "school_age_evidence": "LEXICAL_ONLY",
+        "evidence_refs": [
+          "KRD:66428"
+        ],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0022",
@@ -362,7 +528,15 @@
       "register": "everyday",
       "status": "SOURCE_VERIFIED",
       "evidence_ref": "G5:C0012",
-      "note": "기존 NameOnMyMind source-first 연구기록에서 표제어·의미 경계를 확인한 표현."
+      "note": "기존 NameOnMyMind source-first 연구기록에서 표제어·의미 경계를 확인한 표현.",
+      "learning_profile": {
+        "lexical_depth": "EXPANDED",
+        "school_age_evidence": "LEXICAL_ONLY",
+        "evidence_refs": [
+          "G5:C0012"
+        ],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0023",
@@ -372,7 +546,16 @@
       "register": "neutral",
       "status": "SOURCE_VERIFIED",
       "evidence_ref": "KRD:87285",
-      "note": "2026-09-21 국립국어원 한국어기초사전의 표제어·뜻풀이를 직접 확인한 표현."
+      "note": "2026-09-21 국립국어원 한국어기초사전의 표제어·뜻풀이를 직접 확인한 표현.",
+      "learning_profile": {
+        "lexical_depth": "EXPANDED",
+        "school_age_evidence": "GRADE_3_6_SUPPORTED",
+        "evidence_refs": [
+          "KRD:87285",
+          "KICCE:2026:PR2012"
+        ],
+        "school_age_source_form": "홀가분한"
+      }
     },
     {
       "id": "KE0024",
@@ -382,7 +565,15 @@
       "register": "everyday",
       "status": "SOURCE_VERIFIED",
       "evidence_ref": "KRD:26673",
-      "note": "국립국어원 한국어기초사전의 뜻풀이와 용례를 확인한 표현."
+      "note": "국립국어원 한국어기초사전의 뜻풀이와 용례를 확인한 표현.",
+      "learning_profile": {
+        "lexical_depth": "EXPANDED",
+        "school_age_evidence": "LEXICAL_ONLY",
+        "evidence_refs": [
+          "KRD:26673"
+        ],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0025",
@@ -390,9 +581,17 @@
       "family_id": "KF04",
       "level": 1,
       "register": "everyday",
-      "status": "DISCOVERY_ONLY",
-      "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "KRD:61388",
+      "note": "2026-09-21 국립국어원 한국어기초사전의 공식 문형·결합·예문 근거를 직접 확인한 기본 표현.",
+      "learning_profile": {
+        "lexical_depth": "BASIC",
+        "school_age_evidence": "LEXICAL_ONLY",
+        "evidence_refs": [
+          "KRD:61388"
+        ],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0026",
@@ -402,7 +601,13 @@
       "register": "everyday",
       "status": "DISCOVERY_ONLY",
       "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "learning_profile": {
+        "lexical_depth": "EXPANDED",
+        "school_age_evidence": "AGE_REVIEW_REQUIRED",
+        "evidence_refs": [],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0027",
@@ -410,9 +615,18 @@
       "family_id": "KF05",
       "level": 1,
       "register": "everyday",
-      "status": "DISCOVERY_ONLY",
-      "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "KRD:71333",
+      "note": "2026-09-21 국립국어원 한국어기초사전의 표제어·뜻풀이를 직접 확인한 기본 표현.",
+      "learning_profile": {
+        "lexical_depth": "BASIC",
+        "school_age_evidence": "GRADE_3_6_SUPPORTED",
+        "evidence_refs": [
+          "KRD:71333",
+          "KICCE:2026:PR2012"
+        ],
+        "school_age_source_form": "편안한"
+      }
     },
     {
       "id": "KE0028",
@@ -422,7 +636,13 @@
       "register": "neutral",
       "status": "DISCOVERY_ONLY",
       "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "learning_profile": {
+        "lexical_depth": "EXPANDED",
+        "school_age_evidence": "AGE_REVIEW_REQUIRED",
+        "evidence_refs": [],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0029",
@@ -432,7 +652,13 @@
       "register": "neutral",
       "status": "DISCOVERY_ONLY",
       "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "learning_profile": {
+        "lexical_depth": "EXPANDED",
+        "school_age_evidence": "AGE_REVIEW_REQUIRED",
+        "evidence_refs": [],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0030",
@@ -442,7 +668,13 @@
       "register": "neutral",
       "status": "DISCOVERY_ONLY",
       "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "learning_profile": {
+        "lexical_depth": "EXPANDED",
+        "school_age_evidence": "AGE_REVIEW_REQUIRED",
+        "evidence_refs": [],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0031",
@@ -452,7 +684,13 @@
       "register": "everyday",
       "status": "DISCOVERY_ONLY",
       "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "learning_profile": {
+        "lexical_depth": "EXPANDED",
+        "school_age_evidence": "AGE_REVIEW_REQUIRED",
+        "evidence_refs": [],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0032",
@@ -462,7 +700,13 @@
       "register": "neutral",
       "status": "DISCOVERY_ONLY",
       "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "learning_profile": {
+        "lexical_depth": "EXPANDED",
+        "school_age_evidence": "AGE_REVIEW_REQUIRED",
+        "evidence_refs": [],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0033",
@@ -472,7 +716,13 @@
       "register": "literary",
       "status": "DISCOVERY_ONLY",
       "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "learning_profile": {
+        "lexical_depth": "NUANCED",
+        "school_age_evidence": "AGE_REVIEW_REQUIRED",
+        "evidence_refs": [],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0034",
@@ -482,7 +732,15 @@
       "register": "neutral",
       "status": "SOURCE_VERIFIED",
       "evidence_ref": "KRD:66723",
-      "note": "2026-09-21 국립국어원 한국어기초사전의 표제어·뜻풀이를 직접 확인한 표현."
+      "note": "2026-09-21 국립국어원 한국어기초사전의 표제어·뜻풀이를 직접 확인한 표현.",
+      "learning_profile": {
+        "lexical_depth": "NUANCED",
+        "school_age_evidence": "LEXICAL_ONLY",
+        "evidence_refs": [
+          "KRD:66723"
+        ],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0035",
@@ -492,7 +750,13 @@
       "register": "neutral",
       "status": "DISCOVERY_ONLY",
       "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "learning_profile": {
+        "lexical_depth": "NUANCED",
+        "school_age_evidence": "AGE_REVIEW_REQUIRED",
+        "evidence_refs": [],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0036",
@@ -502,7 +766,13 @@
       "register": "neutral",
       "status": "DISCOVERY_ONLY",
       "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "learning_profile": {
+        "lexical_depth": "EXPANDED",
+        "school_age_evidence": "AGE_REVIEW_REQUIRED",
+        "evidence_refs": [],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0037",
@@ -512,7 +782,13 @@
       "register": "neutral",
       "status": "DISCOVERY_ONLY",
       "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "learning_profile": {
+        "lexical_depth": "EXPANDED",
+        "school_age_evidence": "AGE_REVIEW_REQUIRED",
+        "evidence_refs": [],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0038",
@@ -520,9 +796,18 @@
       "family_id": "KF06",
       "level": 1,
       "register": "everyday",
-      "status": "DISCOVERY_ONLY",
-      "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "KRD:15851",
+      "note": "2026-09-21 국립국어원 한국어기초사전의 표제어·뜻풀이를 직접 확인한 기본 표현.",
+      "learning_profile": {
+        "lexical_depth": "BASIC",
+        "school_age_evidence": "GRADE_3_6_SUPPORTED",
+        "evidence_refs": [
+          "KRD:15851",
+          "KICCE:2026:PR2012"
+        ],
+        "school_age_source_form": "사랑스러운"
+      }
     },
     {
       "id": "KE0039",
@@ -530,9 +815,17 @@
       "family_id": "KF06",
       "level": 1,
       "register": "everyday",
-      "status": "DISCOVERY_ONLY",
-      "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "KRD:49253",
+      "note": "2026-09-21 국립국어원 한국어기초사전의 표제어·뜻풀이를 직접 확인한 기본 표현.",
+      "learning_profile": {
+        "lexical_depth": "BASIC",
+        "school_age_evidence": "LEXICAL_ONLY",
+        "evidence_refs": [
+          "KRD:49253"
+        ],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0040",
@@ -540,9 +833,17 @@
       "family_id": "KF06",
       "level": 1,
       "register": "everyday",
-      "status": "DISCOVERY_ONLY",
-      "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "KRD:20041",
+      "note": "2026-09-21 국립국어원 한국어기초사전의 표제어·뜻풀이를 직접 확인한 기본 표현.",
+      "learning_profile": {
+        "lexical_depth": "BASIC",
+        "school_age_evidence": "LEXICAL_ONLY",
+        "evidence_refs": [
+          "KRD:20041"
+        ],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0041",
@@ -550,9 +851,17 @@
       "family_id": "KF06",
       "level": 1,
       "register": "everyday",
-      "status": "DISCOVERY_ONLY",
-      "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "KRD:70861",
+      "note": "2026-09-21 국립국어원 한국어기초사전의 표제어·뜻풀이를 직접 확인한 기본 표현.",
+      "learning_profile": {
+        "lexical_depth": "BASIC",
+        "school_age_evidence": "LEXICAL_ONLY",
+        "evidence_refs": [
+          "KRD:70861"
+        ],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0042",
@@ -562,7 +871,15 @@
       "register": "everyday",
       "status": "SOURCE_VERIFIED",
       "evidence_ref": "KRD:37070",
-      "note": "2026-09-21 국립국어원 한국어기초사전의 표제어·뜻풀이를 직접 확인한 표현."
+      "note": "2026-09-21 국립국어원 한국어기초사전의 표제어·뜻풀이를 직접 확인한 표현.",
+      "learning_profile": {
+        "lexical_depth": "BASIC",
+        "school_age_evidence": "LEXICAL_ONLY",
+        "evidence_refs": [
+          "KRD:37070"
+        ],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0043",
@@ -572,7 +889,15 @@
       "register": "literary",
       "status": "SOURCE_VERIFIED",
       "evidence_ref": "KRD:66802",
-      "note": "2026-09-21 국립국어원 한국어기초사전의 표제어·뜻풀이를 직접 확인한 표현."
+      "note": "2026-09-21 국립국어원 한국어기초사전의 표제어·뜻풀이를 직접 확인한 표현.",
+      "learning_profile": {
+        "lexical_depth": "NUANCED",
+        "school_age_evidence": "LEXICAL_ONLY",
+        "evidence_refs": [
+          "KRD:66802"
+        ],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0044",
@@ -582,7 +907,15 @@
       "register": "everyday",
       "status": "SOURCE_VERIFIED",
       "evidence_ref": "G5:C0007",
-      "note": "기존 NameOnMyMind 연구 또는 국립국어원 사전 근거가 연결된 표현."
+      "note": "기존 NameOnMyMind 연구 또는 국립국어원 사전 근거가 연결된 표현.",
+      "learning_profile": {
+        "lexical_depth": "EXPANDED",
+        "school_age_evidence": "LEXICAL_ONLY",
+        "evidence_refs": [
+          "G5:C0007"
+        ],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0045",
@@ -592,7 +925,13 @@
       "register": "literary",
       "status": "DISCOVERY_ONLY",
       "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "learning_profile": {
+        "lexical_depth": "NUANCED",
+        "school_age_evidence": "AGE_REVIEW_REQUIRED",
+        "evidence_refs": [],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0046",
@@ -602,7 +941,13 @@
       "register": "literary",
       "status": "DISCOVERY_ONLY",
       "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "learning_profile": {
+        "lexical_depth": "NUANCED",
+        "school_age_evidence": "AGE_REVIEW_REQUIRED",
+        "evidence_refs": [],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0047",
@@ -612,7 +957,13 @@
       "register": "everyday",
       "status": "DISCOVERY_ONLY",
       "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "learning_profile": {
+        "lexical_depth": "EXPANDED",
+        "school_age_evidence": "AGE_REVIEW_REQUIRED",
+        "evidence_refs": [],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0048",
@@ -622,7 +973,13 @@
       "register": "everyday",
       "status": "DISCOVERY_ONLY",
       "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "learning_profile": {
+        "lexical_depth": "EXPANDED",
+        "school_age_evidence": "AGE_REVIEW_REQUIRED",
+        "evidence_refs": [],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0049",
@@ -632,7 +989,15 @@
       "register": "everyday",
       "status": "SOURCE_VERIFIED",
       "evidence_ref": "G5:C0006",
-      "note": "기존 NameOnMyMind 연구 또는 국립국어원 사전 근거가 연결된 표현."
+      "note": "기존 NameOnMyMind 연구 또는 국립국어원 사전 근거가 연결된 표현.",
+      "learning_profile": {
+        "lexical_depth": "EXPANDED",
+        "school_age_evidence": "LEXICAL_ONLY",
+        "evidence_refs": [
+          "G5:C0006"
+        ],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0050",
@@ -642,7 +1007,15 @@
       "register": "everyday",
       "status": "SOURCE_VERIFIED",
       "evidence_ref": "G5:C0008",
-      "note": "기존 NameOnMyMind 연구 또는 국립국어원 사전 근거가 연결된 표현."
+      "note": "기존 NameOnMyMind 연구 또는 국립국어원 사전 근거가 연결된 표현.",
+      "learning_profile": {
+        "lexical_depth": "EXPANDED",
+        "school_age_evidence": "LEXICAL_ONLY",
+        "evidence_refs": [
+          "G5:C0008"
+        ],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0051",
@@ -652,7 +1025,13 @@
       "register": "neutral",
       "status": "DISCOVERY_ONLY",
       "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "learning_profile": {
+        "lexical_depth": "NUANCED",
+        "school_age_evidence": "AGE_REVIEW_REQUIRED",
+        "evidence_refs": [],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0052",
@@ -662,7 +1041,15 @@
       "register": "neutral",
       "status": "SOURCE_VERIFIED",
       "evidence_ref": "KRD:62679",
-      "note": "2026-09-21 국립국어원 한국어기초사전의 표제어·뜻풀이를 직접 확인한 표현."
+      "note": "2026-09-21 국립국어원 한국어기초사전의 표제어·뜻풀이를 직접 확인한 표현.",
+      "learning_profile": {
+        "lexical_depth": "EXPANDED",
+        "school_age_evidence": "LEXICAL_ONLY",
+        "evidence_refs": [
+          "KRD:62679"
+        ],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0053",
@@ -672,7 +1059,16 @@
       "register": "everyday",
       "status": "SOURCE_VERIFIED",
       "evidence_ref": "KRD:15595",
-      "note": "2026-09-21 국립국어원 한국어기초사전의 표제어·뜻풀이를 직접 확인한 표현."
+      "note": "2026-09-21 국립국어원 한국어기초사전의 표제어·뜻풀이를 직접 확인한 표현.",
+      "learning_profile": {
+        "lexical_depth": "BASIC",
+        "school_age_evidence": "GRADE_3_6_SUPPORTED",
+        "evidence_refs": [
+          "KRD:15595",
+          "KICCE:2026:PR2012"
+        ],
+        "school_age_source_form": "속상한"
+      }
     },
     {
       "id": "KE0054",
@@ -682,7 +1078,15 @@
       "register": "neutral",
       "status": "SOURCE_VERIFIED",
       "evidence_ref": "KRD:71499",
-      "note": "2026-09-21 국립국어원 한국어기초사전의 표제어·뜻풀이를 직접 확인한 표현."
+      "note": "2026-09-21 국립국어원 한국어기초사전의 표제어·뜻풀이를 직접 확인한 표현.",
+      "learning_profile": {
+        "lexical_depth": "EXPANDED",
+        "school_age_evidence": "LEXICAL_ONLY",
+        "evidence_refs": [
+          "KRD:71499"
+        ],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0055",
@@ -690,9 +1094,17 @@
       "family_id": "KF08",
       "level": 1,
       "register": "everyday",
-      "status": "DISCOVERY_ONLY",
-      "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "KRD:62049",
+      "note": "2026-09-21 국립국어원 한국어기초사전의 공식 문형·결합·예문 근거를 직접 확인한 기본 표현.",
+      "learning_profile": {
+        "lexical_depth": "BASIC",
+        "school_age_evidence": "LEXICAL_ONLY",
+        "evidence_refs": [
+          "KRD:62049"
+        ],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0056",
@@ -702,7 +1114,15 @@
       "register": "everyday",
       "status": "SOURCE_VERIFIED",
       "evidence_ref": "KRD:87927",
-      "note": "2026-09-21 국립국어원 한국어기초사전의 표제어·뜻풀이를 직접 확인한 표현."
+      "note": "2026-09-21 국립국어원 한국어기초사전의 표제어·뜻풀이를 직접 확인한 표현.",
+      "learning_profile": {
+        "lexical_depth": "EXPANDED",
+        "school_age_evidence": "LEXICAL_ONLY",
+        "evidence_refs": [
+          "KRD:87927"
+        ],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0057",
@@ -712,7 +1132,16 @@
       "register": "everyday",
       "status": "SOURCE_VERIFIED",
       "evidence_ref": "KRD:67854",
-      "note": "2026-09-21 국립국어원 한국어기초사전의 표제어·뜻풀이를 직접 확인한 표현."
+      "note": "2026-09-21 국립국어원 한국어기초사전의 표제어·뜻풀이를 직접 확인한 표현.",
+      "learning_profile": {
+        "lexical_depth": "BASIC",
+        "school_age_evidence": "GRADE_3_6_SUPPORTED",
+        "evidence_refs": [
+          "KRD:67854",
+          "KICCE:2026:PR2012"
+        ],
+        "school_age_source_form": "외로운"
+      }
     },
     {
       "id": "KE0058",
@@ -722,7 +1151,15 @@
       "register": "neutral",
       "status": "SOURCE_VERIFIED",
       "evidence_ref": "KRD:16735",
-      "note": "2026-09-21 국립국어원 한국어기초사전의 표제어·뜻풀이를 직접 확인한 표현."
+      "note": "2026-09-21 국립국어원 한국어기초사전의 표제어·뜻풀이를 직접 확인한 표현.",
+      "learning_profile": {
+        "lexical_depth": "EXPANDED",
+        "school_age_evidence": "LEXICAL_ONLY",
+        "evidence_refs": [
+          "KRD:16735"
+        ],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0059",
@@ -732,7 +1169,13 @@
       "register": "literary",
       "status": "DISCOVERY_ONLY",
       "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "learning_profile": {
+        "lexical_depth": "NUANCED",
+        "school_age_evidence": "AGE_REVIEW_REQUIRED",
+        "evidence_refs": [],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0060",
@@ -742,7 +1185,13 @@
       "register": "formal",
       "status": "DISCOVERY_ONLY",
       "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "learning_profile": {
+        "lexical_depth": "NUANCED",
+        "school_age_evidence": "AGE_REVIEW_REQUIRED",
+        "evidence_refs": [],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0061",
@@ -752,7 +1201,13 @@
       "register": "literary",
       "status": "DISCOVERY_ONLY",
       "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "learning_profile": {
+        "lexical_depth": "NUANCED",
+        "school_age_evidence": "AGE_REVIEW_REQUIRED",
+        "evidence_refs": [],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0062",
@@ -762,7 +1217,13 @@
       "register": "literary",
       "status": "DISCOVERY_ONLY",
       "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "learning_profile": {
+        "lexical_depth": "NUANCED",
+        "school_age_evidence": "AGE_REVIEW_REQUIRED",
+        "evidence_refs": [],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0063",
@@ -770,9 +1231,18 @@
       "family_id": "KF10",
       "level": 1,
       "register": "everyday",
-      "status": "DISCOVERY_ONLY",
-      "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "KRD:65103",
+      "note": "2026-09-21 국립국어원 한국어기초사전의 표제어·뜻풀이를 직접 확인한 기본 표현.",
+      "learning_profile": {
+        "lexical_depth": "BASIC",
+        "school_age_evidence": "GRADE_3_6_SUPPORTED",
+        "evidence_refs": [
+          "KRD:65103",
+          "KICCE:2026:PR2012"
+        ],
+        "school_age_source_form": "슬픈"
+      }
     },
     {
       "id": "KE0064",
@@ -782,7 +1252,13 @@
       "register": "neutral",
       "status": "DISCOVERY_ONLY",
       "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "learning_profile": {
+        "lexical_depth": "EXPANDED",
+        "school_age_evidence": "AGE_REVIEW_REQUIRED",
+        "evidence_refs": [],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0065",
@@ -792,7 +1268,13 @@
       "register": "neutral",
       "status": "DISCOVERY_ONLY",
       "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "learning_profile": {
+        "lexical_depth": "EXPANDED",
+        "school_age_evidence": "AGE_REVIEW_REQUIRED",
+        "evidence_refs": [],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0066",
@@ -802,7 +1284,13 @@
       "register": "formal",
       "status": "DISCOVERY_ONLY",
       "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "learning_profile": {
+        "lexical_depth": "NUANCED",
+        "school_age_evidence": "AGE_REVIEW_REQUIRED",
+        "evidence_refs": [],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0067",
@@ -812,7 +1300,13 @@
       "register": "formal",
       "status": "DISCOVERY_ONLY",
       "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "learning_profile": {
+        "lexical_depth": "NUANCED",
+        "school_age_evidence": "AGE_REVIEW_REQUIRED",
+        "evidence_refs": [],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0068",
@@ -822,7 +1316,13 @@
       "register": "formal",
       "status": "DISCOVERY_ONLY",
       "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "learning_profile": {
+        "lexical_depth": "NUANCED",
+        "school_age_evidence": "AGE_REVIEW_REQUIRED",
+        "evidence_refs": [],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0069",
@@ -832,7 +1332,13 @@
       "register": "literary",
       "status": "DISCOVERY_ONLY",
       "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "learning_profile": {
+        "lexical_depth": "NUANCED",
+        "school_age_evidence": "AGE_REVIEW_REQUIRED",
+        "evidence_refs": [],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0070",
@@ -842,7 +1348,13 @@
       "register": "formal",
       "status": "DISCOVERY_ONLY",
       "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "learning_profile": {
+        "lexical_depth": "NUANCED",
+        "school_age_evidence": "AGE_REVIEW_REQUIRED",
+        "evidence_refs": [],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0071",
@@ -852,7 +1364,15 @@
       "register": "everyday",
       "status": "SOURCE_VERIFIED",
       "evidence_ref": "KRD:14090",
-      "note": "2026-09-21 국립국어원 한국어기초사전의 표제어·뜻풀이를 직접 확인한 표현."
+      "note": "2026-09-21 국립국어원 한국어기초사전의 표제어·뜻풀이를 직접 확인한 표현.",
+      "learning_profile": {
+        "lexical_depth": "BASIC",
+        "school_age_evidence": "LEXICAL_ONLY",
+        "evidence_refs": [
+          "KRD:14090"
+        ],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0072",
@@ -862,7 +1382,15 @@
       "register": "neutral",
       "status": "SOURCE_VERIFIED",
       "evidence_ref": "KRD:87932",
-      "note": "2026-09-21 국립국어원 한국어기초사전의 표제어·뜻풀이를 직접 확인한 표현."
+      "note": "2026-09-21 국립국어원 한국어기초사전의 표제어·뜻풀이를 직접 확인한 표현.",
+      "learning_profile": {
+        "lexical_depth": "EXPANDED",
+        "school_age_evidence": "LEXICAL_ONLY",
+        "evidence_refs": [
+          "KRD:87932"
+        ],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0073",
@@ -872,7 +1400,15 @@
       "register": "neutral",
       "status": "SOURCE_VERIFIED",
       "evidence_ref": "KRD:87691",
-      "note": "2026-09-21 국립국어원 한국어기초사전의 표제어·뜻풀이를 직접 확인한 표현."
+      "note": "2026-09-21 국립국어원 한국어기초사전의 표제어·뜻풀이를 직접 확인한 표현.",
+      "learning_profile": {
+        "lexical_depth": "EXPANDED",
+        "school_age_evidence": "LEXICAL_ONLY",
+        "evidence_refs": [
+          "KRD:87691"
+        ],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0074",
@@ -882,7 +1418,13 @@
       "register": "literary",
       "status": "DISCOVERY_ONLY",
       "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "learning_profile": {
+        "lexical_depth": "NUANCED",
+        "school_age_evidence": "AGE_REVIEW_REQUIRED",
+        "evidence_refs": [],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0075",
@@ -892,7 +1434,15 @@
       "register": "neutral",
       "status": "SOURCE_VERIFIED",
       "evidence_ref": "KRD:66422",
-      "note": "2026-09-21 국립국어원 한국어기초사전의 표제어·뜻풀이를 직접 확인한 표현."
+      "note": "2026-09-21 국립국어원 한국어기초사전의 표제어·뜻풀이를 직접 확인한 표현.",
+      "learning_profile": {
+        "lexical_depth": "EXPANDED",
+        "school_age_evidence": "LEXICAL_ONLY",
+        "evidence_refs": [
+          "KRD:66422"
+        ],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0076",
@@ -902,7 +1452,13 @@
       "register": "formal",
       "status": "DISCOVERY_ONLY",
       "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "learning_profile": {
+        "lexical_depth": "NUANCED",
+        "school_age_evidence": "AGE_REVIEW_REQUIRED",
+        "evidence_refs": [],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0077",
@@ -912,7 +1468,13 @@
       "register": "everyday",
       "status": "DISCOVERY_ONLY",
       "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "learning_profile": {
+        "lexical_depth": "EXPANDED",
+        "school_age_evidence": "AGE_REVIEW_REQUIRED",
+        "evidence_refs": [],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0078",
@@ -920,9 +1482,18 @@
       "family_id": "KF12",
       "level": 1,
       "register": "everyday",
-      "status": "DISCOVERY_ONLY",
-      "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "KRD:15869",
+      "note": "2026-09-21 국립국어원 한국어기초사전의 표제어·뜻풀이를 직접 확인한 기본 표현.",
+      "learning_profile": {
+        "lexical_depth": "BASIC",
+        "school_age_evidence": "GRADE_3_6_SUPPORTED",
+        "evidence_refs": [
+          "KRD:15869",
+          "KICCE:2026:PR2012"
+        ],
+        "school_age_source_form": "걱정스러운"
+      }
     },
     {
       "id": "KE0079",
@@ -932,7 +1503,16 @@
       "register": "everyday",
       "status": "SOURCE_VERIFIED",
       "evidence_ref": "KRD:60397",
-      "note": "국립국어원 한국어기초사전의 뜻풀이와 용례를 확인한 표현."
+      "note": "국립국어원 한국어기초사전의 뜻풀이와 용례를 확인한 표현.",
+      "learning_profile": {
+        "lexical_depth": "BASIC",
+        "school_age_evidence": "GRADE_3_6_SUPPORTED",
+        "evidence_refs": [
+          "KRD:60397",
+          "KICCE:2026:PR2012"
+        ],
+        "school_age_source_form": "불안한"
+      }
     },
     {
       "id": "KE0080",
@@ -942,7 +1522,15 @@
       "register": "everyday",
       "status": "SOURCE_VERIFIED",
       "evidence_ref": "KRD:75511",
-      "note": "기존 NameOnMyMind 연구 또는 국립국어원 사전 근거가 연결된 표현."
+      "note": "기존 NameOnMyMind 연구 또는 국립국어원 사전 근거가 연결된 표현.",
+      "learning_profile": {
+        "lexical_depth": "EXPANDED",
+        "school_age_evidence": "LEXICAL_ONLY",
+        "evidence_refs": [
+          "KRD:75511"
+        ],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0081",
@@ -952,7 +1540,15 @@
       "register": "neutral",
       "status": "SOURCE_VERIFIED",
       "evidence_ref": "KRD:25462",
-      "note": "기존 NameOnMyMind 연구 또는 국립국어원 사전 근거가 연결된 표현."
+      "note": "기존 NameOnMyMind 연구 또는 국립국어원 사전 근거가 연결된 표현.",
+      "learning_profile": {
+        "lexical_depth": "EXPANDED",
+        "school_age_evidence": "LEXICAL_ONLY",
+        "evidence_refs": [
+          "KRD:25462"
+        ],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0082",
@@ -962,7 +1558,13 @@
       "register": "neutral",
       "status": "DISCOVERY_ONLY",
       "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "learning_profile": {
+        "lexical_depth": "NUANCED",
+        "school_age_evidence": "AGE_REVIEW_REQUIRED",
+        "evidence_refs": [],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0083",
@@ -972,7 +1574,13 @@
       "register": "everyday",
       "status": "DISCOVERY_ONLY",
       "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "learning_profile": {
+        "lexical_depth": "EXPANDED",
+        "school_age_evidence": "AGE_REVIEW_REQUIRED",
+        "evidence_refs": [],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0084",
@@ -982,7 +1590,13 @@
       "register": "formal",
       "status": "DISCOVERY_ONLY",
       "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "learning_profile": {
+        "lexical_depth": "NUANCED",
+        "school_age_evidence": "AGE_REVIEW_REQUIRED",
+        "evidence_refs": [],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0085",
@@ -990,9 +1604,18 @@
       "family_id": "KF13",
       "level": 1,
       "register": "neutral",
-      "status": "DISCOVERY_ONLY",
-      "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "KRD:14925",
+      "note": "2026-09-21 국립국어원 한국어기초사전의 표제어·뜻풀이를 직접 확인한 기본 표현.",
+      "learning_profile": {
+        "lexical_depth": "BASIC",
+        "school_age_evidence": "GRADE_3_6_SUPPORTED",
+        "evidence_refs": [
+          "KRD:14925",
+          "KICCE:2026:PR2012"
+        ],
+        "school_age_source_form": "두려운"
+      }
     },
     {
       "id": "KE0086",
@@ -1000,9 +1623,18 @@
       "family_id": "KF13",
       "level": 1,
       "register": "everyday",
-      "status": "DISCOVERY_ONLY",
-      "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "KRD:55637",
+      "note": "2026-09-21 국립국어원 한국어기초사전의 표제어·뜻풀이를 직접 확인한 기본 표현.",
+      "learning_profile": {
+        "lexical_depth": "BASIC",
+        "school_age_evidence": "GRADE_3_6_SUPPORTED",
+        "evidence_refs": [
+          "KRD:55637",
+          "KICCE:2026:PR2012"
+        ],
+        "school_age_source_form": "무서운"
+      }
     },
     {
       "id": "KE0087",
@@ -1010,9 +1642,17 @@
       "family_id": "KF13",
       "level": 1,
       "register": "everyday",
-      "status": "DISCOVERY_ONLY",
-      "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "KRD:15937",
+      "note": "2026-09-21 국립국어원 한국어기초사전의 표제어·뜻풀이를 직접 확인한 기본 표현.",
+      "learning_profile": {
+        "lexical_depth": "BASIC",
+        "school_age_evidence": "LEXICAL_ONLY",
+        "evidence_refs": [
+          "KRD:15937"
+        ],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0088",
@@ -1022,7 +1662,13 @@
       "register": "everyday",
       "status": "DISCOVERY_ONLY",
       "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "learning_profile": {
+        "lexical_depth": "EXPANDED",
+        "school_age_evidence": "AGE_REVIEW_REQUIRED",
+        "evidence_refs": [],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0089",
@@ -1032,7 +1678,13 @@
       "register": "neutral",
       "status": "DISCOVERY_ONLY",
       "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "learning_profile": {
+        "lexical_depth": "NUANCED",
+        "school_age_evidence": "AGE_REVIEW_REQUIRED",
+        "evidence_refs": [],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0090",
@@ -1042,7 +1694,13 @@
       "register": "neutral",
       "status": "DISCOVERY_ONLY",
       "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "learning_profile": {
+        "lexical_depth": "EXPANDED",
+        "school_age_evidence": "AGE_REVIEW_REQUIRED",
+        "evidence_refs": [],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0091",
@@ -1052,7 +1710,13 @@
       "register": "everyday",
       "status": "DISCOVERY_ONLY",
       "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "learning_profile": {
+        "lexical_depth": "EXPANDED",
+        "school_age_evidence": "AGE_REVIEW_REQUIRED",
+        "evidence_refs": [],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0092",
@@ -1060,9 +1724,17 @@
       "family_id": "KF14",
       "level": 1,
       "register": "everyday",
-      "status": "DISCOVERY_ONLY",
-      "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "KRD:49437",
+      "note": "2026-09-21 국립국어원 한국어기초사전의 표제어·뜻풀이를 직접 확인한 기본 표현.",
+      "learning_profile": {
+        "lexical_depth": "BASIC",
+        "school_age_evidence": "LEXICAL_ONLY",
+        "evidence_refs": [
+          "KRD:49437"
+        ],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0093",
@@ -1072,7 +1744,13 @@
       "register": "everyday",
       "status": "DISCOVERY_ONLY",
       "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "learning_profile": {
+        "lexical_depth": "EXPANDED",
+        "school_age_evidence": "AGE_REVIEW_REQUIRED",
+        "evidence_refs": [],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0094",
@@ -1082,7 +1760,13 @@
       "register": "neutral",
       "status": "DISCOVERY_ONLY",
       "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "learning_profile": {
+        "lexical_depth": "EXPANDED",
+        "school_age_evidence": "AGE_REVIEW_REQUIRED",
+        "evidence_refs": [],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0095",
@@ -1092,7 +1776,13 @@
       "register": "everyday",
       "status": "DISCOVERY_ONLY",
       "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "learning_profile": {
+        "lexical_depth": "EXPANDED",
+        "school_age_evidence": "AGE_REVIEW_REQUIRED",
+        "evidence_refs": [],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0096",
@@ -1102,7 +1792,13 @@
       "register": "neutral",
       "status": "DISCOVERY_ONLY",
       "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "learning_profile": {
+        "lexical_depth": "EXPANDED",
+        "school_age_evidence": "AGE_REVIEW_REQUIRED",
+        "evidence_refs": [],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0097",
@@ -1112,7 +1808,13 @@
       "register": "formal",
       "status": "DISCOVERY_ONLY",
       "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "learning_profile": {
+        "lexical_depth": "NUANCED",
+        "school_age_evidence": "AGE_REVIEW_REQUIRED",
+        "evidence_refs": [],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0098",
@@ -1122,7 +1824,13 @@
       "register": "formal",
       "status": "DISCOVERY_ONLY",
       "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "learning_profile": {
+        "lexical_depth": "NUANCED",
+        "school_age_evidence": "AGE_REVIEW_REQUIRED",
+        "evidence_refs": [],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0099",
@@ -1132,7 +1840,16 @@
       "register": "everyday",
       "status": "SOURCE_VERIFIED",
       "evidence_ref": "KRD:87582",
-      "note": "2026-09-21 국립국어원 한국어기초사전의 표제어·뜻풀이를 직접 확인한 표현."
+      "note": "2026-09-21 국립국어원 한국어기초사전의 표제어·뜻풀이를 직접 확인한 표현.",
+      "learning_profile": {
+        "lexical_depth": "BASIC",
+        "school_age_evidence": "GRADE_3_6_SUPPORTED",
+        "evidence_refs": [
+          "KRD:87582",
+          "KICCE:2026:PR2012"
+        ],
+        "school_age_source_form": "화난"
+      }
     },
     {
       "id": "KE0100",
@@ -1142,7 +1859,13 @@
       "register": "neutral",
       "status": "DISCOVERY_ONLY",
       "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "learning_profile": {
+        "lexical_depth": "EXPANDED",
+        "school_age_evidence": "AGE_REVIEW_REQUIRED",
+        "evidence_refs": [],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0101",
@@ -1152,17 +1875,32 @@
       "register": "literary",
       "status": "DISCOVERY_ONLY",
       "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "learning_profile": {
+        "lexical_depth": "NUANCED",
+        "school_age_evidence": "AGE_REVIEW_REQUIRED",
+        "evidence_refs": [],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0102",
-      "expression": "짜증나다",
+      "expression": "짜증이 나다",
       "family_id": "KF15",
       "level": 1,
       "register": "everyday",
-      "status": "DISCOVERY_ONLY",
-      "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "KRD:71579",
+      "note": "2026-09-21 국립국어원 한국어기초사전의 공식 문형·결합·예문 근거를 직접 확인한 기본 표현.",
+      "learning_profile": {
+        "lexical_depth": "BASIC",
+        "school_age_evidence": "GRADE_3_6_RELATED_FORM",
+        "evidence_refs": [
+          "KRD:71579",
+          "KICCE:2026:PR2012"
+        ],
+        "school_age_source_form": "짜증난"
+      }
     },
     {
       "id": "KE0103",
@@ -1172,7 +1910,15 @@
       "register": "neutral",
       "status": "SOURCE_VERIFIED",
       "evidence_ref": "KRD:60263",
-      "note": "2026-09-21 국립국어원 한국어기초사전의 표제어·뜻풀이를 직접 확인한 표현."
+      "note": "2026-09-21 국립국어원 한국어기초사전의 표제어·뜻풀이를 직접 확인한 표현.",
+      "learning_profile": {
+        "lexical_depth": "EXPANDED",
+        "school_age_evidence": "LEXICAL_ONLY",
+        "evidence_refs": [
+          "KRD:60263"
+        ],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0104",
@@ -1182,7 +1928,13 @@
       "register": "formal",
       "status": "DISCOVERY_ONLY",
       "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "learning_profile": {
+        "lexical_depth": "NUANCED",
+        "school_age_evidence": "AGE_REVIEW_REQUIRED",
+        "evidence_refs": [],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0105",
@@ -1192,7 +1944,13 @@
       "register": "neutral",
       "status": "DISCOVERY_ONLY",
       "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "learning_profile": {
+        "lexical_depth": "NUANCED",
+        "school_age_evidence": "AGE_REVIEW_REQUIRED",
+        "evidence_refs": [],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0106",
@@ -1202,7 +1960,15 @@
       "register": "everyday",
       "status": "SOURCE_VERIFIED",
       "evidence_ref": "G5:C0011",
-      "note": "기존 NameOnMyMind source-first 연구기록에서 표제어·의미 경계를 확인한 표현."
+      "note": "기존 NameOnMyMind source-first 연구기록에서 표제어·의미 경계를 확인한 표현.",
+      "learning_profile": {
+        "lexical_depth": "EXPANDED",
+        "school_age_evidence": "LEXICAL_ONLY",
+        "evidence_refs": [
+          "G5:C0011"
+        ],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0107",
@@ -1212,7 +1978,15 @@
       "register": "neutral",
       "status": "SOURCE_VERIFIED",
       "evidence_ref": "KRD:69870",
-      "note": "2026-09-21 국립국어원 한국어기초사전의 표제어·뜻풀이를 직접 확인한 표현."
+      "note": "2026-09-21 국립국어원 한국어기초사전의 표제어·뜻풀이를 직접 확인한 표현.",
+      "learning_profile": {
+        "lexical_depth": "EXPANDED",
+        "school_age_evidence": "LEXICAL_ONLY",
+        "evidence_refs": [
+          "KRD:69870"
+        ],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0108",
@@ -1222,7 +1996,13 @@
       "register": "neutral",
       "status": "DISCOVERY_ONLY",
       "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "learning_profile": {
+        "lexical_depth": "NUANCED",
+        "school_age_evidence": "AGE_REVIEW_REQUIRED",
+        "evidence_refs": [],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0109",
@@ -1232,7 +2012,13 @@
       "register": "neutral",
       "status": "DISCOVERY_ONLY",
       "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "learning_profile": {
+        "lexical_depth": "NUANCED",
+        "school_age_evidence": "AGE_REVIEW_REQUIRED",
+        "evidence_refs": [],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0110",
@@ -1242,7 +2028,13 @@
       "register": "neutral",
       "status": "DISCOVERY_ONLY",
       "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "learning_profile": {
+        "lexical_depth": "EXPANDED",
+        "school_age_evidence": "AGE_REVIEW_REQUIRED",
+        "evidence_refs": [],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0111",
@@ -1252,7 +2044,16 @@
       "register": "everyday",
       "status": "SOURCE_VERIFIED",
       "evidence_ref": "KRD:60125",
-      "note": "국립국어원 한국어기초사전의 뜻풀이와 용례를 확인한 표현."
+      "note": "국립국어원 한국어기초사전의 뜻풀이와 용례를 확인한 표현.",
+      "learning_profile": {
+        "lexical_depth": "BASIC",
+        "school_age_evidence": "GRADE_3_6_SUPPORTED",
+        "evidence_refs": [
+          "KRD:60125",
+          "KICCE:2026:PR2012"
+        ],
+        "school_age_source_form": "부끄러운"
+      }
     },
     {
       "id": "KE0112",
@@ -1260,9 +2061,17 @@
       "family_id": "KF17",
       "level": 1,
       "register": "everyday",
-      "status": "DISCOVERY_ONLY",
-      "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "KRD:24910",
+      "note": "2026-09-21 국립국어원 한국어기초사전의 표제어·뜻풀이를 직접 확인한 기본 표현.",
+      "learning_profile": {
+        "lexical_depth": "BASIC",
+        "school_age_evidence": "LEXICAL_ONLY",
+        "evidence_refs": [
+          "KRD:24910"
+        ],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0113",
@@ -1272,7 +2081,15 @@
       "register": "neutral",
       "status": "SOURCE_VERIFIED",
       "evidence_ref": "KRD:56352",
-      "note": "국립국어원 한국어기초사전의 뜻풀이와 용례를 확인한 표현."
+      "note": "국립국어원 한국어기초사전의 뜻풀이와 용례를 확인한 표현.",
+      "learning_profile": {
+        "lexical_depth": "EXPANDED",
+        "school_age_evidence": "LEXICAL_ONLY",
+        "evidence_refs": [
+          "KRD:56352"
+        ],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0114",
@@ -1282,7 +2099,15 @@
       "register": "everyday",
       "status": "SOURCE_VERIFIED",
       "evidence_ref": "KRD:66519",
-      "note": "국립국어원 한국어기초사전의 뜻풀이와 용례를 확인한 표현."
+      "note": "국립국어원 한국어기초사전의 뜻풀이와 용례를 확인한 표현.",
+      "learning_profile": {
+        "lexical_depth": "EXPANDED",
+        "school_age_evidence": "LEXICAL_ONLY",
+        "evidence_refs": [
+          "KRD:66519"
+        ],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0115",
@@ -1292,7 +2117,15 @@
       "register": "neutral",
       "status": "SOURCE_VERIFIED",
       "evidence_ref": "G5:C0015",
-      "note": "기존 NameOnMyMind 연구 또는 국립국어원 사전 근거가 연결된 표현."
+      "note": "기존 NameOnMyMind 연구 또는 국립국어원 사전 근거가 연결된 표현.",
+      "learning_profile": {
+        "lexical_depth": "NUANCED",
+        "school_age_evidence": "LEXICAL_ONLY",
+        "evidence_refs": [
+          "G5:C0015"
+        ],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0116",
@@ -1302,7 +2135,13 @@
       "register": "neutral",
       "status": "DISCOVERY_ONLY",
       "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "learning_profile": {
+        "lexical_depth": "EXPANDED",
+        "school_age_evidence": "AGE_REVIEW_REQUIRED",
+        "evidence_refs": [],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0117",
@@ -1312,7 +2151,13 @@
       "register": "marked",
       "status": "DISCOVERY_ONLY",
       "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "learning_profile": {
+        "lexical_depth": "NUANCED",
+        "school_age_evidence": "AGE_REVIEW_REQUIRED",
+        "evidence_refs": [],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0118",
@@ -1320,9 +2165,17 @@
       "family_id": "KF18",
       "level": 1,
       "register": "everyday",
-      "status": "DISCOVERY_ONLY",
-      "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "KRD:67883",
+      "note": "2026-09-21 국립국어원 한국어기초사전의 표제어·뜻풀이를 직접 확인한 기본 표현.",
+      "learning_profile": {
+        "lexical_depth": "BASIC",
+        "school_age_evidence": "LEXICAL_ONLY",
+        "evidence_refs": [
+          "KRD:67883"
+        ],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0119",
@@ -1332,7 +2185,13 @@
       "register": "formal",
       "status": "DISCOVERY_ONLY",
       "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "learning_profile": {
+        "lexical_depth": "EXPANDED",
+        "school_age_evidence": "AGE_REVIEW_REQUIRED",
+        "evidence_refs": [],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0120",
@@ -1342,7 +2201,13 @@
       "register": "formal",
       "status": "DISCOVERY_ONLY",
       "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "learning_profile": {
+        "lexical_depth": "NUANCED",
+        "school_age_evidence": "AGE_REVIEW_REQUIRED",
+        "evidence_refs": [],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0121",
@@ -1352,7 +2217,13 @@
       "register": "neutral",
       "status": "DISCOVERY_ONLY",
       "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "learning_profile": {
+        "lexical_depth": "EXPANDED",
+        "school_age_evidence": "AGE_REVIEW_REQUIRED",
+        "evidence_refs": [],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0122",
@@ -1362,7 +2233,13 @@
       "register": "neutral",
       "status": "DISCOVERY_ONLY",
       "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "learning_profile": {
+        "lexical_depth": "EXPANDED",
+        "school_age_evidence": "AGE_REVIEW_REQUIRED",
+        "evidence_refs": [],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0123",
@@ -1372,7 +2249,13 @@
       "register": "formal",
       "status": "DISCOVERY_ONLY",
       "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "learning_profile": {
+        "lexical_depth": "NUANCED",
+        "school_age_evidence": "AGE_REVIEW_REQUIRED",
+        "evidence_refs": [],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0124",
@@ -1382,7 +2265,13 @@
       "register": "everyday",
       "status": "DISCOVERY_ONLY",
       "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "learning_profile": {
+        "lexical_depth": "EXPANDED",
+        "school_age_evidence": "AGE_REVIEW_REQUIRED",
+        "evidence_refs": [],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0125",
@@ -1392,7 +2281,15 @@
       "register": "everyday",
       "status": "SOURCE_VERIFIED",
       "evidence_ref": "KRD:59509",
-      "note": "2026-09-21 국립국어원 한국어기초사전의 표제어·뜻풀이를 직접 확인한 표현."
+      "note": "2026-09-21 국립국어원 한국어기초사전의 표제어·뜻풀이를 직접 확인한 표현.",
+      "learning_profile": {
+        "lexical_depth": "BASIC",
+        "school_age_evidence": "LEXICAL_ONLY",
+        "evidence_refs": [
+          "KRD:59509"
+        ],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0126",
@@ -1402,7 +2299,15 @@
       "register": "everyday",
       "status": "SOURCE_VERIFIED",
       "evidence_ref": "KRD:62760",
-      "note": "2026-09-21 국립국어원 한국어기초사전의 표제어·뜻풀이를 직접 확인한 표현."
+      "note": "2026-09-21 국립국어원 한국어기초사전의 표제어·뜻풀이를 직접 확인한 표현.",
+      "learning_profile": {
+        "lexical_depth": "EXPANDED",
+        "school_age_evidence": "LEXICAL_ONLY",
+        "evidence_refs": [
+          "KRD:62760"
+        ],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0127",
@@ -1412,7 +2317,15 @@
       "register": "neutral",
       "status": "SOURCE_VERIFIED",
       "evidence_ref": "KRD:78440",
-      "note": "2026-09-21 국립국어원 한국어기초사전의 표제어·뜻풀이를 직접 확인한 표현."
+      "note": "2026-09-21 국립국어원 한국어기초사전의 표제어·뜻풀이를 직접 확인한 표현.",
+      "learning_profile": {
+        "lexical_depth": "EXPANDED",
+        "school_age_evidence": "LEXICAL_ONLY",
+        "evidence_refs": [
+          "KRD:78440"
+        ],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0128",
@@ -1422,7 +2335,13 @@
       "register": "formal",
       "status": "DISCOVERY_ONLY",
       "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "learning_profile": {
+        "lexical_depth": "NUANCED",
+        "school_age_evidence": "AGE_REVIEW_REQUIRED",
+        "evidence_refs": [],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0129",
@@ -1432,7 +2351,15 @@
       "register": "formal",
       "status": "SOURCE_VERIFIED",
       "evidence_ref": "KRD:63118",
-      "note": "2026-09-21 국립국어원 한국어기초사전의 표제어·뜻풀이를 직접 확인한 표현."
+      "note": "2026-09-21 국립국어원 한국어기초사전의 표제어·뜻풀이를 직접 확인한 표현.",
+      "learning_profile": {
+        "lexical_depth": "NUANCED",
+        "school_age_evidence": "LEXICAL_ONLY",
+        "evidence_refs": [
+          "KRD:63118"
+        ],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0130",
@@ -1442,7 +2369,13 @@
       "register": "marked",
       "status": "DISCOVERY_ONLY",
       "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "learning_profile": {
+        "lexical_depth": "EXPANDED",
+        "school_age_evidence": "AGE_REVIEW_REQUIRED",
+        "evidence_refs": [],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0131",
@@ -1450,9 +2383,17 @@
       "family_id": "KF20",
       "level": 1,
       "register": "everyday",
-      "status": "DISCOVERY_ONLY",
-      "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "KRD:88324",
+      "note": "2026-09-21 국립국어원 한국어기초사전의 표제어·뜻풀이를 직접 확인한 기본 표현.",
+      "learning_profile": {
+        "lexical_depth": "BASIC",
+        "school_age_evidence": "LEXICAL_ONLY",
+        "evidence_refs": [
+          "KRD:88324"
+        ],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0132",
@@ -1460,9 +2401,17 @@
       "family_id": "KF20",
       "level": 1,
       "register": "everyday",
-      "status": "DISCOVERY_ONLY",
-      "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "KRD:13997",
+      "note": "2026-09-21 국립국어원 한국어기초사전의 표제어·뜻풀이를 직접 확인한 기본 표현.",
+      "learning_profile": {
+        "lexical_depth": "BASIC",
+        "school_age_evidence": "LEXICAL_ONLY",
+        "evidence_refs": [
+          "KRD:13997"
+        ],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0133",
@@ -1472,7 +2421,13 @@
       "register": "formal",
       "status": "DISCOVERY_ONLY",
       "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "learning_profile": {
+        "lexical_depth": "NUANCED",
+        "school_age_evidence": "AGE_REVIEW_REQUIRED",
+        "evidence_refs": [],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0134",
@@ -1482,7 +2437,15 @@
       "register": "everyday",
       "status": "SOURCE_VERIFIED",
       "evidence_ref": "KRD:18921",
-      "note": "국립국어원 한국어기초사전의 뜻풀이와 용례를 확인한 표현."
+      "note": "국립국어원 한국어기초사전의 뜻풀이와 용례를 확인한 표현.",
+      "learning_profile": {
+        "lexical_depth": "BASIC",
+        "school_age_evidence": "LEXICAL_ONLY",
+        "evidence_refs": [
+          "KRD:18921"
+        ],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0135",
@@ -1492,7 +2455,15 @@
       "register": "everyday",
       "status": "SOURCE_VERIFIED",
       "evidence_ref": "KRD:70500",
-      "note": "국립국어원 한국어기초사전의 뜻풀이와 용례를 확인한 표현."
+      "note": "국립국어원 한국어기초사전의 뜻풀이와 용례를 확인한 표현.",
+      "learning_profile": {
+        "lexical_depth": "EXPANDED",
+        "school_age_evidence": "LEXICAL_ONLY",
+        "evidence_refs": [
+          "KRD:70500"
+        ],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0136",
@@ -1502,7 +2473,13 @@
       "register": "everyday",
       "status": "DISCOVERY_ONLY",
       "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "learning_profile": {
+        "lexical_depth": "EXPANDED",
+        "school_age_evidence": "AGE_REVIEW_REQUIRED",
+        "evidence_refs": [],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0137",
@@ -1512,7 +2489,15 @@
       "register": "neutral",
       "status": "SOURCE_VERIFIED",
       "evidence_ref": "KRD:87402",
-      "note": "국립국어원 한국어기초사전의 뜻풀이와 용례를 확인한 표현."
+      "note": "국립국어원 한국어기초사전의 뜻풀이와 용례를 확인한 표현.",
+      "learning_profile": {
+        "lexical_depth": "EXPANDED",
+        "school_age_evidence": "LEXICAL_ONLY",
+        "evidence_refs": [
+          "KRD:87402"
+        ],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0138",
@@ -1522,7 +2507,13 @@
       "register": "formal",
       "status": "DISCOVERY_ONLY",
       "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "learning_profile": {
+        "lexical_depth": "NUANCED",
+        "school_age_evidence": "AGE_REVIEW_REQUIRED",
+        "evidence_refs": [],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0139",
@@ -1532,7 +2523,15 @@
       "register": "neutral",
       "status": "SOURCE_VERIFIED",
       "evidence_ref": "G5:C0013",
-      "note": "기존 NameOnMyMind source-first 연구기록에서 표제어·의미 경계를 확인한 표현."
+      "note": "기존 NameOnMyMind source-first 연구기록에서 표제어·의미 경계를 확인한 표현.",
+      "learning_profile": {
+        "lexical_depth": "NUANCED",
+        "school_age_evidence": "LEXICAL_ONLY",
+        "evidence_refs": [
+          "G5:C0013"
+        ],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0140",
@@ -1542,7 +2541,15 @@
       "register": "everyday",
       "status": "SOURCE_VERIFIED",
       "evidence_ref": "G5:C0014",
-      "note": "기존 NameOnMyMind source-first 연구기록에서 표제어·의미 경계를 확인한 표현."
+      "note": "기존 NameOnMyMind source-first 연구기록에서 표제어·의미 경계를 확인한 표현.",
+      "learning_profile": {
+        "lexical_depth": "EXPANDED",
+        "school_age_evidence": "LEXICAL_ONLY",
+        "evidence_refs": [
+          "G5:C0014"
+        ],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0141",
@@ -1552,7 +2559,15 @@
       "register": "neutral",
       "status": "SOURCE_VERIFIED",
       "evidence_ref": "KRD:66238",
-      "note": "2026-09-21 국립국어원 한국어기초사전의 표제어·뜻풀이를 직접 확인한 표현."
+      "note": "2026-09-21 국립국어원 한국어기초사전의 표제어·뜻풀이를 직접 확인한 표현.",
+      "learning_profile": {
+        "lexical_depth": "EXPANDED",
+        "school_age_evidence": "LEXICAL_ONLY",
+        "evidence_refs": [
+          "KRD:66238"
+        ],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0142",
@@ -1562,7 +2577,13 @@
       "register": "neutral",
       "status": "DISCOVERY_ONLY",
       "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "learning_profile": {
+        "lexical_depth": "EXPANDED",
+        "school_age_evidence": "AGE_REVIEW_REQUIRED",
+        "evidence_refs": [],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0143",
@@ -1570,9 +2591,17 @@
       "family_id": "KF21",
       "level": 1,
       "register": "everyday",
-      "status": "DISCOVERY_ONLY",
-      "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "KRD:66274",
+      "note": "2026-09-21 국립국어원 한국어기초사전의 표제어·뜻풀이를 직접 확인한 기본 표현.",
+      "learning_profile": {
+        "lexical_depth": "BASIC",
+        "school_age_evidence": "LEXICAL_ONLY",
+        "evidence_refs": [
+          "KRD:66274"
+        ],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0144",
@@ -1582,7 +2611,13 @@
       "register": "neutral",
       "status": "DISCOVERY_ONLY",
       "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "learning_profile": {
+        "lexical_depth": "EXPANDED",
+        "school_age_evidence": "AGE_REVIEW_REQUIRED",
+        "evidence_refs": [],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0145",
@@ -1592,7 +2627,15 @@
       "register": "everyday",
       "status": "SOURCE_VERIFIED",
       "evidence_ref": "KRD:71378",
-      "note": "국립국어원 한국어기초사전의 뜻풀이와 용례를 확인한 표현."
+      "note": "국립국어원 한국어기초사전의 뜻풀이와 용례를 확인한 표현.",
+      "learning_profile": {
+        "lexical_depth": "EXPANDED",
+        "school_age_evidence": "LEXICAL_ONLY",
+        "evidence_refs": [
+          "KRD:71378"
+        ],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0146",
@@ -1602,7 +2645,13 @@
       "register": "everyday",
       "status": "DISCOVERY_ONLY",
       "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "learning_profile": {
+        "lexical_depth": "EXPANDED",
+        "school_age_evidence": "AGE_REVIEW_REQUIRED",
+        "evidence_refs": [],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0147",
@@ -1612,7 +2661,15 @@
       "register": "everyday",
       "status": "SOURCE_VERIFIED",
       "evidence_ref": "G5:C0010",
-      "note": "기존 NameOnMyMind 연구 또는 국립국어원 사전 근거가 연결된 표현."
+      "note": "기존 NameOnMyMind 연구 또는 국립국어원 사전 근거가 연결된 표현.",
+      "learning_profile": {
+        "lexical_depth": "EXPANDED",
+        "school_age_evidence": "LEXICAL_ONLY",
+        "evidence_refs": [
+          "G5:C0010"
+        ],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0148",
@@ -1622,7 +2679,13 @@
       "register": "everyday",
       "status": "DISCOVERY_ONLY",
       "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "learning_profile": {
+        "lexical_depth": "EXPANDED",
+        "school_age_evidence": "AGE_REVIEW_REQUIRED",
+        "evidence_refs": [],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0149",
@@ -1632,7 +2695,13 @@
       "register": "everyday",
       "status": "DISCOVERY_ONLY",
       "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "learning_profile": {
+        "lexical_depth": "EXPANDED",
+        "school_age_evidence": "AGE_REVIEW_REQUIRED",
+        "evidence_refs": [],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0150",
@@ -1642,7 +2711,13 @@
       "register": "neutral",
       "status": "DISCOVERY_ONLY",
       "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "learning_profile": {
+        "lexical_depth": "EXPANDED",
+        "school_age_evidence": "AGE_REVIEW_REQUIRED",
+        "evidence_refs": [],
+        "school_age_source_form": null
+      }
     },
     {
       "id": "KE0151",
@@ -1650,9 +2725,17 @@
       "family_id": "KF22",
       "level": 1,
       "register": "everyday",
-      "status": "DISCOVERY_ONLY",
-      "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "KRD:48261",
+      "note": "2026-09-21 국립국어원 한국어기초사전의 공식 문형·결합·예문 근거를 직접 확인한 기본 표현.",
+      "learning_profile": {
+        "lexical_depth": "BASIC",
+        "school_age_evidence": "LEXICAL_ONLY",
+        "evidence_refs": [
+          "KRD:48261"
+        ],
+        "school_age_source_form": null
+      }
     }
   ],
   "contrast_sets": [

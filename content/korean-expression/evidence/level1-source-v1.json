@@ -1,0 +1,203 @@
+{
+  "schema_version": "1.0.0",
+  "snapshot_id": "KOREAN_LEVEL1_LEXICAL_EVIDENCE_V1_2026-09-21",
+  "captured_at": "2026-09-21",
+  "provider": "National Institute of Korean Language Basic Korean Dictionary",
+  "provider_url": "https://krdict.korean.go.kr/",
+  "policy": "Level 1 expressions are promoted only when the canonical expression or a clearly documented phrase/example form resolves to official dictionary evidence. A lexical promotion does not by itself imply age suitability.",
+  "entries": [
+    {
+      "term": "기쁘다",
+      "evidence_ref": "KRD:40078",
+      "match_type": "EXACT_HEADWORD",
+      "selected_definition": "기분이 매우 좋고 즐겁다.",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=40078&nation=eng"
+    },
+    {
+      "term": "즐겁다",
+      "evidence_ref": "KRD:62101",
+      "match_type": "EXACT_HEADWORD",
+      "selected_definition": "마음에 들어 흐뭇하고 기쁘다.",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=62101&nation=eng"
+    },
+    {
+      "term": "신나다",
+      "evidence_ref": "KRD:66189",
+      "match_type": "EXACT_HEADWORD",
+      "selected_definition": "흥이 나고 기분이 아주 좋아지다.",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=66189&nation=eng"
+    },
+    {
+      "term": "행복하다",
+      "evidence_ref": "KRD:72481",
+      "match_type": "EXACT_HEADWORD",
+      "selected_definition": "삶에서 충분한 만족과 기쁨을 느껴 흐뭇하다.",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=72481&nation=eng"
+    },
+    {
+      "term": "두근거리다",
+      "evidence_ref": "KRD:48261",
+      "match_type": "EXACT_HEADWORD",
+      "selected_definition": "놀람, 불안, 기대 등으로 가슴이 자꾸 세고 빠르게 뛰다.",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=48261&nation=eng"
+    },
+    {
+      "term": "만족스럽다",
+      "evidence_ref": "KRD:15837",
+      "match_type": "EXACT_HEADWORD",
+      "selected_definition": "기대하거나 필요한 것이 부족함 없거나 마음에 들어 흐뭇하다.",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=15837&nation=eng"
+    },
+    {
+      "term": "마음이 놓이다",
+      "evidence_ref": "KRD:61388",
+      "match_type": "PHRASE_EXAMPLE",
+      "headword": "놓이다",
+      "selected_definition": "걱정이나 긴장 등이 잊히거나 풀어져 없어지다.",
+      "evidence_note": "공식 표제어 '놓이다'의 첫 번째 뜻과 예문에 '마음이 놓이다'가 직접 제시됨.",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=61388&nation=eng"
+    },
+    {
+      "term": "편안하다",
+      "evidence_ref": "KRD:71333",
+      "match_type": "EXACT_HEADWORD",
+      "selected_definition": "몸이나 마음이 편하고 좋다.",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=71333&nation=eng"
+    },
+    {
+      "term": "사랑스럽다",
+      "evidence_ref": "KRD:15851",
+      "match_type": "EXACT_HEADWORD",
+      "selected_definition": "사랑을 느낄 만큼 귀엽다.",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=15851&nation=eng"
+    },
+    {
+      "term": "소중하다",
+      "evidence_ref": "KRD:49253",
+      "match_type": "EXACT_HEADWORD",
+      "selected_definition": "매우 귀중하다.",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=49253&nation=eng"
+    },
+    {
+      "term": "고맙다",
+      "evidence_ref": "KRD:20041",
+      "match_type": "EXACT_HEADWORD",
+      "selected_definition": "남이 자신을 위해 무엇을 해주어서 마음이 흐뭇하고 보답하고 싶다.",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=20041&nation=eng"
+    },
+    {
+      "term": "반갑다",
+      "evidence_ref": "KRD:70861",
+      "match_type": "EXACT_HEADWORD",
+      "selected_definition": "보고 싶던 사람을 만나거나 원하는 일이 이루어져서 마음이 즐겁고 기쁘다.",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=70861&nation=eng"
+    },
+    {
+      "term": "마음이 상하다",
+      "evidence_ref": "KRD:62049",
+      "match_type": "PHRASE_EXAMPLE",
+      "headword": "상하다",
+      "selected_definition": "싫은 일을 당하여 기분이 안 좋아지거나 마음이 불편해지다.",
+      "evidence_note": "공식 표제어 '상하다'의 감정 관련 다섯 번째 뜻에 '마음이 상하다'가 직접 제시됨.",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=62049&nation=eng"
+    },
+    {
+      "term": "슬프다",
+      "evidence_ref": "KRD:65103",
+      "match_type": "EXACT_HEADWORD",
+      "selected_definition": "눈물이 날 만큼 마음이 아프고 괴롭다.",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=65103&nation=eng"
+    },
+    {
+      "term": "걱정스럽다",
+      "evidence_ref": "KRD:15869",
+      "match_type": "EXACT_HEADWORD",
+      "selected_definition": "좋지 않은 일이 있을까 봐 두렵고 불안하다.",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=15869&nation=eng"
+    },
+    {
+      "term": "두렵다",
+      "evidence_ref": "KRD:14925",
+      "match_type": "EXACT_HEADWORD",
+      "selected_definition": "몹시 피하고 싶을 만큼 겁이 나고 무섭다.",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=14925&nation=eng"
+    },
+    {
+      "term": "무섭다",
+      "evidence_ref": "KRD:55637",
+      "match_type": "EXACT_HEADWORD",
+      "selected_definition": "어떤 대상이 꺼려지거나 무슨 일이 일어날까 두렵다.",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=55637&nation=eng"
+    },
+    {
+      "term": "겁나다",
+      "evidence_ref": "KRD:15937",
+      "match_type": "EXACT_HEADWORD",
+      "selected_definition": "무서워하거나 두려워하는 마음이 들다.",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=15937&nation=eng"
+    },
+    {
+      "term": "답답하다",
+      "evidence_ref": "KRD:49437",
+      "match_type": "EXACT_HEADWORD",
+      "selected_definition": "근심이나 걱정으로 마음이 초조하고 속이 시원하지 않다.",
+      "sense_note": "감정 관련 두 번째 뜻을 선택함.",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=49437&nation=eng"
+    },
+    {
+      "term": "짜증이 나다",
+      "evidence_ref": "KRD:71579",
+      "match_type": "COLLOCATION_EXAMPLE",
+      "headword": "짜증",
+      "selected_definition": "마음에 들지 않아서 화를 내거나 싫은 느낌을 겉으로 드러내는 일. 또는 그런 성미.",
+      "evidence_note": "기존 비표제어형 '짜증나다'를 공식 예문에 제시되는 '짜증이 나다'로 정규화함.",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=71579&nation=eng"
+    },
+    {
+      "term": "창피하다",
+      "evidence_ref": "KRD:24910",
+      "match_type": "EXACT_HEADWORD",
+      "selected_definition": "체면이 깎이는 어떤 일이나 사실 때문에 몹시 부끄럽다.",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=24910&nation=eng"
+    },
+    {
+      "term": "미안하다",
+      "evidence_ref": "KRD:67883",
+      "match_type": "EXACT_HEADWORD",
+      "selected_definition": "남에게 잘못을 하여 마음이 편치 못하고 부끄럽다.",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=67883&nation=eng"
+    },
+    {
+      "term": "놀랍다",
+      "evidence_ref": "KRD:88324",
+      "match_type": "EXACT_HEADWORD",
+      "selected_definition": "갑작스럽거나 뜻밖이어서 두렵거나 흥분한 상태에 있다.",
+      "sense_note": "놀람·혼란·경이 영역과 직접 관련된 두 번째 뜻을 선택함.",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=88324&nation=eng"
+    },
+    {
+      "term": "신기하다",
+      "evidence_ref": "KRD:13997",
+      "match_type": "EXACT_HEADWORD_HOMONYM",
+      "selected_definition": "믿을 수 없을 정도로 색다르고 이상하다.",
+      "evidence_note": "동형어 중 놀라움·경이에 가까운 神奇하다 항목을 선택함. 연령 적합성은 별도 검토 대상.",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=13997&nation=eng"
+    },
+    {
+      "term": "복잡하다",
+      "evidence_ref": "KRD:66274",
+      "match_type": "EXACT_HEADWORD",
+      "selected_definition": "일, 감정 등이 정리하기 어려울 만큼 여러 가지가 얽혀 있다.",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=66274&nation=eng"
+    },
+    {
+      "term": "가슴이 두근거리다",
+      "evidence_ref": "KRD:48261",
+      "match_type": "PHRASE_EXAMPLE",
+      "headword": "두근거리다",
+      "selected_definition": "놀람, 불안, 기대 등으로 가슴이 자꾸 세고 빠르게 뛰다.",
+      "evidence_note": "공식 표제어 '두근거리다'의 대표 예문에 '가슴이 두근거리다'가 직접 제시됨.",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=48261&nation=eng"
+    }
+  ]
+}

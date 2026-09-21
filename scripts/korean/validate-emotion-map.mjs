@@ -13,6 +13,8 @@ const schema = read('schema/korean-emotion-map.schema.json');
 const data = read('content/korean-expression/emotion-map-v1.json');
 const evidence = read('content/korean-expression/evidence/registry.json');
 const contrastEvidence = read('content/korean-expression/evidence/contrast-source-v2.json');
+const level1Evidence = read('content/korean-expression/evidence/level1-source-v1.json');
+const schoolAgeEvidence = read('content/korean-expression/evidence/school-age-v1.json');
 const ajv = new Ajv2020({ allErrors: true, strict: false });
 addFormats(ajv);
 const validate = ajv.compile(schema);
@@ -35,7 +37,7 @@ const levels = new Set(data.terms.map((x) => x.level));
 for (const level of [1,2,3]) if (!levels.has(level)) fail(`learning level ${level} missing`);
 
 const verified = data.terms.filter((x) => x.status === 'SOURCE_VERIFIED');
-if (verified.length < 51) fail('too few source-verified Korean emotion terms after contrast evidence v2');
+if (verified.length < 77) fail('too few source-verified Korean emotion terms after Level 1 evidence v1');
 const evidenceMap = new Map(evidence.entries.map((x) => [x.evidence_ref, x]));
 if (evidenceMap.size !== evidence.entries.length) fail('duplicate evidence_ref in Korean emotion evidence registry');
 for (const x of verified) {
@@ -52,6 +54,43 @@ for (const row of evidence.entries) {
 for (const x of data.terms.filter((x) => x.status === 'DISCOVERY_ONLY')) {
   if (x.note?.includes('제품 카드로 사용')) fail(`${x.expression}: discovery term framed as product-ready`);
 }
+
+if (level1Evidence.snapshot_id !== 'KOREAN_LEVEL1_LEXICAL_EVIDENCE_V1_2026-09-21') fail('Level 1 evidence snapshot id mismatch');
+if (level1Evidence.entries.length !== 26) fail('Level 1 evidence v1 must contain 26 newly audited terms');
+if (schoolAgeEvidence.evidence_id !== 'KICCE:2026:PR2012') fail('school-age evidence id mismatch');
+if (schoolAgeEvidence.kci_article_id !== 'ART003331358') fail('school-age KCI article id mismatch');
+if (schoolAgeEvidence.doi !== '10.5718/kcep.2026.20.1.29') fail('school-age DOI mismatch');
+if (schoolAgeEvidence.study_scope?.grades !== '초등학교 3~6학년') fail('school-age evidence grade boundary mismatch');
+if (!schoolAgeEvidence.study_scope?.lower_grade_boundary?.includes('1~2학년')) fail('lower-grade boundary must be explicit');
+
+const depthByLevel = new Map([[1,'BASIC'],[2,'EXPANDED'],[3,'NUANCED']]);
+const schoolCrosswalk = new Map(
+  schoolAgeEvidence.map_crosswalk
+    .filter((x) => x.map_expression && ['GRADE_3_6_SUPPORTED','GRADE_3_6_RELATED_FORM'].includes(x.support))
+    .map((x) => [x.map_expression, x])
+);
+for (const term of data.terms) {
+  const profile = term.learning_profile;
+  if (!profile) fail(`${term.expression}: learning_profile missing`);
+  if (profile.lexical_depth !== depthByLevel.get(term.level)) fail(`${term.expression}: lexical_depth does not match level`);
+
+  const schoolRow = schoolCrosswalk.get(term.expression);
+  const expectedSchool = schoolRow?.support || (term.status === 'SOURCE_VERIFIED' ? 'LEXICAL_ONLY' : 'AGE_REVIEW_REQUIRED');
+  if (profile.school_age_evidence !== expectedSchool) fail(`${term.expression}: school_age_evidence mismatch`);
+  if ((schoolRow?.source_form || null) !== profile.school_age_source_form) fail(`${term.expression}: school_age_source_form mismatch`);
+  if (term.evidence_ref && !profile.evidence_refs.includes(term.evidence_ref)) fail(`${term.expression}: lexical evidence missing from learning_profile`);
+  if (schoolRow && !profile.evidence_refs.includes(schoolAgeEvidence.evidence_id)) fail(`${term.expression}: school-age evidence id missing`);
+}
+if (data.terms.some((x) => x.level === 1 && x.status !== 'SOURCE_VERIFIED')) fail('all Level 1 terms must be source-verified');
+if (data.terms.filter((x) => x.level === 1).length !== 38) fail('Level 1 baseline count drifted');
+if (data.terms.some((x) => x.expression === '짜증나다')) fail('non-canonical 짜증나다 must not re-enter the emotion map');
+if (!data.terms.some((x) => x.expression === '짜증이 나다' && x.evidence_ref === 'KRD:71579')) fail('canonical 짜증이 나다 evidence missing');
+
+for (const row of level1Evidence.entries) {
+  if (!row.term || !row.evidence_ref || !row.selected_definition || !row.url) fail('Level 1 evidence row incomplete');
+  if (!evidenceMap.has(row.evidence_ref)) fail(`${row.term}: Level 1 evidence_ref missing from registry`);
+}
+if (schoolCrosswalk.size !== 22) fail('school-age direct/related crosswalk must contain 22 mapped expressions');
 
 const allExpressions = new Set(expressions);
 for (const set of data.contrast_sets) {
@@ -111,4 +150,8 @@ console.log(JSON.stringify({
   discovery_only_count: data.terms.length - verified.length,
   levels: [...levels].sort(),
   verified_contrast_sets: data.contrast_sets.filter((x) => x.status === 'SOURCE_VERIFIED').map((x) => x.id),
+  level1_verified_count: data.terms.filter((x) => x.level === 1 && x.status === 'SOURCE_VERIFIED').length,
+  school_age_direct_count: data.terms.filter((x) => x.learning_profile.school_age_evidence === 'GRADE_3_6_SUPPORTED').length,
+  school_age_related_count: data.terms.filter((x) => x.learning_profile.school_age_evidence === 'GRADE_3_6_RELATED_FORM').length,
+  age_review_required_count: data.terms.filter((x) => x.learning_profile.school_age_evidence === 'AGE_REVIEW_REQUIRED').length,
 }, null, 2));
