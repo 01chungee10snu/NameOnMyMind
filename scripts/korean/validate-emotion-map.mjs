@@ -14,6 +14,7 @@ const data = read('content/korean-expression/emotion-map-v1.json');
 const evidence = read('content/korean-expression/evidence/registry.json');
 const contrastEvidence = read('content/korean-expression/evidence/contrast-source-v2.json');
 const level1Evidence = read('content/korean-expression/evidence/level1-source-v1.json');
+const level2Evidence = read('content/korean-expression/evidence/level2-exact-source-v1.json');
 const schoolAgeEvidence = read('content/korean-expression/evidence/school-age-v1.json');
 const ajv = new Ajv2020({ allErrors: true, strict: false });
 addFormats(ajv);
@@ -37,7 +38,7 @@ const levels = new Set(data.terms.map((x) => x.level));
 for (const level of [1,2,3]) if (!levels.has(level)) fail(`learning level ${level} missing`);
 
 const verified = data.terms.filter((x) => x.status === 'SOURCE_VERIFIED');
-if (verified.length < 77) fail('too few source-verified Korean emotion terms after Level 1 evidence v1');
+if (verified.length < 99) fail('too few source-verified Korean emotion terms after Level 2 exact evidence v1');
 const evidenceMap = new Map(evidence.entries.map((x) => [x.evidence_ref, x]));
 if (evidenceMap.size !== evidence.entries.length) fail('duplicate evidence_ref in Korean emotion evidence registry');
 for (const x of verified) {
@@ -90,6 +91,20 @@ for (const row of level1Evidence.entries) {
   if (!row.term || !row.evidence_ref || !row.selected_definition || !row.url) fail('Level 1 evidence row incomplete');
   if (!evidenceMap.has(row.evidence_ref)) fail(`${row.term}: Level 1 evidence_ref missing from registry`);
 }
+if (level2Evidence.snapshot_id !== 'KOREAN_LEVEL2_EXACT_EVIDENCE_V1_2026-09-22') fail('Level 2 evidence snapshot id mismatch');
+if (level2Evidence.entries.length !== 22 || level2Evidence.unresolved_terms.length !== 17) fail('Level 2 evidence admission/HOLD counts drifted');
+for (const row of level2Evidence.entries) {
+  if (!row.term || !row.evidence_ref || !row.selected_definition || !row.url) fail('Level 2 evidence row incomplete');
+  if (!evidenceMap.has(row.evidence_ref)) fail(`${row.term}: Level 2 evidence_ref missing from registry`);
+  const term = data.terms.find((x) => x.expression === row.term);
+  if (!term || term.level !== 2 || term.status !== 'SOURCE_VERIFIED' || term.evidence_ref !== row.evidence_ref) fail(`${row.term}: Level 2 admitted term state mismatch`);
+}
+for (const expression of level2Evidence.unresolved_terms) {
+  const term = data.terms.find((x) => x.expression === expression);
+  if (!term || term.level !== 2 || term.status !== 'DISCOVERY_ONLY') fail(`${expression}: unresolved Level 2 term must remain DISCOVERY_ONLY`);
+}
+if (data.terms.filter((x) => x.level === 2 && x.status === 'SOURCE_VERIFIED').length !== 55) fail('Level 2 verified baseline drifted');
+if (data.terms.filter((x) => x.level === 2 && x.status === 'DISCOVERY_ONLY').length !== 17) fail('Level 2 unresolved baseline drifted');
 if (schoolCrosswalk.size !== 22) fail('school-age direct/related crosswalk must contain 22 mapped expressions');
 
 const allExpressions = new Set(expressions);
@@ -151,6 +166,8 @@ console.log(JSON.stringify({
   levels: [...levels].sort(),
   verified_contrast_sets: data.contrast_sets.filter((x) => x.status === 'SOURCE_VERIFIED').map((x) => x.id),
   level1_verified_count: data.terms.filter((x) => x.level === 1 && x.status === 'SOURCE_VERIFIED').length,
+  level2_verified_count: data.terms.filter((x) => x.level === 2 && x.status === 'SOURCE_VERIFIED').length,
+  level2_discovery_count: data.terms.filter((x) => x.level === 2 && x.status === 'DISCOVERY_ONLY').length,
   school_age_direct_count: data.terms.filter((x) => x.learning_profile.school_age_evidence === 'GRADE_3_6_SUPPORTED').length,
   school_age_related_count: data.terms.filter((x) => x.learning_profile.school_age_evidence === 'GRADE_3_6_RELATED_FORM').length,
   age_review_required_count: data.terms.filter((x) => x.learning_profile.school_age_evidence === 'AGE_REVIEW_REQUIRED').length,

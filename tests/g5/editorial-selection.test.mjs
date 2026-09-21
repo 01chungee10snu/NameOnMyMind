@@ -122,6 +122,7 @@ test('app discovery exposes research surfaces without promoting research candida
   const korean = readJson('content/korean-expression/emotion-map-v1.json');
   const schoolAge = readJson('content/korean-expression/evidence/school-age-v1.json');
   const level1Evidence = readJson('content/korean-expression/evidence/level1-source-v1.json');
+  const level2Evidence = readJson('content/korean-expression/evidence/level2-exact-source-v1.json');
   const sourcePreview = readJson('prototypes/g5-research-preview-20260918/manifest.json');
 
   assert.match(ui, /RESEARCH PREVIEW/);
@@ -162,9 +163,11 @@ test('app discovery exposes research surfaces without promoting research candida
   assert.equal(korean.track_id, 'KOREAN_EMOTION_ARTICULATION');
   assert.equal(korean.families.length, 22);
   assert.equal(korean.terms.length, 151);
-  assert.equal(korean.terms.filter((term) => term.status === 'SOURCE_VERIFIED').length, 77);
+  assert.equal(korean.terms.filter((term) => term.status === 'SOURCE_VERIFIED').length, 99);
   assert.equal(korean.terms.filter((term) => term.level === 1).length, 38);
   assert.ok(korean.terms.filter((term) => term.level === 1).every((term) => term.status === 'SOURCE_VERIFIED'));
+  assert.equal(korean.terms.filter((term) => term.level === 2 && term.status === 'SOURCE_VERIFIED').length, 55);
+  assert.equal(korean.terms.filter((term) => term.level === 2 && term.status === 'DISCOVERY_ONLY').length, 17);
   assert.equal(korean.terms.filter((term) => term.learning_profile?.school_age_evidence === 'GRADE_3_6_SUPPORTED').length, 21);
   assert.equal(korean.terms.filter((term) => term.learning_profile?.school_age_evidence === 'GRADE_3_6_RELATED_FORM').length, 1);
   assert.ok(korean.terms.every((term) => term.learning_profile?.lexical_depth));
@@ -184,8 +187,13 @@ test('app discovery exposes research surfaces without promoting research candida
   assert.equal(level1Evidence.snapshot_id, 'KOREAN_LEVEL1_LEXICAL_EVIDENCE_V1_2026-09-21');
   assert.equal(level1Evidence.entries.length, 26);
   assert.ok(level1Evidence.entries.every((row) => row.evidence_ref && row.url?.includes('korean.go.kr')));
+  assert.equal(level2Evidence.snapshot_id, 'KOREAN_LEVEL2_EXACT_EVIDENCE_V1_2026-09-22');
+  assert.equal(level2Evidence.entries.length, 22);
+  assert.equal(level2Evidence.unresolved_terms.length, 17);
+  assert.ok(level2Evidence.entries.every((row) => row.evidence_ref && row.url?.includes('korean.go.kr')));
   assert.match(stage, /school_age_evidence_path/);
   assert.match(stage, /level1_evidence_path/);
+  assert.match(stage, /level2_evidence_path/);
 
   const manifest = readJson('public/BUILD_MANIFEST.json');
   assert.deepEqual(manifest.card_ids, ['C0001','C0002','C0003','C0004','C0005']);

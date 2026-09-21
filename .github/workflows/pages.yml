@@ -55,7 +55,7 @@ jobs:
           if (!fs.existsSync('public/preview/index.html')) throw new Error('Short preview alias missing');
           const korean = preview.korean_emotion_map;
           if (!korean || korean.product_release_authorized) throw new Error('Korean research-map release boundary invalid');
-          if (korean.family_count !== 22 || korean.term_count !== 151 || korean.source_verified_term_count !== 77 || korean.level1_verified_term_count !== 38 || korean.school_age_direct_term_count !== 21 || korean.school_age_related_term_count !== 1 || korean.contrast_set_count !== 16) {
+          if (korean.family_count !== 22 || korean.term_count !== 151 || korean.source_verified_term_count !== 99 || korean.level1_verified_term_count !== 38 || korean.level2_verified_term_count !== 55 || korean.level2_discovery_term_count !== 17 || korean.school_age_direct_term_count !== 21 || korean.school_age_related_term_count !== 1 || korean.contrast_set_count !== 16) {
             throw new Error('Unexpected Korean emotion-map research counts');
           }
           for (const file of [
@@ -64,6 +64,7 @@ jobs:
             'public/content/korean-expression/emotion-map-v1.json',
             'public/content/korean-expression/evidence/school-age-v1.json',
             'public/content/korean-expression/evidence/level1-source-v1.json',
+            'public/content/korean-expression/evidence/level2-exact-source-v1.json',
           ]) if (!fs.existsSync(file)) throw new Error(`Korean research-map staged file missing: ${file}`);
           const koreanHtml = fs.readFileSync('public/prototypes/korean-emotion-map-20260919/index.html','utf8');
           const publicApp = fs.readFileSync('public/src/ui/app.mjs','utf8');
