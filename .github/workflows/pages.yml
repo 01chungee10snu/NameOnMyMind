@@ -55,7 +55,7 @@ jobs:
           if (!fs.existsSync('public/preview/index.html')) throw new Error('Short preview alias missing');
           const korean = preview.korean_emotion_map;
           if (!korean || korean.product_release_authorized) throw new Error('Korean research-map release boundary invalid');
-          if (korean.family_count !== 22 || korean.term_count !== 151 || korean.source_verified_term_count !== 30 || korean.contrast_set_count !== 16) {
+          if (korean.family_count !== 22 || korean.term_count !== 151 || korean.source_verified_term_count !== 51 || korean.contrast_set_count !== 16) {
             throw new Error('Unexpected Korean emotion-map research counts');
           }
           for (const file of [

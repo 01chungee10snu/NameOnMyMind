@@ -8,6 +8,20 @@ Status: Product baseline
 - Editorial/user-facing sentence form may use: `Name On My Mind`
 - Primary Korean tagline baseline: `이 마음에도 이름이 있을까요?`
 
+## Generation surface policy
+
+Default production path for new generated illustrations:
+
+1. Reuse an existing appropriate **Ego Lite** browser window/Space.
+2. Use the user's authenticated **Google** session without copying credentials into the repository.
+3. Generate through **Google Gemini image generation or Google Flow**.
+4. Prefer the current approved **Nano Banana** generation path available in that Google surface; when a Pro-tier variant is available and appropriate, use that as the production default.
+5. Download/record the selected result, preserve generation provenance, and only then connect it to the app asset registry after visual review.
+
+A non-Google/Codex-provided image generator is **fallback only**. It must not be used as the routine production path while the Ego Lite + Google Gemini/Flow route is available. A fallback asset must be explicitly identified as fallback provenance and must pass the same semantic, cultural, accessibility, rights, and human-review gates before product use.
+
+Generation tooling never overrides the content gate: do not generate final product art for an unverified concept merely because a prompt is available.
+
 ## Illustration language
 
 Core medium:

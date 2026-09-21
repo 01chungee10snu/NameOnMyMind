@@ -1,0 +1,250 @@
+{
+  "schema_version": "1.0.0",
+  "snapshot_id": "KOREAN_CONTRAST_EVIDENCE_V2_2026-09-21",
+  "captured_at": "2026-09-21",
+  "provider": "National Institute of Korean Language Basic Korean Dictionary and existing NameOnMyMind source-first records",
+  "provider_policy": "A contrast set may be promoted only when every canonical expression resolves to an official dictionary entry or an existing validated local research record. Dictionary wording is used to bound distinctions; the app must not present contrast cues as diagnostic rules.",
+  "entries": [
+    {
+      "term": "허전하다",
+      "evidence_ref": "KRD:87927",
+      "source_type": "official_dictionary",
+      "para_word_no": "87927",
+      "selected_definition": "의지할 곳이 없어지거나 무엇을 잃은 것처럼 서운한 느낌이 있다.",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=87927&nation=eng"
+    },
+    {
+      "term": "외롭다",
+      "evidence_ref": "KRD:67854",
+      "source_type": "official_dictionary",
+      "para_word_no": "67854",
+      "selected_definition": "혼자가 되거나 의지할 데가 없어서 쓸쓸하다.",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=67854&nation=eng"
+    },
+    {
+      "term": "쓸쓸하다",
+      "evidence_ref": "KRD:16735",
+      "source_type": "official_dictionary",
+      "para_word_no": "16735",
+      "selected_definition": "마음이 외롭고 허전하다.",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=16735&nation=eng"
+    },
+    {
+      "term": "속상하다",
+      "evidence_ref": "KRD:15595",
+      "source_type": "official_dictionary",
+      "para_word_no": "15595",
+      "selected_definition": "일이 뜻대로 되지 않아 마음이 편하지 않고 괴롭다.",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=15595&nation=eng"
+    },
+    {
+      "term": "안타깝다",
+      "evidence_ref": "KRD:71499",
+      "source_type": "official_dictionary",
+      "para_word_no": "71499",
+      "selected_definition": "뜻대로 되지 않거나 보기에 가엾고 불쌍해서 가슴이 아프고 답답하다.",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=71499&nation=eng"
+    },
+    {
+      "term": "서럽다",
+      "evidence_ref": "KRD:62679",
+      "source_type": "official_dictionary",
+      "para_word_no": "62679",
+      "selected_definition": "억울하고 슬프다.",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=62679&nation=eng"
+    },
+    {
+      "term": "화나다",
+      "evidence_ref": "KRD:87582",
+      "source_type": "official_dictionary",
+      "para_word_no": "87582",
+      "selected_definition": "몹시 언짢거나 못마땅하여 기분이 나빠지다.",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=87582&nation=eng"
+    },
+    {
+      "term": "분하다",
+      "evidence_ref": "KRD:60263",
+      "source_type": "official_dictionary",
+      "para_word_no": "60263",
+      "selected_definition": "억울한 일을 당하거나 될 듯한 일이 되지 않아서 매우 화가 나다.",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=60263&nation=eng"
+    },
+    {
+      "term": "억울하다",
+      "evidence_ref": "G5:C0011",
+      "source_type": "local_research_record",
+      "path": "content/g5/research-records/C0011.json",
+      "selected_definition": "자신의 잘못이 없는데 피해·비난·불이익을 받았다는 부당성 인식과 속상함·답답함이 함께 묶이는 상태."
+    },
+    {
+      "term": "원망스럽다",
+      "evidence_ref": "KRD:69870",
+      "source_type": "official_dictionary",
+      "para_word_no": "69870",
+      "selected_definition": "마음에 들지 않아서 탓하거나 미워하는 마음이 있다.",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=69870&nation=eng"
+    },
+    {
+      "term": "실망하다",
+      "evidence_ref": "KRD:14090",
+      "source_type": "official_dictionary",
+      "para_word_no": "14090",
+      "selected_definition": "기대하던 대로 되지 않아 희망을 잃거나 마음이 몹시 상하다.",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=14090&nation=eng"
+    },
+    {
+      "term": "허탈하다",
+      "evidence_ref": "KRD:87932",
+      "source_type": "official_dictionary",
+      "para_word_no": "87932",
+      "selected_definition": "몸의 기운이 빠지고 정신이 멍하다.",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=87932&nation=eng"
+    },
+    {
+      "term": "허무하다",
+      "evidence_ref": "KRD:87691",
+      "source_type": "official_dictionary",
+      "para_word_no": "87691",
+      "selected_definition": "가치 없고 의미 없게 느껴져 매우 허전하고 쓸쓸하다.",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=87691&nation=eng"
+    },
+    {
+      "term": "씁쓸하다",
+      "evidence_ref": "KRD:66422",
+      "source_type": "official_dictionary",
+      "para_word_no": "66422",
+      "selected_definition": "싫거나 언짢은 기분이 조금 나다.",
+      "sense_note": "감정 관련 두 번째 뜻을 선택함.",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=66422&nation=eng"
+    },
+    {
+      "term": "설레다",
+      "evidence_ref": "KRD:62645",
+      "source_type": "official_dictionary",
+      "para_word_no": "62645",
+      "selected_definition": "마음이 차분하지 않고 들떠서 두근거리다.",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=62645&nation=eng"
+    },
+    {
+      "term": "기대되다",
+      "evidence_ref": "KRD:32495",
+      "source_type": "official_dictionary",
+      "para_word_no": "32495",
+      "selected_definition": "어떤 일이 이루어지기를 바라며 기다리게 되다.",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=32495&nation=eng"
+    },
+    {
+      "term": "들뜨다",
+      "evidence_ref": "KRD:49859",
+      "source_type": "official_dictionary",
+      "para_word_no": "49859",
+      "selected_definition": "마음이나 분위기가 안정되지 않고 조금 흥분되다.",
+      "sense_note": "감정 관련 첫 번째 뜻을 선택함.",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=49859&nation=eng"
+    },
+    {
+      "term": "안심되다",
+      "evidence_ref": "KRD:66428",
+      "source_type": "official_dictionary",
+      "para_word_no": "66428",
+      "selected_definition": "걱정이 없어지고 마음이 편해지다.",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=66428&nation=eng"
+    },
+    {
+      "term": "후련하다",
+      "evidence_ref": "G5:C0012",
+      "source_type": "local_research_record",
+      "path": "content/g5/research-records/C0012.json",
+      "selected_definition": "마음에 답답하게 맺혀 있던 것이 풀리면서 시원하고 가벼워지는 해소감."
+    },
+    {
+      "term": "홀가분하다",
+      "evidence_ref": "KRD:87285",
+      "source_type": "official_dictionary",
+      "para_word_no": "87285",
+      "selected_definition": "신경이 쓰이거나 귀찮지 않고 가볍고 편안하다.",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=87285&nation=eng"
+    },
+    {
+      "term": "부럽다",
+      "evidence_ref": "KRD:59509",
+      "source_type": "official_dictionary",
+      "para_word_no": "59509",
+      "selected_definition": "다른 사람의 일이나 물건이 좋아 보여 자기도 그런 일을 이루거나 물건을 갖기를 바라는 마음이 있다.",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=59509&nation=eng"
+    },
+    {
+      "term": "샘내다",
+      "evidence_ref": "KRD:62760",
+      "source_type": "official_dictionary",
+      "para_word_no": "62760",
+      "selected_definition": "남의 것을 탐내거나, 자기보다 형편이 나은 사람을 부러워하거나 싫어하는 마음을 먹다.",
+      "canonicalization_note": "기존 탐색 표현 '샘나다'는 공식 표제어로 직접 확인되지 않아 '샘내다'로 정규화함.",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=62760&nation=eng"
+    },
+    {
+      "term": "질투하다",
+      "evidence_ref": "KRD:78440",
+      "source_type": "official_dictionary",
+      "para_word_no": "78440",
+      "selected_definition": "사랑 관계에서 상대가 다른 사람을 좋아할 때 지나치게 미워하거나, 다른 사람이 잘되거나 좋은 처지에 있는 것을 미워하고 싫어하다.",
+      "sense_note": "관계 질투와 사회비교 질투 두 뜻을 함께 경계로 사용함.",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=78440&nation=eng"
+    },
+    {
+      "term": "선망하다",
+      "evidence_ref": "KRD:63118",
+      "source_type": "official_dictionary",
+      "para_word_no": "63118",
+      "selected_definition": "부러워하며 그렇게 되기를 바라다.",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=63118&nation=eng"
+    },
+    {
+      "term": "착잡하다",
+      "evidence_ref": "G5:C0013",
+      "source_type": "local_research_record",
+      "path": "content/g5/research-records/C0013.json",
+      "selected_definition": "여러 생각과 감정이 뒤섞여 마음이 복잡하고 어수선하며 갈피를 잡기 어려운 상태."
+    },
+    {
+      "term": "시원섭섭하다",
+      "evidence_ref": "G5:C0014",
+      "source_type": "local_research_record",
+      "path": "content/g5/research-records/C0014.json",
+      "selected_definition": "한편으로는 후련하고 다른 한편으로는 서운하고 아쉬운 상반된 정서가 함께 드는 상태."
+    },
+    {
+      "term": "심란하다",
+      "evidence_ref": "KRD:66238",
+      "source_type": "official_dictionary",
+      "para_word_no": "66238",
+      "selected_definition": "마음이 편안하지 못하고 어지럽다.",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=66238&nation=eng"
+    },
+    {
+      "term": "그립다",
+      "evidence_ref": "KRD:37070",
+      "source_type": "official_dictionary",
+      "para_word_no": "37070",
+      "selected_definition": "매우 보고 싶고 만나고 싶다.",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=37070&nation=eng"
+    },
+    {
+      "term": "아련하다",
+      "evidence_ref": "KRD:66802",
+      "source_type": "official_dictionary",
+      "para_word_no": "66802",
+      "selected_definition": "기억이나 생각 등이 또렷하지 않고 희미하다.",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=66802&nation=eng"
+    },
+    {
+      "term": "애틋하다",
+      "evidence_ref": "KRD:66723",
+      "source_type": "official_dictionary",
+      "para_word_no": "66723",
+      "selected_definition": "아끼고 위하는 정이 깊다.",
+      "sense_note": "그리움 비교에서는 깊이 아끼는 정이라는 뜻을 중심으로 사용하며, 섭섭하고 안타까워 애가 타는 뜻도 경계로 함께 고려함.",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=66723&nation=eng"
+    }
+  ]
+}

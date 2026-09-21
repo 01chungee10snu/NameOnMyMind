@@ -140,7 +140,8 @@ test('app discovery exposes research surfaces without promoting research candida
   assert.match(koreanPrototype, /상황에서 찾기/);
   assert.match(koreanPrototype, /guideSituation/);
   assert.match(koreanPrototype, /renderGuideSets/);
-  assert.match(koreanPrototype, /guideShowDrafts\|\|x\.status==='SOURCE_VERIFIED'/);
+  assert.match(koreanPrototype, /data\.contrast_sets\.filter\(x=>x\.status==='SOURCE_VERIFIED'\)/);
+  assert.doesNotMatch(koreanPrototype, /연구 중 비교도 보기/);
   assert.match(koreanPrototype, /앱이 감정을 판정하지 않습니다/);
   assert.match(koreanPrototype, /선택 사항 · 저장하지 않음/);
   assert.doesNotMatch(koreanPrototype, /localStorage/);
@@ -155,8 +156,11 @@ test('app discovery exposes research surfaces without promoting research candida
   assert.equal(korean.track_id, 'KOREAN_EMOTION_ARTICULATION');
   assert.equal(korean.families.length, 22);
   assert.equal(korean.terms.length, 151);
-  assert.equal(korean.terms.filter((term) => term.status === 'SOURCE_VERIFIED').length, 30);
+  assert.equal(korean.terms.filter((term) => term.status === 'SOURCE_VERIFIED').length, 51);
   assert.equal(korean.contrast_sets.length, 16);
+  assert.ok(korean.contrast_sets.every((set) => set.status === 'SOURCE_VERIFIED'));
+  assert.equal(korean.terms.some((term) => term.expression === '샘나다'), false);
+  assert.equal(korean.terms.some((term) => term.expression === '샘내다'), true);
 
   const manifest = readJson('public/BUILD_MANIFEST.json');
   assert.deepEqual(manifest.card_ids, ['C0001','C0002','C0003','C0004','C0005']);

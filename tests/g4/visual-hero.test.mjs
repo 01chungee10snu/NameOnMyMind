@@ -38,6 +38,16 @@ test('daily card treats generated imagery as background-only while text and cont
   assert.match(app, /setProperty\('--card-art-image'/);
 });
 
+test('visual generation policy defaults to Ego Lite plus Google Gemini or Flow, with non-Google generation fallback-only', () => {
+  const policy = readText('docs/architecture/VISUAL_ART_DIRECTION.md');
+  assert.match(policy, /Ego Lite/);
+  assert.match(policy, /Google Gemini image generation or Google Flow/);
+  assert.match(policy, /Nano Banana/);
+  assert.match(policy, /fallback only/);
+  assert.match(policy, /must not be used as the routine production path/);
+  assert.match(policy, /generation provenance/);
+});
+
 test('editorial mobile art direction keeps the image dominant and supporting UI visually restrained', () => {
   const css = readText('assets/css/styles.css');
   assert.match(css, /\.card-body\s*\{[\s\S]*margin:\s*-16px 10px 0/);

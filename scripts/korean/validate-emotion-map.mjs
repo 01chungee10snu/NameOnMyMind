@@ -12,6 +12,7 @@ const fail = (m) => { throw new Error(m); };
 const schema = read('schema/korean-emotion-map.schema.json');
 const data = read('content/korean-expression/emotion-map-v1.json');
 const evidence = read('content/korean-expression/evidence/registry.json');
+const contrastEvidence = read('content/korean-expression/evidence/contrast-source-v2.json');
 const ajv = new Ajv2020({ allErrors: true, strict: false });
 addFormats(ajv);
 const validate = ajv.compile(schema);
@@ -34,7 +35,7 @@ const levels = new Set(data.terms.map((x) => x.level));
 for (const level of [1,2,3]) if (!levels.has(level)) fail(`learning level ${level} missing`);
 
 const verified = data.terms.filter((x) => x.status === 'SOURCE_VERIFIED');
-if (verified.length < 25) fail('too few source-verified Korean emotion terms');
+if (verified.length < 51) fail('too few source-verified Korean emotion terms after contrast evidence v2');
 const evidenceMap = new Map(evidence.entries.map((x) => [x.evidence_ref, x]));
 if (evidenceMap.size !== evidence.entries.length) fail('duplicate evidence_ref in Korean emotion evidence registry');
 for (const x of verified) {
@@ -64,6 +65,17 @@ for (const set of data.contrast_sets) {
       if (row.status !== 'SOURCE_VERIFIED') fail(`${set.id}: verified contrast includes unverified term ${expression}`);
     }
   }
+}
+if (data.contrast_sets.length !== 16) fail('contrast-set count drifted from verified v2 baseline');
+if (data.contrast_sets.some((x) => x.status !== 'SOURCE_VERIFIED')) fail('all 16 contrast sets must be source-verified');
+if (data.terms.some((x) => x.expression === '샘나다')) fail('non-canonical 샘나다 must not re-enter the emotion map');
+if (!data.terms.some((x) => x.expression === '샘내다' && x.evidence_ref === 'KRD:62760')) fail('canonical 샘내다 evidence missing');
+
+if (contrastEvidence.snapshot_id !== 'KOREAN_CONTRAST_EVIDENCE_V2_2026-09-21') fail('contrast evidence snapshot id mismatch');
+if (contrastEvidence.entries.length !== 30) fail('contrast evidence v2 must contain 30 audited terms');
+for (const row of contrastEvidence.entries) {
+  if (!row.term || !row.evidence_ref || !row.selected_definition) fail('contrast evidence row incomplete');
+  if (!evidenceMap.has(row.evidence_ref)) fail(`${row.term}: contrast snapshot evidence_ref missing from registry`);
 }
 
 const requiredFamilies = [

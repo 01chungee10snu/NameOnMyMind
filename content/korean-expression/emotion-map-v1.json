@@ -220,9 +220,9 @@
       "family_id": "KF02",
       "level": 1,
       "register": "everyday",
-      "status": "DISCOVERY_ONLY",
-      "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "KRD:62645",
+      "note": "2026-09-21 국립국어원 한국어기초사전의 표제어·뜻풀이를 직접 확인한 표현."
     },
     {
       "id": "KE0009",
@@ -230,9 +230,9 @@
       "family_id": "KF02",
       "level": 1,
       "register": "everyday",
-      "status": "DISCOVERY_ONLY",
-      "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "KRD:32495",
+      "note": "2026-09-21 국립국어원 한국어기초사전의 표제어·뜻풀이를 직접 확인한 표현."
     },
     {
       "id": "KE0010",
@@ -240,9 +240,9 @@
       "family_id": "KF02",
       "level": 2,
       "register": "neutral",
-      "status": "DISCOVERY_ONLY",
-      "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "KRD:49859",
+      "note": "2026-09-21 국립국어원 한국어기초사전의 표제어·뜻풀이를 직접 확인한 표현."
     },
     {
       "id": "KE0011",
@@ -350,9 +350,9 @@
       "family_id": "KF04",
       "level": 1,
       "register": "everyday",
-      "status": "DISCOVERY_ONLY",
-      "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "KRD:66428",
+      "note": "2026-09-21 국립국어원 한국어기초사전의 표제어·뜻풀이를 직접 확인한 표현."
     },
     {
       "id": "KE0022",
@@ -362,7 +362,7 @@
       "register": "everyday",
       "status": "SOURCE_VERIFIED",
       "evidence_ref": "G5:C0012",
-      "note": "기존 NameOnMyMind 연구 또는 국립국어원 사전 근거가 연결된 표현."
+      "note": "기존 NameOnMyMind source-first 연구기록에서 표제어·의미 경계를 확인한 표현."
     },
     {
       "id": "KE0023",
@@ -372,7 +372,7 @@
       "register": "neutral",
       "status": "SOURCE_VERIFIED",
       "evidence_ref": "KRD:87285",
-      "note": "기존 NameOnMyMind 연구 또는 국립국어원 사전 근거가 연결된 표현."
+      "note": "2026-09-21 국립국어원 한국어기초사전의 표제어·뜻풀이를 직접 확인한 표현."
     },
     {
       "id": "KE0024",
@@ -480,9 +480,9 @@
       "family_id": "KF06",
       "level": 3,
       "register": "neutral",
-      "status": "DISCOVERY_ONLY",
-      "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "KRD:66723",
+      "note": "2026-09-21 국립국어원 한국어기초사전의 표제어·뜻풀이를 직접 확인한 표현."
     },
     {
       "id": "KE0035",
@@ -560,9 +560,9 @@
       "family_id": "KF07",
       "level": 1,
       "register": "everyday",
-      "status": "DISCOVERY_ONLY",
-      "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "KRD:37070",
+      "note": "2026-09-21 국립국어원 한국어기초사전의 표제어·뜻풀이를 직접 확인한 표현."
     },
     {
       "id": "KE0043",
@@ -570,9 +570,9 @@
       "family_id": "KF07",
       "level": 3,
       "register": "literary",
-      "status": "DISCOVERY_ONLY",
-      "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "KRD:66802",
+      "note": "2026-09-21 국립국어원 한국어기초사전의 표제어·뜻풀이를 직접 확인한 표현."
     },
     {
       "id": "KE0044",
@@ -662,7 +662,7 @@
       "register": "neutral",
       "status": "SOURCE_VERIFIED",
       "evidence_ref": "KRD:62679",
-      "note": "국립국어원 한국어기초사전의 뜻풀이와 용례를 확인한 표현."
+      "note": "2026-09-21 국립국어원 한국어기초사전의 표제어·뜻풀이를 직접 확인한 표현."
     },
     {
       "id": "KE0053",
@@ -672,7 +672,7 @@
       "register": "everyday",
       "status": "SOURCE_VERIFIED",
       "evidence_ref": "KRD:15595",
-      "note": "기존 NameOnMyMind 연구 또는 국립국어원 사전 근거가 연결된 표현."
+      "note": "2026-09-21 국립국어원 한국어기초사전의 표제어·뜻풀이를 직접 확인한 표현."
     },
     {
       "id": "KE0054",
@@ -680,9 +680,9 @@
       "family_id": "KF08",
       "level": 2,
       "register": "neutral",
-      "status": "DISCOVERY_ONLY",
-      "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "KRD:71499",
+      "note": "2026-09-21 국립국어원 한국어기초사전의 표제어·뜻풀이를 직접 확인한 표현."
     },
     {
       "id": "KE0055",
@@ -702,7 +702,7 @@
       "register": "everyday",
       "status": "SOURCE_VERIFIED",
       "evidence_ref": "KRD:87927",
-      "note": "기존 NameOnMyMind 연구 또는 국립국어원 사전 근거가 연결된 표현."
+      "note": "2026-09-21 국립국어원 한국어기초사전의 표제어·뜻풀이를 직접 확인한 표현."
     },
     {
       "id": "KE0057",
@@ -712,7 +712,7 @@
       "register": "everyday",
       "status": "SOURCE_VERIFIED",
       "evidence_ref": "KRD:67854",
-      "note": "국립국어원 한국어기초사전의 뜻풀이와 용례를 확인한 표현."
+      "note": "2026-09-21 국립국어원 한국어기초사전의 표제어·뜻풀이를 직접 확인한 표현."
     },
     {
       "id": "KE0058",
@@ -720,9 +720,9 @@
       "family_id": "KF09",
       "level": 2,
       "register": "neutral",
-      "status": "DISCOVERY_ONLY",
-      "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "KRD:16735",
+      "note": "2026-09-21 국립국어원 한국어기초사전의 표제어·뜻풀이를 직접 확인한 표현."
     },
     {
       "id": "KE0059",
@@ -850,9 +850,9 @@
       "family_id": "KF11",
       "level": 1,
       "register": "everyday",
-      "status": "DISCOVERY_ONLY",
-      "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "KRD:14090",
+      "note": "2026-09-21 국립국어원 한국어기초사전의 표제어·뜻풀이를 직접 확인한 표현."
     },
     {
       "id": "KE0072",
@@ -860,9 +860,9 @@
       "family_id": "KF11",
       "level": 2,
       "register": "neutral",
-      "status": "DISCOVERY_ONLY",
-      "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "KRD:87932",
+      "note": "2026-09-21 국립국어원 한국어기초사전의 표제어·뜻풀이를 직접 확인한 표현."
     },
     {
       "id": "KE0073",
@@ -870,9 +870,9 @@
       "family_id": "KF11",
       "level": 2,
       "register": "neutral",
-      "status": "DISCOVERY_ONLY",
-      "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "KRD:87691",
+      "note": "2026-09-21 국립국어원 한국어기초사전의 표제어·뜻풀이를 직접 확인한 표현."
     },
     {
       "id": "KE0074",
@@ -890,9 +890,9 @@
       "family_id": "KF11",
       "level": 2,
       "register": "neutral",
-      "status": "DISCOVERY_ONLY",
-      "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "KRD:66422",
+      "note": "2026-09-21 국립국어원 한국어기초사전의 표제어·뜻풀이를 직접 확인한 표현."
     },
     {
       "id": "KE0076",
@@ -1130,9 +1130,9 @@
       "family_id": "KF15",
       "level": 1,
       "register": "everyday",
-      "status": "DISCOVERY_ONLY",
-      "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "KRD:87582",
+      "note": "2026-09-21 국립국어원 한국어기초사전의 표제어·뜻풀이를 직접 확인한 표현."
     },
     {
       "id": "KE0100",
@@ -1170,9 +1170,9 @@
       "family_id": "KF15",
       "level": 2,
       "register": "neutral",
-      "status": "DISCOVERY_ONLY",
-      "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "KRD:60263",
+      "note": "2026-09-21 국립국어원 한국어기초사전의 표제어·뜻풀이를 직접 확인한 표현."
     },
     {
       "id": "KE0104",
@@ -1202,7 +1202,7 @@
       "register": "everyday",
       "status": "SOURCE_VERIFIED",
       "evidence_ref": "G5:C0011",
-      "note": "기존 NameOnMyMind 연구 또는 국립국어원 사전 근거가 연결된 표현."
+      "note": "기존 NameOnMyMind source-first 연구기록에서 표제어·의미 경계를 확인한 표현."
     },
     {
       "id": "KE0107",
@@ -1210,9 +1210,9 @@
       "family_id": "KF16",
       "level": 2,
       "register": "neutral",
-      "status": "DISCOVERY_ONLY",
-      "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "KRD:69870",
+      "note": "2026-09-21 국립국어원 한국어기초사전의 표제어·뜻풀이를 직접 확인한 표현."
     },
     {
       "id": "KE0108",
@@ -1390,19 +1390,19 @@
       "family_id": "KF19",
       "level": 1,
       "register": "everyday",
-      "status": "DISCOVERY_ONLY",
-      "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "KRD:59509",
+      "note": "2026-09-21 국립국어원 한국어기초사전의 표제어·뜻풀이를 직접 확인한 표현."
     },
     {
       "id": "KE0126",
-      "expression": "샘나다",
+      "expression": "샘내다",
       "family_id": "KF19",
       "level": 2,
       "register": "everyday",
-      "status": "DISCOVERY_ONLY",
-      "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "KRD:62760",
+      "note": "2026-09-21 국립국어원 한국어기초사전의 표제어·뜻풀이를 직접 확인한 표현."
     },
     {
       "id": "KE0127",
@@ -1410,9 +1410,9 @@
       "family_id": "KF19",
       "level": 2,
       "register": "neutral",
-      "status": "DISCOVERY_ONLY",
-      "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "KRD:78440",
+      "note": "2026-09-21 국립국어원 한국어기초사전의 표제어·뜻풀이를 직접 확인한 표현."
     },
     {
       "id": "KE0128",
@@ -1430,9 +1430,9 @@
       "family_id": "KF19",
       "level": 3,
       "register": "formal",
-      "status": "DISCOVERY_ONLY",
-      "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "KRD:63118",
+      "note": "2026-09-21 국립국어원 한국어기초사전의 표제어·뜻풀이를 직접 확인한 표현."
     },
     {
       "id": "KE0130",
@@ -1532,7 +1532,7 @@
       "register": "neutral",
       "status": "SOURCE_VERIFIED",
       "evidence_ref": "G5:C0013",
-      "note": "기존 NameOnMyMind 연구 또는 국립국어원 사전 근거가 연결된 표현."
+      "note": "기존 NameOnMyMind source-first 연구기록에서 표제어·의미 경계를 확인한 표현."
     },
     {
       "id": "KE0140",
@@ -1542,7 +1542,7 @@
       "register": "everyday",
       "status": "SOURCE_VERIFIED",
       "evidence_ref": "G5:C0014",
-      "note": "기존 NameOnMyMind 연구 또는 국립국어원 사전 근거가 연결된 표현."
+      "note": "기존 NameOnMyMind source-first 연구기록에서 표제어·의미 경계를 확인한 표현."
     },
     {
       "id": "KE0141",
@@ -1550,9 +1550,9 @@
       "family_id": "KF21",
       "level": 2,
       "register": "neutral",
-      "status": "DISCOVERY_ONLY",
-      "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보."
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "KRD:66238",
+      "note": "2026-09-21 국립국어원 한국어기초사전의 표제어·뜻풀이를 직접 확인한 표현."
     },
     {
       "id": "KE0142",
@@ -1767,19 +1767,19 @@
       "choice_cues": [
         {
           "expression": "허전하다",
-          "cue": "의지하던 사람·것이 사라져 빈자리처럼 느껴질 때."
+          "cue": "의지할 곳이 없어지거나 무언가를 잃은 듯 빈 느낌이 들 때."
         },
         {
           "expression": "외롭다",
-          "cue": "함께할 사람이나 정서적 연결이 부족하다고 느낄 때."
+          "cue": "혼자가 되거나 의지할 데가 없다고 느껴 쓸쓸할 때."
         },
         {
           "expression": "쓸쓸하다",
-          "cue": "주변의 분위기까지 적막하고 정서적으로 외로운 느낌이 들 때."
+          "cue": "마음에 외로움과 허전함이 함께 겹쳐 있을 때."
         }
       ],
-      "reflection_prompt": "빈자리가 느껴지는가, 연결될 사람이 필요한가, 아니면 주변 분위기까지 쓸쓸한가?",
-      "status": "RESEARCH_DRAFT"
+      "reflection_prompt": "무언가 사라진 빈자리가 큰가, 혼자라 의지할 데 없는가, 아니면 외로움과 허전함이 함께 겹치는가?",
+      "status": "SOURCE_VERIFIED"
     },
     {
       "id": "KC006",
@@ -1796,15 +1796,15 @@
         },
         {
           "expression": "안타깝다",
-          "cue": "원하는 대로 되지 않거나 다른 사람의 어려움을 보며 마음이 아플 때."
+          "cue": "뜻대로 되지 않거나 누군가가 가엾어 가슴이 아프고 답답할 때."
         },
         {
           "expression": "서럽다",
-          "cue": "억울하거나 외롭고 슬퍼서 스스로 불쌍하게 느껴질 만큼 마음이 아플 때."
+          "cue": "억울함과 슬픔이 함께 들어 마음이 아플 때."
         }
       ],
-      "reflection_prompt": "내 일이 뜻대로 안 돼 괴로운가, 누군가가 안쓰러운가, 아니면 나 자신이 서럽게 느껴지는가?",
-      "status": "RESEARCH_DRAFT"
+      "reflection_prompt": "내 일이 뜻대로 되지 않아 괴로운가, 안타깝고 답답한가, 아니면 억울함과 슬픔이 함께 드는가?",
+      "status": "SOURCE_VERIFIED"
     },
     {
       "id": "KC007",
@@ -1848,11 +1848,11 @@
       "choice_cues": [
         {
           "expression": "화나다",
-          "cue": "불쾌하거나 뜻대로 되지 않아 분노가 생길 때의 가장 넓은 표현."
+          "cue": "몹시 언짢거나 못마땅해서 기분이 나빠졌을 때."
         },
         {
           "expression": "분하다",
-          "cue": "진 일·모욕·부당한 결과가 마음에 맺혀 화가 나고 억센 감정이 들 때."
+          "cue": "억울한 일을 당했거나 될 듯한 일이 되지 않아 매우 화가 날 때."
         },
         {
           "expression": "억울하다",
@@ -1860,11 +1860,11 @@
         },
         {
           "expression": "원망스럽다",
-          "cue": "힘든 결과의 책임이나 서운함을 특정 사람이나 대상에게 돌리고 싶을 때."
+          "cue": "마음에 들지 않는 결과 때문에 특정 사람이나 대상을 탓하거나 미워하는 마음이 들 때."
         }
       ],
-      "reflection_prompt": "그냥 화가 난 건가, 결과가 분한가, 부당한 피해가 억울한가, 누군가를 탓하고 싶은가?",
-      "status": "RESEARCH_DRAFT"
+      "reflection_prompt": "못마땅해 화가 난 건가, 결과가 분한가, 부당한 피해가 억울한가, 아니면 누군가를 탓하고 싶은가?",
+      "status": "SOURCE_VERIFIED"
     },
     {
       "id": "KC009",
@@ -1903,23 +1903,23 @@
       "choice_cues": [
         {
           "expression": "실망하다",
-          "cue": "기대했던 결과나 사람의 모습이 기대에 미치지 못했을 때."
+          "cue": "기대하던 대로 되지 않아 희망을 잃거나 마음이 크게 상했을 때."
         },
         {
           "expression": "허탈하다",
-          "cue": "기대나 노력이 무너진 뒤 힘이 빠지고 텅 빈 느낌이 들 때."
+          "cue": "힘이 빠지고 정신이 멍해질 만큼 맥이 풀렸을 때."
         },
         {
           "expression": "허무하다",
-          "cue": "애쓴 일이나 삶의 의미 자체가 덧없고 의미 없게 느껴질 때."
+          "cue": "가치나 의미가 없게 느껴져 허전하고 쓸쓸할 때."
         },
         {
           "expression": "씁쓸하다",
-          "cue": "기쁘지도 슬프지도 않게 불편하고 개운치 않은 뒷맛이 남을 때."
+          "cue": "싫거나 언짢은 기분이 조금 남아 마음이 개운하지 않을 때."
         }
       ],
-      "reflection_prompt": "기대가 깨졌나, 힘이 빠졌나, 의미가 사라졌나, 아니면 불편한 뒷맛이 남았나?",
-      "status": "RESEARCH_DRAFT"
+      "reflection_prompt": "기대가 깨져 실망했나, 맥이 풀려 멍한가, 의미가 사라진 듯 허무한가, 아니면 언짢은 뒷맛이 남았나?",
+      "status": "SOURCE_VERIFIED"
     },
     {
       "id": "KC011",
@@ -1932,19 +1932,19 @@
       "choice_cues": [
         {
           "expression": "설레다",
-          "cue": "좋은 일이 다가올 것 같아 마음이 두근거리고 가만히 있지 못할 때."
+          "cue": "마음이 차분하지 않고 들떠 두근거릴 때."
         },
         {
           "expression": "기대되다",
-          "cue": "앞으로 좋은 결과나 경험이 있을 것이라고 생각하며 기다릴 때."
+          "cue": "어떤 일이 이루어지기를 바라며 기다리게 될 때."
         },
         {
           "expression": "들뜨다",
-          "cue": "기대나 기쁨 때문에 마음이 차분하지 못하고 평소보다 붕 뜬 듯할 때."
+          "cue": "마음이 안정되지 않고 조금 흥분돼 평소보다 차분하기 어려울 때."
         }
       ],
-      "reflection_prompt": "두근거리는가, 좋은 결과를 기다리는가, 아니면 마음이 들떠 차분하기 어려운가?",
-      "status": "RESEARCH_DRAFT"
+      "reflection_prompt": "두근거림이 큰가, 이루어지길 바라며 기다리는가, 아니면 흥분돼 마음이 붕 뜬 듯한가?",
+      "status": "SOURCE_VERIFIED"
     },
     {
       "id": "KC012",
@@ -1957,49 +1957,49 @@
       "choice_cues": [
         {
           "expression": "안심되다",
-          "cue": "걱정하던 위험이나 문제가 없다는 것을 알고 마음이 놓일 때."
+          "cue": "걱정이 없어지고 마음이 편해졌을 때."
         },
         {
           "expression": "후련하다",
-          "cue": "답답하게 맺힌 일이 풀려 속이 시원해졌을 때."
+          "cue": "답답하게 맺혀 있던 일이 풀려 속이 시원하고 가벼워졌을 때."
         },
         {
           "expression": "홀가분하다",
-          "cue": "맡았던 부담이나 책임이 끝나 가볍고 편해졌을 때."
+          "cue": "신경 쓰이거나 부담스럽던 것이 줄어 가볍고 편안해졌을 때."
         }
       ],
-      "reflection_prompt": "걱정이 사라졌나, 맺힌 것이 풀렸나, 부담을 내려놓았나?",
-      "status": "RESEARCH_DRAFT"
+      "reflection_prompt": "걱정이 사라져 마음이 놓였나, 맺힌 것이 풀렸나, 아니면 신경 쓰이던 부담에서 가벼워졌나?",
+      "status": "SOURCE_VERIFIED"
     },
     {
       "id": "KC013",
-      "title": "부럽다 · 샘나다 · 질투하다 · 선망하다",
+      "title": "부럽다 · 샘내다 · 질투하다 · 선망하다",
       "terms": [
         "부럽다",
-        "샘나다",
+        "샘내다",
         "질투하다",
         "선망하다"
       ],
       "choice_cues": [
         {
           "expression": "부럽다",
-          "cue": "다른 사람이 가진 좋은 점이나 상황을 나도 갖고 싶다고 느낄 때."
+          "cue": "다른 사람의 좋은 일이나 물건을 보고 나도 이루거나 갖고 싶을 때."
         },
         {
-          "expression": "샘나다",
-          "cue": "가까운 사람의 관심·칭찬·좋은 것을 보고 나도 받고 싶어 마음이 삐죽할 때."
+          "expression": "샘내다",
+          "cue": "남의 것을 탐내거나 나보다 형편이 나은 사람을 부러워하면서 싫은 마음까지 들 때."
         },
         {
           "expression": "질투하다",
-          "cue": "소중한 관계나 관심을 다른 사람에게 빼앗길까 불편하거나 미워질 때."
+          "cue": "소중한 관계를 빼앗길까 미워지거나, 다른 사람의 좋은 처지를 괜히 미워하고 싫어할 때."
         },
         {
           "expression": "선망하다",
-          "cue": "다른 사람의 삶·능력·위치를 높이 평가하며 닮거나 갖고 싶다고 바랄 때."
+          "cue": "누군가를 부러워하면서 나도 그렇게 되기를 바랄 때."
         }
       ],
-      "reflection_prompt": "나도 갖고 싶은가, 관심을 나도 받고 싶은가, 관계를 빼앗길까 불안한가, 닮고 싶은가?",
-      "status": "RESEARCH_DRAFT"
+      "reflection_prompt": "나도 갖고 싶은가, 부러움에 싫은 마음까지 섞였나, 관계나 비교 때문에 미워지는가, 아니면 닮고 싶은 마음이 큰가?",
+      "status": "SOURCE_VERIFIED"
     },
     {
       "id": "KC014",
@@ -2037,19 +2037,19 @@
       "choice_cues": [
         {
           "expression": "착잡하다",
-          "cue": "여러 생각과 감정이 얽혀 마음이 복잡하고 갈피를 잡기 어려울 때."
+          "cue": "여러 생각과 감정이 뒤섞여 마음이 복잡하고 갈피를 잡기 어려울 때."
         },
         {
           "expression": "시원섭섭하다",
-          "cue": "끝나서 후련하면서도 떠나거나 끝나는 것이 아쉬운 마음이 함께 들 때."
+          "cue": "끝나서 후련하면서도 서운하고 아쉬운 마음이 동시에 들 때."
         },
         {
           "expression": "심란하다",
-          "cue": "걱정거리나 여러 생각 때문에 마음이 어수선하고 안정되지 않을 때."
+          "cue": "마음이 편안하지 못하고 어지러워 안정되기 어려울 때."
         }
       ],
-      "reflection_prompt": "감정이 여러 갈래로 얽혔나, 후련함과 아쉬움이 동시에 있나, 걱정 때문에 마음이 어수선한가?",
-      "status": "RESEARCH_DRAFT"
+      "reflection_prompt": "여러 감정이 뒤섞여 복잡한가, 후련함과 아쉬움이 동시에 있나, 아니면 마음이 어지럽고 편치 않은가?",
+      "status": "SOURCE_VERIFIED"
     },
     {
       "id": "KC016",
@@ -2062,19 +2062,19 @@
       "choice_cues": [
         {
           "expression": "그립다",
-          "cue": "보고 싶거나 다시 만나고 싶은 사람·장소·시간이 마음에 떠오를 때."
+          "cue": "사람·장소·시간을 다시 보고 싶고 만나고 싶은 마음이 클 때."
         },
         {
           "expression": "아련하다",
-          "cue": "기억이나 감정이 멀리 있는 듯 희미하면서도 부드럽게 마음에 남을 때."
+          "cue": "기억이나 생각이 또렷하지 않고 희미하게 떠오를 때."
         },
         {
           "expression": "애틋하다",
-          "cue": "사랑하고 아끼는 마음에 안타까움이나 간절함까지 섞여 깊게 느껴질 때."
+          "cue": "누군가를 깊이 아끼고 위하는 정이 크고, 때로 안타까움이나 애타는 마음도 함께 들 때."
         }
       ],
-      "reflection_prompt": "다시 보고 싶은가, 희미한 기억이 마음에 남는가, 사랑과 안타까움이 함께 깊은가?",
-      "status": "RESEARCH_DRAFT"
+      "reflection_prompt": "다시 보고 싶은 마음이 큰가, 희미한 기억이 떠오르는가, 아니면 깊이 아끼는 정과 안타까움이 함께 있는가?",
+      "status": "SOURCE_VERIFIED"
     }
   ]
 }

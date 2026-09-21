@@ -146,7 +146,7 @@ function renderKoreanResearchSummary(data) {
   const guideTitle = document.createElement('strong');
   guideTitle.textContent = '상황에서 마음말 찾기';
   const guideCopy = document.createElement('span');
-  guideCopy.textContent = '상황을 적고 비슷한 표현의 차이를 직접 비교해 보세요.';
+  guideCopy.textContent = '16개 검증 비교세트로 비슷한 표현의 차이를 직접 살펴보세요.';
   const guideArrow = document.createElement('span');
   guideArrow.className = 'korean-guide-arrow';
   guideArrow.setAttribute('aria-hidden', 'true');
