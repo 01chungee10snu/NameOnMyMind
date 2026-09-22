@@ -103,6 +103,17 @@ function schoolAgeResearchLabel(term) {
   if (value === 'GRADE_3_6_RELATED_FORM') return '3–6학년 관련형';
   return '';
 }
+function koreanDepthLabel(term) {
+  return ({ 1: '기본', 2: '확장', 3: '섬세' })[term.level] || `Level ${term.level}`;
+}
+function koreanDailyVerifiedTerm(data, now = new Date()) {
+  const verified = data.terms
+    .filter((term) => term.status === 'SOURCE_VERIFIED')
+    .sort((a, b) => a.id.localeCompare(b.id, 'en'));
+  if (!verified.length) return null;
+  const localDayKey = now.getFullYear() * 372 + (now.getMonth() + 1) * 31 + now.getDate();
+  return verified[localDayKey % verified.length];
+}
 function renderResearchWorldCard(card, previewBase) {
   const link = document.createElement('a');
   link.className = 'research-preview-card';
@@ -153,6 +164,43 @@ function renderKoreanResearchSummary(data) {
   const level3Verified = level3.filter((term) => term.status === 'SOURCE_VERIFIED').length;
   stats.textContent = `${data.families.length}개 감정 영역 · ${data.terms.length}개 표현 · 근거 연결 ${verified.length}개 · 기본 ${level1Verified}/${level1.length} · 확장 ${level2Verified}/${level2.length} · 섬세 ${level3Verified}/${level3.length} · 3–6학년 연구 연결 ${schoolAgeLinked.length}개 · 비교 ${data.contrast_sets.length}세트`;
   root.append(stats);
+
+  const familyMap = new Map(data.families.map((family) => [family.id, family]));
+  const daily = koreanDailyVerifiedTerm(data);
+  if (daily) {
+    const family = familyMap.get(daily.family_id);
+    const dailyLink = document.createElement('a');
+    dailyLink.className = 'korean-daily-card';
+    dailyLink.href = koreanResearchHref(daily.family_id, daily.expression);
+    dailyLink.setAttribute('aria-label', `오늘의 한국어 마음말 ${daily.expression} 자세히 보기`);
+
+    const kicker = document.createElement('span');
+    kicker.className = 'korean-daily-kicker';
+    kicker.textContent = '오늘의 한국어 마음말';
+
+    const term = document.createElement('strong');
+    term.className = 'korean-daily-term';
+    term.textContent = daily.expression;
+
+    const meta = document.createElement('span');
+    meta.className = 'korean-daily-meta';
+    const schoolAge = schoolAgeResearchLabel(daily);
+    meta.textContent = `${family?.label || ''} · ${koreanDepthLabel(daily)}${schoolAge ? ` · ${schoolAge}` : ' · 어휘 근거 연결'}`;
+
+    const prompt = document.createElement('span');
+    prompt.className = 'korean-daily-prompt';
+    prompt.textContent = schoolAge
+      ? '뜻의 결을 읽고, 오늘 이 말이 어울린 순간을 한 문장으로 표현해 보세요.'
+      : '공식 어휘 근거가 확인된 표현입니다. 오늘 이 말이 어울린 순간을 한 문장으로 표현해 보세요.';
+
+    const arrow = document.createElement('span');
+    arrow.className = 'korean-daily-arrow';
+    arrow.setAttribute('aria-hidden', 'true');
+    arrow.textContent = '›';
+
+    dailyLink.append(kicker, term, meta, prompt, arrow);
+    root.append(dailyLink);
+  }
 
   const guideLink = document.createElement('a');
   guideLink.className = 'korean-guide-link';

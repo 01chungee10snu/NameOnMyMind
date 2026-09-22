@@ -687,6 +687,52 @@ audio:focus-visible {
   background: var(--surface-soft);
 }
 .korean-map-stats { margin: 0; font-size: 12px; line-height: 1.55; }
+.korean-daily-card {
+  position: relative;
+  display: grid;
+  gap: 4px;
+  margin-top: 12px;
+  padding: 15px 38px 15px 14px;
+  border: 1px solid #d8c2b4;
+  border-radius: 16px;
+  background: #fffaf6;
+  color: inherit;
+  text-decoration: none;
+}
+.korean-daily-kicker {
+  color: var(--accent);
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: .12em;
+}
+.korean-daily-term {
+  margin-top: 2px;
+  font-family: var(--font-display-emotion);
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.05;
+  letter-spacing: -.035em;
+}
+.korean-daily-meta {
+  color: #655951;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 1.45;
+}
+.korean-daily-prompt {
+  margin-top: 3px;
+  color: var(--muted);
+  font-size: 10px;
+  line-height: 1.5;
+}
+.korean-daily-arrow {
+  position: absolute;
+  top: 50%;
+  right: 13px;
+  color: var(--accent);
+  font-size: 26px;
+  transform: translateY(-52%);
+}
 .korean-guide-link {
   position: relative;
   display: grid;

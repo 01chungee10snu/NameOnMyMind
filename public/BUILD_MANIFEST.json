@@ -3,7 +3,7 @@
   "artifact_type": "LOCAL_PUBLIC_BUILD",
   "deployable": true,
   "external_publish_authorized": false,
-  "snapshot_version": "f02d47ba4f021959",
+  "snapshot_version": "7a621eb7ae7fd77f",
   "content_snapshot_version": "867d91c0737e29c7",
   "card_ids": [
     "C0001",
@@ -17,9 +17,9 @@
     "manifest": "manifest.webmanifest",
     "service_worker": "service-worker.js",
     "offline_fallback": "offline.html",
-    "shell_cache": "nomm-shell-v1-f02d47ba4f021959",
-    "content_cache": "nomm-content-f02d47ba4f021959",
-    "asset_cache": "nomm-assets-v1-f02d47ba4f021959"
+    "shell_cache": "nomm-shell-v1-7a621eb7ae7fd77f",
+    "content_cache": "nomm-content-7a621eb7ae7fd77f",
+    "asset_cache": "nomm-assets-v1-7a621eb7ae7fd77f"
   },
   "input_sha256": {
     "card_schema": "8e29503186d27440efe2ee12dba84c964879c57be0b6ebb16907d743bc9cf17e",
@@ -34,7 +34,7 @@
     "card_C0004": "f0e8a357d7c022cb64f308a8a7b9b6f22cf92503027c20bdb7033ba98cba4dbd",
     "card_C0005": "61230c7148fa2ff16fda15f7b96e1d53e2e5a047325b9869874afa3fad236e5d",
     "runtime_src_ui_index.html": "b00abb699013befc9677f32925e8865079444b98054131b6792f58d7f385dd58",
-    "runtime_src_ui_app.mjs": "44c4bdb843e091a5bc2c2299c2083ddb9e500457f0b3ea16606870e47b29a201",
+    "runtime_src_ui_app.mjs": "3e56f8b576ef114abc9b7d684595b7d0707dbe2eaa27860a0342ed05f54ca53d",
     "runtime_src_domain_cards.mjs": "f8dde7b533cd43d1c2687195a934991534b7c670c461791a145e88fb617fce08",
     "runtime_src_domain_discovery.mjs": "9d042c768bb35c1001a93e57b0c87f3c2506eae70d2f8a9a0a8b740080a7fc49",
     "runtime_src_local_state.mjs": "975e7372486aace916597b7e2bb70f357f892a00434b9094e9718460fe2c1c36",
@@ -43,7 +43,7 @@
     "runtime_src_pwa_manifest.webmanifest": "afa3c7026db3026616f15150bc92a201a41e762b08938551b6540d53eabdfa92",
     "runtime_src_pwa_service-worker.template.js": "aea101dcbdeffb517d127daa3d905ef5c65bc89b43be795b03b9f71dd3bdc324",
     "runtime_src_pwa_offline.html": "dececcd5775f3506377aae82735b0e2fcb6b5fe973d69569712a711ba7feb4cd",
-    "runtime_assets_css_styles.css": "ce88919797d3cfa9f92eb0690fca46c4924ea3a8db761f1a292740eb69b188e2",
+    "runtime_assets_css_styles.css": "13deabe7a0d78392334c6d59334705c3ce5ca64cba1464eb5ebe861492aa9153",
     "runtime_assets_brand_app-icon.svg": "da9acf16edf791676c25df5407c92b8128e3313c7352afbe8bfdbd96440ec8bc"
   },
   "excluded_source_classes": [

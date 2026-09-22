@@ -153,6 +153,13 @@ test('app discovery exposes research surfaces without promoting research candida
   assert.match(koreanPrototype, /1–2학년 적합성 판정을 뜻하지 않습니다/);
   assert.match(koreanPrototype, /schoolAgeEligible/);
   assert.match(app, /3–6학년 연구 연결/);
+  assert.match(app, /koreanDailyVerifiedTerm/);
+  assert.match(app, /오늘의 한국어 마음말/);
+  assert.match(app, /term\.status === 'SOURCE_VERIFIED'/);
+  assert.match(app, /getFullYear\(\).*getMonth\(\).*getDate\(\)/s);
+  const styles = readText('assets/css/styles.css');
+  assert.match(styles, /\.korean-daily-card/);
+  assert.match(styles, /\.korean-daily-term/);
   assert.doesNotMatch(koreanPrototype, /localStorage/);
   assert.doesNotMatch(koreanPrototype, /searchParams\.set\(['"]situation/);
   assert.match(app, /상황에서 마음말 찾기/);
