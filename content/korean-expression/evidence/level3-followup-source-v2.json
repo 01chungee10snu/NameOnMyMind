@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0.0",
+  "snapshot_id": "KOREAN_LEVEL3_FOLLOWUP_EVIDENCE_V2_2026-09-22",
+  "captured_at": "2026-09-22",
+  "provider": "National Institute of Korean Language Basic Korean Dictionary",
+  "policy": "Follow-up evidence batch for Level 3 terms previously held because the direct dictionary endpoint was temporarily throttled. Only a term with a directly resolved official headword number and definition is admitted.",
+  "entries": [
+    {
+      "term": "고대하다",
+      "evidence_ref": "KRD:25588",
+      "level": 3,
+      "match_type": "EXACT_HEADWORD",
+      "selected_definition": "몹시 기다리다.",
+      "supersedes": "level3-exact-source-v1:unresolved_terms",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=25588&nation=eng"
+    }
+  ],
+  "superseded_level3_holds": [
+    "고대하다"
+  ],
+  "remaining_level3_holds_expected": 20
+}
