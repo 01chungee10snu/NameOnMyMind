@@ -1,0 +1,140 @@
+{
+  "schema_version": "1.0.0",
+  "snapshot_id": "KOREAN_LEVEL3_FOLLOWUP_EVIDENCE_V4_2026-09-23",
+  "captured_at": "2026-09-23",
+  "provider": "National Institute of Korean Language Basic Korean Dictionary",
+  "policy": "Third follow-up evidence batch for Level 3 terms held in the original exact-headword audit. Admission requires an exact Lemma match in NIKL-distributed Basic Korean Dictionary data, an exact dictionary entry id, an affect-relevant sense, and the official korean.go.kr detail URL. Homonyms are admitted only when the selected entry itself carries the intended affective meaning.",
+  "id_resolution_source": {
+    "type": "nikl_download_mirror",
+    "repository": "https://github.com/spellcheck-ko/korean-dict-nikl",
+    "commit_sha": "42c0d01889f34536e9cf94fe57f62bd2055b1bde",
+    "scope": "krdict XML export",
+    "use": "ID and sense resolution only"
+  },
+  "entries": [
+    {
+      "term": "애잔하다",
+      "evidence_ref": "KRD:601309",
+      "level": 3,
+      "match_type": "EXACT_HEADWORD",
+      "selected_definition": "애처롭고 애틋하다.",
+      "supersedes": "level3-exact-source-v1:unresolved_terms",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=601309&nation=eng"
+    },
+    {
+      "term": "애절하다",
+      "evidence_ref": "KRD:66706",
+      "level": 3,
+      "match_type": "EXACT_HEADWORD",
+      "selected_definition": "몹시 애처롭고 슬프다.",
+      "supersedes": "level3-exact-source-v1:unresolved_terms",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=66706&nation=eng"
+    },
+    {
+      "term": "적적하다",
+      "evidence_ref": "KRD:74148",
+      "level": 3,
+      "match_type": "EXACT_HEADWORD",
+      "selected_definition": "조용하고 쓸쓸하다.",
+      "supersedes": "level3-exact-source-v1:unresolved_terms",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=74148&nation=eng"
+    },
+    {
+      "term": "적막하다",
+      "evidence_ref": "KRD:74593",
+      "level": 3,
+      "match_type": "EXACT_HEADWORD",
+      "selected_definition": "의지할 곳 없이 외롭다.",
+      "supersedes": "level3-exact-source-v1:unresolved_terms",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=74593&nation=eng"
+    },
+    {
+      "term": "침울하다",
+      "evidence_ref": "KRD:80819",
+      "level": 3,
+      "match_type": "EXACT_HEADWORD",
+      "selected_definition": "걱정이 많아서 마음이 답답하고 무겁다.",
+      "supersedes": "level3-exact-source-v1:unresolved_terms",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=80819&nation=eng"
+    },
+    {
+      "term": "처연하다",
+      "evidence_ref": "KRD:78737",
+      "level": 3,
+      "match_type": "EXACT_HEADWORD",
+      "selected_definition": "쓸쓸하고 구슬프다.",
+      "supersedes": "level3-exact-source-v1:unresolved_terms",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=78737&nation=eng"
+    },
+    {
+      "term": "애석하다",
+      "evidence_ref": "KRD:66697",
+      "level": 3,
+      "match_type": "EXACT_HEADWORD",
+      "selected_definition": "슬프고 안타깝다.",
+      "supersedes": "level3-exact-source-v1:unresolved_terms",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=66697&nation=eng"
+    },
+    {
+      "term": "섬뜩하다",
+      "evidence_ref": "KRD:63314",
+      "level": 3,
+      "match_type": "EXACT_HEADWORD",
+      "selected_definition": "갑자기 몹시 무섭고 불안하다.",
+      "supersedes": "level3-exact-source-v1:unresolved_terms",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=63314&nation=eng"
+    },
+    {
+      "term": "노엽다",
+      "evidence_ref": "KRD:42882",
+      "level": 3,
+      "match_type": "EXACT_HEADWORD",
+      "selected_definition": "몹시 불쾌하여 화가 나고 기분이 나쁘다.",
+      "supersedes": "level3-exact-source-v1:unresolved_terms",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=42882&nation=eng"
+    },
+    {
+      "term": "괘씸하다",
+      "evidence_ref": "KRD:30833",
+      "level": 3,
+      "match_type": "EXACT_HEADWORD",
+      "selected_definition": "기대나 믿음에 어긋나는 못마땅한 행동을 하여 밉살스럽다.",
+      "supersedes": "level3-exact-source-v1:unresolved_terms",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=30833&nation=eng"
+    },
+    {
+      "term": "송구하다",
+      "evidence_ref": "KRD:64658",
+      "level": 3,
+      "match_type": "EXACT_HEADWORD_HOMONYM_RESOLVED",
+      "selected_definition": "몹시 미안하여 마음이 편하지 않다.",
+      "supersedes": "level3-exact-source-v1:unresolved_terms",
+      "resolution_note": "KRD:64659 is the verb meaning to throw/pass a ball; the affective adjective entry is KRD:64658.",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=64658&nation=eng"
+    },
+    {
+      "term": "시기하다",
+      "evidence_ref": "KRD:65852",
+      "level": 3,
+      "match_type": "EXACT_HEADWORD",
+      "selected_definition": "남이 잘되는 것을 싫어하여 미워하다.",
+      "supersedes": "level3-exact-source-v1:unresolved_terms",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=65852&nation=eng"
+    }
+  ],
+  "superseded_level3_holds": [
+    "애잔하다",
+    "애절하다",
+    "적적하다",
+    "적막하다",
+    "침울하다",
+    "처연하다",
+    "애석하다",
+    "섬뜩하다",
+    "노엽다",
+    "괘씸하다",
+    "송구하다",
+    "시기하다"
+  ],
+  "remaining_level3_holds_expected": 6
+}

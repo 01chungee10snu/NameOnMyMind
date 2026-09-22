@@ -16,10 +16,13 @@ const evidence = read('content/korean-expression/evidence/registry.json');
 const contrastEvidence = read('content/korean-expression/evidence/contrast-source-v2.json');
 const level1Evidence = read('content/korean-expression/evidence/level1-source-v1.json');
 const level2Evidence = read('content/korean-expression/evidence/level2-exact-source-v1.json');
+const level2FollowupEvidenceV2 = read('content/korean-expression/evidence/level2-followup-source-v2.json');
 const level3Evidence = read('content/korean-expression/evidence/level3-exact-source-v1.json');
 const level3FollowupEvidence = read('content/korean-expression/evidence/level3-followup-source-v2.json');
 const level3FollowupEvidenceV3 = read('content/korean-expression/evidence/level3-followup-source-v3.json');
+const level3FollowupEvidenceV4 = read('content/korean-expression/evidence/level3-followup-source-v4.json');
 const phraseEvidence = read('content/korean-expression/evidence/phrase-source-v1.json');
+const phraseEvidenceV2 = read('content/korean-expression/evidence/phrase-source-v2.json');
 const schoolAgeEvidence = read('content/korean-expression/evidence/school-age-v1.json');
 const ajv = new Ajv2020({ allErrors: true, strict: false });
 addFormats(ajv);
@@ -43,7 +46,7 @@ const levels = new Set(data.terms.map((x) => x.level));
 for (const level of [1,2,3]) if (!levels.has(level)) fail(`learning level ${level} missing`);
 
 const verified = data.terms.filter((x) => x.status === 'SOURCE_VERIFIED');
-if (verified.length < 119) fail('too few source-verified Korean emotion terms after Level 3 follow-up evidence v3');
+if (verified.length < 143) fail('too few source-verified Korean emotion terms after 2026-09-23 headword and phrase follow-up evidence');
 const evidenceMap = new Map(evidence.entries.map((x) => [x.evidence_ref, x]));
 if (evidenceMap.size !== evidence.entries.length) fail('duplicate evidence_ref in Korean emotion evidence registry');
 for (const x of verified) {
@@ -117,6 +120,8 @@ for (const row of level2Evidence.entries) {
   if (!term || term.level !== 2 || term.status !== 'SOURCE_VERIFIED' || term.evidence_ref !== row.evidence_ref) fail(`${row.term}: Level 2 admitted term state mismatch`);
 }
 const phraseLevel2Superseded = new Set(phraseEvidence.superseded_level2_holds || []);
+const phraseV2Level2Superseded = new Set(phraseEvidenceV2.superseded_level2_holds || []);
+const followupLevel2Superseded = new Set(level2FollowupEvidenceV2.superseded_level2_holds || []);
 for (const expression of level2Evidence.unresolved_terms) {
   const term = data.terms.find((x) => x.expression === expression);
   if (phraseLevel2Superseded.has(expression)) {
@@ -124,12 +129,29 @@ for (const expression of level2Evidence.unresolved_terms) {
     if (!phraseRow || !term || term.level !== 2 || term.status !== 'SOURCE_VERIFIED' || term.evidence_ref !== phraseRow.evidence_ref) {
       fail(`${expression}: superseded Level 2 HOLD state mismatch`);
     }
+  } else if (followupLevel2Superseded.has(expression)) {
+    const row = level2FollowupEvidenceV2.entries.find((x) => x.term === expression);
+    if (!row || !term || term.level !== 2 || term.status !== 'SOURCE_VERIFIED' || term.evidence_ref !== row.evidence_ref) {
+      fail(`${expression}: superseded Level 2 follow-up HOLD state mismatch`);
+    }
+  } else if (phraseV2Level2Superseded.has(expression)) {
+    const row = phraseEvidenceV2.entries.find((x) => x.term === expression);
+    if (!row || !term || term.level !== 2 || term.status !== 'SOURCE_VERIFIED' || term.evidence_ref !== row.evidence_ref) {
+      fail(`${expression}: superseded Level 2 phrase-v2 HOLD state mismatch`);
+    }
   } else if (!term || term.level !== 2 || term.status !== 'DISCOVERY_ONLY') {
     fail(`${expression}: unresolved Level 2 term must remain DISCOVERY_ONLY`);
   }
 }
-if (data.terms.filter((x) => x.level === 2 && x.status === 'SOURCE_VERIFIED').length !== 58) fail('Level 2 verified baseline drifted');
-if (data.terms.filter((x) => x.level === 2 && x.status === 'DISCOVERY_ONLY').length !== 14) fail('Level 2 unresolved baseline drifted');
+if (data.terms.filter((x) => x.level === 2 && x.status === 'SOURCE_VERIFIED').length !== 67) fail('Level 2 verified baseline drifted');
+if (data.terms.filter((x) => x.level === 2 && x.status === 'DISCOVERY_ONLY').length !== 5) fail('Level 2 unresolved baseline drifted');
+
+if (level2FollowupEvidenceV2.snapshot_id !== 'KOREAN_LEVEL2_FOLLOWUP_EVIDENCE_V2_2026-09-23') fail('Level 2 follow-up v2 evidence snapshot id mismatch');
+if (level2FollowupEvidenceV2.entries.length !== 3 || followupLevel2Superseded.size !== 3 || level2FollowupEvidenceV2.remaining_level2_holds_expected !== 11) fail('Level 2 follow-up v2 evidence counts drifted');
+for (const row of level2FollowupEvidenceV2.entries) {
+  if (!row.term || !row.evidence_ref || !row.selected_definition || !row.url) fail('Level 2 follow-up v2 evidence row incomplete');
+  if (!evidenceMap.has(row.evidence_ref)) fail(`${row.term}: Level 2 follow-up v2 evidence_ref missing from registry`);
+}
 
 if (level3Evidence.snapshot_id !== 'KOREAN_LEVEL3_EXACT_EVIDENCE_V1_2026-09-22') fail('Level 3 evidence snapshot id mismatch');
 if (level3Evidence.entries.length !== 13 || level3Evidence.unresolved_terms.length !== 22) fail('Level 3 evidence admission/HOLD counts drifted');
@@ -140,7 +162,8 @@ for (const row of level3Evidence.entries) {
   if (!term || term.level !== 3 || term.status !== 'SOURCE_VERIFIED' || term.evidence_ref !== row.evidence_ref) fail(`${row.term}: Level 3 admitted term state mismatch`);
 }
 const phraseLevel3Superseded = new Set(phraseEvidence.superseded_level3_holds || []);
-const followupLevel3EvidenceBatches = [level3FollowupEvidence, level3FollowupEvidenceV3];
+const phraseV2Level3Superseded = new Set(phraseEvidenceV2.superseded_level3_holds || []);
+const followupLevel3EvidenceBatches = [level3FollowupEvidence, level3FollowupEvidenceV3, level3FollowupEvidenceV4];
 const followupLevel3Superseded = new Set(followupLevel3EvidenceBatches.flatMap((batch) => batch.superseded_level3_holds || []));
 for (const expression of level3Evidence.unresolved_terms) {
   if (phraseLevel3Superseded.has(expression)) {
@@ -155,13 +178,19 @@ for (const expression of level3Evidence.unresolved_terms) {
     if (!followupRow || !term || term.level !== 3 || term.status !== 'SOURCE_VERIFIED' || term.evidence_ref !== followupRow.evidence_ref) {
       fail(`${expression}: superseded Level 3 follow-up HOLD state mismatch`);
     }
+  } else if (phraseV2Level3Superseded.has(expression)) {
+    const row = phraseEvidenceV2.entries.find((x) => x.term === expression);
+    const term = data.terms.find((x) => x.expression === expression);
+    if (!row || !term || term.level !== 3 || term.status !== 'SOURCE_VERIFIED' || term.evidence_ref !== row.evidence_ref) {
+      fail(`${expression}: superseded Level 3 phrase-v2 HOLD state mismatch`);
+    }
   } else {
     const term = data.terms.find((x) => x.expression === expression);
     if (!term || term.level !== 3 || term.status !== 'DISCOVERY_ONLY') fail(`${expression}: unresolved Level 3 term must remain DISCOVERY_ONLY`);
   }
 }
-if (data.terms.filter((x) => x.level === 3 && x.status === 'SOURCE_VERIFIED').length !== 23) fail('Level 3 verified baseline drifted');
-if (data.terms.filter((x) => x.level === 3 && x.status === 'DISCOVERY_ONLY').length !== 18) fail('Level 3 unresolved baseline drifted');
+if (data.terms.filter((x) => x.level === 3 && x.status === 'SOURCE_VERIFIED').length !== 38) fail('Level 3 verified baseline drifted');
+if (data.terms.filter((x) => x.level === 3 && x.status === 'DISCOVERY_ONLY').length !== 3) fail('Level 3 unresolved baseline drifted');
 
 if (level3FollowupEvidence.snapshot_id !== 'KOREAN_LEVEL3_FOLLOWUP_EVIDENCE_V2_2026-09-22') fail('Level 3 follow-up evidence snapshot id mismatch');
 if (level3FollowupEvidence.entries.length !== 1 || new Set(level3FollowupEvidence.superseded_level3_holds || []).size !== 1 || level3FollowupEvidence.remaining_level3_holds_expected !== 20) fail('Level 3 follow-up evidence counts drifted');
@@ -175,6 +204,12 @@ for (const row of level3FollowupEvidenceV3.entries) {
   if (!row.term || !row.evidence_ref || !row.selected_definition || !row.url) fail('Level 3 follow-up v3 evidence row incomplete');
   if (!evidenceMap.has(row.evidence_ref)) fail(`${row.term}: Level 3 follow-up v3 evidence_ref missing from registry`);
 }
+if (level3FollowupEvidenceV4.snapshot_id !== 'KOREAN_LEVEL3_FOLLOWUP_EVIDENCE_V4_2026-09-23') fail('Level 3 follow-up v4 evidence snapshot id mismatch');
+if (level3FollowupEvidenceV4.entries.length !== 12 || new Set(level3FollowupEvidenceV4.superseded_level3_holds || []).size !== 12 || level3FollowupEvidenceV4.remaining_level3_holds_expected !== 6) fail('Level 3 follow-up v4 evidence counts drifted');
+for (const row of level3FollowupEvidenceV4.entries) {
+  if (!row.term || !row.evidence_ref || !row.selected_definition || !row.url) fail('Level 3 follow-up v4 evidence row incomplete');
+  if (!evidenceMap.has(row.evidence_ref)) fail(`${row.term}: Level 3 follow-up v4 evidence_ref missing from registry`);
+}
 
 if (phraseEvidence.snapshot_id !== 'KOREAN_PHRASE_EVIDENCE_V1_2026-09-22') fail('phrase evidence snapshot id mismatch');
 if (phraseEvidence.entries.length !== 4 || phraseLevel2Superseded.size !== 3 || phraseLevel3Superseded.size !== 1) fail('phrase evidence admission counts drifted');
@@ -182,6 +217,13 @@ if (phraseEvidence.remaining_level2_holds_expected !== 14 || phraseEvidence.rema
 for (const row of phraseEvidence.entries) {
   if (!row.term || !row.evidence_ref || !row.selected_definition || !row.url) fail('phrase evidence row incomplete');
   if (!evidenceMap.has(row.evidence_ref)) fail(`${row.term}: phrase evidence_ref missing from registry`);
+}
+if (phraseEvidenceV2.snapshot_id !== 'KOREAN_PHRASE_EVIDENCE_V2_2026-09-23') fail('phrase v2 evidence snapshot id mismatch');
+if (phraseEvidenceV2.entries.length !== 9 || phraseV2Level2Superseded.size !== 6 || phraseV2Level3Superseded.size !== 3) fail('phrase v2 evidence admission counts drifted');
+if (phraseEvidenceV2.remaining_level2_holds_expected !== 5 || phraseEvidenceV2.remaining_level3_holds_expected !== 3) fail('phrase v2 evidence remaining HOLD counts drifted');
+for (const row of phraseEvidenceV2.entries) {
+  if (!row.term || !row.evidence_ref || !row.selected_definition || !row.url) fail('phrase v2 evidence row incomplete');
+  if (!evidenceMap.has(row.evidence_ref)) fail(`${row.term}: phrase v2 evidence_ref missing from registry`);
 }
 if (data.terms.some((x) => x.expression === '조바심나다')) fail('non-canonical 조바심나다 must not re-enter the emotion map');
 if (!data.terms.some((x) => x.expression === '조바심하다' && x.evidence_ref === 'KRD:75299')) fail('canonical 조바심하다 evidence missing');

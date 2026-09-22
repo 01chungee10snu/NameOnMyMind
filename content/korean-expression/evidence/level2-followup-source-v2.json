@@ -1,0 +1,49 @@
+{
+  "schema_version": "1.0.0",
+  "snapshot_id": "KOREAN_LEVEL2_FOLLOWUP_EVIDENCE_V2_2026-09-23",
+  "captured_at": "2026-09-23",
+  "provider": "National Institute of Korean Language Basic Korean Dictionary",
+  "policy": "Follow-up evidence batch for Level 2 terms held in the original exact-headword audit. Admission requires an exact Lemma match in NIKL-distributed Basic Korean Dictionary data, an exact dictionary entry id, an affect-relevant sense, and the official korean.go.kr detail URL.",
+  "id_resolution_source": {
+    "type": "nikl_download_mirror",
+    "repository": "https://github.com/spellcheck-ko/korean-dict-nikl",
+    "commit_sha": "42c0d01889f34536e9cf94fe57f62bd2055b1bde",
+    "scope": "krdict XML export",
+    "use": "ID and sense resolution only"
+  },
+  "entries": [
+    {
+      "term": "오싹하다",
+      "evidence_ref": "KRD:68033",
+      "level": 2,
+      "match_type": "EXACT_HEADWORD",
+      "selected_definition": "몹시 무섭거나 추워서 갑자기 몸이 움츠러들거나 소름이 끼치다.",
+      "supersedes": "level2-exact-source-v1:unresolved_terms",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=68033&nation=eng"
+    },
+    {
+      "term": "막막하다",
+      "evidence_ref": "KRD:49986",
+      "level": 2,
+      "match_type": "EXACT_HEADWORD",
+      "selected_definition": "의지할 데가 없어 외롭고 답답하다.",
+      "supersedes": "level2-exact-source-v1:unresolved_terms",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=49986&nation=eng"
+    },
+    {
+      "term": "찡하다",
+      "evidence_ref": "KRD:80169",
+      "level": 2,
+      "match_type": "EXACT_HEADWORD",
+      "selected_definition": "감동을 받아 가슴이 뻐근하거나 벅찬 느낌이 있다.",
+      "supersedes": "level2-exact-source-v1:unresolved_terms",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=80169&nation=eng"
+    }
+  ],
+  "superseded_level2_holds": [
+    "오싹하다",
+    "막막하다",
+    "찡하다"
+  ],
+  "remaining_level2_holds_expected": 11
+}

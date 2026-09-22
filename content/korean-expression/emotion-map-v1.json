@@ -263,13 +263,15 @@
       "family_id": "KF01",
       "level": 3,
       "register": "formal",
-      "status": "DISCOVERY_ONLY",
-      "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "KRD:88885",
+      "note": "2026-09-23 국립국어원 한국어기초사전의 정확한 공식 용례와 감정 의미 뜻풀이를 함께 확인한 구문 표현.",
       "learning_profile": {
         "lexical_depth": "NUANCED",
-        "school_age_evidence": "AGE_REVIEW_REQUIRED",
-        "evidence_refs": [],
+        "school_age_evidence": "LEXICAL_ONLY",
+        "evidence_refs": [
+          "KRD:88885"
+        ],
         "school_age_source_form": null
       }
     },
@@ -950,13 +952,15 @@
       "family_id": "KF07",
       "level": 3,
       "register": "literary",
-      "status": "DISCOVERY_ONLY",
-      "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "KRD:601309",
+      "note": "2026-09-23 국립국어원 한국어기초사전 배포 데이터의 정확한 표제어 ID와 감정 의미 뜻풀이를 확인한 표현.",
       "learning_profile": {
         "lexical_depth": "NUANCED",
-        "school_age_evidence": "AGE_REVIEW_REQUIRED",
-        "evidence_refs": [],
+        "school_age_evidence": "LEXICAL_ONLY",
+        "evidence_refs": [
+          "KRD:601309"
+        ],
         "school_age_source_form": null
       }
     },
@@ -966,13 +970,15 @@
       "family_id": "KF07",
       "level": 3,
       "register": "literary",
-      "status": "DISCOVERY_ONLY",
-      "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "KRD:66706",
+      "note": "2026-09-23 국립국어원 한국어기초사전 배포 데이터의 정확한 표제어 ID와 감정 의미 뜻풀이를 확인한 표현.",
       "learning_profile": {
         "lexical_depth": "NUANCED",
-        "school_age_evidence": "AGE_REVIEW_REQUIRED",
-        "evidence_refs": [],
+        "school_age_evidence": "LEXICAL_ONLY",
+        "evidence_refs": [
+          "KRD:66706"
+        ],
         "school_age_source_form": null
       }
     },
@@ -982,13 +988,15 @@
       "family_id": "KF07",
       "level": 2,
       "register": "everyday",
-      "status": "DISCOVERY_ONLY",
-      "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "KRD:56276",
+      "note": "2026-09-23 국립국어원 한국어기초사전의 정확한 공식 용례와 감정 의미 뜻풀이를 함께 확인한 구문 표현.",
       "learning_profile": {
         "lexical_depth": "EXPANDED",
-        "school_age_evidence": "AGE_REVIEW_REQUIRED",
-        "evidence_refs": [],
+        "school_age_evidence": "LEXICAL_ONLY",
+        "evidence_refs": [
+          "KRD:56276"
+        ],
         "school_age_source_form": null
       }
     },
@@ -1194,13 +1202,15 @@
       "family_id": "KF09",
       "level": 3,
       "register": "literary",
-      "status": "DISCOVERY_ONLY",
-      "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "KRD:74148",
+      "note": "2026-09-23 국립국어원 한국어기초사전 배포 데이터의 정확한 표제어 ID와 감정 의미 뜻풀이를 확인한 표현.",
       "learning_profile": {
         "lexical_depth": "NUANCED",
-        "school_age_evidence": "AGE_REVIEW_REQUIRED",
-        "evidence_refs": [],
+        "school_age_evidence": "LEXICAL_ONLY",
+        "evidence_refs": [
+          "KRD:74148"
+        ],
         "school_age_source_form": null
       }
     },
@@ -1246,13 +1256,15 @@
       "family_id": "KF09",
       "level": 3,
       "register": "literary",
-      "status": "DISCOVERY_ONLY",
-      "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "KRD:74593",
+      "note": "2026-09-23 국립국어원 한국어기초사전 배포 데이터의 정확한 표제어 ID와 감정 의미 뜻풀이를 확인한 표현.",
       "learning_profile": {
         "lexical_depth": "NUANCED",
-        "school_age_evidence": "AGE_REVIEW_REQUIRED",
-        "evidence_refs": [],
+        "school_age_evidence": "LEXICAL_ONLY",
+        "evidence_refs": [
+          "KRD:74593"
+        ],
         "school_age_source_form": null
       }
     },
@@ -1317,13 +1329,15 @@
       "family_id": "KF10",
       "level": 3,
       "register": "formal",
-      "status": "DISCOVERY_ONLY",
-      "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "KRD:80819",
+      "note": "2026-09-23 국립국어원 한국어기초사전 배포 데이터의 정확한 표제어 ID와 감정 의미 뜻풀이를 확인한 표현.",
       "learning_profile": {
         "lexical_depth": "NUANCED",
-        "school_age_evidence": "AGE_REVIEW_REQUIRED",
-        "evidence_refs": [],
+        "school_age_evidence": "LEXICAL_ONLY",
+        "evidence_refs": [
+          "KRD:80819"
+        ],
         "school_age_source_form": null
       }
     },
@@ -1369,13 +1383,15 @@
       "family_id": "KF10",
       "level": 3,
       "register": "literary",
-      "status": "DISCOVERY_ONLY",
-      "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "KRD:78737",
+      "note": "2026-09-23 국립국어원 한국어기초사전 배포 데이터의 정확한 표제어 ID와 감정 의미 뜻풀이를 확인한 표현.",
       "learning_profile": {
         "lexical_depth": "NUANCED",
-        "school_age_evidence": "AGE_REVIEW_REQUIRED",
-        "evidence_refs": [],
+        "school_age_evidence": "LEXICAL_ONLY",
+        "evidence_refs": [
+          "KRD:78737"
+        ],
         "school_age_source_form": null
       }
     },
@@ -1385,13 +1401,15 @@
       "family_id": "KF10",
       "level": 3,
       "register": "formal",
-      "status": "DISCOVERY_ONLY",
-      "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "KRD:66697",
+      "note": "2026-09-23 국립국어원 한국어기초사전 배포 데이터의 정확한 표제어 ID와 감정 의미 뜻풀이를 확인한 표현.",
       "learning_profile": {
         "lexical_depth": "NUANCED",
-        "school_age_evidence": "AGE_REVIEW_REQUIRED",
-        "evidence_refs": [],
+        "school_age_evidence": "LEXICAL_ONLY",
+        "evidence_refs": [
+          "KRD:66697"
+        ],
         "school_age_source_form": null
       }
     },
@@ -1509,13 +1527,15 @@
       "family_id": "KF11",
       "level": 2,
       "register": "everyday",
-      "status": "DISCOVERY_ONLY",
-      "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "KRD:55231",
+      "note": "2026-09-23 국립국어원 한국어기초사전의 정확한 공식 용례와 감정 의미 뜻풀이를 함께 확인한 구문 표현.",
       "learning_profile": {
         "lexical_depth": "EXPANDED",
-        "school_age_evidence": "AGE_REVIEW_REQUIRED",
-        "evidence_refs": [],
+        "school_age_evidence": "LEXICAL_ONLY",
+        "evidence_refs": [
+          "KRD:55231"
+        ],
         "school_age_source_form": null
       }
     },
@@ -1709,13 +1729,15 @@
       "family_id": "KF13",
       "level": 2,
       "register": "everyday",
-      "status": "DISCOVERY_ONLY",
-      "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "KRD:68033",
+      "note": "2026-09-23 국립국어원 한국어기초사전 배포 데이터의 정확한 표제어 ID와 감정 의미 뜻풀이를 확인한 표현.",
       "learning_profile": {
         "lexical_depth": "EXPANDED",
-        "school_age_evidence": "AGE_REVIEW_REQUIRED",
-        "evidence_refs": [],
+        "school_age_evidence": "LEXICAL_ONLY",
+        "evidence_refs": [
+          "KRD:68033"
+        ],
         "school_age_source_form": null
       }
     },
@@ -1725,13 +1747,15 @@
       "family_id": "KF13",
       "level": 3,
       "register": "neutral",
-      "status": "DISCOVERY_ONLY",
-      "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "KRD:63314",
+      "note": "2026-09-23 국립국어원 한국어기초사전 배포 데이터의 정확한 표제어 ID와 감정 의미 뜻풀이를 확인한 표현.",
       "learning_profile": {
         "lexical_depth": "NUANCED",
-        "school_age_evidence": "AGE_REVIEW_REQUIRED",
-        "evidence_refs": [],
+        "school_age_evidence": "LEXICAL_ONLY",
+        "evidence_refs": [
+          "KRD:63314"
+        ],
         "school_age_source_form": null
       }
     },
@@ -1795,13 +1819,15 @@
       "family_id": "KF14",
       "level": 2,
       "register": "everyday",
-      "status": "DISCOVERY_ONLY",
-      "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "KRD:49986",
+      "note": "2026-09-23 국립국어원 한국어기초사전 배포 데이터의 정확한 표제어 ID와 감정 의미 뜻풀이를 확인한 표현.",
       "learning_profile": {
         "lexical_depth": "EXPANDED",
-        "school_age_evidence": "AGE_REVIEW_REQUIRED",
-        "evidence_refs": [],
+        "school_age_evidence": "LEXICAL_ONLY",
+        "evidence_refs": [
+          "KRD:49986"
+        ],
         "school_age_source_form": null
       }
     },
@@ -1829,13 +1855,15 @@
       "family_id": "KF14",
       "level": 2,
       "register": "everyday",
-      "status": "DISCOVERY_ONLY",
-      "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "KRD:14663",
+      "note": "2026-09-23 국립국어원 한국어기초사전의 정확한 공식 용례와 감정 의미 뜻풀이를 함께 확인한 구문 표현.",
       "learning_profile": {
         "lexical_depth": "EXPANDED",
-        "school_age_evidence": "AGE_REVIEW_REQUIRED",
-        "evidence_refs": [],
+        "school_age_evidence": "LEXICAL_ONLY",
+        "evidence_refs": [
+          "KRD:14663"
+        ],
         "school_age_source_form": null
       }
     },
@@ -1934,13 +1962,15 @@
       "family_id": "KF15",
       "level": 3,
       "register": "literary",
-      "status": "DISCOVERY_ONLY",
-      "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "KRD:42882",
+      "note": "2026-09-23 국립국어원 한국어기초사전 배포 데이터의 정확한 표제어 ID와 감정 의미 뜻풀이를 확인한 표현.",
       "learning_profile": {
         "lexical_depth": "NUANCED",
-        "school_age_evidence": "AGE_REVIEW_REQUIRED",
-        "evidence_refs": [],
+        "school_age_evidence": "LEXICAL_ONLY",
+        "evidence_refs": [
+          "KRD:42882"
+        ],
         "school_age_source_form": null
       }
     },
@@ -2005,13 +2035,15 @@
       "family_id": "KF15",
       "level": 3,
       "register": "neutral",
-      "status": "DISCOVERY_ONLY",
-      "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "KRD:79235",
+      "note": "2026-09-23 국립국어원 한국어기초사전의 정확한 공식 용례와 감정 의미 뜻풀이를 함께 확인한 구문 표현.",
       "learning_profile": {
         "lexical_depth": "NUANCED",
-        "school_age_evidence": "AGE_REVIEW_REQUIRED",
-        "evidence_refs": [],
+        "school_age_evidence": "LEXICAL_ONLY",
+        "evidence_refs": [
+          "KRD:79235"
+        ],
         "school_age_source_form": null
       }
     },
@@ -2057,13 +2089,15 @@
       "family_id": "KF16",
       "level": 3,
       "register": "neutral",
-      "status": "DISCOVERY_ONLY",
-      "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "KRD:60251",
+      "note": "2026-09-23 국립국어원 한국어기초사전의 정확한 공식 용례와 감정 의미 뜻풀이를 함께 확인한 구문 표현.",
       "learning_profile": {
         "lexical_depth": "NUANCED",
-        "school_age_evidence": "AGE_REVIEW_REQUIRED",
-        "evidence_refs": [],
+        "school_age_evidence": "LEXICAL_ONLY",
+        "evidence_refs": [
+          "KRD:60251"
+        ],
         "school_age_source_form": null
       }
     },
@@ -2073,13 +2107,15 @@
       "family_id": "KF16",
       "level": 3,
       "register": "neutral",
-      "status": "DISCOVERY_ONLY",
-      "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "KRD:30833",
+      "note": "2026-09-23 국립국어원 한국어기초사전 배포 데이터의 정확한 표제어 ID와 감정 의미 뜻풀이를 확인한 표현.",
       "learning_profile": {
         "lexical_depth": "NUANCED",
-        "school_age_evidence": "AGE_REVIEW_REQUIRED",
-        "evidence_refs": [],
+        "school_age_evidence": "LEXICAL_ONLY",
+        "evidence_refs": [
+          "KRD:30833"
+        ],
         "school_age_source_form": null
       }
     },
@@ -2268,13 +2304,15 @@
       "family_id": "KF18",
       "level": 3,
       "register": "formal",
-      "status": "DISCOVERY_ONLY",
-      "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "KRD:64658",
+      "note": "2026-09-23 국립국어원 한국어기초사전 배포 데이터의 정확한 표제어 ID와 감정 의미 뜻풀이를 확인한 표현.",
       "learning_profile": {
         "lexical_depth": "NUANCED",
-        "school_age_evidence": "AGE_REVIEW_REQUIRED",
-        "evidence_refs": [],
+        "school_age_evidence": "LEXICAL_ONLY",
+        "evidence_refs": [
+          "KRD:64658"
+        ],
         "school_age_source_form": null
       }
     },
@@ -2408,13 +2446,15 @@
       "family_id": "KF19",
       "level": 3,
       "register": "formal",
-      "status": "DISCOVERY_ONLY",
-      "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "KRD:65852",
+      "note": "2026-09-23 국립국어원 한국어기초사전 배포 데이터의 정확한 표제어 ID와 감정 의미 뜻풀이를 확인한 표현.",
       "learning_profile": {
         "lexical_depth": "NUANCED",
-        "school_age_evidence": "AGE_REVIEW_REQUIRED",
-        "evidence_refs": [],
+        "school_age_evidence": "LEXICAL_ONLY",
+        "evidence_refs": [
+          "KRD:65852"
+        ],
         "school_age_source_form": null
       }
     },
@@ -2726,13 +2766,15 @@
       "family_id": "KF22",
       "level": 2,
       "register": "everyday",
-      "status": "DISCOVERY_ONLY",
-      "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "KRD:80169",
+      "note": "2026-09-23 국립국어원 한국어기초사전 배포 데이터의 정확한 표제어 ID와 감정 의미 뜻풀이를 확인한 표현.",
       "learning_profile": {
         "lexical_depth": "EXPANDED",
-        "school_age_evidence": "AGE_REVIEW_REQUIRED",
-        "evidence_refs": [],
+        "school_age_evidence": "LEXICAL_ONLY",
+        "evidence_refs": [
+          "KRD:80169"
+        ],
         "school_age_source_form": null
       }
     },
@@ -2760,13 +2802,15 @@
       "family_id": "KF22",
       "level": 2,
       "register": "everyday",
-      "status": "DISCOVERY_ONLY",
-      "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "KRD:93397",
+      "note": "2026-09-23 국립국어원 한국어기초사전의 정확한 공식 용례와 감정 의미 뜻풀이를 함께 확인한 구문 표현.",
       "learning_profile": {
         "lexical_depth": "EXPANDED",
-        "school_age_evidence": "AGE_REVIEW_REQUIRED",
-        "evidence_refs": [],
+        "school_age_evidence": "LEXICAL_ONLY",
+        "evidence_refs": [
+          "KRD:93397"
+        ],
         "school_age_source_form": null
       }
     },
@@ -2776,13 +2820,15 @@
       "family_id": "KF22",
       "level": 2,
       "register": "everyday",
-      "status": "DISCOVERY_ONLY",
-      "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "KRD:58356",
+      "note": "2026-09-23 국립국어원 한국어기초사전의 정확한 공식 용례와 감정 의미 뜻풀이를 함께 확인한 구문 표현.",
       "learning_profile": {
         "lexical_depth": "EXPANDED",
-        "school_age_evidence": "AGE_REVIEW_REQUIRED",
-        "evidence_refs": [],
+        "school_age_evidence": "LEXICAL_ONLY",
+        "evidence_refs": [
+          "KRD:58356"
+        ],
         "school_age_source_form": null
       }
     },
@@ -2792,13 +2838,15 @@
       "family_id": "KF22",
       "level": 2,
       "register": "neutral",
-      "status": "DISCOVERY_ONLY",
-      "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "KRD:54807",
+      "note": "2026-09-23 국립국어원 한국어기초사전의 정확한 공식 용례와 감정 의미 뜻풀이를 함께 확인한 구문 표현.",
       "learning_profile": {
         "lexical_depth": "EXPANDED",
-        "school_age_evidence": "AGE_REVIEW_REQUIRED",
-        "evidence_refs": [],
+        "school_age_evidence": "LEXICAL_ONLY",
+        "evidence_refs": [
+          "KRD:54807"
+        ],
         "school_age_source_form": null
       }
     },

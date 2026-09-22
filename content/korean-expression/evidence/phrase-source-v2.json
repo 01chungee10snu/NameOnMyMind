@@ -1,0 +1,121 @@
+{
+  "schema_version": "1.0.0",
+  "snapshot_id": "KOREAN_PHRASE_EVIDENCE_V2_2026-09-23",
+  "captured_at": "2026-09-23",
+  "provider": "National Institute of Korean Language Basic Korean Dictionary",
+  "policy": "Second phrase-evidence batch. Promotion requires the exact product expression to appear as an official NIKL example/collocation under a headword whose Korean definition supports the intended affective meaning. Phrases not directly found in the fixed dictionary export remain DISCOVERY_ONLY.",
+  "id_resolution_source": {
+    "type": "nikl_download_mirror",
+    "repository": "https://github.com/spellcheck-ko/korean-dict-nikl",
+    "commit_sha": "42c0d01889f34536e9cf94fe57f62bd2055b1bde",
+    "scope": "krdict XML export",
+    "use": "exact example/collocation and entry-id resolution only"
+  },
+  "entries": [
+    {
+      "term": "희열을 느끼다",
+      "evidence_ref": "KRD:88885",
+      "level": 3,
+      "match_type": "OFFICIAL_EXAMPLE",
+      "headword": "희열",
+      "selected_definition": "기쁨과 즐거움. 또는 기뻐하고 즐거워함.",
+      "supersedes": "level3-exact-source-v1:unresolved_terms",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=88885&nation=eng"
+    },
+    {
+      "term": "미련이 남다",
+      "evidence_ref": "KRD:56276",
+      "level": 2,
+      "match_type": "OFFICIAL_EXAMPLE",
+      "headword": "미련",
+      "selected_definition": "잊어버리거나 그만두어야 할 것을 깨끗이 잊거나 포기하지 못하고 여전히 끌리는 마음.",
+      "supersedes": "level2-exact-source-v1:unresolved_terms",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=56276&nation=eng"
+    },
+    {
+      "term": "맥이 빠지다",
+      "evidence_ref": "KRD:55231",
+      "level": 2,
+      "match_type": "OFFICIAL_EXAMPLE",
+      "headword": "맥",
+      "selected_definition": "기운이나 힘.",
+      "supersedes": "level2-exact-source-v1:unresolved_terms",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=55231&nation=eng"
+    },
+    {
+      "term": "애가 타다",
+      "evidence_ref": "KRD:14663",
+      "level": 2,
+      "match_type": "OFFICIAL_EXAMPLE",
+      "headword": "애",
+      "selected_definition": "초조한 마음속.",
+      "supersedes": "level2-exact-source-v1:unresolved_terms",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=14663&nation=eng"
+    },
+    {
+      "term": "울화가 치밀다",
+      "evidence_ref": "KRD:79235",
+      "level": 3,
+      "match_type": "OFFICIAL_EXAMPLE",
+      "headword": "치밀다",
+      "selected_definition": "욕심, 분노, 슬픔 등이 세차게 복받쳐 오르다.",
+      "supersedes": "level3-exact-source-v1:unresolved_terms",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=79235&nation=eng"
+    },
+    {
+      "term": "분통이 터지다",
+      "evidence_ref": "KRD:60251",
+      "level": 3,
+      "match_type": "OFFICIAL_EXAMPLE",
+      "headword": "분통",
+      "selected_definition": "몹시 억울하여 화가 나는 마음.",
+      "supersedes": "level3-exact-source-v1:unresolved_terms",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=60251&nation=eng"
+    },
+    {
+      "term": "목이 메다",
+      "evidence_ref": "KRD:93397",
+      "level": 2,
+      "match_type": "OFFICIAL_EXAMPLE",
+      "headword": "메다",
+      "selected_definition": "어떤 감정이 북받쳐 목소리가 잘 나지 않다.",
+      "supersedes": "level2-exact-source-v1:unresolved_terms",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=93397&nation=eng"
+    },
+    {
+      "term": "가슴이 벅차다",
+      "evidence_ref": "KRD:58356",
+      "level": 2,
+      "match_type": "OFFICIAL_EXAMPLE",
+      "headword": "벅차다",
+      "selected_definition": "기쁘거나 희망에 차서 가슴이 뿌듯하다.",
+      "supersedes": "level2-exact-source-v1:unresolved_terms",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=58356&nation=eng"
+    },
+    {
+      "term": "가슴이 먹먹하다",
+      "evidence_ref": "KRD:54807",
+      "level": 2,
+      "match_type": "OFFICIAL_EXAMPLE",
+      "headword": "먹먹하다",
+      "selected_definition": "가슴이나 머리가 막히거나 답답한 느낌이 들다.",
+      "supersedes": "level2-exact-source-v1:unresolved_terms",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=54807&nation=eng"
+    }
+  ],
+  "superseded_level2_holds": [
+    "미련이 남다",
+    "맥이 빠지다",
+    "애가 타다",
+    "목이 메다",
+    "가슴이 벅차다",
+    "가슴이 먹먹하다"
+  ],
+  "superseded_level3_holds": [
+    "희열을 느끼다",
+    "울화가 치밀다",
+    "분통이 터지다"
+  ],
+  "remaining_level2_holds_expected": 5,
+  "remaining_level3_holds_expected": 3
+}
