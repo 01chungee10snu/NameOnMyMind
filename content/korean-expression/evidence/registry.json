@@ -141,6 +141,12 @@
       "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=20041&nation=eng"
     },
     {
+      "evidence_ref": "KRD:20911",
+      "source_type": "official_dictionary",
+      "path": null,
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=20911&nation=eng"
+    },
+    {
       "evidence_ref": "KRD:22891",
       "source_type": "official_dictionary",
       "path": null,
@@ -543,6 +549,12 @@
       "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=74974&nation=eng"
     },
     {
+      "evidence_ref": "KRD:75299",
+      "source_type": "official_dictionary",
+      "path": null,
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=75299&nation=eng"
+    },
+    {
       "evidence_ref": "KRD:75511",
       "source_type": "official_dictionary",
       "path": null,
@@ -577,6 +589,12 @@
       "source_type": "official_dictionary",
       "path": null,
       "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=81742&nation=eng"
+    },
+    {
+      "evidence_ref": "KRD:81873",
+      "source_type": "official_dictionary",
+      "path": null,
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=81873&nation=eng"
     },
     {
       "evidence_ref": "KRD:83344",

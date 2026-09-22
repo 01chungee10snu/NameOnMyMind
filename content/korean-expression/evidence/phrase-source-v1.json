@@ -1,0 +1,61 @@
+{
+  "schema_version": "1.0.0",
+  "snapshot_id": "KOREAN_PHRASE_EVIDENCE_V1_2026-09-22",
+  "captured_at": "2026-09-22",
+  "provider": "National Institute of Korean Language Basic Korean Dictionary",
+  "policy": "This batch promotes only expressions directly supported by an official idiom/collocation/example or a canonical official headword. It supersedes HOLD status from earlier exact-headword audits without rewriting those earlier audit snapshots.",
+  "entries": [
+    {
+      "term": "마음을 졸이다",
+      "evidence_ref": "KRD:20911",
+      "level": 2,
+      "match_type": "OFFICIAL_IDIOM",
+      "headword": "마음",
+      "selected_definition": "걱정하면서 조마조마해하다.",
+      "supersedes": "level2-exact-source-v1:unresolved_terms",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=20911&nation=eng"
+    },
+    {
+      "term": "마음에 걸리다",
+      "evidence_ref": "KRD:20911",
+      "level": 2,
+      "match_type": "OFFICIAL_IDIOM",
+      "headword": "마음",
+      "selected_definition": "걱정되어 마음이 편하지 않게 느껴지다.",
+      "supersedes": "level2-exact-source-v1:unresolved_terms",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=20911&nation=eng"
+    },
+    {
+      "term": "가슴이 철렁하다",
+      "evidence_ref": "KRD:81873",
+      "level": 2,
+      "match_type": "OFFICIAL_EXAMPLE",
+      "headword": "철렁하다",
+      "selected_definition": "무엇에 크게 놀라서 걱정되거나 마음이 무거워지다.",
+      "supersedes": "level2-exact-source-v1:unresolved_terms",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=81873&nation=eng"
+    },
+    {
+      "term": "조바심하다",
+      "previous_expression": "조바심나다",
+      "evidence_ref": "KRD:75299",
+      "level": 3,
+      "match_type": "CANONICAL_HEADWORD",
+      "headword": "조바심하다",
+      "selected_definition": "조마조마하여 마음을 졸이다.",
+      "supersedes": "level3-exact-source-v1:unresolved_terms",
+      "canonicalization_note": "탐색형 '조바심나다'를 국립국어원 한국어기초사전 표제어 '조바심하다'로 정규화함.",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=75299&nation=eng"
+    }
+  ],
+  "superseded_level2_holds": [
+    "마음을 졸이다",
+    "마음에 걸리다",
+    "가슴이 철렁하다"
+  ],
+  "superseded_level3_holds": [
+    "조바심나다"
+  ],
+  "remaining_level2_holds_expected": 14,
+  "remaining_level3_holds_expected": 21
+}
