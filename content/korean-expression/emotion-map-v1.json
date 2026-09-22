@@ -1491,13 +1491,15 @@
       "family_id": "KF11",
       "level": 3,
       "register": "formal",
-      "status": "DISCOVERY_ONLY",
-      "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "KRD:36830",
+      "note": "2026-09-23 국립국어원 한국어기초사전 배포 데이터의 정확한 표제어 ID와 뜻풀이를 후속 확인한 섬세 표현.",
       "learning_profile": {
         "lexical_depth": "NUANCED",
-        "school_age_evidence": "AGE_REVIEW_REQUIRED",
-        "evidence_refs": [],
+        "school_age_evidence": "LEXICAL_ONLY",
+        "evidence_refs": [
+          "KRD:36830"
+        ],
         "school_age_source_form": null
       }
     },
@@ -1985,13 +1987,15 @@
       "family_id": "KF15",
       "level": 3,
       "register": "formal",
-      "status": "DISCOVERY_ONLY",
-      "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "KRD:33033",
+      "note": "2026-09-23 국립국어원 한국어기초사전 배포 데이터의 정확한 표제어 ID와 뜻풀이를 후속 확인한 섬세 표현.",
       "learning_profile": {
         "lexical_depth": "NUANCED",
-        "school_age_evidence": "AGE_REVIEW_REQUIRED",
-        "evidence_refs": [],
+        "school_age_evidence": "LEXICAL_ONLY",
+        "evidence_refs": [
+          "KRD:33033"
+        ],
         "school_age_source_form": null
       }
     },

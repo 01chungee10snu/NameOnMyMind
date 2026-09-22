@@ -24,6 +24,8 @@ const KOREAN_LEVEL3_SOURCE = path.join(ROOT, 'content/korean-expression/evidence
 const KOREAN_LEVEL3_TARGET = path.join(OUT, 'content/korean-expression/evidence/level3-exact-source-v1.json');
 const KOREAN_LEVEL3_FOLLOWUP_SOURCE = path.join(ROOT, 'content/korean-expression/evidence/level3-followup-source-v2.json');
 const KOREAN_LEVEL3_FOLLOWUP_TARGET = path.join(OUT, 'content/korean-expression/evidence/level3-followup-source-v2.json');
+const KOREAN_LEVEL3_FOLLOWUP_V3_SOURCE = path.join(ROOT, 'content/korean-expression/evidence/level3-followup-source-v3.json');
+const KOREAN_LEVEL3_FOLLOWUP_V3_TARGET = path.join(OUT, 'content/korean-expression/evidence/level3-followup-source-v3.json');
 const KOREAN_PHRASE_SOURCE = path.join(ROOT, 'content/korean-expression/evidence/phrase-source-v1.json');
 const KOREAN_PHRASE_TARGET = path.join(OUT, 'content/korean-expression/evidence/phrase-source-v1.json');
 const PREVIEW_AUTHORIZED = process.env.NAMEONMYMIND_RESEARCH_PREVIEW_PUBLISH_AUTHORIZED === '1';
@@ -67,6 +69,7 @@ if (!fs.existsSync(KOREAN_LEVEL1_SOURCE)) throw new Error('Korean Level 1 eviden
 if (!fs.existsSync(KOREAN_LEVEL2_SOURCE)) throw new Error('Korean Level 2 evidence missing.');
 if (!fs.existsSync(KOREAN_LEVEL3_SOURCE)) throw new Error('Korean Level 3 evidence missing.');
 if (!fs.existsSync(KOREAN_LEVEL3_FOLLOWUP_SOURCE)) throw new Error('Korean Level 3 follow-up evidence missing.');
+if (!fs.existsSync(KOREAN_LEVEL3_FOLLOWUP_V3_SOURCE)) throw new Error('Korean Level 3 follow-up v3 evidence missing.');
 if (!fs.existsSync(KOREAN_PHRASE_SOURCE)) throw new Error('Korean phrase evidence missing.');
 const koreanMap = JSON.parse(fs.readFileSync(KOREAN_DATA_SOURCE, 'utf8'));
 if (koreanMap.track_id !== 'KOREAN_EMOTION_ARTICULATION') throw new Error('Korean emotion map track_id mismatch.');
@@ -96,6 +99,7 @@ fs.copyFileSync(KOREAN_LEVEL1_SOURCE, KOREAN_LEVEL1_TARGET);
 fs.copyFileSync(KOREAN_LEVEL2_SOURCE, KOREAN_LEVEL2_TARGET);
 fs.copyFileSync(KOREAN_LEVEL3_SOURCE, KOREAN_LEVEL3_TARGET);
 fs.copyFileSync(KOREAN_LEVEL3_FOLLOWUP_SOURCE, KOREAN_LEVEL3_FOLLOWUP_TARGET);
+fs.copyFileSync(KOREAN_LEVEL3_FOLLOWUP_V3_SOURCE, KOREAN_LEVEL3_FOLLOWUP_V3_TARGET);
 fs.copyFileSync(KOREAN_PHRASE_SOURCE, KOREAN_PHRASE_TARGET);
 
 const stagedCards = sourceManifest.cards.map(({ research_record, ...card }) => card);
@@ -170,6 +174,7 @@ const stagedEvidence = {
     level2_evidence_path: 'content/korean-expression/evidence/level2-exact-source-v1.json',
     level3_evidence_path: 'content/korean-expression/evidence/level3-exact-source-v1.json',
     level3_followup_evidence_path: 'content/korean-expression/evidence/level3-followup-source-v2.json',
+    level3_followup_v3_evidence_path: 'content/korean-expression/evidence/level3-followup-source-v3.json',
     phrase_evidence_path: 'content/korean-expression/evidence/phrase-source-v1.json',
     alias_path: 'korean/',
     product_release_authorized: false,

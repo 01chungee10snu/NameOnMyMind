@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0.0",
+  "snapshot_id": "KOREAN_LEVEL3_FOLLOWUP_EVIDENCE_V3_2026-09-23",
+  "captured_at": "2026-09-23",
+  "provider": "National Institute of Korean Language Basic Korean Dictionary",
+  "policy": "Second follow-up evidence batch for Level 3 terms held in the original exact-headword audit. Admission requires an exact Lemma match in NIKL-distributed Basic Korean Dictionary data, an exact dictionary entry id, and the official korean.go.kr detail URL. A public mirror of NIKL downloadable dictionary data was used only to resolve entry ids; the product evidence URL remains the official NIKL dictionary.",
+  "id_resolution_source": {
+    "type": "nikl_download_mirror",
+    "repository": "https://github.com/spellcheck-ko/korean-dict-nikl",
+    "commit_sha": "42c0d01889f34536e9cf94fe57f62bd2055b1bde",
+    "scope": "krdict XML export",
+    "use": "ID resolution only"
+  },
+  "entries": [
+    {
+      "term": "낙담하다",
+      "evidence_ref": "KRD:36830",
+      "level": 3,
+      "match_type": "EXACT_HEADWORD",
+      "selected_definition": "어떤 일이 바라던 대로 되지 않아 크게 실망하다.",
+      "supersedes": "level3-exact-source-v1:unresolved_terms",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=36830&nation=eng"
+    },
+    {
+      "term": "격분하다",
+      "evidence_ref": "KRD:33033",
+      "level": 3,
+      "match_type": "EXACT_HEADWORD",
+      "selected_definition": "몹시 화를 내다.",
+      "supersedes": "level3-exact-source-v1:unresolved_terms",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=33033&nation=eng"
+    }
+  ],
+  "superseded_level3_holds": [
+    "낙담하다",
+    "격분하다"
+  ],
+  "remaining_level3_holds_expected": 18
+}

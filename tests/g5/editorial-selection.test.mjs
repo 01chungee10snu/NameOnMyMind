@@ -126,6 +126,7 @@ test('app discovery exposes research surfaces without promoting research candida
   const level2Evidence = readJson('content/korean-expression/evidence/level2-exact-source-v1.json');
   const level3Evidence = readJson('content/korean-expression/evidence/level3-exact-source-v1.json');
   const level3FollowupEvidence = readJson('content/korean-expression/evidence/level3-followup-source-v2.json');
+  const level3FollowupEvidenceV3 = readJson('content/korean-expression/evidence/level3-followup-source-v3.json');
   const phraseEvidence = readJson('content/korean-expression/evidence/phrase-source-v1.json');
   const sourcePreview = readJson('prototypes/g5-research-preview-20260918/manifest.json');
 
@@ -189,13 +190,13 @@ test('app discovery exposes research surfaces without promoting research candida
   assert.equal(korean.track_id, 'KOREAN_EMOTION_ARTICULATION');
   assert.equal(korean.families.length, 22);
   assert.equal(korean.terms.length, 151);
-  assert.equal(korean.terms.filter((term) => term.status === 'SOURCE_VERIFIED').length, 117);
+  assert.equal(korean.terms.filter((term) => term.status === 'SOURCE_VERIFIED').length, 119);
   assert.equal(korean.terms.filter((term) => term.level === 1).length, 38);
   assert.ok(korean.terms.filter((term) => term.level === 1).every((term) => term.status === 'SOURCE_VERIFIED'));
   assert.equal(korean.terms.filter((term) => term.level === 2 && term.status === 'SOURCE_VERIFIED').length, 58);
   assert.equal(korean.terms.filter((term) => term.level === 2 && term.status === 'DISCOVERY_ONLY').length, 14);
-  assert.equal(korean.terms.filter((term) => term.level === 3 && term.status === 'SOURCE_VERIFIED').length, 21);
-  assert.equal(korean.terms.filter((term) => term.level === 3 && term.status === 'DISCOVERY_ONLY').length, 20);
+  assert.equal(korean.terms.filter((term) => term.level === 3 && term.status === 'SOURCE_VERIFIED').length, 23);
+  assert.equal(korean.terms.filter((term) => term.level === 3 && term.status === 'DISCOVERY_ONLY').length, 18);
   assert.equal(korean.terms.filter((term) => term.learning_profile?.school_age_evidence === 'GRADE_3_6_SUPPORTED').length, 21);
   assert.equal(korean.terms.filter((term) => term.learning_profile?.school_age_evidence === 'GRADE_3_6_RELATED_FORM').length, 1);
   assert.ok(korean.terms.every((term) => term.learning_profile?.lexical_depth));
@@ -235,6 +236,10 @@ test('app discovery exposes research surfaces without promoting research candida
   assert.deepEqual(level3FollowupEvidence.superseded_level3_holds, ['고대하다']);
   assert.equal(level3FollowupEvidence.entries[0]?.evidence_ref, 'KRD:25588');
   assert.equal(level3FollowupEvidence.remaining_level3_holds_expected, 20);
+  assert.equal(level3FollowupEvidenceV3.snapshot_id, 'KOREAN_LEVEL3_FOLLOWUP_EVIDENCE_V3_2026-09-23');
+  assert.deepEqual(level3FollowupEvidenceV3.superseded_level3_holds, ['낙담하다','격분하다']);
+  assert.deepEqual(level3FollowupEvidenceV3.entries.map((row) => row.evidence_ref), ['KRD:36830','KRD:33033']);
+  assert.equal(level3FollowupEvidenceV3.remaining_level3_holds_expected, 18);
   assert.equal(phraseEvidence.snapshot_id, 'KOREAN_PHRASE_EVIDENCE_V1_2026-09-22');
   assert.equal(phraseEvidence.entries.length, 4);
   assert.deepEqual(phraseEvidence.superseded_level2_holds, ['마음을 졸이다','마음에 걸리다','가슴이 철렁하다']);
@@ -246,6 +251,7 @@ test('app discovery exposes research surfaces without promoting research candida
   assert.match(stage, /level2_evidence_path/);
   assert.match(stage, /level3_evidence_path/);
   assert.match(stage, /level3_followup_evidence_path/);
+  assert.match(stage, /level3_followup_v3_evidence_path/);
   assert.match(stage, /phrase_evidence_path/);
 
   const manifest = readJson('public/BUILD_MANIFEST.json');
