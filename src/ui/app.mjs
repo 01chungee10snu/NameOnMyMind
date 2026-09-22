@@ -114,6 +114,15 @@ function koreanDailyVerifiedTerm(data, now = new Date()) {
   const localDayKey = now.getFullYear() * 372 + (now.getMonth() + 1) * 31 + now.getDate();
   return verified[localDayKey % verified.length];
 }
+function koreanDailyContrastSet(data, dailyTerm, now = new Date()) {
+  const verifiedSets = data.contrast_sets.filter((set) => set.status === 'SOURCE_VERIFIED');
+  if (!verifiedSets.length) return null;
+  const direct = dailyTerm && verifiedSets.find((set) => set.terms.includes(dailyTerm.expression));
+  if (direct) return direct;
+  const ordered = [...verifiedSets].sort((a, b) => a.id.localeCompare(b.id, 'en'));
+  const localDayKey = now.getFullYear() * 372 + (now.getMonth() + 1) * 31 + now.getDate();
+  return ordered[localDayKey % ordered.length];
+}
 function renderResearchWorldCard(card, previewBase) {
   const link = document.createElement('a');
   link.className = 'research-preview-card';
@@ -200,6 +209,50 @@ function renderKoreanResearchSummary(data) {
 
     dailyLink.append(kicker, term, meta, prompt, arrow);
     root.append(dailyLink);
+  }
+
+  const dailyContrast = koreanDailyContrastSet(data, daily);
+  if (dailyContrast) {
+    const practice = document.createElement('section');
+    practice.className = 'korean-daily-practice';
+    practice.setAttribute('aria-labelledby', 'korean-daily-practice-title');
+
+    const kicker = document.createElement('span');
+    kicker.className = 'korean-daily-practice-kicker';
+    kicker.textContent = '오늘의 비슷한 말 연습';
+
+    const title = document.createElement('strong');
+    title.className = 'korean-daily-practice-title';
+    title.id = 'korean-daily-practice-title';
+    title.textContent = dailyContrast.title;
+
+    const question = document.createElement('p');
+    question.className = 'korean-daily-practice-question';
+    question.textContent = dailyContrast.reflection_prompt;
+
+    const choices = document.createElement('div');
+    choices.className = 'korean-daily-practice-choices';
+    for (const expression of dailyContrast.terms) {
+      const termData = data.terms.find((term) => term.expression === expression);
+      if (!termData) continue;
+      const link = document.createElement('a');
+      link.href = koreanResearchHref(termData.family_id, termData.expression);
+      link.textContent = expression;
+      link.setAttribute('aria-label', `${expression} 표현의 뜻과 비슷한 말 차이 보기`);
+      choices.append(link);
+    }
+
+    const note = document.createElement('span');
+    note.className = 'korean-daily-practice-note';
+    note.textContent = '정답을 맞히는 문제가 아닙니다. 지금 상황에 가장 가까운 말을 골라 차이를 읽어 보세요.';
+
+    const compare = document.createElement('a');
+    compare.className = 'korean-daily-practice-more';
+    compare.href = `./prototypes/korean-emotion-map-20260919/?guide=1&compare=${encodeURIComponent(dailyContrast.id)}`;
+    compare.textContent = '네 단어 차이 자세히 보기';
+
+    practice.append(kicker, title, question, choices, note, compare);
+    root.append(practice);
   }
 
   const guideLink = document.createElement('a');

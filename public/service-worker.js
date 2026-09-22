@@ -1,4 +1,4 @@
-const SNAPSHOT = '7a621eb7ae7fd77f';
+const SNAPSHOT = 'db1d57297491ad37';
 const SHELL_CACHE = `nomm-shell-v1-${SNAPSHOT}`;
 const CONTENT_CACHE = `nomm-content-${SNAPSHOT}`;
 const ASSET_CACHE = `nomm-assets-v1-${SNAPSHOT}`;
