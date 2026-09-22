@@ -11,6 +11,7 @@ const fail = (m) => { throw new Error(m); };
 
 const schema = read('schema/korean-emotion-map.schema.json');
 const data = read('content/korean-expression/emotion-map-v1.json');
+const dailyPool = read('content/korean-expression/daily-pool-v1.json');
 const evidence = read('content/korean-expression/evidence/registry.json');
 const contrastEvidence = read('content/korean-expression/evidence/contrast-source-v2.json');
 const level1Evidence = read('content/korean-expression/evidence/level1-source-v1.json');
@@ -57,6 +58,18 @@ for (const row of evidence.entries) {
 }
 for (const x of data.terms.filter((x) => x.status === 'DISCOVERY_ONLY')) {
   if (x.note?.includes('제품 카드로 사용')) fail(`${x.expression}: discovery term framed as product-ready`);
+}
+
+if (dailyPool.pool_id !== 'KOREAN_DAILY_VERIFIED_V1_2026-09-22') fail('Korean daily pool id mismatch');
+if (dailyPool.effective_date !== '2026-09-22') fail('Korean daily pool effective date mismatch');
+if (dailyPool.source_commit !== 'f1a1d6518bec48c0d4c8aa7b71a96a2367b27af4') fail('Korean daily pool source commit mismatch');
+if (dailyPool.term_count !== 116 || dailyPool.term_ids.length !== 116) fail('Korean daily pool v1 size drifted');
+if (new Set(dailyPool.term_ids).size !== dailyPool.term_ids.length) fail('duplicate Korean daily pool term id');
+const termById = new Map(data.terms.map((x) => [x.id, x]));
+for (const id of dailyPool.term_ids) {
+  const term = termById.get(id);
+  if (!term) fail(`daily pool term missing: ${id}`);
+  if (term.status !== 'SOURCE_VERIFIED') fail(`daily pool term is no longer SOURCE_VERIFIED: ${id}`);
 }
 
 if (level1Evidence.snapshot_id !== 'KOREAN_LEVEL1_LEXICAL_EVIDENCE_V1_2026-09-21') fail('Level 1 evidence snapshot id mismatch');

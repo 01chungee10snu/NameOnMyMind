@@ -62,6 +62,7 @@ jobs:
             'public/korean/index.html',
             'public/prototypes/korean-emotion-map-20260919/index.html',
             'public/content/korean-expression/emotion-map-v1.json',
+            'public/content/korean-expression/daily-pool-v1.json',
             'public/content/korean-expression/evidence/school-age-v1.json',
             'public/content/korean-expression/evidence/level1-source-v1.json',
             'public/content/korean-expression/evidence/level2-exact-source-v1.json',

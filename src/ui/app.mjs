@@ -5,7 +5,7 @@ import { createReadOnlyAgentApi, registerWebMcpReadOnlyTools } from '../agent/we
 
 const qs = (selector) => document.querySelector(selector);
 const qsa = (selector) => [...document.querySelectorAll(selector)];
-const researchDiscoveryData = { preview: null, korean: null };
+const researchDiscoveryData = { preview: null, korean: null, koreanDailyPool: null };
 
 async function readJson(url) {
   const response = await fetch(url, { cache: 'no-store' });
@@ -106,10 +106,14 @@ function schoolAgeResearchLabel(term) {
 function koreanDepthLabel(term) {
   return ({ 1: '기본', 2: '확장', 3: '섬세' })[term.level] || `Level ${term.level}`;
 }
-function koreanDailyVerifiedTerm(data, now = new Date()) {
-  const verified = data.terms
-    .filter((term) => term.status === 'SOURCE_VERIFIED')
-    .sort((a, b) => a.id.localeCompare(b.id, 'en'));
+function koreanDailyVerifiedTerm(data, pool, now = new Date()) {
+  const termsById = new Map(data.terms.map((term) => [term.id, term]));
+  const lockedIds = Array.isArray(pool?.term_ids) && pool.term_ids.length
+    ? pool.term_ids
+    : data.terms.filter((term) => term.status === 'SOURCE_VERIFIED').map((term) => term.id).sort();
+  const verified = lockedIds
+    .map((id) => termsById.get(id))
+    .filter((term) => term?.status === 'SOURCE_VERIFIED');
   if (!verified.length) return null;
   const localDayKey = now.getFullYear() * 372 + (now.getMonth() + 1) * 31 + now.getDate();
   return verified[localDayKey % verified.length];
@@ -175,7 +179,7 @@ function renderKoreanResearchSummary(data) {
   root.append(stats);
 
   const familyMap = new Map(data.families.map((family) => [family.id, family]));
-  const daily = koreanDailyVerifiedTerm(data);
+  const daily = koreanDailyVerifiedTerm(data, researchDiscoveryData.koreanDailyPool);
   if (daily) {
     const family = familyMap.get(daily.family_id);
     const dailyLink = document.createElement('a');
@@ -406,13 +410,16 @@ function syncDiscoverQuery(query) {
 async function hydrateResearchDiscovery() {
   const previewManifestUrl = './prototypes/g5-research-preview-20260918/manifest.json';
   const koreanMapUrl = './content/korean-expression/emotion-map-v1.json';
-  const [preview, korean] = await Promise.all([
+  const koreanDailyPoolUrl = './content/korean-expression/daily-pool-v1.json';
+  const [preview, korean, koreanDailyPool] = await Promise.all([
     readJsonOptional(previewManifestUrl),
     readJsonOptional(koreanMapUrl),
+    readJsonOptional(koreanDailyPoolUrl),
   ]);
 
   researchDiscoveryData.preview = preview;
   researchDiscoveryData.korean = korean;
+  researchDiscoveryData.koreanDailyPool = koreanDailyPool;
 
   let hasResearch = false;
   if (preview?.status === 'RESEARCH_PREVIEW_ONLY' && Array.isArray(preview.cards) && preview.cards.length) {
