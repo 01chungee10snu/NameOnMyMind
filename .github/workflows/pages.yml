@@ -76,6 +76,7 @@ jobs:
             throw new Error('Guided Korean articulation boundary missing');
           }
           if (!publicApp.includes('상황에서 마음말 찾기')) throw new Error('Guided Korean articulation entry link missing');
+          if (!publicApp.includes('오늘의 한 문장') || !publicApp.includes('작성 내용은 저장하거나 전송하지 않습니다.')) throw new Error('Daily Korean reflection privacy boundary missing');
           console.log(JSON.stringify({status:'PASS',card_ids:build.card_ids,preview_card_count:preview.preview_card_count,korean_emotion_map:korean,guided_articulation:true,snapshot_version:build.snapshot_version,external_publish_authorized:true},null,2));
           NODE
       - name: Check private leakage

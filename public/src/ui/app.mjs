@@ -259,6 +259,39 @@ function renderKoreanResearchSummary(data) {
     root.append(practice);
   }
 
+  if (daily) {
+    const reflection = document.createElement('section');
+    reflection.className = 'korean-daily-reflection';
+    reflection.setAttribute('aria-labelledby', 'korean-daily-reflection-title');
+
+    const kicker = document.createElement('span');
+    kicker.className = 'korean-daily-reflection-kicker';
+    kicker.textContent = '오늘의 한 문장';
+
+    const title = document.createElement('strong');
+    title.className = 'korean-daily-reflection-title';
+    title.id = 'korean-daily-reflection-title';
+    title.textContent = `내 경험에 “${daily.expression}” 붙여 보기`;
+
+    const guide = document.createElement('p');
+    guide.className = 'korean-daily-reflection-guide';
+    guide.textContent = '정답을 고르지 않아도 됩니다. 오늘 이 말이 어울린 순간과 그 이유를 자기 말로 적어 보세요.';
+
+    const textarea = document.createElement('textarea');
+    textarea.className = 'korean-daily-reflection-input';
+    textarea.rows = 3;
+    textarea.maxLength = 180;
+    textarea.placeholder = `오늘 “${daily.expression}”라는 말이 어울린 순간은…`;
+    textarea.setAttribute('aria-label', `오늘의 마음말 ${daily.expression}: 내 경험 한 문장 적기`);
+
+    const privacy = document.createElement('span');
+    privacy.className = 'korean-daily-reflection-privacy';
+    privacy.textContent = '작성 내용은 저장하거나 전송하지 않습니다.';
+
+    reflection.append(kicker, title, guide, textarea, privacy);
+    root.append(reflection);
+  }
+
   const guideLink = document.createElement('a');
   guideLink.className = 'korean-guide-link';
   guideLink.href = './prototypes/korean-emotion-map-20260919/?guide=1';

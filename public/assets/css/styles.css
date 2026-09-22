@@ -786,6 +786,59 @@ audio:focus-visible {
   font-weight: 800;
   text-decoration: none;
 }
+.korean-daily-reflection {
+  display: grid;
+  gap: 8px;
+  margin-top: 10px;
+  padding: 14px;
+  border: 1px solid #decfc3;
+  border-radius: 16px;
+  background: #fffdfb;
+}
+.korean-daily-reflection-kicker {
+  color: var(--accent);
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: .12em;
+}
+.korean-daily-reflection-title {
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: -.02em;
+}
+.korean-daily-reflection-guide {
+  margin: 0;
+  color: #5d514a;
+  font-size: 11px;
+  line-height: 1.55;
+}
+.korean-daily-reflection-input {
+  width: 100%;
+  min-height: 76px;
+  box-sizing: border-box;
+  resize: vertical;
+  border: 1px solid #ddcec2;
+  border-radius: 12px;
+  background: #fffaf6;
+  color: #403833;
+  padding: 10px 11px;
+  font: inherit;
+  font-size: 11px;
+  line-height: 1.55;
+}
+.korean-daily-reflection-input::placeholder {
+  color: #9a8d84;
+}
+.korean-daily-reflection-input:focus {
+  outline: 2px solid color-mix(in srgb, var(--accent) 25%, transparent);
+  outline-offset: 1px;
+  border-color: var(--accent);
+}
+.korean-daily-reflection-privacy {
+  color: var(--muted);
+  font-size: 9px;
+  line-height: 1.45;
+}
 .korean-guide-link {
   position: relative;
   display: grid;

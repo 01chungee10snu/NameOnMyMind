@@ -162,6 +162,10 @@ test('app discovery exposes research surfaces without promoting research candida
   assert.match(app, /오늘의 한국어 마음말/);
   assert.match(app, /오늘의 비슷한 말 연습/);
   assert.match(app, /정답을 맞히는 문제가 아닙니다/);
+  assert.match(app, /오늘의 한 문장/);
+  assert.match(app, /작성 내용은 저장하거나 전송하지 않습니다/);
+  assert.match(app, /korean-daily-reflection-input/);
+  assert.doesNotMatch(app, /saveReflection\(daily/);
   assert.match(app, /term\.status === 'SOURCE_VERIFIED'/);
   assert.match(app, /set\.status === 'SOURCE_VERIFIED'/);
   assert.match(app, /set\.terms\.includes\(dailyTerm\.expression\)/);
@@ -171,6 +175,8 @@ test('app discovery exposes research surfaces without promoting research candida
   assert.match(styles, /\.korean-daily-term/);
   assert.match(styles, /\.korean-daily-practice/);
   assert.match(styles, /\.korean-daily-practice-choices/);
+  assert.match(styles, /\.korean-daily-reflection/);
+  assert.match(styles, /\.korean-daily-reflection-input/);
   assert.doesNotMatch(koreanPrototype, /localStorage/);
   assert.doesNotMatch(koreanPrototype, /searchParams\.set\(['"]situation/);
   assert.match(app, /상황에서 마음말 찾기/);
