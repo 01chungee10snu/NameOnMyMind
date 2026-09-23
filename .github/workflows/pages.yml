@@ -29,6 +29,8 @@ jobs:
         run: npm ci
       - name: Validate approved public source
         run: npm run validate:g4
+      - name: Validate Korean language research
+        run: npm run check:korean-language
       - name: Build externally authorized public bundle
         env:
           NAMEONMYMIND_EXTERNAL_PUBLISH_AUTHORIZED: "1"
@@ -63,6 +65,8 @@ jobs:
             'public/prototypes/korean-emotion-map-20260919/index.html',
             'public/content/korean-expression/emotion-map-v1.json',
             'public/content/korean-expression/daily-pool-v1.json',
+            'public/content/korean-expression/daily-pool-v2.json',
+            'public/content/korean-expression/daily-pools.json',
             'public/content/korean-expression/evidence/school-age-v1.json',
             'public/content/korean-expression/evidence/level1-source-v1.json',
             'public/content/korean-expression/evidence/level2-exact-source-v1.json',
@@ -75,6 +79,7 @@ jobs:
             'public/content/korean-expression/evidence/phrase-source-v2.json',
             'public/content/korean-expression/evidence/standard-dictionary-followup-v1.json',
           ]) if (!fs.existsSync(file)) throw new Error(`Korean research-map staged file missing: ${file}`);
+          if (korean.daily_pool_v2_path !== 'content/korean-expression/daily-pool-v2.json' || korean.daily_pool_registry_path !== 'content/korean-expression/daily-pools.json') throw new Error('Korean daily pool v2/registry manifest path mismatch');
           const koreanHtml = fs.readFileSync('public/prototypes/korean-emotion-map-20260919/index.html','utf8');
           const publicApp = fs.readFileSync('public/src/ui/app.mjs','utf8');
           if (!koreanHtml.includes('상황에서 찾기') || !koreanHtml.includes('앱이 감정을 판정하지 않습니다.') || !koreanHtml.includes('3–6학년') || !koreanHtml.includes('1–2학년 적합성 판정을 뜻하지 않습니다.')) {
@@ -82,6 +87,7 @@ jobs:
           }
           if (!publicApp.includes('상황에서 마음말 찾기')) throw new Error('Guided Korean articulation entry link missing');
           if (!publicApp.includes('오늘의 한 문장') || !publicApp.includes('작성 내용은 저장하거나 전송하지 않습니다.')) throw new Error('Daily Korean reflection privacy boundary missing');
+          if (!publicApp.includes('daily-pools.json') || !fs.existsSync('public/src/domain/korean-daily.mjs')) throw new Error('Versioned Korean daily-pool runtime missing');
           console.log(JSON.stringify({status:'PASS',card_ids:build.card_ids,preview_card_count:preview.preview_card_count,korean_emotion_map:korean,guided_articulation:true,snapshot_version:build.snapshot_version,external_publish_authorized:true},null,2));
           NODE
       - name: Check private leakage

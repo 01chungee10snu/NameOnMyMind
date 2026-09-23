@@ -14,6 +14,10 @@ const KOREAN_DATA_SOURCE = path.join(ROOT, 'content/korean-expression/emotion-ma
 const KOREAN_DATA_TARGET = path.join(OUT, 'content/korean-expression/emotion-map-v1.json');
 const KOREAN_DAILY_POOL_SOURCE = path.join(ROOT, 'content/korean-expression/daily-pool-v1.json');
 const KOREAN_DAILY_POOL_TARGET = path.join(OUT, 'content/korean-expression/daily-pool-v1.json');
+const KOREAN_DAILY_POOL_V2_SOURCE = path.join(ROOT, 'content/korean-expression/daily-pool-v2.json');
+const KOREAN_DAILY_POOL_V2_TARGET = path.join(OUT, 'content/korean-expression/daily-pool-v2.json');
+const KOREAN_DAILY_POOL_REGISTRY_SOURCE = path.join(ROOT, 'content/korean-expression/daily-pools.json');
+const KOREAN_DAILY_POOL_REGISTRY_TARGET = path.join(OUT, 'content/korean-expression/daily-pools.json');
 const KOREAN_SCHOOL_SOURCE = path.join(ROOT, 'content/korean-expression/evidence/school-age-v1.json');
 const KOREAN_SCHOOL_TARGET = path.join(OUT, 'content/korean-expression/evidence/school-age-v1.json');
 const KOREAN_LEVEL1_SOURCE = path.join(ROOT, 'content/korean-expression/evidence/level1-source-v1.json');
@@ -71,7 +75,9 @@ for (const card of sourceManifest.cards) {
 
 if (!fs.existsSync(path.join(KOREAN_SOURCE_DIR, 'index.html'))) throw new Error('Korean emotion map prototype missing.');
 if (!fs.existsSync(KOREAN_DATA_SOURCE)) throw new Error('Korean emotion map data missing.');
-if (!fs.existsSync(KOREAN_DAILY_POOL_SOURCE)) throw new Error('Korean daily pool missing.');
+if (!fs.existsSync(KOREAN_DAILY_POOL_SOURCE)) throw new Error('Korean daily pool v1 missing.');
+if (!fs.existsSync(KOREAN_DAILY_POOL_V2_SOURCE)) throw new Error('Korean daily pool v2 missing.');
+if (!fs.existsSync(KOREAN_DAILY_POOL_REGISTRY_SOURCE)) throw new Error('Korean daily pool registry missing.');
 if (!fs.existsSync(KOREAN_SCHOOL_SOURCE)) throw new Error('Korean school-age evidence missing.');
 if (!fs.existsSync(KOREAN_LEVEL1_SOURCE)) throw new Error('Korean Level 1 evidence missing.');
 if (!fs.existsSync(KOREAN_LEVEL2_SOURCE)) throw new Error('Korean Level 2 evidence missing.');
@@ -105,6 +111,8 @@ fs.copyFileSync(path.join(KOREAN_SOURCE_DIR, 'index.html'), path.join(KOREAN_TAR
 fs.mkdirSync(path.dirname(KOREAN_DATA_TARGET), { recursive: true });
 fs.copyFileSync(KOREAN_DATA_SOURCE, KOREAN_DATA_TARGET);
 fs.copyFileSync(KOREAN_DAILY_POOL_SOURCE, KOREAN_DAILY_POOL_TARGET);
+fs.copyFileSync(KOREAN_DAILY_POOL_V2_SOURCE, KOREAN_DAILY_POOL_V2_TARGET);
+fs.copyFileSync(KOREAN_DAILY_POOL_REGISTRY_SOURCE, KOREAN_DAILY_POOL_REGISTRY_TARGET);
 fs.mkdirSync(path.dirname(KOREAN_SCHOOL_TARGET), { recursive: true });
 fs.copyFileSync(KOREAN_SCHOOL_SOURCE, KOREAN_SCHOOL_TARGET);
 fs.copyFileSync(KOREAN_LEVEL1_SOURCE, KOREAN_LEVEL1_TARGET);
@@ -185,6 +193,9 @@ const stagedEvidence = {
     preview_path: 'prototypes/korean-emotion-map-20260919/',
     data_path: 'content/korean-expression/emotion-map-v1.json',
     daily_pool_path: 'content/korean-expression/daily-pool-v1.json',
+    daily_pool_v1_path: 'content/korean-expression/daily-pool-v1.json',
+    daily_pool_v2_path: 'content/korean-expression/daily-pool-v2.json',
+    daily_pool_registry_path: 'content/korean-expression/daily-pools.json',
     school_age_evidence_path: 'content/korean-expression/evidence/school-age-v1.json',
     level1_evidence_path: 'content/korean-expression/evidence/level1-source-v1.json',
     level2_evidence_path: 'content/korean-expression/evidence/level2-exact-source-v1.json',

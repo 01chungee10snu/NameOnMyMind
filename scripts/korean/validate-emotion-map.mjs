@@ -4,6 +4,7 @@ import path from 'node:path';
 import Ajv2020 from 'ajv/dist/2020.js';
 import addFormats from 'ajv-formats';
 import { fileURLToPath } from 'node:url';
+import { selectEffectiveKoreanDailyPool } from '../../src/domain/korean-daily.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
 const read = (rel) => JSON.parse(fs.readFileSync(path.join(ROOT, rel), 'utf8'));
@@ -12,6 +13,8 @@ const fail = (m) => { throw new Error(m); };
 const schema = read('schema/korean-emotion-map.schema.json');
 const data = read('content/korean-expression/emotion-map-v1.json');
 const dailyPool = read('content/korean-expression/daily-pool-v1.json');
+const dailyPoolV2 = read('content/korean-expression/daily-pool-v2.json');
+const dailyPoolRegistry = read('content/korean-expression/daily-pools.json');
 const evidence = read('content/korean-expression/evidence/registry.json');
 const contrastEvidence = read('content/korean-expression/evidence/contrast-source-v2.json');
 const level1Evidence = read('content/korean-expression/evidence/level1-source-v1.json');
@@ -76,6 +79,25 @@ for (const id of dailyPool.term_ids) {
   if (!term) fail(`daily pool term missing: ${id}`);
   if (term.status !== 'SOURCE_VERIFIED') fail(`daily pool term is no longer SOURCE_VERIFIED: ${id}`);
 }
+
+if (dailyPoolV2.pool_id !== 'KOREAN_DAILY_VERIFIED_V2_2026-09-24') fail('Korean daily pool v2 id mismatch');
+if (dailyPoolV2.effective_date !== '2026-09-24') fail('Korean daily pool v2 effective date mismatch');
+if (dailyPoolV2.source_commit !== 'a05fbc7a901b50d1673db6b830bb05338bf9dc38') fail('Korean daily pool v2 source commit mismatch');
+if (dailyPoolV2.term_count !== 151 || dailyPoolV2.term_ids.length !== 151) fail('Korean daily pool v2 size drifted');
+if (new Set(dailyPoolV2.term_ids).size !== dailyPoolV2.term_ids.length) fail('duplicate Korean daily pool v2 term id');
+if (dailyPoolV2.term_ids.length !== data.terms.length || dailyPoolV2.term_ids.some((id) => !termById.has(id))) fail('Korean daily pool v2 must cover the full emotion map');
+if (data.terms.some((term) => !dailyPoolV2.term_ids.includes(term.id))) fail('Korean daily pool v2 is missing a current term id');
+if (dailyPool.term_ids.some((id) => !dailyPoolV2.term_ids.includes(id))) fail('Korean daily pool v2 must preserve every v1 term id');
+
+if (dailyPoolRegistry.registry_id !== 'KOREAN_DAILY_POOL_REGISTRY_V1_2026-09-23') fail('Korean daily pool registry id mismatch');
+if (dailyPoolRegistry.fallback_pool_id !== dailyPool.pool_id) fail('Korean daily pool registry fallback mismatch');
+if (!Array.isArray(dailyPoolRegistry.pools) || dailyPoolRegistry.pools.length !== 2) fail('Korean daily pool registry version count mismatch');
+const registryV1 = dailyPoolRegistry.pools.find((row) => row.pool_id === dailyPool.pool_id);
+const registryV2 = dailyPoolRegistry.pools.find((row) => row.pool_id === dailyPoolV2.pool_id);
+if (!registryV1 || registryV1.path !== 'daily-pool-v1.json' || registryV1.effective_date !== dailyPool.effective_date || registryV1.version_order !== 1) fail('Korean daily pool registry v1 row mismatch');
+if (!registryV2 || registryV2.path !== 'daily-pool-v2.json' || registryV2.effective_date !== dailyPoolV2.effective_date || registryV2.version_order !== 2) fail('Korean daily pool registry v2 row mismatch');
+if (selectEffectiveKoreanDailyPool(dailyPoolRegistry, new Date(2026, 8, 23, 12, 0, 0))?.pool_id !== dailyPool.pool_id) fail('Korean daily pool registry must keep v1 active on 2026-09-23');
+if (selectEffectiveKoreanDailyPool(dailyPoolRegistry, new Date(2026, 8, 24, 12, 0, 0))?.pool_id !== dailyPoolV2.pool_id) fail('Korean daily pool registry must activate v2 on 2026-09-24');
 
 if (level1Evidence.snapshot_id !== 'KOREAN_LEVEL1_LEXICAL_EVIDENCE_V1_2026-09-21') fail('Level 1 evidence snapshot id mismatch');
 if (level1Evidence.entries.length !== 26) fail('Level 1 evidence v1 must contain 26 newly audited terms');

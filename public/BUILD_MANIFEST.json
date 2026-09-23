@@ -3,7 +3,7 @@
   "artifact_type": "LOCAL_PUBLIC_BUILD",
   "deployable": true,
   "external_publish_authorized": false,
-  "snapshot_version": "feecf2ddf46858b6",
+  "snapshot_version": "766ac9bb6045fb04",
   "content_snapshot_version": "867d91c0737e29c7",
   "card_ids": [
     "C0001",
@@ -17,9 +17,9 @@
     "manifest": "manifest.webmanifest",
     "service_worker": "service-worker.js",
     "offline_fallback": "offline.html",
-    "shell_cache": "nomm-shell-v1-feecf2ddf46858b6",
-    "content_cache": "nomm-content-feecf2ddf46858b6",
-    "asset_cache": "nomm-assets-v1-feecf2ddf46858b6"
+    "shell_cache": "nomm-shell-v1-766ac9bb6045fb04",
+    "content_cache": "nomm-content-766ac9bb6045fb04",
+    "asset_cache": "nomm-assets-v1-766ac9bb6045fb04"
   },
   "input_sha256": {
     "card_schema": "8e29503186d27440efe2ee12dba84c964879c57be0b6ebb16907d743bc9cf17e",
@@ -34,14 +34,15 @@
     "card_C0004": "f0e8a357d7c022cb64f308a8a7b9b6f22cf92503027c20bdb7033ba98cba4dbd",
     "card_C0005": "61230c7148fa2ff16fda15f7b96e1d53e2e5a047325b9869874afa3fad236e5d",
     "runtime_src_ui_index.html": "b00abb699013befc9677f32925e8865079444b98054131b6792f58d7f385dd58",
-    "runtime_src_ui_app.mjs": "aba8e1b25cfe282bc8c3b031596d0f56fa337b7090b0b4bd6728d61b91fdab9d",
+    "runtime_src_ui_app.mjs": "7fdbe3273d3bac175bec5303aad949da03be32b03649348a9263892df3065a81",
     "runtime_src_domain_cards.mjs": "f8dde7b533cd43d1c2687195a934991534b7c670c461791a145e88fb617fce08",
     "runtime_src_domain_discovery.mjs": "9d042c768bb35c1001a93e57b0c87f3c2506eae70d2f8a9a0a8b740080a7fc49",
+    "runtime_src_domain_korean-daily.mjs": "87162f02ca5c24f350bd8d895f3445dfda8d39f1761cbb4e4f0f9b38631604d0",
     "runtime_src_local_state.mjs": "975e7372486aace916597b7e2bb70f357f892a00434b9094e9718460fe2c1c36",
     "runtime_src_agent_webmcp-adapter.mjs": "21bf996f9161e693c751992042b5373231c90266c647f9344b9a3f59db4b8e6c",
     "runtime_src_agent_agent-manifest.json": "1119ca3131df01ee430667f16a96dce3bcb39cb8d86785eb7db49d8ff9a04fc4",
     "runtime_src_pwa_manifest.webmanifest": "afa3c7026db3026616f15150bc92a201a41e762b08938551b6540d53eabdfa92",
-    "runtime_src_pwa_service-worker.template.js": "aea101dcbdeffb517d127daa3d905ef5c65bc89b43be795b03b9f71dd3bdc324",
+    "runtime_src_pwa_service-worker.template.js": "f135c7912b31ba2fa1ce175ee505781b595cf421963d35df5d5c827f0c9d225a",
     "runtime_src_pwa_offline.html": "dececcd5775f3506377aae82735b0e2fcb6b5fe973d69569712a711ba7feb4cd",
     "runtime_assets_css_styles.css": "c489df4f4c36aacaf68c65b40d990ff122cadf3c3ba28d6983e417060fa16297",
     "runtime_assets_brand_app-icon.svg": "da9acf16edf791676c25df5407c92b8128e3313c7352afbe8bfdbd96440ec8bc"

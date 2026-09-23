@@ -15,6 +15,7 @@ const SHELL_URLS = [
   './src/ui/app.mjs',
   './src/domain/cards.mjs',
   './src/domain/discovery.mjs',
+  './src/domain/korean-daily.mjs',
   './src/local/state.mjs',
   './src/agent/webmcp-adapter.mjs'
 ];

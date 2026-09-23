@@ -93,6 +93,7 @@ test('PWA manifest, snapshot-versioned service worker and graceful offline fallb
   assert.equal(build.pwa.content_cache,`nomm-content-${build.snapshot_version}`);
   assert.match(sw,/offline\.html/);
   assert.match(sw,/data\/cards\/C0001\.json/);
+  assert.match(sw,/src\/domain\/korean-daily\.mjs/);
   assert.doesNotMatch(sw,/localStorage|reflection-note|nomm:reflection/);
   assert.match(offline,/마지막으로 설치가 완료된 검증 스냅샷/);
   assert.equal(build.pwa.service_worker,'service-worker.js');

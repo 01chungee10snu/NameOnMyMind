@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0.0",
+  "registry_id": "KOREAN_DAILY_POOL_REGISTRY_V1_2026-09-23",
+  "purpose": "Select immutable daily Korean learning-pool versions by local effective date without rewriting earlier pools.",
+  "selection_policy": "Choose the entry with the latest effective_date that is less than or equal to the user's local YYYY-MM-DD date. Use version_order only to break an equal-date tie. If registry loading fails, the application falls back to v1.",
+  "fallback_pool_id": "KOREAN_DAILY_VERIFIED_V1_2026-09-22",
+  "pools": [
+    {
+      "version_order": 1,
+      "pool_id": "KOREAN_DAILY_VERIFIED_V1_2026-09-22",
+      "effective_date": "2026-09-22",
+      "path": "daily-pool-v1.json"
+    },
+    {
+      "version_order": 2,
+      "pool_id": "KOREAN_DAILY_VERIFIED_V2_2026-09-24",
+      "effective_date": "2026-09-24",
+      "path": "daily-pool-v2.json"
+    }
+  ]
+}

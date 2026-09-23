@@ -1,11 +1,12 @@
 import { createCatalog, getCard, getCardAssets, getCardReferences } from '../domain/cards.mjs';
 import { canonicalCardHref, discoverByTag, getRelatedCards, searchCards } from '../domain/discovery.mjs';
+import { resolveKoreanDailyVerifiedTerm as koreanDailyVerifiedTerm, selectEffectiveKoreanDailyPool } from '../domain/korean-daily.mjs';
 import { getLocalCollection, listFavorites, markViewed, readReflection, resolveDailyCard, saveReflection, toggleFavorite } from '../local/state.mjs';
 import { createReadOnlyAgentApi, registerWebMcpReadOnlyTools } from '../agent/webmcp-adapter.mjs';
 
 const qs = (selector) => document.querySelector(selector);
 const qsa = (selector) => [...document.querySelectorAll(selector)];
-const researchDiscoveryData = { preview: null, korean: null, koreanDailyPool: null };
+const researchDiscoveryData = { preview: null, korean: null, koreanDailyPool: null, koreanDailyPoolRegistry: null, koreanDailyPoolMeta: null };
 
 async function readJson(url) {
   const response = await fetch(url, { cache: 'no-store' });
@@ -105,18 +106,6 @@ function schoolAgeResearchLabel(term) {
 }
 function koreanDepthLabel(term) {
   return ({ 1: '기본', 2: '확장', 3: '섬세' })[term.level] || `Level ${term.level}`;
-}
-function koreanDailyVerifiedTerm(data, pool, now = new Date()) {
-  const termsById = new Map(data.terms.map((term) => [term.id, term]));
-  const lockedIds = Array.isArray(pool?.term_ids) && pool.term_ids.length
-    ? pool.term_ids
-    : data.terms.filter((term) => term.status === 'SOURCE_VERIFIED').map((term) => term.id).sort();
-  const verified = lockedIds
-    .map((id) => termsById.get(id))
-    .filter((term) => term?.status === 'SOURCE_VERIFIED');
-  if (!verified.length) return null;
-  const localDayKey = now.getFullYear() * 372 + (now.getMonth() + 1) * 31 + now.getDate();
-  return verified[localDayKey % verified.length];
 }
 function koreanDailyContrastSet(data, dailyTerm, now = new Date()) {
   const verifiedSets = data.contrast_sets.filter((set) => set.status === 'SOURCE_VERIFIED');
@@ -443,16 +432,29 @@ function syncDiscoverQuery(query) {
 async function hydrateResearchDiscovery() {
   const previewManifestUrl = './prototypes/g5-research-preview-20260918/manifest.json';
   const koreanMapUrl = './content/korean-expression/emotion-map-v1.json';
-  const koreanDailyPoolUrl = './content/korean-expression/daily-pool-v1.json';
-  const [preview, korean, koreanDailyPool] = await Promise.all([
+  const koreanDailyPoolRegistryUrl = './content/korean-expression/daily-pools.json';
+  const koreanDailyPoolV1Url = './content/korean-expression/daily-pool-v1.json';
+  const [preview, korean, koreanDailyPoolRegistry, koreanDailyPoolV1] = await Promise.all([
     readJsonOptional(previewManifestUrl),
     readJsonOptional(koreanMapUrl),
-    readJsonOptional(koreanDailyPoolUrl),
+    readJsonOptional(koreanDailyPoolRegistryUrl),
+    readJsonOptional(koreanDailyPoolV1Url),
   ]);
+
+  const koreanDailyPoolMeta = selectEffectiveKoreanDailyPool(koreanDailyPoolRegistry);
+  let koreanDailyPool = koreanDailyPoolV1;
+  if (koreanDailyPoolMeta && koreanDailyPoolMeta.pool_id !== koreanDailyPoolV1?.pool_id) {
+    const candidate = await readJsonOptional(`./content/korean-expression/${koreanDailyPoolMeta.path}`);
+    if (candidate?.pool_id === koreanDailyPoolMeta.pool_id && candidate?.effective_date === koreanDailyPoolMeta.effective_date) {
+      koreanDailyPool = candidate;
+    }
+  }
 
   researchDiscoveryData.preview = preview;
   researchDiscoveryData.korean = korean;
   researchDiscoveryData.koreanDailyPool = koreanDailyPool;
+  researchDiscoveryData.koreanDailyPoolRegistry = koreanDailyPoolRegistry;
+  researchDiscoveryData.koreanDailyPoolMeta = koreanDailyPoolMeta;
 
   let hasResearch = false;
   if (preview?.status === 'RESEARCH_PREVIEW_ONLY' && Array.isArray(preview.cards) && preview.cards.length) {

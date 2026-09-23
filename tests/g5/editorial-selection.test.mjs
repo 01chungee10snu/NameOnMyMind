@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { resolveKoreanDailyVerifiedTerm, selectEffectiveKoreanDailyPool } from '../../src/domain/korean-daily.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
 const readJson = (rel) => JSON.parse(fs.readFileSync(path.join(ROOT, rel), 'utf8'));
@@ -121,6 +122,8 @@ test('app discovery exposes research surfaces without promoting research candida
   const stage = readText('scripts/stage-research-preview.mjs');
   const korean = readJson('content/korean-expression/emotion-map-v1.json');
   const dailyPool = readJson('content/korean-expression/daily-pool-v1.json');
+  const dailyPoolV2 = readJson('content/korean-expression/daily-pool-v2.json');
+  const dailyPoolRegistry = readJson('content/korean-expression/daily-pools.json');
   const schoolAge = readJson('content/korean-expression/evidence/school-age-v1.json');
   const level1Evidence = readJson('content/korean-expression/evidence/level1-source-v1.json');
   const level2Evidence = readJson('content/korean-expression/evidence/level2-exact-source-v1.json');
@@ -162,6 +165,9 @@ test('app discovery exposes research surfaces without promoting research candida
   assert.match(app, /3–6학년 연구 연결/);
   assert.match(app, /koreanDailyVerifiedTerm/);
   assert.match(app, /koreanDailyPool/);
+  assert.match(app, /koreanDailyPoolRegistry/);
+  assert.match(app, /selectEffectiveKoreanDailyPool/);
+  assert.match(app, /daily-pools\.json/);
   assert.match(app, /daily-pool-v1\.json/);
   assert.match(app, /koreanDailyContrastSet/);
   assert.match(app, /오늘의 한국어 마음말/);
@@ -213,6 +219,18 @@ test('app discovery exposes research surfaces without promoting research candida
   assert.equal(new Set(dailyPool.term_ids).size, 116);
   assert.ok(dailyPool.term_ids.every((id) => korean.terms.some((term) => term.id === id && term.status === 'SOURCE_VERIFIED')));
   assert.equal(dailyPool.term_ids.includes('KE0012'), false); // 고대하다 was verified later; v1 remains stable
+  assert.equal(dailyPoolV2.pool_id, 'KOREAN_DAILY_VERIFIED_V2_2026-09-24');
+  assert.equal(dailyPoolV2.effective_date, '2026-09-24');
+  assert.equal(dailyPoolV2.source_commit, 'a05fbc7a901b50d1673db6b830bb05338bf9dc38');
+  assert.equal(dailyPoolV2.term_count, 151);
+  assert.equal(dailyPoolV2.term_ids.length, 151);
+  assert.equal(new Set(dailyPoolV2.term_ids).size, 151);
+  assert.ok(korean.terms.every((term) => dailyPoolV2.term_ids.includes(term.id)));
+  assert.equal(dailyPoolRegistry.registry_id, 'KOREAN_DAILY_POOL_REGISTRY_V1_2026-09-23');
+  assert.equal(selectEffectiveKoreanDailyPool(dailyPoolRegistry, new Date(2026, 8, 23, 12))?.pool_id, dailyPool.pool_id);
+  assert.equal(selectEffectiveKoreanDailyPool(dailyPoolRegistry, new Date(2026, 8, 24, 12))?.pool_id, dailyPoolV2.pool_id);
+  assert.equal(resolveKoreanDailyVerifiedTerm(korean, dailyPool, new Date(2026, 8, 23, 12))?.status, 'SOURCE_VERIFIED');
+  assert.equal(resolveKoreanDailyVerifiedTerm(korean, dailyPoolV2, new Date(2026, 8, 24, 12))?.status, 'SOURCE_VERIFIED');
   assert.equal(korean.terms.some((term) => term.expression === '샘나다'), false);
   assert.equal(korean.terms.some((term) => term.expression === '샘내다'), true);
   assert.equal(korean.terms.some((term) => term.expression === '짜증나다'), false);
@@ -280,6 +298,8 @@ test('app discovery exposes research surfaces without promoting research candida
   assert.equal(standardFollowupEvidence.entries.find((row) => row.term === '갈등하다')?.evidence_ref, 'STD:516128');
   assert.ok(standardFollowupEvidence.entries.every((row) => row.evidence_ref?.startsWith('STD:') && row.url?.includes('stdict.korean.go.kr')));
   assert.match(stage, /daily_pool_path/);
+  assert.match(stage, /daily_pool_v2_path/);
+  assert.match(stage, /daily_pool_registry_path/);
   assert.match(stage, /school_age_evidence_path/);
   assert.match(stage, /level1_evidence_path/);
   assert.match(stage, /level2_evidence_path/);
