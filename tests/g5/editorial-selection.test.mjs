@@ -150,6 +150,14 @@ test('app discovery exposes research surfaces without promoting research candida
   assert.match(app, /koreanResearchHref/);
   assert.match(readText('prototypes/g5-research-preview-20260918/index.html'), /requestedCard/);
   const koreanPrototype = readText('prototypes/korean-emotion-map-20260919/index.html');
+  const dailyLearningPrototype = readText('prototypes/korean-daily-learning-20260923/index.html');
+  assert.match(dailyLearningPrototype, /오늘의 한국어 마음말/);
+  assert.match(dailyLearningPrototype, /151개 마음말/);
+  assert.match(dailyLearningPrototype, /selectEffectiveKoreanDailyPool/);
+  assert.match(dailyLearningPrototype, /daily-pools\.json/);
+  assert.match(dailyLearningPrototype, /작성 내용은 이 화면을 벗어나면 사라집니다/);
+  assert.match(dailyLearningPrototype, /공식 어휘 근거 보기/);
+  assert.doesNotMatch(dailyLearningPrototype, /localStorage/);
   assert.match(koreanPrototype, /requestedFamily/);
   assert.match(koreanPrototype, /syncUrl/);
   assert.match(koreanPrototype, /상황에서 찾기/);
@@ -190,6 +198,8 @@ test('app discovery exposes research surfaces without promoting research candida
   assert.match(styles, /\.korean-daily-reflection-input/);
   assert.doesNotMatch(koreanPrototype, /localStorage/);
   assert.doesNotMatch(koreanPrototype, /searchParams\.set\(['"]situation/);
+  assert.match(app, /오늘의 마음말 한 화면에서 해보기/);
+  assert.match(app, /\.\/learn\//);
   assert.match(app, /상황에서 마음말 찾기/);
   assert.match(stage, /product_release_authorized: false/);
   assert.equal(sourcePreview.status, 'RESEARCH_PREVIEW_ONLY');
@@ -311,6 +321,8 @@ test('app discovery exposes research surfaces without promoting research candida
   assert.match(stage, /phrase_evidence_path/);
   assert.match(stage, /phrase_v2_evidence_path/);
   assert.match(stage, /standard_dictionary_followup_evidence_path/);
+  assert.match(stage, /daily_learning_path/);
+  assert.match(stage, /daily_learning_alias_path/);
 
   const manifest = readJson('public/BUILD_MANIFEST.json');
   assert.deepEqual(manifest.card_ids, ['C0001','C0002','C0003','C0004','C0005']);

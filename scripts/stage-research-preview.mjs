@@ -10,6 +10,8 @@ const SOURCE_DIR = path.join(ROOT, 'prototypes/g5-research-preview-20260918');
 const TARGET_DIR = path.join(OUT, 'prototypes/g5-research-preview-20260918');
 const KOREAN_SOURCE_DIR = path.join(ROOT, 'prototypes/korean-emotion-map-20260919');
 const KOREAN_TARGET_DIR = path.join(OUT, 'prototypes/korean-emotion-map-20260919');
+const KOREAN_DAILY_LEARNING_SOURCE_DIR = path.join(ROOT, 'prototypes/korean-daily-learning-20260923');
+const KOREAN_DAILY_LEARNING_TARGET_DIR = path.join(OUT, 'prototypes/korean-daily-learning-20260923');
 const KOREAN_DATA_SOURCE = path.join(ROOT, 'content/korean-expression/emotion-map-v1.json');
 const KOREAN_DATA_TARGET = path.join(OUT, 'content/korean-expression/emotion-map-v1.json');
 const KOREAN_DAILY_POOL_SOURCE = path.join(ROOT, 'content/korean-expression/daily-pool-v1.json');
@@ -74,6 +76,7 @@ for (const card of sourceManifest.cards) {
 }
 
 if (!fs.existsSync(path.join(KOREAN_SOURCE_DIR, 'index.html'))) throw new Error('Korean emotion map prototype missing.');
+if (!fs.existsSync(path.join(KOREAN_DAILY_LEARNING_SOURCE_DIR, 'index.html'))) throw new Error('Korean daily learning prototype missing.');
 if (!fs.existsSync(KOREAN_DATA_SOURCE)) throw new Error('Korean emotion map data missing.');
 if (!fs.existsSync(KOREAN_DAILY_POOL_SOURCE)) throw new Error('Korean daily pool v1 missing.');
 if (!fs.existsSync(KOREAN_DAILY_POOL_V2_SOURCE)) throw new Error('Korean daily pool v2 missing.');
@@ -108,6 +111,8 @@ fs.mkdirSync(TARGET_DIR, { recursive: true });
 fs.copyFileSync(path.join(SOURCE_DIR, 'index.html'), path.join(TARGET_DIR, 'index.html'));
 fs.mkdirSync(KOREAN_TARGET_DIR, { recursive: true });
 fs.copyFileSync(path.join(KOREAN_SOURCE_DIR, 'index.html'), path.join(KOREAN_TARGET_DIR, 'index.html'));
+fs.mkdirSync(KOREAN_DAILY_LEARNING_TARGET_DIR, { recursive: true });
+fs.copyFileSync(path.join(KOREAN_DAILY_LEARNING_SOURCE_DIR, 'index.html'), path.join(KOREAN_DAILY_LEARNING_TARGET_DIR, 'index.html'));
 fs.mkdirSync(path.dirname(KOREAN_DATA_TARGET), { recursive: true });
 fs.copyFileSync(KOREAN_DATA_SOURCE, KOREAN_DATA_TARGET);
 fs.copyFileSync(KOREAN_DAILY_POOL_SOURCE, KOREAN_DAILY_POOL_TARGET);
@@ -166,6 +171,12 @@ fs.writeFileSync(
   path.join(koreanAliasDir, 'index.html'),
   '<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>NameOnMyMind Korean Map</title><meta http-equiv="refresh" content="0; url=../prototypes/korean-emotion-map-20260919/"><link rel="canonical" href="../prototypes/korean-emotion-map-20260919/"><p><a href="../prototypes/korean-emotion-map-20260919/">한국어 마음 지도 열기</a></p>\n'
 );
+const learnAliasDir = path.join(OUT, 'learn');
+fs.mkdirSync(learnAliasDir, { recursive: true });
+fs.writeFileSync(
+  path.join(learnAliasDir, 'index.html'),
+  '<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>NameOnMyMind 오늘의 마음말</title><meta http-equiv="refresh" content="0; url=../prototypes/korean-daily-learning-20260923/"><link rel="canonical" href="../prototypes/korean-daily-learning-20260923/"><p><a href="../prototypes/korean-daily-learning-20260923/">오늘의 한국어 마음말 열기</a></p>\n'
+);
 
 const stagedEvidence = {
   schema_version: '1.0.0',
@@ -191,6 +202,8 @@ const stagedEvidence = {
     school_age_related_term_count: koreanSchoolAgeRelatedCount,
     contrast_set_count: koreanMap.contrast_sets.length,
     preview_path: 'prototypes/korean-emotion-map-20260919/',
+    daily_learning_path: 'prototypes/korean-daily-learning-20260923/',
+    daily_learning_alias_path: 'learn/',
     data_path: 'content/korean-expression/emotion-map-v1.json',
     daily_pool_path: 'content/korean-expression/daily-pool-v1.json',
     daily_pool_v1_path: 'content/korean-expression/daily-pool-v1.json',

@@ -281,6 +281,20 @@ function renderKoreanResearchSummary(data) {
     root.append(reflection);
   }
 
+  const learnLink = document.createElement('a');
+  learnLink.className = 'korean-guide-link';
+  learnLink.href = './learn/';
+  const learnTitle = document.createElement('strong');
+  learnTitle.textContent = '오늘의 마음말 한 화면에서 해보기';
+  const learnCopy = document.createElement('span');
+  learnCopy.textContent = '오늘의 표현, 비슷한 말 비교, 내 문장, 151개 탐색을 한 페이지에서 이어갑니다.';
+  const learnArrow = document.createElement('span');
+  learnArrow.className = 'korean-guide-arrow';
+  learnArrow.setAttribute('aria-hidden', 'true');
+  learnArrow.textContent = '›';
+  learnLink.append(learnTitle, learnCopy, learnArrow);
+  root.append(learnLink);
+
   const guideLink = document.createElement('a');
   guideLink.className = 'korean-guide-link';
   guideLink.href = './prototypes/korean-emotion-map-20260919/?guide=1';
