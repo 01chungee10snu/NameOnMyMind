@@ -841,6 +841,54 @@
       "source_type": "official_dictionary",
       "path": "content/korean-expression/batches/01_everyday_expression_ladders.json",
       "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=89194"
+    },
+    {
+      "evidence_ref": "STD:221152",
+      "source_type": "official_dictionary",
+      "path": null,
+      "url": "https://stdict.korean.go.kr/search/searchView.do?word_no=221152&searchKeywordTo=3"
+    },
+    {
+      "evidence_ref": "STD:234001",
+      "source_type": "official_dictionary",
+      "path": null,
+      "url": "https://stdict.korean.go.kr/search/searchView.do?word_no=234001&searchKeywordTo=3"
+    },
+    {
+      "evidence_ref": "STD:408108",
+      "source_type": "official_dictionary",
+      "path": null,
+      "url": "https://stdict.korean.go.kr/search/searchView.do?word_no=408108&searchKeywordTo=3"
+    },
+    {
+      "evidence_ref": "STD:429286",
+      "source_type": "official_dictionary",
+      "path": null,
+      "url": "https://stdict.korean.go.kr/search/searchView.do?word_no=429286&searchKeywordTo=3"
+    },
+    {
+      "evidence_ref": "STD:480124",
+      "source_type": "official_dictionary",
+      "path": null,
+      "url": "https://stdict.korean.go.kr/search/searchView.do?word_no=480124&searchKeywordTo=3"
+    },
+    {
+      "evidence_ref": "STD:485260",
+      "source_type": "official_dictionary",
+      "path": null,
+      "url": "https://stdict.korean.go.kr/search/searchView.do?word_no=485260&searchKeywordTo=3"
+    },
+    {
+      "evidence_ref": "STD:499708",
+      "source_type": "official_dictionary",
+      "path": null,
+      "url": "https://stdict.korean.go.kr/search/searchView.do?word_no=499708&searchKeywordTo=3"
+    },
+    {
+      "evidence_ref": "STD:516128",
+      "source_type": "official_dictionary",
+      "path": null,
+      "url": "https://stdict.korean.go.kr/search/searchView.do?word_no=516128&searchKeywordTo=3"
     }
   ]
 }

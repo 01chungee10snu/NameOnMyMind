@@ -606,17 +606,19 @@
     },
     {
       "id": "KE0026",
-      "expression": "한숨 돌리다",
+      "expression": "한숨을 돌리다",
       "family_id": "KF04",
       "level": 2,
       "register": "everyday",
-      "status": "DISCOVERY_ONLY",
-      "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "STD:499708",
+      "note": "2026-09-23 국립국어원 표준국어대사전 근거에 따라 정규화·검증. 표준국어대사전 관용구 표기 '한숨(을) 돌리다'를 제품 표기 '한숨을 돌리다'로 정규화함.",
       "learning_profile": {
         "lexical_depth": "EXPANDED",
-        "school_age_evidence": "AGE_REVIEW_REQUIRED",
-        "evidence_refs": [],
+        "school_age_evidence": "LEXICAL_ONLY",
+        "evidence_refs": [
+          "STD:499708"
+        ],
         "school_age_source_form": null
       }
     },
@@ -1002,17 +1004,19 @@
     },
     {
       "id": "KE0048",
-      "expression": "마음이 남다",
+      "expression": "여운",
       "family_id": "KF07",
       "level": 2,
       "register": "everyday",
-      "status": "DISCOVERY_ONLY",
-      "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "STD:234001",
+      "note": "2026-09-23 국립국어원 표준국어대사전 근거에 따라 정규화·검증. 의미 경계가 모호한 탐색형 '마음이 남다'를 남아 있는 느낌을 더 정밀하게 이름 붙이는 공식 표제어 '여운'으로 교체함.",
       "learning_profile": {
         "lexical_depth": "EXPANDED",
-        "school_age_evidence": "AGE_REVIEW_REQUIRED",
-        "evidence_refs": [],
+        "school_age_evidence": "LEXICAL_ONLY",
+        "evidence_refs": [
+          "STD:234001"
+        ],
         "school_age_source_form": null
       }
     },
@@ -1058,13 +1062,15 @@
       "family_id": "KF08",
       "level": 3,
       "register": "neutral",
-      "status": "DISCOVERY_ONLY",
-      "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "STD:221152",
+      "note": "2026-09-23 국립국어원 표준국어대사전의 공식 표제어 또는 관용구와 뜻풀이를 직접 확인한 표현.",
       "learning_profile": {
         "lexical_depth": "NUANCED",
-        "school_age_evidence": "AGE_REVIEW_REQUIRED",
-        "evidence_refs": [],
+        "school_age_evidence": "LEXICAL_ONLY",
+        "evidence_refs": [
+          "STD:221152"
+        ],
         "school_age_source_form": null
       }
     },
@@ -1905,17 +1911,19 @@
     },
     {
       "id": "KE0098",
-      "expression": "진퇴양난이다",
+      "expression": "진퇴양난",
       "family_id": "KF14",
       "level": 3,
       "register": "formal",
-      "status": "DISCOVERY_ONLY",
-      "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "STD:485260",
+      "note": "2026-09-23 국립국어원 표준국어대사전 근거에 따라 정규화·검증. 서술형 탐색표현 '진퇴양난이다'를 공식 명사 표제어 '진퇴양난'으로 정규화함.",
       "learning_profile": {
         "lexical_depth": "NUANCED",
-        "school_age_evidence": "AGE_REVIEW_REQUIRED",
-        "evidence_refs": [],
+        "school_age_evidence": "LEXICAL_ONLY",
+        "evidence_refs": [
+          "STD:485260"
+        ],
         "school_age_source_form": null
       }
     },
@@ -2248,17 +2256,19 @@
     },
     {
       "id": "KE0117",
-      "expression": "낯뜨겁다",
+      "expression": "낯부끄럽다",
       "family_id": "KF17",
       "level": 3,
       "register": "marked",
-      "status": "DISCOVERY_ONLY",
-      "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "STD:408108",
+      "note": "2026-09-23 국립국어원 표준국어대사전 근거에 따라 정규화·검증. 표준국어대사전에서 exact 표제어가 확인되지 않은 '낯뜨겁다'를 의미가 명확한 공식 표제어 '낯부끄럽다'로 교체함.",
       "learning_profile": {
         "lexical_depth": "NUANCED",
-        "school_age_evidence": "AGE_REVIEW_REQUIRED",
-        "evidence_refs": [],
+        "school_age_evidence": "LEXICAL_ONLY",
+        "evidence_refs": [
+          "STD:408108"
+        ],
         "school_age_source_form": null
       }
     },
@@ -2318,17 +2328,19 @@
     },
     {
       "id": "KE0121",
-      "expression": "죄책감이 들다",
+      "expression": "죄책감",
       "family_id": "KF18",
       "level": 2,
       "register": "neutral",
-      "status": "DISCOVERY_ONLY",
-      "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "STD:480124",
+      "note": "2026-09-23 국립국어원 표준국어대사전 근거에 따라 정규화·검증. 서술형 탐색표현 '죄책감이 들다'를 감정명을 직접 학습할 수 있는 공식 명사 표제어 '죄책감'으로 정규화함.",
       "learning_profile": {
         "lexical_depth": "EXPANDED",
-        "school_age_evidence": "AGE_REVIEW_REQUIRED",
-        "evidence_refs": [],
+        "school_age_evidence": "LEXICAL_ONLY",
+        "evidence_refs": [
+          "STD:480124"
+        ],
         "school_age_source_form": null
       }
     },
@@ -2482,13 +2494,15 @@
       "family_id": "KF19",
       "level": 2,
       "register": "marked",
-      "status": "DISCOVERY_ONLY",
-      "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "STD:429286",
+      "note": "2026-09-23 국립국어원 표준국어대사전의 공식 표제어 또는 관용구와 뜻풀이를 직접 확인한 표현.",
       "learning_profile": {
         "lexical_depth": "EXPANDED",
-        "school_age_evidence": "AGE_REVIEW_REQUIRED",
-        "evidence_refs": [],
+        "school_age_evidence": "LEXICAL_ONLY",
+        "evidence_refs": [
+          "STD:429286"
+        ],
         "school_age_source_form": null
       }
     },
@@ -2728,17 +2742,19 @@
     },
     {
       "id": "KE0144",
-      "expression": "갈등되다",
+      "expression": "갈등하다",
       "family_id": "KF21",
       "level": 2,
       "register": "neutral",
-      "status": "DISCOVERY_ONLY",
-      "evidence_ref": null,
-      "note": "의미·용례·연령 적합성 검증 전 탐색 후보.",
+      "status": "SOURCE_VERIFIED",
+      "evidence_ref": "STD:516128",
+      "note": "2026-09-23 국립국어원 표준국어대사전 근거에 따라 정규화·검증. 탐색형 '갈등되다'를 표준국어대사전 심리 의미가 직접 확인되는 공식 동사 표제어 '갈등하다'로 교체함.",
       "learning_profile": {
         "lexical_depth": "EXPANDED",
-        "school_age_evidence": "AGE_REVIEW_REQUIRED",
-        "evidence_refs": [],
+        "school_age_evidence": "LEXICAL_ONLY",
+        "evidence_refs": [
+          "STD:516128"
+        ],
         "school_age_source_form": null
       }
     },

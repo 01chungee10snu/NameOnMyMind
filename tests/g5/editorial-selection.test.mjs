@@ -131,6 +131,7 @@ test('app discovery exposes research surfaces without promoting research candida
   const level3FollowupEvidenceV4 = readJson('content/korean-expression/evidence/level3-followup-source-v4.json');
   const phraseEvidence = readJson('content/korean-expression/evidence/phrase-source-v1.json');
   const phraseEvidenceV2 = readJson('content/korean-expression/evidence/phrase-source-v2.json');
+  const standardFollowupEvidence = readJson('content/korean-expression/evidence/standard-dictionary-followup-v1.json');
   const sourcePreview = readJson('prototypes/g5-research-preview-20260918/manifest.json');
 
   assert.match(ui, /RESEARCH PREVIEW/);
@@ -193,13 +194,14 @@ test('app discovery exposes research surfaces without promoting research candida
   assert.equal(korean.track_id, 'KOREAN_EMOTION_ARTICULATION');
   assert.equal(korean.families.length, 22);
   assert.equal(korean.terms.length, 151);
-  assert.equal(korean.terms.filter((term) => term.status === 'SOURCE_VERIFIED').length, 143);
+  assert.equal(korean.terms.filter((term) => term.status === 'SOURCE_VERIFIED').length, 151);
+  assert.equal(korean.terms.filter((term) => term.status === 'DISCOVERY_ONLY').length, 0);
   assert.equal(korean.terms.filter((term) => term.level === 1).length, 38);
   assert.ok(korean.terms.filter((term) => term.level === 1).every((term) => term.status === 'SOURCE_VERIFIED'));
-  assert.equal(korean.terms.filter((term) => term.level === 2 && term.status === 'SOURCE_VERIFIED').length, 67);
-  assert.equal(korean.terms.filter((term) => term.level === 2 && term.status === 'DISCOVERY_ONLY').length, 5);
-  assert.equal(korean.terms.filter((term) => term.level === 3 && term.status === 'SOURCE_VERIFIED').length, 38);
-  assert.equal(korean.terms.filter((term) => term.level === 3 && term.status === 'DISCOVERY_ONLY').length, 3);
+  assert.equal(korean.terms.filter((term) => term.level === 2 && term.status === 'SOURCE_VERIFIED').length, 72);
+  assert.equal(korean.terms.filter((term) => term.level === 2 && term.status === 'DISCOVERY_ONLY').length, 0);
+  assert.equal(korean.terms.filter((term) => term.level === 3 && term.status === 'SOURCE_VERIFIED').length, 41);
+  assert.equal(korean.terms.filter((term) => term.level === 3 && term.status === 'DISCOVERY_ONLY').length, 0);
   assert.equal(korean.terms.filter((term) => term.learning_profile?.school_age_evidence === 'GRADE_3_6_SUPPORTED').length, 21);
   assert.equal(korean.terms.filter((term) => term.learning_profile?.school_age_evidence === 'GRADE_3_6_RELATED_FORM').length, 1);
   assert.ok(korean.terms.every((term) => term.learning_profile?.lexical_depth));
@@ -217,6 +219,12 @@ test('app discovery exposes research surfaces without promoting research candida
   assert.equal(korean.terms.some((term) => term.expression === '짜증이 나다'), true);
   assert.equal(korean.terms.some((term) => term.expression === '조바심나다'), false);
   assert.equal(korean.terms.some((term) => term.expression === '조바심하다'), true);
+  for (const oldExpression of ['한숨 돌리다','마음이 남다','진퇴양난이다','낯뜨겁다','죄책감이 들다','갈등되다']) {
+    assert.equal(korean.terms.some((term) => term.expression === oldExpression), false);
+  }
+  for (const expression of ['한숨을 돌리다','여운','야속하다','진퇴양난','낯부끄럽다','죄책감','배가 아프다','갈등하다']) {
+    assert.equal(korean.terms.some((term) => term.expression === expression && term.status === 'SOURCE_VERIFIED'), true);
+  }
 
   assert.equal(schoolAge.evidence_id, 'KICCE:2026:PR2012');
   assert.equal(schoolAge.study_scope.grades, '초등학교 3~6학년');
@@ -264,6 +272,13 @@ test('app discovery exposes research surfaces without promoting research candida
   assert.equal(phraseEvidenceV2.remaining_level2_holds_expected, 5);
   assert.equal(phraseEvidenceV2.remaining_level3_holds_expected, 3);
   assert.ok(phraseEvidenceV2.entries.every((row) => row.evidence_ref && row.url?.includes('korean.go.kr')));
+  assert.equal(standardFollowupEvidence.snapshot_id, 'KOREAN_STANDARD_DICTIONARY_FOLLOWUP_V1_2026-09-23');
+  assert.equal(standardFollowupEvidence.entries.length, 8);
+  assert.equal(standardFollowupEvidence.remaining_level2_holds_expected, 0);
+  assert.equal(standardFollowupEvidence.remaining_level3_holds_expected, 0);
+  assert.equal(standardFollowupEvidence.entries.find((row) => row.term === '야속하다')?.evidence_ref, 'STD:221152');
+  assert.equal(standardFollowupEvidence.entries.find((row) => row.term === '갈등하다')?.evidence_ref, 'STD:516128');
+  assert.ok(standardFollowupEvidence.entries.every((row) => row.evidence_ref?.startsWith('STD:') && row.url?.includes('stdict.korean.go.kr')));
   assert.match(stage, /daily_pool_path/);
   assert.match(stage, /school_age_evidence_path/);
   assert.match(stage, /level1_evidence_path/);
@@ -275,6 +290,7 @@ test('app discovery exposes research surfaces without promoting research candida
   assert.match(stage, /level3_followup_v4_evidence_path/);
   assert.match(stage, /phrase_evidence_path/);
   assert.match(stage, /phrase_v2_evidence_path/);
+  assert.match(stage, /standard_dictionary_followup_evidence_path/);
 
   const manifest = readJson('public/BUILD_MANIFEST.json');
   assert.deepEqual(manifest.card_ids, ['C0001','C0002','C0003','C0004','C0005']);

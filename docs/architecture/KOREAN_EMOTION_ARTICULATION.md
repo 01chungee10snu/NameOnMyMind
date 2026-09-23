@@ -33,11 +33,11 @@
 - 감정 영역: 22
 - 한국어 표현: 151
 - 비슷한 말 비교 세트: 16
-- Source-verified: 143
-- Discovery-only: 8
+- Source-verified: 151
+- Discovery-only: 0
 - Level 1 ‘기본’: 38 / 38 source-verified
-- Level 2 ‘확장’: 67 / 72 source-verified, 5 DISCOVERY_ONLY
-- Level 3 ‘섬세’: 38 / 41 source-verified, 3 DISCOVERY_ONLY
+- Level 2 ‘확장’: 72 / 72 source-verified
+- Level 3 ‘섬세’: 41 / 41 source-verified
 - Source-verified contrast sets: 16 / 16
 - 학습 레벨: 1 / 2 / 3 (UI 표기: 기본 / 확장 / 섬세)
 - 학령기 근거: 3~6학년 연구 직접 연결 21개 + 관련형 1개
