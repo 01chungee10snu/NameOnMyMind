@@ -12,6 +12,7 @@ const fail = (m) => { throw new Error(m); };
 
 const schema = read('schema/korean-emotion-map.schema.json');
 const data = read('content/korean-expression/emotion-map-v1.json');
+const simpleMeanings = read('content/korean-expression/simple-meanings-v1.json');
 const dailyPool = read('content/korean-expression/daily-pool-v1.json');
 const dailyPoolV2 = read('content/korean-expression/daily-pool-v2.json');
 const dailyPoolRegistry = read('content/korean-expression/daily-pools.json');
@@ -36,6 +37,15 @@ if (!validate(data)) fail(JSON.stringify(validate.errors));
 if (data.families.length < 20) fail('emotion family coverage too narrow');
 if (data.terms.length < 120) fail('emotion vocabulary coverage too narrow');
 if (data.contrast_sets.length < 12) fail('contrast-set coverage too narrow');
+if (simpleMeanings.meanings_id !== 'KOREAN_SIMPLE_MEANINGS_V1_2026-09-24') fail('simple meanings snapshot id mismatch');
+if (simpleMeanings.term_count !== data.terms.length || simpleMeanings.entries?.length !== data.terms.length) fail('simple meanings coverage mismatch');
+const simpleMeaningById = new Map(simpleMeanings.entries.map((row) => [row.id, row]));
+for (const term of data.terms) {
+  const row = simpleMeaningById.get(term.id);
+  if (!row || row.expression !== term.expression || !row.meaning?.trim()) fail(`${term.expression}: simple meaning missing or mismatched`);
+  if (row.evidence_ref !== term.evidence_ref) fail(`${term.expression}: simple meaning evidence_ref drifted`);
+  if (!['SOURCE_DEFINITION','EDITORIAL_SIMPLIFICATION'].includes(row.wording)) fail(`${term.expression}: simple meaning wording type invalid`);
+}
 
 const familyIds = new Set(data.families.map((x) => x.id));
 if (familyIds.size !== data.families.length) fail('duplicate family id');

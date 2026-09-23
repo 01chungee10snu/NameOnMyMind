@@ -123,6 +123,7 @@ test('app discovery exposes research surfaces without promoting research candida
   const korean = readJson('content/korean-expression/emotion-map-v1.json');
   const dailyPool = readJson('content/korean-expression/daily-pool-v1.json');
   const dailyPoolV2 = readJson('content/korean-expression/daily-pool-v2.json');
+  const simpleMeanings = readJson('content/korean-expression/simple-meanings-v1.json');
   const dailyPoolRegistry = readJson('content/korean-expression/daily-pools.json');
   const schoolAge = readJson('content/korean-expression/evidence/school-age-v1.json');
   const level1Evidence = readJson('content/korean-expression/evidence/level1-source-v1.json');
@@ -151,13 +152,18 @@ test('app discovery exposes research surfaces without promoting research candida
   assert.match(readText('prototypes/g5-research-preview-20260918/index.html'), /requestedCard/);
   const koreanPrototype = readText('prototypes/korean-emotion-map-20260919/index.html');
   const dailyLearningPrototype = readText('prototypes/korean-daily-learning-20260923/index.html');
-  assert.match(dailyLearningPrototype, /오늘의 한국어 마음말/);
-  assert.match(dailyLearningPrototype, /151개 마음말/);
+  assert.match(dailyLearningPrototype, /오늘의 마음말/);
+  assert.match(dailyLearningPrototype, /<p class="meaning-label">뜻<\/p>/);
+  assert.match(dailyLearningPrototype, /비슷한 말/);
+  assert.match(dailyLearningPrototype, /내 문장/);
+  assert.match(dailyLearningPrototype, /다른 마음말 찾기/);
+  assert.match(dailyLearningPrototype, /simple-meanings-v1\.json/);
   assert.match(dailyLearningPrototype, /selectEffectiveKoreanDailyPool/);
   assert.match(dailyLearningPrototype, /daily-pools\.json/);
-  assert.match(dailyLearningPrototype, /작성 내용은 이 화면을 벗어나면 사라집니다/);
-  assert.match(dailyLearningPrototype, /공식 어휘 근거 보기/);
+  assert.match(dailyLearningPrototype, /여기에 쓴 글은 저장되지 않아요/);
+  assert.match(dailyLearningPrototype, /뜻 출처/);
   assert.doesNotMatch(dailyLearningPrototype, /localStorage/);
+  assert.doesNotMatch(dailyLearningPrototype, /오늘의 학습 풀|151\/151|근거 연결/);
   assert.match(koreanPrototype, /requestedFamily/);
   assert.match(koreanPrototype, /syncUrl/);
   assert.match(koreanPrototype, /상황에서 찾기/);
@@ -234,6 +240,10 @@ test('app discovery exposes research surfaces without promoting research candida
   assert.equal(dailyPoolV2.source_commit, 'a05fbc7a901b50d1673db6b830bb05338bf9dc38');
   assert.equal(dailyPoolV2.term_count, 151);
   assert.equal(dailyPoolV2.term_ids.length, 151);
+  assert.equal(simpleMeanings.meanings_id, 'KOREAN_SIMPLE_MEANINGS_V1_2026-09-24');
+  assert.equal(simpleMeanings.term_count, 151);
+  assert.equal(simpleMeanings.entries.length, 151);
+  assert.equal(simpleMeanings.entries.find((row) => row.expression === '고요하다')?.meaning, '시끄럽거나 어지럽지 않고 조용하다.');
   assert.equal(new Set(dailyPoolV2.term_ids).size, 151);
   assert.ok(korean.terms.every((term) => dailyPoolV2.term_ids.includes(term.id)));
   assert.equal(dailyPoolRegistry.registry_id, 'KOREAN_DAILY_POOL_REGISTRY_V1_2026-09-23');
@@ -323,6 +333,7 @@ test('app discovery exposes research surfaces without promoting research candida
   assert.match(stage, /standard_dictionary_followup_evidence_path/);
   assert.match(stage, /daily_learning_path/);
   assert.match(stage, /daily_learning_alias_path/);
+  assert.match(stage, /simple_meanings_path/);
 
   const manifest = readJson('public/BUILD_MANIFEST.json');
   assert.deepEqual(manifest.card_ids, ['C0001','C0002','C0003','C0004','C0005']);

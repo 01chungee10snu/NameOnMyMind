@@ -1,0 +1,1067 @@
+{
+  "schema_version": "1.0.0",
+  "meanings_id": "KOREAN_SIMPLE_MEANINGS_V1_2026-09-24",
+  "purpose": "Short meanings for the simple Korean learning surface. Dictionary-backed rows preserve official definitions. A small set of G5 research-record terms uses concise editorial wording grounded in the verified research record.",
+  "term_count": 151,
+  "source_definition_count": 145,
+  "editorial_simplification_count": 6,
+  "entries": [
+    {
+      "id": "KE0001",
+      "expression": "기쁘다",
+      "meaning": "기분이 매우 좋고 즐겁다.",
+      "evidence_ref": "KRD:40078",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0002",
+      "expression": "즐겁다",
+      "meaning": "마음에 들어 흐뭇하고 기쁘다.",
+      "evidence_ref": "KRD:62101",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0003",
+      "expression": "신나다",
+      "meaning": "흥이 나고 기분이 아주 좋아지다.",
+      "evidence_ref": "KRD:66189",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0004",
+      "expression": "유쾌하다",
+      "meaning": "즐겁고 상쾌하다.",
+      "evidence_ref": "KRD:70227",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0005",
+      "expression": "흥겹다",
+      "meaning": "흥이 나서 기분이 좋고 즐겁다.",
+      "evidence_ref": "KRD:87537",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0006",
+      "expression": "행복하다",
+      "meaning": "삶에서 충분한 만족과 기쁨을 느껴 흐뭇하다.",
+      "evidence_ref": "KRD:72481",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0007",
+      "expression": "희열을 느끼다",
+      "meaning": "기쁨과 즐거움. 또는 기뻐하고 즐거워함.",
+      "evidence_ref": "KRD:88885",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0008",
+      "expression": "설레다",
+      "meaning": "마음이 차분하지 않고 들떠서 두근거리다.",
+      "evidence_ref": "KRD:62645",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0009",
+      "expression": "기대되다",
+      "meaning": "어떤 일이 이루어지기를 바라며 기다리게 되다.",
+      "evidence_ref": "KRD:32495",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0010",
+      "expression": "들뜨다",
+      "meaning": "마음이나 분위기가 안정되지 않고 조금 흥분되다.",
+      "evidence_ref": "KRD:49859",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0011",
+      "expression": "두근거리다",
+      "meaning": "놀람, 불안, 기대 등으로 가슴이 자꾸 세고 빠르게 뛰다.",
+      "evidence_ref": "KRD:48261",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0012",
+      "expression": "고대하다",
+      "meaning": "몹시 기다리다.",
+      "evidence_ref": "KRD:25588",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0013",
+      "expression": "벅차다",
+      "meaning": "어떤 일을 해내거나 견디기가 어렵다.",
+      "evidence_ref": "KRD:58356",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0014",
+      "expression": "만족스럽다",
+      "meaning": "기대하거나 필요한 것이 부족함 없거나 마음에 들어 흐뭇하다.",
+      "evidence_ref": "KRD:15837",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0015",
+      "expression": "흡족하다",
+      "meaning": "조금도 모자람이 없을 정도로 넉넉하여 만족하다.",
+      "evidence_ref": "KX0007",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0016",
+      "expression": "흐뭇하다",
+      "meaning": "마음에 들어 매우 만족스럽다.",
+      "evidence_ref": "KX0008",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0017",
+      "expression": "뿌듯하다",
+      "meaning": "기쁘고 자랑스러워 마음이 든든하다.",
+      "evidence_ref": "G5:C0009",
+      "wording": "EDITORIAL_SIMPLIFICATION"
+    },
+    {
+      "id": "KE0018",
+      "expression": "대견하다",
+      "meaning": "마음에 들고 자랑스럽다.",
+      "evidence_ref": "KRD:42236",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0019",
+      "expression": "보람차다",
+      "meaning": "어떤 일을 한 뒤에 좋은 결과를 얻어 만족스럽거나 자부심을 가질 만한 가치가 있다.",
+      "evidence_ref": "KRD:58664",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0020",
+      "expression": "장하다",
+      "meaning": "하는 일이나 인품 등이 자랑스러울 만큼 훌륭하다.",
+      "evidence_ref": "KRD:81742",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0021",
+      "expression": "안심되다",
+      "meaning": "걱정이 없어지고 마음이 편해지다.",
+      "evidence_ref": "KRD:66428",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0022",
+      "expression": "후련하다",
+      "meaning": "마음에 답답하게 맺혀 있던 것이 풀리면서 시원하고 가벼워지는 해소감.",
+      "evidence_ref": "G5:C0012",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0023",
+      "expression": "홀가분하다",
+      "meaning": "신경이 쓰이거나 귀찮지 않고 가볍고 편안하다.",
+      "evidence_ref": "KRD:87285",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0024",
+      "expression": "개운하다",
+      "meaning": "기분이나 몸이 상쾌하고 가볍다.",
+      "evidence_ref": "KRD:26673",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0025",
+      "expression": "마음이 놓이다",
+      "meaning": "걱정이나 긴장 등이 잊히거나 풀어져 없어지다.",
+      "evidence_ref": "KRD:61388",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0026",
+      "expression": "한숨을 돌리다",
+      "meaning": "힘겨운 고비를 넘기고 좀 여유를 갖다.",
+      "evidence_ref": "STD:499708",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0027",
+      "expression": "편안하다",
+      "meaning": "몸이나 마음이 편하고 좋다.",
+      "evidence_ref": "KRD:71333",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0028",
+      "expression": "평온하다",
+      "meaning": "걱정이나 탈이 없고 조용하다.",
+      "evidence_ref": "KRD:81297",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0029",
+      "expression": "느긋하다",
+      "meaning": "서두르지 않고 마음의 여유가 있다.",
+      "evidence_ref": "KRD:40387",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0030",
+      "expression": "포근하다",
+      "meaning": "느낌이나 분위기가 보드랍고 따뜻하여 편안하다.",
+      "evidence_ref": "KRD:83344",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0031",
+      "expression": "든든하다",
+      "meaning": "어떤 것에 대한 믿음이 있어 마음이 힘차다.",
+      "evidence_ref": "KRD:50551",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0032",
+      "expression": "안정되다",
+      "meaning": "변하거나 흔들리지 않고 일정한 상태가 유지되다.",
+      "evidence_ref": "KRD:16011",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0033",
+      "expression": "고요하다",
+      "meaning": "시끄럽거나 어지럽지 않고 조용하다.",
+      "evidence_ref": "KRD:18788",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0034",
+      "expression": "애틋하다",
+      "meaning": "아끼고 위하는 정이 깊다.",
+      "evidence_ref": "KRD:66723",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0035",
+      "expression": "정겹다",
+      "meaning": "정이 넘칠 만큼 매우 다정하다.",
+      "evidence_ref": "KRD:74974",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0036",
+      "expression": "친근하다",
+      "meaning": "친하여 익숙하고 허물이 없다.",
+      "evidence_ref": "KRD:80660",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0037",
+      "expression": "다정하다",
+      "meaning": "마음이 따뜻하고 정이 많다.",
+      "evidence_ref": "KRD:28353",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0038",
+      "expression": "사랑스럽다",
+      "meaning": "사랑을 느낄 만큼 귀엽다.",
+      "evidence_ref": "KRD:15851",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0039",
+      "expression": "소중하다",
+      "meaning": "매우 귀중하다.",
+      "evidence_ref": "KRD:49253",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0040",
+      "expression": "고맙다",
+      "meaning": "남이 자신을 위해 무엇을 해주어서 마음이 흐뭇하고 보답하고 싶다.",
+      "evidence_ref": "KRD:20041",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0041",
+      "expression": "반갑다",
+      "meaning": "보고 싶던 사람을 만나거나 원하는 일이 이루어져서 마음이 즐겁고 기쁘다.",
+      "evidence_ref": "KRD:70861",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0042",
+      "expression": "그립다",
+      "meaning": "매우 보고 싶고 만나고 싶다.",
+      "evidence_ref": "KRD:37070",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0043",
+      "expression": "아련하다",
+      "meaning": "기억이나 생각 등이 또렷하지 않고 희미하다.",
+      "evidence_ref": "KRD:66802",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0044",
+      "expression": "아쉽다",
+      "meaning": "무언가 부족하거나 끝나 버려 마음에 남는다.",
+      "evidence_ref": "G5:C0007",
+      "wording": "EDITORIAL_SIMPLIFICATION"
+    },
+    {
+      "id": "KE0045",
+      "expression": "애잔하다",
+      "meaning": "애처롭고 애틋하다.",
+      "evidence_ref": "KRD:601309",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0046",
+      "expression": "애절하다",
+      "meaning": "몹시 애처롭고 슬프다.",
+      "evidence_ref": "KRD:66706",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0047",
+      "expression": "미련이 남다",
+      "meaning": "잊어버리거나 그만두어야 할 것을 깨끗이 잊거나 포기하지 못하고 여전히 끌리는 마음.",
+      "evidence_ref": "KRD:56276",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0048",
+      "expression": "여운",
+      "meaning": "아직 가시지 않고 남아 있는 운치.",
+      "evidence_ref": "STD:234001",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0049",
+      "expression": "서운하다",
+      "meaning": "기대했던 만큼 되지 않아 마음이 상하고 아쉽다.",
+      "evidence_ref": "G5:C0006",
+      "wording": "EDITORIAL_SIMPLIFICATION"
+    },
+    {
+      "id": "KE0050",
+      "expression": "섭섭하다",
+      "meaning": "상대의 태도나 이별 때문에 서운하고 아쉽다.",
+      "evidence_ref": "G5:C0008",
+      "wording": "EDITORIAL_SIMPLIFICATION"
+    },
+    {
+      "id": "KE0051",
+      "expression": "야속하다",
+      "meaning": "무정한 행동이나 그런 행동을 한 사람이 섭섭하게 여겨져 언짢다.",
+      "evidence_ref": "STD:221152",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0052",
+      "expression": "서럽다",
+      "meaning": "억울하고 슬프다.",
+      "evidence_ref": "KRD:62679",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0053",
+      "expression": "속상하다",
+      "meaning": "일이 뜻대로 되지 않아 마음이 편하지 않고 괴롭다.",
+      "evidence_ref": "KRD:15595",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0054",
+      "expression": "안타깝다",
+      "meaning": "뜻대로 되지 않거나 보기에 가엾고 불쌍해서 가슴이 아프고 답답하다.",
+      "evidence_ref": "KRD:71499",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0055",
+      "expression": "마음이 상하다",
+      "meaning": "싫은 일을 당하여 기분이 안 좋아지거나 마음이 불편해지다.",
+      "evidence_ref": "KRD:62049",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0056",
+      "expression": "허전하다",
+      "meaning": "의지할 곳이 없어지거나 무엇을 잃은 것처럼 서운한 느낌이 있다.",
+      "evidence_ref": "KRD:87927",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0057",
+      "expression": "외롭다",
+      "meaning": "혼자가 되거나 의지할 데가 없어서 쓸쓸하다.",
+      "evidence_ref": "KRD:67854",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0058",
+      "expression": "쓸쓸하다",
+      "meaning": "마음이 외롭고 허전하다.",
+      "evidence_ref": "KRD:16735",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0059",
+      "expression": "적적하다",
+      "meaning": "조용하고 쓸쓸하다.",
+      "evidence_ref": "KRD:74148",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0060",
+      "expression": "공허하다",
+      "meaning": "아무것도 없이 텅 비다.",
+      "evidence_ref": "KRD:25629",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0061",
+      "expression": "고독하다",
+      "meaning": "세상에 혼자 있는 듯이 외롭고 쓸쓸하다.",
+      "evidence_ref": "KRD:23338",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0062",
+      "expression": "적막하다",
+      "meaning": "의지할 곳 없이 외롭다.",
+      "evidence_ref": "KRD:74593",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0063",
+      "expression": "슬프다",
+      "meaning": "눈물이 날 만큼 마음이 아프고 괴롭다.",
+      "evidence_ref": "KRD:65103",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0064",
+      "expression": "서글프다",
+      "meaning": "슬프고 외롭다.",
+      "evidence_ref": "KRD:62664",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0065",
+      "expression": "울적하다",
+      "meaning": "마음이 우울하고 쓸쓸하다.",
+      "evidence_ref": "KRD:69353",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0066",
+      "expression": "침울하다",
+      "meaning": "걱정이 많아서 마음이 답답하고 무겁다.",
+      "evidence_ref": "KRD:80819",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0067",
+      "expression": "비통하다",
+      "meaning": "매우 슬퍼서 마음이 아프다.",
+      "evidence_ref": "KRD:60180",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0068",
+      "expression": "참담하다",
+      "meaning": "몹시 슬프고 괴롭다.",
+      "evidence_ref": "KRD:78307",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0069",
+      "expression": "처연하다",
+      "meaning": "쓸쓸하고 구슬프다.",
+      "evidence_ref": "KRD:78737",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0070",
+      "expression": "애석하다",
+      "meaning": "슬프고 안타깝다.",
+      "evidence_ref": "KRD:66697",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0071",
+      "expression": "실망하다",
+      "meaning": "기대하던 대로 되지 않아 희망을 잃거나 마음이 몹시 상하다.",
+      "evidence_ref": "KRD:14090",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0072",
+      "expression": "허탈하다",
+      "meaning": "몸의 기운이 빠지고 정신이 멍하다.",
+      "evidence_ref": "KRD:87932",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0073",
+      "expression": "허무하다",
+      "meaning": "가치 없고 의미 없게 느껴져 매우 허전하고 쓸쓸하다.",
+      "evidence_ref": "KRD:87691",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0074",
+      "expression": "허망하다",
+      "meaning": "어이없고 아무 보람이 없다.",
+      "evidence_ref": "KRD:87887",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0075",
+      "expression": "씁쓸하다",
+      "meaning": "싫거나 언짢은 기분이 조금 나다.",
+      "evidence_ref": "KRD:66422",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0076",
+      "expression": "낙담하다",
+      "meaning": "어떤 일이 바라던 대로 되지 않아 크게 실망하다.",
+      "evidence_ref": "KRD:36830",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0077",
+      "expression": "맥이 빠지다",
+      "meaning": "기운이나 힘.",
+      "evidence_ref": "KRD:55231",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0078",
+      "expression": "걱정스럽다",
+      "meaning": "좋지 않은 일이 있을까 봐 두렵고 불안하다.",
+      "evidence_ref": "KRD:15869",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0079",
+      "expression": "불안하다",
+      "meaning": "마음이 편하지 않고 걱정되다.",
+      "evidence_ref": "KRD:60397",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0080",
+      "expression": "조마조마하다",
+      "meaning": "앞으로 닥칠 일이 걱정되어 마음이 초조하고 불안하다.",
+      "evidence_ref": "KRD:75511",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0081",
+      "expression": "초조하다",
+      "meaning": "답답하거나 안타깝거나 걱정이 되어 마음이 조마조마하다.",
+      "evidence_ref": "KRD:25462",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0082",
+      "expression": "조바심하다",
+      "meaning": "조마조마하여 마음을 졸이다.",
+      "evidence_ref": "KRD:75299",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0083",
+      "expression": "마음을 졸이다",
+      "meaning": "걱정하면서 조마조마해하다.",
+      "evidence_ref": "KRD:20911",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0084",
+      "expression": "노심초사하다",
+      "meaning": "몹시 마음을 쓰며 걱정하고 애를 태우다.",
+      "evidence_ref": "KRD:42875",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0085",
+      "expression": "두렵다",
+      "meaning": "몹시 피하고 싶을 만큼 겁이 나고 무섭다.",
+      "evidence_ref": "KRD:14925",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0086",
+      "expression": "무섭다",
+      "meaning": "어떤 대상이 꺼려지거나 무슨 일이 일어날까 두렵다.",
+      "evidence_ref": "KRD:55637",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0087",
+      "expression": "겁나다",
+      "meaning": "무서워하거나 두려워하는 마음이 들다.",
+      "evidence_ref": "KRD:15937",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0088",
+      "expression": "오싹하다",
+      "meaning": "몹시 무섭거나 추워서 갑자기 몸이 움츠러들거나 소름이 끼치다.",
+      "evidence_ref": "KRD:68033",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0089",
+      "expression": "섬뜩하다",
+      "meaning": "갑자기 몹시 무섭고 불안하다.",
+      "evidence_ref": "KRD:63314",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0090",
+      "expression": "아찔하다",
+      "meaning": "놀라거나 해서 갑자기 정신이 흐려지고 어지럽다.",
+      "evidence_ref": "KRD:66907",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0091",
+      "expression": "가슴이 철렁하다",
+      "meaning": "무엇에 크게 놀라서 걱정되거나 마음이 무거워지다.",
+      "evidence_ref": "KRD:81873",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0092",
+      "expression": "답답하다",
+      "meaning": "근심이나 걱정으로 마음이 초조하고 속이 시원하지 않다.",
+      "evidence_ref": "KRD:49437",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0093",
+      "expression": "막막하다",
+      "meaning": "의지할 데가 없어 외롭고 답답하다.",
+      "evidence_ref": "KRD:49986",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0094",
+      "expression": "갑갑하다",
+      "meaning": "일이 뜻대로 되지 않아 초조하거나 답답하다.",
+      "evidence_ref": "KRD:22891",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0095",
+      "expression": "애가 타다",
+      "meaning": "초조한 마음속.",
+      "evidence_ref": "KRD:14663",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0096",
+      "expression": "좌절하다",
+      "meaning": "마음이나 기운이 꺾이다.",
+      "evidence_ref": "KRD:91604",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0097",
+      "expression": "무력하다",
+      "meaning": "힘이 약하거나 없다.",
+      "evidence_ref": "KRD:57824",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0098",
+      "expression": "진퇴양난",
+      "meaning": "이러지도 저러지도 못하는 어려운 처지.",
+      "evidence_ref": "STD:485260",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0099",
+      "expression": "화나다",
+      "meaning": "몹시 언짢거나 못마땅하여 기분이 나빠지다.",
+      "evidence_ref": "KRD:87582",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0100",
+      "expression": "성나다",
+      "meaning": "몹시 화가 나다.",
+      "evidence_ref": "KRD:63688",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0101",
+      "expression": "노엽다",
+      "meaning": "몹시 불쾌하여 화가 나고 기분이 나쁘다.",
+      "evidence_ref": "KRD:42882",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0102",
+      "expression": "짜증이 나다",
+      "meaning": "마음에 들지 않아서 화를 내거나 싫은 느낌을 겉으로 드러내는 일. 또는 그런 성미.",
+      "evidence_ref": "KRD:71579",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0103",
+      "expression": "분하다",
+      "meaning": "억울한 일을 당하거나 될 듯한 일이 되지 않아서 매우 화가 나다.",
+      "evidence_ref": "KRD:60263",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0104",
+      "expression": "격분하다",
+      "meaning": "몹시 화를 내다.",
+      "evidence_ref": "KRD:33033",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0105",
+      "expression": "울화가 치밀다",
+      "meaning": "욕심, 분노, 슬픔 등이 세차게 복받쳐 오르다.",
+      "evidence_ref": "KRD:79235",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0106",
+      "expression": "억울하다",
+      "meaning": "자신의 잘못이 없는데 피해·비난·불이익을 받았다는 부당성 인식과 속상함·답답함이 함께 묶이는 상태.",
+      "evidence_ref": "G5:C0011",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0107",
+      "expression": "원망스럽다",
+      "meaning": "마음에 들지 않아서 탓하거나 미워하는 마음이 있다.",
+      "evidence_ref": "KRD:69870",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0108",
+      "expression": "분통이 터지다",
+      "meaning": "몹시 억울하여 화가 나는 마음.",
+      "evidence_ref": "KRD:60251",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0109",
+      "expression": "괘씸하다",
+      "meaning": "기대나 믿음에 어긋나는 못마땅한 행동을 하여 밉살스럽다.",
+      "evidence_ref": "KRD:30833",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0110",
+      "expression": "못마땅하다",
+      "meaning": "별로 마음에 들지 않아 꺼림칙하다.",
+      "evidence_ref": "KRD:54776",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0111",
+      "expression": "부끄럽다",
+      "meaning": "쑥스럽거나 수줍다.",
+      "evidence_ref": "KRD:60125",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0112",
+      "expression": "창피하다",
+      "meaning": "체면이 깎이는 어떤 일이나 사실 때문에 몹시 부끄럽다.",
+      "evidence_ref": "KRD:24910",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0113",
+      "expression": "민망하다",
+      "meaning": "딱하고 안타깝다.",
+      "evidence_ref": "KRD:56352",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0114",
+      "expression": "쑥스럽다",
+      "meaning": "하는 짓이나 모양이 자연스럽지 못하거나 어울리지 않아 부끄럽다.",
+      "evidence_ref": "KRD:66519",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0115",
+      "expression": "멋쩍다",
+      "meaning": "어색하거나 쑥스러워 자연스럽지 못하다.",
+      "evidence_ref": "G5:C0015",
+      "wording": "EDITORIAL_SIMPLIFICATION"
+    },
+    {
+      "id": "KE0116",
+      "expression": "난처하다",
+      "meaning": "어떻게 행동해야 할지 결정하기 어려운 불편한 상황에 있다.",
+      "evidence_ref": "KRD:40743",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0117",
+      "expression": "낯부끄럽다",
+      "meaning": "염치가 없어 얼굴을 보이기가 부끄럽다.",
+      "evidence_ref": "STD:408108",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0118",
+      "expression": "미안하다",
+      "meaning": "남에게 잘못을 하여 마음이 편치 못하고 부끄럽다.",
+      "evidence_ref": "KRD:67883",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0119",
+      "expression": "죄송하다",
+      "meaning": "죄를 지은 것처럼 몹시 미안하다.",
+      "evidence_ref": "KRD:91763",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0120",
+      "expression": "송구하다",
+      "meaning": "몹시 미안하여 마음이 편하지 않다.",
+      "evidence_ref": "KRD:64658",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0121",
+      "expression": "죄책감",
+      "meaning": "저지른 잘못에 대하여 책임을 느끼는 마음.",
+      "evidence_ref": "STD:480124",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0122",
+      "expression": "후회스럽다",
+      "meaning": "이전에 자신이 한 일이 잘못임을 깨닫고 스스로 자신의 잘못을 나무라는 데가 있다.",
+      "evidence_ref": "KRD:89269",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0123",
+      "expression": "뉘우치다",
+      "meaning": "스스로 자신의 잘못을 깨닫고 반성하다.",
+      "evidence_ref": "KRD:40339",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0124",
+      "expression": "마음에 걸리다",
+      "meaning": "걱정되어 마음이 편하지 않게 느껴지다.",
+      "evidence_ref": "KRD:20911",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0125",
+      "expression": "부럽다",
+      "meaning": "다른 사람의 일이나 물건이 좋아 보여 자기도 그런 일을 이루거나 물건을 갖기를 바라는 마음이 있다.",
+      "evidence_ref": "KRD:59509",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0126",
+      "expression": "샘내다",
+      "meaning": "남의 것을 탐내거나, 자기보다 형편이 나은 사람을 부러워하거나 싫어하는 마음을 먹다.",
+      "evidence_ref": "KRD:62760",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0127",
+      "expression": "질투하다",
+      "meaning": "사랑 관계에서 상대가 다른 사람을 좋아할 때 지나치게 미워하거나, 다른 사람이 잘되거나 좋은 처지에 있는 것을 미워하고 싫어하다.",
+      "evidence_ref": "KRD:78440",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0128",
+      "expression": "시기하다",
+      "meaning": "남이 잘되는 것을 싫어하여 미워하다.",
+      "evidence_ref": "KRD:65852",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0129",
+      "expression": "선망하다",
+      "meaning": "부러워하며 그렇게 되기를 바라다.",
+      "evidence_ref": "KRD:63118",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0130",
+      "expression": "배가 아프다",
+      "meaning": "남이 잘되어 심술이 나다.",
+      "evidence_ref": "STD:429286",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0131",
+      "expression": "놀랍다",
+      "meaning": "갑작스럽거나 뜻밖이어서 두렵거나 흥분한 상태에 있다.",
+      "evidence_ref": "KRD:88324",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0132",
+      "expression": "신기하다",
+      "meaning": "믿을 수 없을 정도로 색다르고 이상하다.",
+      "evidence_ref": "KRD:13997",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0133",
+      "expression": "경이롭다",
+      "meaning": "놀랍고 신기하다.",
+      "evidence_ref": "KRD:30409",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0134",
+      "expression": "당황하다",
+      "meaning": "놀라거나 매우 급하여 어떻게 해야 할지를 모름.",
+      "evidence_ref": "KRD:18921",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0135",
+      "expression": "어리둥절하다",
+      "meaning": "일이 돌아가는 상황을 잘 알지 못해서 정신이 얼떨떨하다.",
+      "evidence_ref": "KRD:70500",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0136",
+      "expression": "얼떨떨하다",
+      "meaning": "뜻밖의 일로 당황하거나 여러 가지 일이 복잡하여 어찌할 바를 모르는 데가 있다.",
+      "evidence_ref": "KRD:67306",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0137",
+      "expression": "황당하다",
+      "meaning": "말이나 행동 등이 진실하지 않고 터무니없다.",
+      "evidence_ref": "KRD:87402",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0138",
+      "expression": "의아하다",
+      "meaning": "의심스럽고 이상하다.",
+      "evidence_ref": "KRD:71904",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0139",
+      "expression": "착잡하다",
+      "meaning": "여러 생각과 감정이 뒤섞여 마음이 복잡하고 어수선하며 갈피를 잡기 어려운 상태.",
+      "evidence_ref": "G5:C0013",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0140",
+      "expression": "시원섭섭하다",
+      "meaning": "한편으로는 후련하고 다른 한편으로는 서운하고 아쉬운 상반된 정서가 함께 드는 상태.",
+      "evidence_ref": "G5:C0014",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0141",
+      "expression": "심란하다",
+      "meaning": "마음이 편안하지 못하고 어지럽다.",
+      "evidence_ref": "KRD:66238",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0142",
+      "expression": "미묘하다",
+      "meaning": "뚜렷하고 분명하지 않고 콕 집어낼 수 없을 정도로 이상하고 신기하다.",
+      "evidence_ref": "KRD:56335",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0143",
+      "expression": "복잡하다",
+      "meaning": "일, 감정 등이 정리하기 어려울 만큼 여러 가지가 얽혀 있다.",
+      "evidence_ref": "KRD:66274",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0144",
+      "expression": "갈등하다",
+      "meaning": "두 가지 이상의 상반되는 요구나 욕구, 기회 또는 목표에 직면하였을 때, 선택을 하지 못하고 괴로워하다.",
+      "evidence_ref": "STD:516128",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0145",
+      "expression": "울컥하다",
+      "meaning": "감정이나 눈물 등이 갑자기 세차게 일어나다.",
+      "evidence_ref": "KRD:71378",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0146",
+      "expression": "찡하다",
+      "meaning": "감동을 받아 가슴이 뻐근하거나 벅찬 느낌이 있다.",
+      "evidence_ref": "KRD:80169",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0147",
+      "expression": "뭉클하다",
+      "meaning": "감동이 북받쳐 가슴이 벅차다.",
+      "evidence_ref": "G5:C0010",
+      "wording": "EDITORIAL_SIMPLIFICATION"
+    },
+    {
+      "id": "KE0148",
+      "expression": "목이 메다",
+      "meaning": "어떤 감정이 북받쳐 목소리가 잘 나지 않다.",
+      "evidence_ref": "KRD:93397",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0149",
+      "expression": "가슴이 벅차다",
+      "meaning": "기쁘거나 희망에 차서 가슴이 뿌듯하다.",
+      "evidence_ref": "KRD:58356",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0150",
+      "expression": "가슴이 먹먹하다",
+      "meaning": "가슴이나 머리가 막히거나 답답한 느낌이 들다.",
+      "evidence_ref": "KRD:54807",
+      "wording": "SOURCE_DEFINITION"
+    },
+    {
+      "id": "KE0151",
+      "expression": "가슴이 두근거리다",
+      "meaning": "놀람, 불안, 기대 등으로 가슴이 자꾸 세고 빠르게 뛰다.",
+      "evidence_ref": "KRD:48261",
+      "wording": "SOURCE_DEFINITION"
+    }
+  ]
+}

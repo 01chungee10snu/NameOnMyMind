@@ -66,6 +66,7 @@ jobs:
             'public/korean/index.html',
             'public/prototypes/korean-emotion-map-20260919/index.html',
             'public/content/korean-expression/emotion-map-v1.json',
+            'public/content/korean-expression/simple-meanings-v1.json',
             'public/content/korean-expression/daily-pool-v1.json',
             'public/content/korean-expression/daily-pool-v2.json',
             'public/content/korean-expression/daily-pools.json',
@@ -83,7 +84,9 @@ jobs:
           ]) if (!fs.existsSync(file)) throw new Error(`Korean research-map staged file missing: ${file}`);
           if (korean.daily_pool_v2_path !== 'content/korean-expression/daily-pool-v2.json' || korean.daily_pool_registry_path !== 'content/korean-expression/daily-pools.json') throw new Error('Korean daily pool v2/registry manifest path mismatch');
           if (korean.daily_learning_path !== 'prototypes/korean-daily-learning-20260923/' || korean.daily_learning_alias_path !== 'learn/') throw new Error('Korean daily-learning manifest path mismatch');
+          if (korean.simple_meanings_path !== 'content/korean-expression/simple-meanings-v1.json') throw new Error('Korean simple meanings manifest path mismatch');
           const koreanHtml = fs.readFileSync('public/prototypes/korean-emotion-map-20260919/index.html','utf8');
+          const dailyLearningHtml = fs.readFileSync('public/prototypes/korean-daily-learning-20260923/index.html','utf8');
           const publicApp = fs.readFileSync('public/src/ui/app.mjs','utf8');
           if (!koreanHtml.includes('상황에서 찾기') || !koreanHtml.includes('앱이 감정을 판정하지 않습니다.') || !koreanHtml.includes('3–6학년') || !koreanHtml.includes('1–2학년 적합성 판정을 뜻하지 않습니다.')) {
             throw new Error('Guided Korean articulation boundary missing');
@@ -91,6 +94,8 @@ jobs:
           if (!publicApp.includes('상황에서 마음말 찾기')) throw new Error('Guided Korean articulation entry link missing');
           if (!publicApp.includes('오늘의 한 문장') || !publicApp.includes('작성 내용은 저장하거나 전송하지 않습니다.')) throw new Error('Daily Korean reflection privacy boundary missing');
           if (!publicApp.includes('daily-pools.json') || !fs.existsSync('public/src/domain/korean-daily.mjs')) throw new Error('Versioned Korean daily-pool runtime missing');
+          if (!dailyLearningHtml.includes('오늘의 마음말') || !dailyLearningHtml.includes('비슷한 말') || !dailyLearningHtml.includes('내 문장') || !dailyLearningHtml.includes('simple-meanings-v1.json')) throw new Error('Simple Korean daily-learning surface missing');
+          if (dailyLearningHtml.includes('오늘의 학습 풀') || dailyLearningHtml.includes('151/151') || dailyLearningHtml.includes('근거 연결')) throw new Error('Korean daily-learning surface regressed to internal metadata clutter');
           console.log(JSON.stringify({status:'PASS',card_ids:build.card_ids,preview_card_count:preview.preview_card_count,korean_emotion_map:korean,guided_articulation:true,snapshot_version:build.snapshot_version,external_publish_authorized:true},null,2));
           NODE
       - name: Check private leakage

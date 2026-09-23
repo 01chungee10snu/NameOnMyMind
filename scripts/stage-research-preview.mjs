@@ -14,6 +14,8 @@ const KOREAN_DAILY_LEARNING_SOURCE_DIR = path.join(ROOT, 'prototypes/korean-dail
 const KOREAN_DAILY_LEARNING_TARGET_DIR = path.join(OUT, 'prototypes/korean-daily-learning-20260923');
 const KOREAN_DATA_SOURCE = path.join(ROOT, 'content/korean-expression/emotion-map-v1.json');
 const KOREAN_DATA_TARGET = path.join(OUT, 'content/korean-expression/emotion-map-v1.json');
+const KOREAN_SIMPLE_MEANINGS_SOURCE = path.join(ROOT, 'content/korean-expression/simple-meanings-v1.json');
+const KOREAN_SIMPLE_MEANINGS_TARGET = path.join(OUT, 'content/korean-expression/simple-meanings-v1.json');
 const KOREAN_DAILY_POOL_SOURCE = path.join(ROOT, 'content/korean-expression/daily-pool-v1.json');
 const KOREAN_DAILY_POOL_TARGET = path.join(OUT, 'content/korean-expression/daily-pool-v1.json');
 const KOREAN_DAILY_POOL_V2_SOURCE = path.join(ROOT, 'content/korean-expression/daily-pool-v2.json');
@@ -78,6 +80,7 @@ for (const card of sourceManifest.cards) {
 if (!fs.existsSync(path.join(KOREAN_SOURCE_DIR, 'index.html'))) throw new Error('Korean emotion map prototype missing.');
 if (!fs.existsSync(path.join(KOREAN_DAILY_LEARNING_SOURCE_DIR, 'index.html'))) throw new Error('Korean daily learning prototype missing.');
 if (!fs.existsSync(KOREAN_DATA_SOURCE)) throw new Error('Korean emotion map data missing.');
+if (!fs.existsSync(KOREAN_SIMPLE_MEANINGS_SOURCE)) throw new Error('Korean simple meanings missing.');
 if (!fs.existsSync(KOREAN_DAILY_POOL_SOURCE)) throw new Error('Korean daily pool v1 missing.');
 if (!fs.existsSync(KOREAN_DAILY_POOL_V2_SOURCE)) throw new Error('Korean daily pool v2 missing.');
 if (!fs.existsSync(KOREAN_DAILY_POOL_REGISTRY_SOURCE)) throw new Error('Korean daily pool registry missing.');
@@ -115,6 +118,7 @@ fs.mkdirSync(KOREAN_DAILY_LEARNING_TARGET_DIR, { recursive: true });
 fs.copyFileSync(path.join(KOREAN_DAILY_LEARNING_SOURCE_DIR, 'index.html'), path.join(KOREAN_DAILY_LEARNING_TARGET_DIR, 'index.html'));
 fs.mkdirSync(path.dirname(KOREAN_DATA_TARGET), { recursive: true });
 fs.copyFileSync(KOREAN_DATA_SOURCE, KOREAN_DATA_TARGET);
+fs.copyFileSync(KOREAN_SIMPLE_MEANINGS_SOURCE, KOREAN_SIMPLE_MEANINGS_TARGET);
 fs.copyFileSync(KOREAN_DAILY_POOL_SOURCE, KOREAN_DAILY_POOL_TARGET);
 fs.copyFileSync(KOREAN_DAILY_POOL_V2_SOURCE, KOREAN_DAILY_POOL_V2_TARGET);
 fs.copyFileSync(KOREAN_DAILY_POOL_REGISTRY_SOURCE, KOREAN_DAILY_POOL_REGISTRY_TARGET);
@@ -205,6 +209,7 @@ const stagedEvidence = {
     daily_learning_path: 'prototypes/korean-daily-learning-20260923/',
     daily_learning_alias_path: 'learn/',
     data_path: 'content/korean-expression/emotion-map-v1.json',
+    simple_meanings_path: 'content/korean-expression/simple-meanings-v1.json',
     daily_pool_path: 'content/korean-expression/daily-pool-v1.json',
     daily_pool_v1_path: 'content/korean-expression/daily-pool-v1.json',
     daily_pool_v2_path: 'content/korean-expression/daily-pool-v2.json',
