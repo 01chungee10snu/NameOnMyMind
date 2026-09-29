@@ -3,205 +3,183 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-  <meta name="theme-color" content="#f7f3ee">
-  <meta name="description" content="오늘 하나의 마음말을 배우고 내 문장으로 써보는 NameOnMyMind 한국어 학습 페이지">
+  <meta name="theme-color" content="#faf8f4">
+  <meta name="description" content="하루에 마음말 하나. 쉬운 뜻과 짧은 예문으로 내 마음에 맞는 말을 찾아보세요.">
   <title>오늘의 마음말 — NameOnMyMind</title>
   <style>
-    :root{
-      color-scheme:light;
-      --paper:#f7f3ee;
-      --surface:#fffdf9;
-      --ink:#27211d;
-      --muted:#786f68;
-      --line:#e2d9d1;
-      --accent:#a95340;
-      --soft:#f3e7df;
-      --max:500px;
-      --serif:Georgia,"Noto Serif KR","Apple SD Gothic Neo",serif;
-      --sans:Pretendard,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
-    }
+    :root{color-scheme:light;--paper:#faf8f4;--ink:#292723;--muted:#68635c;--line:#ded9d1;--accent:#884632;--sans:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Noto Sans KR","Segoe UI",sans-serif}
     *{box-sizing:border-box}
-    html{background:#ece5de}
-    body{margin:0;min-height:100dvh;background:var(--paper);color:var(--ink);font-family:var(--sans);-webkit-font-smoothing:antialiased}
+    html{background:var(--paper)}
+    body{margin:0;color:var(--ink);font-family:var(--sans);-webkit-font-smoothing:antialiased}
     button,input,textarea{font:inherit}
-    button,a{-webkit-tap-highlight-color:transparent}
-    a{color:inherit}
-    .page{width:min(var(--max),100%);margin:0 auto;min-height:100dvh;padding:0 20px 44px}
-    header{display:flex;align-items:center;justify-content:space-between;padding:calc(18px + env(safe-area-inset-top)) 0 18px}
-    .brand{font:500 18px/1 var(--serif);letter-spacing:-.03em;text-decoration:none}
-    .date{color:var(--muted);font-size:12px}
-    .hero{padding:30px 0 28px;border-bottom:1px solid var(--line)}
-    .label{margin:0 0 14px;color:var(--accent);font-size:12px;font-weight:800}
-    h1{margin:0;font:500 clamp(52px,16vw,72px)/1 var(--serif);letter-spacing:-.06em}
-    .meaning-label{margin:26px 0 7px;color:var(--muted);font-size:12px;font-weight:700}
-    .meaning{margin:0;max-width:420px;font-size:21px;line-height:1.55;letter-spacing:-.02em;word-break:keep-all}
-    .section{padding:28px 0;border-bottom:1px solid var(--line)}
-    .section h2{margin:0 0 16px;font-size:18px;letter-spacing:-.025em}
-    .similar-list{display:grid;gap:10px}
-    .similar{padding:14px 15px;border-radius:14px;background:var(--surface);border:1px solid var(--line)}
-    .similar strong{display:block;margin-bottom:5px;font:500 20px/1.1 var(--serif);letter-spacing:-.03em}
-    .similar span{display:block;color:#5f5751;font-size:14px;line-height:1.55;word-break:keep-all}
-    .sentence-guide{margin:0 0 12px;color:#5f5751;font-size:14px;line-height:1.6}
-    textarea{display:block;width:100%;min-height:92px;padding:14px 15px;border:1px solid var(--line);border-radius:14px;background:white;color:var(--ink);font-size:15px;line-height:1.55;resize:vertical;outline:none}
-    textarea:focus{border-color:var(--accent);box-shadow:0 0 0 3px rgb(169 83 64/.08)}
-    textarea::placeholder{color:#aaa099}
-    .privacy{margin:8px 0 0;color:#948982;font-size:11px}
-    details.more{padding:24px 0 0}
-    details.more>summary{list-style:none;cursor:pointer;font-size:15px;font-weight:800}
-    details.more>summary::-webkit-details-marker{display:none}
-    details.more>summary::after{content:"＋";float:right;color:var(--muted);font-weight:400}
-    details.more[open]>summary::after{content:"−"}
-    .search-wrap{margin-top:16px}
-    .search{width:100%;height:44px;padding:0 13px;border:1px solid var(--line);border-radius:12px;background:white;outline:none;font-size:14px}
-    .search:focus{border-color:var(--accent)}
-    .results{display:grid;gap:8px;margin-top:10px}
-    .result{padding:12px 13px;border-radius:12px;background:white;border:1px solid var(--line);text-decoration:none}
-    .result strong{display:block;margin-bottom:4px;font:500 18px/1.1 var(--serif)}
-    .result span{display:block;color:#625a54;font-size:13px;line-height:1.5}
-    .hint{margin:10px 0 0;color:var(--muted);font-size:11px}
-    .source{margin-top:22px;font-size:11px;color:var(--muted)}
-    .source summary{cursor:pointer}
-    .source a{display:inline-block;margin-top:8px;color:var(--accent);font-weight:700}
-    .error{margin-top:40px;padding:16px;border:1px solid #efd1c7;border-radius:14px;background:#fff5f1;color:#7c3b2d;font-size:14px;line-height:1.6}
-    footer{padding:28px 0 calc(12px + env(safe-area-inset-bottom));color:#948982;font-size:11px;text-align:center}
-    @media(min-width:501px){body{padding:18px 0}.page{background:rgb(255 253 249/.72);box-shadow:0 0 50px rgb(69 50 38/.05)}}
+    a{color:inherit;text-underline-offset:4px}
+    button,a,summary{-webkit-tap-highlight-color:transparent}
+    button,summary{cursor:pointer}
+    [hidden]{display:none!important}
+    :focus-visible{outline:2px solid var(--accent);outline-offset:4px}
+    .page{width:min(100%,460px);margin:auto;padding:0 24px calc(20px + env(safe-area-inset-bottom));min-height:100dvh}
+    header{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-top:env(safe-area-inset-top);min-height:68px}
+    .brand{display:flex;align-items:center;min-height:44px;font-size:16px;font-weight:700;text-decoration:none;letter-spacing:-.03em}
+    .date{color:var(--muted);font-size:13px}
+    .hero{padding:18px 0 26px;border-bottom:1px solid var(--line)}
+    .label{margin:0 0 12px;color:var(--accent);font-size:14px;font-weight:600}
+    h1{margin:0;font-size:clamp(40px,13vw,56px);font-weight:650;line-height:1.22;letter-spacing:-.065em;word-break:keep-all;overflow-wrap:anywhere}
+    h1.phrase{font-size:clamp(28px,8.5vw,38px);letter-spacing:-.055em}
+    h1:focus{outline:none}
+    .meaning-label{margin:22px 0 6px;color:var(--muted);font-size:13px;font-weight:600}
+    .meaning{margin:0;font-size:20px;line-height:1.65;letter-spacing:-.025em;word-break:keep-all;overflow-wrap:anywhere}
+    .example{margin-top:22px;padding-left:14px;border-left:2px solid #bba28c}
+    .example-label{display:block;margin-bottom:6px;color:var(--muted);font-size:13px}
+    .example p{margin:0;font-size:17px;line-height:1.7;word-break:keep-all;overflow-wrap:anywhere}
+    .related{padding:24px 0 12px;border-bottom:1px solid var(--line)}
+    h2{margin:0 0 8px;font-size:15px;font-weight:650}
+    .similar-list{display:grid}
+    .similar{display:block;min-height:56px;padding:12px 0;text-decoration:none}
+    .similar strong{display:block;margin-bottom:4px;font-size:17px;font-weight:600}
+    .similar span{display:block;color:var(--muted);font-size:14px;line-height:1.6;word-break:keep-all;overflow-wrap:anywhere}
+    .similar:hover strong{text-decoration:underline;text-underline-offset:4px}
+    details{border-bottom:1px solid var(--line)}
+    summary{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:54px;list-style:none;font-size:15px;font-weight:600}
+    summary::-webkit-details-marker{display:none}
+    summary::after{content:"＋";color:var(--muted);font-size:18px;font-weight:400}
+    details[open]>summary::after{content:"−"}
+    .inside{padding:0 0 18px}
+    .sentence-guide{display:block;margin:0 0 10px;font-size:14px;line-height:1.6;color:var(--muted)}
+    textarea,input{display:block;width:100%;min-width:0;border:1px solid #c6beb3;border-radius:8px;background:#fffdfa;color:var(--ink);font-size:16px;line-height:1.6;padding:12px}
+    textarea{min-height:106px;resize:vertical}
+    input{min-height:48px}
+    .privacy,.source-note{margin:10px 0 0;color:var(--muted);font-size:13px;line-height:1.65}
+    .source-link{display:inline-flex;align-items:center;min-height:44px;color:var(--accent);font-size:14px}
+    .results{display:grid;margin-top:8px}
+    .result{display:block;padding:12px 0;min-height:48px;text-decoration:none;border-bottom:1px solid var(--line)}
+    .result strong{display:block;font-size:16px;margin-bottom:4px}
+    .result span{display:block;color:var(--muted);font-size:14px;line-height:1.6}
+    .hint,.loading{color:var(--muted);font-size:14px;line-height:1.7}
+    .today{display:inline-flex;align-items:center;min-height:44px;margin-top:8px;font-size:14px;color:var(--accent)}
+    .error{padding:24px 0;font-size:16px;line-height:1.7}
+    .retry{min-height:44px;padding:8px 16px;border:1px solid var(--line);border-radius:8px;background:#fffdfa;color:var(--ink)}
+    footer{padding-top:24px;text-align:center;color:var(--muted);font-size:12px}
+    .sr-only{position:absolute;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+    @media(max-width:350px){.page{padding-left:20px;padding-right:20px}.meaning{font-size:19px}}
     @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
   </style>
 </head>
 <body>
 <div class="page">
-  <header>
-    <a class="brand" href="../../">NameOnMyMind</a>
-    <span class="date" id="date"></span>
-  </header>
-  <main id="app"></main>
-  <footer>하루에 마음말 하나.</footer>
+  <header><a class="brand" href="#">마음말</a><time class="date" id="date"></time></header>
+  <main id="app"><p class="loading" role="status">마음말을 불러오는 중이에요.</p></main>
+  <noscript><p>이 페이지를 보려면 브라우저에서 자바스크립트를 켜 주세요.</p></noscript>
+  <footer>NameOnMyMind</footer>
 </div>
-
 <script type="module">
 import { selectEffectiveKoreanDailyPool, resolveKoreanDailyVerifiedTerm } from '../../src/domain/korean-daily.mjs';
-
 const app=document.querySelector('#app');
-const dateNode=document.querySelector('#date');
 const base='../../content/korean-expression/';
 const esc=(s='')=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const read=async p=>{const r=await fetch(p,{cache:'no-store'});if(!r.ok)throw new Error('불러오지 못했습니다.');return r.json()};
+const read=async path=>{const response=await fetch(path,{cache:'no-store'});if(!response.ok)throw new Error('Content unavailable');return response.json()};
 const now=new Date();
+const dateNode=document.querySelector('#date');
 dateNode.textContent=new Intl.DateTimeFormat('ko-KR',{month:'long',day:'numeric'}).format(now);
-
-function evidenceUrl(ref){
-  if(/^KRD:\d+$/.test(ref||'')){const id=ref.split(':')[1];return `https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=${id}&nation=eng`}
-  if(/^STD:\d+$/.test(ref||'')){const id=ref.split(':')[1];return `https://stdict.korean.go.kr/search/searchView.do?word_no=${id}&searchKeywordTo=3`}
-  return '';
-}
+dateNode.dateTime=`${now.getFullYear()}-${String(now.getMonth()+1).padStart(2,'0')}-${String(now.getDate()).padStart(2,'0')}`;
 
 try{
   const [data,meaningsData,registry,v1]=await Promise.all([
-    read(base+'emotion-map-v1.json'),
-    read(base+'simple-meanings-v1.json'),
-    read(base+'daily-pools.json'),
-    read(base+'daily-pool-v1.json')
+    read(base+'emotion-map-v1.json'),read(base+'simple-meanings-v1.json'),
+    read(base+'daily-pools.json'),read(base+'daily-pool-v1.json')
   ]);
-
   const meta=selectEffectiveKoreanDailyPool(registry,now);
   let pool=v1;
   if(meta&&meta.pool_id!==v1.pool_id){
-    const candidate=await read(base+meta.path);
-    if(candidate.pool_id===meta.pool_id&&candidate.effective_date===meta.effective_date)pool=candidate;
+    pool=await read(base+meta.path);
+    if(pool.pool_id!==meta.pool_id||pool.effective_date!==meta.effective_date)throw new Error('Pool mismatch');
   }
-
   const daily=resolveKoreanDailyVerifiedTerm(data,pool,now);
-  if(!daily)throw new Error('오늘의 마음말을 고르지 못했습니다.');
-
-  const meaningMap=new Map(meaningsData.entries.map(x=>[x.id,x]));
-  const dailyMeaning=meaningMap.get(daily.id);
-  if(!dailyMeaning)throw new Error('뜻을 찾지 못했습니다.');
-
-  const directSet=data.contrast_sets.find(set=>set.status==='SOURCE_VERIFIED'&&set.terms.includes(daily.expression));
-  let similarTerms=[];
-  if(directSet){
-    similarTerms=directSet.terms
-      .filter(x=>x!==daily.expression)
-      .map(x=>data.terms.find(t=>t.expression===x))
-      .filter(Boolean);
+  if(!daily)throw new Error('Daily term missing');
+  const meaningMap=new Map(meaningsData.entries.map(row=>[row.id,row]));
+  const termMap=new Map(data.terms.filter(row=>row.status==='SOURCE_VERIFIED').map(row=>[row.id,row]));
+  for(const term of termMap.values()){
+    const row=meaningMap.get(term.id);
+    if(!row?.meaning?.trim()||!row?.example?.trim()||row.expression!==term.expression)throw new Error('Learning copy incomplete');
   }
-  if(similarTerms.length<3){
-    const sameFamily=data.terms
-      .filter(t=>t.family_id===daily.family_id&&t.id!==daily.id&&!similarTerms.some(x=>x.id===t.id))
-      .sort((a,b)=>Math.abs(a.level-daily.level)-Math.abs(b.level-daily.level)||a.id.localeCompare(b.id,'en'));
-    similarTerms=[...similarTerms,...sameFamily].slice(0,3);
-  } else {
-    similarTerms=similarTerms.slice(0,3);
-  }
-
-  const sourceUrl=evidenceUrl(daily.evidence_ref);
-
+  // Drafts exist only in this page's memory. No persistence, scoring or transmission.
+  const drafts=new Map();
+  let selected=null;
   app.innerHTML=`
-    <section class="hero">
-      <p class="label">오늘의 마음말</p>
-      <h1>${esc(daily.expression)}</h1>
-      <p class="meaning-label">뜻</p>
-      <p class="meaning">${esc(dailyMeaning.meaning)}</p>
-    </section>
-
-    <section class="section">
-      <h2>비슷한 말</h2>
-      <div class="similar-list">
-        ${similarTerms.map(t=>{
-          const m=meaningMap.get(t.id);
-          return `<div class="similar"><strong>${esc(t.expression)}</strong><span>${esc(m?.meaning||'')}</span></div>`;
-        }).join('')}
-      </div>
-    </section>
-
-    <section class="section">
-      <h2>내 문장</h2>
-      <p class="sentence-guide">오늘 있었던 일에 이 말을 한 번 써보세요.</p>
-      <textarea id="sentence" maxlength="120" placeholder="예: 오늘은 …해서 ${esc(daily.expression)}."></textarea>
-      <p class="privacy">여기에 쓴 글은 저장되지 않아요.</p>
-    </section>
-
-    <details class="more">
-      <summary>다른 마음말 찾기</summary>
-      <div class="search-wrap">
-        <input class="search" id="search" type="search" placeholder="단어를 찾아보세요">
-        <div class="results" id="results"></div>
-        <p class="hint" id="hint">예: 서운하다, 뿌듯하다, 고요하다</p>
-      </div>
-    </details>
-
-    ${sourceUrl?`<details class="source"><summary>뜻 출처</summary><a href="${esc(sourceUrl)}" target="_blank" rel="noopener">국립국어원에서 보기</a></details>`:''}
-  `;
-
+    <div id="word-card" aria-live="polite" aria-atomic="true"></div>
+    <details id="write"><summary>내 문장 써보기</summary><div class="inside">
+      <label class="sentence-guide" id="sentence-label" for="sentence"></label>
+      <textarea id="sentence" maxlength="240" autocomplete="off" placeholder="이 말이 어울리는 내 이야기를 써 보세요." aria-describedby="privacy"></textarea>
+      <p class="privacy" id="privacy">여기에 쓴 글은 저장되지 않아요. 다른 곳으로 보내지도 않아요.</p>
+    </div></details>
+    <details id="find"><summary>다른 마음말 찾기</summary><div class="inside">
+      <label class="sr-only" for="search">단어나 뜻으로 찾기</label>
+      <input id="search" type="search" autocomplete="off" placeholder="단어나 뜻으로 찾아보세요">
+      <div class="results" id="results" aria-live="polite"></div>
+      <p class="hint" id="hint">예: 서운하다, 뿌듯하다, 고요하다</p>
+    </div></details>
+    <details id="source"><summary>뜻 출처</summary><div class="inside">
+      <p class="source-note">사전과 검토 자료를 바탕으로 뜻을 쉽게 풀어 썼어요. 예문은 직접 만든 문장이에요.</p>
+      <a class="source-link" id="source-link" target="_blank" rel="noopener noreferrer" hidden>국립국어원에서 보기</a>
+    </div></details>
+    <a class="today" id="today" href="#" hidden>오늘의 말로 돌아가기</a>`;
+  const card=document.querySelector('#word-card');
+  const sentence=document.querySelector('#sentence');
   const search=document.querySelector('#search');
   const results=document.querySelector('#results');
   const hint=document.querySelector('#hint');
+  sentence.addEventListener('input',()=>{if(selected)drafts.set(selected.id,sentence.value)});
+
+  function similarTo(term){
+    return (meaningMap.get(term.id).related_ids||[]).map(id=>termMap.get(id)).filter(Boolean).slice(0,2);
+  }
+
+  function renderTerm(focus=false){
+    const id=location.hash.slice(1);
+    const term=termMap.get(id)||daily;
+    const row=meaningMap.get(term.id);
+    selected=term;
+    card.innerHTML=`<section class="hero">
+      <p class="label">${term.id===daily.id?'오늘의 마음말':'마음말'}</p>
+      <h1 id="word" tabindex="-1" class="${term.expression.length>7?'phrase':''}">${esc(term.expression)}</h1>
+      <p class="meaning-label">뜻</p><p class="meaning">${esc(row.meaning)}</p>
+      <div class="example"><span class="example-label">이렇게 써요</span><p>${esc(row.example)}</p></div>
+    </section><section class="related"><h2>비슷한 말</h2><div class="similar-list">
+      ${similarTo(term).map(other=>`<a class="similar" href="#${other.id}"><strong>${esc(other.expression)}</strong><span>${esc(meaningMap.get(other.id).meaning)}</span></a>`).join('')}
+    </div></section>`;
+    sentence.value=drafts.get(term.id)||'';
+    document.querySelector('#sentence-label').textContent=`‘${term.expression}’라는 말을 내 이야기에도 써 볼까요?`;
+    for(const id of ['write','find','source'])document.getElementById(id).open=false;
+    document.querySelector('#today').hidden=term.id===daily.id;
+    const source=document.querySelector('#source-link');
+    const url=row.source_url||'';
+    const safe=/^https:\/\/(krdict|stdict)\.korean\.go\.kr\//.test(url);
+    source.hidden=!safe;
+    if(safe)source.href=url;else source.removeAttribute('href');
+    document.title=`${term.expression} — 마음말`;
+    if(focus){document.querySelector('#word').focus({preventScroll:true});window.scrollTo({top:0,behavior:'instant'})}
+  }
 
   function renderSearch(){
-    const q=search.value.trim();
-    results.replaceChildren();
-    hint.hidden=Boolean(q);
+    const q=search.value.trim().normalize('NFC');
+    results.replaceChildren();hint.hidden=Boolean(q);
     if(!q)return;
-    const rows=data.terms
-      .filter(t=>t.expression.includes(q)||meaningMap.get(t.id)?.meaning?.includes(q))
-      .slice(0,8);
-    if(!rows.length){
-      results.innerHTML='<p class="hint">찾은 단어가 없어요.</p>';
-      return;
+    const rows=[...termMap.values()].filter(term=>term.expression.includes(q)||meaningMap.get(term.id).meaning.includes(q));
+    if(!rows.length){results.innerHTML='<p class="hint">찾은 말이 없어요. 다른 말로 찾아보세요.</p>';return}
+    for(const term of rows.slice(0,8)){
+      const link=document.createElement('a');link.className='result';link.href=`#${term.id}`;
+      link.innerHTML=`<strong>${esc(term.expression)}</strong><span>${esc(meaningMap.get(term.id).meaning)}</span>`;
+      link.addEventListener('click',()=>{if(selected?.id===term.id)renderTerm(true)});
+      results.append(link);
     }
-    for(const t of rows){
-      const m=meaningMap.get(t.id);
-      const a=document.createElement('a');
-      a.className='result';
-      a.href=`../korean-emotion-map-20260919/?family=${encodeURIComponent(t.family_id)}&term=${encodeURIComponent(t.expression)}`;
-      a.innerHTML=`<strong>${esc(t.expression)}</strong><span>${esc(m?.meaning||'')}</span>`;
-      results.append(a);
-    }
+    if(rows.length>8){const note=document.createElement('p');note.className='hint';note.textContent='찾는 말을 조금 더 길게 써 보세요.';results.append(note)}
   }
   search.addEventListener('input',renderSearch);
+  window.addEventListener('hashchange',()=>renderTerm(true));
+  renderTerm();
 }catch(error){
-  console.error(error);
-  app.innerHTML=`<div class="error">페이지를 불러오지 못했습니다.<br>잠시 뒤 다시 열어주세요.</div>`;
+  console.error('Learning page could not load.',error);
+  app.innerHTML='<div class="error" role="alert"><p>마음말을 불러오지 못했어요.<br>인터넷 연결을 확인하고 다시 열어 주세요.</p><button class="retry" id="retry">다시 불러오기</button></div>';
+  document.querySelector('#retry').addEventListener('click',()=>location.reload());
 }
 </script>
 </body>

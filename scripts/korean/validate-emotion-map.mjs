@@ -37,12 +37,13 @@ if (!validate(data)) fail(JSON.stringify(validate.errors));
 if (data.families.length < 20) fail('emotion family coverage too narrow');
 if (data.terms.length < 120) fail('emotion vocabulary coverage too narrow');
 if (data.contrast_sets.length < 12) fail('contrast-set coverage too narrow');
-if (simpleMeanings.meanings_id !== 'KOREAN_SIMPLE_MEANINGS_V1_2026-09-24') fail('simple meanings snapshot id mismatch');
+if (simpleMeanings.meanings_id !== 'KOREAN_SIMPLE_MEANINGS_V2_2026-09-29') fail('simple meanings snapshot id mismatch');
 if (simpleMeanings.term_count !== data.terms.length || simpleMeanings.entries?.length !== data.terms.length) fail('simple meanings coverage mismatch');
 const simpleMeaningById = new Map(simpleMeanings.entries.map((row) => [row.id, row]));
 for (const term of data.terms) {
   const row = simpleMeaningById.get(term.id);
   if (!row || row.expression !== term.expression || !row.meaning?.trim()) fail(`${term.expression}: simple meaning missing or mismatched`);
+  if (!row.example?.trim()) fail(`${term.expression}: learning example missing`);
   if (row.evidence_ref !== term.evidence_ref) fail(`${term.expression}: simple meaning evidence_ref drifted`);
   if (!['SOURCE_DEFINITION','EDITORIAL_SIMPLIFICATION'].includes(row.wording)) fail(`${term.expression}: simple meaning wording type invalid`);
 }

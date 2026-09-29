@@ -240,7 +240,7 @@ test('app discovery exposes research surfaces without promoting research candida
   assert.equal(dailyPoolV2.source_commit, 'a05fbc7a901b50d1673db6b830bb05338bf9dc38');
   assert.equal(dailyPoolV2.term_count, 151);
   assert.equal(dailyPoolV2.term_ids.length, 151);
-  assert.equal(simpleMeanings.meanings_id, 'KOREAN_SIMPLE_MEANINGS_V1_2026-09-24');
+  assert.equal(simpleMeanings.meanings_id, 'KOREAN_SIMPLE_MEANINGS_V2_2026-09-29');
   assert.equal(simpleMeanings.term_count, 151);
   assert.equal(simpleMeanings.entries.length, 151);
   assert.equal(simpleMeanings.entries.find((row) => row.expression === '고요하다')?.meaning, '시끄럽거나 어지럽지 않고 조용하다.');
