@@ -1,0 +1,483 @@
+{
+  "schema_version": "1.0.0",
+  "source_name": "국립국어원 한국어기초사전",
+  "verified_count": 26,
+  "entries": [
+    {
+      "expression": "아늑하다",
+      "evidence_ref": "KRD:90526",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=90526&nation=eng",
+      "headword": "아늑하다",
+      "definitions": [
+        "따뜻하고 부드럽게 감싸 안기듯 편안하고 조용한 느낌이 있다.",
+        null
+      ],
+      "selected_sense_number": 1,
+      "checked_at": "2026-09-30T07:20:53.282548+09:00",
+      "html_sha256": "ecbdef99568547a0d4e52e538a61c02bda8af97149e3f4c68bbe833a447e3fdf"
+    },
+    {
+      "expression": "가뿐하다",
+      "evidence_ref": "KRD:14548",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=14548&nation=eng",
+      "headword": "가뿐하다",
+      "definitions": [
+        null,
+        null,
+        null,
+        "마음에 부담이 없이 가볍고 편하다."
+      ],
+      "selected_sense_number": 4,
+      "checked_at": "2026-09-30T07:20:53.309675+09:00",
+      "html_sha256": "e83e54a69cdb8abb5c1f6a4f39a91108781a232e72839236bc96e95ed65e6f7b"
+    },
+    {
+      "expression": "차분하다",
+      "evidence_ref": "KRD:82475",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=82475&nation=eng",
+      "headword": "차분하다",
+      "definitions": [
+        "마음이 가라앉아 조용하다."
+      ],
+      "selected_sense_number": 1,
+      "checked_at": "2026-09-30T07:20:53.365179+09:00",
+      "html_sha256": "88663460e57dbd1d474e8c1162ce371edaee1ed09cacb67a781668d9bf1accce"
+    },
+    {
+      "expression": "담담하다",
+      "evidence_ref": "KRD:44177",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=44177&nation=eng",
+      "headword": "담담하다",
+      "definitions": [
+        "차분하고 편안하다.",
+        null,
+        null,
+        null,
+        null
+      ],
+      "selected_sense_number": 1,
+      "checked_at": "2026-09-30T07:20:54.356267+09:00",
+      "html_sha256": "b11ba0259b0a7d26eb993acf674cbe22c3dfb3a4148af49e2f17af8db5795a49"
+    },
+    {
+      "expression": "여유롭다",
+      "evidence_ref": "KRD:67788",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=67788&nation=eng",
+      "headword": "여유롭다",
+      "definitions": [
+        "시간이나 공간, 돈 등이 넉넉하여 남음이 있다."
+      ],
+      "selected_sense_number": 1,
+      "checked_at": "2026-09-30T07:20:54.328397+09:00",
+      "html_sha256": "e33a4bb6d07f38b005bad25c19c448bbb9768763d5821d06223e7200059148a9"
+    },
+    {
+      "expression": "푸근하다",
+      "evidence_ref": "KRD:83564",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=83564&nation=eng",
+      "headword": "푸근하다",
+      "definitions": [
+        null,
+        "느낌이나 분위기가 부드럽고 따뜻하여 편안하다.",
+        null
+      ],
+      "selected_sense_number": 2,
+      "checked_at": "2026-09-30T07:20:54.380231+09:00",
+      "html_sha256": "8eb4857c635ccad6b57900d13af803400a76cba0446c51394f7c3365c2ad3f1e"
+    },
+    {
+      "expression": "황홀하다",
+      "evidence_ref": "KRD:87890",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=87890&nation=eng",
+      "headword": "황홀하다",
+      "definitions": [
+        null,
+        "마음이나 시선을 빼앗겨 흥분된 상태이다."
+      ],
+      "selected_sense_number": 2,
+      "checked_at": "2026-09-30T07:20:55.317114+09:00",
+      "html_sha256": "0f3283412b3082a3d91419e557f97bf3e23ae08dfbc3ecd4826b172ab8e39a5c"
+    },
+    {
+      "expression": "감격하다",
+      "evidence_ref": "KRD:15271",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=15271&nation=eng",
+      "headword": "감격하다",
+      "definitions": [
+        "마음에 깊이 느끼어 매우 감동하다."
+      ],
+      "selected_sense_number": 1,
+      "checked_at": "2026-09-30T07:20:55.405791+09:00",
+      "html_sha256": "29d62e0ce924e508a983963317fa1b1be283b3dfe4841fa14fa690202654379c"
+    },
+    {
+      "expression": "감탄하다",
+      "evidence_ref": "KRD:22681",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=22681&nation=eng",
+      "headword": "감탄하다",
+      "definitions": [
+        "마음속 깊이 크게 느끼다."
+      ],
+      "selected_sense_number": 1,
+      "checked_at": "2026-09-30T07:20:55.400469+09:00",
+      "html_sha256": "957b0a00df84ac7d1ee5a67b575a8b091be6b36ab68d215cbe0ebe72d43bf464"
+    },
+    {
+      "expression": "통쾌하다",
+      "evidence_ref": "KRD:81838",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=81838&nation=eng",
+      "headword": "통쾌하다",
+      "definitions": [
+        "아주 즐겁고 속이 시원하다."
+      ],
+      "selected_sense_number": 1,
+      "checked_at": "2026-09-30T07:20:56.342115+09:00",
+      "html_sha256": "5079623c390dcc92bd4fde1a64d76b7de70ab26c2b87e81e1b7bf65168838445"
+    },
+    {
+      "expression": "상쾌하다",
+      "evidence_ref": "KRD:16227",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=16227&nation=eng",
+      "headword": "상쾌하다",
+      "definitions": [
+        "기분이나 느낌 등이 시원하고 산뜻하다."
+      ],
+      "selected_sense_number": 1,
+      "checked_at": "2026-09-30T07:20:56.371293+09:00",
+      "html_sha256": "062181781de0d290bb366c6202d9355ffb5d703955ff6461e5093afb98dbb8a4"
+    },
+    {
+      "expression": "흔쾌하다",
+      "evidence_ref": "KRD:89250",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=89250&nation=eng",
+      "headword": "흔쾌하다",
+      "definitions": [
+        "기쁘고 유쾌하다."
+      ],
+      "selected_sense_number": 1,
+      "checked_at": "2026-09-30T07:20:56.353188+09:00",
+      "html_sha256": "b1497e1cadf5962556f536adf221a8ffd4848a8437e9ea1ed72958883499485c"
+    },
+    {
+      "expression": "살갑다",
+      "evidence_ref": "KRD:61656",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=61656&nation=eng",
+      "headword": "살갑다",
+      "definitions": [
+        "마음씨나 태도가 다정하고 부드럽다.",
+        null,
+        null
+      ],
+      "selected_sense_number": 1,
+      "checked_at": "2026-09-30T07:20:57.308740+09:00",
+      "html_sha256": "1f66fca5af43269e165c8a7acb663294f988b18cbd4645760256c364ec37afc4"
+    },
+    {
+      "expression": "살뜰하다",
+      "evidence_ref": "KRD:61659",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=61659&nation=eng",
+      "headword": "살뜰하다",
+      "definitions": [
+        "마음이나 행동이 정성스럽고 친절하며 다정하다.",
+        null
+      ],
+      "selected_sense_number": 1,
+      "checked_at": "2026-09-30T07:20:57.328271+09:00",
+      "html_sha256": "e1b6d7f5dcefe0cf154ff309cf172c3ce8c01cef011d7b871dbd18e13405ee38"
+    },
+    {
+      "expression": "미덥다",
+      "evidence_ref": "KRD:56245",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=56245&nation=eng",
+      "headword": "미덥다",
+      "definitions": [
+        "믿음이 가는 데가 있다."
+      ],
+      "selected_sense_number": 1,
+      "checked_at": "2026-09-30T07:20:57.350312+09:00",
+      "html_sha256": "7b1d758be46ae004c3d3ac5042f0a1eb1ec12be30bf3aa4d7ef71f3f73350c0f"
+    },
+    {
+      "expression": "정답다",
+      "evidence_ref": "KRD:75947",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=75947&nation=eng",
+      "headword": "정답다",
+      "definitions": [
+        "따뜻하고 친근한 느낌이 있다."
+      ],
+      "selected_sense_number": 1,
+      "checked_at": "2026-09-30T07:20:58.624540+09:00",
+      "html_sha256": "723908db6b5161281877c19e081eebd4489deeb6910530f5db381fd1214a9336"
+    },
+    {
+      "expression": "정들다",
+      "evidence_ref": "KRD:76062",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=76062&nation=eng",
+      "headword": "정들다",
+      "definitions": [
+        "정이 생겨서 마음이 깊어지다."
+      ],
+      "selected_sense_number": 1,
+      "checked_at": "2026-09-30T07:20:58.689976+09:00",
+      "html_sha256": "8ac3a0cd09128b821228968e159480faf32fd803b018c099d0cb6b7a61b15245"
+    },
+    {
+      "expression": "끌리다",
+      "evidence_ref": "KRD:16267",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=16267&nation=eng",
+      "headword": "끌리다",
+      "definitions": [
+        null,
+        "관심이 쏠리다.",
+        null,
+        null
+      ],
+      "selected_sense_number": 2,
+      "checked_at": "2026-09-30T07:20:58.785996+09:00",
+      "html_sha256": "154ef14abfeecfde74456dec101c8cbfb6e8803bc8ed0b451cbb0f898b6f0e31"
+    },
+    {
+      "expression": "어색하다",
+      "evidence_ref": "KRD:67014",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=67014&nation=eng",
+      "headword": "어색하다",
+      "definitions": [
+        "잘 모르거나 별로 만나고 싶지 않았던 사람과 마주 대하여 불편하고 자연스럽지 못하다.",
+        null,
+        null
+      ],
+      "selected_sense_number": 1,
+      "checked_at": "2026-09-30T07:20:59.609313+09:00",
+      "html_sha256": "7718c6f14f662864c0f69a3e50bb68ace849496c8b4d68a78763fe9ae9ebfa86"
+    },
+    {
+      "expression": "서먹하다",
+      "evidence_ref": "KRD:63134",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=63134&nation=eng",
+      "headword": "서먹하다",
+      "definitions": [
+        "익숙하거나 친하지 아니하여 어색하다."
+      ],
+      "selected_sense_number": 1,
+      "checked_at": "2026-09-30T07:20:59.670550+09:00",
+      "html_sha256": "fd176603c289112a3149eb7c5387ef5caeb5680a4970239d3f35cd987cec06c8"
+    },
+    {
+      "expression": "머쓱하다",
+      "evidence_ref": "KRD:54799",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=54799&nation=eng",
+      "headword": "머쓱하다",
+      "definitions": [
+        null,
+        "무안을 당하거나 흥이 꺾여 어색하고 부끄럽다."
+      ],
+      "selected_sense_number": 2,
+      "checked_at": "2026-09-30T07:20:59.798570+09:00",
+      "html_sha256": "f7cd152350e78d3e592518c64016008cb0246d3f0e4234b2878cac0bed71ddfd"
+    },
+    {
+      "expression": "무안하다",
+      "evidence_ref": "KRD:55685",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=55685&nation=eng",
+      "headword": "무안하다",
+      "definitions": [
+        "얼굴을 들지 못할 만큼 수줍거나 창피하다."
+      ],
+      "selected_sense_number": 1,
+      "checked_at": "2026-09-30T07:21:00.514950+09:00",
+      "html_sha256": "ffaef1020695f833b6d91e0199fa68dc63f1c769ffb0f912f72eab64557cd72b"
+    },
+    {
+      "expression": "수줍다",
+      "evidence_ref": "KRD:65474",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=65474&nation=eng",
+      "headword": "수줍다",
+      "definitions": [
+        "다른 사람 앞에서 말이나 행동을 하는 것이 어렵거나 부끄럽다. 또는 그런 태도가 있다."
+      ],
+      "selected_sense_number": 1,
+      "checked_at": "2026-09-30T07:21:00.595331+09:00",
+      "html_sha256": "f422ef5058c11d6a72ace79675a8295b030a456a4e5eb1654356aa00d07e9181"
+    },
+    {
+      "expression": "겸연쩍다",
+      "evidence_ref": "KRD:30433",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=30433&nation=eng",
+      "headword": "겸연쩍다",
+      "definitions": [
+        "쑥스럽거나 미안하여 어색하다."
+      ],
+      "selected_sense_number": 1,
+      "checked_at": "2026-09-30T07:21:00.924958+09:00",
+      "html_sha256": "b71c4958816dea9a0fa47524319513daefe4914c639489b85e55923366fdee20"
+    },
+    {
+      "expression": "쓰리다",
+      "evidence_ref": "KRD:66444",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=66444&nation=eng",
+      "headword": "쓰리다",
+      "definitions": [
+        null,
+        null,
+        "마음이 쑤시는 것처럼 아프고 괴롭다."
+      ],
+      "selected_sense_number": 3,
+      "checked_at": "2026-09-30T07:21:01.443339+09:00",
+      "html_sha256": "f723e897c2748725cfb7674863d466d065e96b58b3ac426ffd79316d016e12f8"
+    },
+    {
+      "expression": "아리다",
+      "evidence_ref": "KRD:66823",
+      "url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=66823&nation=eng",
+      "headword": "아리다",
+      "definitions": [
+        null,
+        null,
+        "마음이 몹시 아프다."
+      ],
+      "selected_sense_number": 3,
+      "checked_at": "2026-09-30T07:21:01.658770+09:00",
+      "html_sha256": "75ae113fc46121860e339b00aa05a44748494f97ec0680fe987837165e5df429"
+    }
+  ],
+  "deferred_candidates": [
+    {
+      "expression": "저리다",
+      "reason": "SOURCE_CAPTURE_INCOMPLETE_NOT_PUBLISHED"
+    },
+    {
+      "expression": "구슬프다",
+      "reason": "SOURCE_CAPTURE_INCOMPLETE_NOT_PUBLISHED"
+    },
+    {
+      "expression": "처량하다",
+      "reason": "SOURCE_CAPTURE_INCOMPLETE_NOT_PUBLISHED"
+    },
+    {
+      "expression": "상심하다",
+      "reason": "SOURCE_CAPTURE_INCOMPLETE_NOT_PUBLISHED"
+    },
+    {
+      "expression": "망설이다",
+      "reason": "SOURCE_CAPTURE_INCOMPLETE_NOT_PUBLISHED"
+    },
+    {
+      "expression": "주저하다",
+      "reason": "SOURCE_CAPTURE_INCOMPLETE_NOT_PUBLISHED"
+    },
+    {
+      "expression": "꺼림칙하다",
+      "reason": "SOURCE_CAPTURE_INCOMPLETE_NOT_PUBLISHED"
+    },
+    {
+      "expression": "찜찜하다",
+      "reason": "SOURCE_CAPTURE_INCOMPLETE_NOT_PUBLISHED"
+    },
+    {
+      "expression": "미심쩍다",
+      "reason": "SOURCE_CAPTURE_INCOMPLETE_NOT_PUBLISHED"
+    },
+    {
+      "expression": "내키다",
+      "reason": "SOURCE_CAPTURE_INCOMPLETE_NOT_PUBLISHED"
+    },
+    {
+      "expression": "자신만만하다",
+      "reason": "SOURCE_CAPTURE_INCOMPLETE_NOT_PUBLISHED"
+    },
+    {
+      "expression": "당당하다",
+      "reason": "SOURCE_CAPTURE_INCOMPLETE_NOT_PUBLISHED"
+    },
+    {
+      "expression": "담대하다",
+      "reason": "SOURCE_CAPTURE_INCOMPLETE_NOT_PUBLISHED"
+    },
+    {
+      "expression": "의기양양하다",
+      "reason": "SOURCE_CAPTURE_INCOMPLETE_NOT_PUBLISHED"
+    },
+    {
+      "expression": "의기소침하다",
+      "reason": "SOURCE_CAPTURE_INCOMPLETE_NOT_PUBLISHED"
+    },
+    {
+      "expression": "위축되다",
+      "reason": "SOURCE_CAPTURE_INCOMPLETE_NOT_PUBLISHED"
+    },
+    {
+      "expression": "지루하다",
+      "reason": "SOURCE_CAPTURE_INCOMPLETE_NOT_PUBLISHED"
+    },
+    {
+      "expression": "무료하다",
+      "reason": "SOURCE_CAPTURE_INCOMPLETE_NOT_PUBLISHED"
+    },
+    {
+      "expression": "심심하다",
+      "reason": "SOURCE_CAPTURE_INCOMPLETE_NOT_PUBLISHED"
+    },
+    {
+      "expression": "지치다",
+      "reason": "SOURCE_CAPTURE_INCOMPLETE_NOT_PUBLISHED"
+    },
+    {
+      "expression": "고단하다",
+      "reason": "SOURCE_CAPTURE_INCOMPLETE_NOT_PUBLISHED"
+    },
+    {
+      "expression": "무기력하다",
+      "reason": "SOURCE_CAPTURE_INCOMPLETE_NOT_PUBLISHED"
+    },
+    {
+      "expression": "간절하다",
+      "reason": "SOURCE_CAPTURE_INCOMPLETE_NOT_PUBLISHED"
+    },
+    {
+      "expression": "애타다",
+      "reason": "SOURCE_CAPTURE_INCOMPLETE_NOT_PUBLISHED"
+    },
+    {
+      "expression": "조급하다",
+      "reason": "SOURCE_CAPTURE_INCOMPLETE_NOT_PUBLISHED"
+    },
+    {
+      "expression": "불편하다",
+      "reason": "SOURCE_CAPTURE_INCOMPLETE_NOT_PUBLISHED"
+    },
+    {
+      "expression": "불쾌하다",
+      "reason": "SOURCE_CAPTURE_INCOMPLETE_NOT_PUBLISHED"
+    },
+    {
+      "expression": "거북하다",
+      "reason": "SOURCE_CAPTURE_INCOMPLETE_NOT_PUBLISHED"
+    },
+    {
+      "expression": "떨떠름하다",
+      "reason": "SOURCE_CAPTURE_INCOMPLETE_NOT_PUBLISHED"
+    },
+    {
+      "expression": "탐탁하다",
+      "reason": "SOURCE_CAPTURE_INCOMPLETE_NOT_PUBLISHED"
+    },
+    {
+      "expression": "언짢다",
+      "reason": "SOURCE_CAPTURE_INCOMPLETE_NOT_PUBLISHED"
+    },
+    {
+      "expression": "불만스럽다",
+      "reason": "SOURCE_CAPTURE_INCOMPLETE_NOT_PUBLISHED"
+    },
+    {
+      "expression": "원통하다",
+      "reason": "SOURCE_CAPTURE_INCOMPLETE_NOT_PUBLISHED"
+    },
+    {
+      "expression": "얄밉다",
+      "reason": "SOURCE_CAPTURE_INCOMPLETE_NOT_PUBLISHED"
+    }
+  ],
+  "capture_note": "26 exact-headword pages and their senses were captured successfully. Later dictionary requests timed out; remaining queued requests were cancelled and unverified candidates were excluded. No access controls were bypassed.",
+  "retention_note": "Only the selected short definition is retained, at its original sense index. Other senses are null; the complete fetched HTML is represented by its SHA-256, not republished."
+}

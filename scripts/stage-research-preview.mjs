@@ -119,6 +119,10 @@ fs.copyFileSync(path.join(KOREAN_DAILY_LEARNING_SOURCE_DIR, 'index.html'), path.
 fs.mkdirSync(path.dirname(KOREAN_DATA_TARGET), { recursive: true });
 fs.copyFileSync(KOREAN_DATA_SOURCE, KOREAN_DATA_TARGET);
 fs.copyFileSync(KOREAN_SIMPLE_MEANINGS_SOURCE, KOREAN_SIMPLE_MEANINGS_TARGET);
+for (const file of ['learning-vocabulary-v1.json', 'learning-daily-v3.json']) {
+  fs.copyFileSync(path.join(ROOT, 'content/korean-expression', file), path.join(OUT, 'content/korean-expression', file));
+}
+
 fs.copyFileSync(KOREAN_DAILY_POOL_SOURCE, KOREAN_DAILY_POOL_TARGET);
 fs.copyFileSync(KOREAN_DAILY_POOL_V2_SOURCE, KOREAN_DAILY_POOL_V2_TARGET);
 fs.copyFileSync(KOREAN_DAILY_POOL_REGISTRY_SOURCE, KOREAN_DAILY_POOL_REGISTRY_TARGET);
@@ -210,6 +214,9 @@ const stagedEvidence = {
     daily_learning_alias_path: 'learn/',
     data_path: 'content/korean-expression/emotion-map-v1.json',
     simple_meanings_path: 'content/korean-expression/simple-meanings-v1.json',
+    learning_vocabulary_path: 'content/korean-expression/learning-vocabulary-v1.json',
+    learning_schedule_path: 'content/korean-expression/learning-daily-v3.json',
+    learning_term_count: JSON.parse(fs.readFileSync(path.join(ROOT, 'content/korean-expression/learning-vocabulary-v1.json'), 'utf8')).term_count,
     daily_pool_path: 'content/korean-expression/daily-pool-v1.json',
     daily_pool_v1_path: 'content/korean-expression/daily-pool-v1.json',
     daily_pool_v2_path: 'content/korean-expression/daily-pool-v2.json',

@@ -73,6 +73,7 @@
 </div>
 <script type="module">
 import { selectEffectiveKoreanDailyPool, resolveKoreanDailyVerifiedTerm } from '../../src/domain/korean-daily.mjs';
+import { validateLearningVocabulary, resolveExpandedLearningDaily } from '../../src/domain/korean-learning.mjs';
 const app=document.querySelector('#app');
 const base='../../content/korean-expression/';
 const esc=(s='')=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -83,9 +84,9 @@ dateNode.textContent=new Intl.DateTimeFormat('ko-KR',{month:'long',day:'numeric'
 dateNode.dateTime=`${now.getFullYear()}-${String(now.getMonth()+1).padStart(2,'0')}-${String(now.getDate()).padStart(2,'0')}`;
 
 try{
-  const [data,meaningsData,registry,v1]=await Promise.all([
-    read(base+'emotion-map-v1.json'),read(base+'simple-meanings-v1.json'),
-    read(base+'daily-pools.json'),read(base+'daily-pool-v1.json')
+  const [data,meaningsData,registry,v1,learningSchedule]=await Promise.all([
+    read(base+'emotion-map-v1.json'),read(base+'learning-vocabulary-v1.json'),
+    read(base+'daily-pools.json'),read(base+'daily-pool-v1.json'),read(base+'learning-daily-v3.json')
   ]);
   const meta=selectEffectiveKoreanDailyPool(registry,now);
   let pool=v1;
@@ -93,10 +94,11 @@ try{
     pool=await read(base+meta.path);
     if(pool.pool_id!==meta.pool_id||pool.effective_date!==meta.effective_date)throw new Error('Pool mismatch');
   }
-  const daily=resolveKoreanDailyVerifiedTerm(data,pool,now);
+  const legacyDaily=resolveKoreanDailyVerifiedTerm(data,pool,now);
+  const daily=resolveExpandedLearningDaily(meaningsData,learningSchedule,legacyDaily,now);
   if(!daily)throw new Error('Daily term missing');
-  const meaningMap=new Map(meaningsData.entries.map(row=>[row.id,row]));
-  const termMap=new Map(data.terms.filter(row=>row.status==='SOURCE_VERIFIED').map(row=>[row.id,row]));
+  const termMap=validateLearningVocabulary(meaningsData);
+  const meaningMap=termMap;
   for(const term of termMap.values()){
     const row=meaningMap.get(term.id);
     if(!row?.meaning?.trim()||!row?.example?.trim()||row.expression!==term.expression)throw new Error('Learning copy incomplete');

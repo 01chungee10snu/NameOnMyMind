@@ -8,9 +8,9 @@ from pathlib import Path
 from playwright.sync_api import sync_playwright
 
 ROOT = Path(__file__).resolve().parents[2]
-OUT = ROOT / 'reports/ui/mobile-first-20260929/korean-learning-v21'
+OUT = ROOT / 'reports/ui/mobile-first-20260930/vocabulary-expansion-v22'
 OUT.mkdir(parents=True, exist_ok=True)
-DATA = json.loads((ROOT / 'content/korean-expression/simple-meanings-v1.json').read_text())
+DATA = json.loads((ROOT / 'content/korean-expression/learning-vocabulary-v1.json').read_text())
 ROWS = {row['id']: row for row in DATA['entries']}
 class QuietHandler(SimpleHTTPRequestHandler):
     def log_message(self, *_args):
@@ -56,6 +56,20 @@ try:
                 assert page.evaluate('document.documentElement.scrollWidth <= innerWidth'), row['id']
                 assert page.url.split('#')[0] == route
                 report['sweep_count'] += 1
+        # Every newly added word can be found and opened without exposing research views.
+        additions = [row for row in DATA['entries'] if row['origin'] == 'EXPANSION']
+        for row in additions:
+            page.locator('#find summary').click()
+            page.locator('#search').fill(row['expression'])
+            page.locator('#results .result').filter(has=page.locator('strong', has_text=row['expression'])).first.click()
+            page.wait_for_function('(word) => document.querySelector("h1").textContent === word', arg=row['expression'])
+            assert page.locator('.meaning').inner_text() == row['meaning']
+            assert page.url.split('#')[0] == route
+        report['new_word_search_checks'] = len(additions)
+        for word_id in ['KE0164', 'KE0172']:
+            page.evaluate('(id) => { location.hash=id }', word_id)
+            page.wait_for_function('(word) => document.querySelector("h1").textContent === word', arg=ROWS[word_id]['expression'])
+            page.screenshot(path=str(OUT / f'new-word-{word_id}-390x844.png'), full_page=True)
         # Search stays in the learner view; typed content never enters URL/storage/network.
         page.locator('#find summary').click()
         network_before = len(requests)
@@ -87,11 +101,28 @@ try:
         assert all(r['method'] == 'GET' for r in requests)
         # A failed data request fails visibly rather than rendering missing meanings.
         failed = context.new_page()
-        failed.route('**/simple-meanings-v1.json', lambda route: route.abort())
+        failed.route('**/learning-vocabulary-v1.json', lambda route: route.abort())
         failed.goto(route, wait_until='networkidle')
         assert failed.locator('[role=alert]').is_visible()
         assert failed.locator('#retry').is_visible()
         failed.close()
+        # Verify the same future schedule inside a browser with a fixed local date.
+        frozen_schedule = json.loads((ROOT / 'content/korean-expression/learning-daily-v3.json').read_text())
+        from datetime import date
+        future_checks = []
+        for stamp in ['2026-10-01', '2026-10-31', '2027-01-01', '2028-02-29']:
+            dated = browser.new_context(viewport={'width': 390, 'height': 844}, timezone_id='Asia/Seoul')
+            dated.add_init_script("const NativeDate=Date; const fixed=NativeDate.parse('" + stamp + "T12:00:00+09:00'); window.Date=class extends NativeDate { constructor(...a){ super(...(a.length?a:[fixed])); } static now(){return fixed;} };")
+            dated_page = dated.new_page()
+            dated_page.goto(route, wait_until='networkidle')
+            dated_page.wait_for_selector('h1')
+            index = (date.fromisoformat(stamp) - date(2026, 10, 1)).days % len(ROWS)
+            expected = ROWS[frozen_schedule['term_ids'][index]]['expression']
+            assert dated_page.locator('h1').inner_text() == expected, stamp
+            assert dated_page.locator('.label').inner_text() == '오늘의 마음말'
+            future_checks.append({'date': stamp, 'word': expected})
+            dated.close()
+        report['future_daily_checks'] = future_checks
         report.update(status='PASS', errors=errors, search_same_surface=True, source_failure_visible=True,
                       associated_input_labels=True, touch_targets_min_44=True,
                       browser='Chromium ' + browser.version, real_device_tested=False)

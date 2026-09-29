@@ -157,7 +157,7 @@ test('app discovery exposes research surfaces without promoting research candida
   assert.match(dailyLearningPrototype, /비슷한 말/);
   assert.match(dailyLearningPrototype, /내 문장/);
   assert.match(dailyLearningPrototype, /다른 마음말 찾기/);
-  assert.match(dailyLearningPrototype, /simple-meanings-v1\.json/);
+  assert.match(dailyLearningPrototype, /learning-vocabulary-v1\.json/);
   assert.match(dailyLearningPrototype, /selectEffectiveKoreanDailyPool/);
   assert.match(dailyLearningPrototype, /daily-pools\.json/);
   assert.match(dailyLearningPrototype, /여기에 쓴 글은 저장되지 않아요/);

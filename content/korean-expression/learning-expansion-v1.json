@@ -1,0 +1,598 @@
+{
+  "schema_version": "1.0.0",
+  "expansion_id": "KOREAN_LEARNING_EXPANSION_V1_2026-09-30",
+  "purpose": "Extend the simple learning surface without changing frozen evidence maps or historical daily pools. Includes emotional states, relational attitudes and bodily metaphors. Definitions and fictional examples are editorial paraphrases, not age-validation claims.",
+  "review_type": "MODEL_EDITORIAL_REVIEW",
+  "child_usability_tested": false,
+  "term_count": 26,
+  "entries": [
+    {
+      "id": "KE0152",
+      "expression": "아늑하다",
+      "family_id": "KF05",
+      "meaning": "따뜻하게 감싸인 듯 편안하고 조용하다.",
+      "example": "이불을 덮고 책을 읽으니 방 안이 아늑하다.",
+      "related_ids": [
+        "KE0030",
+        "KE0157"
+      ],
+      "wording": "EDITORIAL_SIMPLIFICATION",
+      "status": "SOURCE_VERIFIED",
+      "evidence_scope": "DICTIONARY_SENSE_ONLY",
+      "age_review_status": "AGE_REVIEW_REQUIRED",
+      "evidence_ref": "KRD:90526",
+      "source_url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=90526&nation=eng",
+      "sense_number": 1,
+      "selected_definition": "따뜻하고 부드럽게 감싸 안기듯 편안하고 조용한 느낌이 있다."
+    },
+    {
+      "id": "KE0153",
+      "expression": "가뿐하다",
+      "family_id": "KF04",
+      "meaning": "부담이 없어 마음이 가볍고 편하다.",
+      "example": "걱정하던 발표를 마치니 마음이 가뿐하다.",
+      "related_ids": [
+        "KE0023",
+        "KE0022"
+      ],
+      "wording": "EDITORIAL_SIMPLIFICATION",
+      "status": "SOURCE_VERIFIED",
+      "evidence_scope": "DICTIONARY_SENSE_ONLY",
+      "age_review_status": "AGE_REVIEW_REQUIRED",
+      "evidence_ref": "KRD:14548",
+      "source_url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=14548&nation=eng",
+      "sense_number": 4,
+      "selected_definition": "마음에 부담이 없이 가볍고 편하다."
+    },
+    {
+      "id": "KE0154",
+      "expression": "차분하다",
+      "family_id": "KF05",
+      "meaning": "들뜨지 않고 마음이 조용하다.",
+      "example": "천천히 숨을 쉬니 마음이 차분해진다.",
+      "related_ids": [
+        "KE0155",
+        "KE0033"
+      ],
+      "wording": "EDITORIAL_SIMPLIFICATION",
+      "status": "SOURCE_VERIFIED",
+      "evidence_scope": "DICTIONARY_SENSE_ONLY",
+      "age_review_status": "AGE_REVIEW_REQUIRED",
+      "evidence_ref": "KRD:82475",
+      "source_url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=82475&nation=eng",
+      "sense_number": 1,
+      "selected_definition": "마음이 가라앉아 조용하다."
+    },
+    {
+      "id": "KE0155",
+      "expression": "담담하다",
+      "family_id": "KF05",
+      "meaning": "마음이 차분하고 편안하다.",
+      "example": "결과를 기다리며 담담하게 하루를 보낸다.",
+      "related_ids": [
+        "KE0154",
+        "KE0028"
+      ],
+      "wording": "EDITORIAL_SIMPLIFICATION",
+      "status": "SOURCE_VERIFIED",
+      "evidence_scope": "DICTIONARY_SENSE_ONLY",
+      "age_review_status": "AGE_REVIEW_REQUIRED",
+      "evidence_ref": "KRD:44177",
+      "source_url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=44177&nation=eng",
+      "sense_number": 1,
+      "selected_definition": "차분하고 편안하다."
+    },
+    {
+      "id": "KE0156",
+      "expression": "여유롭다",
+      "family_id": "KF05",
+      "meaning": "시간이나 형편이 넉넉하다.",
+      "example": "할 일을 일찍 마쳐 여유롭게 책을 읽는다.",
+      "related_ids": [
+        "KE0029",
+        "KE0027"
+      ],
+      "wording": "EDITORIAL_SIMPLIFICATION",
+      "status": "SOURCE_VERIFIED",
+      "evidence_scope": "DICTIONARY_SENSE_ONLY",
+      "age_review_status": "AGE_REVIEW_REQUIRED",
+      "evidence_ref": "KRD:67788",
+      "source_url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=67788&nation=eng",
+      "sense_number": 1,
+      "selected_definition": "시간이나 공간, 돈 등이 넉넉하여 남음이 있다."
+    },
+    {
+      "id": "KE0157",
+      "expression": "푸근하다",
+      "family_id": "KF05",
+      "meaning": "느낌이나 분위기가 따뜻하고 편안하다.",
+      "example": "내 이야기를 들어 주는 할아버지의 말이 푸근하다.",
+      "related_ids": [
+        "KE0030",
+        "KE0152"
+      ],
+      "wording": "EDITORIAL_SIMPLIFICATION",
+      "status": "SOURCE_VERIFIED",
+      "evidence_scope": "DICTIONARY_SENSE_ONLY",
+      "age_review_status": "AGE_REVIEW_REQUIRED",
+      "evidence_ref": "KRD:83564",
+      "source_url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=83564&nation=eng",
+      "sense_number": 2,
+      "selected_definition": "느낌이나 분위기가 부드럽고 따뜻하여 편안하다."
+    },
+    {
+      "id": "KE0158",
+      "expression": "황홀하다",
+      "family_id": "KF01",
+      "meaning": "무언가에 마음을 빼앗겨 몹시 들뜨다.",
+      "example": "밤하늘에 가득한 별을 보고 황홀해졌다.",
+      "related_ids": [
+        "KE0159",
+        "KE0013"
+      ],
+      "wording": "EDITORIAL_SIMPLIFICATION",
+      "status": "SOURCE_VERIFIED",
+      "evidence_scope": "DICTIONARY_SENSE_ONLY",
+      "age_review_status": "AGE_REVIEW_REQUIRED",
+      "evidence_ref": "KRD:87890",
+      "source_url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=87890&nation=eng",
+      "sense_number": 2,
+      "selected_definition": "마음이나 시선을 빼앗겨 흥분된 상태이다."
+    },
+    {
+      "id": "KE0159",
+      "expression": "감격하다",
+      "family_id": "KF22",
+      "meaning": "마음 깊이 느껴 크게 감동하다.",
+      "example": "오래 기다린 가족을 다시 만나 감격했다.",
+      "related_ids": [
+        "KE0147",
+        "KE0158"
+      ],
+      "wording": "EDITORIAL_SIMPLIFICATION",
+      "status": "SOURCE_VERIFIED",
+      "evidence_scope": "DICTIONARY_SENSE_ONLY",
+      "age_review_status": "AGE_REVIEW_REQUIRED",
+      "evidence_ref": "KRD:15271",
+      "source_url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=15271&nation=eng",
+      "sense_number": 1,
+      "selected_definition": "마음에 깊이 느끼어 매우 감동하다."
+    },
+    {
+      "id": "KE0160",
+      "expression": "감탄하다",
+      "family_id": "KF20",
+      "meaning": "놀라거나 훌륭하게 여겨 마음 깊이 느끼다.",
+      "example": "친구가 만든 멋진 작품을 보고 감탄했다.",
+      "related_ids": [
+        "KE0131",
+        "KE0133"
+      ],
+      "wording": "EDITORIAL_SIMPLIFICATION",
+      "status": "SOURCE_VERIFIED",
+      "evidence_scope": "DICTIONARY_SENSE_ONLY",
+      "age_review_status": "AGE_REVIEW_REQUIRED",
+      "evidence_ref": "KRD:22681",
+      "source_url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=22681&nation=eng",
+      "sense_number": 1,
+      "selected_definition": "마음속 깊이 크게 느끼다."
+    },
+    {
+      "id": "KE0161",
+      "expression": "통쾌하다",
+      "family_id": "KF01",
+      "meaning": "아주 즐겁고 속이 시원하다.",
+      "example": "풀리지 않던 수수께끼를 풀어 통쾌했다.",
+      "related_ids": [
+        "KE0022",
+        "KE0004"
+      ],
+      "wording": "EDITORIAL_SIMPLIFICATION",
+      "status": "SOURCE_VERIFIED",
+      "evidence_scope": "DICTIONARY_SENSE_ONLY",
+      "age_review_status": "AGE_REVIEW_REQUIRED",
+      "evidence_ref": "KRD:81838",
+      "source_url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=81838&nation=eng",
+      "sense_number": 1,
+      "selected_definition": "아주 즐겁고 속이 시원하다."
+    },
+    {
+      "id": "KE0162",
+      "expression": "상쾌하다",
+      "family_id": "KF05",
+      "meaning": "기분이나 느낌이 시원하고 산뜻하다.",
+      "example": "아침 바람을 맞으며 걸으니 상쾌하다.",
+      "related_ids": [
+        "KE0024",
+        "KE0004"
+      ],
+      "wording": "EDITORIAL_SIMPLIFICATION",
+      "status": "SOURCE_VERIFIED",
+      "evidence_scope": "DICTIONARY_SENSE_ONLY",
+      "age_review_status": "AGE_REVIEW_REQUIRED",
+      "evidence_ref": "KRD:16227",
+      "source_url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=16227&nation=eng",
+      "sense_number": 1,
+      "selected_definition": "기분이나 느낌 등이 시원하고 산뜻하다."
+    },
+    {
+      "id": "KE0163",
+      "expression": "흔쾌하다",
+      "family_id": "KF01",
+      "meaning": "기쁘고 즐거운 마음이 들다.",
+      "example": "같이 놀자는 말에 흔쾌하게 고개를 끄덕였다.",
+      "related_ids": [
+        "KE0004",
+        "KE0001"
+      ],
+      "wording": "EDITORIAL_SIMPLIFICATION",
+      "status": "SOURCE_VERIFIED",
+      "evidence_scope": "DICTIONARY_SENSE_ONLY",
+      "age_review_status": "AGE_REVIEW_REQUIRED",
+      "evidence_ref": "KRD:89250",
+      "source_url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=89250&nation=eng",
+      "sense_number": 1,
+      "selected_definition": "기쁘고 유쾌하다."
+    },
+    {
+      "id": "KE0164",
+      "expression": "살갑다",
+      "family_id": "KF06",
+      "meaning": "말이나 태도가 따뜻하고 부드럽다.",
+      "example": "새 친구가 살갑게 말을 걸어 주었다.",
+      "related_ids": [
+        "KE0037",
+        "KE0165"
+      ],
+      "wording": "EDITORIAL_SIMPLIFICATION",
+      "status": "SOURCE_VERIFIED",
+      "evidence_scope": "DICTIONARY_SENSE_ONLY",
+      "age_review_status": "AGE_REVIEW_REQUIRED",
+      "evidence_ref": "KRD:61656",
+      "source_url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=61656&nation=eng",
+      "sense_number": 1,
+      "selected_definition": "마음씨나 태도가 다정하고 부드럽다."
+    },
+    {
+      "id": "KE0165",
+      "expression": "살뜰하다",
+      "family_id": "KF06",
+      "meaning": "마음과 행동이 정성스럽고 따뜻하다.",
+      "example": "아픈 동생을 살뜰하게 챙기는 모습이 고맙다.",
+      "related_ids": [
+        "KE0164",
+        "KE0037"
+      ],
+      "wording": "EDITORIAL_SIMPLIFICATION",
+      "status": "SOURCE_VERIFIED",
+      "evidence_scope": "DICTIONARY_SENSE_ONLY",
+      "age_review_status": "AGE_REVIEW_REQUIRED",
+      "evidence_ref": "KRD:61659",
+      "source_url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=61659&nation=eng",
+      "sense_number": 1,
+      "selected_definition": "마음이나 행동이 정성스럽고 친절하며 다정하다."
+    },
+    {
+      "id": "KE0166",
+      "expression": "미덥다",
+      "family_id": "KF06",
+      "meaning": "믿고 의지할 만하다.",
+      "example": "맡은 일을 끝까지 하는 친구가 미덥다.",
+      "related_ids": [
+        "KE0031",
+        "KE0021"
+      ],
+      "wording": "EDITORIAL_SIMPLIFICATION",
+      "status": "SOURCE_VERIFIED",
+      "evidence_scope": "DICTIONARY_SENSE_ONLY",
+      "age_review_status": "AGE_REVIEW_REQUIRED",
+      "evidence_ref": "KRD:56245",
+      "source_url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=56245&nation=eng",
+      "sense_number": 1,
+      "selected_definition": "믿음이 가는 데가 있다."
+    },
+    {
+      "id": "KE0167",
+      "expression": "정답다",
+      "family_id": "KF06",
+      "meaning": "따뜻하고 가깝게 느껴지다.",
+      "example": "오랜만에 만난 친구의 목소리가 정답다.",
+      "related_ids": [
+        "KE0035",
+        "KE0036"
+      ],
+      "wording": "EDITORIAL_SIMPLIFICATION",
+      "status": "SOURCE_VERIFIED",
+      "evidence_scope": "DICTIONARY_SENSE_ONLY",
+      "age_review_status": "AGE_REVIEW_REQUIRED",
+      "evidence_ref": "KRD:75947",
+      "source_url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=75947&nation=eng",
+      "sense_number": 1,
+      "selected_definition": "따뜻하고 친근한 느낌이 있다."
+    },
+    {
+      "id": "KE0168",
+      "expression": "정들다",
+      "family_id": "KF06",
+      "meaning": "함께 지내며 아끼고 좋아하는 마음이 깊어지다.",
+      "example": "매일 돌보던 작은 화분에 정이 들었다.",
+      "related_ids": [
+        "KE0034",
+        "KE0036"
+      ],
+      "wording": "EDITORIAL_SIMPLIFICATION",
+      "status": "SOURCE_VERIFIED",
+      "evidence_scope": "DICTIONARY_SENSE_ONLY",
+      "age_review_status": "AGE_REVIEW_REQUIRED",
+      "evidence_ref": "KRD:76062",
+      "source_url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=76062&nation=eng",
+      "sense_number": 1,
+      "selected_definition": "정이 생겨서 마음이 깊어지다."
+    },
+    {
+      "id": "KE0169",
+      "expression": "끌리다",
+      "family_id": "KF02",
+      "meaning": "관심이 생겨 마음이 쏠리다.",
+      "example": "친구가 들려준 이야기에 마음이 끌린다.",
+      "related_ids": [
+        "KE0158",
+        "KE0129"
+      ],
+      "wording": "EDITORIAL_SIMPLIFICATION",
+      "status": "SOURCE_VERIFIED",
+      "evidence_scope": "DICTIONARY_SENSE_ONLY",
+      "age_review_status": "AGE_REVIEW_REQUIRED",
+      "evidence_ref": "KRD:16267",
+      "source_url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=16267&nation=eng",
+      "sense_number": 2,
+      "selected_definition": "관심이 쏠리다."
+    },
+    {
+      "id": "KE0170",
+      "expression": "어색하다",
+      "family_id": "KF17",
+      "meaning": "친하지 않은 사람을 만나 편하지 않고 자연스럽지 않다.",
+      "example": "처음 만난 친구와 마주 앉으니 어색하다.",
+      "related_ids": [
+        "KE0171",
+        "KE0115"
+      ],
+      "wording": "EDITORIAL_SIMPLIFICATION",
+      "status": "SOURCE_VERIFIED",
+      "evidence_scope": "DICTIONARY_SENSE_ONLY",
+      "age_review_status": "AGE_REVIEW_REQUIRED",
+      "evidence_ref": "KRD:67014",
+      "source_url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=67014&nation=eng",
+      "sense_number": 1,
+      "selected_definition": "잘 모르거나 별로 만나고 싶지 않았던 사람과 마주 대하여 불편하고 자연스럽지 못하다."
+    },
+    {
+      "id": "KE0171",
+      "expression": "서먹하다",
+      "family_id": "KF17",
+      "meaning": "친하지 않거나 익숙하지 않아 어색하다.",
+      "example": "오랫동안 못 만난 친구와 처음에는 서먹했다.",
+      "related_ids": [
+        "KE0170",
+        "KE0114"
+      ],
+      "wording": "EDITORIAL_SIMPLIFICATION",
+      "status": "SOURCE_VERIFIED",
+      "evidence_scope": "DICTIONARY_SENSE_ONLY",
+      "age_review_status": "AGE_REVIEW_REQUIRED",
+      "evidence_ref": "KRD:63134",
+      "source_url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=63134&nation=eng",
+      "sense_number": 1,
+      "selected_definition": "익숙하거나 친하지 아니하여 어색하다."
+    },
+    {
+      "id": "KE0172",
+      "expression": "머쓱하다",
+      "family_id": "KF17",
+      "meaning": "창피한 일을 겪거나 신나던 마음이 꺾여 어색하다.",
+      "example": "아는 사람인 줄 알고 인사했다가 머쓱해졌다.",
+      "related_ids": [
+        "KE0115",
+        "KE0173"
+      ],
+      "wording": "EDITORIAL_SIMPLIFICATION",
+      "status": "SOURCE_VERIFIED",
+      "evidence_scope": "DICTIONARY_SENSE_ONLY",
+      "age_review_status": "AGE_REVIEW_REQUIRED",
+      "evidence_ref": "KRD:54799",
+      "source_url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=54799&nation=eng",
+      "sense_number": 2,
+      "selected_definition": "무안을 당하거나 흥이 꺾여 어색하고 부끄럽다."
+    },
+    {
+      "id": "KE0173",
+      "expression": "무안하다",
+      "family_id": "KF17",
+      "meaning": "몹시 부끄러워 얼굴을 들기 어렵다.",
+      "example": "내 실수에 모두 웃자 무안해졌다.",
+      "related_ids": [
+        "KE0112",
+        "KE0172"
+      ],
+      "wording": "EDITORIAL_SIMPLIFICATION",
+      "status": "SOURCE_VERIFIED",
+      "evidence_scope": "DICTIONARY_SENSE_ONLY",
+      "age_review_status": "AGE_REVIEW_REQUIRED",
+      "evidence_ref": "KRD:55685",
+      "source_url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=55685&nation=eng",
+      "sense_number": 1,
+      "selected_definition": "얼굴을 들지 못할 만큼 수줍거나 창피하다."
+    },
+    {
+      "id": "KE0174",
+      "expression": "수줍다",
+      "family_id": "KF17",
+      "meaning": "다른 사람 앞에서 말하거나 행동하기가 부끄럽다.",
+      "example": "칭찬을 들은 동생이 수줍게 웃었다.",
+      "related_ids": [
+        "KE0114",
+        "KE0111"
+      ],
+      "wording": "EDITORIAL_SIMPLIFICATION",
+      "status": "SOURCE_VERIFIED",
+      "evidence_scope": "DICTIONARY_SENSE_ONLY",
+      "age_review_status": "AGE_REVIEW_REQUIRED",
+      "evidence_ref": "KRD:65474",
+      "source_url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=65474&nation=eng",
+      "sense_number": 1,
+      "selected_definition": "다른 사람 앞에서 말이나 행동을 하는 것이 어렵거나 부끄럽다. 또는 그런 태도가 있다."
+    },
+    {
+      "id": "KE0175",
+      "expression": "겸연쩍다",
+      "family_id": "KF17",
+      "meaning": "미안하거나 쑥스러워 어색하다.",
+      "example": "내 실수로 친구를 기다리게 해 겸연쩍었다.",
+      "related_ids": [
+        "KE0115",
+        "KE0118"
+      ],
+      "wording": "EDITORIAL_SIMPLIFICATION",
+      "status": "SOURCE_VERIFIED",
+      "evidence_scope": "DICTIONARY_SENSE_ONLY",
+      "age_review_status": "AGE_REVIEW_REQUIRED",
+      "evidence_ref": "KRD:30433",
+      "source_url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=30433&nation=eng",
+      "sense_number": 1,
+      "selected_definition": "쑥스럽거나 미안하여 어색하다."
+    },
+    {
+      "id": "KE0176",
+      "expression": "쓰리다",
+      "family_id": "KF08",
+      "meaning": "마음이 쑤시듯 아프고 괴롭다.",
+      "example": "친구에게 심한 말을 들으니 마음이 쓰리다.",
+      "related_ids": [
+        "KE0053",
+        "KE0177"
+      ],
+      "wording": "EDITORIAL_SIMPLIFICATION",
+      "status": "SOURCE_VERIFIED",
+      "evidence_scope": "DICTIONARY_SENSE_ONLY",
+      "age_review_status": "AGE_REVIEW_REQUIRED",
+      "evidence_ref": "KRD:66444",
+      "source_url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=66444&nation=eng",
+      "sense_number": 3,
+      "selected_definition": "마음이 쑤시는 것처럼 아프고 괴롭다."
+    },
+    {
+      "id": "KE0177",
+      "expression": "아리다",
+      "family_id": "KF10",
+      "meaning": "마음이 몹시 아프다.",
+      "example": "헤어진 친구를 떠올리니 마음이 아리다.",
+      "related_ids": [
+        "KE0176",
+        "KE0045"
+      ],
+      "wording": "EDITORIAL_SIMPLIFICATION",
+      "status": "SOURCE_VERIFIED",
+      "evidence_scope": "DICTIONARY_SENSE_ONLY",
+      "age_review_status": "AGE_REVIEW_REQUIRED",
+      "evidence_ref": "KRD:66823",
+      "source_url": "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=66823&nation=eng",
+      "sense_number": 3,
+      "selected_definition": "마음이 몹시 아프다."
+    }
+  ],
+  "related_overrides": {
+    "KE0027": [
+      "KE0152",
+      "KE0028"
+    ],
+    "KE0023": [
+      "KE0153",
+      "KE0022"
+    ],
+    "KE0028": [
+      "KE0154",
+      "KE0033"
+    ],
+    "KE0029": [
+      "KE0156",
+      "KE0155"
+    ],
+    "KE0030": [
+      "KE0157",
+      "KE0152"
+    ],
+    "KE0147": [
+      "KE0159",
+      "KE0146"
+    ],
+    "KE0133": [
+      "KE0160",
+      "KE0132"
+    ],
+    "KE0022": [
+      "KE0161",
+      "KE0023"
+    ],
+    "KE0024": [
+      "KE0162",
+      "KE0153"
+    ],
+    "KE0037": [
+      "KE0164",
+      "KE0165"
+    ],
+    "KE0031": [
+      "KE0166",
+      "KE0021"
+    ],
+    "KE0035": [
+      "KE0167",
+      "KE0168"
+    ],
+    "KE0115": [
+      "KE0172",
+      "KE0175"
+    ],
+    "KE0111": [
+      "KE0174",
+      "KE0112"
+    ],
+    "KE0113": [
+      "KE0173",
+      "KE0115"
+    ],
+    "KE0053": [
+      "KE0176",
+      "KE0055"
+    ],
+    "KE0045": [
+      "KE0177",
+      "KE0034"
+    ],
+    "KE0013": [
+      "KE0158",
+      "KE0147"
+    ],
+    "KE0004": [
+      "KE0163",
+      "KE0002"
+    ],
+    "KE0008": [
+      "KE0169",
+      "KE0009"
+    ],
+    "KE0114": [
+      "KE0170",
+      "KE0171"
+    ]
+  },
+  "preserved_source_sha256": {
+    "emotion-map-v1.json": "f5f0bad6c6de111623f226f1fd9523e19bf2fedaf262d263f202f1348810b0e7",
+    "daily-pool-v1.json": "b3deb74eccb9ce983d728776659a290e4fe36fed2f48272c56d19b18bb22ef74",
+    "daily-pool-v2.json": "9493387eb67b1da7d09d94ce71c6d2a4bba2b69227d6886d619dee020e0071c9",
+    "daily-pools.json": "3a431c1bb013f6130af7cc0bbd5974357a18d9c8ec35db2b8ceaaa462c479fb9",
+    "learning-copy-v1.json": "d928096cc1120c8c5bc612b1fedec245e41742b2f77c01c76e2ae813b90bc0c1",
+    "simple-meanings-v1.json": "64424fd42dcc2879992f9329063c735956143cbdb54d35ef120138d68cbca247"
+  }
+}

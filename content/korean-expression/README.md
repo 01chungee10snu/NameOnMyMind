@@ -108,3 +108,13 @@
 - 공개 파일: `simple-meanings-v1.json` (현재 snapshot `KOREAN_SIMPLE_MEANINGS_V2_2026-09-29`). 151개 모두 학습용 편집 풀이이며 사전 원문 인용으로 표시하지 않는다.
 - 재생성: `npm run build:korean-copy`. 검증: `npm run check:korean-language`.
 - 첫 번째 사전 뜻을 자동 채택하지 않는다. 어린이 이해도·실기기 검증을 완료했다고 주장하지 않는다.
+
+
+## 어휘 확장 V22 (2026-09-30)
+
+- 간명한 `/learn/` 화면의 어휘를 151개에서 177개로 확장했다. 기존 연구 지도와 고정 원본은 유지한다.
+- 추가 원본: `learning-expansion-v1.json`. 출처: `evidence/learning-expansion-source-v1.json`. 공식 사전에서 표제어와 해당 뜻을 확인한 26개만 수록했다.
+- 공개 통합 데이터: `learning-vocabulary-v1.json`. 새 단어도 쉬운 뜻·예문·비교할 말 두 개를 갖춘다.
+- `learning-daily-v3.json`은 2026-10-01부터 적용하며 과거 날짜의 오늘의 말은 바꾸지 않는다.
+- 재생성: `npm run build:learning-vocabulary`. 검증: `npm run check:korean-language`.
+- 어린이 이해도 실험과 실기기 검증은 아직 수행하지 않았다. 출처 확인이 끝나지 않은 후보는 공개 데이터에 넣지 않았다.
