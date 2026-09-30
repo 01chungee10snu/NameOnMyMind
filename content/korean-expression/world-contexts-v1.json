@@ -1,0 +1,171 @@
+{
+  "schema_version": "1.0.0",
+  "purpose": "Text-only context companions authorized for the simple learner surface; not promotion of held G5 full cards or their audio/illustrations.",
+  "cultural_note": "어느 문화만 느끼는 감정이라는 뜻은 아니에요. 한국어와 겹치는 부분과 달라지는 맥락을 함께 살펴봐요.",
+  "human_comprehension_tested": false,
+  "entries": [
+    {
+      "id": "WC01",
+      "term": "saudade",
+      "language": "포르투갈어",
+      "lang": "pt",
+      "meaning": "소중한 사람이나 시간을 그리워하며, 곁에 없다는 아픔도 느끼는 마음.",
+      "difference": "그리움에 애정 어린 기억과 부재의 아쉬움이 겹치는 맥락을 살펴봐요.",
+      "anchors": [
+        "그립다",
+        "애틋하다",
+        "허전하다",
+        "그리움"
+      ],
+      "source_name": "Priberam · saudade",
+      "source_url": "https://dicionario.priberam.org/saudade",
+      "locator": "noun senses 1–2",
+      "checked_at": "2026-09-30",
+      "relation": "PARTIAL_CONTEXT_OVERLAP",
+      "copy_status": "MODEL_EDITED_TEXT_ONLY",
+      "rights_note": "Original Korean paraphrase and bibliographic link only; no copied dictionary passage or media."
+    },
+    {
+      "id": "WC02",
+      "term": "hiraeth",
+      "language": "웨일스어",
+      "lang": "cy",
+      "meaning": "떠나온 고향이나 속했던 곳, 지나간 삶을 향해 마음이 당기는 그리움.",
+      "difference": "향수와 닮았지만, 고향과 소속감, 남겨 두고 온 삶의 맥락을 함께 살펴봐요.",
+      "anchors": [
+        "아련하다",
+        "쓸쓸하다",
+        "고독하다",
+        "향수",
+        "고향",
+        "소속감"
+      ],
+      "source_name": "Wales.com · Pamela Petro, Hiraeth",
+      "source_url": "https://www.wales.com/about/history-and-heritage/welsh-traditions-myths-and-legends/hiraeth",
+      "locator": "cultural essay; home, absence and the past",
+      "checked_at": "2026-09-30",
+      "relation": "PARTIAL_CONTEXT_OVERLAP",
+      "copy_status": "MODEL_EDITED_TEXT_ONLY",
+      "rights_note": "Original Korean paraphrase and bibliographic link only; no copied dictionary passage or media."
+    },
+    {
+      "id": "WC03",
+      "term": "Geborgenheit",
+      "language": "독일어",
+      "lang": "de",
+      "meaning": "누군가나 어떤 곳의 품 안에서 안전하게 보호받는 듯한 느낌.",
+      "difference": "편안함과 겹치면서도, 보호받고 안전하다는 느낌에 초점을 맞춰요.",
+      "anchors": [
+        "포근하다",
+        "푸근하다",
+        "아늑하다",
+        "든든하다",
+        "안심되다",
+        "편안하다",
+        "미덥다",
+        "안전감"
+      ],
+      "source_name": "Duden · Geborgenheit",
+      "source_url": "https://www.duden.de/rechtschreibung/Geborgenheit",
+      "locator": "definition, family/home examples, protection/security synonyms",
+      "checked_at": "2026-09-30",
+      "relation": "PARTIAL_CONTEXT_OVERLAP",
+      "copy_status": "MODEL_EDITED_TEXT_ONLY",
+      "rights_note": "Original Korean paraphrase and bibliographic link only; no copied dictionary passage or media."
+    },
+    {
+      "id": "WC04",
+      "term": "Fernweh",
+      "language": "독일어",
+      "lang": "de",
+      "meaning": "멀리 있는 나라나 먼 곳을 향해 떠나고 싶어지는 간절한 마음.",
+      "difference": "기대나 설렘 가운데서도, 마음이 향하는 곳이 먼 나라와 먼 곳인 경우예요.",
+      "anchors": [
+        "설레다",
+        "기대되다",
+        "고대하다",
+        "끌리다",
+        "동경",
+        "여행"
+      ],
+      "source_name": "Duden · Fernweh",
+      "source_url": "https://www.duden.de/rechtschreibung/Fernweh",
+      "locator": "definition: longing for distant places/countries",
+      "checked_at": "2026-09-30",
+      "relation": "PARTIAL_CONTEXT_OVERLAP",
+      "copy_status": "MODEL_EDITED_TEXT_ONLY",
+      "rights_note": "Original Korean paraphrase and bibliographic link only; no copied dictionary passage or media."
+    },
+    {
+      "id": "WC05",
+      "term": "Torschlusspanik",
+      "language": "독일어",
+      "lang": "de",
+      "meaning": "중요한 기회를 더는 잡지 못할까 봐 두렵고 조급해지는 마음.",
+      "difference": "모든 초조함을 뜻하지는 않아요. 결정적인 기회를 놓칠까 하는 두려움에 가까워요.",
+      "anchors": [
+        "초조하다",
+        "조바심하다",
+        "불안하다",
+        "마음을 졸이다",
+        "조급하다",
+        "기회"
+      ],
+      "source_name": "Duden · Torschlusspanik",
+      "source_url": "https://www.duden.de/rechtschreibung/Torschlusspanik",
+      "locator": "definition: fear of missing something decisive",
+      "checked_at": "2026-09-30",
+      "relation": "PARTIAL_CONTEXT_OVERLAP",
+      "copy_status": "MODEL_EDITED_TEXT_ONLY",
+      "rights_note": "Original Korean paraphrase and bibliographic link only; no copied dictionary passage or media."
+    },
+    {
+      "id": "WC06",
+      "term": "物の哀れ",
+      "language": "일본어",
+      "lang": "ja",
+      "meaning": "사물이나 계절을 마주하며 조용하고 깊게 마음이 움직이는 느낌.",
+      "difference": "단순한 슬픔보다, 사물과 삶에서 느끼는 섬세한 감동을 다루는 문학·미학의 표현이에요.",
+      "anchors": [
+        "애잔하다",
+        "여운",
+        "찡하다",
+        "뭉클하다",
+        "아리다",
+        "감격하다",
+        "감상",
+        "정취"
+      ],
+      "source_name": "小学館 · デジタル大辞泉, 物の哀れ",
+      "source_url": "https://kotobank.jp/word/%E7%89%A9%E3%81%AE%E5%93%80%E3%82%8C-646372",
+      "locator": "Daijisen senses 1–2; Nihon Kokugo Daijiten aesthetic and seasonal context",
+      "checked_at": "2026-09-30",
+      "relation": "PARTIAL_CONTEXT_OVERLAP",
+      "copy_status": "MODEL_EDITED_TEXT_ONLY",
+      "rights_note": "Original Korean paraphrase and bibliographic link only; no copied dictionary passage or media."
+    },
+    {
+      "id": "WC07",
+      "term": "舍不得",
+      "language": "중국어",
+      "lang": "zh",
+      "meaning": "소중히 아끼는 마음 때문에 헤어지거나 내어 주기가 차마 어려운 마음.",
+      "difference": "아쉬움과 닮았지만, 아끼기 때문에 놓아주기 어려운 순간에 초점을 맞춰요.",
+      "anchors": [
+        "아쉽다",
+        "섭섭하다",
+        "미련이 남다",
+        "소중하다",
+        "정들다",
+        "미련"
+      ],
+      "source_name": "汉典 · 舍不得",
+      "source_url": "https://zdic.net/hans/%E8%88%8D%E4%B8%8D%E5%BE%97",
+      "locator": "lexical definition: reluctance to part with or give up what one cherishes",
+      "checked_at": "2026-09-30",
+      "relation": "PARTIAL_CONTEXT_OVERLAP",
+      "copy_status": "MODEL_EDITED_TEXT_ONLY",
+      "rights_note": "Original Korean paraphrase and bibliographic link only; no copied dictionary passage or media."
+    }
+  ]
+}

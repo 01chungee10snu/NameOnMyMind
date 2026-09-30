@@ -62,6 +62,23 @@
     .sr-only{position:absolute;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
     @media(max-width:350px){.page{padding-left:20px;padding-right:20px}.meaning{font-size:19px}}
     @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+    .world-context{padding:20px 0;border-bottom:1px solid var(--line)}
+    .world-context h2{font-size:13px;color:var(--muted);font-weight:500}
+    .world-title{margin:10px 0 8px;font-size:23px;line-height:1.45;overflow-wrap:anywhere}
+    .world-title span{display:inline-block;margin-left:10px;font-size:12px;color:var(--muted)}
+    .world-meaning{margin:0;font-size:15px;line-height:1.7;word-break:keep-all;overflow-wrap:anywhere}
+    .dictionary-actions{display:flex;gap:8px;margin-top:18px;flex-wrap:wrap}
+    .dictionary-button{min-height:46px;padding:9px 12px;border:1px solid #a99d8e;border-radius:8px;background:#fffdfa;color:var(--ink);font-size:14px}
+    .dictionary-button.secondary{background:transparent}
+    .dictionary-result{display:block;text-align:left;width:100%;min-height:46px;padding:11px 0;border:0;border-bottom:1px solid var(--line);background:transparent;color:var(--ink);font-size:16px}
+    .dictionary-help{font-size:12px}
+    .dictionary-entry{margin-top:20px;padding:16px 0;border-top:1px solid var(--line)}
+    .dictionary-entry h3{margin:8px 0 16px;font-size:26px;overflow-wrap:anywhere}
+    .dictionary-label,.dictionary-pos{color:var(--muted);font-size:12px}
+    .dictionary-pos{display:block;margin-bottom:5px}
+    .dictionary-senses{padding-left:22px;font-size:16px;line-height:1.75;overflow-wrap:anywhere}
+    .dictionary-senses li{margin-bottom:14px}
+    .dictionary-credit{font-size:12px;line-height:1.7;color:var(--muted)}
   </style>
 </head>
 <body>
@@ -74,6 +91,7 @@
 <script type="module">
 import { selectEffectiveKoreanDailyPool, resolveKoreanDailyVerifiedTerm } from '../../src/domain/korean-daily.mjs';
 import { validateLearningVocabulary, resolveExpandedLearningDaily } from '../../src/domain/korean-learning.mjs';
+import { worldMarkup, worldSourceMarkup, mountDictionarySearch } from '../../src/ui/learning-dictionary.mjs';
 const app=document.querySelector('#app');
 const base='../../content/korean-expression/';
 const esc=(s='')=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -84,9 +102,9 @@ dateNode.textContent=new Intl.DateTimeFormat('ko-KR',{month:'long',day:'numeric'
 dateNode.dateTime=`${now.getFullYear()}-${String(now.getMonth()+1).padStart(2,'0')}-${String(now.getDate()).padStart(2,'0')}`;
 
 try{
-  const [data,meaningsData,registry,v1,learningSchedule]=await Promise.all([
+  const [data,meaningsData,registry,v1,learningSchedule,world]=await Promise.all([
     read(base+'emotion-map-v1.json'),read(base+'learning-vocabulary-v1.json'),
-    read(base+'daily-pools.json'),read(base+'daily-pool-v1.json'),read(base+'learning-daily-v3.json')
+    read(base+'daily-pools.json'),read(base+'daily-pool-v1.json'),read(base+'learning-daily-v3.json'),read(base+'world-contexts-v1.json').catch(()=>null)
   ]);
   const meta=selectEffectiveKoreanDailyPool(registry,now);
   let pool=v1;
@@ -110,18 +128,18 @@ try{
     <div id="word-card" aria-live="polite" aria-atomic="true"></div>
     <details id="write"><summary>내 문장 써보기</summary><div class="inside">
       <label class="sentence-guide" id="sentence-label" for="sentence"></label>
-      <textarea id="sentence" maxlength="240" autocomplete="off" placeholder="이 말이 어울리는 내 이야기를 써 보세요." aria-describedby="privacy"></textarea>
+      <textarea id="sentence" maxlength="240" autocomplete="off" spellcheck="false" placeholder="이 말이 어울리는 내 이야기를 써 보세요." aria-describedby="privacy"></textarea>
       <p class="privacy" id="privacy">여기에 쓴 글은 저장되지 않아요. 다른 곳으로 보내지도 않아요.</p>
     </div></details>
     <details id="find"><summary>다른 마음말 찾기</summary><div class="inside">
       <label class="sr-only" for="search">단어나 뜻으로 찾기</label>
       <input id="search" type="search" autocomplete="off" placeholder="단어나 뜻으로 찾아보세요">
       <div class="results" id="results" aria-live="polite"></div>
-      <p class="hint" id="hint">예: 서운하다, 뿌듯하다, 고요하다</p>
+      <p class="hint" id="hint">예: 서운하다, 뿌듯하다, 고요하다</p><div id="dictionary-search-host"></div>
     </div></details>
     <details id="source"><summary>뜻 출처</summary><div class="inside">
       <p class="source-note">사전과 검토 자료를 바탕으로 뜻을 쉽게 풀어 썼어요. 예문은 직접 만든 문장이에요.</p>
-      <a class="source-link" id="source-link" target="_blank" rel="noopener noreferrer" hidden>국립국어원에서 보기</a>
+      <a class="source-link" id="source-link" target="_blank" rel="noopener noreferrer" hidden>국립국어원에서 보기</a><div id="world-sources"></div>
     </div></details>
     <a class="today" id="today" href="#" hidden>오늘의 말로 돌아가기</a>`;
   const card=document.querySelector('#word-card');
@@ -147,7 +165,7 @@ try{
       <div class="example"><span class="example-label">이렇게 써요</span><p>${esc(row.example)}</p></div>
     </section><section class="related"><h2>비슷한 말</h2><div class="similar-list">
       ${similarTo(term).map(other=>`<a class="similar" href="#${other.id}"><strong>${esc(other.expression)}</strong><span>${esc(meaningMap.get(other.id).meaning)}</span></a>`).join('')}
-    </div></section>`;
+    </div></section>${worldMarkup(world,term.expression)}`;
     sentence.value=drafts.get(term.id)||'';
     document.querySelector('#sentence-label').textContent=`‘${term.expression}’라는 말을 내 이야기에도 써 볼까요?`;
     for(const id of ['write','find','source'])document.getElementById(id).open=false;
@@ -157,6 +175,7 @@ try{
     const safe=/^https:\/\/(krdict|stdict)\.korean\.go\.kr\//.test(url);
     source.hidden=!safe;
     if(safe)source.href=url;else source.removeAttribute('href');
+    document.querySelector('#world-sources').innerHTML=worldSourceMarkup(world,term.expression);
     document.title=`${term.expression} — 마음말`;
     if(focus){document.querySelector('#word').focus({preventScroll:true});window.scrollTo({top:0,behavior:'instant'})}
   }
@@ -166,7 +185,15 @@ try{
     results.replaceChildren();hint.hidden=Boolean(q);
     if(!q)return;
     const rows=[...termMap.values()].filter(term=>term.expression.includes(q)||meaningMap.get(term.id).meaning.includes(q));
-    if(!rows.length){results.innerHTML='<p class="hint">찾은 말이 없어요. 다른 말로 찾아보세요.</p>';return}
+    const foreignRows=(world?.entries||[]).filter(row=>row.term.toLocaleLowerCase().includes(q.toLocaleLowerCase()));
+    if(!rows.length&&!foreignRows.length){results.innerHTML='<p class="hint">학습 카드에서 찾은 말이 없어요. 사전에서 더 찾아보세요.</p>';return}
+    for(const row of foreignRows.slice(0,3)){
+      const anchor=[...termMap.values()].find(term=>row.anchors.includes(term.expression));if(!anchor)continue;
+      const link=document.createElement('a');link.className='result';link.href=`#${anchor.id}`;
+      link.innerHTML=`<strong>${esc(row.term)} · ${esc(row.language)}</strong><span>${esc(row.meaning)}</span>`;
+      link.addEventListener('click',()=>{if(selected?.id===anchor.id)renderTerm(true)});results.append(link);
+    }
+
     for(const term of rows.slice(0,8)){
       const link=document.createElement('a');link.className='result';link.href=`#${term.id}`;
       link.innerHTML=`<strong>${esc(term.expression)}</strong><span>${esc(meaningMap.get(term.id).meaning)}</span>`;
@@ -175,6 +202,7 @@ try{
     }
     if(rows.length>8){const note=document.createElement('p');note.className='hint';note.textContent='찾는 말을 조금 더 길게 써 보세요.';results.append(note)}
   }
+  mountDictionarySearch({host:document.querySelector('#dictionary-search-host'),searchInput:search,world,baseUrl:'../../content/dictionary/open-ko/'});
   search.addEventListener('input',renderSearch);
   window.addEventListener('hashchange',()=>renderTerm(true));
   renderTerm();

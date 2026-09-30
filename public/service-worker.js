@@ -1,4 +1,4 @@
-const SNAPSHOT = '4b0a1837b4035aae';
+const SNAPSHOT = 'd98626df7bacf1c0';
 const SHELL_CACHE = `nomm-shell-v1-${SNAPSHOT}`;
 const CONTENT_CACHE = `nomm-content-${SNAPSHOT}`;
 const ASSET_CACHE = `nomm-assets-v1-${SNAPSHOT}`;
@@ -17,6 +17,8 @@ const SHELL_URLS = [
   './src/domain/discovery.mjs',
   './src/domain/korean-daily.mjs',
   './src/domain/korean-learning.mjs',
+  './src/domain/dictionary.mjs',
+  './src/ui/learning-dictionary.mjs',
   './src/local/state.mjs',
   './src/agent/webmcp-adapter.mjs'
 ];

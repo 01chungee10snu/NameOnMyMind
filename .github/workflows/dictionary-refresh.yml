@@ -1,0 +1,35 @@
+name: Refresh dictionary source (review artifact)
+on:
+  workflow_dispatch:
+    inputs:
+      provider:
+        description: Source to collect; output requires review before release
+        type: choice
+        options: [open-wiktionary, nikl]
+        default: open-wiktionary
+permissions:
+  contents: read
+jobs:
+  collect:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7
+      - name: Collect public dictionary
+        if: inputs.provider == 'open-wiktionary'
+        run: python3 scripts/dictionary/import-open-dictionary.py --download
+      - name: Collect official dictionary candidates
+        if: inputs.provider == 'nikl'
+        env:
+          KRDICT_API_KEY: ${{ secrets.KRDICT_API_KEY }}
+        run: python3 scripts/dictionary/collect-nikl.py --output .tmp/nikl-candidates.json
+      - uses: actions/upload-artifact@v4
+        if: success()
+        with:
+          name: dictionary-source-review
+          path: |
+            content/dictionary/
+            .tmp/nikl-candidates.json
+          include-hidden-files: true
+          retention-days: 7
+# Deliberately no automatic publication, credential-to-browser export or daily-card promotion.

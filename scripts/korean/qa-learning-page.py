@@ -8,7 +8,7 @@ from pathlib import Path
 from playwright.sync_api import sync_playwright
 
 ROOT = Path(__file__).resolve().parents[2]
-OUT = ROOT / 'reports/ui/mobile-first-20260930/vocabulary-expansion-v22'
+OUT = ROOT / 'reports/ui/mobile-first-20260930/open-dictionary-world-v23'
 OUT.mkdir(parents=True, exist_ok=True)
 DATA = json.loads((ROOT / 'content/korean-expression/learning-vocabulary-v1.json').read_text())
 ROWS = {row['id']: row for row in DATA['entries']}

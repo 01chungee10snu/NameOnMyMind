@@ -27,11 +27,12 @@
     "check:g5-research": "npm run check:g5-selection && npm run validate:g5-research && npm run check:privacy",
     "validate:korean-expression": "node scripts/korean/validate-expression-ladders.mjs",
     "validate:korean-emotion": "node scripts/korean/validate-emotion-map.mjs",
-    "check:korean-language": "npm run validate:korean-expression && npm run validate:korean-emotion && node scripts/korean/build-simple-meanings.mjs --check && npm run test:korean-learning && node scripts/korean/build-learning-vocabulary.mjs --check && npm run test:learning-expansion",
+    "check:korean-language": "npm run validate:korean-expression && npm run validate:korean-emotion && node scripts/korean/build-simple-meanings.mjs --check && npm run test:korean-learning && node scripts/korean/build-learning-vocabulary.mjs --check && npm run test:learning-expansion && npm run test:dictionary-world",
     "build:korean-copy": "node scripts/korean/build-simple-meanings.mjs",
     "test:korean-learning": "node --test tests/g5/simple-learning.test.mjs",
     "build:learning-vocabulary": "node scripts/korean/build-learning-vocabulary.mjs",
-    "test:learning-expansion": "node --test tests/g5/learning-expansion.test.mjs"
+    "test:learning-expansion": "node --test tests/g5/learning-expansion.test.mjs",
+    "test:dictionary-world": "node --test tests/g5/dictionary-world.test.mjs && python3 tests/g5/test_nikl_adapter.py"
   },
   "devDependencies": {
     "ajv": "8.20.0",

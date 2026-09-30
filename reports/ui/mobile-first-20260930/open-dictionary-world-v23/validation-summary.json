@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "node_tests": 72,
+  "python_fixture_tests": 5,
+  "curated_mobile_sweeps": 354,
+  "foreign_mobile_sweeps": 14,
+  "headwords": 31710,
+  "definitions": 40518,
+  "live_public_api": {
+    "status": "PASS",
+    "word": "설레다",
+    "meaning": "동사\n마음이 가라앉지 아니하고 들떠서 두근거리다."
+  },
+  "credentials_required_provider": "NIKL_NOT_ACTIVATED",
+  "scope": "Local implementation and validation; deployment verified separately."
+}

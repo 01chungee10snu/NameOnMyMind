@@ -1,0 +1,247 @@
+
+> nameonmymind@0.1.0 check:korean-language
+> npm run validate:korean-expression && npm run validate:korean-emotion && node scripts/korean/build-simple-meanings.mjs --check && npm run test:korean-learning && node scripts/korean/build-learning-vocabulary.mjs --check && npm run test:learning-expansion && npm run test:dictionary-world
+
+
+> nameonmymind@0.1.0 validate:korean-expression
+> node scripts/korean/validate-expression-ladders.mjs
+
+{
+  "status": "PASS",
+  "track_id": "KOREAN_EXPRESSIVE_CHOICE",
+  "lexeme_count": 12,
+  "ladder_count": 6,
+  "candidate_pool_count": 61,
+  "lexical_pass": 11,
+  "usage_pass": 1,
+  "source_hosts": [
+    "krdict.korean.go.kr",
+    "www.korean.go.kr"
+  ],
+  "examples": {
+    "emphasis": [
+      "무척",
+      "대단히",
+      "유난히"
+    ],
+    "success": [
+      "됐다!",
+      "해냈다!",
+      "쾌재!"
+    ]
+  }
+}
+
+> nameonmymind@0.1.0 validate:korean-emotion
+> node scripts/korean/validate-emotion-map.mjs
+
+{
+  "status": "PASS",
+  "track_id": "KOREAN_EMOTION_ARTICULATION",
+  "family_count": 22,
+  "term_count": 151,
+  "contrast_set_count": 16,
+  "source_verified_count": 151,
+  "evidence_registry_count": 148,
+  "discovery_only_count": 0,
+  "levels": [
+    1,
+    2,
+    3
+  ],
+  "verified_contrast_sets": [
+    "KC001",
+    "KC002",
+    "KC003",
+    "KC004",
+    "KC005",
+    "KC006",
+    "KC007",
+    "KC008",
+    "KC009",
+    "KC010",
+    "KC011",
+    "KC012",
+    "KC013",
+    "KC014",
+    "KC015",
+    "KC016"
+  ],
+  "level1_verified_count": 38,
+  "level2_verified_count": 72,
+  "level2_discovery_count": 0,
+  "level3_verified_count": 41,
+  "level3_discovery_count": 0,
+  "school_age_direct_count": 21,
+  "school_age_related_count": 1,
+  "age_review_required_count": 0
+}
+{"status":"PASS","terms":151,"examples":151,"mode":"check"}
+
+> nameonmymind@0.1.0 test:korean-learning
+> node --test tests/g5/simple-learning.test.mjs
+
+TAP version 13
+# Subtest: Every verified term has one short editorial meaning and one original example
+ok 1 - Every verified term has one short editorial meaning and one original example
+  ---
+  duration_ms: 1.249666
+  type: 'test'
+  ...
+# Subtest: Selected emotional senses and whole idioms do not regress to the first headword sense
+ok 2 - Selected emotional senses and whole idioms do not regress to the first headword sense
+  ---
+  duration_ms: 0.141709
+  type: 'test'
+  ...
+# Subtest: Learning surface includes visible meanings, examples and two related words, not research clutter
+ok 3 - Learning surface includes visible meanings, examples and two related words, not research clutter
+  ---
+  duration_ms: 0.146833
+  type: 'test'
+  ...
+# Subtest: Word navigation remains on the simple surface and drafts are never persisted or transmitted
+ok 4 - Word navigation remains on the simple surface and drafts are never persisted or transmitted
+  ---
+  duration_ms: 0.1295
+  type: 'test'
+  ...
+1..4
+# tests 4
+# suites 0
+# pass 4
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 34.864292
+{"status":"PASS","term_count":177,"added":26,"source_verified":26}
+
+> nameonmymind@0.1.0 test:learning-expansion
+> node --test tests/g5/learning-expansion.test.mjs
+
+TAP version 13
+# Subtest: The learner vocabulary expands from 151 to 177 with 26 nonduplicate source-backed words
+ok 1 - The learner vocabulary expands from 151 to 177 with 26 nonduplicate source-backed words
+  ---
+  duration_ms: 0.567708
+  type: 'test'
+  ...
+# Subtest: Physical and nonemotional dictionary senses cannot replace selected emotional senses
+ok 2 - Physical and nonemotional dictionary senses cannot replace selected emotional senses
+  ---
+  duration_ms: 0.150459
+  type: 'test'
+  ...
+# Subtest: Previously published maps, copy and v1/v2 daily schedules are byte-for-byte preserved
+ok 3 - Previously published maps, copy and v1/v2 daily schedules are byte-for-byte preserved
+  ---
+  duration_ms: 0.633083
+  type: 'test'
+  ...
+# Subtest: All new words are reachable through existing comparison links without new UI sections
+ok 4 - All new words are reachable through existing comparison links without new UI sections
+  ---
+  duration_ms: 0.301958
+  type: 'test'
+  ...
+# Subtest: Before October 1 the published daily word does not change
+ok 5 - Before October 1 the published daily word does not change
+  ---
+  duration_ms: 1.182084
+  type: 'test'
+  ...
+# Subtest: The future cycle includes all 177 words once and begins with a new word
+ok 6 - The future cycle includes all 177 words once and begins with a new word
+  ---
+  duration_ms: 9.136833
+  type: 'test'
+  ...
+# Subtest: Month/year/leap-day boundaries advance by a single local calendar day
+ok 7 - Month/year/leap-day boundaries advance by a single local calendar day
+  ---
+  duration_ms: 0.289208
+  type: 'test'
+  ...
+# Subtest: Missing meanings, broken links, unknown IDs and invalid schedules fail closed
+ok 8 - Missing meanings, broken links, unknown IDs and invalid schedules fail closed
+  ---
+  duration_ms: 1.127917
+  type: 'test'
+  ...
+1..8
+# tests 8
+# suites 0
+# pass 8
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 46.516958
+
+> nameonmymind@0.1.0 test:dictionary-world
+> node --test tests/g5/dictionary-world.test.mjs && python3 tests/g5/test_nikl_adapter.py
+
+TAP version 13
+# Subtest: Broad dictionary inventory is separate from the 177 curated cards and is not an emotion count
+ok 1 - Broad dictionary inventory is separate from the 177 curated cards and is not an emotion count
+  ---
+  duration_ms: 4.666
+  type: 'test'
+  ...
+# Subtest: Every imported shard is hash-linked, with nonempty separate senses and no media or literary examples
+ok 2 - Every imported shard is hash-linked, with nonempty separate senses and no media or literary examples
+  ---
+  duration_ms: 62.696833
+  type: 'test'
+  ...
+# Subtest: Query normalization, exact match priority and bounded results avoid full-sentence or URL requests
+ok 3 - Query normalization, exact match priority and bounded results avoid full-sentence or URL requests
+  ---
+  duration_ms: 6.289334
+  type: 'test'
+  ...
+# Subtest: Foreign companions are text-only contextual overlaps with primary source links, not HOLD full-card promotions
+ok 4 - Foreign companions are text-only contextual overlaps with primary source links, not HOLD full-card promotions
+  ---
+  duration_ms: 0.853625
+  type: 'test'
+  ...
+# Subtest: The interface sends no dictionary query on typing and has no API key or reflective-text dependency
+ok 5 - The interface sends no dictionary query on typing and has no API key or reflective-text dependency
+  ---
+  duration_ms: 0.519042
+  type: 'test'
+  ...
+# Subtest: Anonymous live API requests use a fixed origin, no cookies and rate-limit backoff
+ok 6 - Anonymous live API requests use a fixed origin, no cookies and rate-limit backoff
+  ---
+  duration_ms: 11.016291
+  type: 'test'
+  ...
+# Subtest: Oversized live API payloads are rejected before HTML processing
+ok 7 - Oversized live API payloads are rejected before HTML processing
+  ---
+  duration_ms: 0.33275
+  type: 'test'
+  ...
+# Subtest: Source refresh collects review artifacts and never exposes a NIKL key to the browser
+ok 8 - Source refresh collects review artifacts and never exposes a NIKL key to the browser
+  ---
+  duration_ms: 0.655333
+  type: 'test'
+  ...
+1..8
+# tests 8
+# suites 0
+# pass 8
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 132.980542
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
