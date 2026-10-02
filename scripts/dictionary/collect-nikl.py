@@ -28,6 +28,7 @@ def parse_response(payload):
     if root.tag != 'channel': raise NiklError('INVALID_CHANNEL')
     entries = []
     omitted_senses = 0
+    missing_sense_orders = 0
     omitted_entries = 0
     for item in root.findall('item'):
         code, word = item.findtext('target_code') or '', item.findtext('word') or ''
@@ -36,10 +37,15 @@ def parse_response(payload):
         for sense in item.findall('sense'):
             number = sense.findtext('sense_order')
             definition = sense.findtext('definition')
-            if not number or not number.isdigit() or not definition or not definition.strip():
+            if not definition or not definition.strip():
                 omitted_senses += 1
                 continue
             definition = definition.strip()
+            if not number or not number.isdigit():
+                missing_sense_orders += 1
+                senses.append({'sense_order': None, 'sense_order_status': 'API_DID_NOT_PROVIDE_VALID_ORDER',
+                                'definition': definition})
+                continue
             senses.append({'sense_order': int(number), 'definition': definition})
         if not senses:
             omitted_entries += 1
@@ -52,12 +58,12 @@ def parse_response(payload):
         raise NiklError('INVALID_TOTAL')
     total = int(total_text)
     return {'total': total, 'entries': entries, 'omitted_senses': omitted_senses,
-            'omitted_entries': omitted_entries}
+            'missing_sense_orders': missing_sense_orders, 'omitted_entries': omitted_entries}
 
 def collect(key, queries, pages=1, opener=urllib.request.urlopen):
     if not re.fullmatch(r'[a-fA-F0-9]{32}', key or ''): raise NiklError('MISSING_OR_INVALID_KRDICT_API_KEY')
     if not 1 <= pages <= 10 or not 1 <= len(queries) <= 10: raise NiklError('REQUEST_BUDGET_EXCEEDED')
-    found = {}; count = 0; omitted_senses = 0; omitted_entries = 0
+    found = {}; count = 0; omitted_senses = 0; missing_sense_orders = 0; omitted_entries = 0
     for query in queries:
         if not re.fullmatch(r'[가-힣 ]{1,30}', query): raise NiklError('INVALID_QUERY')
         for page in range(pages):
@@ -69,6 +75,7 @@ def collect(key, queries, pages=1, opener=urllib.request.urlopen):
             except Exception: raise NiklError('NIKL_NETWORK_ERROR') from None
             data = parse_response(payload); count += 1
             omitted_senses += data['omitted_senses']
+            missing_sense_orders += data['missing_sense_orders']
             omitted_entries += data['omitted_entries']
             for entry in data['entries']: found[entry['target_code']] = entry
             if start + 100 > data['total'] or not data['entries']: break
@@ -76,7 +83,8 @@ def collect(key, queries, pages=1, opener=urllib.request.urlopen):
     return {'source': '국립국어원 한국어기초사전 Open API', 'status': 'RESEARCH_IMPORT_REVIEW_REQUIRED',
             'retrieved_at': datetime.datetime.now(datetime.timezone.utc).isoformat(),
             'requests': count, 'entry_count': len(found), 'entries': list(found.values()),
-            'omitted_senses': omitted_senses, 'omitted_entries': omitted_entries,
+            'omitted_senses': omitted_senses, 'missing_sense_orders': missing_sense_orders,
+            'omitted_entries': omitted_entries,
             'rights_review_required': True, 'daily_card_promotion': False}
 
 def main():
@@ -90,6 +98,7 @@ def main():
         args.output.parent.mkdir(parents=True, exist_ok=True)
         args.output.write_text(json.dumps(result, ensure_ascii=False, indent=2)+'\n',encoding='utf-8')
         print(json.dumps({'status':'PASS','entries':result['entry_count'],'omitted_senses':result['omitted_senses'],
+                          'missing_sense_orders':result['missing_sense_orders'],
                           'omitted_entries':result['omitted_entries'],'requests':result['requests']}))
     except NiklError as error:
         print(json.dumps({'status':'NOT_ACTIVE' if str(error)=='MISSING_OR_INVALID_KRDICT_API_KEY' else 'FAILED','code':str(error)}))
