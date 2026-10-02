@@ -27,26 +27,37 @@ def parse_response(payload):
         raise NiklError('NIKL_ERROR_' + code if re.fullmatch(r'\d{3}', code) else 'NIKL_ERROR_UNKNOWN')
     if root.tag != 'channel': raise NiklError('INVALID_CHANNEL')
     entries = []
+    omitted_senses = 0
+    omitted_entries = 0
     for item in root.findall('item'):
-        code, word = item.findtext('target_code', ''), item.findtext('word', '')
+        code, word = item.findtext('target_code') or '', item.findtext('word') or ''
         if not code.isdigit() or not word.strip(): raise NiklError('INVALID_ENTRY')
         senses = []
         for sense in item.findall('sense'):
-            number, definition = sense.findtext('sense_order', ''), sense.findtext('definition', '').strip()
-            if not number.isdigit() or not definition: raise NiklError('INVALID_SENSE')
+            number = sense.findtext('sense_order')
+            definition = sense.findtext('definition')
+            if not number or not number.isdigit() or not definition or not definition.strip():
+                omitted_senses += 1
+                continue
+            definition = definition.strip()
             senses.append({'sense_order': int(number), 'definition': definition})
-        if senses:
-            entries.append({'target_code': code, 'word': word, 'homonym': item.findtext('sup_no', ''),
-                            'pos': item.findtext('pos', ''), 'senses': senses,
-                            'source_url': 'https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=' + code + '&nation=eng'})
-    try: total = int(root.findtext('total', '0'))
-    except ValueError: raise NiklError('INVALID_TOTAL') from None
-    return {'total': total, 'entries': entries}
+        if not senses:
+            omitted_entries += 1
+            continue
+        entries.append({'target_code': code, 'word': word, 'homonym': item.findtext('sup_no', ''),
+                        'pos': item.findtext('pos', ''), 'senses': senses,
+                        'source_url': 'https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=' + code + '&nation=eng'})
+    total_text = root.findtext('total')
+    if not total_text or not re.fullmatch(r'\d+', total_text.strip()):
+        raise NiklError('INVALID_TOTAL')
+    total = int(total_text)
+    return {'total': total, 'entries': entries, 'omitted_senses': omitted_senses,
+            'omitted_entries': omitted_entries}
 
 def collect(key, queries, pages=1, opener=urllib.request.urlopen):
     if not re.fullmatch(r'[a-fA-F0-9]{32}', key or ''): raise NiklError('MISSING_OR_INVALID_KRDICT_API_KEY')
     if not 1 <= pages <= 10 or not 1 <= len(queries) <= 10: raise NiklError('REQUEST_BUDGET_EXCEEDED')
-    found = {}; count = 0
+    found = {}; count = 0; omitted_senses = 0; omitted_entries = 0
     for query in queries:
         if not re.fullmatch(r'[가-힣 ]{1,30}', query): raise NiklError('INVALID_QUERY')
         for page in range(pages):
@@ -57,12 +68,15 @@ def collect(key, queries, pages=1, opener=urllib.request.urlopen):
                 with opener(request, timeout=15) as response: payload = response.read(2_000_001)
             except Exception: raise NiklError('NIKL_NETWORK_ERROR') from None
             data = parse_response(payload); count += 1
+            omitted_senses += data['omitted_senses']
+            omitted_entries += data['omitted_entries']
             for entry in data['entries']: found[entry['target_code']] = entry
             if start + 100 > data['total'] or not data['entries']: break
             time.sleep(1)
     return {'source': '국립국어원 한국어기초사전 Open API', 'status': 'RESEARCH_IMPORT_REVIEW_REQUIRED',
             'retrieved_at': datetime.datetime.now(datetime.timezone.utc).isoformat(),
             'requests': count, 'entry_count': len(found), 'entries': list(found.values()),
+            'omitted_senses': omitted_senses, 'omitted_entries': omitted_entries,
             'rights_review_required': True, 'daily_card_promotion': False}
 
 def main():
@@ -75,7 +89,8 @@ def main():
         result = collect(os.environ.get('KRDICT_API_KEY', ''), [q.strip() for q in args.query.split(',')], args.pages)
         args.output.parent.mkdir(parents=True, exist_ok=True)
         args.output.write_text(json.dumps(result, ensure_ascii=False, indent=2)+'\n',encoding='utf-8')
-        print(json.dumps({'status':'PASS','entries':result['entry_count'],'requests':result['requests']}))
+        print(json.dumps({'status':'PASS','entries':result['entry_count'],'omitted_senses':result['omitted_senses'],
+                          'omitted_entries':result['omitted_entries'],'requests':result['requests']}))
     except NiklError as error:
         print(json.dumps({'status':'NOT_ACTIVE' if str(error)=='MISSING_OR_INVALID_KRDICT_API_KEY' else 'FAILED','code':str(error)}))
         return 3
