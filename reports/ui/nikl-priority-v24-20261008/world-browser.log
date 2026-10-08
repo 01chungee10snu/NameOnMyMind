@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "dictionary_lazy_on_first_action": true,
+  "foreign_mobile_checks": 14,
+  "foreign_term_search": "PASS",
+  "broad_word_lookup": "망설이다",
+  "live_api": {
+    "status": "PASS",
+    "word": "설레다",
+    "meaning": "동사\n마음이 가라앉지 아니하고 들떠서 두근거리다."
+  },
+  "live_api_request_count": 1,
+  "typing_and_reflection_external_requests": 0,
+  "inert_parser_xss_language_checks": "PASS",
+  "live_failure_snapshot_fallback": "PASS",
+  "stale_query_cancellation": "PASS",
+  "errors": [],
+  "real_device_tested": false,
+  "browser": "Chromium 148.0.7778.96"
+}

@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0.0",
+  "version": "nikl-v24-49385654031976a0",
+  "status": "DICTIONARY_SEARCH_ONLY",
+  "provider": "NIKL",
+  "source": "국립국어원 한국어기초사전 Open API",
+  "source_name": "국립국어원 한국어기초사전",
+  "source_sha256": "49385654031976a0a14cb1da2f95ca4d58a6dfd4feb581c45cfa9f95e314e33d",
+  "source_url": "https://krdict.korean.go.kr/",
+  "source_run_url": "https://github.com/01chungee10snu/NameOnMyMind/actions/runs/36969611880",
+  "retrieved_at": "2026-10-02T05:35:41.932579+00:00",
+  "records": 287,
+  "unique_words": 277,
+  "searchable_headwords": 277,
+  "definition_count": 287,
+  "homograph_pair_count": 10,
+  "coverage": "PARTIAL_SEARCH_CAPTURE_ONLY_NOT_FULL_ENTRY",
+  "license": "CC BY-SA 2.0 KR",
+  "license_url": "https://creativecommons.org/licenses/by-sa/2.0/kr/",
+  "rights_source": "https://krdict.korean.go.kr/kor/kboardPolicy/copyRightTermsInfo",
+  "official_sense_numbers_known": false,
+  "daily_card_promotion": false,
+  "child_usability_tested": false,
+  "combined_inventory": {
+    "open_words": 31710,
+    "overlap_words": 139,
+    "new_words": 138,
+    "unique_words": 31848
+  },
+  "files": {
+    "index.json": {
+      "sha256": "b7a7ef303dbeb7801ad5250aa2fbed96ead0946b8fbabf579c49ec14c4515762",
+      "bytes": 17209
+    },
+    "dictionary.json": {
+      "sha256": "a6804bff168b59ec5f0ddaca07a23ba4888c2d6598068e85c68efc5aa55faf98",
+      "bytes": 244054
+    }
+  }
+}

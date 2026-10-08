@@ -18,6 +18,7 @@ const SHELL_URLS = [
   './src/domain/korean-daily.mjs',
   './src/domain/korean-learning.mjs',
   './src/domain/dictionary.mjs',
+  './src/domain/official-dictionary.mjs',
   './src/ui/learning-dictionary.mjs',
   './src/local/state.mjs',
   './src/agent/webmcp-adapter.mjs'

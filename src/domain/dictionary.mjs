@@ -36,7 +36,13 @@ export function matchWorldContext(world, expression) {
 async function responseText(response, maxBytes) {
   if (!response.ok) throw new DictionaryError(response.status === 429 ? 'RATE_LIMITED' : 'UNAVAILABLE');
   if (Number(response.headers.get('content-length') || 0) > maxBytes) throw new DictionaryError('OVERSIZED_RESPONSE');
-  const reader = response.body.getReader();
+  const reader = response.body?.getReader?.();
+  if (!reader) {
+    const text = await response.text();
+    const bytes = new TextEncoder().encode(text);
+    if (bytes.length > maxBytes) throw new DictionaryError('OVERSIZED_RESPONSE');
+    return { text, bytes };
+  }
   const chunks = []; let size = 0;
   try {
     while (true) {
@@ -50,7 +56,7 @@ async function responseText(response, maxBytes) {
   for (const part of chunks) { bytes.set(part, at); at += part.length; }
   return { text: new TextDecoder().decode(bytes), bytes };
 }
-async function getJson(url, { signal, limit = 2_000_000, expectedHash = null } = {}) {
+export async function fetchJsonBounded(url, { signal, limit = 2_000_000, expectedHash = null } = {}) {
   const response = await fetch(url, { signal, credentials: 'omit', referrerPolicy: 'no-referrer', cache: 'no-cache' });
   const { text, bytes } = await responseText(response, limit);
   if (expectedHash) {
@@ -59,9 +65,13 @@ async function getJson(url, { signal, limit = 2_000_000, expectedHash = null } =
   }
   try { return JSON.parse(text); } catch { throw new DictionaryError('INVALID_DATA'); }
 }
+async function getJson(url, { signal, limit = 2_000_000, expectedHash = null } = {}) {
+  return fetchJsonBounded(url, { signal, limit, expectedHash });
+}
 
 export function parseWiktionaryPayload(payload, requestedWord, documentObject = globalThis.document) {
   const word = normalizeHeadword(requestedWord);
+  if (!payload || typeof payload !== 'object' || Array.isArray(payload)) throw new DictionaryError('INVALID_DATA');
   if (payload.error) throw new DictionaryError(payload.error.code === 'missingtitle' ? 'NOT_FOUND' : 'UNAVAILABLE');
   const parsed = payload.parse;
   if (!parsed || parsed.title !== word || typeof parsed.text !== 'string' || parsed.text.length > 1_000_000) throw new DictionaryError('INVALID_DATA');
@@ -103,7 +113,7 @@ export function createDictionaryClient(baseUrl) {
   async function ensureIndex(signal) {
     if (index) return index;
     const manifest = await getJson(new URL('manifest.json',base), { signal, limit: 50_000 });
-    if (!manifest.version || !manifest.files?.['index.json'] || manifest.status !== 'DICTIONARY_SEARCH_ONLY') throw new DictionaryError('INVALID_DATA');
+    if (!manifest.version || !/^[a-f0-9]{64}$/.test(manifest.files?.['index.json']?.sha256 || '') || manifest.status !== 'DICTIONARY_SEARCH_ONLY') throw new DictionaryError('INVALID_DATA');
     const fetched = await getJson(new URL('index.json',base), { signal, limit: 12_000_000, expectedHash: manifest.files['index.json'].sha256 });
     if (fetched.version !== manifest.version || fetched.entries.length !== manifest.searchable_headwords) throw new DictionaryError('SNAPSHOT_MISMATCH');
     if (fetched.entries.some(row=>!/^WD[a-f0-9]{16}$/.test(row[0]) || !/^[01][a-f0-9]$/.test(row[2]) || typeof row[1] !== 'string')) throw new DictionaryError('INVALID_DATA');
@@ -112,18 +122,23 @@ export function createDictionaryClient(baseUrl) {
   }
   return {
     async search(query, signal) { return rankDictionaryEntries(await ensureIndex(signal), query); },
+    async matchingRows(query, signal) {
+      const q=normalizeHeadword(query);
+      return (await ensureIndex(signal)).filter(row=>row[1].includes(q)).map(row=>[...row,'WIKTIONARY']);
+    },
     async entry(id, signal) {
       const data = await ensureIndex(signal), row = data.find(row=>row[0]===id);
       if (!row) throw new DictionaryError('NOT_FOUND');
       if (!shards.has(row[2])) {
         const file = `entries/${row[2]}.json`;
+        if (!/^[a-f0-9]{64}$/.test(snapshot.files[file]?.sha256 || '')) throw new DictionaryError('INVALID_DATA');
         const data = await getJson(new URL(file,base), { signal, limit: 2_000_000, expectedHash: snapshot.files[file]?.sha256 });
         if (data.version !== snapshot.version) throw new DictionaryError('SNAPSHOT_MISMATCH');
         shards.set(row[2],data.entries);
       }
       const entry = shards.get(row[2])[id];
       if (!entry || entry.word !== row[1]) throw new DictionaryError('INVALID_DATA');
-      return validateDictionaryEntry({ ...entry, source_url: dictionaryArticleUrl(entry.word) });
+      return validateDictionaryEntry({ ...structuredClone(entry), source_url: dictionaryArticleUrl(entry.word) });
     },
     async live(query, signal) {
       const word = normalizeHeadword(query);

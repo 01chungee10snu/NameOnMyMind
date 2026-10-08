@@ -88,6 +88,9 @@ jobs:
           if (korean.daily_pool_v2_path !== 'content/korean-expression/daily-pool-v2.json' || korean.daily_pool_registry_path !== 'content/korean-expression/daily-pools.json') throw new Error('Korean daily pool v2/registry manifest path mismatch');
           if (korean.daily_learning_path !== 'prototypes/korean-daily-learning-20260923/' || korean.daily_learning_alias_path !== 'learn/') throw new Error('Korean daily-learning manifest path mismatch');
           if (korean.simple_meanings_path !== 'content/korean-expression/simple-meanings-v1.json') throw new Error('Korean simple meanings manifest path mismatch');
+          for (const path of ['public/src/domain/official-dictionary.mjs','public/content/dictionary/nikl/manifest.json','public/content/dictionary/nikl/index.json','public/content/dictionary/nikl/dictionary.json']) if (!fs.existsSync(path)) throw new Error('Official dictionary staging missing');
+          const nikl = JSON.parse(fs.readFileSync('public/content/dictionary/nikl/manifest.json','utf8'));
+          if (nikl.records !== 287 || nikl.unique_words !== 277 || nikl.status !== 'DICTIONARY_SEARCH_ONLY' || nikl.daily_card_promotion !== false) throw new Error('Official dictionary release boundary changed');
           const dictionary = JSON.parse(fs.readFileSync('public/content/dictionary/open-ko/manifest.json','utf8'));
           const dictionaryIndex = JSON.parse(fs.readFileSync('public/content/dictionary/open-ko/index.json','utf8'));
           const world = JSON.parse(fs.readFileSync('public/content/korean-expression/world-contexts-v1.json','utf8'));

@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "node_tests": 90,
+  "python_tests": 8,
+  "official_source_entries": 287,
+  "official_distinct_spellings": 277,
+  "official_overlapping_spellings": 139,
+  "official_added_spellings": 138,
+  "combined_distinct_spellings": 31848,
+  "curated_cards": 177,
+  "curated_mobile_sweeps": 354,
+  "world_mobile_sweeps": 14,
+  "official_viewport_checks": 8,
+  "provider_failure_scenarios": 2,
+  "physical_device_tested": false,
+  "child_comprehension_tested": false,
+  "scope": "Independent source, runtime and browser verification before publication; production verification recorded separately."
+}

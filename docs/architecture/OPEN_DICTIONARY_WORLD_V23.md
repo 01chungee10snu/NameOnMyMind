@@ -46,3 +46,8 @@ Build/stage the previously authorized preview and run both browser QA scripts:
 `python3 scripts/korean/qa-learning-page.py`
 `python3 scripts/dictionary/qa-open-dictionary.py`
 The second script makes one real anonymous public API request and records success or failure explicitly. Core parsing, malformed inputs, hashes, XSS, cancellation, cookies/referrer, rate limits and missing keys are checked separately.
+
+
+## V24 후속 상태
+
+이 문서는 V23 구현 시점의 기록이다. 국립국어원 인증과 수집은 이후 성공했으며, 검토된 공식 자료가 우선 검색 출처로 연결되었다. 현재 구조와 적용 범위는 `NIKL_PRIORITY_V24.md`를 참조한다. 브라우저의 실시간 조회는 위키낱말사전으로 유지된다.

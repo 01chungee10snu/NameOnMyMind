@@ -1,0 +1,1509 @@
+
+> nameonmymind@0.1.0 check:g5-research
+> npm run check:g5-selection && npm run validate:g5-research && npm run check:privacy
+
+
+> nameonmymind@0.1.0 check:g5-selection
+> npm run check:g4 && npm run test:g5-selection && npm run check:privacy
+
+
+> nameonmymind@0.1.0 check:g4
+> npm run validate:g4 && npm run build:public && npm run test:g1 && npm run test:g2 && npm run test:g3 && npm run test:g4 && npm run check:privacy
+
+
+> nameonmymind@0.1.0 validate:g4
+> node scripts/validate-content.mjs
+
+{
+  "status": "PASS",
+  "scope": "all",
+  "review_cards": [],
+  "approved_public_cards": [
+    "C0001",
+    "C0002",
+    "C0003",
+    "C0004",
+    "C0005"
+  ],
+  "reference_count": 185,
+  "asset_count": 15,
+  "human_release_pending": []
+}
+
+> nameonmymind@0.1.0 build:public
+> node scripts/build-public.mjs
+
+{
+  "status": "PASS",
+  "output": "/Users/01chungee10/Github/NameOnMyMind/public",
+  "card_ids": [
+    "C0001",
+    "C0002",
+    "C0003",
+    "C0004",
+    "C0005"
+  ],
+  "snapshot_version": "976f5b427046a883",
+  "content_snapshot_version": "867d91c0737e29c7",
+  "deployable": true,
+  "external_publish_authorized": false,
+  "agent_manifest": true,
+  "pwa": true
+}
+
+> nameonmymind@0.1.0 test:g1
+> node --test tests/g1/*.test.mjs
+
+TAP version 13
+# Subtest: stable lookup returns the canonical card without mutating source
+ok 1 - stable lookup returns the canonical card without mutating source
+  ---
+  duration_ms: 0.358333
+  type: 'test'
+  ...
+# Subtest: daily assignment is deterministic for the same local day and seed
+ok 2 - daily assignment is deterministic for the same local day and seed
+  ---
+  duration_ms: 0.409958
+  type: 'test'
+  ...
+# Subtest: agent get_card uses identical domain semantics to human lookup
+ok 3 - agent get_card uses identical domain semantics to human lookup
+  ---
+  duration_ms: 0.207833
+  type: 'test'
+  ...
+# Subtest: agent get_daily_card uses identical domain semantics to daily UI selection
+ok 4 - agent get_daily_card uses identical domain semantics to daily UI selection
+  ---
+  duration_ms: 0.106333
+  type: 'test'
+  ...
+# Subtest: WebMCP registration preserves G1 read-only card tools as the agent surface expands
+ok 5 - WebMCP registration preserves G1 read-only card tools as the agent surface expands
+  ---
+  duration_ms: 0.214
+  type: 'test'
+  ...
+# Subtest: Daily Card Shell exposes canonical detail anchors and accessible reveal contract
+ok 6 - Daily Card Shell exposes canonical detail anchors and accessible reveal contract
+  ---
+  duration_ms: 0.355625
+  type: 'test'
+  ...
+# Subtest: UI source imports the canonical domain and read-only agent adapter
+ok 7 - UI source imports the canonical domain and read-only agent adapter
+  ---
+  duration_ms: 0.188209
+  type: 'test'
+  ...
+# Subtest: C0001 is human-released and promoted to approved PUBLISHED source
+ok 8 - C0001 is human-released and promoted to approved PUBLISHED source
+  ---
+  duration_ms: 0.25
+  type: 'test'
+  ...
+# Subtest: public builder produces a local deployable bundle containing only human-released approved cards
+ok 9 - public builder produces a local deployable bundle containing only human-released approved cards
+  ---
+  duration_ms: 39.439167
+  type: 'test'
+  ...
+# Subtest: pronunciation attribution exposes source and CC BY-SA license links
+ok 10 - pronunciation attribution exposes source and CC BY-SA license links
+  ---
+  duration_ms: 0.408625
+  type: 'test'
+  ...
+# Subtest: share asset locale matches the selected pt-BR card locale
+ok 11 - share asset locale matches the selected pt-BR card locale
+  ---
+  duration_ms: 0.082583
+  type: 'test'
+  ...
+# Subtest: styles include reduced motion and visible focus support
+ok 12 - styles include reduced motion and visible focus support
+  ---
+  duration_ms: 0.119416
+  type: 'test'
+  ...
+1..12
+# tests 12
+# suites 0
+# pass 12
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 73.369083
+
+> nameonmymind@0.1.0 test:g2
+> node --test tests/g2/*.test.mjs
+
+TAP version 13
+# Subtest: same-day daily assignment freezes in local state across later catalog/seed changes
+ok 1 - same-day daily assignment freezes in local state across later catalog/seed changes
+  ---
+  duration_ms: 1.210208
+  type: 'test'
+  ...
+# Subtest: favorites viewed history and reflection remain local storage state
+ok 2 - favorites viewed history and reflection remain local storage state
+  ---
+  duration_ms: 0.477709
+  type: 'test'
+  ...
+# Subtest: search and guided discovery are explainable and non-diagnostic
+ok 3 - search and guided discovery are explainable and non-diagnostic
+  ---
+  duration_ms: 0.207459
+  type: 'test'
+  ...
+# Subtest: relation lookup and canonical deep links use stable card ids
+ok 4 - relation lookup and canonical deep links use stable card ids
+  ---
+  duration_ms: 0.162584
+  type: 'test'
+  ...
+# Subtest: three-space UI and accessibility baseline are present
+ok 5 - three-space UI and accessibility baseline are present
+  ---
+  duration_ms: 0.304084
+  type: 'test'
+  ...
+1..5
+# tests 5
+# suites 0
+# pass 5
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 32.203208
+
+> nameonmymind@0.1.0 test:g3
+> node --test tests/g3/*.test.mjs
+
+TAP version 13
+# Subtest: public machine-readable snapshot contains stable per-card, references and relations projections
+ok 1 - public machine-readable snapshot contains stable per-card, references and relations projections
+  ---
+  duration_ms: 0.777083
+  type: 'test'
+  ...
+# Subtest: agent manifest matches registered read-only capabilities and denies write/publication authority
+ok 2 - agent manifest matches registered read-only capabilities and denies write/publication authority
+  ---
+  duration_ms: 0.27875
+  type: 'test'
+  ...
+# Subtest: Human daily freeze and WebMCP get_daily_card resolve identical card semantics
+ok 3 - Human daily freeze and WebMCP get_daily_card resolve identical card semantics
+  ---
+  duration_ms: 1.022125
+  type: 'test'
+  ...
+# Subtest: Human search/relations and agent search/relations share domain semantics
+ok 4 - Human search/relations and agent search/relations share domain semantics
+  ---
+  duration_ms: 0.286916
+  type: 'test'
+  ...
+# Subtest: WebMCP tools are same-origin by default, read-only, non-consequential and contain no reflection tool
+ok 5 - WebMCP tools are same-origin by default, read-only, non-consequential and contain no reflection tool
+  ---
+  duration_ms: 0.179916
+  type: 'test'
+  ...
+# Subtest: PWA manifest, snapshot-versioned service worker and graceful offline fallback are generated
+ok 6 - PWA manifest, snapshot-versioned service worker and graceful offline fallback are generated
+  ---
+  duration_ms: 0.253458
+  type: 'test'
+  ...
+# Subtest: share asset path is stable and present in the public build
+ok 7 - share asset path is stable and present in the public build
+  ---
+  duration_ms: 0.178292
+  type: 'test'
+  ...
+# Subtest: online UI registers service worker progressively and exposes freshness without reflection to agents
+ok 8 - online UI registers service worker progressively and exposes freshness without reflection to agents
+  ---
+  duration_ms: 0.270416
+  type: 'test'
+  ...
+# Subtest: public build separates content snapshot from runtime/UI snapshot
+ok 9 - public build separates content snapshot from runtime/UI snapshot
+  ---
+  duration_ms: 5.173584
+  type: 'test'
+  ...
+1..9
+# tests 9
+# suites 0
+# pass 9
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 37.209708
+
+> nameonmymind@0.1.0 test:g4
+> node --test tests/g4/*.test.mjs
+
+TAP version 13
+# Subtest: G4 source set is exactly C0001-C0005 and all five are human-released
+ok 1 - G4 source set is exactly C0001-C0005 and all five are human-released
+  ---
+  duration_ms: 0.616375
+  type: 'test'
+  ...
+# Subtest: 5/5 machine evidence and human release gates are PASS
+ok 2 - 5/5 machine evidence and human release gates are PASS
+  ---
+  duration_ms: 1.34075
+  type: 'test'
+  ...
+# Subtest: pronunciation rights UI links each G4 license family without mislabeling
+ok 3 - pronunciation rights UI links each G4 license family without mislabeling
+  ---
+  duration_ms: 0.487084
+  type: 'test'
+  ...
+# Subtest: G4 set has language, script, experience-type diversity and a close semantic pair
+ok 4 - G4 set has language, script, experience-type diversity and a close semantic pair
+  ---
+  duration_ms: 0.137625
+  type: 'test'
+  ...
+# Subtest: relation graph has valid targets, no self edges, and symmetric/inverse integrity
+ok 5 - relation graph has valid targets, no self edges, and symmetric/inverse integrity
+  ---
+  duration_ms: 0.181917
+  type: 'test'
+  ...
+# Subtest: Human UI domain and Agent API share semantics across all five canary cards
+ok 6 - Human UI domain and Agent API share semantics across all five canary cards
+  ---
+  duration_ms: 1.61775
+  type: 'test'
+  ...
+# Subtest: public build contains all five human-released canary cards and no review source
+ok 7 - public build contains all five human-released canary cards and no review source
+  ---
+  duration_ms: 0.235125
+  type: 'test'
+  ...
+# Subtest: explicit Human Editorial Release evidence exists for C0002-C0005
+ok 8 - explicit Human Editorial Release evidence exists for C0002-C0005
+  ---
+  duration_ms: 0.180583
+  type: 'test'
+  ...
+# Subtest: unverified supplied Toska and legacy Schadenfreude audio remain excluded from product evidence
+ok 9 - unverified supplied Toska and legacy Schadenfreude audio remain excluded from product evidence
+  ---
+  duration_ms: 0.267833
+  type: 'test'
+  ...
+# Subtest: daily card treats generated imagery as background-only while text and controls remain DOM overlays
+ok 10 - daily card treats generated imagery as background-only while text and controls remain DOM overlays
+  ---
+  duration_ms: 1.191833
+  type: 'test'
+  ...
+# Subtest: visual generation policy defaults to Ego Lite plus Google Gemini or Flow, with non-Google generation fallback-only
+ok 11 - visual generation policy defaults to Ego Lite plus Google Gemini or Flow, with non-Google generation fallback-only
+  ---
+  duration_ms: 0.136292
+  type: 'test'
+  ...
+# Subtest: editorial mobile art direction keeps the image dominant and supporting UI visually restrained
+ok 12 - editorial mobile art direction keeps the image dominant and supporting UI visually restrained
+  ---
+  duration_ms: 0.232125
+  type: 'test'
+  ...
+# Subtest: mobile interaction polish preserves navigation semantics while adding restrained tactile feedback
+ok 13 - mobile interaction polish preserves navigation semantics while adding restrained tactile feedback
+  ---
+  duration_ms: 0.302916
+  type: 'test'
+  ...
+# Subtest: Beauty V2 mobile UI baseline is explicitly locked to the validated interaction commit and content snapshot
+ok 14 - Beauty V2 mobile UI baseline is explicitly locked to the validated interaction commit and content snapshot
+  ---
+  duration_ms: 0.17675
+  type: 'test'
+  ...
+# Subtest: mobile-first shell uses a constrained app canvas, safe-area bottom navigation, and image-led discovery cards
+ok 15 - mobile-first shell uses a constrained app canvas, safe-area bottom navigation, and image-led discovery cards
+  ---
+  duration_ms: 0.490667
+  type: 'test'
+  ...
+# Subtest: each published canary card resolves to its own human-approved generated background illustration
+ok 16 - each published canary card resolves to its own human-approved generated background illustration
+  ---
+  duration_ms: 0.40925
+  type: 'test'
+  ...
+# Subtest: Flow candidate archive stays review-only after selected backgrounds are promoted through scoped human approval
+ok 17 - Flow candidate archive stays review-only after selected backgrounds are promoted through scoped human approval
+  ---
+  duration_ms: 0.644667
+  type: 'test'
+  ...
+1..17
+# tests 17
+# suites 0
+# pass 17
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 39.628334
+
+> nameonmymind@0.1.0 check:privacy
+> node scripts/check-private-leakage.mjs
+
+{
+  "status": "PASS",
+  "scanned_roots": [
+    "review-preview",
+    "public"
+  ],
+  "violations": 0
+}
+
+> nameonmymind@0.1.0 test:g5-selection
+> node --test tests/g5/editorial-selection.test.mjs
+
+TAP version 13
+# Subtest: G5 editorial contract is foreign-semantic-gap first
+ok 1 - G5 editorial contract is foreign-semantic-gap first
+  ---
+  duration_ms: 0.323917
+  type: 'test'
+  ...
+# Subtest: envy and 幸福 are preserved as G4 canary evidence but planned out of the final active 50
+ok 2 - envy and 幸福 are preserved as G4 canary evidence but planned out of the final active 50
+  ---
+  duration_ms: 0.110334
+  type: 'test'
+  ...
+# Subtest: G5 candidate pool is foreign-first with enough replacement depth
+ok 3 - G5 candidate pool is foreign-first with enough replacement depth
+  ---
+  duration_ms: 0.271125
+  type: 'test'
+  ...
+# Subtest: high-risk cultural concepts are explicitly fenced rather than privileged for novelty
+ok 4 - high-risk cultural concepts are explicitly fenced rather than privileged for novelty
+  ---
+  duration_ms: 0.100875
+  type: 'test'
+  ...
+# Subtest: first Korean batch is admitted for research but blocked from REVIEW_READY by audio rights
+ok 5 - first Korean batch is admitted for research but blocked from REVIEW_READY by audio rights
+  ---
+  duration_ms: 0.078208
+  type: 'test'
+  ...
+# Subtest: Krdict pronunciation MP3s remain local research only and are not registered product assets
+ok 6 - Krdict pronunciation MP3s remain local research only and are not registered product assets
+  ---
+  duration_ms: 0.089833
+  type: 'test'
+  ...
+# Subtest: G5 Research Record v2 requires a distinctiveness review without mutating G1-G4 v1.1 schema
+ok 7 - G5 Research Record v2 requires a distinctiveness review without mutating G1-G4 v1.1 schema
+  ---
+  duration_ms: 0.200292
+  type: 'test'
+  ...
+# Subtest: G5 final cutover targets 45 foreign plus 5 Korean anchors while current canary stays five-card
+ok 8 - G5 final cutover targets 45 foreign plus 5 Korean anchors while current canary stays five-card
+  ---
+  duration_ms: 0.458541
+  type: 'test'
+  ...
+# Subtest: app discovery exposes research surfaces without promoting research candidates
+ok 9 - app discovery exposes research surfaces without promoting research candidates
+  ---
+  duration_ms: 8.45
+  type: 'test'
+  ...
+1..9
+# tests 9
+# suites 0
+# pass 9
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 41.577667
+
+> nameonmymind@0.1.0 check:privacy
+> node scripts/check-private-leakage.mjs
+
+{
+  "status": "PASS",
+  "scanned_roots": [
+    "review-preview",
+    "public"
+  ],
+  "violations": 0
+}
+
+> nameonmymind@0.1.0 validate:g5-research
+> node scripts/g5/validate-korean-batch01-research.mjs && node scripts/g5/validate-all-g5-research.mjs && node scripts/g5/validate-foreign-batch01-research.mjs && node scripts/g5/validate-foreign-batch02-research.mjs && node scripts/g5/validate-foreign-batch03-research.mjs && node scripts/g5/validate-foreign-batch04-research.mjs && node scripts/g5/validate-foreign-batch05-research.mjs && node scripts/g5/validate-foreign-batch06-research.mjs
+
+{
+  "status": "PASS",
+  "batch_id": "G5-B01-KOREAN-NUANCE",
+  "research_records": [
+    "C0006",
+    "C0007",
+    "C0008",
+    "C0009",
+    "C0010"
+  ],
+  "lifecycle": "HOLD",
+  "distinctiveness": "5/5 PASS",
+  "pronunciation_rights": "5/5 HOLD",
+  "product_audio_registered": 0,
+  "review_ready": 0,
+  "public_cards": [
+    "C0001",
+    "C0002",
+    "C0003",
+    "C0004",
+    "C0005"
+  ]
+}
+{
+  "status": "PASS",
+  "record_count": 40,
+  "track_counts": {
+    "KOREAN_NUANCE": 10,
+    "FOREIGN_KOREAN_GAP": 30
+  },
+  "rows": [
+    {
+      "card_id": "C0006",
+      "term": "서운하다",
+      "track": "KOREAN_NUANCE",
+      "status": "HOLD",
+      "distinctiveness": "PASS",
+      "korean_expression_cost": null
+    },
+    {
+      "card_id": "C0007",
+      "term": "아쉽다",
+      "track": "KOREAN_NUANCE",
+      "status": "HOLD",
+      "distinctiveness": "PASS",
+      "korean_expression_cost": null
+    },
+    {
+      "card_id": "C0008",
+      "term": "섭섭하다",
+      "track": "KOREAN_NUANCE",
+      "status": "HOLD",
+      "distinctiveness": "PASS",
+      "korean_expression_cost": null
+    },
+    {
+      "card_id": "C0009",
+      "term": "뿌듯하다",
+      "track": "KOREAN_NUANCE",
+      "status": "HOLD",
+      "distinctiveness": "PASS",
+      "korean_expression_cost": null
+    },
+    {
+      "card_id": "C0010",
+      "term": "뭉클하다",
+      "track": "KOREAN_NUANCE",
+      "status": "HOLD",
+      "distinctiveness": "PASS",
+      "korean_expression_cost": null
+    },
+    {
+      "card_id": "C0011",
+      "term": "억울하다",
+      "track": "KOREAN_NUANCE",
+      "status": "HOLD",
+      "distinctiveness": "PASS",
+      "korean_expression_cost": null
+    },
+    {
+      "card_id": "C0012",
+      "term": "후련하다",
+      "track": "KOREAN_NUANCE",
+      "status": "HOLD",
+      "distinctiveness": "PASS",
+      "korean_expression_cost": null
+    },
+    {
+      "card_id": "C0013",
+      "term": "착잡하다",
+      "track": "KOREAN_NUANCE",
+      "status": "HOLD",
+      "distinctiveness": "PASS",
+      "korean_expression_cost": null
+    },
+    {
+      "card_id": "C0014",
+      "term": "시원섭섭하다",
+      "track": "KOREAN_NUANCE",
+      "status": "HOLD",
+      "distinctiveness": "PASS",
+      "korean_expression_cost": null
+    },
+    {
+      "card_id": "C0015",
+      "term": "멋쩍다",
+      "track": "KOREAN_NUANCE",
+      "status": "HOLD",
+      "distinctiveness": "PASS",
+      "korean_expression_cost": null
+    },
+    {
+      "card_id": "C0016",
+      "term": "Geborgenheit",
+      "track": "FOREIGN_KOREAN_GAP",
+      "status": "HOLD",
+      "distinctiveness": "PASS",
+      "korean_expression_cost": "EXPLANATORY_PHRASE_REQUIRED"
+    },
+    {
+      "card_id": "C0017",
+      "term": "Fernweh",
+      "track": "FOREIGN_KOREAN_GAP",
+      "status": "HOLD",
+      "distinctiveness": "PASS",
+      "korean_expression_cost": "SHORT_PHRASE_PARTIAL"
+    },
+    {
+      "card_id": "C0018",
+      "term": "Weltschmerz",
+      "track": "FOREIGN_KOREAN_GAP",
+      "status": "HOLD",
+      "distinctiveness": "PASS",
+      "korean_expression_cost": "EXPLANATORY_PHRASE_REQUIRED"
+    },
+    {
+      "card_id": "C0019",
+      "term": "切ない",
+      "track": "FOREIGN_KOREAN_GAP",
+      "status": "HOLD",
+      "distinctiveness": "PASS",
+      "korean_expression_cost": "EXPLANATORY_PHRASE_REQUIRED"
+    },
+    {
+      "card_id": "C0020",
+      "term": "もどかしい",
+      "track": "FOREIGN_KOREAN_GAP",
+      "status": "HOLD",
+      "distinctiveness": "PASS",
+      "korean_expression_cost": "SHORT_PHRASE_PARTIAL"
+    },
+    {
+      "card_id": "C0021",
+      "term": "Torschlusspanik",
+      "track": "FOREIGN_KOREAN_GAP",
+      "status": "HOLD",
+      "distinctiveness": "PASS",
+      "korean_expression_cost": "EXPLANATORY_PHRASE_REQUIRED"
+    },
+    {
+      "card_id": "C0022",
+      "term": "舍不得",
+      "track": "FOREIGN_KOREAN_GAP",
+      "status": "HOLD",
+      "distinctiveness": "PASS",
+      "korean_expression_cost": "EXPLANATORY_PHRASE_REQUIRED"
+    },
+    {
+      "card_id": "C0023",
+      "term": "тоска",
+      "track": "FOREIGN_KOREAN_GAP",
+      "status": "HOLD",
+      "distinctiveness": "PASS",
+      "korean_expression_cost": "EXPLANATORY_PHRASE_REQUIRED"
+    },
+    {
+      "card_id": "C0024",
+      "term": "обида",
+      "track": "FOREIGN_KOREAN_GAP",
+      "status": "HOLD",
+      "distinctiveness": "PASS",
+      "korean_expression_cost": "EXPLANATORY_PHRASE_REQUIRED"
+    },
+    {
+      "card_id": "C0025",
+      "term": "طَرَب",
+      "track": "FOREIGN_KOREAN_GAP",
+      "status": "HOLD",
+      "distinctiveness": "PASS",
+      "korean_expression_cost": "EXPLANATORY_PHRASE_REQUIRED"
+    },
+    {
+      "card_id": "C0026",
+      "term": "gigil",
+      "track": "FOREIGN_KOREAN_GAP",
+      "status": "HOLD",
+      "distinctiveness": "PASS",
+      "korean_expression_cost": "EXPLANATORY_PHRASE_REQUIRED"
+    },
+    {
+      "card_id": "C0027",
+      "term": "פִרְגּוּן",
+      "track": "FOREIGN_KOREAN_GAP",
+      "status": "HOLD",
+      "distinctiveness": "PASS",
+      "korean_expression_cost": "EXPLANATORY_PHRASE_REQUIRED"
+    },
+    {
+      "card_id": "C0028",
+      "term": "gezelligheid",
+      "track": "FOREIGN_KOREAN_GAP",
+      "status": "HOLD",
+      "distinctiveness": "PASS",
+      "korean_expression_cost": "EXPLANATORY_PHRASE_REQUIRED"
+    },
+    {
+      "card_id": "C0029",
+      "term": "dépaysement",
+      "track": "FOREIGN_KOREAN_GAP",
+      "status": "HOLD",
+      "distinctiveness": "PASS",
+      "korean_expression_cost": "EXPLANATORY_PHRASE_REQUIRED"
+    },
+    {
+      "card_id": "C0030",
+      "term": "やるせない",
+      "track": "FOREIGN_KOREAN_GAP",
+      "status": "HOLD",
+      "distinctiveness": "PASS",
+      "korean_expression_cost": "EXPLANATORY_PHRASE_REQUIRED"
+    },
+    {
+      "card_id": "C0031",
+      "term": "غُرْبَة",
+      "track": "FOREIGN_KOREAN_GAP",
+      "status": "HOLD",
+      "distinctiveness": "PASS",
+      "korean_expression_cost": "EXPLANATORY_PHRASE_REQUIRED"
+    },
+    {
+      "card_id": "C0032",
+      "term": "hiraeth",
+      "track": "FOREIGN_KOREAN_GAP",
+      "status": "HOLD",
+      "distinctiveness": "PASS",
+      "korean_expression_cost": "EXPLANATORY_PHRASE_REQUIRED"
+    },
+    {
+      "card_id": "C0033",
+      "term": "viraha",
+      "track": "FOREIGN_KOREAN_GAP",
+      "status": "HOLD",
+      "distinctiveness": "PASS",
+      "korean_expression_cost": "EXPLANATORY_PHRASE_REQUIRED"
+    },
+    {
+      "card_id": "C0034",
+      "term": "tampo",
+      "track": "FOREIGN_KOREAN_GAP",
+      "status": "HOLD",
+      "distinctiveness": "PASS",
+      "korean_expression_cost": "EXPLANATORY_PHRASE_REQUIRED"
+    },
+    {
+      "card_id": "C0035",
+      "term": "querencia",
+      "track": "FOREIGN_KOREAN_GAP",
+      "status": "HOLD",
+      "distinctiveness": "PASS",
+      "korean_expression_cost": "EXPLANATORY_PHRASE_REQUIRED"
+    },
+    {
+      "card_id": "C0036",
+      "term": "saṃvega",
+      "track": "FOREIGN_KOREAN_GAP",
+      "status": "HOLD",
+      "distinctiveness": "PASS",
+      "korean_expression_cost": "EXPLANATORY_PHRASE_REQUIRED"
+    },
+    {
+      "card_id": "C0037",
+      "term": "甘え",
+      "track": "FOREIGN_KOREAN_GAP",
+      "status": "HOLD",
+      "distinctiveness": "PASS",
+      "korean_expression_cost": "EXPLANATORY_PHRASE_REQUIRED"
+    },
+    {
+      "card_id": "C0038",
+      "term": "憋屈",
+      "track": "FOREIGN_KOREAN_GAP",
+      "status": "HOLD",
+      "distinctiveness": "PASS",
+      "korean_expression_cost": "EXPLANATORY_PHRASE_REQUIRED"
+    },
+    {
+      "card_id": "C0039",
+      "term": "limerence",
+      "track": "FOREIGN_KOREAN_GAP",
+      "status": "HOLD",
+      "distinctiveness": "PASS",
+      "korean_expression_cost": "EXPLANATORY_PHRASE_REQUIRED"
+    },
+    {
+      "card_id": "C0040",
+      "term": "compersion",
+      "track": "FOREIGN_KOREAN_GAP",
+      "status": "HOLD",
+      "distinctiveness": "PASS",
+      "korean_expression_cost": "EXPLANATORY_PHRASE_REQUIRED"
+    },
+    {
+      "card_id": "C0041",
+      "term": "เกรงใจ",
+      "track": "FOREIGN_KOREAN_GAP",
+      "status": "HOLD",
+      "distinctiveness": "PASS",
+      "korean_expression_cost": "EXPLANATORY_PHRASE_REQUIRED"
+    },
+    {
+      "card_id": "C0042",
+      "term": "sungkan",
+      "track": "FOREIGN_KOREAN_GAP",
+      "status": "HOLD",
+      "distinctiveness": "PASS",
+      "korean_expression_cost": "EXPLANATORY_PHRASE_REQUIRED"
+    },
+    {
+      "card_id": "C0043",
+      "term": "心細い",
+      "track": "FOREIGN_KOREAN_GAP",
+      "status": "HOLD",
+      "distinctiveness": "PASS",
+      "korean_expression_cost": "EXPLANATORY_PHRASE_REQUIRED"
+    },
+    {
+      "card_id": "C0044",
+      "term": "物の哀れ",
+      "track": "FOREIGN_KOREAN_GAP",
+      "status": "HOLD",
+      "distinctiveness": "PASS",
+      "korean_expression_cost": "EXPLANATORY_PHRASE_REQUIRED"
+    },
+    {
+      "card_id": "C0045",
+      "term": "心疼",
+      "track": "FOREIGN_KOREAN_GAP",
+      "status": "HOLD",
+      "distinctiveness": "PASS",
+      "korean_expression_cost": "EXPLANATORY_PHRASE_REQUIRED"
+    }
+  ],
+  "public_cards": [
+    "C0001",
+    "C0002",
+    "C0003",
+    "C0004",
+    "C0005"
+  ],
+  "unresolved_product_audio_registered": 0
+}
+{
+  "status": "PASS",
+  "batch_id": "G5-F01-FOREIGN-SEMANTIC-GAP",
+  "card_ids": [
+    "C0016",
+    "C0017",
+    "C0018",
+    "C0019",
+    "C0020"
+  ],
+  "korean_expression_cost": {
+    "C0016": "EXPLANATORY_PHRASE_REQUIRED",
+    "C0017": "SHORT_PHRASE_PARTIAL",
+    "C0018": "EXPLANATORY_PHRASE_REQUIRED",
+    "C0019": "EXPLANATORY_PHRASE_REQUIRED",
+    "C0020": "SHORT_PHRASE_PARTIAL"
+  },
+  "review_ready": 0,
+  "product_assets_registered": 0,
+  "public_cards": [
+    "C0001",
+    "C0002",
+    "C0003",
+    "C0004",
+    "C0005"
+  ]
+}
+{
+  "status": "PASS",
+  "batch_id": "G5-F02-FOREIGN-SEMANTIC-GAP",
+  "card_ids": [
+    "C0021",
+    "C0022",
+    "C0023",
+    "C0024",
+    "C0025"
+  ],
+  "expression_cost": "5/5 EXPLANATORY_PHRASE_REQUIRED",
+  "screened_out": [
+    {
+      "term": "vergüenza ajena",
+      "status": "REJECTED_OR_HOLD_NEAR_KOREAN_EQUIVALENT",
+      "reason": "Korean 대리 수치(심) is already a compact conventional equivalent, so expression cost is not high enough for priority admission."
+    },
+    {
+      "term": "委屈",
+      "status": "HOLD_DIRECT_KOREAN_COMPARISON_REQUIRED",
+      "reason": "Korean 억울하다 may preserve much of the central unfair-treatment grievance meaning."
+    }
+  ],
+  "review_ready": 0,
+  "product_assets_registered": 0,
+  "public_cards": [
+    "C0001",
+    "C0002",
+    "C0003",
+    "C0004",
+    "C0005"
+  ]
+}
+{
+  "status": "PASS",
+  "batch_id": "G5-F03-FOREIGN-SEMANTIC-GAP",
+  "card_ids": [
+    "C0026",
+    "C0027",
+    "C0028",
+    "C0029",
+    "C0030"
+  ],
+  "expression_cost": "5/5 EXPLANATORY_PHRASE_REQUIRED",
+  "review_ready": 0,
+  "product_assets_registered": 0,
+  "public_cards": [
+    "C0001",
+    "C0002",
+    "C0003",
+    "C0004",
+    "C0005"
+  ]
+}
+{
+  "status": "PASS",
+  "batch_id": "G5-F04-FOREIGN-SEMANTIC-GAP",
+  "card_ids": [
+    "C0031",
+    "C0032",
+    "C0033",
+    "C0034",
+    "C0035"
+  ],
+  "expression_cost": "5/5 EXPLANATORY_PHRASE_REQUIRED",
+  "screened_out": [
+    {
+      "term": "dor",
+      "status": "HOLD_NEAR_KOREAN_LEXICAL_COVERAGE",
+      "reason": "Romanian dor is culturally and semantically rich, but ordinary Korean 그리움/향수 already covers much of the central longing/nostalgia sense. Keep for direct comparison rather than priority admission."
+    },
+    {
+      "term": "hüzün",
+      "status": "HOLD_CULTURAL_FRAMING_RISK",
+      "reason": "Turkish hüzün has substantial literary/cultural scholarship, but basic lexical sadness/melancholy is close to Korean 슬픔/우울/애수 and distinctiveness can easily be manufactured by cultural essentialism."
+    }
+  ],
+  "review_ready": 0,
+  "product_assets_registered": 0,
+  "public_cards": [
+    "C0001",
+    "C0002",
+    "C0003",
+    "C0004",
+    "C0005"
+  ],
+  "snapshot_version": "976f5b427046a883"
+}
+{
+  "status": "PASS",
+  "batch_id": "G5-F05-FOREIGN-SEMANTIC-GAP",
+  "card_ids": [
+    "C0036",
+    "C0037",
+    "C0038",
+    "C0039",
+    "C0040"
+  ],
+  "expression_cost": "5/5 EXPLANATORY_PHRASE_REQUIRED",
+  "screened_out": [
+    {
+      "term": "naches",
+      "status": "HOLD_NEAR_KOREAN_EQUIVALENT",
+      "reason": "Korean 대견하다/자랑스럽다 already compress much of proud pleasure in another's achievement; preserve as candidate for relation/comparison rather than priority active admission."
+    },
+    {
+      "term": "resfeber",
+      "status": "HOLD_SHORT_KOREAN_RENDERING",
+      "reason": "Authoritative Swedish evidence centers on nervousness before an upcoming journey, which Korean 여행 전 긴장감/불안 already renders compactly."
+    },
+    {
+      "term": "żal",
+      "status": "HOLD_POLYSEMY_NOT_BUNDLE",
+      "reason": "The Polish lexeme spans sorrow, pity, grudge, regret and repentance across constructions; breadth may reflect polysemy rather than one bundled experiential state, so it should not be admitted merely because Korean needs several translations."
+    }
+  ],
+  "review_ready": 0,
+  "product_assets_registered": 0,
+  "public_cards": [
+    "C0001",
+    "C0002",
+    "C0003",
+    "C0004",
+    "C0005"
+  ],
+  "snapshot_version": "976f5b427046a883"
+}
+{
+  "status": "PASS",
+  "batch_id": "G5-F06-FOREIGN-SEMANTIC-GAP",
+  "card_ids": [
+    "C0041",
+    "C0042",
+    "C0043",
+    "C0044",
+    "C0045"
+  ],
+  "expression_cost": "5/5 EXPLANATORY_PHRASE_REQUIRED",
+  "screened_out": [
+    {
+      "term": "Fremdscham",
+      "status": "HOLD_NEAR_KOREAN_EQUIVALENT",
+      "reason": "Korean 대리 수치/대리 수치심 already provides a compact conventional equivalent for vicarious embarrassment, so expression cost is too low for priority admission."
+    },
+    {
+      "term": "百感交集",
+      "status": "HOLD_NEAR_KOREAN_IDIOM",
+      "reason": "Korean 만감이 교차하다 is a compact conventional idiom preserving the central sense of many emotions converging at once."
+    },
+    {
+      "term": "儚い",
+      "status": "HOLD_NEAR_KOREAN_EQUIVALENT",
+      "reason": "Korean 덧없다 already compresses much of the transience/ephemerality sense; preserve for comparison rather than priority admission."
+    }
+  ],
+  "review_ready": 0,
+  "product_assets_registered": 0,
+  "public_cards": [
+    "C0001",
+    "C0002",
+    "C0003",
+    "C0004",
+    "C0005"
+  ],
+  "snapshot_version": "976f5b427046a883"
+}
+
+> nameonmymind@0.1.0 check:privacy
+> node scripts/check-private-leakage.mjs
+
+{
+  "status": "PASS",
+  "scanned_roots": [
+    "review-preview",
+    "public"
+  ],
+  "violations": 0
+}
+
+> nameonmymind@0.1.0 check:korean-language
+> node scripts/dictionary/build-nikl-dictionary.mjs --check && npm run validate:korean-expression && npm run validate:korean-emotion && node scripts/korean/build-simple-meanings.mjs --check && npm run test:korean-learning && node scripts/korean/build-learning-vocabulary.mjs --check && npm run test:learning-expansion && npm run test:dictionary-world && npm run test:nikl-v24
+
+{"status":"PASS","official_entries":287,"official_spellings":277,"combined_spellings":31848,"mode":"check"}
+
+> nameonmymind@0.1.0 validate:korean-expression
+> node scripts/korean/validate-expression-ladders.mjs
+
+{
+  "status": "PASS",
+  "track_id": "KOREAN_EXPRESSIVE_CHOICE",
+  "lexeme_count": 12,
+  "ladder_count": 6,
+  "candidate_pool_count": 61,
+  "lexical_pass": 11,
+  "usage_pass": 1,
+  "source_hosts": [
+    "krdict.korean.go.kr",
+    "www.korean.go.kr"
+  ],
+  "examples": {
+    "emphasis": [
+      "무척",
+      "대단히",
+      "유난히"
+    ],
+    "success": [
+      "됐다!",
+      "해냈다!",
+      "쾌재!"
+    ]
+  }
+}
+
+> nameonmymind@0.1.0 validate:korean-emotion
+> node scripts/korean/validate-emotion-map.mjs
+
+{
+  "status": "PASS",
+  "track_id": "KOREAN_EMOTION_ARTICULATION",
+  "family_count": 22,
+  "term_count": 151,
+  "contrast_set_count": 16,
+  "source_verified_count": 151,
+  "evidence_registry_count": 148,
+  "discovery_only_count": 0,
+  "levels": [
+    1,
+    2,
+    3
+  ],
+  "verified_contrast_sets": [
+    "KC001",
+    "KC002",
+    "KC003",
+    "KC004",
+    "KC005",
+    "KC006",
+    "KC007",
+    "KC008",
+    "KC009",
+    "KC010",
+    "KC011",
+    "KC012",
+    "KC013",
+    "KC014",
+    "KC015",
+    "KC016"
+  ],
+  "level1_verified_count": 38,
+  "level2_verified_count": 72,
+  "level2_discovery_count": 0,
+  "level3_verified_count": 41,
+  "level3_discovery_count": 0,
+  "school_age_direct_count": 21,
+  "school_age_related_count": 1,
+  "age_review_required_count": 0
+}
+{"status":"PASS","terms":151,"examples":151,"mode":"check"}
+
+> nameonmymind@0.1.0 test:korean-learning
+> node --test tests/g5/simple-learning.test.mjs
+
+TAP version 13
+# Subtest: Every verified term has one short editorial meaning and one original example
+ok 1 - Every verified term has one short editorial meaning and one original example
+  ---
+  duration_ms: 1.047167
+  type: 'test'
+  ...
+# Subtest: Selected emotional senses and whole idioms do not regress to the first headword sense
+ok 2 - Selected emotional senses and whole idioms do not regress to the first headword sense
+  ---
+  duration_ms: 0.119834
+  type: 'test'
+  ...
+# Subtest: Learning surface includes visible meanings, examples and two related words, not research clutter
+ok 3 - Learning surface includes visible meanings, examples and two related words, not research clutter
+  ---
+  duration_ms: 0.134875
+  type: 'test'
+  ...
+# Subtest: Word navigation remains on the simple surface and drafts are never persisted or transmitted
+ok 4 - Word navigation remains on the simple surface and drafts are never persisted or transmitted
+  ---
+  duration_ms: 0.120417
+  type: 'test'
+  ...
+1..4
+# tests 4
+# suites 0
+# pass 4
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 34.000125
+{"status":"PASS","term_count":177,"added":26,"source_verified":26}
+
+> nameonmymind@0.1.0 test:learning-expansion
+> node --test tests/g5/learning-expansion.test.mjs
+
+TAP version 13
+# Subtest: The learner vocabulary expands from 151 to 177 with 26 nonduplicate source-backed words
+ok 1 - The learner vocabulary expands from 151 to 177 with 26 nonduplicate source-backed words
+  ---
+  duration_ms: 0.534916
+  type: 'test'
+  ...
+# Subtest: Physical and nonemotional dictionary senses cannot replace selected emotional senses
+ok 2 - Physical and nonemotional dictionary senses cannot replace selected emotional senses
+  ---
+  duration_ms: 0.135042
+  type: 'test'
+  ...
+# Subtest: Previously published maps, copy and v1/v2 daily schedules are byte-for-byte preserved
+ok 3 - Previously published maps, copy and v1/v2 daily schedules are byte-for-byte preserved
+  ---
+  duration_ms: 0.552042
+  type: 'test'
+  ...
+# Subtest: All new words are reachable through existing comparison links without new UI sections
+ok 4 - All new words are reachable through existing comparison links without new UI sections
+  ---
+  duration_ms: 0.305667
+  type: 'test'
+  ...
+# Subtest: Before October 1 the published daily word does not change
+ok 5 - Before October 1 the published daily word does not change
+  ---
+  duration_ms: 1.50275
+  type: 'test'
+  ...
+# Subtest: The future cycle includes all 177 words once and begins with a new word
+ok 6 - The future cycle includes all 177 words once and begins with a new word
+  ---
+  duration_ms: 8.569
+  type: 'test'
+  ...
+# Subtest: Month/year/leap-day boundaries advance by a single local calendar day
+ok 7 - Month/year/leap-day boundaries advance by a single local calendar day
+  ---
+  duration_ms: 0.372084
+  type: 'test'
+  ...
+# Subtest: Missing meanings, broken links, unknown IDs and invalid schedules fail closed
+ok 8 - Missing meanings, broken links, unknown IDs and invalid schedules fail closed
+  ---
+  duration_ms: 0.901708
+  type: 'test'
+  ...
+1..8
+# tests 8
+# suites 0
+# pass 8
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 45.612
+
+> nameonmymind@0.1.0 test:dictionary-world
+> node --test tests/g5/dictionary-world.test.mjs && python3 tests/g5/test_nikl_adapter.py
+
+TAP version 13
+# Subtest: Broad dictionary inventory is separate from the 177 curated cards and is not an emotion count
+ok 1 - Broad dictionary inventory is separate from the 177 curated cards and is not an emotion count
+  ---
+  duration_ms: 4.049708
+  type: 'test'
+  ...
+# Subtest: Every imported shard is hash-linked, with nonempty separate senses and no media or literary examples
+ok 2 - Every imported shard is hash-linked, with nonempty separate senses and no media or literary examples
+  ---
+  duration_ms: 45.392334
+  type: 'test'
+  ...
+# Subtest: Query normalization, exact match priority and bounded results avoid full-sentence or URL requests
+ok 3 - Query normalization, exact match priority and bounded results avoid full-sentence or URL requests
+  ---
+  duration_ms: 5.879042
+  type: 'test'
+  ...
+# Subtest: Foreign companions are text-only contextual overlaps with primary source links, not HOLD full-card promotions
+ok 4 - Foreign companions are text-only contextual overlaps with primary source links, not HOLD full-card promotions
+  ---
+  duration_ms: 0.367583
+  type: 'test'
+  ...
+# Subtest: The interface sends no dictionary query on typing and has no API key or reflective-text dependency
+ok 5 - The interface sends no dictionary query on typing and has no API key or reflective-text dependency
+  ---
+  duration_ms: 0.2005
+  type: 'test'
+  ...
+# Subtest: Anonymous live API requests use a fixed origin, no cookies and rate-limit backoff
+ok 6 - Anonymous live API requests use a fixed origin, no cookies and rate-limit backoff
+  ---
+  duration_ms: 6.293
+  type: 'test'
+  ...
+# Subtest: Oversized live API payloads are rejected before HTML processing
+ok 7 - Oversized live API payloads are rejected before HTML processing
+  ---
+  duration_ms: 0.309041
+  type: 'test'
+  ...
+# Subtest: Source refresh collects review artifacts and never exposes a NIKL key to the browser
+ok 8 - Source refresh collects review artifacts and never exposes a NIKL key to the browser
+  ---
+  duration_ms: 0.188541
+  type: 'test'
+  ...
+1..8
+# tests 8
+# suites 0
+# pass 8
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 103.829625
+........
+----------------------------------------------------------------------
+Ran 8 tests in 0.001s
+
+OK
+
+> nameonmymind@0.1.0 test:nikl-v24
+> node --test tests/g5/nikl-v24.test.mjs
+
+TAP version 13
+# Subtest: Every retained official identity and definition is exact, unnumbered and source-attributed
+ok 1 - Every retained official identity and definition is exact, unnumbered and source-attributed
+  ---
+  duration_ms: 3.5345
+  type: 'test'
+  ...
+# Subtest: Inventory counts are spelling counts, with 139 overlaps, 138 new spellings and 31848 combined
+ok 2 - Inventory counts are spelling counts, with 139 overlaps, 138 new spellings and 31848 combined
+  ---
+  duration_ms: 4.56825
+  type: 'test'
+  ...
+# Subtest: Full-result totals are not the sum of two truncated pages and homographs remain separate
+ok 3 - Full-result totals are not the sum of two truncated pages and homographs remain separate
+  ---
+  duration_ms: 13.977917
+  type: 'test'
+  ...
+# Subtest: Versions, required hashes, identities, source URLs, licensing and order provenance are strict
+ok 4 - Versions, required hashes, identities, source URLs, licensing and order provenance are strict
+  ---
+  duration_ms: 0.529
+  type: 'test'
+  ...
+# Subtest: Client is lazy; invalid queries and IDs cause zero fetches
+ok 5 - Client is lazy; invalid queries and IDs cause zero fetches
+  ---
+  duration_ms: 0.338875
+  type: 'test'
+  ...
+# Subtest: Official source wins for the same spelling and actual source URLs never contain credentials
+ok 6 - Official source wins for the same spelling and actual source URLs never contain credentials
+  ---
+  duration_ms: 20.599167
+  type: 'test'
+  ...
+# Subtest: Official outage remains unavailable on repeated searches while Wiktionary stays usable
+ok 7 - Official outage remains unavailable on repeated searches while Wiktionary stays usable
+  ---
+  duration_ms: 8.376333
+  type: 'test'
+  ...
+# Subtest: Wiktionary outage does not reject available official results
+ok 8 - Wiktionary outage does not reject available official results
+  ---
+  duration_ms: 3.668084
+  type: 'test'
+  ...
+# Subtest: Both unavailable providers produce an explicit recoverable error
+ok 9 - Both unavailable providers produce an explicit recoverable error
+  ---
+  duration_ms: 0.299959
+  type: 'test'
+  ...
+# Subtest: Corrupt official detail or index is excluded before official results are offered
+ok 10 - Corrupt official detail or index is excluded before official results are offered
+  ---
+  duration_ms: 22.016916
+  type: 'test'
+  ...
+# Subtest: Timed-out official provider is bounded and does not block the available source
+ok 11 - Timed-out official provider is bounded and does not block the available source
+  ---
+  duration_ms: 26.7185
+  type: 'test'
+  ...
+# Subtest: Aborting one concurrent load does not poison a newer query or cache
+ok 12 - Aborting one concurrent load does not poison a newer query or cache
+  ---
+  duration_ms: 75.428583
+  type: 'test'
+  ...
+# Subtest: Returned official data cannot mutate the verified cache
+ok 13 - Returned official data cannot mutate the verified cache
+  ---
+  duration_ms: 1.801042
+  type: 'test'
+  ...
+# Subtest: Builder --check rejects source, review or output-byte changes in an isolated copy
+ok 14 - Builder --check rejects source, review or output-byte changes in an isolated copy
+  ---
+  duration_ms: 116.461042
+  type: 'test'
+  ...
+# Subtest: Frozen learning cards, schedules, world contexts and approved simple page stay byte-identical
+ok 15 - Frozen learning cards, schedules, world contexts and approved simple page stay byte-identical
+  ---
+  duration_ms: 0.638125
+  type: 'test'
+  ...
+# Subtest: Fallback Wiktionary cache is also isolated from caller mutation
+ok 16 - Fallback Wiktionary cache is also isolated from caller mutation
+  ---
+  duration_ms: 12.954
+  type: 'test'
+  ...
+# Subtest: Wiktionary shard hashes are mandatory before any detail data is accepted
+ok 17 - Wiktionary shard hashes are mandatory before any detail data is accepted
+  ---
+  duration_ms: 7.642
+  type: 'test'
+  ...
+# Subtest: Null or array live JSON is a controlled invalid-data error
+ok 18 - Null or array live JSON is a controlled invalid-data error
+  ---
+  duration_ms: 0.25575
+  type: 'test'
+  ...
+1..18
+# tests 18
+# suites 0
+# pass 18
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 361.376084
+
+> nameonmymind@0.1.0 build:public
+> node scripts/build-public.mjs
+
+{
+  "status": "PASS",
+  "output": "/Users/01chungee10/Github/NameOnMyMind/public",
+  "card_ids": [
+    "C0001",
+    "C0002",
+    "C0003",
+    "C0004",
+    "C0005"
+  ],
+  "snapshot_version": "976f5b427046a883",
+  "content_snapshot_version": "867d91c0737e29c7",
+  "deployable": true,
+  "external_publish_authorized": true,
+  "agent_manifest": true,
+  "pwa": true
+}
+
+> nameonmymind@0.1.0 stage:research-preview
+> node scripts/stage-research-preview.mjs
+
+{
+  "status": "PASS",
+  "schema_version": "1.0.0",
+  "artifact_type": "RESEARCH_PREVIEW_WEB_STAGE",
+  "preview_web_publish_authorized": true,
+  "product_release_authorized": false,
+  "approved_public_card_ids": [
+    "C0001",
+    "C0002",
+    "C0003",
+    "C0004",
+    "C0005"
+  ],
+  "preview_card_ids": [
+    "C0016",
+    "C0018",
+    "C0019",
+    "C0021",
+    "C0022",
+    "C0023",
+    "C0024",
+    "C0025",
+    "C0026",
+    "C0027",
+    "C0028",
+    "C0029",
+    "C0030",
+    "C0031",
+    "C0032",
+    "C0033"
+  ],
+  "preview_card_count": 16,
+  "preview_path": "prototypes/g5-research-preview-20260918/",
+  "alias_path": "preview/",
+  "korean_emotion_map": {
+    "track_id": "KOREAN_EMOTION_ARTICULATION",
+    "family_count": 22,
+    "term_count": 151,
+    "source_verified_term_count": 151,
+    "level1_verified_term_count": 38,
+    "level2_verified_term_count": 72,
+    "level2_discovery_term_count": 0,
+    "level3_verified_term_count": 41,
+    "level3_discovery_term_count": 0,
+    "school_age_direct_term_count": 21,
+    "school_age_related_term_count": 1,
+    "contrast_set_count": 16,
+    "preview_path": "prototypes/korean-emotion-map-20260919/",
+    "daily_learning_path": "prototypes/korean-daily-learning-20260923/",
+    "daily_learning_alias_path": "learn/",
+    "data_path": "content/korean-expression/emotion-map-v1.json",
+    "simple_meanings_path": "content/korean-expression/simple-meanings-v1.json",
+    "learning_vocabulary_path": "content/korean-expression/learning-vocabulary-v1.json",
+    "learning_schedule_path": "content/korean-expression/learning-daily-v3.json",
+    "learning_term_count": 177,
+    "daily_pool_path": "content/korean-expression/daily-pool-v1.json",
+    "daily_pool_v1_path": "content/korean-expression/daily-pool-v1.json",
+    "daily_pool_v2_path": "content/korean-expression/daily-pool-v2.json",
+    "daily_pool_registry_path": "content/korean-expression/daily-pools.json",
+    "school_age_evidence_path": "content/korean-expression/evidence/school-age-v1.json",
+    "level1_evidence_path": "content/korean-expression/evidence/level1-source-v1.json",
+    "level2_evidence_path": "content/korean-expression/evidence/level2-exact-source-v1.json",
+    "level2_followup_v2_evidence_path": "content/korean-expression/evidence/level2-followup-source-v2.json",
+    "level3_evidence_path": "content/korean-expression/evidence/level3-exact-source-v1.json",
+    "level3_followup_evidence_path": "content/korean-expression/evidence/level3-followup-source-v2.json",
+    "level3_followup_v3_evidence_path": "content/korean-expression/evidence/level3-followup-source-v3.json",
+    "level3_followup_v4_evidence_path": "content/korean-expression/evidence/level3-followup-source-v4.json",
+    "phrase_evidence_path": "content/korean-expression/evidence/phrase-source-v1.json",
+    "phrase_v2_evidence_path": "content/korean-expression/evidence/phrase-source-v2.json",
+    "standard_dictionary_followup_evidence_path": "content/korean-expression/evidence/standard-dictionary-followup-v1.json",
+    "alias_path": "korean/",
+    "product_release_authorized": false
+  }
+}
+
+> nameonmymind@0.1.0 check:privacy
+> node scripts/check-private-leakage.mjs
+
+{
+  "status": "PASS",
+  "scanned_roots": [
+    "review-preview",
+    "public"
+  ],
+  "violations": 0
+}
