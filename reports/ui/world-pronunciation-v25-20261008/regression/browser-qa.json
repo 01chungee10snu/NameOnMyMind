@@ -1,0 +1,63 @@
+{
+  "status": "PASS",
+  "viewports": [
+    {
+      "width": 320,
+      "height": 740,
+      "document_height": 828,
+      "horizontal_overflow": false
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "document_height": 844,
+      "horizontal_overflow": false
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "document_height": 1024,
+      "horizontal_overflow": false
+    },
+    {
+      "width": 1280,
+      "height": 900,
+      "document_height": 900,
+      "horizontal_overflow": false
+    }
+  ],
+  "sweep_count": 354,
+  "errors": [],
+  "daily_word": "서운하다",
+  "new_word_search_checks": 26,
+  "privacy": {
+    "typing_network_requests": 0,
+    "browser_storage_entries": 0,
+    "draft_survives_word_switch": true,
+    "draft_cleared_on_reload": true
+  },
+  "future_daily_checks": [
+    {
+      "date": "2026-10-01",
+      "word": "아늑하다"
+    },
+    {
+      "date": "2026-10-31",
+      "word": "차분하다"
+    },
+    {
+      "date": "2027-01-01",
+      "word": "포근하다"
+    },
+    {
+      "date": "2028-02-29",
+      "word": "가슴이 두근거리다"
+    }
+  ],
+  "search_same_surface": true,
+  "source_failure_visible": true,
+  "associated_input_labels": true,
+  "touch_targets_min_44": true,
+  "browser": "Chromium 148.0.7778.96",
+  "real_device_tested": false
+}

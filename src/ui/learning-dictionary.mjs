@@ -1,6 +1,8 @@
 // Optional dictionary/world context enhancements; no reflection input is read here.
 import { dictionaryArticleUrl, normalizeHeadword, matchWorldContext } from '../domain/dictionary.mjs';
 import { createFederatedDictionaryClient } from '../domain/official-dictionary.mjs';
+import { mountPronunciationController } from './world-pronunciation.mjs';
+import { WORLD_PRONUNCIATION_SOURCE } from '../domain/world-pronunciation-data.mjs';
 
 const escapeText = (s = '') => String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const allowedSource = (value) => {
@@ -8,7 +10,7 @@ const allowedSource = (value) => {
     const u = new URL(value);
     if (u.protocol !== 'https:') return false;
     if (u.username || u.password) return false;
-    const allowed = new Set(['dicionario.priberam.org', 'www.wales.com', 'www.duden.de', 'kotobank.jp', 'zdic.net', 'ko.wiktionary.org', 'krdict.korean.go.kr', 'creativecommons.org']);
+    const allowed = new Set(['dicionario.priberam.org', 'www.wales.com', 'www.duden.de', 'kotobank.jp', 'zdic.net', 'ko.wiktionary.org', 'en.wiktionary.org', 'de.wiktionary.org', 'krdict.korean.go.kr', 'creativecommons.org']);
     return allowed.has(u.hostname);
   } catch {
     return false;
@@ -18,12 +20,20 @@ const allowedSource = (value) => {
 export function worldMarkup(world, expression) {
   const row = matchWorldContext(world, expression);
   if (!row) return '';
-  return `<section class="world-context" aria-label="다른 언어의 마음말"><h2>다른 언어의 마음말</h2><p class="world-title"><bdi lang="${escapeText(row.lang)}">${escapeText(row.term)}</bdi><span>${escapeText(row.language)}</span></p><p class="world-meaning">${escapeText(row.meaning)}</p></section>`;
+  const p = WORLD_PRONUNCIATION_SOURCE.entries.find(entry => entry.world_id === row.id && entry.term === row.term);
+  const pronunciation = p ? `<div class="world-pronunciation">
+    <p class="world-ipa">IPA <bdi dir="ltr">${escapeText(p.ipa)}</bdi></p>
+    <p class="world-reading">한글 도움: ${escapeText(p.korean_guide)}${['ja-JP','zh-CN'].includes(p.locale) ? ` <small lang="${escapeText(p.locale)}">· ${escapeText(p.reading)}</small>` : ''}</p>
+    <div class="dictionary-actions"><button type="button" class="dictionary-button" data-pronunciation-id="${escapeText(row.id)}" aria-label="${escapeText(row.term)} 발음 듣기" aria-pressed="false">듣기</button><button type="button" class="dictionary-button secondary" data-pronunciation-id="${escapeText(row.id)}" data-pronunciation-mode="slow" aria-label="${escapeText(row.term)} 천천히 듣기" aria-pressed="false">천천히</button></div>
+    <p class="hint world-pronunciation-status" role="status" aria-live="polite" aria-atomic="true"></p></div>` : '';
+  return `<section class="world-context" aria-label="다른 언어의 마음말"><h2>다른 언어의 마음말</h2><p class="world-title"><bdi lang="${escapeText(row.lang)}">${escapeText(row.term)}</bdi><span>${escapeText(row.language)}</span></p>${pronunciation}<p class="world-meaning">${escapeText(row.meaning)}</p></section>`;
 }
 export function worldSourceMarkup(world, expression) {
   const row = matchWorldContext(world, expression);
   if (!row) return '';
-  return `<p class="source-note">${escapeText(row.difference)}</p><p class="source-note">${escapeText(world.cultural_note)}</p>${allowedSource(row.source_url) ? `<a class="source-link" href="${escapeText(row.source_url)}" target="_blank" rel="noopener noreferrer">${escapeText(row.source_name)}</a>` : ''}`;
+  const p = WORLD_PRONUNCIATION_SOURCE.entries.find(entry => entry.world_id === row.id && entry.term === row.term);
+  const pronunciation = p ? `<p class="source-note">발음 안내: ${escapeText(p.variant)}. ${escapeText(p.practice_tip)}</p><p class="source-note">${escapeText(WORLD_PRONUNCIATION_SOURCE.korean_guide_note)}</p><p class="dictionary-credit">${escapeText(WORLD_PRONUNCIATION_SOURCE.speech_note)}</p><p class="dictionary-credit"><a title="${escapeText(p.source_locator)}" href="${escapeText(p.source_url)}" target="_blank" rel="noopener noreferrer">발음기호 · ${escapeText(p.source_name)} 기여자</a> · <a href="${escapeText(p.license_url)}" target="_blank" rel="noopener noreferrer">${escapeText(p.license)}</a></p>` : '';
+  return `<p class="source-note">${escapeText(row.difference)}</p><p class="source-note">${escapeText(world.cultural_note)}</p>${allowedSource(row.source_url) ? `<a class="source-link" href="${escapeText(row.source_url)}" target="_blank" rel="noopener noreferrer">${escapeText(row.source_name)}</a>` : ''}${pronunciation}`;
 }
 const messages = {
   INVALID_QUERY: '한글 낱말을 40자 이내로 입력해 주세요.',
@@ -59,6 +69,7 @@ function renderSourceDetails(entry) {
 }
 
 export function mountDictionarySearch({ host, searchInput, world, baseUrl }) {
+  mountPronunciationController(host.ownerDocument);
   const client = createFederatedDictionaryClient(baseUrl);
   host.innerHTML = `<div class="dictionary-actions"><button type="button" id="dictionary-search" class="dictionary-button">사전에서 더 찾기</button><button type="button" id="dictionary-live" class="dictionary-button secondary">최신 사전 조회</button></div>
     <p class="hint dictionary-help">더 찾기는 국립국어원 자료를 먼저 보여줘요. 최신 조회를 누를 때만 입력한 낱말을 위키낱말사전에 보내요.</p>

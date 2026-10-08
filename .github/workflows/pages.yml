@@ -97,6 +97,9 @@ jobs:
           if (dictionary.status !== 'DICTIONARY_SEARCH_ONLY' || dictionary.searchable_headwords !== dictionaryIndex.entries.length || dictionary.searchable_headwords < 30000) throw new Error('Open dictionary staging mismatch');
           if (world.entries.length !== 7 || world.entries.some(row => row.relation !== 'PARTIAL_CONTEXT_OVERLAP')) throw new Error('World context boundary mismatch');
           for (const path of ['public/src/domain/dictionary.mjs','public/src/ui/learning-dictionary.mjs','public/content/dictionary/ATTRIBUTION.md']) if (!fs.existsSync(path)) throw new Error('Dictionary runtime or attribution missing');
+          for (const file of ['public/src/ui/world-pronunciation.mjs','public/src/domain/world-pronunciation-data.mjs','public/content/korean-expression/world-pronunciations-v1.json']) if (!fs.existsSync(file)) throw new Error('Pronunciation runtime missing');
+          const pronunciation = JSON.parse(fs.readFileSync('public/content/korean-expression/world-pronunciations-v1.json','utf8'));
+          if (pronunciation.entries.length !== 7 || pronunciation.entries.some(p => !world.entries.some(w => w.id === p.world_id && w.term === p.term))) throw new Error('Pronunciation identity mismatch');
           const koreanHtml = fs.readFileSync('public/prototypes/korean-emotion-map-20260919/index.html','utf8');
           const dailyLearningHtml = fs.readFileSync('public/prototypes/korean-daily-learning-20260923/index.html','utf8');
           const publicApp = fs.readFileSync('public/src/ui/app.mjs','utf8');

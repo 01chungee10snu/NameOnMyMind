@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "node_tests": 105,
+  "python_tests": 8,
+  "pronunciation_entries": 7,
+  "layout_checks": 28,
+  "native_pronunciation_successes": 6,
+  "native_language_missing": [
+    "cy-GB"
+  ],
+  "normal_rate": 0.85,
+  "slow_rate": 0.6,
+  "existing_curated_mobile_sweeps": 354,
+  "existing_world_mobile_checks": 14,
+  "physical_phone_tested": false,
+  "native_speaker_listening_review": false,
+  "base_commit": "fb80aa0",
+  "publication_checked_separately": true
+}

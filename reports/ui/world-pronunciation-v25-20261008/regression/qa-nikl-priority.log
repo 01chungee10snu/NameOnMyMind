@@ -1,0 +1,81 @@
+{
+  "status": "PASS",
+  "physical_device_tested": false,
+  "url": "http://127.0.0.1:57688/learn/",
+  "initial_dictionary_requests": 0,
+  "typing_requests": 0,
+  "official_layout_checks": [
+    {
+      "width": 320,
+      "word": "가뿐하다",
+      "official_first": true,
+      "unknown_order_unnumbered": true
+    },
+    {
+      "width": 320,
+      "word": "가슴앓이",
+      "official_first": true,
+      "unknown_order_unnumbered": true
+    },
+    {
+      "width": 390,
+      "word": "가뿐하다",
+      "official_first": true,
+      "unknown_order_unnumbered": true
+    },
+    {
+      "width": 390,
+      "word": "가슴앓이",
+      "official_first": true,
+      "unknown_order_unnumbered": true
+    },
+    {
+      "width": 768,
+      "word": "가뿐하다",
+      "official_first": true,
+      "unknown_order_unnumbered": true
+    },
+    {
+      "width": 768,
+      "word": "가슴앓이",
+      "official_first": true,
+      "unknown_order_unnumbered": true
+    },
+    {
+      "width": 1280,
+      "word": "가뿐하다",
+      "official_first": true,
+      "unknown_order_unnumbered": true
+    },
+    {
+      "width": 1280,
+      "word": "가슴앓이",
+      "official_first": true,
+      "unknown_order_unnumbered": true
+    }
+  ],
+  "homograph_results": [
+    "감상 · 국립국어원 · 동형어 1",
+    "감상 · 국립국어원 · 동형어 2",
+    "감상적 · 국립국어원 · 동형어 1",
+    "감상적 · 국립국어원 · 동형어 2"
+  ],
+  "separate_homograph_urls": [
+    "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=14241&nation=eng",
+    "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=14239&nation=eng"
+  ],
+  "open_only_word": "망설이다",
+  "reflection_requests": 0,
+  "normal_page_errors": [],
+  "provider_fallback_checks": [
+    {
+      "unavailable": "nikl",
+      "usable_source": "위키낱말사전"
+    },
+    {
+      "unavailable": "open-ko",
+      "usable_source": "국립국어원"
+    }
+  ],
+  "browser": "Chromium 148.0.7778.96"
+}
