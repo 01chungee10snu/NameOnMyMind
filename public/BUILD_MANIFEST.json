@@ -3,7 +3,7 @@
   "artifact_type": "LOCAL_PUBLIC_BUILD",
   "deployable": true,
   "external_publish_authorized": false,
-  "snapshot_version": "8bfad8d4a2f013dd",
+  "snapshot_version": "c57e3ae53f5912b2",
   "content_snapshot_version": "867d91c0737e29c7",
   "card_ids": [
     "C0001",
@@ -17,9 +17,9 @@
     "manifest": "manifest.webmanifest",
     "service_worker": "service-worker.js",
     "offline_fallback": "offline.html",
-    "shell_cache": "nomm-shell-v1-8bfad8d4a2f013dd",
-    "content_cache": "nomm-content-8bfad8d4a2f013dd",
-    "asset_cache": "nomm-assets-v1-8bfad8d4a2f013dd"
+    "shell_cache": "nomm-shell-v1-c57e3ae53f5912b2",
+    "content_cache": "nomm-content-c57e3ae53f5912b2",
+    "asset_cache": "nomm-assets-v1-c57e3ae53f5912b2"
   },
   "input_sha256": {
     "card_schema": "8e29503186d27440efe2ee12dba84c964879c57be0b6ebb16907d743bc9cf17e",
@@ -42,13 +42,15 @@
     "runtime_src_domain_dictionary.mjs": "bc7e4664d895ec10035b098418dd20c070b7a2c0987665d8be7a69b729f9cc6e",
     "runtime_src_domain_official-dictionary.mjs": "355a8013aecb881acca8f8138312eaaabeb01612fd2f0a1dc79864d6b2204320",
     "runtime_src_domain_world-pronunciation-data.mjs": "c80243f70978e1c461683ab6a9be9ddf5f6e63a4369eefd83b2f82b68cc8171e",
-    "runtime_src_ui_learning-dictionary.mjs": "fe3782b954054a691a9ec1dde19cee5a44bbbd8df19d1829156baa40e055bbe8",
+    "runtime_src_domain_world-hanja-data.mjs": "9f7124e8cd33131c2e295e2a5b51a60961f1be19ae22160810335c53357fc8a2",
+    "runtime_src_ui_learning-dictionary.mjs": "fdafe6323e46538d8719b9fd08576b1eea6fdb6e492430e707eb1772b55c2e31",
     "runtime_src_ui_world-pronunciation.mjs": "7614b08bd8d1592f7b431428e467c5d48eafabfb6b5e7ee2f6fcab79e31e236c",
+    "runtime_src_ui_world-hanja.mjs": "52993a87f206048d280c247b30c3d64ca9ef2b5227cc2f10a245a005b62f62f6",
     "runtime_src_local_state.mjs": "975e7372486aace916597b7e2bb70f357f892a00434b9094e9718460fe2c1c36",
     "runtime_src_agent_webmcp-adapter.mjs": "21bf996f9161e693c751992042b5373231c90266c647f9344b9a3f59db4b8e6c",
     "runtime_src_agent_agent-manifest.json": "1119ca3131df01ee430667f16a96dce3bcb39cb8d86785eb7db49d8ff9a04fc4",
     "runtime_src_pwa_manifest.webmanifest": "afa3c7026db3026616f15150bc92a201a41e762b08938551b6540d53eabdfa92",
-    "runtime_src_pwa_service-worker.template.js": "9566c2a7011fc8c2143b340cdd4cec5493a55e2982a53370a4f872a8f607c416",
+    "runtime_src_pwa_service-worker.template.js": "21c9bc390ccb9409136e8f7463c162a9d01b24ef24df2c74f1232d7ce45469df",
     "runtime_src_pwa_offline.html": "dececcd5775f3506377aae82735b0e2fcb6b5fe973d69569712a711ba7feb4cd",
     "runtime_assets_css_styles.css": "c489df4f4c36aacaf68c65b40d990ff122cadf3c3ba28d6983e417060fa16297",
     "runtime_assets_brand_app-icon.svg": "da9acf16edf791676c25df5407c92b8128e3313c7352afbe8bfdbd96440ec8bc"

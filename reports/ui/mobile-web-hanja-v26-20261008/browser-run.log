@@ -1,0 +1,72 @@
+{
+  "status": "PASS",
+  "base_url": "http://127.0.0.1:63755/NameOnMyMind/",
+  "anonymous": true,
+  "physical_phone_tested": false,
+  "browser_checks": [
+    {
+      "engine": "webkit",
+      "profile": "iPhone 13",
+      "routes": [
+        {
+          "route": "/",
+          "http_status": 200,
+          "direct_learner": true,
+          "horizontal_overflow": false
+        },
+        {
+          "route": "learn/",
+          "http_status": 200,
+          "direct_learner": true,
+          "horizontal_overflow": false
+        }
+      ],
+      "hanja_checks": [
+        "物の哀れ",
+        "舍不得"
+      ],
+      "reflection_network_requests": 0,
+      "browser_cookie_count": 0,
+      "legacy_card_link_preserved": true,
+      "legacy_redirect_cancelled_requests": 0,
+      "old_prototype_preserved": true,
+      "compact_320px_layout": true,
+      "errors": [],
+      "failed_requests": [],
+      "foreign_words_checked": 7,
+      "speech_engine_available": true
+    },
+    {
+      "engine": "chromium",
+      "profile": "Pixel 7",
+      "routes": [
+        {
+          "route": "/",
+          "http_status": 200,
+          "direct_learner": true,
+          "horizontal_overflow": false
+        },
+        {
+          "route": "learn/",
+          "http_status": 200,
+          "direct_learner": true,
+          "horizontal_overflow": false
+        }
+      ],
+      "hanja_checks": [
+        "物の哀れ",
+        "舍不得"
+      ],
+      "reflection_network_requests": 0,
+      "browser_cookie_count": 0,
+      "legacy_card_link_preserved": true,
+      "legacy_redirect_cancelled_requests": 0,
+      "old_prototype_preserved": true,
+      "compact_320px_layout": true,
+      "errors": [],
+      "failed_requests": [],
+      "foreign_words_checked": 7,
+      "speech_engine_available": true
+    }
+  ]
+}

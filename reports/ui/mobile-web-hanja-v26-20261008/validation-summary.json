@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "node_tests": 116,
+  "python_fixture_tests": 8,
+  "mobile_engines": [
+    "WebKit (iPhone 13 profile)",
+    "Chromium (Pixel 7 profile)"
+  ],
+  "anonymous": true,
+  "mobile_profiles_passed": 2,
+  "public_entry_routes_checked": 4,
+  "world_word_mobile_checks": 14,
+  "hanja_terms": 2,
+  "hanja_characters": 5,
+  "compact_320px_layout": true,
+  "native_desktop_tts_start_end": 6,
+  "unavailable_native_voice": "Welsh",
+  "physical_phone_tested": false,
+  "native_speaker_listening_review": false,
+  "runtime_tests_status": "PASS",
+  "production_verified": false
+}

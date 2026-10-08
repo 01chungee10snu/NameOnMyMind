@@ -1,0 +1,118 @@
+{
+  "status": "PASS",
+  "layout_checks": 28,
+  "real_speech_results": [
+    {
+      "word": "saudade",
+      "status": "START_END_CONFIRMED",
+      "text": "saudade",
+      "lang": "pt-BR",
+      "voice": "Luciana",
+      "local": true,
+      "rate": 0.8500000238418579,
+      "events": [
+        "start",
+        "end"
+      ]
+    },
+    {
+      "word": "hiraeth",
+      "status": "VOICE_NOT_INSTALLED",
+      "wrong_language_fallback": false
+    },
+    {
+      "word": "Geborgenheit",
+      "status": "START_END_CONFIRMED",
+      "text": "Geborgenheit",
+      "lang": "de-DE",
+      "voice": "Anna",
+      "local": true,
+      "rate": 0.8500000238418579,
+      "events": [
+        "start",
+        "end"
+      ]
+    },
+    {
+      "word": "Fernweh",
+      "status": "START_END_CONFIRMED",
+      "text": "Fernweh",
+      "lang": "de-DE",
+      "voice": "Anna",
+      "local": true,
+      "rate": 0.8500000238418579,
+      "events": [
+        "start",
+        "end"
+      ]
+    },
+    {
+      "word": "Torschlusspanik",
+      "status": "START_END_CONFIRMED",
+      "text": "Torschlusspanik",
+      "lang": "de-DE",
+      "voice": "Anna",
+      "local": true,
+      "rate": 0.8500000238418579,
+      "events": [
+        "start",
+        "end"
+      ]
+    },
+    {
+      "word": "物の哀れ",
+      "status": "START_END_CONFIRMED",
+      "text": "もののあわれ",
+      "lang": "ja-JP",
+      "voice": "Kyoko",
+      "local": true,
+      "rate": 0.8500000238418579,
+      "events": [
+        "start",
+        "end"
+      ]
+    },
+    {
+      "word": "舍不得",
+      "status": "START_END_CONFIRMED",
+      "text": "舍不得",
+      "lang": "zh-CN",
+      "voice": "Tingting",
+      "local": true,
+      "rate": 0.8500000238418579,
+      "events": [
+        "start",
+        "end"
+      ]
+    }
+  ],
+  "physical_phone_tested": false,
+  "native_speaker_listening_review": false,
+  "slow_keyboard_playback": {
+    "text": "saudade",
+    "lang": "pt-BR",
+    "voice": "Luciana",
+    "local": true,
+    "rate": 0.6000000238418579,
+    "events": [
+      "start",
+      "end"
+    ]
+  },
+  "dynamic_dictionary_playback": {
+    "text": "もののあわれ",
+    "lang": "ja-JP",
+    "voice": "Kyoko",
+    "local": true,
+    "rate": 0.8500000238418579,
+    "events": [
+      "start",
+      "end"
+    ]
+  },
+  "typing_or_reflection_speech_requests": 0,
+  "typing_or_reflection_app_network_requests": 0,
+  "browser": "Chromium 148.0.7778.96",
+  "errors": [],
+  "all_native_test_voices_local": true
+}

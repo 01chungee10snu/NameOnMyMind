@@ -120,7 +120,7 @@ fs.mkdirSync(path.dirname(KOREAN_DATA_TARGET), { recursive: true });
 fs.copyFileSync(KOREAN_DATA_SOURCE, KOREAN_DATA_TARGET);
 fs.copyFileSync(KOREAN_SIMPLE_MEANINGS_SOURCE, KOREAN_SIMPLE_MEANINGS_TARGET);
 fs.cpSync(path.join(ROOT, 'content/dictionary'), path.join(OUT, 'content/dictionary'), { recursive: true });
-for (const file of ['learning-vocabulary-v1.json', 'learning-daily-v3.json', 'world-contexts-v1.json', 'world-pronunciations-v1.json']) {
+for (const file of ['learning-vocabulary-v1.json', 'learning-daily-v3.json', 'world-contexts-v1.json', 'world-pronunciations-v1.json', 'world-hanja-v1.json']) {
   fs.copyFileSync(path.join(ROOT, 'content/korean-expression', file), path.join(OUT, 'content/korean-expression', file));
 }
 

@@ -39,6 +39,14 @@ jobs:
         env:
           NAMEONMYMIND_RESEARCH_PREVIEW_PUBLISH_AUTHORIZED: "1"
         run: npm run stage:research-preview
+      - name: Stage authorized mobile web
+        env:
+          NAMEONMYMIND_MOBILE_WEB_PUBLISH_AUTHORIZED: "1"
+        run: npm run stage:mobile-web
+      - name: Check mobile web staging
+        env:
+          NAMEONMYMIND_MOBILE_WEB_PUBLISH_AUTHORIZED: "1"
+        run: npm run test:mobile-web && node scripts/stage-mobile-web.mjs --check
       - name: Verify publication boundary
         run: |
           node - <<'NODE'
@@ -98,6 +106,7 @@ jobs:
           if (world.entries.length !== 7 || world.entries.some(row => row.relation !== 'PARTIAL_CONTEXT_OVERLAP')) throw new Error('World context boundary mismatch');
           for (const path of ['public/src/domain/dictionary.mjs','public/src/ui/learning-dictionary.mjs','public/content/dictionary/ATTRIBUTION.md']) if (!fs.existsSync(path)) throw new Error('Dictionary runtime or attribution missing');
           for (const file of ['public/src/ui/world-pronunciation.mjs','public/src/domain/world-pronunciation-data.mjs','public/content/korean-expression/world-pronunciations-v1.json']) if (!fs.existsSync(file)) throw new Error('Pronunciation runtime missing');
+          for (const file of ['public/src/ui/world-hanja.mjs','public/src/domain/world-hanja-data.mjs','public/content/korean-expression/world-hanja-v1.json']) if (!fs.existsSync(file)) throw new Error('Hanja runtime missing');
           const pronunciation = JSON.parse(fs.readFileSync('public/content/korean-expression/world-pronunciations-v1.json','utf8'));
           if (pronunciation.entries.length !== 7 || pronunciation.entries.some(p => !world.entries.some(w => w.id === p.world_id && w.term === p.term))) throw new Error('Pronunciation identity mismatch');
           const koreanHtml = fs.readFileSync('public/prototypes/korean-emotion-map-20260919/index.html','utf8');

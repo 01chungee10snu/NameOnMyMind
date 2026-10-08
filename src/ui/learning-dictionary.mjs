@@ -3,6 +3,7 @@ import { dictionaryArticleUrl, normalizeHeadword, matchWorldContext } from '../d
 import { createFederatedDictionaryClient } from '../domain/official-dictionary.mjs';
 import { mountPronunciationController } from './world-pronunciation.mjs';
 import { WORLD_PRONUNCIATION_SOURCE } from '../domain/world-pronunciation-data.mjs';
+import { renderHanja, hanjaSources } from './world-hanja.mjs';
 
 const escapeText = (s = '') => String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const allowedSource = (value) => {
@@ -26,14 +27,14 @@ export function worldMarkup(world, expression) {
     <p class="world-reading">한글 도움: ${escapeText(p.korean_guide)}${['ja-JP','zh-CN'].includes(p.locale) ? ` <small lang="${escapeText(p.locale)}">· ${escapeText(p.reading)}</small>` : ''}</p>
     <div class="dictionary-actions"><button type="button" class="dictionary-button" data-pronunciation-id="${escapeText(row.id)}" aria-label="${escapeText(row.term)} 발음 듣기" aria-pressed="false">듣기</button><button type="button" class="dictionary-button secondary" data-pronunciation-id="${escapeText(row.id)}" data-pronunciation-mode="slow" aria-label="${escapeText(row.term)} 천천히 듣기" aria-pressed="false">천천히</button></div>
     <p class="hint world-pronunciation-status" role="status" aria-live="polite" aria-atomic="true"></p></div>` : '';
-  return `<section class="world-context" aria-label="다른 언어의 마음말"><h2>다른 언어의 마음말</h2><p class="world-title"><bdi lang="${escapeText(row.lang)}">${escapeText(row.term)}</bdi><span>${escapeText(row.language)}</span></p>${pronunciation}<p class="world-meaning">${escapeText(row.meaning)}</p></section>`;
+  return `<section class="world-context" aria-label="다른 언어의 마음말"><h2>다른 언어의 마음말</h2><p class="world-title"><bdi lang="${escapeText(row.lang)}">${escapeText(row.term)}</bdi><span>${escapeText(row.language)}</span></p>${pronunciation}<p class="world-meaning">${escapeText(row.meaning)}</p>${renderHanja(row)}</section>`;
 }
 export function worldSourceMarkup(world, expression) {
   const row = matchWorldContext(world, expression);
   if (!row) return '';
   const p = WORLD_PRONUNCIATION_SOURCE.entries.find(entry => entry.world_id === row.id && entry.term === row.term);
   const pronunciation = p ? `<p class="source-note">발음 안내: ${escapeText(p.variant)}. ${escapeText(p.practice_tip)}</p><p class="source-note">${escapeText(WORLD_PRONUNCIATION_SOURCE.korean_guide_note)}</p><p class="dictionary-credit">${escapeText(WORLD_PRONUNCIATION_SOURCE.speech_note)}</p><p class="dictionary-credit"><a title="${escapeText(p.source_locator)}" href="${escapeText(p.source_url)}" target="_blank" rel="noopener noreferrer">발음기호 · ${escapeText(p.source_name)} 기여자</a> · <a href="${escapeText(p.license_url)}" target="_blank" rel="noopener noreferrer">${escapeText(p.license)}</a></p>` : '';
-  return `<p class="source-note">${escapeText(row.difference)}</p><p class="source-note">${escapeText(world.cultural_note)}</p>${allowedSource(row.source_url) ? `<a class="source-link" href="${escapeText(row.source_url)}" target="_blank" rel="noopener noreferrer">${escapeText(row.source_name)}</a>` : ''}${pronunciation}`;
+  return `<p class="source-note">${escapeText(row.difference)}</p><p class="source-note">${escapeText(world.cultural_note)}</p>${allowedSource(row.source_url) ? `<a class="source-link" href="${escapeText(row.source_url)}" target="_blank" rel="noopener noreferrer">${escapeText(row.source_name)}</a>` : ''}${hanjaSources(row)}${pronunciation}`;
 }
 const messages = {
   INVALID_QUERY: '한글 낱말을 40자 이내로 입력해 주세요.',

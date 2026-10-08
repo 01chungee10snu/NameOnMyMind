@@ -9,6 +9,7 @@
     "build:review": "node scripts/build-review-preview.mjs",
     "build:public": "node scripts/build-public.mjs",
     "stage:research-preview": "node scripts/stage-research-preview.mjs",
+    "stage:mobile-web": "node scripts/stage-mobile-web.mjs",
     "test:g1": "node --test tests/g1/*.test.mjs",
     "check:privacy": "node scripts/check-private-leakage.mjs",
     "check:g1": "npm run validate:g1 && npm run build:public && npm run test:g1 && npm run check:privacy",
@@ -22,12 +23,13 @@
     "check:g4": "npm run validate:g4 && npm run build:public && npm run test:g1 && npm run test:g2 && npm run test:g3 && npm run test:g4 && npm run check:privacy",
     "packet:g4": "node scripts/build-g4-review-packet.mjs",
     "test:g5-selection": "node --test tests/g5/editorial-selection.test.mjs",
+    "test:mobile-web": "node --test tests/g5/mobile-web.test.mjs",
     "check:g5-selection": "npm run check:g4 && npm run test:g5-selection && npm run check:privacy",
     "validate:g5-research": "node scripts/g5/validate-korean-batch01-research.mjs && node scripts/g5/validate-all-g5-research.mjs && node scripts/g5/validate-foreign-batch01-research.mjs && node scripts/g5/validate-foreign-batch02-research.mjs && node scripts/g5/validate-foreign-batch03-research.mjs && node scripts/g5/validate-foreign-batch04-research.mjs && node scripts/g5/validate-foreign-batch05-research.mjs && node scripts/g5/validate-foreign-batch06-research.mjs",
     "check:g5-research": "npm run check:g5-selection && npm run validate:g5-research && npm run check:privacy",
     "validate:korean-expression": "node scripts/korean/validate-expression-ladders.mjs",
     "validate:korean-emotion": "node scripts/korean/validate-emotion-map.mjs",
-    "check:korean-language": "node scripts/dictionary/build-nikl-dictionary.mjs --check && npm run validate:korean-expression && npm run validate:korean-emotion && node scripts/korean/build-simple-meanings.mjs --check && npm run test:korean-learning && node scripts/korean/build-learning-vocabulary.mjs --check && npm run test:learning-expansion && npm run test:dictionary-world && npm run test:nikl-v24 && node scripts/korean/build-world-pronunciation-data.mjs --check && npm run test:world-pronunciation",
+    "check:korean-language": "node scripts/dictionary/build-nikl-dictionary.mjs --check && npm run validate:korean-expression && npm run validate:korean-emotion && node scripts/korean/build-simple-meanings.mjs --check && npm run test:korean-learning && node scripts/korean/build-learning-vocabulary.mjs --check && npm run test:learning-expansion && npm run test:dictionary-world && npm run test:nikl-v24 && node scripts/korean/build-world-pronunciation-data.mjs --check && npm run test:world-pronunciation && node scripts/korean/build-world-hanja.mjs --check && npm run test:world-hanja",
     "build:korean-copy": "node scripts/korean/build-simple-meanings.mjs",
     "test:korean-learning": "node --test tests/g5/simple-learning.test.mjs",
     "build:learning-vocabulary": "node scripts/korean/build-learning-vocabulary.mjs",
@@ -37,7 +39,9 @@
     "check:nikl": "node scripts/dictionary/build-nikl-dictionary.mjs --check",
     "test:nikl-v24": "node --test tests/g5/nikl-v24.test.mjs",
     "build:world-pronunciation-data": "node scripts/korean/build-world-pronunciation-data.mjs",
-    "test:world-pronunciation": "node --test tests/g5/world-pronunciation.test.mjs tests/g5/world-pronunciation-edge.test.mjs"
+    "test:world-pronunciation": "node --test tests/g5/world-pronunciation.test.mjs tests/g5/world-pronunciation-edge.test.mjs",
+    "build:world-hanja": "node scripts/korean/build-world-hanja.mjs",
+    "test:world-hanja": "node --test tests/g5/world-hanja.test.mjs"
   },
   "devDependencies": {
     "ajv": "8.20.0",
