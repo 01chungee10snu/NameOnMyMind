@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "node_tests": 135,
+  "python_fixture_tests": 8,
+  "total_code_tests": 143,
+  "positive_focus_words": 61,
+  "lexical_antonym_pairs": 4,
+  "contextual_contrast_pairs": 28,
+  "original_learning_words": 177,
+  "additional_comparison_only_words": 3,
+  "mobile_term_routes": 360,
+  "world_routes": 14,
+  "engines": [
+    "WebKit/iPhone 13",
+    "Chromium/Pixel 7"
+  ],
+  "real_desktop_speech_start_end": 2,
+  "physical_phone_tested": false,
+  "child_comprehension_tested": false,
+  "production_verified": false
+}

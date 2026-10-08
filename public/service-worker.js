@@ -1,4 +1,4 @@
-const SNAPSHOT = 'c57e3ae53f5912b2';
+const SNAPSHOT = '7582cd278957bda1';
 const SHELL_CACHE = `nomm-shell-v1-${SNAPSHOT}`;
 const CONTENT_CACHE = `nomm-content-${SNAPSHOT}`;
 const ASSET_CACHE = `nomm-assets-v1-${SNAPSHOT}`;
@@ -17,6 +17,7 @@ const SHELL_URLS = [
   './src/domain/discovery.mjs',
   './src/domain/korean-daily.mjs',
   './src/domain/korean-learning.mjs',
+  './src/domain/positive-learning.mjs',
   './src/domain/dictionary.mjs',
   './src/domain/official-dictionary.mjs',
   './src/domain/world-pronunciation-data.mjs',

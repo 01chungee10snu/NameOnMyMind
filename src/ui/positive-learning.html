@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#faf8f4">
+  <meta name="description" content="하루에 마음말 하나. 쉬운 뜻과 짧은 예문으로 내 마음에 맞는 말을 찾아보세요.">
+  <title>오늘의 마음말 — NameOnMyMind</title>
+  <style>
+    :root{color-scheme:light;--paper:#faf8f4;--ink:#292723;--muted:#68635c;--line:#ded9d1;--accent:#884632;--sans:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Noto Sans KR","Segoe UI",sans-serif}
+    *{box-sizing:border-box}
+    html{background:var(--paper)}
+    body{margin:0;color:var(--ink);font-family:var(--sans);-webkit-font-smoothing:antialiased}
+    button,input,textarea{font:inherit}
+    a{color:inherit;text-underline-offset:4px}
+    button,a,summary{-webkit-tap-highlight-color:transparent}
+    button,summary{cursor:pointer}
+    [hidden]{display:none!important}
+    :focus-visible{outline:2px solid var(--accent);outline-offset:4px}
+    .page{width:min(100%,460px);margin:auto;padding:0 24px calc(20px + env(safe-area-inset-bottom));min-height:100dvh}
+    header{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-top:env(safe-area-inset-top);min-height:68px}
+    .brand{display:flex;align-items:center;min-height:44px;font-size:16px;font-weight:700;text-decoration:none;letter-spacing:-.03em}
+    .date{color:var(--muted);font-size:13px}
+    .hero{padding:18px 0 26px;border-bottom:1px solid var(--line)}
+    .label{margin:0 0 12px;color:var(--accent);font-size:14px;font-weight:600}
+    h1{margin:0;font-size:clamp(40px,13vw,56px);font-weight:650;line-height:1.22;letter-spacing:-.065em;word-break:keep-all;overflow-wrap:anywhere}
+    h1.phrase{font-size:clamp(28px,8.5vw,38px);letter-spacing:-.055em}
+    h1:focus{outline:none}
+    .meaning-label{margin:22px 0 6px;color:var(--muted);font-size:13px;font-weight:600}
+    .meaning{margin:0;font-size:20px;line-height:1.65;letter-spacing:-.025em;word-break:keep-all;overflow-wrap:anywhere}
+    .example{margin-top:22px;padding-left:14px;border-left:2px solid #bba28c}
+    .example-label{display:block;margin-bottom:6px;color:var(--muted);font-size:13px}
+    .example p{margin:0;font-size:17px;line-height:1.7;word-break:keep-all;overflow-wrap:anywhere}
+    .related{padding:24px 0 12px;border-bottom:1px solid var(--line)}
+    h2{margin:0 0 8px;font-size:15px;font-weight:650}
+    .similar-list{display:grid}
+    .similar{display:block;min-height:56px;padding:12px 0;text-decoration:none}
+    .similar strong{display:block;margin-bottom:4px;font-size:17px;font-weight:600}
+    .similar span{display:block;color:var(--muted);font-size:14px;line-height:1.6;word-break:keep-all;overflow-wrap:anywhere}
+    .similar:hover strong{text-decoration:underline;text-underline-offset:4px}
+    details{border-bottom:1px solid var(--line)}
+    summary{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:54px;list-style:none;font-size:15px;font-weight:600}
+    summary::-webkit-details-marker{display:none}
+    summary::after{content:"＋";color:var(--muted);font-size:18px;font-weight:400}
+    details[open]>summary::after{content:"−"}
+    .inside{padding:0 0 18px}
+    .sentence-guide{display:block;margin:0 0 10px;font-size:14px;line-height:1.6;color:var(--muted)}
+    textarea,input{display:block;width:100%;min-width:0;border:1px solid #c6beb3;border-radius:8px;background:#fffdfa;color:var(--ink);font-size:16px;line-height:1.6;padding:12px}
+    textarea{min-height:106px;resize:vertical}
+    input{min-height:48px}
+    .privacy,.source-note{margin:10px 0 0;color:var(--muted);font-size:13px;line-height:1.65}
+    .source-link{display:inline-flex;align-items:center;min-height:44px;color:var(--accent);font-size:14px}
+    .results{display:grid;margin-top:8px}
+    .result{display:block;padding:12px 0;min-height:48px;text-decoration:none;border-bottom:1px solid var(--line)}
+    .result strong{display:block;font-size:16px;margin-bottom:4px}
+    .result span{display:block;color:var(--muted);font-size:14px;line-height:1.6}
+    .hint,.loading{color:var(--muted);font-size:14px;line-height:1.7}
+    .today:not([hidden])+.today{margin-left:16px}
+    .today{display:inline-flex;align-items:center;min-height:44px;margin-top:8px;font-size:14px;color:var(--accent)}
+    .error{padding:24px 0;font-size:16px;line-height:1.7}
+    .retry{min-height:44px;padding:8px 16px;border:1px solid var(--line);border-radius:8px;background:#fffdfa;color:var(--ink)}
+    footer{padding-top:24px;text-align:center;color:var(--muted);font-size:12px}
+    .sr-only{position:absolute;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+    @media(max-width:350px){.page{padding-left:20px;padding-right:20px}.meaning{font-size:19px}}
+    @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+    .world-context{padding:20px 0;border-bottom:1px solid var(--line)}
+    .world-context h2{font-size:13px;color:var(--muted);font-weight:500}
+    .world-title{margin:10px 0 8px;font-size:23px;line-height:1.45;overflow-wrap:anywhere}
+    .world-title span{display:inline-block;margin-left:10px;font-size:12px;color:var(--muted)}
+    .world-meaning{margin:0;font-size:15px;line-height:1.7;word-break:keep-all;overflow-wrap:anywhere}
+    .dictionary-actions{display:flex;gap:8px;margin-top:18px;flex-wrap:wrap}
+    .dictionary-button{min-height:46px;padding:9px 12px;border:1px solid #a99d8e;border-radius:8px;background:#fffdfa;color:var(--ink);font-size:14px}
+    .dictionary-button.secondary{background:transparent}
+    .dictionary-result{display:block;text-align:left;width:100%;min-height:46px;padding:11px 0;border:0;border-bottom:1px solid var(--line);background:transparent;color:var(--ink);font-size:16px}
+    .dictionary-help{font-size:12px}
+    .dictionary-entry{margin-top:20px;padding:16px 0;border-top:1px solid var(--line)}
+    .dictionary-entry h3{margin:8px 0 16px;font-size:26px;overflow-wrap:anywhere}
+    .dictionary-label,.dictionary-pos{color:var(--muted);font-size:12px}
+    .dictionary-pos{display:block;margin-bottom:5px}
+    .dictionary-senses{padding-left:22px;font-size:16px;line-height:1.75;overflow-wrap:anywhere}
+    .dictionary-senses li{margin-bottom:14px}
+    .dictionary-credit{font-size:12px;line-height:1.7;color:var(--muted)}
+  </style>
+</head>
+<body>
+<div class="page">
+  <header><a class="brand" href="#">마음말</a><time class="date" id="date"></time></header>
+  <main id="app"><p class="loading" role="status">마음말을 불러오는 중이에요.</p></main>
+  <noscript><p>이 페이지를 보려면 브라우저에서 자바스크립트를 켜 주세요.</p></noscript>
+  <footer>NameOnMyMind</footer>
+</div>
+<script type="module">
+import { createPositiveLearningModel, safeLearningSource } from '../../src/domain/positive-learning.mjs';
+import { worldMarkup, worldSourceMarkup, mountDictionarySearch } from '../../src/ui/learning-dictionary.mjs';
+const app=document.querySelector('#app');
+const base='../../content/korean-expression/';
+const esc=(s='')=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const read=async path=>{const response=await fetch(path,{cache:'no-store'});if(!response.ok)throw new Error('Content unavailable');return response.json()};
+const now=new Date();
+const dateNode=document.querySelector('#date');
+dateNode.textContent=new Intl.DateTimeFormat('ko-KR',{month:'long',day:'numeric'}).format(now);
+dateNode.dateTime=`${now.getFullYear()}-${String(now.getMonth()+1).padStart(2,'0')}-${String(now.getDate()).padStart(2,'0')}`;
+
+try{
+  const [vocabulary,policy,world]=await Promise.all([
+    read(base+'learning-vocabulary-v1.json'),read(base+'positive-focus-v1.json'),read(base+'world-contexts-v1.json').catch(()=>null)
+  ]);
+  const model=createPositiveLearningModel(vocabulary,policy,world);
+  const termMap=new Map(vocabulary.entries.map(row=>[row.id,row]));
+  for(const row of policy.comparison_only_entries)termMap.set(row.id,row);
+  // Drafts exist only in this page's memory. No persistence, scoring or transmission.
+  const drafts=new Map();
+  let selected=null;
+  app.innerHTML=`
+    <div id="word-card" aria-live="polite" aria-atomic="true"></div>
+    <details id="write"><summary>내 문장 써보기</summary><div class="inside">
+      <label class="sentence-guide" id="sentence-label" for="sentence"></label>
+      <textarea id="sentence" maxlength="240" autocomplete="off" spellcheck="false" placeholder="이 말이 어울리는 내 이야기를 써 보세요." aria-describedby="privacy"></textarea>
+      <p class="privacy" id="privacy">여기에 쓴 글은 저장되지 않아요. 다른 곳으로 보내지도 않아요.</p>
+    </div></details>
+    <details id="find"><summary>다른 마음말 찾기</summary><div class="inside">
+      <label class="sr-only" for="search">단어나 뜻으로 찾기</label>
+      <input id="search" type="search" autocomplete="off" placeholder="단어나 뜻으로 찾아보세요">
+      <div class="results" id="results" aria-live="polite"></div>
+      <p class="hint" id="hint">예: 기쁘다, 뿌듯하다, 편안하다</p><div id="dictionary-search-host"></div>
+    </div></details>
+    <details id="source"><summary>뜻 출처</summary><div class="inside">
+      <p class="source-note">사전과 검토 자료를 바탕으로 뜻을 쉽게 풀어 썼어요. 예문은 직접 만든 문장이에요.</p>
+      <a class="source-link" id="source-link" target="_blank" rel="noopener noreferrer" hidden>국립국어원에서 보기</a><div id="world-sources"></div>
+    </div></details>
+    <a class="today" id="today" href="#" hidden>오늘의 말로 돌아가기</a>`;
+  const card=document.querySelector('#word-card');
+  const sentence=document.querySelector('#sentence');
+  const search=document.querySelector('#search');
+  const results=document.querySelector('#results');
+  const hint=document.querySelector('#hint');
+  sentence.addEventListener('input',()=>{if(selected)drafts.set(selected.id,sentence.value)});
+
+  function similarTo(term){
+    return (policy.focus_entries.find(row=>row.id===term.id)?.related_ids||[]).map(id=>termMap.get(id)).filter(Boolean).slice(0,2);
+  }
+  function worldEntryMarkup(entry,includeSource=false){
+    if(!entry)return '';
+    const scoped={...world,entries:[entry]};
+    return worldMarkup(scoped,entry.anchors[0])+(includeSource?worldSourceMarkup(scoped,entry.anchors[0]):'');
+  }
+  function comparisonSources(selection){
+    const row=selection.comparison,relation=selection.relation;
+    if(!row)return '';
+    const source=safeLearningSource(row.source_url)?`<a class="source-link" href="${esc(row.source_url)}" target="_blank" rel="noopener noreferrer">${esc(row.expression)} 뜻 출처</a>`:'';
+    const proof=relation?.kind==='LEXICAL_ANTONYM'&&safeLearningSource(relation.source_url)
+      ? `<p class="dictionary-credit"><a class="source-link" href="${esc(relation.source_url)}" target="_blank" rel="noopener noreferrer">반의 관계 출처</a> · <a href="${esc(policy.relation_license_url)}" target="_blank" rel="noopener noreferrer">${esc(policy.relation_license)}</a></p>`:'';
+    return source+proof;
+  }
+  function comparisonMarkup(selection){
+    const row=selection.comparison,relation=selection.relation;
+    if(!row)return '';
+    const note=relation?.kind==='CONTEXTUAL_CONTRAST'?`<p class="privacy">${esc(relation.note)}</p>`:'';
+    return `<h3 class="world-title">${esc(row.expression)}</h3><p class="meaning">${esc(row.meaning)}</p><div class="example"><span class="example-label">이렇게 써요</span><p>${esc(row.example)}</p></div>${note}`;
+  }
+  function oppositesMarkup(selection){
+    const hasComparison=Boolean(selection.comparison);
+    const hasSecondary=Boolean(selection.secondaryWorld);
+    if(!hasComparison&&!hasSecondary)return '';
+    const label=hasComparison&&hasSecondary
+      ? `${selection.comparison_label} · 다른 마음`
+      : hasComparison ? selection.comparison_label : '다른 마음';
+    return `<details id="opposites"${selection.openComparison?' open':''}><summary>${esc(label)}</summary><div class="inside">${comparisonMarkup(selection)}${worldEntryMarkup(selection.secondaryWorld,true)}</div></details>`;
+  }
+  function renderTerm(focus=false){
+    const selection=model.select(location.hash,now);
+    const term=selection.hero, row=termMap.get(term.id), daily=model.daily(now);
+    selected=term;
+    card.innerHTML=`<section class="hero">
+      <p class="label">${term.id===daily.id?'오늘의 마음말':'먼저 살펴볼 마음말'}</p>
+      <h1 id="word" tabindex="-1" class="${term.expression.length>7?'phrase':''}">${esc(term.expression)}</h1>
+      <p class="meaning-label">뜻</p><p class="meaning">${esc(row.meaning)}</p>
+      <div class="example"><span class="example-label">이렇게 써요</span><p>${esc(row.example)}</p></div>
+    </section><section class="related"><h2>비슷한 말</h2><div class="similar-list">
+      ${similarTo(term).map(other=>`<a class="similar" href="#${other.id}"><strong>${esc(other.expression)}</strong><span>${esc(termMap.get(other.id).meaning)}</span></a>`).join('')}
+    </div></section>${worldEntryMarkup(selection.primaryWorld)}${oppositesMarkup(selection)}`;
+    sentence.value=drafts.get(term.id)||'';
+    document.querySelector('#sentence-label').textContent=`‘${term.expression}’라는 말을 내 이야기에도 써 볼까요?`;
+    for(const id of ['write','find','source'])document.getElementById(id).open=false;
+    const isDefault=!location.hash;
+    document.querySelector('#today').hidden=isDefault;
+    document.querySelector('#today').href='#';
+    const next=model.next(term.id);
+    const nextLink=document.querySelector('#next-positive');
+    if(nextLink)nextLink.remove();
+    if(next&&next.id!==term.id){
+      const link=document.createElement('a');link.id='next-positive';link.className='today';link.href=`#${next.id}`;link.textContent='다음 마음말';
+      document.querySelector('#today').after(link);
+    }
+    const source=document.querySelector('#source-link');
+    const url=row.source_url||'';
+    const safe=safeLearningSource(url);
+    source.hidden=!safe;
+    if(safe)source.href=url;else source.removeAttribute('href');
+    document.querySelector('#world-sources').innerHTML='<p class="source-note">'+esc(policy.emotion_note)+'</p>'+comparisonSources(selection)+(selection.primaryWorld?worldSourceMarkup({...world,entries:[selection.primaryWorld]},selection.primaryWorld.anchors[0]):'');
+    document.title=`${term.expression} — 마음말`;
+    if(focus){document.querySelector('#word').focus({preventScroll:true});window.scrollTo({top:0,behavior:'instant'})}
+  }
+
+  function renderSearch(){
+    const q=search.value.trim().normalize('NFC');
+    results.replaceChildren();hint.hidden=Boolean(q);
+    if(!q)return;
+    const found=model.search(q);
+    if(!found.length){results.innerHTML='<p class="hint">학습 카드에서 찾은 말이 없어요. 사전에서 더 찾아보세요.</p>';return}
+    for(const item of found.slice(0,12)){
+      const link=document.createElement('a');link.className='result';
+      if(item.type==='world'){link.href=`#${item.world.id}`;link.innerHTML=`<strong>${esc(item.world.term)} · ${esc(item.world.language)}</strong><span>${esc(item.world.meaning)}</span>`}
+      else {link.href=`#${item.term.id}`;link.innerHTML=`<strong>${esc(item.term.expression)}</strong><span>${esc(item.term.meaning)}</span>`}
+      link.addEventListener('click',event=>{
+        if(location.hash===link.hash){event.preventDefault();renderTerm(true)}
+      });
+      results.append(link);
+    }
+  }
+  mountDictionarySearch({host:document.querySelector('#dictionary-search-host'),searchInput:search,world,baseUrl:'../../content/dictionary/open-ko/'});
+  search.addEventListener('input',renderSearch);
+  window.addEventListener('hashchange',()=>renderTerm(true));
+  renderTerm();
+}catch(error){
+  console.error('Learning page could not load.',error);
+  app.innerHTML='<div class="error" role="alert"><p>마음말을 불러오지 못했어요.<br>인터넷 연결을 확인하고 다시 열어 주세요.</p><button class="retry" id="retry">다시 불러오기</button></div>';
+  document.querySelector('#retry').addEventListener('click',()=>location.reload());
+}
+</script>
+</body>
+</html>

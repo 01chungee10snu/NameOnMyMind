@@ -12,6 +12,8 @@ const KOREAN_SOURCE_DIR = path.join(ROOT, 'prototypes/korean-emotion-map-2026091
 const KOREAN_TARGET_DIR = path.join(OUT, 'prototypes/korean-emotion-map-20260919');
 const KOREAN_DAILY_LEARNING_SOURCE_DIR = path.join(ROOT, 'prototypes/korean-daily-learning-20260923');
 const KOREAN_DAILY_LEARNING_TARGET_DIR = path.join(OUT, 'prototypes/korean-daily-learning-20260923');
+const KOREAN_POSITIVE_SOURCE = path.join(ROOT, 'src/ui/positive-learning.html');
+const KOREAN_POSITIVE_TARGET = path.join(OUT, 'src/ui/positive-learning.html');
 const KOREAN_DATA_SOURCE = path.join(ROOT, 'content/korean-expression/emotion-map-v1.json');
 const KOREAN_DATA_TARGET = path.join(OUT, 'content/korean-expression/emotion-map-v1.json');
 const KOREAN_SIMPLE_MEANINGS_SOURCE = path.join(ROOT, 'content/korean-expression/simple-meanings-v1.json');
@@ -44,6 +46,8 @@ const KOREAN_PHRASE_V2_SOURCE = path.join(ROOT, 'content/korean-expression/evide
 const KOREAN_PHRASE_V2_TARGET = path.join(OUT, 'content/korean-expression/evidence/phrase-source-v2.json');
 const KOREAN_STANDARD_FOLLOWUP_SOURCE = path.join(ROOT, 'content/korean-expression/evidence/standard-dictionary-followup-v1.json');
 const KOREAN_STANDARD_FOLLOWUP_TARGET = path.join(OUT, 'content/korean-expression/evidence/standard-dictionary-followup-v1.json');
+const KOREAN_POSITIVE_POLICY_SOURCE = path.join(ROOT, 'content/korean-expression/positive-focus-v1.json');
+const KOREAN_POSITIVE_POLICY_TARGET = path.join(OUT, 'content/korean-expression/positive-focus-v1.json');
 const PREVIEW_AUTHORIZED = process.env.NAMEONMYMIND_RESEARCH_PREVIEW_PUBLISH_AUTHORIZED === '1';
 
 if (!PREVIEW_AUTHORIZED) {
@@ -79,6 +83,7 @@ for (const card of sourceManifest.cards) {
 
 if (!fs.existsSync(path.join(KOREAN_SOURCE_DIR, 'index.html'))) throw new Error('Korean emotion map prototype missing.');
 if (!fs.existsSync(path.join(KOREAN_DAILY_LEARNING_SOURCE_DIR, 'index.html'))) throw new Error('Korean daily learning prototype missing.');
+if (!fs.existsSync(KOREAN_POSITIVE_SOURCE)) throw new Error('Positive learner source missing.');
 if (!fs.existsSync(KOREAN_DATA_SOURCE)) throw new Error('Korean emotion map data missing.');
 if (!fs.existsSync(KOREAN_SIMPLE_MEANINGS_SOURCE)) throw new Error('Korean simple meanings missing.');
 if (!fs.existsSync(KOREAN_DAILY_POOL_SOURCE)) throw new Error('Korean daily pool v1 missing.');
@@ -95,6 +100,7 @@ if (!fs.existsSync(KOREAN_LEVEL3_FOLLOWUP_V4_SOURCE)) throw new Error('Korean Le
 if (!fs.existsSync(KOREAN_PHRASE_SOURCE)) throw new Error('Korean phrase evidence missing.');
 if (!fs.existsSync(KOREAN_PHRASE_V2_SOURCE)) throw new Error('Korean phrase v2 evidence missing.');
 if (!fs.existsSync(KOREAN_STANDARD_FOLLOWUP_SOURCE)) throw new Error('Korean standard-dictionary follow-up evidence missing.');
+if (!fs.existsSync(KOREAN_POSITIVE_POLICY_SOURCE)) throw new Error('Positive learning policy missing.');
 const koreanMap = JSON.parse(fs.readFileSync(KOREAN_DATA_SOURCE, 'utf8'));
 if (koreanMap.track_id !== 'KOREAN_EMOTION_ARTICULATION') throw new Error('Korean emotion map track_id mismatch.');
 if (!Array.isArray(koreanMap.families) || !Array.isArray(koreanMap.terms) || !Array.isArray(koreanMap.contrast_sets)) {
@@ -116,6 +122,8 @@ fs.mkdirSync(KOREAN_TARGET_DIR, { recursive: true });
 fs.copyFileSync(path.join(KOREAN_SOURCE_DIR, 'index.html'), path.join(KOREAN_TARGET_DIR, 'index.html'));
 fs.mkdirSync(KOREAN_DAILY_LEARNING_TARGET_DIR, { recursive: true });
 fs.copyFileSync(path.join(KOREAN_DAILY_LEARNING_SOURCE_DIR, 'index.html'), path.join(KOREAN_DAILY_LEARNING_TARGET_DIR, 'index.html'));
+fs.mkdirSync(path.dirname(KOREAN_POSITIVE_TARGET), { recursive: true });
+fs.copyFileSync(KOREAN_POSITIVE_SOURCE, KOREAN_POSITIVE_TARGET);
 fs.mkdirSync(path.dirname(KOREAN_DATA_TARGET), { recursive: true });
 fs.copyFileSync(KOREAN_DATA_SOURCE, KOREAN_DATA_TARGET);
 fs.copyFileSync(KOREAN_SIMPLE_MEANINGS_SOURCE, KOREAN_SIMPLE_MEANINGS_TARGET);
@@ -123,6 +131,7 @@ fs.cpSync(path.join(ROOT, 'content/dictionary'), path.join(OUT, 'content/diction
 for (const file of ['learning-vocabulary-v1.json', 'learning-daily-v3.json', 'world-contexts-v1.json', 'world-pronunciations-v1.json', 'world-hanja-v1.json']) {
   fs.copyFileSync(path.join(ROOT, 'content/korean-expression', file), path.join(OUT, 'content/korean-expression', file));
 }
+fs.copyFileSync(KOREAN_POSITIVE_POLICY_SOURCE, KOREAN_POSITIVE_POLICY_TARGET);
 
 fs.copyFileSync(KOREAN_DAILY_POOL_SOURCE, KOREAN_DAILY_POOL_TARGET);
 fs.copyFileSync(KOREAN_DAILY_POOL_V2_SOURCE, KOREAN_DAILY_POOL_V2_TARGET);
@@ -213,6 +222,8 @@ const stagedEvidence = {
     preview_path: 'prototypes/korean-emotion-map-20260919/',
     daily_learning_path: 'prototypes/korean-daily-learning-20260923/',
     daily_learning_alias_path: 'learn/',
+    positive_learning_path: 'src/ui/positive-learning.html',
+    positive_policy_path: 'content/korean-expression/positive-focus-v1.json',
     data_path: 'content/korean-expression/emotion-map-v1.json',
     simple_meanings_path: 'content/korean-expression/simple-meanings-v1.json',
     learning_vocabulary_path: 'content/korean-expression/learning-vocabulary-v1.json',

@@ -51,11 +51,12 @@ function writeText(rel, value) {
 function writeJson(rel, value) { writeText(rel, JSON.stringify(value, null, 2) + '\n'); }
 
 const runtimeInputs = [
+  'src/ui/positive-learning.html', 'content/korean-expression/positive-focus-v1.json',
   'src/ui/index.html',
   'src/ui/app.mjs',
   'src/domain/cards.mjs',
   'src/domain/discovery.mjs',
-  'src/domain/korean-daily.mjs', 'src/domain/korean-learning.mjs', 'src/domain/dictionary.mjs', 'src/domain/official-dictionary.mjs', 'src/domain/world-pronunciation-data.mjs', 'src/domain/world-hanja-data.mjs', 'src/ui/learning-dictionary.mjs', 'src/ui/world-pronunciation.mjs', 'src/ui/world-hanja.mjs',
+  'src/domain/korean-daily.mjs', 'src/domain/korean-learning.mjs', 'src/domain/positive-learning.mjs', 'src/domain/dictionary.mjs', 'src/domain/official-dictionary.mjs', 'src/domain/world-pronunciation-data.mjs', 'src/domain/world-hanja-data.mjs', 'src/ui/learning-dictionary.mjs', 'src/ui/world-pronunciation.mjs', 'src/ui/world-hanja.mjs',
   'src/local/state.mjs',
   'src/agent/webmcp-adapter.mjs',
   'src/agent/agent-manifest.json',
@@ -86,7 +87,7 @@ const contentSnapshotVersion = crypto.createHash('sha256').update(contentSnapsho
 fs.rmSync(OUT, { recursive: true, force: true });
 fs.mkdirSync(OUT, { recursive: true });
 copyFile('src/ui/index.html', 'index.html');
-for (const rel of ['src/ui/app.mjs', 'src/domain/cards.mjs', 'src/domain/discovery.mjs', 'src/domain/korean-daily.mjs', 'src/domain/korean-learning.mjs', 'src/domain/dictionary.mjs', 'src/domain/official-dictionary.mjs', 'src/domain/world-pronunciation-data.mjs', 'src/domain/world-hanja-data.mjs', 'src/ui/learning-dictionary.mjs', 'src/ui/world-pronunciation.mjs', 'src/ui/world-hanja.mjs', 'src/local/state.mjs', 'src/agent/webmcp-adapter.mjs']) copyFile(rel);
+for (const rel of ['src/ui/app.mjs', 'src/domain/cards.mjs', 'src/domain/discovery.mjs', 'src/domain/korean-daily.mjs', 'src/domain/korean-learning.mjs', 'src/domain/positive-learning.mjs', 'src/domain/dictionary.mjs', 'src/domain/official-dictionary.mjs', 'src/domain/world-pronunciation-data.mjs', 'src/domain/world-hanja-data.mjs', 'src/ui/learning-dictionary.mjs', 'src/ui/world-pronunciation.mjs', 'src/ui/world-hanja.mjs', 'src/local/state.mjs', 'src/agent/webmcp-adapter.mjs']) copyFile(rel);
 copyFile('assets/css/styles.css');
 copyFile('assets/brand/app-icon.svg');
 copyFile('.nojekyll');

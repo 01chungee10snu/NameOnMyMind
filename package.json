@@ -29,7 +29,6 @@
     "check:g5-research": "npm run check:g5-selection && npm run validate:g5-research && npm run check:privacy",
     "validate:korean-expression": "node scripts/korean/validate-expression-ladders.mjs",
     "validate:korean-emotion": "node scripts/korean/validate-emotion-map.mjs",
-    "check:korean-language": "node scripts/dictionary/build-nikl-dictionary.mjs --check && npm run validate:korean-expression && npm run validate:korean-emotion && node scripts/korean/build-simple-meanings.mjs --check && npm run test:korean-learning && node scripts/korean/build-learning-vocabulary.mjs --check && npm run test:learning-expansion && npm run test:dictionary-world && npm run test:nikl-v24 && node scripts/korean/build-world-pronunciation-data.mjs --check && npm run test:world-pronunciation && node scripts/korean/build-world-hanja.mjs --check && npm run test:world-hanja",
     "build:korean-copy": "node scripts/korean/build-simple-meanings.mjs",
     "test:korean-learning": "node --test tests/g5/simple-learning.test.mjs",
     "build:learning-vocabulary": "node scripts/korean/build-learning-vocabulary.mjs",
@@ -40,8 +39,11 @@
     "test:nikl-v24": "node --test tests/g5/nikl-v24.test.mjs",
     "build:world-pronunciation-data": "node scripts/korean/build-world-pronunciation-data.mjs",
     "test:world-pronunciation": "node --test tests/g5/world-pronunciation.test.mjs tests/g5/world-pronunciation-edge.test.mjs",
+    "test:positive-learning": "node --test tests/g5/positive-learning.test.mjs tests/g5/positive-rendering.test.mjs tests/g5/positive-learning-edge.test.mjs",
+    "check:korean-language": "node scripts/dictionary/build-nikl-dictionary.mjs --check && npm run validate:korean-expression && npm run validate:korean-emotion && node scripts/korean/build-simple-meanings.mjs --check && npm run test:korean-learning && node scripts/korean/build-learning-vocabulary.mjs --check && npm run test:learning-expansion && npm run test:dictionary-world && npm run test:nikl-v24 && node scripts/korean/build-world-pronunciation-data.mjs --check && npm run test:world-pronunciation && node scripts/korean/build-world-hanja.mjs --check && npm run test:world-hanja && npm run validate:positive-learning && npm run test:positive-learning",
     "build:world-hanja": "node scripts/korean/build-world-hanja.mjs",
-    "test:world-hanja": "node --test tests/g5/world-hanja.test.mjs"
+    "test:world-hanja": "node --test tests/g5/world-hanja.test.mjs",
+    "validate:positive-learning": "node scripts/korean/validate-positive-learning.mjs"
   },
   "devDependencies": {
     "ajv": "8.20.0",

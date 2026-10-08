@@ -111,6 +111,9 @@ jobs:
           if (pronunciation.entries.length !== 7 || pronunciation.entries.some(p => !world.entries.some(w => w.id === p.world_id && w.term === p.term))) throw new Error('Pronunciation identity mismatch');
           const koreanHtml = fs.readFileSync('public/prototypes/korean-emotion-map-20260919/index.html','utf8');
           const dailyLearningHtml = fs.readFileSync('public/prototypes/korean-daily-learning-20260923/index.html','utf8');
+          const positive = JSON.parse(fs.readFileSync('public/content/korean-expression/positive-focus-v1.json','utf8'));
+          if (positive.positive_count !== 61 || !fs.existsSync('public/src/domain/positive-learning.mjs')) throw new Error('Positive learning runtime missing');
+          for (const p of ['public/index.html','public/learn/index.html']) { const html=fs.readFileSync(p,'utf8'); if (!html.includes('positive-focus-v1.json') || !html.includes('createPositiveLearningModel')) throw new Error('Public page is not positive-first'); }
           const publicApp = fs.readFileSync('public/src/ui/app.mjs','utf8');
           if (!koreanHtml.includes('상황에서 찾기') || !koreanHtml.includes('앱이 감정을 판정하지 않습니다.') || !koreanHtml.includes('3–6학년') || !koreanHtml.includes('1–2학년 적합성 판정을 뜻하지 않습니다.')) {
             throw new Error('Guided Korean articulation boundary missing');

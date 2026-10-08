@@ -4,6 +4,7 @@ import fs from 'node:fs';
 import { assertMobileWebAuthorization, legacyRouterScript, rebaseResourcePaths, renderLearnerHtml, staleOutputPaths } from '../../scripts/stage-mobile-web.mjs';
 
 const prototype = fs.readFileSync(new URL('../../prototypes/korean-daily-learning-20260923/index.html', import.meta.url), 'utf8');
+const positiveSource = fs.readFileSync(new URL('../../src/ui/positive-learning.html', import.meta.url), 'utf8');
 
 test('rebases prototype resources for root and learn entry points', () => {
   assert.match(rebaseResourcePaths('../../src/domain/korean-daily.mjs', 'root'), /^\.\//);
@@ -73,6 +74,7 @@ test('real staging requires prior authorized build and --check detects stale fil
     const put=(rel,text)=>{const p=path.join(dir,rel);fs.mkdirSync(path.dirname(p),{recursive:true});fs.writeFileSync(p,text)};
     put('scripts/stage-mobile-web.mjs',fs.readFileSync(new URL('../../scripts/stage-mobile-web.mjs',import.meta.url),'utf8'));
     put('prototypes/korean-daily-learning-20260923/index.html',prototype);
+    put('src/ui/positive-learning.html',positiveSource);
     const cards=fs.readFileSync(new URL('../../src/ui/index.html',import.meta.url),'utf8');put('src/ui/index.html',cards);
     const env={...process.env,NAMEONMYMIND_MOBILE_WEB_PUBLISH_AUTHORIZED:'1'};
     const run=(check=false,e=env)=>spawnSync(process.execPath,[path.join(dir,'scripts/stage-mobile-web.mjs'),...(check?['--check']:[])],{env:e,encoding:'utf8'});
@@ -85,6 +87,9 @@ test('real staging requires prior authorized build and --check detects stale fil
     const original=fs.readFileSync(path.join(dir,'public/index.html'),'utf8');
     assert.equal(run().status,0);assert.equal(fs.readFileSync(path.join(dir,'public/index.html'),'utf8'),original);
     assert.equal(fs.readFileSync(path.join(dir,'public/cards.html'),'utf8'),cards);
+    const mobileManifest=JSON.parse(fs.readFileSync(path.join(dir,'public/MOBILE_WEB_MANIFEST.json'),'utf8'));
+    assert.ok(mobileManifest.source_sha256.learner_source);
+    assert.ok(mobileManifest.source_sha256.legacy_prototype);
     fs.appendFileSync(path.join(dir,'public/learn/index.html'),' ');
     assert.notEqual(run(true).status,0);assert.ok(fs.readFileSync(path.join(dir,'public/learn/index.html'),'utf8').endsWith(' '));
     assert.equal(fs.readFileSync(path.join(dir,'prototypes/korean-daily-learning-20260923/index.html'),'utf8'),prototype);

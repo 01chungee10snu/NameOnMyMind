@@ -17,6 +17,7 @@ const SHELL_URLS = [
   './src/domain/discovery.mjs',
   './src/domain/korean-daily.mjs',
   './src/domain/korean-learning.mjs',
+  './src/domain/positive-learning.mjs',
   './src/domain/dictionary.mjs',
   './src/domain/official-dictionary.mjs',
   './src/domain/world-pronunciation-data.mjs',

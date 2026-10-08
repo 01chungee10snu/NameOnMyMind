@@ -1,0 +1,1024 @@
+{
+  "schema_version": "1.0.0",
+  "version": "POSITIVE_FOCUS_V27_2026-10-08",
+  "effective_date": "2026-10-08",
+  "default_id": "KE0001",
+  "selection_basis": "MODEL_EDITORIAL_DISPLAY_PRIORITY_NOT_VALIDATED_EMOTION_CLASSIFICATION",
+  "purpose": "Positive vocabulary leads public root and /learn. Other words stay searchable as secondary comparisons. Contextual contrast is not lexical antonymy. Frozen vocabulary and old schedules remain unchanged.",
+  "emotion_note": "긍정적인 표현을 먼저 살펴봐요. 어떤 마음도 틀린 것은 아니에요.",
+  "positive_count": 61,
+  "focus_entries": [
+    {
+      "id": "KE0001",
+      "expression": "기쁘다",
+      "group": 1,
+      "related_ids": [
+        "KE0002",
+        "KE0004"
+      ]
+    },
+    {
+      "id": "KE0002",
+      "expression": "즐겁다",
+      "group": 1,
+      "related_ids": [
+        "KE0001",
+        "KE0004"
+      ]
+    },
+    {
+      "id": "KE0003",
+      "expression": "신나다",
+      "group": 1,
+      "related_ids": [
+        "KE0005",
+        "KE0001"
+      ]
+    },
+    {
+      "id": "KE0004",
+      "expression": "유쾌하다",
+      "group": 1,
+      "related_ids": [
+        "KE0163",
+        "KE0002"
+      ]
+    },
+    {
+      "id": "KE0005",
+      "expression": "흥겹다",
+      "group": 1,
+      "related_ids": [
+        "KE0003",
+        "KE0001"
+      ]
+    },
+    {
+      "id": "KE0006",
+      "expression": "행복하다",
+      "group": 1,
+      "related_ids": [
+        "KE0001",
+        "KE0002"
+      ]
+    },
+    {
+      "id": "KE0007",
+      "expression": "희열을 느끼다",
+      "group": 1,
+      "related_ids": [
+        "KE0013",
+        "KE0017"
+      ]
+    },
+    {
+      "id": "KE0158",
+      "expression": "황홀하다",
+      "group": 1,
+      "related_ids": [
+        "KE0159",
+        "KE0013"
+      ]
+    },
+    {
+      "id": "KE0161",
+      "expression": "통쾌하다",
+      "group": 1,
+      "related_ids": [
+        "KE0022",
+        "KE0004"
+      ]
+    },
+    {
+      "id": "KE0162",
+      "expression": "상쾌하다",
+      "group": 1,
+      "related_ids": [
+        "KE0024",
+        "KE0004"
+      ]
+    },
+    {
+      "id": "KE0163",
+      "expression": "흔쾌하다",
+      "group": 1,
+      "related_ids": [
+        "KE0004",
+        "KE0001"
+      ]
+    },
+    {
+      "id": "KE0014",
+      "expression": "만족스럽다",
+      "group": 2,
+      "related_ids": [
+        "KE0015",
+        "KE0016"
+      ]
+    },
+    {
+      "id": "KE0015",
+      "expression": "흡족하다",
+      "group": 2,
+      "related_ids": [
+        "KE0014",
+        "KE0016"
+      ]
+    },
+    {
+      "id": "KE0016",
+      "expression": "흐뭇하다",
+      "group": 2,
+      "related_ids": [
+        "KE0014",
+        "KE0015"
+      ]
+    },
+    {
+      "id": "KE0017",
+      "expression": "뿌듯하다",
+      "group": 2,
+      "related_ids": [
+        "KE0016",
+        "KE0019"
+      ]
+    },
+    {
+      "id": "KE0018",
+      "expression": "대견하다",
+      "group": 2,
+      "related_ids": [
+        "KE0020",
+        "KE0017"
+      ]
+    },
+    {
+      "id": "KE0019",
+      "expression": "보람차다",
+      "group": 2,
+      "related_ids": [
+        "KE0017",
+        "KE0016"
+      ]
+    },
+    {
+      "id": "KE0020",
+      "expression": "장하다",
+      "group": 2,
+      "related_ids": [
+        "KE0018",
+        "KE0017"
+      ]
+    },
+    {
+      "id": "KE0013",
+      "expression": "벅차다",
+      "group": 2,
+      "related_ids": [
+        "KE0158",
+        "KE0147"
+      ]
+    },
+    {
+      "id": "KE0149",
+      "expression": "가슴이 벅차다",
+      "group": 2,
+      "related_ids": [
+        "KE0017",
+        "KE0147"
+      ]
+    },
+    {
+      "id": "KE0021",
+      "expression": "안심되다",
+      "group": 3,
+      "related_ids": [
+        "KE0025",
+        "KE0026"
+      ]
+    },
+    {
+      "id": "KE0022",
+      "expression": "후련하다",
+      "group": 3,
+      "related_ids": [
+        "KE0161",
+        "KE0023"
+      ]
+    },
+    {
+      "id": "KE0023",
+      "expression": "홀가분하다",
+      "group": 3,
+      "related_ids": [
+        "KE0153",
+        "KE0022"
+      ]
+    },
+    {
+      "id": "KE0024",
+      "expression": "개운하다",
+      "group": 3,
+      "related_ids": [
+        "KE0162",
+        "KE0153"
+      ]
+    },
+    {
+      "id": "KE0025",
+      "expression": "마음이 놓이다",
+      "group": 3,
+      "related_ids": [
+        "KE0021",
+        "KE0026"
+      ]
+    },
+    {
+      "id": "KE0026",
+      "expression": "한숨을 돌리다",
+      "group": 3,
+      "related_ids": [
+        "KE0021",
+        "KE0025"
+      ]
+    },
+    {
+      "id": "KE0027",
+      "expression": "편안하다",
+      "group": 3,
+      "related_ids": [
+        "KE0152",
+        "KE0028"
+      ]
+    },
+    {
+      "id": "KE0028",
+      "expression": "평온하다",
+      "group": 3,
+      "related_ids": [
+        "KE0154",
+        "KE0033"
+      ]
+    },
+    {
+      "id": "KE0029",
+      "expression": "느긋하다",
+      "group": 3,
+      "related_ids": [
+        "KE0156",
+        "KE0155"
+      ]
+    },
+    {
+      "id": "KE0030",
+      "expression": "포근하다",
+      "group": 3,
+      "related_ids": [
+        "KE0157",
+        "KE0152"
+      ]
+    },
+    {
+      "id": "KE0031",
+      "expression": "든든하다",
+      "group": 3,
+      "related_ids": [
+        "KE0166",
+        "KE0021"
+      ]
+    },
+    {
+      "id": "KE0032",
+      "expression": "안정되다",
+      "group": 3,
+      "related_ids": [
+        "KE0027",
+        "KE0028"
+      ]
+    },
+    {
+      "id": "KE0033",
+      "expression": "고요하다",
+      "group": 3,
+      "related_ids": [
+        "KE0027",
+        "KE0028"
+      ]
+    },
+    {
+      "id": "KE0152",
+      "expression": "아늑하다",
+      "group": 3,
+      "related_ids": [
+        "KE0030",
+        "KE0157"
+      ]
+    },
+    {
+      "id": "KE0153",
+      "expression": "가뿐하다",
+      "group": 3,
+      "related_ids": [
+        "KE0023",
+        "KE0022"
+      ]
+    },
+    {
+      "id": "KE0154",
+      "expression": "차분하다",
+      "group": 3,
+      "related_ids": [
+        "KE0155",
+        "KE0033"
+      ]
+    },
+    {
+      "id": "KE0155",
+      "expression": "담담하다",
+      "group": 3,
+      "related_ids": [
+        "KE0154",
+        "KE0028"
+      ]
+    },
+    {
+      "id": "KE0156",
+      "expression": "여유롭다",
+      "group": 3,
+      "related_ids": [
+        "KE0029",
+        "KE0027"
+      ]
+    },
+    {
+      "id": "KE0157",
+      "expression": "푸근하다",
+      "group": 3,
+      "related_ids": [
+        "KE0030",
+        "KE0152"
+      ]
+    },
+    {
+      "id": "KE0034",
+      "expression": "애틋하다",
+      "group": 4,
+      "related_ids": [
+        "KE0038",
+        "KE0039"
+      ]
+    },
+    {
+      "id": "KE0035",
+      "expression": "정겹다",
+      "group": 4,
+      "related_ids": [
+        "KE0167",
+        "KE0168"
+      ]
+    },
+    {
+      "id": "KE0036",
+      "expression": "친근하다",
+      "group": 4,
+      "related_ids": [
+        "KE0030",
+        "KE0035"
+      ]
+    },
+    {
+      "id": "KE0037",
+      "expression": "다정하다",
+      "group": 4,
+      "related_ids": [
+        "KE0164",
+        "KE0165"
+      ]
+    },
+    {
+      "id": "KE0038",
+      "expression": "사랑스럽다",
+      "group": 4,
+      "related_ids": [
+        "KE0037",
+        "KE0034"
+      ]
+    },
+    {
+      "id": "KE0039",
+      "expression": "소중하다",
+      "group": 4,
+      "related_ids": [
+        "KE0034",
+        "KE0038"
+      ]
+    },
+    {
+      "id": "KE0040",
+      "expression": "고맙다",
+      "group": 4,
+      "related_ids": [
+        "KE0016",
+        "KE0037"
+      ]
+    },
+    {
+      "id": "KE0041",
+      "expression": "반갑다",
+      "group": 4,
+      "related_ids": [
+        "KE0001",
+        "KE0034"
+      ]
+    },
+    {
+      "id": "KE0164",
+      "expression": "살갑다",
+      "group": 4,
+      "related_ids": [
+        "KE0037",
+        "KE0165"
+      ]
+    },
+    {
+      "id": "KE0165",
+      "expression": "살뜰하다",
+      "group": 4,
+      "related_ids": [
+        "KE0164",
+        "KE0037"
+      ]
+    },
+    {
+      "id": "KE0166",
+      "expression": "미덥다",
+      "group": 4,
+      "related_ids": [
+        "KE0031",
+        "KE0021"
+      ]
+    },
+    {
+      "id": "KE0167",
+      "expression": "정답다",
+      "group": 4,
+      "related_ids": [
+        "KE0035",
+        "KE0036"
+      ]
+    },
+    {
+      "id": "KE0168",
+      "expression": "정들다",
+      "group": 4,
+      "related_ids": [
+        "KE0034",
+        "KE0036"
+      ]
+    },
+    {
+      "id": "KE0008",
+      "expression": "설레다",
+      "group": 5,
+      "related_ids": [
+        "KE0009",
+        "KE0012"
+      ]
+    },
+    {
+      "id": "KE0009",
+      "expression": "기대되다",
+      "group": 5,
+      "related_ids": [
+        "KE0008",
+        "KE0012"
+      ]
+    },
+    {
+      "id": "KE0012",
+      "expression": "고대하다",
+      "group": 5,
+      "related_ids": [
+        "KE0008",
+        "KE0009"
+      ]
+    },
+    {
+      "id": "KE0132",
+      "expression": "신기하다",
+      "group": 5,
+      "related_ids": [
+        "KE0133",
+        "KE0160"
+      ]
+    },
+    {
+      "id": "KE0133",
+      "expression": "경이롭다",
+      "group": 5,
+      "related_ids": [
+        "KE0160",
+        "KE0132"
+      ]
+    },
+    {
+      "id": "KE0146",
+      "expression": "찡하다",
+      "group": 5,
+      "related_ids": [
+        "KE0147",
+        "KE0159"
+      ]
+    },
+    {
+      "id": "KE0147",
+      "expression": "뭉클하다",
+      "group": 5,
+      "related_ids": [
+        "KE0159",
+        "KE0146"
+      ]
+    },
+    {
+      "id": "KE0159",
+      "expression": "감격하다",
+      "group": 5,
+      "related_ids": [
+        "KE0147",
+        "KE0158"
+      ]
+    },
+    {
+      "id": "KE0160",
+      "expression": "감탄하다",
+      "group": 5,
+      "related_ids": [
+        "KE0133",
+        "KE0159"
+      ]
+    }
+  ],
+  "daily_ids": [
+    "KE0001",
+    "KE0014",
+    "KE0021",
+    "KE0034",
+    "KE0008",
+    "KE0002",
+    "KE0015",
+    "KE0022",
+    "KE0035",
+    "KE0009",
+    "KE0003",
+    "KE0016",
+    "KE0023",
+    "KE0036",
+    "KE0012",
+    "KE0004",
+    "KE0017",
+    "KE0024",
+    "KE0037",
+    "KE0132",
+    "KE0005",
+    "KE0018",
+    "KE0025",
+    "KE0038",
+    "KE0133",
+    "KE0006",
+    "KE0019",
+    "KE0026",
+    "KE0039",
+    "KE0146",
+    "KE0007",
+    "KE0020",
+    "KE0027",
+    "KE0040",
+    "KE0147",
+    "KE0158",
+    "KE0013",
+    "KE0028",
+    "KE0041",
+    "KE0159",
+    "KE0161",
+    "KE0149",
+    "KE0029",
+    "KE0164",
+    "KE0160",
+    "KE0162",
+    "KE0030",
+    "KE0165",
+    "KE0163",
+    "KE0031",
+    "KE0166",
+    "KE0032",
+    "KE0167",
+    "KE0033",
+    "KE0168",
+    "KE0152",
+    "KE0153",
+    "KE0154",
+    "KE0155",
+    "KE0156",
+    "KE0157"
+  ],
+  "comparison_only_entries": [
+    {
+      "id": "AX0001",
+      "expression": "불쾌하다",
+      "meaning": "기분이 좋지 않고 마음이 언짢다.",
+      "example": "허락 없이 내 물건을 가져가서 불쾌하다.",
+      "source_url": "https://ko.wiktionary.org/wiki/%EB%B6%88%EC%BE%8C%ED%95%98%EB%8B%A4",
+      "wording": "EDITORIAL_PARAPHRASE",
+      "role": "COMPARISON_ONLY"
+    },
+    {
+      "id": "AX0002",
+      "expression": "불행하다",
+      "meaning": "행복하지 않고 괴롭다.",
+      "example": "이야기 속 주인공은 소중한 것을 잃어 불행하다고 느꼈다.",
+      "source_url": "https://ko.wiktionary.org/wiki/%EB%B6%88%ED%96%89%ED%95%98%EB%8B%A4",
+      "wording": "EDITORIAL_PARAPHRASE",
+      "role": "COMPARISON_ONLY"
+    },
+    {
+      "id": "AX0003",
+      "expression": "괴롭다",
+      "meaning": "몸이나 마음이 편하지 않고 고통스럽다.",
+      "example": "친구와 다툰 일이 계속 생각나 마음이 괴롭다.",
+      "source_url": "https://ko.wiktionary.org/wiki/%EA%B4%B4%EB%A1%AD%EB%8B%A4",
+      "wording": "EDITORIAL_PARAPHRASE",
+      "role": "COMPARISON_ONLY"
+    }
+  ],
+  "relations": [
+    {
+      "focus_id": "KE0001",
+      "target_id": "KE0063",
+      "kind": "LEXICAL_ANTONYM",
+      "note": "",
+      "source_url": "https://ko.wiktionary.org/w/index.php?title=%EA%B8%B0%EC%81%98%EB%8B%A4&oldid=4214169",
+      "source_name": "위키낱말사전 · 반의어",
+      "source_locator": "한국어 형용사 / 반의어",
+      "checked_at": "2026-10-08"
+    },
+    {
+      "focus_id": "KE0004",
+      "target_id": "AX0001",
+      "kind": "LEXICAL_ANTONYM",
+      "note": "",
+      "source_url": "https://ko.wiktionary.org/w/index.php?title=%EC%9C%A0%EC%BE%8C%ED%95%98%EB%8B%A4&oldid=4188387",
+      "source_name": "위키낱말사전 · 반의어",
+      "source_locator": "한국어 형용사 / 반의어",
+      "checked_at": "2026-10-08"
+    },
+    {
+      "focus_id": "KE0006",
+      "target_id": "AX0002",
+      "kind": "LEXICAL_ANTONYM",
+      "note": "",
+      "source_url": "https://ko.wiktionary.org/w/index.php?title=%EB%B6%88%ED%96%89%ED%95%98%EB%8B%A4&oldid=4184970",
+      "source_name": "위키낱말사전 · 반의어",
+      "source_locator": "한국어 형용사 / 반의어",
+      "checked_at": "2026-10-08"
+    },
+    {
+      "focus_id": "KE0027",
+      "target_id": "AX0003",
+      "kind": "LEXICAL_ANTONYM",
+      "note": "",
+      "source_url": "https://ko.wiktionary.org/w/index.php?title=%ED%8E%B8%EC%95%88%ED%95%98%EB%8B%A4&oldid=4381623",
+      "source_name": "위키낱말사전 · 반의어",
+      "source_locator": "한국어 형용사 / 반의어",
+      "checked_at": "2026-10-08"
+    },
+    {
+      "focus_id": "KE0002",
+      "target_id": "KE0063",
+      "kind": "CONTEXTUAL_CONTRAST",
+      "note": "즐거운 마음과 슬픈 마음을 비교해요. 꼭 반대말은 아니에요.",
+      "source_urls": [
+        "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=62101&nation=eng",
+        "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=65103&nation=eng"
+      ],
+      "basis": "EDITORIAL_COMPARISON_OF_EXISTING_MEANINGS"
+    },
+    {
+      "focus_id": "KE0003",
+      "target_id": "KE0077",
+      "kind": "CONTEXTUAL_CONTRAST",
+      "note": "기운이 날 때와 힘이 빠질 때를 비교해요. 꼭 반대말은 아니에요.",
+      "source_urls": [
+        "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=66189&nation=eng",
+        "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=55231&nation=eng"
+      ],
+      "basis": "EDITORIAL_COMPARISON_OF_EXISTING_MEANINGS"
+    },
+    {
+      "focus_id": "KE0005",
+      "target_id": "KE0058",
+      "kind": "CONTEXTUAL_CONTRAST",
+      "note": "흥이 나는 마음과 쓸쓸한 마음을 비교해요. 꼭 반대말은 아니에요.",
+      "source_urls": [
+        "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=87537&nation=eng",
+        "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=16735&nation=eng"
+      ],
+      "basis": "EDITORIAL_COMPARISON_OF_EXISTING_MEANINGS"
+    },
+    {
+      "focus_id": "KE0007",
+      "target_id": "KE0067",
+      "kind": "CONTEXTUAL_CONTRAST",
+      "note": "큰 기쁨과 큰 슬픔을 비교해요. 꼭 반대말은 아니에요.",
+      "source_urls": [
+        "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=88885&nation=eng",
+        "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=60180&nation=eng"
+      ],
+      "basis": "EDITORIAL_COMPARISON_OF_EXISTING_MEANINGS"
+    },
+    {
+      "focus_id": "KE0013",
+      "target_id": "KE0072",
+      "kind": "CONTEXTUAL_CONTRAST",
+      "note": "가슴이 가득 찬 느낌과 힘이 빠진 느낌을 비교해요. 꼭 반대말은 아니에요.",
+      "source_urls": [
+        "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=58356&nation=eng",
+        "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=87932&nation=eng"
+      ],
+      "basis": "EDITORIAL_COMPARISON_OF_EXISTING_MEANINGS"
+    },
+    {
+      "focus_id": "KE0014",
+      "target_id": "KE0110",
+      "kind": "CONTEXTUAL_CONTRAST",
+      "note": "마음에 드는 경우와 들지 않는 경우를 비교해요. 꼭 반대말은 아니에요.",
+      "source_urls": [
+        "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=15837&nation=eng",
+        "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=54776&nation=eng"
+      ],
+      "basis": "EDITORIAL_COMPARISON_OF_EXISTING_MEANINGS"
+    },
+    {
+      "focus_id": "KE0015",
+      "target_id": "KE0044",
+      "kind": "CONTEXTUAL_CONTRAST",
+      "note": "충분히 만족한 마음과 모자라 아쉬운 마음을 비교해요. 꼭 반대말은 아니에요.",
+      "source_urls": [
+        "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=87497"
+      ],
+      "basis": "EDITORIAL_COMPARISON_OF_EXISTING_MEANINGS"
+    },
+    {
+      "focus_id": "KE0016",
+      "target_id": "KE0053",
+      "kind": "CONTEXTUAL_CONTRAST",
+      "note": "마음에 드는 일을 볼 때와 속상한 일을 겪을 때를 비교해요. 꼭 반대말은 아니에요.",
+      "source_urls": [
+        "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=89194",
+        "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=15595&nation=eng"
+      ],
+      "basis": "EDITORIAL_COMPARISON_OF_EXISTING_MEANINGS"
+    },
+    {
+      "focus_id": "KE0017",
+      "target_id": "KE0072",
+      "kind": "CONTEXTUAL_CONTRAST",
+      "note": "해낸 기쁨과 힘이 빠지는 느낌을 비교해요. 꼭 반대말은 아니에요.",
+      "source_urls": [
+        "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=87932&nation=eng"
+      ],
+      "basis": "EDITORIAL_COMPARISON_OF_EXISTING_MEANINGS"
+    },
+    {
+      "focus_id": "KE0019",
+      "target_id": "KE0073",
+      "kind": "CONTEXTUAL_CONTRAST",
+      "note": "한 일에 의미를 느낄 때와 의미를 못 느낄 때를 비교해요. 꼭 반대말은 아니에요.",
+      "source_urls": [
+        "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=58664&nation=eng",
+        "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=87691&nation=eng"
+      ],
+      "basis": "EDITORIAL_COMPARISON_OF_EXISTING_MEANINGS"
+    },
+    {
+      "focus_id": "KE0021",
+      "target_id": "KE0079",
+      "kind": "CONTEXTUAL_CONTRAST",
+      "note": "걱정이 풀린 마음과 걱정되는 마음을 비교해요. 꼭 반대말은 아니에요.",
+      "source_urls": [
+        "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=66428&nation=eng",
+        "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=60397&nation=eng"
+      ],
+      "basis": "EDITORIAL_COMPARISON_OF_EXISTING_MEANINGS"
+    },
+    {
+      "focus_id": "KE0022",
+      "target_id": "KE0092",
+      "kind": "CONTEXTUAL_CONTRAST",
+      "note": "마음이 풀렸을 때와 풀리지 않았을 때를 비교해요. 꼭 반대말은 아니에요.",
+      "source_urls": [
+        "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=49437&nation=eng"
+      ],
+      "basis": "EDITORIAL_COMPARISON_OF_EXISTING_MEANINGS"
+    },
+    {
+      "focus_id": "KE0023",
+      "target_id": "KE0124",
+      "kind": "CONTEXTUAL_CONTRAST",
+      "note": "부담이 풀린 때와 걱정이 남은 때를 비교해요. 꼭 반대말은 아니에요.",
+      "source_urls": [
+        "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=87285&nation=eng",
+        "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=20911&nation=eng"
+      ],
+      "basis": "EDITORIAL_COMPARISON_OF_EXISTING_MEANINGS"
+    },
+    {
+      "focus_id": "KE0025",
+      "target_id": "KE0083",
+      "kind": "CONTEXTUAL_CONTRAST",
+      "note": "긴장이 풀릴 때와 걱정하며 기다릴 때를 비교해요. 꼭 반대말은 아니에요.",
+      "source_urls": [
+        "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=61388&nation=eng",
+        "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=20911&nation=eng"
+      ],
+      "basis": "EDITORIAL_COMPARISON_OF_EXISTING_MEANINGS"
+    },
+    {
+      "focus_id": "KE0028",
+      "target_id": "KE0141",
+      "kind": "CONTEXTUAL_CONTRAST",
+      "note": "조용한 마음과 어수선한 마음을 비교해요. 꼭 반대말은 아니에요.",
+      "source_urls": [
+        "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=81297&nation=eng",
+        "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=66238&nation=eng"
+      ],
+      "basis": "EDITORIAL_COMPARISON_OF_EXISTING_MEANINGS"
+    },
+    {
+      "focus_id": "KE0029",
+      "target_id": "KE0081",
+      "kind": "CONTEXTUAL_CONTRAST",
+      "note": "여유 있는 마음과 조급한 마음을 비교해요. 꼭 반대말은 아니에요.",
+      "source_urls": [
+        "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=40387&nation=eng",
+        "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=25462&nation=eng"
+      ],
+      "basis": "EDITORIAL_COMPARISON_OF_EXISTING_MEANINGS"
+    },
+    {
+      "focus_id": "KE0031",
+      "target_id": "KE0079",
+      "kind": "CONTEXTUAL_CONTRAST",
+      "note": "의지할 곳이 있다고 느낄 때와 걱정될 때를 비교해요. 꼭 반대말은 아니에요.",
+      "source_urls": [
+        "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=50551&nation=eng",
+        "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=60397&nation=eng"
+      ],
+      "basis": "EDITORIAL_COMPARISON_OF_EXISTING_MEANINGS"
+    },
+    {
+      "focus_id": "KE0032",
+      "target_id": "KE0079",
+      "kind": "CONTEXTUAL_CONTRAST",
+      "note": "마음이 차분해지는 때와 걱정되는 때를 비교해요. 꼭 반대말은 아니에요.",
+      "source_urls": [
+        "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=16011&nation=eng",
+        "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=60397&nation=eng"
+      ],
+      "basis": "EDITORIAL_COMPARISON_OF_EXISTING_MEANINGS"
+    },
+    {
+      "focus_id": "KE0033",
+      "target_id": "KE0141",
+      "kind": "CONTEXTUAL_CONTRAST",
+      "note": "마음이 조용할 때와 어수선할 때를 비교해요. 꼭 반대말은 아니에요.",
+      "source_urls": [
+        "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=18788&nation=eng",
+        "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=66238&nation=eng"
+      ],
+      "basis": "EDITORIAL_COMPARISON_OF_EXISTING_MEANINGS"
+    },
+    {
+      "focus_id": "KE0036",
+      "target_id": "KE0171",
+      "kind": "CONTEXTUAL_CONTRAST",
+      "note": "가깝게 느낄 때와 아직 어색할 때를 비교해요. 꼭 반대말은 아니에요.",
+      "source_urls": [
+        "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=80660&nation=eng",
+        "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=63134&nation=eng"
+      ],
+      "basis": "EDITORIAL_COMPARISON_OF_EXISTING_MEANINGS"
+    },
+    {
+      "focus_id": "KE0153",
+      "target_id": "KE0092",
+      "kind": "CONTEXTUAL_CONTRAST",
+      "note": "마음이 가벼울 때와 속이 시원하지 않을 때를 비교해요. 꼭 반대말은 아니에요.",
+      "source_urls": [
+        "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=14548&nation=eng",
+        "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=49437&nation=eng"
+      ],
+      "basis": "EDITORIAL_COMPARISON_OF_EXISTING_MEANINGS"
+    },
+    {
+      "focus_id": "KE0154",
+      "target_id": "KE0081",
+      "kind": "CONTEXTUAL_CONTRAST",
+      "note": "마음이 가라앉은 때와 조급한 때를 비교해요. 꼭 반대말은 아니에요.",
+      "source_urls": [
+        "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=82475&nation=eng",
+        "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=25462&nation=eng"
+      ],
+      "basis": "EDITORIAL_COMPARISON_OF_EXISTING_MEANINGS"
+    },
+    {
+      "focus_id": "KE0155",
+      "target_id": "KE0141",
+      "kind": "CONTEXTUAL_CONTRAST",
+      "note": "마음이 편안한 때와 어수선한 때를 비교해요. 꼭 반대말은 아니에요.",
+      "source_urls": [
+        "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=44177&nation=eng",
+        "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=66238&nation=eng"
+      ],
+      "basis": "EDITORIAL_COMPARISON_OF_EXISTING_MEANINGS"
+    },
+    {
+      "focus_id": "KE0156",
+      "target_id": "KE0081",
+      "kind": "CONTEXTUAL_CONTRAST",
+      "note": "여유가 있을 때와 마음이 급할 때를 비교해요. 꼭 반대말은 아니에요.",
+      "source_urls": [
+        "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=67788&nation=eng",
+        "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=25462&nation=eng"
+      ],
+      "basis": "EDITORIAL_COMPARISON_OF_EXISTING_MEANINGS"
+    },
+    {
+      "focus_id": "KE0164",
+      "target_id": "KE0171",
+      "kind": "CONTEXTUAL_CONTRAST",
+      "note": "다정하게 대할 때와 아직 어색한 때를 비교해요. 꼭 반대말은 아니에요.",
+      "source_urls": [
+        "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=61656&nation=eng",
+        "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=63134&nation=eng"
+      ],
+      "basis": "EDITORIAL_COMPARISON_OF_EXISTING_MEANINGS"
+    },
+    {
+      "focus_id": "KE0167",
+      "target_id": "KE0171",
+      "kind": "CONTEXTUAL_CONTRAST",
+      "note": "따뜻하고 가깝게 느낄 때와 어색할 때를 비교해요. 꼭 반대말은 아니에요.",
+      "source_urls": [
+        "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=75947&nation=eng",
+        "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=63134&nation=eng"
+      ],
+      "basis": "EDITORIAL_COMPARISON_OF_EXISTING_MEANINGS"
+    },
+    {
+      "focus_id": "KE0161",
+      "target_id": "KE0092",
+      "kind": "CONTEXTUAL_CONTRAST",
+      "note": "속이 시원한 마음과 답답한 마음을 비교해요. 꼭 반대말은 아니에요.",
+      "source_urls": [
+        "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=81838&nation=eng",
+        "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=49437&nation=eng"
+      ],
+      "basis": "EDITORIAL_COMPARISON_OF_EXISTING_MEANINGS"
+    },
+    {
+      "focus_id": "KE0009",
+      "target_id": "KE0071",
+      "kind": "CONTEXTUAL_CONTRAST",
+      "note": "바라는 일을 기다릴 때와 기대에 못 미친 뒤의 마음을 비교해요. 꼭 반대말은 아니에요.",
+      "source_urls": [
+        "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=32495&nation=eng",
+        "https://krdict.korean.go.kr/eng/dicSearch/SearchView?ParaWordNo=14090&nation=eng"
+      ],
+      "basis": "EDITORIAL_COMPARISON_OF_EXISTING_MEANINGS"
+    }
+  ],
+  "primary_world_ids": [
+    "WC03",
+    "WC04"
+  ],
+  "secondary_world_ids": [
+    "WC01",
+    "WC02",
+    "WC05",
+    "WC06",
+    "WC07"
+  ],
+  "relation_license": "CC BY-SA 4.0",
+  "relation_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "source_sha256": {
+    "vocabulary": "f5e451eff42fd9e9e801a46c344dd22871d9f7ad3b07b7daa46338df12ea3f97",
+    "world": "62ca756f6674ad78152dfe232e2279b3ad77313d3d483f3e9fb528864e4a1a38"
+  },
+  "child_comprehension_tested": false,
+  "antonym_evidence_review": {
+    "reviewed_at": "2026-10-08",
+    "review_type": "SOURCE_RELATION_CHECK",
+    "lexical_pairs": 4,
+    "note": "The four linked Wiktionary revisions explicitly list the antonym relation. Contextual contrasts are authored comparisons, not lexical antonymy."
+  }
+}

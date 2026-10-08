@@ -1,0 +1,58 @@
+{
+  "status": "PASS",
+  "base_url": "http://127.0.0.1:63139/NameOnMyMind/",
+  "anonymous": true,
+  "physical_phone_tested": false,
+  "checks": [
+    {
+      "engine": "webkit",
+      "profile": "iPhone 13",
+      "positive_route_checks": 61,
+      "secondary_route_checks": 119,
+      "world_checks": 7,
+      "return_and_next_controls": true,
+      "repeat_search_and_antonym_source": true,
+      "private_text_network_requests": 0,
+      "private_text_speech_requests": 0,
+      "official_dictionary_unchanged": true,
+      "compact_320px": true,
+      "optional_world_failure_does_not_break_reading": true,
+      "errors": [],
+      "cookie_count": 0
+    },
+    {
+      "engine": "chromium",
+      "profile": "Pixel 7",
+      "positive_route_checks": 61,
+      "secondary_route_checks": 119,
+      "world_checks": 7,
+      "return_and_next_controls": true,
+      "repeat_search_and_antonym_source": true,
+      "private_text_network_requests": 0,
+      "private_text_speech_requests": 0,
+      "official_dictionary_unchanged": true,
+      "compact_320px": true,
+      "optional_world_failure_does_not_break_reading": true,
+      "errors": [],
+      "cookie_count": 0
+    }
+  ],
+  "real_tts_start_end": [
+    {
+      "text": "Geborgenheit",
+      "lang": "de-DE",
+      "events": [
+        "start",
+        "end"
+      ]
+    },
+    {
+      "text": "もののあわれ",
+      "lang": "ja-JP",
+      "events": [
+        "start",
+        "end"
+      ]
+    }
+  ]
+}

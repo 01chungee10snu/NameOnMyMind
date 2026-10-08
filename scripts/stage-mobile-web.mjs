@@ -6,7 +6,8 @@ import { fileURLToPath } from 'node:url';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const OUT = path.join(ROOT, 'public');
-const LEARNER_SOURCE = path.join(ROOT, 'prototypes/korean-daily-learning-20260923/index.html');
+const LEARNER_SOURCE = path.join(ROOT, 'src/ui/positive-learning.html');
+const LEGACY_LEARNER_SOURCE = path.join(ROOT, 'prototypes/korean-daily-learning-20260923/index.html');
 const CARD_SOURCE = path.join(ROOT, 'src/ui/index.html');
 const CANONICAL_ORIGIN = 'https://01chungee10snu.github.io/NameOnMyMind';
 const MOBILE_MANIFEST = 'MOBILE_WEB_MANIFEST.json';
@@ -86,10 +87,12 @@ function expectedOutputs() {
   if (preview.preview_web_publish_authorized !== true || preview.product_release_authorized !== false) {
     throw new Error('MOBILE_WEB_STAGE_BLOCKED: completed research preview stage is invalid.');
   }
-  if (!fs.existsSync(LEARNER_SOURCE)) throw new Error('Frozen learner prototype is missing.');
+  if (!fs.existsSync(LEARNER_SOURCE)) throw new Error('Positive learner source is missing.');
+  if (!fs.existsSync(LEGACY_LEARNER_SOURCE)) throw new Error('Frozen learner prototype is missing.');
   if (!fs.existsSync(CARD_SOURCE)) throw new Error('Original card source is missing.');
 
   const learner = read(LEARNER_SOURCE);
+  const legacyLearner = read(LEGACY_LEARNER_SOURCE);
   const card = read(CARD_SOURCE);
   const root = renderLearnerHtml(learner, { location: 'root' });
   const learn = renderLearnerHtml(learner, { location: 'learn' });
@@ -107,7 +110,8 @@ function expectedOutputs() {
       legacy_cards: `${CANONICAL_ORIGIN}/cards.html`,
     },
     source_sha256: {
-      learner_prototype: sha256(learner),
+      learner_source: sha256(learner),
+      legacy_prototype: sha256(legacyLearner),
       original_card_source: sha256(card),
     },
     output_sha256: {
